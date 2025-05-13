@@ -1,0 +1,288 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{thcoverpsl}[2017/03/04 v4.0 Build coverpage 1 and 4 for french thesis according to PSL (J.Hare)]
+\RequirePackage{ifpdf}
+\RequirePackage{graphicx}
+\RequirePackage{geometry}[2010/03/13]
+\RequirePackage{datetime}
+\RequirePackage{etoolbox}
+\RequirePackage{calc}
+\RequirePackage{adjustbox}
+\RequirePackage{xstring}
+\RequirePackage{xcolor}
+\RequirePackage{eso-pic}
+\RequirePackage{epstopdf}
+\RequirePackage{filecontents}
+
+\begin{filecontents*}{pslcover1.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 596 842
+%%Title: fond1-psl
+%%Creator: GSview from handmade
+%%CreationDate: Sat Mar 04 17:57:52 2017
+%%Pages: 1
+%%EndComments
+%%Page: 1 1
+%%BeginDocument: fond1-psl
+matrix currentmatrix /originmat exch def 
+/umatrix {originmat matrix concatmatrix setmatrix} def 
+[2.83465 0 0 2.83465 0 0] umatrix
+%0 setlinewidth 
+90 0 newpath moveto
+210 0 lineto 210 297 lineto 186.5 297 lineto
+158.5 210 lineto 0 210 lineto 0 160 lineto
+115 76 lineto 
+closepath
+0.22 0.23 0.57 setrgbcolor fill
+stroke
+%%EndDocument
+%%Trailer
+\end{filecontents*}
+
+\begin{filecontents*}{pslcover4.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 596 842
+%%Title: fond1-psl
+%%Creator: GSview from handmade
+%%CreationDate: Sat Mar 04 17:57:52 2017
+%%Pages: 1
+%%EndComments
+%%Page: 1 1
+%%BeginDocument: fond1-psl
+matrix currentmatrix /originmat exch def 
+/umatrix {originmat matrix concatmatrix setmatrix} def 
+[2.83465 0 0 2.83465 0 0] umatrix
+0 0 newpath moveto
+113 0 lineto 90 70 lineto 210 158 lineto
+210 179 lineto 55 179 lineto 17 297 lineto
+0 297 lineto closepath
+0.22 0.23 0.57 setrgbcolor fill
+stroke
+1.8 setlinewidth
+80 178 newpath moveto 199 297 lineto 
+0 94  moveto 210 94 lineto 0.22 0.23 0.57 setrgbcolor
+stroke
+4.5 setlinewidth
+-4 94 256 0 90 arc 0.22 0.23 0.57 setrgbcolor
+stroke
+%%EndDocument
+%%Trailer
+\end{filecontents*}
+
+\newcommand{\numchars}[1]{\noindent The string ``#1'' has {\StrLen{#1}} characters.\\}
+\newcommand{\textcl@p}[1]{{\hbox to 0pt{\hss#1\hss}}}
+%\RequirePackage{hyperref}% is not required, but if loaded, 
+% is used  to set  PDF metadata (if PDF mode is active)
+
+%initize optionnals
+\gdef\@atlab{} 
+\gdef\@atinstitution{} 
+\gdef\@ecoledoct{} 
+\gdef\@ecoledoctnum{} 
+\gdef\@advisor{}
+\gdef\@specialite{}
+\gdef\@date{\today}
+\gdef\@logoone{}
+\gdef\@logotwo{}
+\gdef\@logothree{}
+\gdef\@titlemeta{}
+\gdef\@titlemetaen{}
+\gdef\@reference{}
+\gdef\@thesisname{Thèse de doctorat}
+\gdef\@gradename{docteur}
+\gdef\@univ{de l’Université de recherche Paris Sciences et Lettres\newline
+PSL Research University}
+
+
+%parse provided values
+\def\logos#1#2#3{\gdef\@logoone{#1}%
+	\ifx\empty#2\relax\else\gdef\@logotwo{#2}\fi%
+	\ifx\empty#3\relax\else\gdef\@logothree{#3}\fi}
+\def\univ#1{\gdef\@univ{#1}}
+\def\@univ{\@latex@error{No \noexpand\univ given}\@ehc}
+\def\atlab#1{\gdef\@atlab{#1}}
+\def\atinstitution#1{\gdef\@atinstitution{#1}}
+\def\@atinstitution{\@latex@warning@no@line{No \noexpand\atinstitution given}}
+\def\ecoledoctnum#1{\gdef\@ecoledoctnum{#1}}
+\def\@ecoledoctnum{\@latex@warning@no@line{No \noexpand\ecoledoctnum given}}
+\def\ecoledoct#1{\gdef\@ecoledoct{#1}}
+\def\@ecoledoct{\@latex@warning@no@line{No \noexpand\ecoledoct given}}
+\def\specialite#1{\gdef\@specialite{#1}}
+\def\@specialite{\@latex@warning@no@line{No \noexpand\specialite given}}
+\def\author#1{\gdef\@author{#1}}
+\def\@author{\@latex@warning@no@line{No \noexpand\author given}}
+\def\advisor#1{\gdef\@advisor{#1}}
+\def\@advisor{\@latex@warning@no@line{No \noexpand\advisor given}}
+\long\def\title#1{\gdef\@title{#1}}
+\def\@title{\@latex@error{No \noexpand\title given}\@ehc}
+\long\def\titlemeta#1{\gdef\@titlemeta{#1}}
+\def\date#1{\gdef\@date{#1}}
+\gdef\@date{\today}
+\long\def\jury#1{\gdef\@jury{#1}}
+\def\@jury{\@latex@warning@no@line{No \noexpand\jury given}}
+\long\def\resume#1{\gdef\@resume{#1}}
+\def\@resume{\@latex@warning@no@line{No \noexpand\resume given}}
+\long\def\motscles#1{\gdef\@motscles{#1}}
+\def\@motscles{\@latex@warning@no@line{No \noexpand\motscles given}}
+\long\def\titleen#1{\gdef\@titleen{#1}}
+\def\@titleen{\@latex@warning@no@line{No \noexpand\titleen given}}
+\long\def\titlemetaen#1{\gdef\@titlemetaen{#1}}
+\long\def\abstract#1{\gdef\@abstract{#1}}
+\def\@abstract{\@latex@warning@no@line{No \noexpand\abstract given}}
+\long\def\keywords#1{\gdef\@keywords{#1}}
+\def\@keywords{\@latex@warning@no@line{No \noexpand\keywords given}}
+\def\thesisname#1{\gdef\@thesisname{#1}}
+\def\gradename#1{\gdef\@gradename{#1}}
+
+
+\def\atXYesoFG(#1,#2)#3[#4]{%
+   \AddToShipoutPictureFG*{\AtPageUpperLeft{\hspace{#1}\raisebox{-#2}{\parbox[#4]{0.7\paperwidth}{#3}}}}%
+}
+
+\def\setesoBG(#1,#2)#3{
+\AddToShipoutPictureBG*{\includegraphics[width=#1,height=#2]{#3}}
+}
+
+\definecolor{psld@rkblue}{rgb}{0.22 0.23 0.57}
+\def\w@h{\color{white}}
+\def\p@bl{\color{psld@rkblue}}
+
+\long\def\frontcover{%
+    \begingroup 
+    \pagestyle{empty}%
+    \setcounter{page}{-1}
+    \sffamily ~
+    \atXYesoFG(20mm,280mm){\includegraphics[height=11mm]{PSL}\quad \includegraphics[height=11mm]{\@logoone}}[b]
+    \atXYesoFG(20mm,21mm){\Huge\bfseries\p@bl \MakeUppercase{\@thesisname}}[c]
+    \atXYesoFG(20mm,39mm){\huge\p@bl \@univ}[c]
+    \atXYesoFG(20mm,68mm){\LARGE\bfseries Préparée \@atinstitution \\ \@atlab}[c]
+	\atXYesoFG(20mm,225mm){\Large\bfseries\p@bl Soutenue par \textsc{\@author}\\ le \@date}[c]
+	\atXYesoFG(20mm,244mm){\large\bfseries\p@bl Dirigée par \textsc{\@advisor}}[c]
+    \ifdefempty{\@specialite}{\relax}{%
+		\atXYesoFG(62mm,159mm){\Large\bfseries\w@h Spécialité : \@specialite}[c]
+	}
+    \ifdefempty{\@ecoledoct}{\relax}{%
+		\atXYesoFG(50mm,135mm){\LARGE\bfseries\w@h École doctorale nº \@ecoledoctnum}[c]
+		\atXYesoFG(50mm,145mm){\Large\w@h\MakeUppercase{\@ecoledoct}}[c]
+	}
+	\atXYesoFG(20mm,105mm){\w@h\LARGE\@titleen}[c]
+	\atXYesoFG(20mm,120mm){\w@h\LARGE\bfseries\@title}[c]
+
+    \atXYesoFG(130mm,170mm){\color{white}
+		COMPOSITION DU JURY :\\[3ex]
+    		\noindent\begin{tabular}{@{}p{1.5em}p{8cm}}%
+         \@jury%
+    		\end{tabular}%
+		}[t]
+	\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{pslcover1}}
+  \cleardoublepage
+  \endgroup
+}
+  
+%%%%%%%%%%% Start of back page 
+
+\newcommand{\clearevenpage}{\cleardoublepage\if@twoside \ifodd\c@page
+    \hbox{}\clearpage\if@twocolumn\hbox{}\clearpage\fi\fi\fi}
+
+%\newenvironment{quoteabstract}
+%  {\small\list{}{\rightmargin=5mm \leftmargin=5mm}%
+%   \item\relax}
+%  {\endlist}
+%\newif\ifresumetolong
+%\newif\ifabstracttolong
+\gdef\absmaxlength{1700}
+\newtoggle{restolong}
+\newtoggle{abstolong}
+
+
+\long\def\backcover{%
+	\StrLen{\@resume}[\resumelen]
+	\StrLen{\@abstract}[\abstractlen]
+    \ifnum\abstractlen>\absmaxlength \toggletrue{abstolong}\else\togglefalse{abstolong}\fi
+    \ifnum\resumelen>\absmaxlength \toggletrue{restolong}\else\togglefalse{restolong}\fi
+    \iftoggle{restolong}{\PackageWarningNoLine{thcoverpsl}{%
+    R'esum'e in thcoverdata.tex is \resumelen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces}}{\relax}
+    \iftoggle{abstolong}{\PackageWarningNoLine{thcoverpsl}{%
+    Abstract in thcoverdata.tex is \abstractlen\space  chars long, \MessageBreak but the max is \absmaxlength, including spaces.}}{\relax}
+    \clearevenpage
+%    \begingroup
+    \pagestyle{empty}%
+%    \setlength{\th@bskip}{8mm plus 5mm minus 5mm}%
+	\sffamily \small%
+	\atXYesoFG(28mm,33mm){%
+	\colorbox{white}{\parbox[t][240mm]{152mm}{~}}%
+	}[t]
+	\atXYesoFG(32mm,34mm){%
+		\begin{minipage}[t][18cm]{70mm} 
+		\color{psld@rkblue}%
+		{\Large Résumé}\\[2ex]
+		\@resume
+		\vfill
+		\end{minipage}
+	}[t]
+	\atXYesoFG(32mm,205mm){%
+		\begin{minipage}[t][6cm]{70mm}
+		\color{psld@rkblue}%
+		{\Large Mots clés}\\[2ex]
+		\@motscles
+		\end{minipage}%
+	}[t]
+	\atXYesoFG(108mm,34mm){%
+		\begin{minipage}[t][18cm]{70mm}
+		\color{psld@rkblue}%
+		{\Large Abstract}\\[2ex]
+		\@abstract
+		\vfill
+		\end{minipage}%
+	}[t]
+	\atXYesoFG(108mm,205mm){%
+%		\colorbox{white}{%
+		\begin{minipage}[t][6cm]{70mm}
+		\color{psld@rkblue}%
+		{\Large Mots clés}\\[2ex]
+		\@keywords
+		\end{minipage}%
+%		}
+	}[t]
+
+	\setesoBG(\paperwidth,\paperheight){pslcover4}
+%   	\endgroup
+	\clearpage
+}
+
+\def\coverd@tafile{}
+
+\ifdef{\coverdatafile}%
+	{\typeout{using \coverdatafile}\def\coverd@tafile{\coverdatafile}}%
+	{\typeout{using thcoverdata.tex}\def\coverd@tafile{thcoverdata.tex}}
+
+
+\IfFileExists{\coverd@tafile}{
+% loadfile
+\typeout{\coverd@tafile exists}
+\input{\coverd@tafile}
+%add metadata
+\AtBeginDocument{
+\ifx\@titlemeta\empty\let\@titlemeta=\@title\fi
+\ifx\@titlemetaen\empty\let\@titlemetaen=\@titleen\fi
+\ifpdf
+	\@ifpackageloaded{hyperref}{
+		\hypersetup{
+			pdftitle={\@titlemeta}, 
+			pdfauthor={\@author},
+			pdfsubject={\@titlemetaen},
+			pdfkeywords={\@motscles,\@keywords}
+	  } 
+	}{
+	  \pdfinfo {
+		/Title (\@titlemeta)
+		/Creator (TeX)
+		/Author (\@author)
+		/Subject (\@titlemetaen)
+		/Keywords (\@motscles, \@keywords) 
+		}
+	}%
+\fi
+}
+}{\@latex@warning@no@line{Metadata File "\coverd@tafile" not found}}
+\endinput
+%end of thesiscoverpage package

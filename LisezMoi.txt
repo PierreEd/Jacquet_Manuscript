@@ -1,0 +1,26 @@
+Les dossiers présents dans cette archive :
+* split : le modèle (template) à utiliser proprement dit, prenant en compte 
+  tous les réglages décrit dans le document de cours.
+* custom : 
+   - les formats de bibliographie .bst (3 versions en "en" et "fr")
+   - le fichiers .sty des paquets "maison" pour la couverture de thèse et 
+     pour la gestion des versions d'archivage et de diffusion.
+   - le fichier modèle des métadonnées de la thèse
+   Tous ces fichiers sont à placer dans le répertoire courant de la thèse, 
+   ou  pour les .sty dans votre arborescence texmf (dans texmf/tex/latex/these/)
+       pour les .bst dans votre arborescence texmf (dans texmf/bibtex/bst/)
+* sample : un exemple de réalisation plus ou moins complet, compilable
+   illustrant diverses fonctionnalités, dont celle des paquets "maison".
+* packages : quelques paquets indispensables pour compiler sample. 
+  Ils sont tous issus de CTAN, mais il se pourrait que votre versionne soit pas à jour.
+* ressources : des ressources additionnelles dont :
+   - un paquet pour la mécanique quantique
+   - les fichiers pour l'utilisation directe des caractères unicodes grecs
+     pour les deux éditeurs TeWworks et TeXmaker
+   - des scripts (Window et Linux/MacOSX) pour le nettoyage (et éventuellement la compression)
+    par lot de fichiers PDF invalides.
+   - logos :quelques logos utiles.
+   
+A noter : dans custom, un dossier spécifique pour les couvertures des thèse de PSL.
+Le format par défaut est UPMC/SU, des réglages mineurs peuvent être apportés 
+sur demande pour des versions spécifiques UPD/USPC et UPSud/UPSaclay.

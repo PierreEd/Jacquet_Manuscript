@@ -1,0 +1,32 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {I} Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Historical background}{1}{section.1.1}%
+\contentsline {section}{\numberline {I.2}State of the art}{1}{section.1.2}%
+\contentsline {section}{\numberline {I.3}Relevance of this work}{1}{section.1.3}%
+\contentsline {chapter}{\numberline {II} Theory: background}{3}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Quantum Optics Concepts}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {II.1.1}Quantum Description of Light}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {II.1.2}*Coherent States}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {II.1.3}Squeezed States}{5}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {II.1.4}Field Operators}{5}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {II.1.5}\textcolor {red}{Optical Field Modulations}}{5}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {II.1.6}Quantum Noise and Uncertainty}{5}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {II.1.7}Sideband Representation}{5}{subsection.2.1.7}%
+\contentsline {section}{\numberline {II.2}Optical Cavities : Basics}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {II.2.1}Cavity types and Resonance Conditions}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {II.2.2}Spatial and Longitudinal Modes}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {II.2.3}Static and Dynamical effects}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {II.3}\color {red}Optical Cavities : Three Mirror Cavities }{6}{section.2.3}%
+\contentsline {subsection}{\numberline {II.3.1}}{6}{subsection.2.3.1}%
+\contentsline {section}{\numberline {II.4}Cavity Optomechanics}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {II.4.1}Radiation Pressure Coupling}{6}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {II.4.2}Quantum Langevin Equations}{6}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {II.4.3}\color {red}Mechanical Resonators}{6}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {II.4.4}Noise spectra}{6}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {II.4.5}\color {red} Three Mirror Cavities as Novel Optomechanical Systems }{6}{subsection.2.4.5}%
+\contentsline {section}{\numberline {II.5}Squeezed Light Theory}{6}{section.2.5}%
+\contentsline {subsection}{\numberline {II.5.1}Single-mode Squeezing}{6}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {II.5.2}Noise Spectra }{6}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {II.5.3}Frequency-dependent Squeezing and its use}{6}{subsection.2.5.3}%
+\contentsline {section}{\numberline {II.6}Numerical Simulations of FDS Optomechanical Experiments}{6}{section.2.6}%
+\contentsline {chapter}{Bibliographie}{7}{section*.2}%
