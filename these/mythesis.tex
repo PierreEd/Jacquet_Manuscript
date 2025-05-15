@@ -37,41 +37,32 @@ bookmarksnumbered=true,bookmarksopen=true}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGES LIMINAIRES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frontcover % requires thcover.sty loaded and thcoverdata.tex filled
 \frontmatter
+\input{thcoverdata.tex} % Ensure this file is correctly filled
+\frontcover % requires thcover.sty loaded and thcoverdata.tex filled
 % \include{these/thanks.tex}
 \tableofcontents
 
 % \include{these/chap0.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
-
-% Ensure the path is correct and permissions are set properly
-
 % Ensure the file path and permissions are correct
 \include{./chap1/chap1.tex}
-
 \include{./chap2/chap2.tex}
-
-% \include{./chap3/chap3.tex}
-
-% \include{./chap4/chap4.tex}
-
-% \include{./chap5/chap5.tex}
-
-% \include{./chap6/chap6.tex}
-
-%\appendix
-%\include{appA}
+\include{./chap3/chap3.tex}
+\include{./chap4/chap4.tex}
+\include{./chap5/chap5.tex}
+\include{./chap6/chap6.tex}
+\include{appA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Bibliographie}
+% \addcontentsline{toc}{chapter}{Bibliographie}
 %%%%% use of BiBTeX:
-\bibliographystyle{these/bib/thesefr-href}
-\bibliography{these/bib/references_these.bib}
+% \bibliographystyle{these/bib/thesefr-href}
+% \bibliography{these/bib/references_these.bib}
 %%%%% to be replaced by,  for final version:
 %\intput{mythesis.bbl}
 %%%%%%%%%%%%%%%%%%%%%%%%%  4th COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

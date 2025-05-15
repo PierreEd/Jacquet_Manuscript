@@ -1,0 +1,28 @@
+# Fdb version 4
+["pdflatex"] 1747226911.01393 "c:/Users/OMQ/Downloads/Jacquet_Manuscript/these/test.tex" "test.pdf" "test" 1747226912.26996 0
+  "c:/Users/OMQ/Downloads/Jacquet_Manuscript/these/test.tex" 1747226908 103 0418b3b4ed178a75983a48d71e788fda ""
+  "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1747063514 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1747061782 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1747061782 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1747061782 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm" 1747061782 1508 efecb4a315fe0975509670a272d75ef5 ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1747060339 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1747060339 32080 340ef9bf63678554ee606688e7b5339d ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1747060339 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb" 1747060340 35022 e40946b20bfdcd1099eafb2bcd9f25dd ""
+  "c:/texlive/2025/texmf-dist/tex/latex/base/bk10.clo" 1747064749 8288 9e3b333d9260ecc53bbddb26e4d0b22c ""
+  "c:/texlive/2025/texmf-dist/tex/latex/base/book.cls" 1747064749 23268 24ec0168da5de0ccc9a2593a79692068 ""
+  "c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1747064690 30366 13daaaa774357bc2a262523ba6a04bac ""
+  "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1747060111 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1747070618 5569470 f263a82cf6bb394f5bc87b63f38b78df ""
+  "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1747071658 3567312 25254d2ca6cc6ca2ce6603ee963ec2a4 ""
+  "c:/texlive/2025/texmf.cnf" 1747070509 713 e69b156964470283e0530f5060668171 ""
+  "test.aux" 1747226912 200 04bcb1620783d31297e1904adbfbc235 "pdflatex"
+  "test.tex" 1747226908 103 0418b3b4ed178a75983a48d71e788fda ""
+  "test.toc" 1747226912 51 ddfe6832c62d218a39c154be1c6b24a9 "pdflatex"
+  (generated)
+  "test.aux"
+  "test.log"
+  "test.pdf"
+  "test.toc"
+  (rewritten before read)

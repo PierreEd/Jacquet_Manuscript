@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.12)  13 MAY 2025 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.12)  14 MAY 2025 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,7 +596,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count356
-) (./mythesis.aux)
+) (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
 \openout1 = `mythesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -676,9 +676,11 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 38.
+ (./mythesis.out) (./mythesis.out)
 \@outlinefile=\write4
 \openout4 = `mythesis.out'.
 
+ (./thcoverdata.tex)
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -711,116 +713,98 @@ Package hyperref Info: Link coloring ON on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=7, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=143, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
-Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 40.
+Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 42.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=9, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=145, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
-Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 40.
+Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 42.
 (pdftex.def)             Requested size: 252.75645pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 40.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 40.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 40.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 40.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 40.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 40.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 40.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 40.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-c:/Users/OMQ/Downloads/Jacquet_Manuscript/these/mythesis.tex:40: Undefined control sequence.
-\@jury ...rteur \\ M. & ??? & Examinateur \\ M\up 
-                                                  {me}& ??? & Examinatrice \...
-l.40 \frontcover
-                 % requires thcover.sty loaded and thcoverdata.tex filled
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (8.53476pt too wide) in paragraph at lines 40--40
-[]\T1/lmr/bx/n/12 Mme| 
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 42--42
+[]\T1/lmr/bx/n/12 Mme.| 
  []
 
-c:/Users/OMQ/Downloads/Jacquet_Manuscript/these/mythesis.tex:40: Undefined control sequence.
-\@jury ...\ M\up {me}& ??? & Examinatrice \\ M\up 
-                                                  {me} & ??? & Présidente d...
-l.40 \frontcover
-                 % requires thcover.sty loaded and thcoverdata.tex filled
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (8.53476pt too wide) in paragraph at lines 40--40
-[]\T1/lmr/bx/n/12 Mme| 
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 42--42
+[]\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=10, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=146, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
-Package pdftex.def Info: ./fig/logos.png  used on input line 40.
+Package pdftex.def Info: ./fig/logos.png  used on input line 42.
 (pdftex.def)             Requested size: 284.52756pt x 89.39075pt.
 
 
 [-1
 
 
+
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./fig/Sciences_SU.png> <./fig/Logo_LKB.png> <./fig/logos.png>]
 
-[0
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 \frontcover
+                 % requires thcover.sty loaded and thcoverdata.tex filled [0
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 43.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 44.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-No file mythesis.toc.
+) (./mythesis.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 3.
+
+
+[1
+
+])
 \tf@toc=\write5
 \openout5 = `mythesis.toc'.
 
 
 
-[1
-
-
-]
-
-[2
-
-]
+[2]
 \openout2 = `./chap1/chap1.aux'.
 
  (./chap1/chap1.tex
@@ -828,6 +812,7 @@ Chapter I.
 )
 
 [1
+
 
 
 ]
@@ -842,36 +827,107 @@ Chapter I.
 
 ]
 Chapter II.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 17.
 
 
-[3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 [4]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 111.
+[5])
 
+[6]
+\openout2 = `./chap3/chap3.aux'.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 118.
+ (./chap3/chap3.tex
+Chapter III.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 120.
-
-
-
-[5]
-Overfull \hbox (4.57552pt too wide) in paragraph at lines 129--129
-|[]\T1/lmss/bx/n/14.4 Numerical Sim-u-la-tions of FDS Op-tome-chan-i-cal Ex-per-i-ments| 
+Overfull \hbox (6.1053pt too wide) in paragraph at lines 2--2
+|\T1/lmss/bx/n/24.88 Theory: MATE sys-tems with squeezed
  []
 
 )
 
-[6]
-No file mythesis.bbl.
+[7
+
+
+
+
+]
+\openout2 = `./chap4/chap4.aux'.
+
+ (./chap4/chap4.tex
+
+[8
+
+
+
+
+]
+Chapter IV.
+
+Overfull \hbox (2.5595pt too wide) in paragraph at lines 6--6
+|\T1/lmss/bx/n/24.88 Experiments : A MATE sys-tem in vac-
+ []
+
+)
+
+[9]
+\openout2 = `./chap5/chap5.aux'.
+
+ (./chap5/chap5.tex
+
+[10
+
+
+
+
+]
+Chapter V.
+
+Overfull \hbox (31.81046pt too wide) in paragraph at lines 3--3
+|\T1/lmss/bx/n/24.88 Experiments : a high fre-quency squeezed
+ []
+
+)
+
+[11]
+\openout2 = `./chap6/chap6.aux'.
+
+ (./chap6/chap6.tex
+
+[12
+
+
+
+
+]
+Overfull \hbox (3.13817pt too wide) in paragraph at lines 1--1
+|\T1/lmss/bx/n/24.88 Summary, con-clu-sion and per-spec-tives| 
+ []
+
+)
+
+[13]
+\openout2 = `appA.aux'.
+
+ (./appA.tex
+
+[14
+
+
+
+
+]
+Chapter VI.
+)
+
+[15]
+
+[16
+
+
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -906,53 +962,40 @@ No file mythesis.bbl.
 
 
 
-[7
-
-
-
+[17
 
 
 
 ]
 
-[8
+[18
 
 ]
 
 Package caption Warning: Unused \captionsetup[figure] on input line 16.
 See the caption package documentation for explanation.
 
-(./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux))
+(./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `mythesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mythesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2963B0A461995A90C363DFE00E73BD08;6782.
+Package rerunfilecheck Info: File `mythesis.out' has not changed.
+(rerunfilecheck)             Checksum: DFE02B13CB0EFDB72D4C12DA5C2D24B2;7610.
  ) 
 Here is how much of TeX's memory you used:
- 18748 strings out of 469607
- 316361 string characters out of 5474758
- 778903 words of memory out of 5000000
- 45108 multiletter control sequences out of 15000+600000
+ 18941 strings out of 469607
+ 320485 string characters out of 5474758
+ 783471 words of memory out of 5000000
+ 45236 multiletter control sequences out of 15000+600000
  710731 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,10n,134p,1097b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,10n,134p,1097b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (12 pages, 506963 bytes).
+Output written on mythesis.pdf (22 pages, 521423 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 347 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
 

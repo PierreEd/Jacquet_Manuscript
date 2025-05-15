@@ -1,7 +1,6 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = fr_FR
 % !TeX root = mythesis.tex
-
 \chapter{ Theory: background} \label{chap:theory}
 This chapter will cover the elementary concepts required to describe an membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will derive the equations of motions of a membrane based optomechanical system with frequency dependent squeezed optical fields. 
 
@@ -13,11 +12,11 @@ key words : eigenmodes of the field, quantization, annihilation operators, quadr
 
 \subsection*{Quantised Electromagnetic Field}
 
-Starting from Maxwell's equations in free space and applying canonical quantisation, the electric field operator can be written as:
+We consider the quantised electromagnetic field in volume $V$. The electric field operator can be expressed as:
 \begin{equation}
 \hat{\mathbf{E}}(\mathbf{r}, t) = i \sum_{ \ell} \mathcal{E}_l \left[ \hat{a}_{\ell}(t) \mathbf{f}_{\ell}(\mathbf{r}) - \hat{a}_{\ell}^\dagger(t) \mathbf{f}_{\ell}^*(\mathbf{r}) \right]
 \end{equation}
-where $\mathcal{E}_l = \sqrt{\frac{\hbar \omega_l}{2 \varepsilon_0 V}}$ is the field per photon in mode $\ell$, $\mathbf{f}_{\ell}(\mathbf{r})$ are mode functions satisfying orthonormality, and $\hat{a}_{\ell}(t)$, $\hat{a}_{\ell}^\dagger(t)$ are the annihilation and creation operators associated with each mode $(\ell)$. Here, we describe 
+where $\mathcal{E}_l = \sqrt{\frac{\hbar \omega_l}{2 \varepsilon_0 V}}$ is the field per photon in mode $\ell$, $\hbar$ the reduced Planck constant, $\varepsilon_0$ the vacuum permittivity, $\mathbf{f}_{\ell}(\mathbf{r})$ are spatial mode functions satisfying orthonormality, and $\hat{a}_{\ell}(t)$, $\hat{a}_{\ell}^\dagger(t)$ are the time dependent annihilation and creation operators associated with each mode $(\ell)$. Here, we describe 
 
 These operators satisfy the canonical commutation relations:
 \begin{equation}
@@ -57,6 +56,10 @@ This defines the minimum amount of quantum noise (vacuum fluctuations) in the el
 
 \subsection{*Coherent States}
 
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.5\textwidth]{./chap2/fig/tryout.pgf}
+% \end{figure}
 Coherent states $|\alpha_{\omega,\ell}\rangle$ are eigenstates of the annihilation operator:
 \begin{equation}
 \hat{a}_{\omega,\ell}|\alpha_{\omega,\ell}\rangle = \alpha_{\omega,\ell}|\alpha_{\omega,\ell}\rangle
@@ -108,16 +111,16 @@ This concludes our introduction to the quantum description of light, setting the
 \subsection{Static and Dynamical effects}
 \hspace{1pt}
 
-\section{\color{red}Optical Cavities : Three Mirror Cavities }
+\section{\texorpdfstring{\color{red}Optical Cavities : Three Mirror Cavities}{Optical Cavities : Three Mirror Cavities}}
 \subsection{}
 \hspace{1pt}
 
 \section{Cavity Optomechanics}
 \subsection{Radiation Pressure Coupling}
 \subsection{Quantum Langevin Equations}
-\subsection{\color{red}Mechanical Resonators}
+\subsection{\texorpdfstring{Mechanical Resonators}{Mechanical Resonators}}
 \subsection{Noise spectra}
-\subsection{\color{red} Three Mirror Cavities as Novel Optomechanical Systems }
+\subsection{\texorpdfstring{\color{red} Three Mirror Cavities as Novel Optomechanical Systems}{Three Mirror Cavities as Novel Optomechanical Systems}}
 \hspace{1pt}
 
 \section{Squeezed Light Theory}
@@ -126,5 +129,6 @@ This concludes our introduction to the quantum description of light, setting the
 \subsection{Frequency-dependent Squeezing and its use}
 \hspace{1pt}
 
-\section{Numerical Simulations of FDS Optomechanical Experiments}
+\section{\texorpdfstring{Numerical Simulations of \\ FDS Optomechanical Experiments}{Numerical Simulations of FDS Optomechanical Experiments}}
 
+lets write smth here 
