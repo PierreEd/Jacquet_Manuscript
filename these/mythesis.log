@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  27 MAY 2025 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  27 MAY 2025 12:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,7 +602,7 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 28.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 39.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux))
+) (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
 \openout1 = `mythesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -719,12 +719,12 @@ Package hyperref Info: Link coloring ON on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=115, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=300, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
 Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 43.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=117, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=302, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
 Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 43.
@@ -772,7 +772,7 @@ Overfull \hbox (12.28476pt too wide) in paragraph at lines 43--43
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=118, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=303, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
 Package pdftex.def Info: ./fig/logos.png  used on input line 43.
@@ -800,19 +800,17 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./mythesis.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 3.
-)
+
+
+[1
+
+])
 \tf@toc=\write5
 \openout5 = `mythesis.toc'.
 
 
 
-[1
-
-]
-
-[2
-
-]
+[2]
 \openout2 = `./chap1/chap1.aux'.
 
  (./chap1/chap1.tex
@@ -820,6 +818,7 @@ Chapter I.
 )
 
 [1
+
 
 
 ]
@@ -837,39 +836,133 @@ Chapter II.
 
 
 [3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
 
 [4]
-<./chap2/fig/quantumstates (2).pdf, id=209, 423.9461pt x 155.59116pt>
-File: ./chap2/fig/quantumstates (2).pdf Graphic file (type pdf)
-<use ./chap2/fig/quantumstates (2).pdf>
-Package pdftex.def Info: ./chap2/fig/quantumstates (2).pdf  used on input line 98.
-(pdftex.def)             Requested size: 423.94609pt x 155.59314pt.
-<./chap2/fig/quadratures_phasespace.pdf, id=210, 425.34344pt x 146.1082pt>
-File: ./chap2/fig/quadratures_phasespace.pdf Graphic file (type pdf)
-<use ./chap2/fig/quadratures_phasespace.pdf>
-Package pdftex.def Info: ./chap2/fig/quadratures_phasespace.pdf  used on input line 108.
-(pdftex.def)             Requested size: 423.94609pt x 145.63742pt.
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
 
 
 [5]
+<./chap2/fig/quantumstates (2).pdf, id=448, 423.9461pt x 155.59116pt>
+File: ./chap2/fig/quantumstates (2).pdf Graphic file (type pdf)
+<use ./chap2/fig/quantumstates (2).pdf>
+Package pdftex.def Info: ./chap2/fig/quantumstates (2).pdf  used on input line 114.
+(pdftex.def)             Requested size: 423.94609pt x 155.59314pt.
+<./chap2/fig/quadratures_phasespace.pdf, id=449, 425.34344pt x 146.1082pt>
+File: ./chap2/fig/quadratures_phasespace.pdf Graphic file (type pdf)
+<use ./chap2/fig/quadratures_phasespace.pdf>
+Package pdftex.def Info: ./chap2/fig/quadratures_phasespace.pdf  used on input line 124.
+(pdftex.def)             Requested size: 423.94609pt x 145.63742pt.
+
 
 [6 <./chap2/fig/quantumstates (2).pdf>]
 
 [7 <./chap2/fig/quadratures_phasespace.pdf>]
-Underfull \vbox (badness 2626) has occurred while \output is active []
-
-
 
 [8])
 
 [9]
 
-[10
+[10]
+\openout2 = `./chap3/chap3.aux'.
+
+ (./chap3/chap3.tex
+Chapter III.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11.
+
+)
+
+[11
+
+
+
+
+]
+\openout2 = `./chap4/chap4.aux'.
+
+ (./chap4/chap4.tex
+
+[12
+
+
+
+
+]
+Chapter IV.
+
+Overfull \hbox (5.5642pt too wide) in paragraph at lines 6--6
+|\T1/lmss/bx/n/24.88 Experiments : Op-tome-chan-i-cal Three-
+ []
+
+
+
+[13]
+
+
+Overfull \hbox (49.29169pt too wide) has occurred while \output is active
+\T1/lmr/m/n/10.95 14 \T1/lmr/m/scsl/10.95 Chapter IV.  Experiments : Optomechanical Three-Mirror Cavity Systems (MATE)
+ []
+
+[14])
+\openout2 = `./chap5/chap5.aux'.
+
+ (./chap5/chap5.tex
+Chapter V.
+)
+
+[15
+
+
+
+
+]
+\openout2 = `./chap6/chap6.aux'.
+
+ (./chap6/chap6.tex
+
+[16
+
+
+
+
+]
+Overfull \hbox (3.13817pt too wide) in paragraph at lines 1--1
+|\T1/lmss/bx/n/24.88 Summary, con-clu-sion and per-spec-tives| 
+ []
+
+)
+
+[17]
+\openout2 = `appA.aux'.
+
+ (./appA.tex
+
+[18
+
+
+
+
+]
+Appendix A.
+)
+
+[19]
+
+[20
 
 
 
@@ -908,35 +1001,35 @@ Underfull \vbox (badness 2626) has occurred while \output is active []
 
 
 
-[11
+[21
 
 
 
 ]
 
-[12
+[22
 
-] (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux))
+] (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7988E53CA72091B2BC50F3F44CBA353A;6068.
+(rerunfilecheck)             Checksum: 6B976339FBF2FEE26319786DE451CFE9;18017.
  ) 
 Here is how much of TeX's memory you used:
- 19421 strings out of 469590
- 325489 string characters out of 5474519
- 793625 words of memory out of 5000000
- 45765 multiletter control sequences out of 15000+600000
+ 19658 strings out of 469590
+ 330280 string characters out of 5474519
+ 798165 words of memory out of 5000000
+ 45905 multiletter control sequences out of 15000+600000
  720974 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,19n,134p,1104b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,19n,134p,1104b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (16 pages, 623740 bytes).
+Output written on mythesis.pdf (26 pages, 645054 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 68 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 910 PDF objects out of 1000 (max. 8388607)
+ 774 compressed objects within 8 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 622 words of extra memory for PDF output out of 10000 (max. 10000000)
 

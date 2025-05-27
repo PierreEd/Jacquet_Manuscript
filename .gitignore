@@ -1,0 +1,17 @@
+# Ignore log files
+*.log
+
+# Ignore LaTeX auxiliary files
+*.aux
+*.toc
+*.out
+*.synctex.gz
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore build directories
+build/
+output/

@@ -18,7 +18,7 @@ key words : eigenmodes of the field, quantization, annihilation operators, quadr
 
 We consider the quantised electromagnetic field in volume $V$. The electric field operator can be expressed in the Heisenberg picture as:
 \begin{equation}
-\hat{\mathbf{E}}(\mathbf{r}, t) = i \sum_{ \ell} \mathcal{E}_l \left[\hat{a}_{\ell}^{\vphantom{dagger}}\mathbf{f}_{\ell}(\mathbf{r})e^{-i\omega_{\ell}t} - \hat{a}_{\ell}^\dagger \mathbf{f}_{\ell}^*(\mathbf{r}) e^{i\omega_{\ell}t}\right]
+\hat{\mathbf{E}}(\mathbf{r}, t) = i \sum_{ \ell} \mathcal{E}_l \left[\hat{a}_{\ell}^{\vphantom{dagger}}\mathbf{f}_{\ell}^{\vphantom{*}}(\mathbf{r})e^{-i\omega_{\ell}t} - \hat{a}_{\ell}^\dagger \mathbf{f}_{\ell}^*(\mathbf{r}) e^{i\omega_{\ell}t}\right]
 \end{equation}
 where $\mathcal{E}_l = \sqrt{\frac{\hbar \omega_l}{2 \varepsilon_0 V}}$ is the field per photon in mode $\ell$ with $\hbar$ the reduced Planck constant, $\omega_\ell$ the angular frequency of mode $\ell$ and $\varepsilon_0$ the vacuum permittivity, $\mathbf{f}_{\ell}(\mathbf{r})$ are spatial mode functions satisfying orthonormality, and ($\hat{a}_{\ell}^{\vphantom{\dagger}}$, $\hat{a}_{\ell}^{\dagger}$) are the time dependent annihilation and creation operators associated with each mode $\ell$ satisfying the canonical commutation relations
 \[
@@ -39,55 +39,71 @@ They allow transitions between Fock states by lowering or raising the photon num
 \begin{equation}
 \hat{H} = \sum_\ell \hbar \omega_{\ell} \left( \hat{n}_\ell + \frac{1}{2} \right)
 \end{equation}
-\color{red} \subsection*{Quasi monochromatic fields and slow variations} \color{black}
-finite linewidth laser fields, slow variations of the eigenvalue of operator $\hat{a}$ compared to the optical frequency, slow variations imply spectral decomposition of the field, make $\hat{a}$ time dependent 
-\color{red} \subsection*{Linearization of the optical field, mean field and fluctuations} \color{black} 
-We will often consider a single spatial mode of the electromagnetic field, as well as a strong optical field translating to $\hat{a}(t)=\bar{\alpha} + \delta \hat{a}(t)$.  linearizing such that the field simplifies to  
+\subsection*{Quasi monochromatic fields } 
+In realistic optical systems such as lasers, the electromagnetic field is rarely perfectly monochromatic. Instead, it exhibits a finite spectral linewidth due to spontaneous emission, phase noise, or intentional modulation. These effects cause the amplitude and phase of the optical field to evolve slowly compared to the optical frequency $\omega_\ell$. \\
+
+\noindent As a result, the complex amplitude associated with each mode, typically captured by the Heisenberg-picture annihilation operator $\hat{a}_\ell(t)$, acquires an explicit time dependence beyond the standard fast-oscillating term $e^{-i\omega_\ell t}$. This slow temporal variation reflects the underlying physics: for instance, amplitude or phase modulation, feedback-induced dynamics, or noise processes can all modulate the quantum state in time. Consequently, in the quasi-monochromatic regime, one often separates the field into a rapidly oscillating carrier and a slowly varying envelope encoded in $\hat{a}_\ell(t)$, allowing a spectrally resolved yet temporally adaptive description of the field. \\
+
+\subsection*{Linearization of the optical field: mean field and fluctuations}
+
+We often consider a single spatial mode of the electromagnetic field with optical frequency \(\omega_0\), and assume the presence of a strong coherent field. In this regime, the annihilation operator is decomposed as \(\hat{a}(t) = \bar{\alpha}(t) + \delta\hat{a}(t)\), where \(\bar{\alpha}(t)\) is a classical complex amplitude and \(\delta\hat{a}(t)\) represents quantum fluctuations.
+Linearizing the electric field operator then yields:
 \begin{equation}
-\hat{\mathbf{E}}(\mathbf{r}, t) = i \mathcal{E} \left(\hat{a}^{\vphantom{dagger}}(t)\mathbf{f}(\mathbf{r})e^{-i\omega_{\ell}t} - \hat{a}^\dagger(t) \mathbf{f}^*(\mathbf{r})e^{i\omega_{\ell}t} \right)
+\hat{\mathbf{E}}(\mathbf{r}, t) = i \mathcal{E} \left[ \bar{\alpha}(t) \mathbf{f}(\mathbf{r}) e^{-i\omega_0 t} 
+- \bar{\alpha}^*(t) \mathbf{f}^*(\mathbf{r}) e^{i\omega_0 t} \right] \quad + i \mathcal{E} \left[ \delta\hat{a}(t) \mathbf{f}(\mathbf{r}) e^{-i\omega_0 t} - \delta\hat{a}^\dagger(t) \mathbf{f}^*(\mathbf{r}) e^{i\omega_0 t} \right]
 \end{equation}
-where we drop the $\ell$ subscript to simplify the notation. The field Hamiltonian then reduces to a single harmonic oscillator Hamiltonian $\hat{H} = \hbar \omega \hat{a}^{\dagger} \hat{a}^{\vphantom{dagger}}$ where we also drop the constant energy offset $\hbar \omega/2$.\\
+The first line represents the full electric field operator, while the second separates it into a classical component, involving the coherent amplitude $\bar{\alpha}(t)$, and a quantum fluctuation term $\delta\hat{a}(t)$. This linearization simplifies the analysis of the field, allowing us to treat the coherent part as a classical field and the fluctuations as a quantum harmonic oscillator. The field Hamiltonian then reduces to a single-mode harmonic oscillator form:
+\begin{equation}
+\hat{H} = \hbar \omega_0 \left( \delta \hat{a}^\dagger \delta \hat{a} + \frac{1}{2} \right),
+\end{equation}
+where $\delta \hat{a}$ is the annihilation operator for the fluctuations. The coherent part contributes a constant energy offset, while the fluctuations behave as a quantum harmonic oscillator with frequency $\omega_0$. This Hamiltonian now features an explicit time dependence through the coherent amplitude $\bar{\alpha}(t)$, which can vary slowly compared to the optical frequency.
+Importantly, the fluctuation operators retain the canonical bosonic commutation relations:
+\[
+[\delta \hat{a}(t), \delta \hat{a}^\dagger(t)] = 1, \qquad
+[\delta \hat{a}(t), \delta \hat{a}(t)] = 0, \qquad
+[\delta \hat{a}^\dagger(t), \delta \hat{a}^\dagger(t)] = 0.
+\]
+These ensure that the quantized nature of the field is preserved under linearization, with $\delta \hat{a}(t)$ and $\delta \hat{a}^\dagger(t)$ obeying the same algebra as the original field operators. \\
 
-\noindent\textbf{Remarks:}
-
-
-
-\color{red} \subsection*{Coherent and squeezed states }
-
-
-
-\color{black}
+\textbf{Remarks:} 
+\begin{itemize}
+  \item The linearization procedure is valid when the coherent amplitude $\bar{\alpha}(t)$ is much larger than the quantum fluctuations, i.e., $|\bar{\alpha}(t)| \gg \langle \delta\hat{a}^\dagger \delta\hat{a} \rangle^{1/2}$.
+  \item This approach is widely used in quantum optics and optomechanics to simplify the analysis of systems driven by strong classical fields, such as lasers.
+  \item The separation into mean field and fluctuations allows us to treat the quantum noise properties independently from the classical dynamics.
+  \item The quantum fluctuation operators $\delta\hat{a}(t)$ describe vacuum or squeezed noise, and their statistics determine the ultimate sensitivity limits in measurement schemes.
+  \item Linearization is the starting point for deriving quantum Langevin equations and for analyzing noise spectra in optomechanical systems.
+\end{itemize}
 \subsection*{Quadrature Operators}
 
-To describe the phase space properties of a field mode, we define the Hermitian quadrature operators $X_{1,l}$ and $X_{2,l}$ as
+To describe the phase space properties of a field mode, we define the Hermitian quadrature operators $\hat{a}_{1,l}$ and $\hat{a}_{2,l}$ as
 \begin{equation}
   \begin{split}
-    \hat{X}_{1,l} &= \hat{a}^{\vphantom{\dagger}}_{\ell} + \hat{a}_{\ell}^\dagger  \\
-    \hat{X}_{2,l} &= \hat{a}^{\vphantom{\dagger}}_{\ell} - \hat{a}_{\ell}^\dagger
+    \hat{a}_{1,l} &= \hat{a}^{\vphantom{\dagger}}_{\ell} + \hat{a}_{\ell}^\dagger  \\
+    \hat{a}_{2,l} &= \hat{a}^{\vphantom{\dagger}}_{\ell} - \hat{a}_{\ell}^\dagger
   \end{split}
 \end{equation}
 More generally we can define arbitrary quadrature operators as 
 \begin{align}
-  \hat{X}_{\theta,l} &= e^{i\theta}\hat{a}_{\ell}+ e^{-i\theta}\hat{a}_{\ell}^{\dagger} \notag \\ 
-  & = \cos \theta \hat{X}_{1,l} + \sin \theta \hat{X}_{2,l}
+  \hat{a}_{\theta,l} &= e^{i\theta}\hat{a}_{\ell}+ e^{-i\theta}\hat{a}_{\ell}^{\dagger} \notag \\ 
+  & = \cos \theta \hat{a}_{1,l} + \sin \theta \hat{a}_{2,l}
 \end{align}
-where we notice that $\hat{X}_{1,l} = \hat{X}_{\theta=0\vphantom{\pi/2},l}$ and $\hat{X}_{1,l} = \hat{X}_{\theta=\pi/2,l}$. These are Hermitian operators corresponding to measurable observables and satisfy the commutation relation
+where we notice that $\hat{a}_{1,l} = \hat{a}_{\theta=0\vphantom{\pi/2},l}$ and $\hat{a}_{1,l} = \hat{a}_{\theta=\pi/2,l}$. These are Hermitian operators corresponding to measurable observables and satisfy the commutation relation
 \begin{equation}
-[X_{\theta \vphantom{\pi/2},l}, X_{\theta+\pi/2,l}] = 2i
+[a_{\theta \vphantom{\pi/2},l}, a_{\theta+\pi/2,l}] = 2i
 \end{equation}
 
 \subsection*{Uncertainty Principle and Quantum Noise}
 
 For two generic Hermitian operators $\hat{A}$ and $\hat{B}$, the Heisenberg uncertainty principle reads as 
 \begin{equation}
-  \Delta \hat{A}\Delta \hat{B} > \frac{1}{2} |[\hat{A}, \hat{B}]|
+  \Delta \hat{A}\Delta \hat{B} \geq \frac{1}{2} |[\hat{A}, \hat{B}]|
 \end{equation}
 where we defines $\Delta \hat{A}=\sqrt{|\langle \hat{A}^2\rangle - \langle \hat{A} \rangle^2|}$. This defines the minimum amount of quantum noise (vacuum fluctuations) in the electromagnetic field.
 Applying this equation to the quadratures defined above we get 
 \begin{equation}
    \begin{split}
-    \Delta \hat{X}_{1,l} \Delta \hat{X}_{2,l} &> 1 \\
-    \Delta X_{\theta \vphantom{\pi/2},l} \Delta X_{\theta \vphantom{\pi/2},l} &> 1
+    \Delta \hat{a}_{1,l} \Delta \hat{a}_{2,l} &\geq 1 \\
+    \Delta \hat{a}_{\theta \vphantom{\pi/2},l} \Delta \hat{a}_{\theta +\pi/2,l} &\geq 1
    \end{split}
 \end{equation}
 \subsection*{Coherent States}
