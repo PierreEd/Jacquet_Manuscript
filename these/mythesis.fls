@@ -1,8 +1,8 @@
-PWD c:/Users/OMQ/Downloads/Jacquet_Manuscript/these
+PWD c:/Users/jacqu/OneDrive/Desktop/manuscript/Jacquet_Manuscript/these
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/OMQ/Downloads/Jacquet_Manuscript/these/mythesis.tex
+INPUT c:/Users/jacqu/OneDrive/Desktop/manuscript/Jacquet_Manuscript/these/mythesis.tex
 OUTPUT mythesis.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/book.cls
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/book.cls
@@ -103,6 +103,22 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT ./thcoverdata.tex
 INPUT ./thcoverdata.tex
 INPUT thcoverdata.tex
+INPUT c:/texlive/2025/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT ./preamb/preamb-graph.tex
 INPUT ./preamb/preamb-graph.tex
 INPUT ./preamb/preamb-graph.tex
@@ -182,14 +198,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code
 INPUT ./preamb/preamb-math.tex
 INPUT ./preamb/preamb-math.tex
 INPUT ./preamb/preamb-math.tex
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
@@ -263,8 +271,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./mythesis.aux
 INPUT ./mythesis.aux
 INPUT mythesis.aux
@@ -415,11 +421,24 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmcsco10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT ./chap2/fig/quantumstates (2).pdf
+INPUT ./chap2/fig/quantumstates (2).pdf
+INPUT ./chap2/fig/quantumstates (2).pdf
+INPUT ./chap2/fig/quantumstates (2).pdf
+INPUT ./chap2/fig/quantumstates (2).pdf
+INPUT ./chap2/fig/quadratures_phasespace.pdf
+INPUT ./chap2/fig/quadratures_phasespace.pdf
+INPUT ./chap2/fig/quadratures_phasespace.pdf
+INPUT ./chap2/fig/quadratures_phasespace.pdf
+INPUT ./chap2/fig/quadratures_phasespace.pdf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT ./chap3/chap3.tex
 OUTPUT ./chap3/chap3.aux
 INPUT ./chap3/chap3.tex
@@ -480,6 +499,7 @@ INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
