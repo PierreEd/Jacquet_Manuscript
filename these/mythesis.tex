@@ -1,19 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Modèle de thèse électronique pour les sciences (c) Jean Hare 2017
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Format personnalisé avec %& :  doit figurer  seul sur la 1ière ligne %
-%%&"mythesis"
-%%% Les trois commentaires spéciaux ci-dessous sont destinés à l'éditeur TeXWorks
-% !TeX encoding = UTF-8
-% !TeX program = pdflatex 
-% !TeX spellcheck = fr_FR
+
 \documentclass[a4paper,11pt]{book} %ADD diffusion OR archiv for final versions
-\usepackage[utf8]{inputenc}
-%\usepackage[latin9]{inputenc}
+% \usepackage[latin9]{inputenc}
+\usepackage[T1]{fontenc}    % Output encoding: allows proper hyphenation and accents
+\usepackage[utf8]{inputenc} % Input encoding: allows typing é, è, ñ, etc.
+\usepackage{lmodern}        % Scalable fonts with full T1 support
 \usepackage{xspace}			  
 \usepackage[english]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage[margin=28mm,includeheadfoot,bindingoffset=5mm]{geometry}
 \usepackage{thcover}
 \usepackage{physics}
@@ -23,23 +15,32 @@
 \input{./preamb/preamb-math.tex}
 \input{./preamb/preamb-util.tex}
 \usepackage[pagebackref]{hyperref}
-\hypersetup{colorlinks,linkcolor=DarkBlue,anchorcolor=DarkRed,%
-pdfdisplaydoctitle=true,pdfpagemode=UseOutlines,%
-bookmarksnumbered=true,bookmarksopen=true}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={My Thesis Title},
+    pdfauthor={Author Name},
+    pdfsubject={Thesis Subject},
+    pdfkeywords={keyword1, keyword2, keyword3},
+}
 \usepackage{thcover}  %\usepackage{thcoverpsl} dor psl thesis
 \usepackage{minitoc}
-\usepackage{etoc}
-
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}} % Figure numbering: Chapter.Figure
+\renewcommand{\thetable}{\thechapter.\arabic{table}}   % Table numbering: Chapter.Table
 \begin{document}
-\dominitoc\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGES LIMINAIRES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \input{thcoverdata.tex} % Ensure this file is correctly filled
 \frontcover\ % requires thcover.sty loaded and thcoverdata.tex filled
 % \include{these/thanks.tex}
+\dominitoc\
+\begingroup
+\setstretch{1.8} % or \singlespacing, \onehalfspacing, etc.
 \tableofcontents
-
-% \include{these/chap0.tex}
+\endgroup % \include{these/chap0.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter\ 
 % Ensure the file path and permissions are correct
