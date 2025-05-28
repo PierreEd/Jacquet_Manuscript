@@ -17,55 +17,45 @@
 \usepackage[margin=28mm,includeheadfoot,bindingoffset=5mm]{geometry}
 \usepackage{thcover}
 \usepackage{physics}
+\usepackage{setspace}
+\usepackage{caption} % Load caption before minitoc
 \input{./preamb/preamb-graph.tex}
 \input{./preamb/preamb-math.tex}
 \input{./preamb/preamb-util.tex}
-\input{./preamb/preamb-titles.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HYPERREF %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[pagebackref]{hyperref}
 \hypersetup{colorlinks,linkcolor=DarkBlue,anchorcolor=DarkRed,%
 pdfdisplaydoctitle=true,pdfpagemode=UseOutlines,%
 bookmarksnumbered=true,bookmarksopen=true}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TOOLS DURING WRITONG (to be removed) %%%%%%%%%%
-%\input{./preamb/preamb-work.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF CUSTOM FORMAT%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\csname{} endofdump \endcsname
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% SELECTED INCLUDES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\includeonly{intro,chap1}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CUSTOM PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{thcover}  %\usepackage{thcoverpsl} dor psl thesis
-%\usepackage{versionswitch}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{minitoc}
+\usepackage{etoc}
+
 \begin{document}
+\dominitoc\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGES LIMINAIRES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \input{thcoverdata.tex} % Ensure this file is correctly filled
-\frontcover % requires thcover.sty loaded and thcoverdata.tex filled
+\frontcover\ % requires thcover.sty loaded and thcoverdata.tex filled
 % \include{these/thanks.tex}
 \tableofcontents
 
 % \include{these/chap0.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mainmatter
+\mainmatter\ 
 % Ensure the file path and permissions are correct
 \include{./chap1/chap1.tex}
 \include{./chap2/chap2.tex}
-
 \include{./chap3/chap3.tex}
-
 \include{./chap4/chap4.tex}
-
 \include{./chap5/chap5.tex}
-
 \include{./chap6/chap6.tex}
-
 \appendix
 \include{appA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\backmatter
+\backmatter\ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cleardoublepage
-\phantomsection
+\cleardoublepage\ 
+\phantomsection\ 
 % \addcontentsline{toc}{chapter}{Bibliographie}
 %%%%% use of BiBTeX:
 % \bibliographystyle{these/bib/thesefr-href}
@@ -73,5 +63,5 @@ bookmarksnumbered=true,bookmarksopen=true}
 %%%%% to be replaced by,  for final version:
 %\intput{mythesis.bbl}
 %%%%%%%%%%%%%%%%%%%%%%%%%  4th COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\backcover % requires thcover.sty loaded and thcoverdata.tex filled
+\backcover\ % requires thcover.sty loaded and thcoverdata.tex filled
 \end{document}

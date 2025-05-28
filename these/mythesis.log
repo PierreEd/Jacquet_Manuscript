@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  27 MAY 2025 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  28 MAY 2025 10:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -315,7 +315,25 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)) (./preamb/preamb-graph.tex (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+)) (c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen183
+\captionmargin=\dimen184
+\caption@leftmargin=\dimen185
+\caption@rightmargin=\dimen186
+\caption@width=\dimen187
+\caption@indent=\dimen188
+\caption@parindent=\dimen189
+\caption@hangindent=\dimen190
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count333
+\c@continuedfloat=\count334
+) (./preamb/preamb-graph.tex (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -342,23 +360,6 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
 ) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen183
-\captionmargin=\dimen184
-\caption@leftmargin=\dimen185
-\caption@rightmargin=\dimen186
-\caption@width=\dimen187
-\caption@indent=\dimen188
-\caption@parindent=\dimen189
-\caption@hangindent=\dimen190
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count333
-\c@continuedfloat=\count334
-)
 Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count335
 Package caption Info: New subtype `subtable' on input line 238.
@@ -483,24 +484,7 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen259
 \ESO@tempdimb=\dimen260
-) (./preamb/preamb-titles.tex (c:/texlive/2025/texmf-dist/tex/latex/slantsc/slantsc.sty
-Package: slantsc 2012/01/01 v2.11 Provide Slanted an Italic Small Caps
-LaTeX Info: Redefining \upshape on input line 35.
-LaTeX Info: Redefining \slshape on input line 45.
-LaTeX Info: Redefining \itshape on input line 55.
-LaTeX Info: Redefining \scshape on input line 65.
-) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box59
-\beforetitleunit=\skip59
-\aftertitleunit=\skip60
-\ttl@plus=\dimen261
-\ttl@minus=\dimen262
-\ttl@toksa=\toks37
-\titlewidth=\dimen263
-\titlewidthlast=\dimen264
-\titlewidthfirst=\dimen265
-)) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -523,7 +507,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ) (c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen266
+\@linkdim=\dimen261
 \Hy@linkcounter=\count347
 \Hy@pagecounter=\count348
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -566,13 +550,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen267
+\XeTeXLinkMargin=\dimen262
  (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
 \Fld@menulength=\count351
-\Field@Width=\dimen268
-\Fld@charsize=\dimen269
+\Field@Width=\dimen263
+\Fld@charsize=\dimen264
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -593,36 +577,160 @@ Package hyperref Info: Driver (autodetected): hpdftex.
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 \Fld@listcount=\count355
 \c@bookmark@seq@number=\count356
-\Hy@SectionHShift=\skip61
+\Hy@SectionHShift=\skip59
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 28.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 28.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 28.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 28.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 39.
+ (c:/texlive/2025/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+ (c:/texlive/2025/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write4
+\mtcindent=\skip60
+\mtcskipamount=\skip61
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks37
+\mtc@strutbox=\box59
+\mtc@hstrutbox=\box60
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout4 = `mythesis.mtc0'.
+
+\openout4 = `mythesis.mtc'.
+
+ (./mythesis.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout4 = `mythesis.mtc'.
+
+\openout4 = `mythesis.mtc0'.
+
+\c@mtc=\count357
+\c@minitocdepth=\count358
+\c@ptc=\count359
+\c@parttocdepth=\count360
+\ptcindent=\skip62
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+ (c:/texlive/2025/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+) (c:/texlive/2025/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)) (c:/texlive/2025/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
+ (c:/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count361
+\mult@box=\box61
+\multicol@leftmargin=\dimen265
+\c@unbalance=\count362
+\c@collectmore=\count363
+\doublecol@number=\count364
+\multicoltolerance=\count365
+\multicolpretolerance=\count366
+\full@width=\dimen266
+\page@free=\dimen267
+\premulticols=\dimen268
+\postmulticols=\dimen269
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box62
+\last@line=\box63
+\mc@boxedresult=\box64
+\maxbalancingoverflow=\dimen270
+\mult@rightbox=\box65
+\mult@grightbox=\box66
+\mult@firstbox=\box67
+\mult@gfirstbox=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count367
+\c@columnbadness=\count368
+\c@finalcolumnbadness=\count369
+\last@try=\dimen271
+\multicolovershoot=\dimen272
+\multicolundershoot=\dimen273
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count370
+)
+\Etoc@toctoks=\toks38
+\c@etoc@tocid=\count371
+\etoc@framed@titlebox=\box107
+\etoc@framed@contentsbox=\box108
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
 \openout1 = `mythesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -661,17 +769,17 @@ LaTeX Font Info:    ... okay on input line 39.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen270
-\scratchbox=\box60
-\nofMPsegments=\count358
-\nofMParguments=\count359
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen271
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count372
+\scratchdimen=\dimen274
+\scratchbox=\box109
+\nofMPsegments=\count373
+\nofMParguments=\count374
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count375
+\MPscratchDim=\dimen275
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
+\everyMPtoPDFconversion=\toks40
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -681,12 +789,50 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 39.
+Package hyperref Info: Link coloring ON on input line 33.
  (./mythesis.out) (./mythesis.out)
-\@outlinefile=\write4
-\openout4 = `mythesis.out'.
+\@outlinefile=\write5
+\openout5 = `mythesis.out'.
 
- (./thcoverdata.tex)
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+\Etoc@tf=\read4
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM mythesis.toc on input line 34.
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc1.
+\openout4 = `mythesis.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc2.
+\openout4 = `mythesis.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc3.
+\openout4 = `mythesis.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc4.
+\openout4 = `mythesis.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc5.
+\openout4 = `mythesis.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing mythesis.mtc6.
+\openout4 = `mythesis.mtc6'.
+
+
+
+[1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
+
+]
+
+[2
+
+] (./thcoverdata.tex)
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -719,123 +865,136 @@ Package hyperref Info: Link coloring ON on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=300, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=310, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
-Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 43.
+Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 38.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=302, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=312, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
-Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 43.
+Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 38.
 (pdftex.def)             Requested size: 252.75645pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 43.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 43.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 43.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 43.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 43--43
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 38--38
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
 
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 43--43
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 38--38
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=303, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=313, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
-Package pdftex.def Info: ./fig/logos.png  used on input line 43.
+Package pdftex.def Info: ./fig/logos.png  used on input line 38.
 (pdftex.def)             Requested size: 284.52756pt x 89.39075pt.
 
 
 [-1
 
-
-
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./fig/Sciences_SU.png> <./fig/Logo_LKB.png> <./fig/logos.png>]
+{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./fig/Sciences_SU.png> <./fig/Logo_LKB.png> <./fig/logos.png>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 \frontcover
-                 % requires thcover.sty loaded and thcoverdata.tex filled [0
+l.38 \frontcover
+                \ % requires thcover.sty loaded and thcoverdata.tex filled [0
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 45.
- (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./mythesis.toc
+\tf@toc=\write6
+\openout6 = `mythesis.toc'.
+
+
+
+[1]
+
+[2
+
+]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <10.95> on input line 41.
 
 
-[1
+[3]
 
-])
-\tf@toc=\write5
-\openout5 = `mythesis.toc'.
+[4]
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 \include{./chap1/chap1.tex}
+                                 [1
 
-[2]
+]
 \openout2 = `./chap1/chap1.aux'.
 
  (./chap1/chap1.tex
-Chapter I.
-)
 
-[1
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Introduction}\label{chap:intro} [2
 
 
 ]
+Chapter 1.
+)
+
+[3]
 \openout2 = `./chap2/chap2.aux'.
 
  (./chap2/chap2.tex
 
-[2
+[4
 
 
 
 
 ]
-Chapter II.
+Chapter 2.
 
 
-[3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
@@ -847,82 +1006,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
 
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+[6{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
 
 
-[5]
-<./chap2/fig/quantumstates (2).pdf, id=448, 423.9461pt x 155.59116pt>
+[7]
+<./chap2/fig/quantumstates (2).pdf, id=500, 423.9461pt x 155.59116pt>
 File: ./chap2/fig/quantumstates (2).pdf Graphic file (type pdf)
 <use ./chap2/fig/quantumstates (2).pdf>
-Package pdftex.def Info: ./chap2/fig/quantumstates (2).pdf  used on input line 114.
+Package pdftex.def Info: ./chap2/fig/quantumstates (2).pdf  used on input line 120.
 (pdftex.def)             Requested size: 423.94609pt x 155.59314pt.
-<./chap2/fig/quadratures_phasespace.pdf, id=449, 425.34344pt x 146.1082pt>
+<./chap2/fig/quadratures_phasespace.pdf, id=501, 425.34344pt x 146.1082pt>
 File: ./chap2/fig/quadratures_phasespace.pdf Graphic file (type pdf)
 <use ./chap2/fig/quadratures_phasespace.pdf>
-Package pdftex.def Info: ./chap2/fig/quadratures_phasespace.pdf  used on input line 124.
+Package pdftex.def Info: ./chap2/fig/quadratures_phasespace.pdf  used on input line 130.
 (pdftex.def)             Requested size: 423.94609pt x 145.63742pt.
 
 
-[6 <./chap2/fig/quantumstates (2).pdf>]
+[8]
 
-[7 <./chap2/fig/quadratures_phasespace.pdf>]
+[9 <./chap2/fig/quantumstates (2).pdf>]
 
-[8])
+[10 <./chap2/fig/quadratures_phasespace.pdf>]
 
-[9]
+[11])
 
-[10]
+[12]
 \openout2 = `./chap3/chap3.aux'.
 
  (./chap3/chap3.tex
-Chapter III.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 11.
-
+Chapter 3.
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11
+
+
+[13
 
 
 
 
 ]
+
+[14]
 \openout2 = `./chap4/chap4.aux'.
 
  (./chap4/chap4.tex
+Chapter 4.
 
-[12
-
-
-
-
-]
-Chapter IV.
-
-Overfull \hbox (5.5642pt too wide) in paragraph at lines 6--6
-|\T1/lmss/bx/n/24.88 Experiments : Op-tome-chan-i-cal Three-
- []
+Underfull \vbox (badness 4205) has occurred while \output is active []
 
 
-
-[13]
-
-
-Overfull \hbox (49.29169pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 14 \T1/lmr/m/scsl/10.95 Chapter IV.  Experiments : Optomechanical Three-Mirror Cavity Systems (MATE)
- []
-
-[14])
-\openout2 = `./chap5/chap5.aux'.
-
- (./chap5/chap5.tex
-Chapter V.
-)
 
 [15
 
@@ -930,28 +1067,50 @@ Chapter V.
 
 
 ]
-\openout2 = `./chap6/chap6.aux'.
 
- (./chap6/chap6.tex
 
-[16
+Overfull \hbox (48.62073pt too wide) has occurred while \output is active
+\T1/lmr/m/n/10.95 16 \T1/lmr/m/sl/10.95 CHAPTER 4.  EXPERIMENTS: OPTOMECHANICAL THREE-MIRROR CAVITY SYSTEMS
+ []
+
+[16])
+\openout2 = `./chap5/chap5.aux'.
+
+ (./chap5/chap5.tex
+Chapter 5.
+
+Overfull \hbox (4.89514pt too wide) in paragraph at lines 9--11
+[] \T1/lmr/m/n/10.95 This chap-ter will cover the ex-per-i-men-tal meth-ods used in the de-vel-op-ment of frequency-
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[17
 
 
 
 
 ]
-Overfull \hbox (3.13817pt too wide) in paragraph at lines 1--1
-|\T1/lmss/bx/n/24.88 Summary, con-clu-sion and per-spec-tives| 
- []
 
-)
+[18]
+\openout2 = `./chap6/chap6.aux'.
 
-[17]
+ (./chap6/chap6.tex)
+
+[19
+
+
+
+
+]
 \openout2 = `appA.aux'.
 
  (./appA.tex
 
-[18
+[20
 
 
 
@@ -960,13 +1119,21 @@ Overfull \hbox (3.13817pt too wide) in paragraph at lines 1--1
 Appendix A.
 )
 
-[19]
+[21]
 
-[20
+[22
 
 
 
 ]
+
+[23]
+
+[24
+
+]
+
+[25]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1001,13 +1168,35 @@ Appendix A.
 
 
 
-[21
-
+[26
 
 
 ]
 
-[22
+[27]
+
+[28
+
+]
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the mythesis.maf file.
+\openout4 = `mythesis.maf'.
+
+
+
+Package minitoc(hints) Warning: W0078
+(minitoc(hints))                You have used \dominitoc, 
+(minitoc(hints))                but not \minitoc.
+
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the mythesis.log file.
+
+
+
+[29
 
 ] (./mythesis.aux (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./appA.aux))
  ***********
@@ -1015,21 +1204,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6B976339FBF2FEE26319786DE451CFE9;18017.
+(rerunfilecheck)             Checksum: C779E25452AF09993ED5EBF176938D6D;17452.
  ) 
 Here is how much of TeX's memory you used:
- 19658 strings out of 469590
- 330280 string characters out of 5474519
- 798165 words of memory out of 5000000
- 45905 multiletter control sequences out of 15000+600000
- 720974 words of font info for 102 fonts, out of 8000000 for 9000
+ 22092 strings out of 469590
+ 372050 string characters out of 5474519
+ 853751 words of memory out of 5000000
+ 48294 multiletter control sequences out of 15000+600000
+ 707482 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,19n,134p,1104b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (26 pages, 645054 bytes).
+ 98i,19n,117p,1104b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on mythesis.pdf (37 pages, 596548 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 774 compressed objects within 8 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 1043 PDF objects out of 1200 (max. 8388607)
+ 899 compressed objects within 9 object streams
+ 158 named destinations out of 1000 (max. 500000)
  622 words of extra memory for PDF output out of 10000 (max. 10000000)
 
