@@ -1,10 +1,9 @@
 \newcommand{\adag}[1]{\hat{a}_{#1}^\dagger}
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
-\chapter{ Theory: background}
-\minitoc\
-
+\chapter{Theory: \\ Background}
 This chapter will cover the elementary concepts required to describe an membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will derive the equations of motions of a membrane based optomechanical system with frequency dependent squeezed optical fields. 
-
+\minitoc
+\newpage
 \section{Quantum Optics Concepts}
 \subsection{Quantum Description of Light}
 We introduce briefly field quantization concepts needed to describe monochromatic field propagation and measurements.
@@ -42,7 +41,7 @@ In realistic optical systems such as lasers, the electromagnetic field is rarely
 
 \subsection*{Linearization of the optical field: mean field and fluctuations}
 
-We often consider a single spatial mode of the electromagnetic field with optical frequency \(\omega_0\), and assume the presence of a strong coherent field. In this regime, the annihilation operator is decomposed as \(\hat{a}(t) = \bar{\alpha}(t) + \delta\hat{a}(t)\), where \(\bar{\alpha}(t)=\langle \hat{a}(t)\rangle\) is a classical complex amplitude and \(\delta\hat{a}(t)\) represents quantum fluctuations such that \(\langle \delta \hat{a}(t)=0\rangle\).
+We often consider a single spatial mode of the electromagnetic field with optical frequency \(\omega_0\), and assume the presence of a strong coherent field. In this regime, the annihilation operator is decomposed as \(\hat{a}(t) = \bar{\alpha}(t) + \delta\hat{a}(t)\), where \(\bar{\alpha}(t)=\langle \hat{a}(t)\rangle\) is a classical complex amplitude and \(\delta\hat{a}(t)\) represents quantum fluctuations such that \(\langle \delta \hat{a}(t)\rangle=0\).
 Linearizing the electric field operator then yields:
 \begin{equation}
 \begin{aligned}
@@ -65,12 +64,20 @@ Importantly, the fluctuation operators retain the canonical bosonic commutation 
 [\delta \hat{a}(t), \delta \hat{a}(t)] = 0, \qquad
 [\delta \hat{a}^\dagger(t), \delta \hat{a}^\dagger(t)] = 0.
 \]
-These ensure that the quantized nature of the field is preserved under linearization, with $\delta \hat{a}(t)$ and $\delta \hat{a}^\dagger(t)$ obeying the same algebra as the original field operators. \\
+These ensure that the quantized nature of the field is preserved under linearization, with $\delta \hat{a}(t)$ and $\delta \hat{a}^\dagger(t)$ obeying the same algebra as the original field operators. The number operator can then be written as the sum of a constant (mean) part and a fluctuation part:
+\begin{equation}
+\hat{n}(t) = \hat{a}^\dagger(t)\hat{a}(t) = |\bar{\alpha}(t)|^2 + \bar{\alpha}^*(t)\delta\hat{a}(t) + \bar{\alpha}(t)\delta\hat{a}^\dagger(t) + \delta\hat{a}^\dagger(t)\delta\hat{a}(t)
+\end{equation}
+where the constant (mean) part is simply
+\begin{equation}
+\bar{n}(t) = |\bar{\alpha}(t)|^2
+\end{equation}
+and the remaining terms describe the quantum fluctuations around this mean.
 
 \textbf{Remarks:} 
 \begin{itemize}
   \item The linearization procedure is valid when the coherent amplitude $\bar{\alpha}(t)$ is much larger than the quantum fluctuations, i.e., $|\bar{\alpha}(t)| \gg \langle \delta\hat{a}^\dagger \delta\hat{a} \rangle^{1/2}$.
-  \item This approach is widely used in quantum optics and optomechanics to simplify the analysis of systems driven by strong classical fields, such as lasers.
+  \item This approach is widely used in quantum optics and optomechanics to simplify the analysis of systems driven by strong gaussian fields, such as cohernet or squeezed lasers.
   \item The separation into mean field and fluctuations allows us to treat the quantum noise properties independently from the classical dynamics.
   \item The quantum fluctuation operators $\delta\hat{a}(t)$ describe vacuum or squeezed noise, and their statistics determine the ultimate sensitivity limits in measurement schemes.
   \item Linearization is the starting point for deriving quantum Langevin equations and for analyzing noise spectra in optomechanical systems.
@@ -100,7 +107,7 @@ For two generic Hermitian operators $\hat{A}$ and $\hat{B}$, the Heisenberg unce
 \begin{equation}
   \Delta \hat{A}\Delta \hat{B} \geq \frac{1}{2} |[\hat{A}, \hat{B}]|
 \end{equation}
-where we defines $\Delta \hat{A}=\sqrt{|\langle \hat{A}^2\rangle - \langle \hat{A} \rangle^2|}$. This defines the minimum amount of quantum noise (vacuum fluctuations) in the electromagnetic field.
+where we define $\Delta \hat{A}=\sqrt{|\langle \hat{A}^2\rangle - \langle \hat{A} \rangle^2|}$. This defines the minimum amount of quantum noise (vacuum fluctuations) in the electromagnetic field.
 Applying this equation to the quadratures defined above we get 
 \begin{equation}
    \begin{split}
@@ -108,8 +115,6 @@ Applying this equation to the quadratures defined above we get
     \Delta \hat{a}_{\theta \vphantom{\pi/2}} \Delta \hat{a}_{\theta +\pi/2} &\geq 1
    \end{split}
 \end{equation}
-\subsection*{Coherent States}
-
 
 \begin{figure}
 \centering
@@ -132,39 +137,100 @@ Applying this equation to the quadratures defined above we get
 \end{figure}
 
 
-We now turn to standard optical quantum states, in particular gaussian states i.e.\ full positive in Wigner functin representations such as coherent and squeezed states, that we will denote in braket notation as $\alpha\rangle$ and  $|\alpha\rangle$ are eigenstates of the annihilation operator:
+We now turn to standard optical quantum states, in particular gaussian states i.e.\ full positive in Wigner functin representations such as coherent and squeezed states, that we will denote in braket notation as $\langle\alpha\rangle$ and $|\alpha, \xi\rangle $.
+
+\subsection*{Coherent States}
+The coherent state $\langle\alpha\rangle$ is an eigenstate of the annihilation operator:
 \begin{equation}
 \hat{a}|\alpha\rangle = \alpha|\alpha\rangle
 \end{equation}
-They can be generated by displacing the vacuum:
+And can be expressed in the Fock basis as: 
+\begin{equation}
+|\alpha\rangle = e^{-|\alpha|^2/2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} |n\rangle
+\end{equation}
+and are generated by the action of the displacement operator $\hat{D}(\alpha)$ on the vacuum state $|0\rangle$:
 \begin{equation}
 |\alpha\rangle = \hat{D}|0\rangle, \quad \hat{D}(\alpha) = \exp(\alpha \hat{a}^\dagger - \alpha^* \hat{a})
 \end{equation}
-They exhibit:
-\begin{itemize}
-  \item Minimum uncertainty: $\Delta q = \Delta p = 1/\sqrt{2}$
-  \item Classical-like dynamics
-  \item Poissonian photon statistics
-\end{itemize}
-
+For a coherent state $|\alpha\rangle$, the expectation values and variances of the quadrature operators are:
+\begin{equation}
+\begin{aligned}
+  \langle \hat{a}_\theta \rangle &= 2\,\mathrm{Re}(\alpha e^{i\theta}) \\
+  \Delta \hat{a}_\theta^2 &= 1
+\end{aligned}
+\end{equation}
+That is, the mean value of any quadrature is set by the coherent amplitude, while the variance is unity (in these units) for all quadratures. The mean photon number in a coherent state is given by: 
+\begin{equation}
+\langle \hat{N} \rangle = \langle \alpha | \hat{a}^\dagger \hat{a} | \alpha \rangle = |\alpha|^2
+\end{equation}
+Coherent states are often referred to as "classical" states of light because they exhibit Poissonian photon statistics and minimal uncertainty in phase space, making them the closest quantum analog to classical electromagnetic waves. They are widely used in quantum optics and form the basis for many experimental techniques.
 \subsection*{Squeezed States}
 
-Squeezed states reduce the variance of one quadrature below vacuum level:
+Squeezed states $|\alpha, \xi\rangle $ are quantum states of light in which the noise (variance) of one quadrature is reduced below the vacuum level, at the expense of increased noise in the conjugate quadrature. The single-mode squeezed vacuum state is defined as
 \begin{align}
-|\xi_{\omega,\ell}\rangle &= \hat{S}(\xi_{\omega,\ell}) |0\rangle \\
+|0, \xi\rangle &= \hat{S}(\xi) |0\rangle \\
 \hat{S}(\xi) &= \exp\left[\frac{1}{2}(\xi^* \hat{a}^2 - \xi \hat{a}^{\dagger 2})\right], \quad \xi = r e^{i\phi}
 \end{align}
-For phase quadrature squeezing ($\phi = 0$):
+where $r$ is the squeezing parameter (strength) and $\phi$ is the squeezing angle. For $\phi = 0$ (amplitude quadrature squeezing), the quadrature variances become
 \begin{equation}
-\Delta q_{\omega,\ell} = e^{-r}/\sqrt{2}, \quad \Delta p_{\omega,\ell} = e^{r}/\sqrt{2}
+\Delta X_1 = \frac{e^{-r}}{\sqrt{2}}, \qquad \Delta X_2 = \frac{e^{r}}{\sqrt{2}}
 \end{equation}
-Squeezed light is a key resource for precision metrology and quantum information.
+where $X_1 = (\hat{a} + \hat{a}^\dagger)$ and $X_2 = -i(\hat{a} - \hat{a}^\dagger)$ are the amplitude and phase quadratures, respectively.
+
+The most general Gaussian state is the displaced squeezed state, obtained by applying both the squeezing operator $\hat{S}(\xi)$ and the displacement operator $\hat{D}(\alpha)$ to the vacuum:
+\begin{equation}
+|\alpha, \xi\rangle = \hat{D}(\alpha)\hat{S}(\xi)|0\rangle
+\end{equation}
+where $\hat{D}(\alpha) = \exp(\alpha \hat{a}^\dagger - \alpha^* \hat{a})$ displaces the state in phase space by the complex amplitude $\alpha$.
+
+\textit{Note:} The displacement and squeezing operators do not commute, i.e., $\hat{D}(\alpha)\hat{S}(\xi) \neq \hat{S}(\xi)\hat{D}(\alpha)$. However, both orderings correspond to experimentally valid procedures: one can either squeeze the vacuum and then displace (e.g., by mixing with a coherent state), or first generate a bright coherent state (e.g., by seeding an optical parametric amplifier) and then squeeze it. The resulting state is always a displaced squeezed state, but the relative phase between displacement and squeezing may differ.
+where their respective product satisfies the Heisenberg uncertainty relation. Moreover the mean photon number in the squeezed state is: 
+\begin{equation}
+\langle \hat{N} \rangle = \langle \alpha, \xi | \hat{a}^\dagger \hat{a} | \alpha, \xi \rangle = |\alpha|^2 + \sinh^2 
+\end{equation}
+This shows that the squeezing operation increases the mean photon number of the coherent state by adding photons. Physically, this reflects the fact that generating squeezed light requires injecting energy into the system, so the squeezed vacuum contains correlated field excitations (photons) in even numbers. This is further illustrated by the two-mode squeezing operator, which describes the simultaneous creation or annihilation of photon pairs in two modes (such as upper and lower sidebands or two distinct modes):
+\begin{equation}
+\hat{S}_2(\xi) = \exp\left[ \xi^* \hat{a}_{+} \hat{a}_{-} - \xi \hat{a}_{+}^\dagger \hat{a}_{-}^\dagger \right], \quad \xi = r e^{i\phi}
+\end{equation}
+The expectation values of the annihilation operators $\hat{a}_{+}$ and $\hat{a}_{-}$ in a two-mode squeezed vacuum state $|\xi\rangle = \hat{S}_2(\xi)|0\rangle$ are both zero:
+\begin{equation}
+\langle \xi | \hat{a}_{+} | \xi \rangle = 0, \qquad \langle \xi | \hat{a}_{-} | \xi \rangle = 0
+\end{equation}
+This reflects that the two-mode squeezed vacuum has zero mean field in both modes. However, the expectation value of the product $\hat{a}_{+} \hat{a}_{-}$ is nonzero:
+\begin{equation}
+\langle \xi | \hat{a}_{+} \hat{a}_{-} | \xi \rangle = -e^{i\phi} \sinh r \cosh r
+\end{equation}
+where $\xi = r e^{i\phi}$ is the squeezing parameter. This nonzero correlation is a hallmark of two-mode squeezing and underlies quantum entanglement between the modes.
+This form describes two-mode squeezing, where photon pairs are created or annihilated simultaneously in the $+$ and $-$ modes. For $\phi = 0$, the squeezing is along the amplitude quadrature; for $\phi = \pi/2$, along the phase quadrature. This operator is central to the description of squeezed vacuum states generated by parametric down-conversion and is widely used in quantum optics and optomechanics.
+
+In quantum optics, a two-mode squeezed vacuum state arises from the parametric down-conversion of a pump field at frequency \(2\omega\), producing pairs of photons at symmetric sideband frequencies \(\omega \pm \Omega\). The resulting state is a pure entangled superposition of twin Fock states, of the form
+\[
+|\psi\rangle = \sum_{n=0}^{\infty} c_n\, |n\rangle_+ \otimes |n\rangle_- , \quad \text{with} \quad c_n \propto \tanh^n r,
+\]
+where \(r\) is the squeezing parameter. Importantly, when one sideband is traced out, the reduced state of the remaining mode becomes a thermal state with a Bose-Einstein photon number distribution
+\[
+P_n = \frac{\bar{n}^n}{(\bar{n} + 1)^{n+1}}, \quad \text{with} \quad \bar{n} = \sinh^2 r.
+\]
+This thermal character is not due to any external bath but results from quantum entanglement and the loss of information associated with ignoring one mode of the pair. The corresponding Wigner function is isotropic and broader than that of vacuum, with quadrature variances
+\[
+\langle \hat{X}^2 \rangle = \langle \hat{Y}^2 \rangle = \bar{n} + \frac{1}{2},
+\]
+reflecting excess fluctuations in all directions of phase space. In contrast, a single-mode squeezed vacuum involves an even-parity superposition,
+\[
+|\xi\rangle = \sum_{n=0}^{\infty} d_{2n}\, |2n\rangle,
+\]
+resulting from the same parametric process but in a degenerate configuration where photons are created in indistinguishable pairs. While single-mode squeezing yields quadrature-dependent noise (an elliptical Wigner function), its photon statistics also reveal the underlying pairwise structure of the interaction. Crucially, both processes involve the coherent transformation of vacuum fluctuations rather than thermal excitations. At optical frequencies (\(\omega \sim 300\,\mathrm{THz}\)) and room temperature (\(T = 300\,\mathrm{K}\)), the thermal occupation
+\[
+\bar{n}_{\text{th}} = \frac{1}{e^{\hbar \omega / k_B T} - 1} \sim 10^{-20}
+\]
+is entirely negligible. This stark contrast between thermal and quantum (entanglement-induced) noise is essential to interpreting squeezed state measurements and correctly identifying the quantum origin of excess fluctuations observed in individual modes.
+
 
 
 \vspace{1em}
 This concludes our introduction to the quantum description of light, setting the stage for modelling interactions between quantum optical fields and mechanical resonators.
 
-\subsection{\textcolor{red}{Optical Field Modulations}}
+\subsection{Optical Field Modulations}
 \subsubsection*{Linearization of the Electric Field and Modulation Sidebands}
 
 We consider a single optical mode with a strong coherent drive. The annihilation operator is linearized as:
@@ -172,14 +238,14 @@ We consider a single optical mode with a strong coherent drive. The annihilation
     \hat{a}(t) \to \bar{\alpha}(t) + \delta \hat{a}(t)
 \end{equation}
 where $\bar{\alpha}(t) \in \mathbb{C}$ is the classical coherent amplitude and $\delta \hat{a}(t)$ captures quantum fluctuations.
-
-The classical part of the electric field is then:
+When considering optical features of the quantized electric field, it is common to drop the spatial mode functions $\mathbf{f}(\mathbf{r})$ and $\mathbf{f}^*(\mathbf{r})$ for simplicity, focusing on the time-dependent coherent amplitude $\bar{\alpha}(t)$ and its complex conjugate $\bar{\alpha}^*(t)$. This makes the notation slightly lighter and the classical part of the electric field operator can then be expressed as:
 \begin{equation}
-    \mathbf{E}_{\text{cl}}(\mathbf{r}, t) = i \sqrt{\frac{\hbar \omega}{2 \varepsilon_0}} \left[
-    \mathbf{f}(\mathbf{r})\, \bar{\alpha}(t)\, e^{-i \omega t}
-    - \mathbf{f}^*(\mathbf{r})\, \bar{\alpha}^*(t)\, e^{i \omega t}
+    \mathbf{E}_{\text{cl}}( t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \left[
+    \, \bar{\alpha}(t)\, e^{-i \omega_0 t}
+    - \, \bar{\alpha}^*(t)\, e^{i \omega_0 t}
     \right]
 \end{equation}
+where we dropped the spatial degree of freedom in for clarity.
 
 We now consider two types of sinusoidal modulation at frequency $\Omega$:
 
@@ -187,77 +253,112 @@ We now consider two types of sinusoidal modulation at frequency $\Omega$:
 
 Let the coherent amplitude be modulated in amplitude:
 \begin{equation}
-    \bar{\alpha}(t) = \bar{\alpha}_0 \left(1 + \epsilon_a \cos(\Omega t)\right)
-    = \bar{\alpha}_0 \left(1 + \frac{\epsilon_a}{2} e^{i\Omega t} + \frac{\epsilon_a}{2} e^{-i\Omega t} \right)
+  \bar{\alpha}(t) = \bar{\alpha}_0 \left(1 + \epsilon_a \cos(\Omega t)\right)
 \end{equation}
-with $\epsilon_a \ll 1$. The conjugate is:
-\begin{equation}
-    \bar{\alpha}^*(t) = \bar{\alpha}_0^* \left(1 + \frac{\epsilon_a}{2} e^{i\Omega t} + \frac{\epsilon_a}{2} e^{-i\Omega t} \right)
-\end{equation}
-
-Substituting into the field expression:
+with $\epsilon_a \ll 1$, the field amplitude modulation depth. Substituting into the field expression and dropping the spatial mode functions for clarity:
 \begin{align}
-    \mathbf{E}_{\text{cl}}^{\text{(AM)}}(\mathbf{r}, t) =
-    i \sqrt{\frac{\hbar \omega}{2 \varepsilon_0}} \Big[
-    &\mathbf{f}(\mathbf{r})\, \bar{\alpha}_0 \left( e^{-i\omega t} + \frac{\epsilon_a}{2} e^{-i(\omega - \Omega)t} + \frac{\epsilon_a}{2} e^{-i(\omega + \Omega)t} \right) \nonumber \\
-    - &\mathbf{f}^*(\mathbf{r})\, \bar{\alpha}_0^* \left( e^{i\omega t} + \frac{\epsilon_a}{2} e^{i(\omega - \Omega)t} + \frac{\epsilon_a}{2} e^{i(\omega + \Omega)t} \right)
-    \Big]
+  E_{\text{cl}}^{\text{(AM)}}(t) =
+  i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}}\, \bar{\alpha}_0 \Big[
+  &\underbrace{e^{-i\omega_0 t} - e^{i\omega_0 t}}_{\text{carrier}} \notag \\
+  &+ \underbrace{\frac{\epsilon_a}{2} \left( e^{-i(\omega_0 - \Omega)t} - e^{i(\omega_0 - \Omega)t} \right)}_{\text{lower sideband } (\omega_0 - \Omega)} \notag \\
+  &+ \underbrace{\frac{\epsilon_a}{2} \left( e^{-i(\omega_0 + \Omega)t} - e^{i(\omega_0 + \Omega)t} \right)}_{\text{upper sideband } (\omega_0 + \Omega)}
+  \Big]
 \end{align}
 
 \subsubsection*{Phase Modulation (PM)}
-
 Now consider phase modulation of the coherent amplitude:
 \begin{equation}
-    \bar{\alpha}(t) = \bar{\alpha}_0 e^{i \epsilon_\phi \cos(\Omega t)}
-    \approx \bar{\alpha}_0 \left(1 + i \epsilon_\phi \cos(\Omega t)\right)
-    = \bar{\alpha}_0 \left(1 + \frac{i \epsilon_\phi}{2} e^{i\Omega t} + \frac{i \epsilon_\phi}{2} e^{-i\Omega t} \right)
+  \bar{\alpha}(t) = \bar{\alpha}_0 e^{i \epsilon_\phi \cos(\Omega t)}
+  \approx \bar{\alpha}_0 \left(1 + i \epsilon_\phi \cos(\Omega t)\right)
+  = \bar{\alpha}_0 \left(1 + \frac{i \epsilon_\phi}{2} e^{i\Omega t} + \frac{i \epsilon_\phi}{2} e^{-i\Omega t} \right)
 \end{equation}
-and
-\begin{equation}
-    \bar{\alpha}^*(t) \approx \bar{\alpha}_0^* \left(1 - \frac{i \epsilon_\phi}{2} e^{i\Omega t} - \frac{i \epsilon_\phi}{2} e^{-i\Omega t} \right)
-\end{equation}
-
-Substituting into the field:
+with $\epsilon_\phi \ll 1$, the field phase modulation depth. Substituting into the field expression and dropping the spatial mode functions:
 \begin{align}
-    \mathbf{E}_{\text{cl}}^{\text{(PM)}}(\mathbf{r}, t) =
-    i \sqrt{\frac{\hbar \omega}{2 \varepsilon_0}} \Big[
-    &\mathbf{f}(\mathbf{r})\, \bar{\alpha}_0 \left( e^{-i\omega t} + \frac{i \epsilon_\phi}{2} e^{-i(\omega - \Omega)t} + \frac{i \epsilon_\phi}{2} e^{-i(\omega + \Omega)t} \right) \nonumber \\
-    - &\mathbf{f}^*(\mathbf{r})\, \bar{\alpha}_0^* \left( e^{i\omega t} - \frac{i \epsilon_\phi}{2} e^{i(\omega - \Omega)t} - \frac{i \epsilon_\phi}{2} e^{i(\omega + \Omega)t} \right)
-    \Big]
+  E_{\text{cl}}^{\text{(PM)}}(t) =
+  i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}}\, \bar{\alpha}_0 \Big[
+  &\underbrace{e^{-i\omega_0 t} - e^{i\omega_0 t}}_{\text{carrier}} \notag \\
+  &+ \underbrace{\frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 - \Omega)t} + e^{i(\omega_0 - \Omega)t} \right)}_{\text{lower sideband } (\omega_0 - \Omega)} \notag \\
+  &+ \underbrace{\frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 + \Omega)t} + e^{i(\omega_0 + \Omega)t} \right)}_{\text{upper sideband } (\omega_0 + \Omega)}
+  \Big]
 \end{align}
-
 \subsection*{Interpretation}
-
 In both cases, the field contains a carrier at frequency $\omega$ and two sidebands at $\omega \pm \Omega$. Amplitude modulation results in sidebands that are in phase with the carrier, while phase modulation produces sidebands with a $\pm \pi/2$ phase shift relative to the carrier.
-
 \subsection{Quantum Noise and Uncertainty}
+
+
 \subsection{Sideband Representation}
-\hspace{1pt}
+We begin by recalling the quantized electric field operator for a single spatial mode with carrier frequency $\omega_0$ and mode function $\mathbf{f}(\mathbf{r})$ (as in Eq.~II.1):
+\begin{equation}
+\hat{\mathbf{E}}(\mathbf{r}, t) = i \mathcal{E} \left[ \hat{a}(t)\, \mathbf{f}(\mathbf{r})\, e^{-i \omega_0 t} - \hat{a}^\dagger(t)\, \mathbf{f}^*(\mathbf{r})\, e^{i \omega_0 t} \right]
+\end{equation}
+where $\hat{a}(t)$ is the slowly varying annihilation operator in the rotating frame.
+To analyze the field in the sideband representation, we express the annihilation operator in terms of its Fourier components over positive frequencies:
+\begin{equation}
+\hat{a}(t) = \int_0^\infty \frac{d\omega}{2\pi} \, \hat{a}(\omega) e^{-i\omega t} 
+\end{equation}
+We introduce a central carrier frequency \( \omega_0 \) and define sideband frequencies via \( \Omega = \omega_0 - \omega \). Furthermore, we assume that the field is band-limited to a finite bandwidth \( B \) around the carrier frequency, which reduces the shifted range of integration to :
+\[
+\omega \in [0, \infty[ \quad \Rightarrow \quad \Omega \in [-\omega_0, \infty[ \quad \Rightarrow \quad \Omega \in [-B, B[
+\]
+so that the expression reduces to 
+\begin{equation}
+\hat{a}(t) 
+= e^{-i \omega_0 t }\int_{-B}^{B} \frac{d\Omega}{2\pi} \, \hat{a}_+(\Omega)  e^{-i(\Omega)t}
+\end{equation}
+where we defined the sideband annihilation operators:
+\begin{equation}
+\hat{a}_+(\Omega) := \hat{a}(\omega_0 + \Omega), \quad
+\hat{a}_-(\Omega) := \hat{a}(\omega_0 - \Omega)
+\end{equation}
+The above field expression is then succintly written as: 
+\begin{equation}
+  \hat{a}(t) = e^{-i \omega_0 t }\int_{0}^{B} \frac{d\Omega}{2\pi} \left[ \hat{a}_+(\Omega) e^{-i\Omega t} + \hat{a}_-(\Omega) e^{i\Omega t} \right]
+\end{equation}
+
+
+
 
 \section{Optical Cavities: Basics}
 \subsection{Cavity types and Resonance Conditions}
 \subsection{Spatial and Longitudinal Modes}
-\subsection{Static and Dynamical effects}
-\hspace{1pt}
+\subsection{Quantum Langevin Equations}
 
-\section{\texorpdfstring{\color{red}Optical Cavities: Three Mirror Cavities}{Optical Cavities: Three Mirror Cavities}}
+We consider a bosonic mode described by the annihilation operator \(\hat{a}(t)\), interacting with several independent Markovian reservoirs. The system is governed by a Hamiltonian \(\hat{H}_\mathrm{sys}\), and each reservoir introduces dissipation characterized by a decay rate \(\kappa_i\). In the Heisenberg picture, the dynamics of \(\hat{a}(t)\) is given by the quantum Langevin equation:
+%
+\begin{equation}
+\frac{d}{dt} \hat{a}(t) = -i [\hat{a}, \hat{H}_\mathrm{sys}] - \frac{\kappa}{2} \hat{a}(t) + \sum_i \sqrt{\kappa_i} \, \hat{a}_{\mathrm{in},i}(t),
+\label{eq:qle}
+\end{equation}
+where:
+\begin{itemize}
+  \item \(\kappa = \sum_i \kappa_i\) is the total decay rate,
+  \item \(\hat{a}_{\mathrm{in},i}(t)\) are the input noise operators associated with each reservoir.
+\end{itemize}
+\noindent
+The input fields \(\hat{a}_{\mathrm{in},i}(t)\) model quantum fluctuations entering the system from each bath. For uncorrelated reservoirs in the vacuum state, these noise operators satisfy the following correlation and commutation relations:
+%
+\begin{align}
+\left[ \hat{a}_{\mathrm{in},i}(t), \hat{a}^\dagger_{\mathrm{in},j}(t') \right] &= \delta_{ij} \, \delta(t - t'), \\
+\langle \hat{a}_{\mathrm{in},i}(t) \hat{a}^\dagger_{\mathrm{in},j}(t') \rangle &= \delta_{ij} \, \delta(t - t'), \\
+\langle \hat{a}^\dagger_{\mathrm{in},i}(t) \hat{a}_{\mathrm{in},j}(t') \rangle &= 0.
+\end{align}
+Equation~\eqref{eq:qle} encapsulates the interplay between coherent evolution driven by the system Hamiltonian, dissipation into multiple channels, and quantum noise introduced by each reservoir. This structure is particularly relevant in cavity and circuit quantum electrodynamics, where a single bosonic mode (e.g., an optical or microwave cavity) is simultaneously coupled to several loss ports (e.g., transmission lines, internal losses, or detection chains).
+
+
+
+\section{Optical Cavities: Three Mirror Cavities}
 \subsection{}
-\hspace{1pt}
 
 \section{Cavity Optomechanics}
 \subsection{Radiation Pressure Coupling}
 \subsection{Quantum Langevin Equations}
-\subsection{\texorpdfstring{Mechanical Resonators}{Mechanical Resonators}}
+\subsection{Mechanical Resonators}{Mechanical Resonators}
 \subsection{Noise spectra}
-\subsection{\texorpdfstring{\color{red} Three Mirror Cavities as Novel Optomechanical Systems}{Three Mirror Cavities as Novel Optomechanical Systems}}
-\hspace{1pt}
+\subsection{Three Mirror Cavities as Novel Optomechanical Systems}
 
 \section{Squeezed Light Theory}
 \subsection{Single-mode Squeezing}
 \subsection{Noise Spectra }
 \subsection{Frequency-dependent Squeezing and its use}
-\hspace{1pt}
 
 \section{Numerical Methods and Simulations}
-
-lets write smth here 

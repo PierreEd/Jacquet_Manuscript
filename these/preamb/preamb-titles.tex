@@ -11,8 +11,8 @@
 \pagestyle{headings}
 \usepackage{slantsc}
 \makeatletter
-\patchcmd{\chaptermark}{\MakeUppercase}{\scshape\slshape}{}{}%
-\patchcmd{\sectionmark}{\MakeUppercase}{\scshape\slshape}{}{}%
+\patchcmd{\chaptermark}{\MakeUppercase}{\scshape\slshape\/}{}{}\%
+\patchcmd{\sectionmark}{\MakeUppercase}{\scshape\slshape\}{}{}\%
 \patchcmd{\sectionmark}{\thesection.}{\thesection}{}{}       % suppression du point IV.1. -> IV.1
 \makeatother
 %%% Réglages des numérotations

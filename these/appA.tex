@@ -1,6 +1,117 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = fr_FR
 % !TeX root = mythesis.tex
-\chapter{Un appendice}
 
-I'll write something here.
+\chapter*{Appendix: Derivation of the Pound-Drever-Hall Error Signal Using the Quantum-Normalized Electric Field}
+\addcontentsline{toc}{section}{Appendix: PDH Derivation}
+
+In this appendix, we derive the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
+
+\subsection*{1. Input Phase-Modulated Field}
+
+The electric field at the input of the cavity is assumed to be a coherent state that has been phase-modulated at frequency \( \Omega \), such that the classical (real) electric field takes the form:
+\begin{equation}
+    E_{\text{cl}}^{(\text{PM})}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \left[
+        e^{-i\omega_0 t} - e^{i\omega_0 t}
+        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 - \Omega)t} + e^{i(\omega_0 - \Omega)t} \right)
+        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 + \Omega)t} + e^{i(\omega_0 + \Omega)t} \right)
+    \right]
+    \label{eq:pm_field}
+\end{equation}
+where \( \alpha_0 \) is the coherent amplitude of the carrier, \( \epsilon_\phi \ll 1 \) is a small modulation index (related to the phase modulation depth), and \( \omega_0 \) is the optical carrier frequency. This field includes both the positive and negative frequency components, as expected for a physical (Hermitian) electric field operator.
+
+\subsection*{2. Reflection from the Cavity}
+
+Each frequency component of the field is reflected with a complex frequency-dependent amplitude reflection coefficient \( r(\omega) \), such that the reflected field is:
+\begin{equation}
+\begin{aligned}
+    E_{\text{refl}}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \Big[
+    & r(\omega_0) e^{-i\omega_0 t} - r^*(\omega_0) e^{i\omega_0 t} \\
+    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 - \Omega) e^{-i(\omega_0 - \Omega)t} + r^*(\omega_0 - \Omega) e^{i(\omega_0 - \Omega)t} \right) \\
+    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 + \Omega) e^{-i(\omega_0 + \Omega)t} + r^*(\omega_0 + \Omega) e^{i(\omega_0 + \Omega)t} \right)
+    \Big]
+\end{aligned}
+\label{eq:refl_field}
+\end{equation}
+
+\subsection*{3. Photodetected Intensity}
+
+The photodetector measures the intensity:
+\[
+I(t) \propto |E_{\text{refl}}(t)|^2
+\]
+We isolate the terms oscillating at \( \Omega \), which arise from the interference between the carrier and sideband components. Keeping only the beat terms between the carrier and sidebands, we find:
+\begin{equation}
+I(t) \supset \epsilon_\phi \cdot \Re\left[ A_+ - A_- \right] \cos(\Omega t)
++ \epsilon_\phi \cdot \Im\left[ A_+ - A_- \right] \sin(\Omega t)
+\label{eq:intensity_beats}
+\end{equation}
+where we define:
+\[
+A_\pm = r(\omega_0) r^*(\omega_0 \pm \Omega)
+\]
+
+\subsection*{4. Demodulation with Arbitrary Phase}
+
+The signal is demodulated using a local oscillator \( \cos(\Omega t + \phi) \), where \( \phi \) is the demodulation phase. Using trigonometric identities:
+\[
+\cos(\Omega t + \phi) = \cos(\Omega t)\cos\phi - \sin(\Omega t)\sin\phi
+\]
+we multiply Equation~\eqref{eq:intensity_beats} and low-pass filter to obtain:
+\begin{equation}
+\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
+\Re[A_+ - A_-] \cos\phi + \Im[A_+ - A_-] \sin\phi
+\right\}
+\label{eq:error_signal_general}
+\end{equation}
+
+\subsection*{5. Sidebands Far Off-Resonance Approximation}
+
+In the standard PDH regime, the modulation frequency is much greater than the cavity linewidth:
+\[
+\Omega \gg \kappa
+\]
+so the sidebands are far off-resonance. This means:
+\[
+r(\omega_0 \pm \Omega) \approx 1 \quad \Rightarrow \quad A_\pm \approx r(\omega_0)
+\]
+and therefore:
+\[
+A_+ - A_- \approx 0
+\]
+However, if we retain the asymmetry between the sidebands (e.g., due to dispersion), or keep the finite detuning contribution, we approximate:
+\[
+A_+ - A_- \approx r(\omega_0) \left[ r^*(\omega_0 + \Omega) - r^*(\omega_0 - \Omega) \right] = r(\omega_0) \Delta r^*
+\]
+
+\subsection*{6. Final Result}
+
+Substituting into Equation~\eqref{eq:error_signal_general}, we obtain:
+\begin{equation}
+\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
+\Re[r(\omega_0) \Delta r^*] \cos\phi + \Im[r(\omega_0) \Delta r^*] \sin\phi
+\right\}
+\label{eq:error_signal_deltar}
+\end{equation}
+
+In the limit where \( \Delta r^* \rightarrow 1 \) (normalized, symmetric sidebands), this simplifies to:
+\begin{equation}
+\boxed{
+\epsilon_{\text{PDH}}(\omega_0, \phi) \propto \cos\phi \cdot \Re[r(\omega_0)] + \sin\phi \cdot \Im[r(\omega_0)]
+}
+\label{eq:pdh_final}
+\end{equation}
+
+\subsection*{7. Interpretation}
+
+Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linear superposition of the real and imaginary parts of the complex reflection coefficient. The demodulation phase \( \phi \) selects the detected quadrature:
+\begin{itemize}
+    \item \( \phi = 0 \): error signal is proportional to \( \Re[r] \) — symmetric around resonance, not suitable for locking.
+    \item \( \phi = \pi/2 \): error signal is proportional to \( \Im[r] \) — antisymmetric, ideal dispersive error signal.
+    \item \( \phi \ne 0, \pi/2 \): mixes quadratures, possibly introducing offset or distortion.
+\end{itemize}
+
+\bigskip
+
+This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
+

@@ -25,25 +25,25 @@
     pdfsubject={Thesis Subject},
     pdfkeywords={keyword1, keyword2, keyword3},
 }
-\usepackage{thcover}  %\usepackage{thcoverpsl} dor psl thesis
 \usepackage{minitoc}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thefigure}{\thechapter.\arabic{figure}} % Figure numbering: Chapter.Figure
 \renewcommand{\thetable}{\thechapter.\arabic{table}}   % Table numbering: Chapter.Table
+\dominitoc
 \begin{document}
+% Ensure consistent and flat minitoc spacing (uses titletoc
+% Patch minitoc internal spacing
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGES LIMINAIRES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \input{thcoverdata.tex} % Ensure this file is correctly filled
 \frontcover\ % requires thcover.sty loaded and thcoverdata.tex filled
-% \include{these/thanks.tex}
-\dominitoc\
+\include{./thanks.tex}\
 \begingroup
 \setstretch{1.8} % or \singlespacing, \onehalfspacing, etc.
 \tableofcontents
 \endgroup % \include{these/chap0.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXT BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter\ 
-% Ensure the file path and permissions are correct
 \include{./chap1/chap1.tex}
 \include{./chap2/chap2.tex}
 \include{./chap3/chap3.tex}

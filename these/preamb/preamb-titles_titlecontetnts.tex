@@ -13,9 +13,10 @@
 \usepackage[rightlabels]{titletoc}
 %\usepackage[rightlabels]{titletoc}
 \makeatletter
-\patchcmd{\chaptermark}{\MakeUppercase}{\scshape\slshape}{}{}%
-\patchcmd{\sectionmark}{\MakeUppercase}{\scshape\slshape}{}{}%
-\patchcmd{\sectionmark}{\thesection.}{\thesection}{}{}       % suppression du point IV.1. -> IV.1
+\patchcmd{\chaptermark}{\MakeUppercase}{\scshape\slshape}{}{}
+\patchcmd{\sectionmark}{\MakeUppercase}{\scshape\slshape\}{}{}
+\patchcmd{\sectionmark}{\thesection.}{\thesection}{}{}       
+%  suppression du point IV.1. -> IV.1
 \makeatother
 %%% Réglages des numérotations
 \setcounter{secnumdepth}{4}                          % numérote chapter, section, sub(sub)sect
