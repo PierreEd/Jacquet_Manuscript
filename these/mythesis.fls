@@ -121,6 +121,10 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
@@ -200,8 +204,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code
 INPUT ./preamb/preamb-math.tex
 INPUT ./preamb/preamb-math.tex
 INPUT ./preamb/preamb-math.tex
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/bbm-macros/bbm.sty
@@ -715,6 +717,7 @@ OUTPUT mythesis.mtc2
 OUTPUT mythesis.mtc3
 OUTPUT mythesis.mtc4
 OUTPUT mythesis.mtc5
+OUTPUT mythesis.mtc6
 INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -743,6 +746,9 @@ INPUT ./chap5/chap5.aux
 INPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.aux
+INPUT ./chap7/chap7.aux
+INPUT ./chap7/chap7.aux
+INPUT ./chap7/chap7.aux
 INPUT ./appA.aux
 INPUT ./appA.aux
 INPUT appA.aux
@@ -921,19 +927,19 @@ INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT ./chap2/fig/quantumstates (2).pdf
-INPUT ./chap2/fig/quantumstates (2).pdf
-INPUT ./chap2/fig/quantumstates (2).pdf
-INPUT ./chap2/fig/quantumstates (2).pdf
-INPUT ./chap2/fig/quantumstates (2).pdf
-INPUT ./chap2/fig/quadratures_phasespace.pdf
-INPUT ./chap2/fig/quadratures_phasespace.pdf
-INPUT ./chap2/fig/quadratures_phasespace.pdf
-INPUT ./chap2/fig/quadratures_phasespace.pdf
-INPUT ./chap2/fig/quadratures_phasespace.pdf
+INPUT ./chap2/fig/quantum_states.pdf
+INPUT ./chap2/fig/quantum_states.pdf
+INPUT ./chap2/fig/quantum_states.pdf
+INPUT ./chap2/fig/quantum_states.pdf
+INPUT ./chap2/fig/quantum_states.pdf
+INPUT ./chap2/fig/quantum_quadraturesBis.pdf
+INPUT ./chap2/fig/quantum_quadraturesBis.pdf
+INPUT ./chap2/fig/quantum_quadraturesBis.pdf
+INPUT ./chap2/fig/quantum_quadraturesBis.pdf
+INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT ./chap3/chap3.tex
 OUTPUT ./chap3/chap3.aux
 INPUT ./chap3/chap3.tex
@@ -948,11 +954,6 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc3
-INPUT ./chap3/fig/PDHplots.pdf
-INPUT ./chap3/fig/PDHplots.pdf
-INPUT ./chap3/fig/PDHplots.pdf
-INPUT ./chap3/fig/PDHplots.pdf
-INPUT ./chap3/fig/PDHplots.pdf
 INPUT ./chap4/chap4.tex
 OUTPUT ./chap4/chap4.aux
 INPUT ./chap4/chap4.tex
@@ -967,6 +968,11 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc4
+INPUT ./chap3/fig/PDHplots.pdf
+INPUT ./chap3/fig/PDHplots.pdf
+INPUT ./chap3/fig/PDHplots.pdf
+INPUT ./chap3/fig/PDHplots.pdf
+INPUT ./chap3/fig/PDHplots.pdf
 INPUT ./chap5/chap5.tex
 OUTPUT ./chap5/chap5.aux
 INPUT ./chap5/chap5.tex
@@ -981,11 +987,40 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc5
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmbx9.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx9.tfm
+INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT ./chap6/chap6.tex
 OUTPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.tex
 INPUT ./chap6/chap6.tex
 INPUT ./chap6/chap6.tex
+INPUT ./mythesis.mtc6
+INPUT ./mythesis.mtc6
+INPUT mythesis.mtc6
+OUTPUT mythesis.mtc
+INPUT ./mythesis.mtc
+INPUT ./mythesis.mtc
+INPUT mythesis.mtc
+OUTPUT mythesis.mtc
+INPUT mythesis.mtc6
+INPUT ./chap7/chap7.tex
+OUTPUT ./chap7/chap7.aux
+INPUT ./chap7/chap7.tex
+INPUT ./chap7/chap7.tex
+INPUT ./chap7/chap7.tex
 INPUT ./appA.tex
 INPUT ./appA.tex
 OUTPUT appA.aux
@@ -995,6 +1030,8 @@ INPUT appA.tex
 OUTPUT mythesis.maf
 INPUT ./mythesis.mtc
 INPUT ./mythesis.mtc
+INPUT ./mythesis.mtc6
+INPUT ./mythesis.mtc6
 INPUT ./mythesis.mtc5
 INPUT ./mythesis.mtc5
 INPUT ./mythesis.mtc4
@@ -1027,6 +1064,9 @@ INPUT ./chap5/chap5.aux
 INPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.aux
+INPUT ./chap7/chap7.aux
+INPUT ./chap7/chap7.aux
+INPUT ./chap7/chap7.aux
 INPUT ./appA.aux
 INPUT ./appA.aux
 INPUT appA.aux
@@ -1043,6 +1083,7 @@ INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
@@ -1050,9 +1091,12 @@ INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

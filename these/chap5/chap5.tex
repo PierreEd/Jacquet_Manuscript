@@ -1,16 +1,140 @@
-\chapter{Experiments: Frequency Dependent Squeezing}
-This chapter will cover the experimental methods used in the development of frequency-dependent squeezing in optomechanical systems, focusing on the generation of squeezed light, optical locking techniques, and quadrature measurement methods. The methods are designed to enhance the sensitivity of measurements in quantum optics and optomechanics.
+\chapter{Experiments: \\ Optomechanical Three-Mirror Systems}
+% References are needed for historical context, technical claims, and specific data.
+% Suggested [?] placements below:
+
+This chapter will cover the experimental methods used in the development of optomechanical three-mirror cavity systems, focusing on the design, fabrication, and characterization of mechanical resonators within optical cavities. The methods are designed to enhance the sensitivity of measurements in quantum optics and optomechanics.
 \minitoc
 \newpage 
 
-\section{OPO Resonance and Locking}
-\subsection{Resonance Conditions and Sweeps}
-\subsection{Lock Acquisition and Optimization}
-\subsection{Stability Characterization}
-\section{Quadrature Spectral Analysis}
-\subsection{Detection of Squeezing and Anti-squeezing}
-\subsection{Spectral Variation with Frequency}
-\subsection{Optimal Quadrature Conditions}
-\section{Filter Cavity Concept}
-\subsection{Virgo Filter Cavity }
-\subsection{Thermal effects in bichromatic locks}
+Over the past two decades, optomechanical systems have greatly benefited from advancements in optical coating technologies, enabling the realization of high-finesse cavities ($\mathcal{F}>100\,000$)\cite{coating_review}. Simultaneously, progresses in micro/nanofabrication allowed the making of mechanical structures with high $Q$ factors ($>1\,000\,000\,000$)\cite{nanofab_review}. Despite these achievements, a significant challenge remained: fabricating mechanical elements that possess both high $Q$ and high reflectivity, as optical, mechanical and thermal effects often degrade system performance and hinder ultra-sensitive measurements\cite{optomech_challenges}. A pivotal solution, introduced by Regal, Kimble, Harris, and collaborators\cite{Regal2008,Harris2008}, was to decouple these requirements by embedding a high-$Q$ mechanical resonator within a high-finesse optical cavity, using the optical field to probe the resonator’s dynamics.
+\section{System Description and Setup}
+\subsection{Specifications}
+Previous optomechanics experiments at LKB have primarily utilized Fabry-Pérot cavities with two mirrors, where the end mirror of the cavity was typically a HR mirror deposited on top of a mechanical structure featuring a mechanical mode of interest\cite{LKB_FP}. Although the system ended up being limited by various factors mentioned above (optical, mechanical and thermal effects)\cite{optomech_challenges}, the parts designed by L. Neuhaus and R. Metzdorff did feature a high level of passive stability as well as good thermalization properties. It was then decided to build on this design and extend it to a three-mirror cavity. That is the work M. Croquette and myself undertook during my M2 internship and the first year of my PhD. \\
+
+This new three mirror cavity then needed to fulfill various requirements: 
+\begin{itemize}
+    \item \textbf{High Finesse}: input and back mirrors should both have high reflectivities, with low extra losses such as scattering, absorption, etc ...\cite{AmatoPhD}
+    \item \textbf{High $Q$ factor}: the middle mirror i.e. the mechanical resonator, should feature a high $Q$ factor, ideally above $10^6$, in order to ensure a good sensitivity to radiation pressure forces\cite{SiN_review}
+    \item \textbf{Dynamical range}: both input and output mirrors should be mounted on piezoelectric actuators, allowing for a dynamic range of at least few microns to scan few FSRs\cite{piezo_review}
+    \item \textbf{Compactness \& Stability }: the entire assembly should be compact, with a high level of passive stability, yet without mechanically low pass filtering the piezo actuators motion during the locking. 
+    \item \textbf{Vacuum and Cryogenic compatibility}: the cavity should be vacuum compatible, and the mirrors should be thermally anchored to the vacuum chamber in order to ensure a good thermalization of the system. Same holds for the cryogenic compatibility, although no test could be performed during this thesis. The cavity was nonetheless designed to be compatible with cryogenic operation.
+\end{itemize}
+\subsubsection{High Finesse}
+
+Low loss mirrors were produced by \textbf{J.~Degallaix} and \textbf{D.~Hofman} at the
+\textit{Laboratoire des Matériaux Avancés} (LMA, Lyon) using
+ion-beam-sputtered (IBS) Bragg stacks made of 18\% $\mathrm{TiO_2}$‐doped $\mathrm{Ta_2O_5}$ (high index,
+$n\!\approx\!2.10$) and $\mathrm{SiO_2}$ (low index, $n\!\approx\!1.45$)\cite{AmatoPhD,LMA_IBS}. \\
+The coatings were deposited in the LMA's \textit{Veeco SPECTOR} chambers and subsequently annealed at 500°C for 10 hours to minimise mechanical loss, following the recipe of Amato \textit{et~al.}\,\cite{AmatoPhD}%
+\footnote{Identical optics are used for the Advanced LIGO, Advanced Virgo
+and KAGRA interferometers\cite{LIGO_optics}.}.\\
+
+We supplied the LMA with a batch of substrates with various radii of curvature to explore different cavity geometries:
+\begin{itemize}
+  \item \textbf{Plane substrates:} Laseroptik S--00798
+  \item \textbf{Plano-concave substrates:}
+    \begin{itemize}
+        \item Laseroptik S--00128 ($R = 20$ mm)
+        \item Laseroptik S--00127 ($R = 15$ mm)
+        \item Laseroptik S--00126 ($R = 10$ mm)
+    \end{itemize}
+\end{itemize}
+
+All optics feature
+\begin{itemize}
+  \item \textbf{Back‐side AR:} $R < 100\,$ppm (typically a few~ppm),
+  \item \textbf{Front‐side HR:}
+    \begin{itemize}
+        \item[] $T \sim 20 \pm 4\,$ppm on the plane mirrors,
+        \item[] $T \sim 50 \pm 10\,$ppm and $100 \pm 10\,$ppm on the
+                concave mirrors, respectively,
+    \end{itemize}
+  \item total round‐trip scatter\,+\,absorption
+        $\lesssim 20\,$ppm, in agreement with the measurements reported
+        in Ref.\,\cite{AmatoPhD}.
+\end{itemize}
+
+The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence.  After annealing, the measured mechanical loss angle of the $\mathrm{TiO_2\!:\!Ta_2O_5}/\mathrm{SiO_2}$ stack is $\phi < 4\times10^{-4}$ at 1 kHz, supporting cavity finesses in the range $200\,000-500\,000$ before excess scatter or absorption dominates\cite{AmatoPhD}.
+
+\subsubsection{High $Q$ factor}
+
+The middle mirror is a commercially\,–\,available stoichiometric silicon-nitride
+(Si$_3$N$_4$) membrane supplied by Norcada (NX10050AS)\cite{SiN_review,Norcada_datasheet}.
+It consists of a $0.50\,\mathrm{mm}\times0.50\,\mathrm{mm}$, $50\,\mathrm{nm}$-thick
+Si$_3$N$_4$ film suspended in a $10\,\mathrm{mm}\times10\,\mathrm{mm}$,
+$200\,\mu\mathrm{m}$-thick silicon frame and is marketed specifically for
+\emph{high-$Q$} resonator applications.
+
+Because stoichiometric LPCVD Si$_3$N$_4$ is under high intrinsic tensile
+stress ($\sigma\!\approx\!0.9\;\mathrm{GPa}$), the square drum supports
+MHz-frequency modes with exceptionally low mechanical loss\cite{SiN_review}.
+Using the standard relation for a taut square membrane
+\[
+  f_{11} \simeq \frac{1}{2l}\sqrt{\frac{\sigma}{\rho}},
+\]
+the fundamental $(1,1)$ mode of a $0.5\,\mathrm{mm}$ membrane
+lies near $0.8\,\mathrm{MHz}$, while higher-order symmetric modes extend
+into the multi-MHz range.
+
+\begin{itemize}
+  \item \textbf{Room temperature.}  Measurements on nominally identical
+        Norcada membranes report quality factors
+        $Q \sim 5\times10^{6}$ at $\approx1\,\mathrm{MHz}$ in
+        $<10^{-6}$ mbar vacuum, giving a
+        $Qf$ product $ 4\times10^{12}\,\mathrm{Hz}$ \cite{SiN_review,Norcada_datasheet}.
+  \item \textbf{Cryogenic operation.}  Cooling to $T \lesssim 300\,\mathrm{mK}$
+        reduces internal friction by an order of magnitude, with
+        $Q>10^{7}$ routinely observed \cite{SiN_cryogenic}.
+\end{itemize}
+
+On the basis of these results we set the following design targets:
+\[
+  Q_{\mathrm{RT}} \ge 5\times10^{6}, \qquad
+  Q_{\mathrm{cryogenic}} \ge 1\times10^{7}.
+\]
+The membrane’s high stress, thin-film nature and dielectric composition make
+it fully compatible with ultra-high-vacuum environments and repeated
+cryogenic cycling, while introducing negligible optical loss in the cavity.
+These attributes ensure a robust, spectrally clean mechanical resonator for
+advanced quantum-optomechanics experiments.
+
+
+\subsubsection{Dynamical range}
+
+The input (front) mirror is bonded to a PI \texttt{P-016.00H} ring-stack piezoelectric actuator (outer diameter 16\,mm, inner bore 8\,mm, length 7\,mm). Driven from 0 to $+1\,\mathrm{kV}$ it provides a longitudinal stroke of $5\,\mu\text{m}$, a blocking force of $2.9\,\mathrm{kN}$ and an unloaded resonance of 144 kHz, making it suitable for fast, low-noise cavity-length control.
+
+The end-mirror–membrane assembly is mounted on a flexure holder actuated by three \texttt{PD080.31} piezo chips arranged mechanically in series. Each chip yields $2\,\mu\text{m}$ of travel over a drive range of $-20$ to $+100\,\mathrm{V}$; the triple stack therefore supplies roughly $6\,\mu\text{m}$ of coarse tuning while preserving high stiffness and sub-microsecond response.
+
+Combining the $5\,\mu\text{m}$ stroke of the front \texttt{P-016.00H} with the $6\,\mu\text{m}$ range of the rear triple stack provides an overall cavity-length adjustment of about $11\,\mu\text{m}$ — equivalent to more than 20 free spectral ranges — with sub-nanometre resolution when driven by low-noise high-voltage amplifiers.
+
+
+\subsubsection{Compactness \& Stability}
+The entire assembly is built as a cage system using standard Thorlabs cage parts, allowing for a compact and stable assembly\cite{Thorlabs_cage}. The cage system also allows for (relatively) easy alignment of the mirrors, as well as easy access to the piezo actuators.
+
+\subsubsection{Vacuum and Cryogenic compatibility}
+The back cavity composed of the back mirror and the middle mirror is embedded inside an Oxygen Free Copper (OFHC) assembly with a circular geometry, eventually mitigating for transverse misalignment issues when going to cryogenic temperatures, the constraints compensating themselves radially with respect to the symmetry axis of the cavity assembly\cite{OFHC_review}. Furthermore, the screws used to hold the assembly together are made of brass with a thermal expansion coefficient lower than that of the OFC, tightening up the cavity when reaching cryogenic temperatures.
+
+
+
+
+
+\subsection{CAD design}
+
+\subsection{Optical Layout}
+\subsection{Alignment Procedures}
+\section{Middle Mirror as Mechanical Resonator}
+\subsection{Plane Membranes: Design and Characterization}
+\subsection{Phononic Crystals: Dahlia Pattern}
+\subsection{Fabrication and Performance Metrics}
+\section{Experimental Characterization}
+\subsection{Cavity Mode Scanning and Modematching}
+\subsection{Locking Techniques and Stability}
+\subsection{Ringdown Measurements and Q-factor Analysis}
+\section{Data Acquisition and Analysis}
+\subsection{Measurement Setup and Instrumentation}
+\subsection{Spectral Acquisition and Processing}
+\subsection{Feedback Control Implementation}
+\section{Design of an Optomechanical Fibered Cavity}
+\subsection{Design considerations}
+
+
