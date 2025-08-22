@@ -1,16 +1,74 @@
-\chapter{Theory: \\ Optomechanics with Three-Mirror Cavities}
+\chapter{Theory: Three-Mirror Cavities}
 This chapter will cover the elementary concepts required to describe an membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will derive the equations of motions of a membrane based optomechanical system with frequency dependent squeezed optical fields. 
 \minitoc
 \newpage
 
-
-
-\section{Optical Cavities: Three Mirror Cavities}
-\subsection{}
 
 \section{Cavity Optomechanics}
 \subsection{Radiation Pressure Coupling}
 \subsection{Quantum Langevin Equations}
 \subsection{Mechanical Resonators}{Mechanical Resonators}
 \subsection{Noise spectra}
-\subsection{Three Mirror Cavities as Novel Optomechanical Systems}
+
+\section{Three Mirror Cavities}
+\subsection{Hamiltonian Formalism}
+We will derive the Hamiltonian formalism of a three mirror cavity, and show how it can be used to describe the optomechanical coupling of a membrane in the cavity.
+We now have to consider two optical modes coupled to one another through the membrane transmitivities. The Hamiltonian of the system can be written as:
+\begin{equation}
+\hat{H} = \hbar \omega_1 \hat{a}_1^\dagger \hat{a}_1 + \hbar \omega_2 \hat{a}_2^\dagger \hat{a}_2 + \hbar g(\hat{a}_1^\dagger \hat{a}_2 + \hat{a}_2^\dagger \hat{a}_1) + \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega_m^2 \hat{x}^2
+\end{equation}
+where $\hat{a}_1$ and $\hat{a}_2$ are the annihilation operators of the two optical modes, $\omega_1$ and $\omega_2$ their respective frequencies, $g$ the optomechanical coupling strength, $\hat{p}$ and $\hat{x}$ the momentum and position operators of the membrane, $m$ its mass and $\omega_m$ its mechanical frequency. The optomechanical coupling strength $g$ is defined as:
+\begin{equation}
+g = \frac{\omega_1}{L} \sqrt{\frac{\hbar}{2 m \omega_m}} \left( T_1 + T_2 \right)
+\end{equation}
+where $T_1$ and $T_2$ are the transmitivities of the two optical modes through the membrane. The Hamiltonian can be diagonalized by introducing the normal modes of the system, which are the eigenstates of the Hamiltonian. The normal modes can be expressed as:
+\begin{equation}
+\hat{b}_1 = \frac{1}{\sqrt{2}} \left( \hat{a}_1 + \hat{a}_2 \right), \quad \hat{b}_2 = \frac{1}{\sqrt{2}} \left( \hat{a}_1 - \hat{a}_2 \right)
+\end{equation}
+The normal modes $\hat{b}_1$ and $\hat{b}_2$ are the symmetric and antisymmetric modes of the system, respectively. The Hamiltonian can then be rewritten in terms of the normal modes as:
+\begin{equation}
+\hat{H} = \hbar \omega_1 \hat{b}_1
+^\dagger \hat{b}_1 + \hbar \omega_2 \hat{b}_2^\dagger \hat{b}_2 + \hbar g(\hat{b}_1^\dagger \hat{b}_2 + \hat{b}_2^\dagger \hat{b}_1) + \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega_m^2 \hat{x}^2
+\end{equation}
+
+
+\paragraph{Diagonalisation of two non-degenerate, tunnel-coupled optical cavities.}
+Let \(a_{1}\) and \(a_{2}\) (with the usual bosonic commutation relations) annihilate photons in the first and second cavity, whose bare resonance frequencies are \(\omega_{1}\neq\omega_{2}\).  Photon tunnelling at rate \(J>0\) through the semi-transparent middle mirror couples the two modes, giving the second-quantised Hamiltonian
+\[
+H
+  =\hbar
+    \begin{pmatrix}
+      a_{1}^{\dagger} & a_{2}^{\dagger}
+    \end{pmatrix}
+    \underbrace{\begin{pmatrix}
+      \omega_{1} & J\\
+      J          & \omega_{2}
+    \end{pmatrix}}_{\,\mathbf M}
+    \begin{pmatrix}
+      a_{1}\\ a_{2}
+    \end{pmatrix}.
+\]
+Diagonalising the \(2\times2\) Hermitian matrix \(\mathbf M\) one finds the normal–mode (super-mode) eigenfrequencies
+\begin{equation}
+\label{eq:split}
+\omega_{\pm}= \frac{\omega_{1}+\omega_{2}}{2}\;\pm\;
+              \sqrt{J^{2}+\bigl(\tfrac{\omega_{1}-\omega_{2}}{2}\bigr)^{2}},
+\end{equation}
+and introduces a mixing angle \(\theta\) via
+\[
+\tan 2\theta \;=\;\frac{2J}{\,\omega_{2}-\omega_{1}\,}, 
+\qquad 0<\theta<\pi/2.
+\]
+The corresponding canonical operators
+\[
+A_{+}= \cos\theta\,a_{1}+\sin\theta\,a_{2},
+\qquad
+A_{-}=-\sin\theta\,a_{1}+\cos\theta\,a_{2},
+\]
+obey \([A_{\mu},A_{\nu}^{\dagger}]=\delta_{\mu\nu}\) and bring the Hamiltonian to the diagonal form
+\[
+H=\hbar\omega_{+}\,A_{+}^{\dagger}A_{+}\;+\;\hbar\omega_{-}\,A_{-}^{\dagger}A_{-},
+\]
+revealing two independent harmonic oscillators whose frequency splitting \(\omega_{+}-\omega_{-}=2\sqrt{J^{2}+[(\omega_{1}-\omega_{2})/2]^{2}}\) interpolates smoothly between the strong-coupling limit (\(\omega_{1}\approx\omega_{2}\)) and the large-detuning regime where each cavity mode retains its individuality and the admixture of its neighbour is suppressed by the small parameter \(J/|\omega_{2}-\omega_{1}|\ll1\).
+
+

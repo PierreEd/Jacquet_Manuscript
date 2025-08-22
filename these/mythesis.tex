@@ -1,4 +1,3 @@
-
 \documentclass[a4paper,11pt]{book} %ADD diffusion OR archiv for final versions
 % \usepackage[latin9]{inputenc}
 \usepackage[T1]{fontenc}    % Output encoding: allows proper hyphenation and accents
@@ -6,12 +5,18 @@
 \usepackage{lmodern}        % Scalable fonts with full T1 support
 \usepackage{xspace}			  
 \usepackage[english]{babel}
-\usepackage[margin=28mm,includeheadfoot,bindingoffset=5mm]{geometry}
+\usepackage[margin=28mm,includeheadfoot]{geometry}
+% width fig 149mm!!!
 \usepackage{thcover}
 \usepackage{physics}
 \usepackage{setspace}
 \usepackage{amssymb}
+\usepackage{float}
 \usepackage{caption} % Load caption before minitoc
+\usepackage{setspace}
+\usepackage{mathtools}
+
+\onehalfspacing % or \singlespacing or \doublespacing
 \input{./preamb/preamb-graph.tex}
 \input{./preamb/preamb-math.tex}
 \input{./preamb/preamb-util.tex}
@@ -31,6 +36,7 @@
 \renewcommand{\thefigure}{\thechapter.\arabic{figure}} % Figure numbering: Chapter.Figure
 \renewcommand{\thetable}{\thechapter.\arabic{table}}   % Table numbering: Chapter.Table
 \dominitoc
+\raggedbottom
 \begin{document}
 % Ensure consistent and flat minitoc spacing (uses titletoc
 % Patch minitoc internal spacing

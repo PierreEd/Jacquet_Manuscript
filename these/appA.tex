@@ -2,7 +2,7 @@
 % !TeX spellcheck = fr_FR
 % !TeX root = mythesis.tex
 
-\chapter*{Appendix: Derivation of the Pound-Drever-Hall Error Signal Using the Quantum-Normalized Electric Field}
+\chapter*{Appendix 1: Derivation of the PDH Error Signal }\label{app:PDH}
 \addcontentsline{toc}{section}{Appendix: PDH Derivation}
 
 In this appendix, we derive the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
@@ -115,3 +115,39 @@ Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linea
 
 This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
 
+\chapter*{Appendix 2: Spectra derivation  }\label{app:spectra}
+\addcontentsline{toc}{section}{Appendix: Spectra Derivation}
+
+\begin{align}
+\hat p[\Omega]
+&= 2\,|\alpha| \Big( \delta[\Omega] + \Re\{\varepsilon[\Omega]\} \Big)
+  + \delta \hat p[\Omega] \,,
+\\[4pt]
+\hat p[\Omega]\;\hat p[\Omega']
+&= 4|\alpha|^{2}\Big(
+      \delta[\Omega]S[\Omega']
+    + \delta[\Omega]\Re\{\varepsilon[\Omega']\}
+    + \delta[\Omega']\Re\{\varepsilon[\Omega]\}
+    + \Re\{\varepsilon[\Omega]\}\Re\{\varepsilon[\Omega']\}
+  \Big)
+  + \delta \hat p[\Omega]\;\delta \hat p[\Omega'] \,,
+\\[6pt]
+\big\langle \cdots \big\rangle
+&= 4|\alpha|^{2}\Big(
+      \delta(\Omega)\,\delta(\Omega')
+    + \frac{\varepsilon}{2}\,\delta(\Omega)\,\delta(\Omega'-\Omega_m)
+    + \frac{\varepsilon}{2}\,\delta(\Omega)\,\delta(\Omega'+\Omega_m)
+\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(}
+    + \frac{\varepsilon}{2}\,\delta(\Omega')\,\delta(\Omega-\Omega_m)
+    + \frac{\varepsilon}{2}\,\delta(\Omega')\,\delta(\Omega+\Omega_m)
+\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(}
+    + \frac{\varepsilon^{2}}{4}\Big[
+          \delta(\Omega-\Omega_m)\,\delta(\Omega'+\Omega_m)
+        + \delta(\Omega-\Omega_m)\,\delta(\Omega'-\Omega_m)
+\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(+ \frac{\varepsilon^{2}}{4}\Big[}
+        + \delta(\Omega+\Omega_m)\,\delta(\Omega'+\Omega_m)
+        + \delta(\Omega+\Omega_m)\,\delta(\Omega'-\Omega_m)
+      \Big]
+  \Big)
+  + \big\langle \delta p[\Omega]\;\delta p[\Omega'] \big\rangle \,.
+\end{align}

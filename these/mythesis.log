@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  22 JUL 2025 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  22 AUG 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,7 +326,14 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+)) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count333
+\float@exts=\toks30
+\float@box=\box57
+\@float@everytoks=\toks31
+\@floatcapt=\box58
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
@@ -340,8 +347,25 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen190
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count333
-\c@continuedfloat=\count334
+\c@caption@flags=\count334
+\c@continuedfloat=\count335
+Package caption Info: float package is loaded.
+) (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count336
+\l_MT_multwidth_dim=\dimen191
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen192
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen193
+\l_MT_above_intertext_sep=\dimen194
+\l_MT_below_intertext_sep=\dimen195
+\l_MT_above_shortintertext_sep=\dimen196
+\l_MT_below_shortintertext_sep=\dimen197
+\xmathstrut@box=\box59
+\xmathstrut@dim=\dimen198
 ) (./preamb/preamb-graph.tex (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -370,9 +394,9 @@ File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
 ) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count335
+\c@subfigure=\count337
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count336
+\c@subtable=\count338
 )) (c:/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
  (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
@@ -402,9 +426,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@svg@param@lastpage=\count337
-\svg@box=\box57
-\c@svg@param@currpage=\count338
+\c@svg@param@lastpage=\count339
+\svg@box=\box60
+\c@svg@param@currpage=\count340
 ) (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2022-10-27 v1.5 Transparency with color stacks
  (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
@@ -412,41 +436,41 @@ Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color 
  (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ))) (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen191
-\pgfutil@tempdimb=\dimen192
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen199
+\pgfutil@tempdimb=\dimen256
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box58
+\pgfutil@abb=\box61
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
+\pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen193
-\pgf@y=\dimen194
-\pgf@xa=\dimen195
-\pgf@ya=\dimen196
-\pgf@xb=\dimen197
-\pgf@yb=\dimen198
-\pgf@xc=\dimen199
-\pgf@yc=\dimen256
-\pgf@xd=\dimen257
-\pgf@yd=\dimen258
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count339
-\c@pgf@countb=\count340
-\c@pgf@countc=\count341
-\c@pgf@countd=\count342
-\t@pgf@toka=\toks34
-\t@pgf@tokb=\toks35
-\t@pgf@tokc=\toks36
-\pgf@sys@id@count=\count343
+\c@pgf@counta=\count341
+\c@pgf@countb=\count342
+\c@pgf@countc=\count343
+\c@pgf@countd=\count344
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count345
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -457,8 +481,8 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count344
-\pgfsyssoftpath@bigbuffer@items=\count345
+\pgfsyssoftpath@smallbuffer@items=\count346
+\pgfsyssoftpath@bigbuffer@items=\count347
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (./preamb/preamb-math.tex (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
@@ -484,8 +508,8 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
 )) (./preamb/preamb-util.tex (c:/texlive/2025/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen259
-\ESO@tempdimb=\dimen260
+\ESO@tempdima=\dimen267
+\ESO@tempdimb=\dimen268
 )) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -505,13 +529,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count346
+\c@section@level=\count348
 ) (c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen261
-\Hy@linkcounter=\count347
-\Hy@pagecounter=\count348
+\@linkdim=\dimen269
+\Hy@linkcounter=\count349
+\Hy@pagecounter=\count350
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -519,7 +543,7 @@ Now handling font encoding PD1 ...
 ) (c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count349
+\Hy@SavedSpaceFactor=\count351
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -546,19 +570,19 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 ))
-\c@Hy@tempcnt=\count350
+\c@Hy@tempcnt=\count352
  (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen262
+\XeTeXLinkMargin=\dimen270
  (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count351
-\Field@Width=\dimen263
-\Fld@charsize=\dimen264
+\Fld@menulength=\count353
+\Field@Width=\dimen271
+\Fld@charsize=\dimen272
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -570,18 +594,18 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count352
-\c@Item=\count353
-\c@Hfootnote=\count354
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
-\Fld@listcount=\count355
-\c@bookmark@seq@number=\count356
-\Hy@SectionHShift=\skip59
+\Fld@listcount=\count357
+\c@bookmark@seq@number=\count358
+\Hy@SectionHShift=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
  (c:/texlive/2025/texmf-dist/tex/latex/minitoc/minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
  (c:/texlive/2025/texmf-dist/tex/latex/minitoc/mtcmess.sty
@@ -590,17 +614,17 @@ Package: mtcmess 2006/03/14
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 62 ***.
 \tf@mtc=\write4
-\mtcindent=\skip60
-\mtcskipamount=\skip61
+\mtcindent=\skip61
+\mtcskipamount=\skip62
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
 (minitoc)             part level macros available.
 Package minitoc Info: I0003
 (minitoc)             chapter level macros available.
-\mtc@toks=\toks37
-\mtc@strutbox=\box59
-\mtc@hstrutbox=\box60
+\mtc@toks=\toks39
+\mtc@strutbox=\box62
+\mtc@hstrutbox=\box63
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 \openout4 = `mythesis.mtc0'.
@@ -617,11 +641,11 @@ Package minitoc Info: I0031
 
 \openout4 = `mythesis.mtc0'.
 
-\c@mtc=\count357
-\c@minitocdepth=\count358
-\c@ptc=\count359
-\c@parttocdepth=\count360
-\ptcindent=\skip62
+\c@mtc=\count359
+\c@minitocdepth=\count360
+\c@ptc=\count361
+\c@parttocdepth=\count362
+\ptcindent=\skip63
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -631,7 +655,7 @@ File: english.mld 2006/01/13
 File: english.mld 2006/01/13
 ))
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM mythesis.toc on input line 34.
+(minitoc)             PREPARING MINITOCS FROM mythesis.toc on input line 39.
 Package minitoc Info: I0033
 (minitoc)             Writing mythesis.mtc1.
 \openout4 = `mythesis.mtc1'.
@@ -656,30 +680,30 @@ Package minitoc Info: I0033
 (minitoc)             Writing mythesis.mtc6.
 \openout4 = `mythesis.mtc6'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 34.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 40.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./chap7/chap7.aux) (./appA.aux))
 \openout1 = `mythesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -688,15 +712,14 @@ LaTeX Font Info:    ... okay on input line 34.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 14.22636pt
 * modes: includehead includefoot twoside 
-* h-part:(L,W,R)=(79.66771pt, 423.94609pt, 79.66771pt)
+* h-part:(L,W,R)=(79.66771pt, 438.17245pt, 79.66771pt)
 * v-part:(T,H,B)=(79.66771pt, 685.71143pt, 79.66771pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=423.94609pt
+* \textwidth=438.17245pt
 * \textheight=626.37468pt
-* \oddsidemargin=21.62408pt
+* \oddsidemargin=7.39772pt
 * \evensidemargin=7.39772pt
 * \topmargin=7.39772pt
 * \headheight=12.0pt
@@ -718,17 +741,17 @@ LaTeX Font Info:    ... okay on input line 34.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count361
-\scratchdimen=\dimen265
-\scratchbox=\box61
-\nofMPsegments=\count362
-\nofMParguments=\count363
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count364
-\MPscratchDim=\dimen266
-\MPnumerator=\count365
-\makeMPintoPDFobject=\count366
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count363
+\scratchdimen=\dimen273
+\scratchbox=\box64
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen274
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks41
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -738,7 +761,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 40.
  (./mythesis.out) (./mythesis.out)
 \@outlinefile=\write5
 \openout5 = `mythesis.out'.
@@ -779,63 +802,63 @@ Package minitoc(hints) Info: I0049
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=324, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=332, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
-Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 41.
+Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 47.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=326, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=334, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
-Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 41.
+Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 47.
 (pdftex.def)             Requested size: 252.75645pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 41.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 41.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 41.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 41.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 41.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 41.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(Font)              <6> on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 41--41
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 47--47
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
 
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 41--41
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 47--47
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=327, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=335, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
-Package pdftex.def Info: ./fig/logos.png  used on input line 41.
+Package pdftex.def Info: ./fig/logos.png  used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 89.39075pt.
 
 
@@ -849,7 +872,7 @@ Package pdftex.def Info: ./fig/logos.png  used on input line 41.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 \frontcover
+l.47 \frontcover
                 \ % requires thcover.sty loaded and thcoverdata.tex filled [0
 
 
@@ -925,10 +948,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 Chapter II.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 3.
-
 \openout4 = `mythesis.mtc'.
 
 \openout4 = `mythesis.mtc'.
@@ -936,117 +955,112 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./mythesis.mtc2)
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+
 
 [6{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<./chap2/fig/quantum_states.pdf, id=524, 423.94608pt x 147.76636pt>
-File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
-<use ./chap2/fig/quantum_states.pdf>
-Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 75.
-(pdftex.def)             Requested size: 423.94609pt x 147.76823pt.
-<./chap2/fig/quantum_quadraturesBis.pdf, id=525, 423.94608pt x 143.48956pt>
-File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
-<use ./chap2/fig/quantum_quadraturesBis.pdf>
-Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 85.
-(pdftex.def)             Requested size: 423.94609pt x 143.4914pt.
-
 
 [7]
-
-[8 <./chap2/fig/quantum_states.pdf> <./chap2/fig/quantum_quadraturesBis.pdf
-
-pdfTeX warning: pdflatex.exe (file ./chap2/fig/quantum_quadraturesBis.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
+[8]
 
 [9]
 
 [10]
-Overfull \hbox (1.14722pt too wide) in paragraph at lines 207--209
-\T1/lmr/m/n/10.95 tons are cre-ated in in-dis-tin-guish-able pairs. While single-mode squeez-ing yields quadrature-
- []
+<./chap2/fig/quantum_states.pdf, id=583, 423.94608pt x 147.76636pt>
+File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_states.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 298.
+(pdftex.def)             Requested size: 438.17245pt x 152.7264pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+[11 <./chap2/fig/quantum_states.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
-
- []
-
+<./chap2/fig/quantum_quadraturesBis.pdf, id=698, 423.94608pt x 143.48956pt>
+File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_quadraturesBis.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 364.
+(pdftex.def)             Requested size: 438.17245pt x 148.30605pt.
 
 
 [12]
 
-[13]
+[13 <./chap2/fig/quantum_quadraturesBis.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
-[14])
+ []
+
+
+
+[14]
 
 [15]
+
+LaTeX Warning: Citation `Caves1985' on page 16 undefined on input line 483.
+
+
+LaTeX Warning: Citation `Caves1985a' on page 16 undefined on input line 483.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 500.
+(c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+[16]
+
+[17]
+
+[18]
+
+[19])
+
+[20]
 \openout2 = `./chap3/chap3.aux'.
 
  (./chap3/chap3.tex
-
-[16
-
-
-
-
-]
 Chapter III.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1.
-
 \openout4 = `mythesis.mtc'.
 
 \openout4 = `mythesis.mtc'.
 
 (./mythesis.mtc3)
 
-[17])
+[21
 
-[18]
+
+
+
+]
+
+[22]
+Overfull \hbox (64.17064pt too wide) in paragraph at lines 71--73
+\T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
+ []
+
+)
+
+[23]
 \openout2 = `./chap4/chap4.aux'.
 
  (./chap4/chap4.tex
+
+[24
+
+
+
+
+]
 Chapter IV.
 \openout4 = `mythesis.mtc'.
 
@@ -1054,12 +1068,7 @@ Chapter IV.
 
 (./mythesis.mtc4)
 
-[19
-
-
-
-
-]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -1071,7 +1080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
 
 
-[20]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
@@ -1082,220 +1091,278 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-
-[21]
+[27]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \end{align}
-                
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+l.39 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 \begin{equation}
+                     
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-<./chap3/fig/PDHplots.pdf, id=933, 423.94608pt x 199.1693pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+
+
+[28]
+Overfull \hbox (1.6772pt too wide) in paragraph at lines 65--66
+\T1/lmr/m/n/10.95 Another key tech-nique ex-ten-sively used in this work is the \T1/lmr/m/it/10.95 Pound-Drever-Hall \T1/lmr/m/n/10.95 (PDH) method,
+ []
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 67.
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+
+ []
+
+<./chap3/fig/PDHplots.pdf, id=1025, 423.94608pt x 199.1693pt>
 File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
 <use ./chap3/fig/PDHplots.pdf>
-Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 62.
-(pdftex.def)             Requested size: 423.94609pt x 199.17183pt.
+Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 74.
+(pdftex.def)             Requested size: 438.17245pt x 205.85475pt.
 
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[29])
 
+[30 <./chap3/fig/PDHplots.pdf>]
 
-
-[23 <./chap3/fig/PDHplots.pdf>]
-
-[24])
+[31]
 \openout2 = `./chap5/chap5.aux'.
 
  (./chap5/chap5.tex
+
+[32
+
+
+
+
+]
 Chapter V.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1.
-
 \openout4 = `mythesis.mtc'.
 
 \openout4 = `mythesis.mtc'.
 
 (./mythesis.mtc5)
 
-[25
+[33]
+
+LaTeX Warning: Citation `coating_review' on page 34 undefined on input line 9.
+
+
+LaTeX Warning: Citation `nanofab_review' on page 34 undefined on input line 9.
+
+
+LaTeX Warning: Citation `optomech_challenges' on page 34 undefined on input line 9.
+
+
+LaTeX Warning: Citation `' on page 34 undefined on input line 14.
+
+
+LaTeX Warning: Reference `fig:micropillar_mode' on page 34 undefined on input line 16.
+
+
+LaTeX Warning: Citation `' on page 34 undefined on input line 23.
+
+
+LaTeX Warning: Citation `Regal2008' on page 34 undefined on input line 23.
+
+
+LaTeX Warning: Citation `Harris2008' on page 34 undefined on input line 23.
 
 
 
+[34]
 
-]
-
-LaTeX Warning: Citation `coating_review' on page 26 undefined on input line 9.
-
-
-LaTeX Warning: Citation `nanofab_review' on page 26 undefined on input line 9.
+LaTeX Warning: Citation `AmatoPhD' on page 35 undefined on input line 29.
 
 
-LaTeX Warning: Citation `optomech_challenges' on page 26 undefined on input line 9.
+LaTeX Warning: Citation `SiN_review' on page 35 undefined on input line 30.
 
 
-LaTeX Warning: Citation `Regal2008' on page 26 undefined on input line 9.
+LaTeX Warning: Citation `piezo_review' on page 35 undefined on input line 32.
 
 
-LaTeX Warning: Citation `Harris2008' on page 26 undefined on input line 9.
+LaTeX Warning: Citation `AmatoPhD' on page 35 undefined on input line 41.
 
 
-LaTeX Warning: Citation `LKB_FP' on page 26 undefined on input line 12.
+LaTeX Warning: Citation `LMA_IBS' on page 35 undefined on input line 41.
 
 
-LaTeX Warning: Citation `optomech_challenges' on page 26 undefined on input line 12.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-
-LaTeX Warning: Citation `AmatoPhD' on page 26 undefined on input line 16.
-
-
-LaTeX Warning: Citation `SiN_review' on page 26 undefined on input line 17.
-
-
-LaTeX Warning: Citation `piezo_review' on page 26 undefined on input line 18.
-
-
-LaTeX Warning: Citation `AmatoPhD' on page 26 undefined on input line 27.
-
-
-LaTeX Warning: Citation `LMA_IBS' on page 26 undefined on input line 27.
-
-
-LaTeX Warning: Citation `AmatoPhD' on page 26 undefined on input line 28.
+LaTeX Warning: Citation `AmatoPhD' on page 35 undefined on input line 42.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 30.
+(Font)              <9> on input line 44.
 
-LaTeX Warning: Citation `LIGO_optics' on page 26 undefined on input line 30.
+LaTeX Warning: Citation `LIGO_optics' on page 35 undefined on input line 44.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--31
+Underfull \hbox (badness 10000) in paragraph at lines 38--45
 
  []
 
 
 
+[35]
 
-Overfull \hbox (1.274pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 26 \T1/lmr/m/sl/10.95 CHAPTER V.  EXPERIMENTS: OPTOMECHANICAL THREE-MIRROR SYSTEMS
- []
-
-[26]
-
-LaTeX Warning: Citation `AmatoPhD' on page 27 undefined on input line 54.
+LaTeX Warning: Citation `AmatoPhD' on page 36 undefined on input line 68.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 27 undefined on input line 57.
+LaTeX Warning: Citation `AmatoPhD' on page 36 undefined on input line 71.
 
 
-LaTeX Warning: Citation `SiN_review' on page 27 undefined on input line 62.
+LaTeX Warning: Citation `SiN_review' on page 36 undefined on input line 76.
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 27 undefined on input line 62.
+LaTeX Warning: Citation `Norcada_datasheet' on page 36 undefined on input line 76.
 
 
-LaTeX Warning: Citation `SiN_review' on page 27 undefined on input line 70.
-
-
-Overfull \hbox (6.48537pt too wide) in paragraph at lines 68--72
-[]\T1/lmr/m/n/10.95 Because sto-i-chio-met-ric LPCVD Si$[]$N$[]$ is un-der high in-trin-sic ten-sile stress ($\OML/lmm/m/it/10.95 ^^[  \OMS/lmsy/m/n/10.95 ^^Y  \OT1/lmr/m/n/10.95 0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 9 []$\T1/lmr/m/n/10.95 ),
- []
-
-
-Overfull \hbox (1.02005pt too wide) in paragraph at lines 68--72
-\T1/lmr/m/n/10.95 the square drum sup-ports MHz-frequency modes with ex-cep-tion-ally low me-chan-i-cal loss[[]][].
- []
+LaTeX Warning: Citation `SiN_review' on page 36 undefined on input line 82.
 
 
 
-[27]
+[36]
 
-LaTeX Warning: Citation `SiN_review' on page 28 undefined on input line 84.
-
-
-LaTeX Warning: Citation `Norcada_datasheet' on page 28 undefined on input line 84.
+LaTeX Warning: Citation `SiN_review' on page 37 undefined on input line 88.
 
 
-LaTeX Warning: Citation `SiN_cryogenic' on page 28 undefined on input line 87.
+LaTeX Warning: Citation `Norcada_datasheet' on page 37 undefined on input line 88.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 104.
+
+LaTeX Warning: Citation `SiN_cryogenic' on page 37 undefined on input line 91.
+
+
+LaTeX Warning: Reference `sec:alignment_procedure' on page 37 undefined on input line 106.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 110.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Citation `Thorlabs_cage' on page 28 undefined on input line 112.
+[37]
+
+LaTeX Warning: Citation `Thorlabs_cage' on page 38 undefined on input line 118.
 
 
-LaTeX Warning: Citation `OFHC_review' on page 28 undefined on input line 115.
+LaTeX Warning: Citation `OFHC_review' on page 38 undefined on input line 121.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+<./chap5/fig/schéma_cavity.pdf, id=1145, 423.94608pt x 569.05513pt>
+File: ./chap5/fig/schéma_cavity.pdf Graphic file (type pdf)
+<use ./chap5/fig/schéma_cavity.pdf>
+Package pdftex.def Info: ./chap5/fig/schéma_cavity.pdf  used on input line 127.
+(pdftex.def)             Requested size: 438.17245pt x 588.1565pt.
+
+
+[38]
+Overfull \vbox (66.98184pt too high) has occurred while \output is active []
+
+
+
+[39 <./chap5/fig/schéma_cavity.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+LaTeX Warning: Citation `Sankey2010' on page 40 undefined on input line 140.
+
+<./chap5/fig/flexure tune.pdf, id=1182, 423.94608pt x 184.06267pt>
+File: ./chap5/fig/flexure tune.pdf Graphic file (type pdf)
+<use ./chap5/fig/flexure tune.pdf>
+Package pdftex.def Info: ./chap5/fig/flexure tune.pdf  used on input line 146.
+(pdftex.def)             Requested size: 438.17245pt x 190.24104pt.
+
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+<./chap5/fig/fig_lock_MATE.pdf, id=1189, 423.94608pt x 181.28734pt>
+File: ./chap5/fig/fig_lock_MATE.pdf Graphic file (type pdf)
+<use ./chap5/fig/fig_lock_MATE.pdf>
+Package pdftex.def Info: ./chap5/fig/fig_lock_MATE.pdf  used on input line 159.
+(pdftex.def)             Requested size: 438.17245pt x 187.37256pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[41 <./chap5/fig/flexure tune.pdf>]
+
+[42 <./chap5/fig/fig_lock_MATE.pdf>]
+<./chap5/fig/tilt_alignementB.pdf, id=1497, 423.94608pt x 327.2067pt>
+File: ./chap5/fig/tilt_alignementB.pdf Graphic file (type pdf)
+<use ./chap5/fig/tilt_alignementB.pdf>
+Package pdftex.def Info: ./chap5/fig/tilt_alignementB.pdf  used on input line 188.
+(pdftex.def)             Requested size: 438.17245pt x 338.18996pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
+[43]
 
-Overfull \hbox (1.274pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 28 \T1/lmr/m/sl/10.95 CHAPTER V.  EXPERIMENTS: OPTOMECHANICAL THREE-MIRROR SYSTEMS
- []
+[44 <./chap5/fig/tilt_alignementB.pdf>]
 
-[28]
-
-[29]
+[45]
 \openout2 = `./chap6/chap6.aux'.
 
  (./chap6/chap6.tex
 
-
-Overfull \hbox (1.274pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 30 \T1/lmr/m/sl/10.95 CHAPTER V.  EXPERIMENTS: OPTOMECHANICAL THREE-MIRROR SYSTEMS
- []
-
-[30
+[46
 
 
 
 
 ]
 Chapter VI.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1.
-
 \openout4 = `mythesis.mtc'.
 
 \openout4 = `mythesis.mtc'.
 
 (./mythesis.mtc6)
 
-[31])
+[47])
 
-[32]
+[48]
 \openout2 = `./chap7/chap7.aux'.
 
  (./chap7/chap7.tex)
 
-[33
+[49
 
 
 
@@ -1305,37 +1372,48 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  (./appA.tex
 
-[34
+[50
 
 
 
 
 ]
-Overfull \hbox (42.28836pt too wide) detected at line 20
+Overfull \hbox (28.062pt too wide) detected at line 20
 [][][]\OML/lmm/m/it/10.95 E[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/lmr/m/n/10.95 ) = \OML/lmm/m/it/10.95 i[] [] []
  []
 
 
 
-[35]
+[51]
 
-[36])
+[52]
 
-[37]
+[53]
 
-[38
+[54
+
+]
+Overfull \hbox (38.79158pt too wide) detected at line 153
+[]
+ []
+
+)
+
+[55]
+
+[56
 
 
 
 ]
 
-[39]
+[57]
 
-[40
+[58
 
 ]
 
-[41]
+[59]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1370,14 +1448,14 @@ Overfull \hbox (42.28836pt too wide) detected at line 20
 
 
 
-[42
+[60
 
 
 ]
 
-[43]
+[61]
 
-[44
+[62
 
 ]
 Package minitoc Info: I0009
@@ -1385,12 +1463,20 @@ Package minitoc Info: I0009
 (minitoc)             Creating the mythesis.maf file.
 \openout4 = `mythesis.maf'.
 
-Package minitoc(hints) Info: I0019
-(minitoc(hints))             No hints have been written 
-(minitoc(hints))             in the mythesis.log file..
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
 
 
-[45
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the mythesis.log file.
+
+
+
+[63
 
 ] (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./chap7/chap7.aux) (./appA.aux))
  ***********
@@ -1402,21 +1488,21 @@ L3 programming layer <2025-04-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6358E7209316F7A8EAE81C844601BC0F;16665.
+(rerunfilecheck)             Checksum: 99FAAB5621BAB29BFC0E9E379F4B4D44;16603.
  ) 
 Here is how much of TeX's memory you used:
- 22030 strings out of 469590
- 367863 string characters out of 5474519
- 836379 words of memory out of 5000000
- 48131 multiletter control sequences out of 15000+600000
- 751348 words of font info for 138 fonts, out of 8000000 for 9000
+ 22834 strings out of 469590
+ 382587 string characters out of 5474519
+ 853059 words of memory out of 5000000
+ 48835 multiletter control sequences out of 15000+600000
+ 772047 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,19n,117p,1577b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (55 pages, 1043384 bytes).
+ 98i,31n,117p,1334b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on mythesis.pdf (73 pages, 10418334 bytes).
 PDF statistics:
- 1302 PDF objects out of 1440 (max. 8388607)
- 1112 compressed objects within 12 object streams
- 212 named destinations out of 1000 (max. 500000)
- 675 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2208 PDF objects out of 2487 (max. 8388607)
+ 1823 compressed objects within 19 object streams
+ 289 named destinations out of 1000 (max. 500000)
+ 711 words of extra memory for PDF output out of 10000 (max. 10000000)
 
