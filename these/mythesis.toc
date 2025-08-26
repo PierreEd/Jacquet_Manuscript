@@ -11,89 +11,81 @@
 \contentsline {subsubsection}{Quadrature Operators}{7}{section*.5}%
 \contentsline {subsubsection}{Linearization of the optical field}{8}{section*.6}%
 \contentsline {subsubsection}{Heisenberg Uncertainty Relation }{9}{section*.7}%
+\contentsline {subsubsection}{Graphical Representation of Gaussian States}{9}{section*.8}%
 \contentsline {subsection}{\numberline {II.1.2}Coherent and Squeezed States}{9}{subsection.2.1.2}%
-\contentsline {subsubsection}{Amplitude and Phase squeezed states}{14}{section*.19}%
+\contentsline {subsubsection}{Amplitude and Phase squeezed states}{14}{section*.20}%
 \contentsline {subsection}{\numberline {II.1.3}Sidebands and Quantum Noises}{14}{subsection.2.1.3}%
-\contentsline {subsubsection}{Modulation picture}{14}{section*.21}%
-\contentsline {subsubsection}{Fourier Domain \& Sidebands}{15}{section*.22}%
-\contentsline {subsubsection}{Linearized Hermitian Operators}{17}{section*.25}%
-\contentsline {subsubsection}{Noise Spectra}{18}{section*.26}%
-\contentsline {subsection}{\numberline {II.1.4}Two Photon Model }{18}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {II.1.5}Quantum Sideband Diagram }{19}{subsection.2.1.5}%
+\contentsline {subsubsection}{Modulation picture}{14}{section*.22}%
+\contentsline {subsubsection}{Fourier Domain \& Sidebands}{15}{section*.23}%
+\contentsline {subsubsection}{Linearized Hermitian Operators}{17}{section*.26}%
+\contentsline {subsubsection}{Noise Spectra}{18}{section*.27}%
+\contentsline {subsection}{\numberline {II.1.4}Quantum Sideband Diagram }{19}{subsection.2.1.4}%
 \contentsline {section}{\numberline {II.2}Optical Cavities: Basics}{19}{section.2.2}%
 \contentsline {subsection}{\numberline {II.2.1}Cavity types and Resonance Conditions}{19}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {II.2.2}Spatial and Longitudinal Modes}{19}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {II.2.3}Quantum Langevin Equations}{19}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {II.2.4}Static and Dynamic Cavity Response}{20}{subsection.2.2.4}%
-\contentsline {section}{\numberline {II.3}Squeezed Light Theory}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {II.3.1}Single-mode Squeezing}{20}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {II.3.2}Noise Spectra }{20}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {II.3.3}Frequency-dependent Squeezing and its use}{20}{subsection.2.3.3}%
-\contentsline {section}{\numberline {II.4}Numerical Methods and Simulations}{20}{section.2.4}%
-\contentsline {chapter}{\numberline {III}Theory: Three-Mirror Cavities}{21}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Cavity Optomechanics}{22}{section.3.1}%
-\contentsline {subsection}{\numberline {III.1.1}Radiation Pressure Coupling}{22}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {III.1.2}Quantum Langevin Equations}{22}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {III.1.3}Mechanical Resonators}{22}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {III.1.4}Noise spectra}{22}{subsection.3.1.4}%
-\contentsline {section}{\numberline {III.2}Three Mirror Cavities}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Hamiltonian Formalism}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Diagonalisation of two non-degenerate, tunnel-coupled optical cavities.}{23}{section*.27}%
-\contentsline {chapter}{\numberline {IV}Experimental Methods}{25}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Optical Locking Techniques with PyRPL}{26}{section.4.1}%
-\contentsline {subsection}{\numberline {IV.1.1}Proportion-Integral (PI) Controllers}{26}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {IV.1.2}Temperature Locks}{28}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {IV.1.3}Optical paths Locks - Dither Locks }{28}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {IV.1.4}Side of Fringe Locks}{29}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {IV.1.5}Pound-Drever-Hall Locks}{29}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {IV.1.6}Offset frequency Locks}{30}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {IV.1.7}Coherent Sideband Locks}{30}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {IV.1.8}PyRPL Control Implementation}{30}{subsection.4.1.8}%
-\contentsline {section}{\numberline {IV.2}Optical Cavities and Squeezed Light Generation}{30}{section.4.2}%
-\contentsline {subsection}{\numberline {IV.2.1}Cavity Types and Alignement Procedures}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {IV.2.2}Bowtie-type Optical Parametric Oscillator (OPO)}{31}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Phase Matching and Nonlinear Crystals}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {IV.2.4}Filter Cavities for Squeezing Rotation}{31}{subsection.4.2.4}%
-\contentsline {section}{\numberline {IV.3}Quadrature Measurement Techniques}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {IV.3.1}Direct Detection with Photodiodes}{31}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {IV.3.2}Balanced Homodyne Detection}{31}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {IV.3.3}Local Oscillator Design and Control}{31}{subsection.4.3.3}%
-\contentsline {chapter}{\numberline {V}Experiments: Optomechanics}{33}{chapter.5}%
-\contentsline {section}{\numberline {V.1}System Description and Setup}{34}{section.5.1}%
-\contentsline {subsection}{\numberline {V.1.1}Previous LKB work and Motivation}{34}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {V.1.2}Specifications and Design}{35}{subsection.5.1.2}%
-\contentsline {subsubsection}{High Finesse}{36}{section*.30}%
-\contentsline {subsubsection}{High $Q$ factor}{37}{section*.31}%
-\contentsline {subsubsection}{Optical alignment}{37}{section*.32}%
-\contentsline {subsubsection}{Dynamical range}{37}{section*.33}%
-\contentsline {subsubsection}{Compactness \& Stability}{38}{section*.34}%
-\contentsline {subsubsection}{Vacuum and Cryogenic compatibility}{38}{section*.35}%
-\contentsline {subsection}{\numberline {V.1.3}Flexure Actuation}{40}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {V.1.4}Experimental Setup}{41}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {V.1.5}Alignment Procedures}{43}{subsection.5.1.5}%
-\contentsline {section}{\numberline {V.2}Middle Mirror as Mechanical Resonator}{45}{section.5.2}%
-\contentsline {subsection}{\numberline {V.2.1}Plane Membranes: Design and Characterization}{45}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {V.2.2}Phononic Crystals: Dahlia Pattern}{45}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {V.2.3}Fabrication and Performance Metrics}{45}{subsection.5.2.3}%
-\contentsline {section}{\numberline {V.3}Experimental Characterization}{45}{section.5.3}%
-\contentsline {subsection}{\numberline {V.3.1}Cavity Scans and Resonance Fitting}{45}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {V.3.2}Locking Techniques and Stability}{45}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {V.3.3}Optical Ringdowns and Loss Measurements}{45}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {V.3.4}Mechanical Resonator Characterization}{45}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {V.3.5}Bistability}{45}{subsection.5.3.5}%
-\contentsline {section}{\numberline {V.4}Design of an Optomechanical Fibered Cavity}{45}{section.5.4}%
-\contentsline {subsection}{\numberline {V.4.1}Design considerations}{45}{subsection.5.4.1}%
-\contentsline {chapter}{\numberline {VI}Experiments: Squeezed Light}{47}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}OPO Resonance and Locking}{48}{section.6.1}%
-\contentsline {subsection}{\numberline {VI.1.1}Resonance Conditions and Sweeps}{48}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {VI.1.2}Lock Acquisition and Optimization}{48}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {VI.1.3}Stability Characterization}{48}{subsection.6.1.3}%
-\contentsline {section}{\numberline {VI.2}Quadrature Spectral Analysis}{48}{section.6.2}%
-\contentsline {subsection}{\numberline {VI.2.1}Detection of Squeezing and Anti-squeezing}{48}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {VI.2.2}Spectral Variation with Frequency}{48}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {VI.2.3}Optimal Quadrature Conditions}{48}{subsection.6.2.3}%
-\contentsline {section}{\numberline {VI.3}Filter Cavity Concept}{48}{section.6.3}%
-\contentsline {subsection}{\numberline {VI.3.1}Virgo Filter Cavity }{48}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {VI.3.2}Thermal effects in bichromatic locks}{48}{subsection.6.3.2}%
-\contentsline {section}{Appendix: PDH Derivation}{51}{appendix*.41}%
-\contentsline {section}{Appendix: Spectra Derivation}{55}{appendix*.49}%
+\contentsline {subsubsection}{Steady state solution}{20}{section*.28}%
+\contentsline {subsubsection}{Noise Spectra on Resonance}{21}{section*.29}%
+\contentsline {section}{\numberline {II.3}Numerical Methods and Simulations}{21}{section.2.3}%
+\contentsline {chapter}{\numberline {III}Theory: Frequency Dependent Squeezing \& Membrane based Optomechanics}{23}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Frequency Dependent Squeezing}{24}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Cavity Optomechanics with Membrane based systems }{24}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Radiation Pressure Coupling}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Quantum Langevin Equations}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Mechanical Resonators}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {III.2.4}Noise spectra}{24}{subsection.3.2.4}%
+\contentsline {paragraph}{Diagonalisation of two non-degenerate, tunnel-coupled optical cavities.}{24}{section*.30}%
+\contentsline {chapter}{\numberline {IV}Experimental Methods}{27}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Optical Locking Techniques with PyRPL}{28}{section.4.1}%
+\contentsline {subsection}{\numberline {IV.1.1}Proportion-Integral (PI) Controllers}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {IV.1.2}Temperature Locks}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {IV.1.3}Optical paths Locks - Dither Locks }{30}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {IV.1.4}Side of Fringe Locks}{31}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {IV.1.5}Pound-Drever-Hall Locks}{31}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {IV.1.6}Offset frequency Locks}{32}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {IV.1.7}Coherent Sideband Locks}{32}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {IV.1.8}PyRPL Control Implementation}{32}{subsection.4.1.8}%
+\contentsline {section}{\numberline {IV.2}Optical Cavities and Squeezed Light Generation}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Cavity Types and Alignement Procedures}{33}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Bowtie-type Optical Parametric Oscillator (OPO)}{33}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {IV.2.3}Phase Matching and Nonlinear Crystals}{33}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {IV.2.4}Filter Cavities for Squeezing Rotation}{33}{subsection.4.2.4}%
+\contentsline {section}{\numberline {IV.3}Quadrature Measurement Techniques}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Direct Detection with Photodiodes}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Balanced Homodyne Detection}{33}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}Local Oscillator Design and Control}{33}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {V}Experiments: Optomechanics}{35}{chapter.5}%
+\contentsline {section}{\numberline {V.1}System Description and Setup}{36}{section.5.1}%
+\contentsline {subsection}{\numberline {V.1.1}Previous LKB work and Motivation}{36}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {V.1.2}Specifications and Design}{37}{subsection.5.1.2}%
+\contentsline {subsubsection}{High Finesse}{38}{section*.33}%
+\contentsline {subsubsection}{High $Q$ factor}{39}{section*.34}%
+\contentsline {subsubsection}{Optical alignment}{39}{section*.35}%
+\contentsline {subsubsection}{Dynamical range}{39}{section*.36}%
+\contentsline {subsubsection}{Compactness \& Stability}{40}{section*.37}%
+\contentsline {subsubsection}{Vacuum and Cryogenic compatibility}{40}{section*.38}%
+\contentsline {subsection}{\numberline {V.1.3}Flexure Actuation}{42}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {V.1.4}Experimental Setup}{43}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {V.1.5}Alignment Procedures}{45}{subsection.5.1.5}%
+\contentsline {section}{\numberline {V.2}Experimental Characterization}{47}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Cavity Scans and Resonance Fitting}{47}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}Locking Techniques and Stability}{47}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {V.2.3}Optical Ringdowns and Loss Measurements}{47}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {V.2.4}Mechanical Resonator Characterization}{47}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {V.2.5}Bistability}{47}{subsection.5.2.5}%
+\contentsline {section}{\numberline {V.3}Design of an Optomechanical Fibered Cavity}{47}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Design considerations}{47}{subsection.5.3.1}%
+\contentsline {chapter}{\numberline {VI}Experiments: Squeezed Light}{49}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}OPO Resonance and Locking}{50}{section.6.1}%
+\contentsline {subsection}{\numberline {VI.1.1}Resonance Conditions and Sweeps}{50}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {VI.1.2}Lock Acquisition and Optimization}{50}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {VI.1.3}Stability Characterization}{50}{subsection.6.1.3}%
+\contentsline {section}{\numberline {VI.2}Quadrature Spectral Analysis}{50}{section.6.2}%
+\contentsline {subsection}{\numberline {VI.2.1}Detection of Squeezing and Anti-squeezing}{50}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {VI.2.2}Spectral Variation with Frequency}{50}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {VI.2.3}Optimal Quadrature Conditions}{50}{subsection.6.2.3}%
+\contentsline {section}{\numberline {VI.3}Filter Cavity Concept}{50}{section.6.3}%
+\contentsline {subsection}{\numberline {VI.3.1}Virgo Filter Cavity }{50}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {VI.3.2}Thermal effects in bichromatic locks}{50}{subsection.6.3.2}%
+\contentsline {section}{Appendix: PDH Derivation}{53}{appendix*.44}%
+\contentsline {section}{Appendix: Spectra Derivation}{57}{appendix*.52}%

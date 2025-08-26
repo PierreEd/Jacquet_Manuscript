@@ -945,13 +945,6 @@ INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
-INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
-INPUT c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT ./chap3/chap3.tex
 OUTPUT ./chap3/chap3.aux
 INPUT ./chap3/chap3.tex
@@ -965,9 +958,6 @@ INPUT ./mythesis.mtc
 INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
 INPUT mythesis.mtc3
 INPUT ./chap4/chap4.tex
 OUTPUT ./chap4/chap4.aux
@@ -983,6 +973,7 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc4
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -1015,7 +1006,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmss9.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
@@ -1142,7 +1132,6 @@ INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb
-INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
