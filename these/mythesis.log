@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  26 AUG 2025 12:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  27 AUG 2025 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1027,19 +1027,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
 [19]
 
-[20])
+[20]
 
-[21]
+[21])
+
+[22]
 \openout2 = `./chap3/chap3.aux'.
 
  (./chap3/chap3.tex
-
-[22
-
-
-
-
-]
 Chapter III.
 \openout4 = `mythesis.mtc'.
 
@@ -1047,7 +1042,12 @@ Chapter III.
 
 (./mythesis.mtc3)
 
-[23]
+[23
+
+
+
+
+]
 
 
 Overfull \hbox (139.50705pt too wide) has occurred while \output is active
@@ -1158,7 +1158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-<./chap3/fig/PDHplots.pdf, id=978, 423.94608pt x 199.1693pt>
+<./chap3/fig/PDHplots.pdf, id=991, 423.94608pt x 199.1693pt>
 File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
 <use ./chap3/fig/PDHplots.pdf>
 Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 74.
@@ -1293,7 +1293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-<./chap5/fig/schéma_cavity.pdf, id=1095, 423.94608pt x 569.05513pt>
+<./chap5/fig/schéma_cavity.pdf, id=1108, 423.94608pt x 569.05513pt>
 File: ./chap5/fig/schéma_cavity.pdf Graphic file (type pdf)
 <use ./chap5/fig/schéma_cavity.pdf>
 Package pdftex.def Info: ./chap5/fig/schéma_cavity.pdf  used on input line 127.
@@ -1313,7 +1313,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
 LaTeX Warning: Citation `Sankey2010' on page 42 undefined on input line 140.
 
-<./chap5/fig/flexure tune.pdf, id=1131, 423.94608pt x 184.06267pt>
+<./chap5/fig/flexure tune.pdf, id=1144, 423.94608pt x 184.06267pt>
 File: ./chap5/fig/flexure tune.pdf Graphic file (type pdf)
 <use ./chap5/fig/flexure tune.pdf>
 Package pdftex.def Info: ./chap5/fig/flexure tune.pdf  used on input line 146.
@@ -1325,7 +1325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<./chap5/fig/fig_lock_MATE.pdf, id=1138, 423.94608pt x 181.28734pt>
+<./chap5/fig/fig_lock_MATE.pdf, id=1151, 423.94608pt x 181.28734pt>
 File: ./chap5/fig/fig_lock_MATE.pdf Graphic file (type pdf)
 <use ./chap5/fig/fig_lock_MATE.pdf>
 Package pdftex.def Info: ./chap5/fig/fig_lock_MATE.pdf  used on input line 159.
@@ -1338,7 +1338,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [43 <./chap5/fig/flexure tune.pdf>]
 
 [44 <./chap5/fig/fig_lock_MATE.pdf>]
-<./chap5/fig/tilt_alignementB.pdf, id=1445, 423.94608pt x 327.2067pt>
+<./chap5/fig/tilt_alignementB.pdf, id=1458, 423.94608pt x 327.2067pt>
 File: ./chap5/fig/tilt_alignementB.pdf Graphic file (type pdf)
 <use ./chap5/fig/tilt_alignementB.pdf>
 Package pdftex.def Info: ./chap5/fig/tilt_alignementB.pdf  used on input line 188.
@@ -1504,21 +1504,21 @@ L3 programming layer <2025-04-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: A4A9DDA5B785FACABA8AEB2916FE78B1;14665.
+(rerunfilecheck)             Checksum: 93CB47C7E7DF04D82D41DD98D1E771FE;14665.
  ) 
 Here is how much of TeX's memory you used:
- 22781 strings out of 469590
- 381554 string characters out of 5474519
+ 22794 strings out of 469590
+ 381721 string characters out of 5474519
  855088 words of memory out of 5000000
  48790 multiletter control sequences out of 15000+600000
  753000 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,31n,117p,1334b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (75 pages, 10411710 bytes).
+Output written on mythesis.pdf (75 pages, 10417537 bytes).
 PDF statistics:
- 2150 PDF objects out of 2487 (max. 8388607)
- 1766 compressed objects within 18 object streams
- 287 named destinations out of 1000 (max. 500000)
+ 2166 PDF objects out of 2487 (max. 8388607)
+ 1782 compressed objects within 18 object streams
+ 300 named destinations out of 1000 (max. 500000)
  623 words of extra memory for PDF output out of 10000 (max. 10000000)
 
