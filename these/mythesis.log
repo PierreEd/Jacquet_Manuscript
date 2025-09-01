@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  27 AUG 2025 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  1 SEP 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,12 +802,12 @@ Package minitoc(hints) Info: I0049
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=288, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=292, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
 Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 47.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=290, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=294, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
 Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 47.
@@ -855,7 +855,7 @@ Overfull \hbox (12.28476pt too wide) in paragraph at lines 47--47
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=291, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=295, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
 Package pdftex.def Info: ./fig/logos.png  used on input line 47.
@@ -975,7 +975,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--138
 [9]
 
 [10]
-<./chap2/fig/quantum_states.pdf, id=522, 423.94608pt x 147.76636pt>
+<./chap2/fig/quantum_states.pdf, id=533, 423.94608pt x 147.76636pt>
 File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
 <use ./chap2/fig/quantum_states.pdf>
 Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 286.
@@ -987,7 +987,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--306
 
  []
 
-<./chap2/fig/quantum_quadraturesBis.pdf, id=637, 423.94608pt x 143.48956pt>
+<./chap2/fig/quantum_quadraturesBis.pdf, id=648, 423.94608pt x 143.48956pt>
 File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
 <use ./chap2/fig/quantum_quadraturesBis.pdf>
 Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 352.
@@ -1028,13 +1028,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--519
 [19]
 
 [20]
+Overfull \hbox (2.47487pt too wide) detected at line 704
+[]
+ []
 
-[21])
+
+Overfull \hbox (17.4382pt too wide) detected at line 711
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+
+ []
+
+
+
+[21]
 
 [22]
+
+[23]
+
+[24]
+Overfull \hbox (44.07497pt too wide) detected at line 888
+[][][][][]
+ []
+
+)
+
+[25]
 \openout2 = `./chap3/chap3.aux'.
 
  (./chap3/chap3.tex
+
+[26
+
+
+
+
+]
 Chapter III.
 \openout4 = `mythesis.mtc'.
 
@@ -1042,36 +1075,31 @@ Chapter III.
 
 (./mythesis.mtc3)
 
-[23
-
-
-
-
-]
+[27]
 
 
 Overfull \hbox (139.50705pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 24 \T1/lmr/m/sl/10.95 CHAPTER III.  THEORY: FREQUENCY DEPENDENT SQUEEZING & MEMBRANE BASED OPTOMECHANICS
+\T1/lmr/m/n/10.95 28 \T1/lmr/m/sl/10.95 CHAPTER III.  THEORY: FREQUENCY DEPENDENT SQUEEZING & MEMBRANE BASED OPTOMECHANICS
  []
 
-[24]
+[28]
 Overfull \hbox (64.17064pt too wide) in paragraph at lines 70--72
 \T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
  []
 
 )
 
-[25]
+[29]
 \openout2 = `./chap4/chap4.aux'.
 
  (./chap4/chap4.tex
 
 
 Overfull \hbox (139.50705pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10.95 26 \T1/lmr/m/sl/10.95 CHAPTER III.  THEORY: FREQUENCY DEPENDENT SQUEEZING & MEMBRANE BASED OPTOMECHANICS
+\T1/lmr/m/n/10.95 30 \T1/lmr/m/sl/10.95 CHAPTER III.  THEORY: FREQUENCY DEPENDENT SQUEEZING & MEMBRANE BASED OPTOMECHANICS
  []
 
-[26
+[30
 
 
 
@@ -1084,7 +1112,7 @@ Chapter IV.
 
 (./mythesis.mtc4)
 
-[27]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -1096,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
 
 
-[28]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
@@ -1108,7 +1136,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
 
 
-[29]
+[33]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1145,7 +1173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
 
 
-[30]
+[34]
 Overfull \hbox (1.6772pt too wide) in paragraph at lines 65--66
 \T1/lmr/m/n/10.95 Another key tech-nique ex-ten-sively used in this work is the \T1/lmr/m/it/10.95 Pound-Drever-Hall \T1/lmr/m/n/10.95 (PDH) method,
  []
@@ -1158,23 +1186,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-<./chap3/fig/PDHplots.pdf, id=991, 423.94608pt x 199.1693pt>
+<./chap3/fig/PDHplots.pdf, id=1026, 423.94608pt x 199.1693pt>
 File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
 <use ./chap3/fig/PDHplots.pdf>
 Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 74.
 (pdftex.def)             Requested size: 438.17245pt x 205.85475pt.
 
 
-[31])
+[35])
 
-[32 <./chap3/fig/PDHplots.pdf>]
+[36 <./chap3/fig/PDHplots.pdf>]
 
-[33]
+[37]
 \openout2 = `./chap5/chap5.aux'.
 
  (./chap5/chap5.tex
 
-[34
+[38
 
 
 
@@ -1187,56 +1215,56 @@ Chapter V.
 
 (./mythesis.mtc5)
 
-[35]
+[39]
 
-LaTeX Warning: Citation `coating_review' on page 36 undefined on input line 9.
-
-
-LaTeX Warning: Citation `nanofab_review' on page 36 undefined on input line 9.
+LaTeX Warning: Citation `coating_review' on page 40 undefined on input line 9.
 
 
-LaTeX Warning: Citation `optomech_challenges' on page 36 undefined on input line 9.
+LaTeX Warning: Citation `nanofab_review' on page 40 undefined on input line 9.
 
 
-LaTeX Warning: Citation `' on page 36 undefined on input line 14.
+LaTeX Warning: Citation `optomech_challenges' on page 40 undefined on input line 9.
 
 
-LaTeX Warning: Reference `fig:micropillar_mode' on page 36 undefined on input line 16.
+LaTeX Warning: Citation `' on page 40 undefined on input line 14.
 
 
-LaTeX Warning: Citation `' on page 36 undefined on input line 23.
+LaTeX Warning: Reference `fig:micropillar_mode' on page 40 undefined on input line 16.
 
 
-LaTeX Warning: Citation `Regal2008' on page 36 undefined on input line 23.
+LaTeX Warning: Citation `' on page 40 undefined on input line 23.
 
 
-LaTeX Warning: Citation `Harris2008' on page 36 undefined on input line 23.
+LaTeX Warning: Citation `Regal2008' on page 40 undefined on input line 23.
+
+
+LaTeX Warning: Citation `Harris2008' on page 40 undefined on input line 23.
 
 
 
-[36]
+[40]
 
-LaTeX Warning: Citation `AmatoPhD' on page 37 undefined on input line 29.
-
-
-LaTeX Warning: Citation `SiN_review' on page 37 undefined on input line 30.
+LaTeX Warning: Citation `AmatoPhD' on page 41 undefined on input line 29.
 
 
-LaTeX Warning: Citation `piezo_review' on page 37 undefined on input line 32.
+LaTeX Warning: Citation `SiN_review' on page 41 undefined on input line 30.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 37 undefined on input line 41.
+LaTeX Warning: Citation `piezo_review' on page 41 undefined on input line 32.
 
 
-LaTeX Warning: Citation `LMA_IBS' on page 37 undefined on input line 41.
+LaTeX Warning: Citation `AmatoPhD' on page 41 undefined on input line 41.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 37 undefined on input line 42.
+LaTeX Warning: Citation `LMA_IBS' on page 41 undefined on input line 41.
+
+
+LaTeX Warning: Citation `AmatoPhD' on page 41 undefined on input line 42.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 44.
 
-LaTeX Warning: Citation `LIGO_optics' on page 37 undefined on input line 44.
+LaTeX Warning: Citation `LIGO_optics' on page 41 undefined on input line 44.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--45
@@ -1245,87 +1273,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--45
 
 
 
-[37]
+[41]
 
-LaTeX Warning: Citation `AmatoPhD' on page 38 undefined on input line 68.
-
-
-LaTeX Warning: Citation `AmatoPhD' on page 38 undefined on input line 71.
+LaTeX Warning: Citation `AmatoPhD' on page 42 undefined on input line 68.
 
 
-LaTeX Warning: Citation `SiN_review' on page 38 undefined on input line 76.
+LaTeX Warning: Citation `AmatoPhD' on page 42 undefined on input line 71.
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 38 undefined on input line 76.
+LaTeX Warning: Citation `SiN_review' on page 42 undefined on input line 76.
 
 
-LaTeX Warning: Citation `SiN_review' on page 38 undefined on input line 82.
+LaTeX Warning: Citation `Norcada_datasheet' on page 42 undefined on input line 76.
+
+
+LaTeX Warning: Citation `SiN_review' on page 42 undefined on input line 82.
 
 
 
-[38]
+[42]
 
-LaTeX Warning: Citation `SiN_review' on page 39 undefined on input line 88.
-
-
-LaTeX Warning: Citation `Norcada_datasheet' on page 39 undefined on input line 88.
+LaTeX Warning: Citation `SiN_review' on page 43 undefined on input line 88.
 
 
-LaTeX Warning: Citation `SiN_cryogenic' on page 39 undefined on input line 91.
+LaTeX Warning: Citation `Norcada_datasheet' on page 43 undefined on input line 88.
 
 
-LaTeX Warning: Reference `sec:alignment_procedure' on page 39 undefined on input line 106.
+LaTeX Warning: Citation `SiN_cryogenic' on page 43 undefined on input line 91.
+
+
+LaTeX Warning: Reference `sec:alignment_procedure' on page 43 undefined on input line 106.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 110.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[39]
+[43]
 
-LaTeX Warning: Citation `Thorlabs_cage' on page 40 undefined on input line 118.
+LaTeX Warning: Citation `Thorlabs_cage' on page 44 undefined on input line 118.
 
 
-LaTeX Warning: Citation `OFHC_review' on page 40 undefined on input line 121.
+LaTeX Warning: Citation `OFHC_review' on page 44 undefined on input line 121.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-<./chap5/fig/schéma_cavity.pdf, id=1108, 423.94608pt x 569.05513pt>
+<./chap5/fig/schéma_cavity.pdf, id=1142, 423.94608pt x 569.05513pt>
 File: ./chap5/fig/schéma_cavity.pdf Graphic file (type pdf)
 <use ./chap5/fig/schéma_cavity.pdf>
 Package pdftex.def Info: ./chap5/fig/schéma_cavity.pdf  used on input line 127.
 (pdftex.def)             Requested size: 438.17245pt x 588.1565pt.
 
 
-[40]
+[44]
 Overfull \vbox (66.98184pt too high) has occurred while \output is active []
 
 
 
-[41 <./chap5/fig/schéma_cavity.pdf>]
+[45 <./chap5/fig/schéma_cavity.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-LaTeX Warning: Citation `Sankey2010' on page 42 undefined on input line 140.
+LaTeX Warning: Citation `Sankey2010' on page 46 undefined on input line 140.
 
-<./chap5/fig/flexure tune.pdf, id=1144, 423.94608pt x 184.06267pt>
+<./chap5/fig/flexure tune.pdf, id=1179, 423.94608pt x 184.06267pt>
 File: ./chap5/fig/flexure tune.pdf Graphic file (type pdf)
 <use ./chap5/fig/flexure tune.pdf>
 Package pdftex.def Info: ./chap5/fig/flexure tune.pdf  used on input line 146.
 (pdftex.def)             Requested size: 438.17245pt x 190.24104pt.
 
 
-[42]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<./chap5/fig/fig_lock_MATE.pdf, id=1151, 423.94608pt x 181.28734pt>
+<./chap5/fig/fig_lock_MATE.pdf, id=1186, 423.94608pt x 181.28734pt>
 File: ./chap5/fig/fig_lock_MATE.pdf Graphic file (type pdf)
 <use ./chap5/fig/fig_lock_MATE.pdf>
 Package pdftex.def Info: ./chap5/fig/fig_lock_MATE.pdf  used on input line 159.
@@ -1335,10 +1363,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[43 <./chap5/fig/flexure tune.pdf>]
+[47 <./chap5/fig/flexure tune.pdf>]
 
-[44 <./chap5/fig/fig_lock_MATE.pdf>]
-<./chap5/fig/tilt_alignementB.pdf, id=1458, 423.94608pt x 327.2067pt>
+[48 <./chap5/fig/fig_lock_MATE.pdf>]
+<./chap5/fig/tilt_alignementB.pdf, id=1494, 423.94608pt x 327.2067pt>
 File: ./chap5/fig/tilt_alignementB.pdf Graphic file (type pdf)
 <use ./chap5/fig/tilt_alignementB.pdf>
 Package pdftex.def Info: ./chap5/fig/tilt_alignementB.pdf  used on input line 188.
@@ -1349,16 +1377,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-[45]
+[49]
 
-[46 <./chap5/fig/tilt_alignementB.pdf>]
+[50 <./chap5/fig/tilt_alignementB.pdf>]
 
-[47]
+[51]
 \openout2 = `./chap6/chap6.aux'.
 
  (./chap6/chap6.tex
 
-[48
+[52
 
 
 
@@ -1371,14 +1399,14 @@ Chapter VI.
 
 (./mythesis.mtc6)
 
-[49])
+[53])
 
-[50]
+[54]
 \openout2 = `./chap7/chap7.aux'.
 
  (./chap7/chap7.tex)
 
-[51
+[55
 
 
 
@@ -1388,7 +1416,7 @@ Chapter VI.
 
  (./appA.tex
 
-[52
+[56
 
 
 
@@ -1400,13 +1428,13 @@ Overfull \hbox (28.062pt too wide) detected at line 20
 
 
 
-[53]
+[57]
 
-[54]
+[58]
 
-[55]
+[59]
 
-[56
+[60
 
 ]
 Overfull \hbox (38.79158pt too wide) detected at line 153
@@ -1415,21 +1443,21 @@ Overfull \hbox (38.79158pt too wide) detected at line 153
 
 )
 
-[57]
-
-[58
-
-
-
-]
-
-[59]
-
-[60
-
-]
-
 [61]
+
+[62
+
+
+
+]
+
+[63]
+
+[64
+
+]
+
+[65]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1464,14 +1492,14 @@ Overfull \hbox (38.79158pt too wide) detected at line 153
 
 
 
-[62
+[66
 
 
 ]
 
-[63]
+[67]
 
-[64
+[68
 
 ]
 Package minitoc Info: I0009
@@ -1492,7 +1520,7 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[65
+[69
 
 ] (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./chap7/chap7.aux) (./appA.aux))
  ***********
@@ -1504,21 +1532,21 @@ L3 programming layer <2025-04-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 93CB47C7E7DF04D82D41DD98D1E771FE;14665.
+(rerunfilecheck)             Checksum: FE749A7735EEAEAC52EE761D4A27AE85;14828.
  ) 
 Here is how much of TeX's memory you used:
- 22794 strings out of 469590
- 381721 string characters out of 5474519
- 855088 words of memory out of 5000000
- 48790 multiletter control sequences out of 15000+600000
+ 22807 strings out of 469590
+ 381870 string characters out of 5474519
+ 856088 words of memory out of 5000000
+ 48791 multiletter control sequences out of 15000+600000
  753000 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,31n,117p,1334b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,31n,117p,1553b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mythesis.pdf (75 pages, 10417537 bytes).
+Output written on mythesis.pdf (79 pages, 10429541 bytes).
 PDF statistics:
- 2166 PDF objects out of 2487 (max. 8388607)
- 1782 compressed objects within 18 object streams
- 300 named destinations out of 1000 (max. 500000)
- 623 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2204 PDF objects out of 2487 (max. 8388607)
+ 1815 compressed objects within 19 object streams
+ 312 named destinations out of 1000 (max. 500000)
+ 631 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -638,12 +638,12 @@ We consider a field cavity mode described by the annihilation operator \(\hat{a}
 %
 \begin{equation}
 \begin{split}
-  \frac{d}{dt} \hat{a}(t) & = -\frac{i}{\hbar} [\hat{a}, \hat{H}] - \frac{\kappa}{2} \hat{a}(t) + \sqrt{\kappa_1} \, \hat{a}_{\mathrm{in}}(t)  + \sqrt{\kappa_2} \, \delta \hat{a}_{\mathrm{vac}}(t) \\
-  & = -\Big(\frac{\kappa}{2}-i\Delta\Big) \hat{a}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \hat{a}_{\mathrm{in}}(t)  + \sqrt{\kappa_2} \, \delta \hat{a}_{\mathrm{vac}}(t) 
+  \frac{d}{dt} \hat{a}(t) & = -\frac{i}{\hbar} [\hat{a}, \hat{H}] - \frac{\kappa}{2} \hat{a}(t) + \sqrt{\kappa_1} \, \hat{a}_{\mathrm{in}}(t)  + \sqrt{\kappa_2} \, \delta \hat{a}_{\mathrm{vac}}(t) + \sqrt{\kappa_0} \, \delta \hat{a}_{\mathrm{l}}(t) \\
+  & = -\Big(\frac{\kappa}{2}-i\Delta\Big) \hat{a}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \hat{a}_{\mathrm{in}}(t)  + \sqrt{\kappa_2} \, \delta \hat{a}_{\mathrm{vac}}(t)  + \sqrt{\kappa_0} \, \delta \hat{a}_{\mathrm{l}}(t) 
 \label{eq:qle}
 \end{split}
 \end{equation}
-where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\gamma/\tau$ additional losses. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by $\hat{a}_{\mathrm{out}} = \sqrt{\kappa_{\mathrm{out}}} \, \hat{a} - \hat{a}_{\mathrm{in}} $ which, in our two coupler system, gives us :
+where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\gamma/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by $\hat{a}_{\mathrm{out}} = \sqrt{\kappa_{\mathrm{out}}} \, \hat{a} - \hat{a}_{\mathrm{in}} $ which, in our two coupler system, gives us :
 \begin{equation}
   \hat{a}_{\mathrm{ref}} = \sqrt{\kappa_{1}}\hat{a} - \hat{a}_{\mathrm{in}} , \quad \hat{a}_{\mathrm{trans}} = \sqrt{\kappa_{2}}\hat{a} - \delta \hat{a}_{\mathrm{vac}} 
 \end{equation}
@@ -654,8 +654,8 @@ As introduced in the previous subsection, one can split the annihilation operato
   0 &= -\Big(\frac{\kappa}{2}-i\Delta\Big) \bar{\alpha} + \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}} \\
   \frac{d}{dt} \mathbf{\delta \hat{u}}(t)&= - \begin{pmatrix}
   \frac{\kappa}{2}-i\Delta & 0 \\ 
-  0 & \frac{\kappa}{2}+i\Delta \\ 
-  \end{pmatrix}  \mathbf{\delta \hat{u}}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}(t)  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}(t)
+   0 & \frac{\kappa}{2}+i\Delta \\ 
+  \end{pmatrix}  \mathbf{\delta \hat{u}}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}(t)  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}(t) + \sqrt{\kappa_0} \, \mathbf{\delta \hat{u}_{\mathrm{l}}}(t) 
   \end{split}
 \end{equation}
 
@@ -684,7 +684,7 @@ Plugging back the expression of $\kappa_i = T_i/\tau$ in the reflection coeffici
 \subsubsection{Noise Spectra} 
 To derive the spectra we go to Fourier space such that 
 \begin{equation}
-     \mathbf{M}_\Delta \mathbf{\delta \hat{u}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]   
+     \mathbf{M}_\Delta \mathbf{\delta \hat{u}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]   + \sqrt{\kappa_0} \, \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega]   
 \end{equation}
 with 
 \begin{equation}
@@ -696,125 +696,194 @@ with
 One can then build the intracavity two-photon quadratures as 
 \begin{equation}
   \begin{split}
-  \mathbf{\Gamma} \mathbf{\delta \hat{u}}[\Omega]  = \begin{pmatrix}
+  \mathbf{\delta \hat{a}}[\Omega]  = \begin{pmatrix}
   \delta \hat{p}[\Omega] \\[2pt]
 \delta \hat{q}[\Omega]
-\end{pmatrix}  = \sqrt{\kappa_1} \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
+\end{pmatrix}  = \sqrt{\kappa_1} \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_0} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] 
 \end{split}
 \end{equation}
 as well as the reflected and transmitted quadratures 
 \begin{equation}
-  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{ref}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{ref}}[\Omega]
-\end{pmatrix}  = ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta - \mathbf{\Gamma} ) \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1 \kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
-\end{equation}
-\begin{equation}
-  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{trans}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{trans}}[\Omega]
-\end{pmatrix}  = \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
+  \begin{split}
+  \mathbf{\delta \hat{a}_{\mathrm{ref}}}[\Omega]  &= ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1} )\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1 \kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_1 \kappa_0} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]\\
+  \mathbf{\delta \hat{a}_{\mathrm{trans}}}[\Omega] & = \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  (\kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_2 \kappa_0} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]
+  \end{split}
 \end{equation}
 
 
 where the inverse of the $\mathbf{M}_\Delta$ matrix is given by 
 \begin{equation}
-  \mathbf{M}^{-1}_\Delta = \begin{pmatrix}
-\dfrac{\kappa/2+i(\Delta+\Omega)}{\left(\kappa/2\right)^2+(\Delta+\Omega)^2} & 0 \\
-0 & \dfrac{\kappa/2-i(\Delta-\Omega)}{\left(\kappa/2\right)^2+(\Delta-\Omega)^2}
+\mathbf{M}_\Delta^{-1} =
+\begin{pmatrix}
+\dfrac{1}{\kappa/2 - i(\Delta + \Omega)} & 0 \\
+0 & \dfrac{1}{\kappa/2 + i(\Delta - \Omega)}
 \end{pmatrix}
 \end{equation}
 
-This equation is the key to understanding the filtering properties of optical cavities. If $\Delta \neq 0 $, the matrix product $\mathbf{\Gamma} \mathbf{M}^{-1}_\Delta $ feature off diagonal element. This produces reflected fluctuations in our two hermitian observables that ar elinear superpositions of the $+$ and $-$ sidebands. If not correlated/entangled, this will result in nothing spectacular. However, if the input fluctuations are squeezed, ... 
-
-\subsubsection{Mode Cleaner}
-A Mode Cleaner (MC) is frequently used to purify the coherent state incoming onto a cavity from classical noises. It is characterize but a configuration such that $\kappa_1 \approx \kappa_2 \approx \kappa/2$ where we neglect the losses $\kappa_0$. It is locked on resonance ($\Delta=0$), such that the $\mathbf{M}_\Delta$ matrix becomes diagonal, allowing us to write  
-
-\begin{equation}
-  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{ref}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{ref}}[\Omega]
-\end{pmatrix}  = ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta - \mathbf{\Gamma} ) \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1 \kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
-\end{equation}
-\begin{equation}
-  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{trans}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{trans}}[\Omega]
-\end{pmatrix}  = \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
-\end{equation}
-
-
-
-%    \begin{pmatrix}
-%   \frac{\kappa}{2}-i(\Delta+\Omega) & 0 \\ 
-%   0 & \frac{\kappa}{2}+i(\Delta-\Omega)\\ 
-%   \end{pmatrix}  \mathbf{\delta \hat{u}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
-% \begin{equation}
-  
-% \end{equation}
+The structure above is the engine behind frequency-dependent squeezing. On resonance $\mathbf{M}^{-1}_0 \propto \mathbf{1}$ is purely diagonal—each quadrature is filtered in amplitude but not mixed—so a fixed input squeezing angle remains fixed. The moment the cavity is detuned, the $\mathbf{\Gamma}\mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}$ off-diagonal terms asymmetrically mix the upper and lower sidebands; in the two-photon picture this is a frequency-dependent rotation and scaling of the $(p,q)$ basis. The amplitude (Lorentzian) part sets how strongly each sideband passes, while the phase accrued inside the cavity sets the rotation angle that now varies with $\Omega$. A broadband field with a single squeezing angle at the input is therefore converted into an output whose squeezing angle “twists” with frequency: near one band it can align with the phase quadrature (shot-noise reduction), and at another it can align with the amplitude quadrature (radiation-pressure noise reduction). This is exactly the mechanism exploited by filter cavities in precision interferometry: by choosing bandwidth, detuning, and coupling, one tailors the rotation profile to the target noise crossover. Practically, the attainable rotation and the preserved squeezing are limited by optical loss and mode mismatch, which inject uncorrelated vacuum and partially unwind the correlations the cavity tries to create. \\
 
 
 On resonance ($\Delta=0$), the $\mathbf{M}_\Delta$ matrix becomes diagonal, allowing us to write 
-
 \begin{equation}
-  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{ref}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{ref}}[\Omega]
-\end{pmatrix}  = \Bigg(\kappa_1 \, \dfrac{\kappa/2+i\Omega}{\left(\kappa/2\right)^2+\Omega^2} - 1 \Bigg)  \,  \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{in}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{in}}[\Omega]
-\end{pmatrix} +  \sqrt{\kappa_1 \kappa_2}  \dfrac{\kappa/2+i\Omega}{\left(\kappa/2\right)^2+\Omega^2}   \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{vac}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{vac}}[\Omega]
-\end{pmatrix}
+  \begin{split}
+  \mathbf{\delta \hat{a}_{\mathrm{ref}}}[\Omega]   &= \dfrac{\kappa_1-\kappa/2+i\Omega}{\kappa/2-i\Omega}  \,  \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]   +   \dfrac{\sqrt{\kappa_1 \kappa_2} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] + \dfrac{\sqrt{\kappa_1 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega]  \\
+  \mathbf{\delta \hat{a}_{\mathrm{trans}}}[\Omega]   &= \, \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]   +  \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]   + \dfrac{\sqrt{\kappa_2 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] 
+  \end{split}
 \end{equation}
 
-
-
-
-
-
-
-\begin{equation} \mathbf{\delta \hat{u}}[\Omega]  = \frac{\sqrt{\kappa_1}}{\kappa/2 -i\Omega} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  + \frac{\sqrt{\kappa_2}}{\kappa/2 -i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
+\subsubsection{Example: Mode Cleaner }
+Let us consider a configuration such that $\kappa_1 \approx \kappa_2 \approx \kappa/2$ where we neglect the losses $\kappa_0\sim 0$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted quadratures are written
+\begin{equation}
+  \mathbf{\delta \hat{a}_{\mathrm{trans}}}[\Omega]  = \, \dfrac{ \kappa/2}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]   +  \dfrac{i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]  
 \end{equation}
-such that constructing our amplitude-phase two-photon quadratures yields 
-\begin{equation} \Gamma \mathbf{\delta \hat{u}}[\Omega]  = \begin{pmatrix}
-  \delta \hat{p}[\Omega] \\[2pt]
-\delta \hat{q}[\Omega]
-\end{pmatrix} = \frac{\sqrt{\kappa_1}}{\kappa/2 -i\Omega} \, \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{in}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{in}}[\Omega]
-\end{pmatrix}  + \frac{\sqrt{\kappa_2}}{\kappa/2 -i\Omega}  \, \begin{pmatrix}
-  \delta \hat{p}_{\mathrm{vac}}[\Omega] \\[2pt]
-\delta \hat{q}_{\mathrm{vac}}[\Omega]
-\end{pmatrix}
+The resulting transmitted quadrature noise spectra are then given by: 
+\begin{equation}
+  \begin{split}
+    S_{pp}^{\rm trans}[\Omega] &=\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2}\,S_{pp}^{\rm in}[\Omega]+\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}\,S_{pp}^{\rm vac}[\Omega] \\
+    S_{qq}^{\rm trans}[\Omega]&=\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2}\,S_{qq}^{\rm in}[\Omega]+\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}\,S_{qq}^{\rm vac}[\Omega]
+  \end{split}
 \end{equation}
+Now consider that the input amplitude-phase fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. Once can notice that the prefactor to the input noises (both $S_{pp}^{\rm in}[\Omega]$ and $S_{qq}^{\rm in}[\Omega]$) is actually a Lorentzian function - a low pass filter. Hence, the noises of the input fields are low pass filtered by the cavity, while the vacuum fluctuations are high pass filtered at precisely the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its super-vacuum fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleant}, hence the name 'Mode Cleaner' for such a cavity setup.  
 
+\subsection{Non Linear Cavities}
+We now turn to the description of optical cavities in which a $\chi^{(2)}$ medium is embedded within. This non linear medium can be used both for sum frequency generation, or difference frequency generation. The generic Hamiltonian describing a  $\chi^{(2)}$ parametric process is 
+\begin{equation}
+  H = \hbar \omega_p \hat{b}^{\dagger}\hat{b} + \hbar \omega_0 \hat{a}^\dagger \hat{a} + \frac{i\hbar\epsilon}{2}( \hat{b} \, \hat{a}^{\dagger2} - \hat{b}^\dagger \, \hat{a}^2)
+\end{equation}
+where we assumed perfect phase matching for simplicity, that is $\epsilon \in\mathbb{R}$. In our experiment wih squeezed light, we do use both as to first generate a pump field using a Second Harmonic Generation (SHG) scheme, then use the generated field to \textit{pump} a degenerate Optical Parametric Oscillator (OPO). The equations of motion of both fields are very similar in their structure, yet different in their phenomenology. Here we outline the main results and predictions for both. 
+\subsubsection{Second Harmonic Generation}
+
+
+
+
+
+\subsubsection{Optical Parametric Oscillation \& Amplification}
+For this scheme, we consider a pump field with frequency $\omega_p = 2\omega_0$. We further consider the pump is not \textit{depleted}, such that we can change $\hat{b}$ to its mean field value $|\bar{\beta}|e^{i\bar{\varphi}_b}$, and we disregard the $\hat{b}$ fluctuations in the equations of motion. The total non linear gain is thus defined as $g = \epsilon |\bar\beta|$, and the QLEs for the steady state and fluctuation parts of the $\hat{a}$ field yields: 
+ \begin{equation}
+  \begin{split}
+  0 &= -\Big(\frac{\kappa}{2}-i\Delta\Big) \bar{\alpha} +g e^{i\bar{\varphi}_b} \, \bar{\alpha}^* + \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}} \\
+  \frac{d}{dt} \mathbf{\delta \hat{u}}(t)&= - \begin{pmatrix}
+  \frac{\kappa}{2}-i\Delta & g e^{i\bar{\varphi}_b}\\ 
+   g e^{-i\bar{\varphi}_b} & \frac{\kappa}{2}+i\Delta \\ 
+  \end{pmatrix}  \mathbf{\delta \hat{u}}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}(t)  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}(t) + \sqrt{\kappa_0} \, \mathbf{\delta \hat{u}_{\mathrm{l}}}(t) 
+  \end{split}
+\end{equation}
+where we account for losses $\kappa_0<\kappa_{1,2}$ by summing the associated vacuum fluctuations $\mathbf{\delta \hat{u}_{\mathrm{l}}}(t) $ explicitely. 
+Assuming a real input field $\bar{\alpha}_\textrm{in}$, the transmitted field is given by: 
+\begin{equation}
+   \bar{\alpha}_{\mathrm{trans}} = \frac{\kappa_1}{\kappa/2} \, \frac{1+i\frac{\Delta}{\kappa/2}+xe^{i\bar{\varphi}_b}}{1+(\frac{\Delta}{\kappa/2})^2 - |x|^2}  \bar{\alpha}_\textrm{in}
+\end{equation}
+where we define the normalised pump parameter $x = g / (\kappa/2) \in\mathbb{R}$. This normalised pump parameter also equals the ratio of the pump field amplitude by the pump field threshold often written $B/B_{\mathrm{thr}}$. For a resonant cavity where $\kappa_1 = \kappa_2 \sim \kappa/2$, the expression reduces to the well known parametric amplification/deamplification scheme 
+\begin{equation}
+   \bar{\alpha}_{\mathrm{trans}} =\frac{1+x e^{i\bar{\varphi}_b}}{1 - |x|^2}  \bar{\alpha}_\textrm{in} 
+\end{equation}
+in which the amplification or deamplification processes are set by the phase of the pump $\bar{\varphi}_b$. The threshold is defined at $x=1$, where the rate of generation of entangled pairs exceeds the rate at which they leak from the cavity. In other words, $x$ is unity when the round trip gain equals the round trip losses. That's precisly the point where the no depletion approximation breaks down, as illustrated by the divergence seen in transmitted field at this very value (how could one obtained a diverging field from a pump field with a finite number of photons). We also notice two special cases, when $\bar\varphi_b=\{0,\pi\}$, coinciding with the amplification and the deamplification processes respectively. \\
+We focus on the resonant case when $\varphi_b$ takes these two values, such that the off diagonal terms below can simply be written $\pm g$ and the operator QLE in Fourier space is written as 
+\begin{equation}
+     \mathbf{M'}_0 \,  \mathbf{\delta \hat{u}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]  + \sqrt{\kappa_0} \, \mathbf{\delta \hat{u}_{\mathrm{l}}}(t)  
+\end{equation}
+with 
+\begin{equation}
+  \mathbf{M'}_0 =\begin{pmatrix}
+  \frac{\kappa}{2}-i\Omega & \pm g\\ 
+  \pm g  & \frac{\kappa}{2}-i\Omega\\ 
+  \end{pmatrix} 
+\end{equation}
+As before with a simple cavity, the transmitted quadratures are then 
 \begin{equation}
 \begin{split}
-    \delta \hat{p}[\Omega] &=  \frac{\sqrt{\kappa_1}}{\kappa/2-i(\Delta+\Omega)} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \frac{\sqrt{\kappa_2}}{\kappa/2-i(\Delta+\Omega)} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \\
-    \delta \hat{q}[\Omega] &=  \frac{\sqrt{\kappa_1}}{\kappa/2+(\Delta+\Omega)} \, \delta \hat{q}_{\mathrm{in}}[\Omega] + \frac{\sqrt{\kappa_2}}{\kappa/2+i(\Delta+\Omega)} \, \delta \hat{q}_{\mathrm{vac}}[\Omega].
+  \mathbf{\delta \hat{a}_{\mathrm{trans}}}[\Omega]  = &\sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma} \mathbf{M}^{-1}_0\mathbf{\Gamma}^{-1}\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] + \\
+  &  (\kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_0 \mathbf{\Gamma}^{-1}- \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +\\
+  & \sqrt{\kappa_0 \kappa_2} \, \mathbf{\Gamma} \mathbf{M}^{-1}_0\mathbf{\Gamma}^{-1}\,\mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega]
 \end{split}
 \end{equation}
-
+such that with input vacuum fluctuations from all three reservoirs and a bit of algebra we get 
 \begin{equation}
-  \mathbf{\hat{u}}[\Omega] = \sqrt{\kappa_1}\begin{pmatrix}
-    \chi_c[\Omega] \\  
-    \chi^*_c[-\Omega]
-  \end{pmatrix} \mathbf{\hat{u}_{\mathrm{in}}}[\Omega]
-  + \sqrt{\kappa_2}\begin{pmatrix}
-    \chi_c[\Omega] \\  
-    \chi^*_c[-\Omega]
-  \end{pmatrix}\mathbf{\hat{u}_{\mathrm{vac}}}[\Omega]
+  \begin{split}
+    S_{pp}^{\rm trans}[\Omega] &= 1 \mp \frac{\kappa_2}{\kappa} \frac{4x}{(1\pm x)^2+ (\frac{\Omega}{\kappa/2})^2}\\
+    S_{qq}^{\rm trans}[\Omega]&=  1 \pm \frac{\kappa_2}{\kappa} \frac{4x}{(1\mp x)^2+ (\frac{\Omega}{\kappa/2})^2}
+  \end{split}
 \end{equation}
-and the intracavity quadratures as 
 
-Setting $\Delta = 0$, we can now construct the amplitude-phase two-photon quadratures as in the previous subsection which give us 
-we now focus on 
+
+
+
+\newpage
 \begin{equation}
-\begin{split}
-  \delta \hat{p}[\Omega] &=  \frac{\sqrt{\kappa_1}}{\kappa/2-i\Omega} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \frac{\sqrt{\kappa_2}}{\kappa/2-i\Omega} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \\
-  \delta \hat{q}[\Omega] &=  \frac{\sqrt{\kappa_1}}{\kappa/2-i\Omega} \, \delta \hat{q}_{\mathrm{in}}[\Omega] + \frac{\sqrt{\kappa_2}}{\kappa/2-i\Omega} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] \\
-\end{split}
+\begingroup
+\setlength{\arraycolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{aligned}
+\delta\hat{\mathbf a}_{\mathrm{trans}}[\Omega]
+&=
+\frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2}
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}-x\cos\varphi_b & -\,x\sin\varphi_b \\[4pt]
+-\,x\sin\varphi_b & 1-\tfrac{i\Omega}{\kappa/2}+x\cos\varphi_b
+\end{pmatrix}
+\delta\hat{\mathbf a}_{\mathrm{in}}[\Omega] \\[6pt]
+&\quad+
+\left[
+\frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2}
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}-x\cos\varphi_b & -\,x\sin\varphi_b \\[4pt]
+-\,x\sin\varphi_b & 1-\tfrac{i\Omega}{\kappa/2}+x\cos\varphi_b
+\end{pmatrix}
+- \mathbb{I}
+\right]
+\delta\hat{\mathbf a}_{\mathrm{vac}}[\Omega].
+\end{aligned}
+\endgroup
+\end{equation}
+We now look at two special cases, namely when $\bar\varphi_b=\{0,\pi\}$ such that the above expression simplifies 
+\begin{equation}
+\begingroup
+\setlength{\arraycolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{aligned}
+\delta\hat{\mathbf a}_{\mathrm{trans}}[\Omega]
+&=
+\frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2}
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}\mp x & 0 \\[4pt]
+0 & 1-\tfrac{i\Omega}{\kappa/2}\pm x
+\end{pmatrix}
+\delta\hat{\mathbf a}_{\mathrm{in}}[\Omega] \\[6pt]
+&\quad+
+\left[
+\frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2}
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}\mp x &0\\[4pt]
+0 & 1-\tfrac{i\Omega}{\kappa/2}\pm x
+\end{pmatrix}
+- \mathbb{I}
+\right]
+\delta\hat{\mathbf a}_{\mathrm{vac}}[\Omega].
+\end{aligned}
+\endgroup
+\end{equation}
+
+
+\begin{equation}
+\begingroup
+\setlength{\arraycolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{aligned}
+\delta\hat{\mathbf a}_{\mathrm{trans}}[\Omega]
+&=
+\frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2}
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}\mp x & 0 \\[4pt]
+0 & 1-\tfrac{i\Omega}{\kappa/2}\pm x
+\end{pmatrix} 
+\delta\hat{\mathbf a}_{\mathrm{in}}[\Omega] \\[6pt]
+& + \frac{1}{\bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 - x^2} 
+\begin{pmatrix}
+1-\tfrac{i\Omega}{\kappa/2}\mp x - \bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 + x^2 &0\\[4pt]
+0 & 1-\tfrac{i\Omega}{\kappa/2}\pm - \bigl(1-\tfrac{i\Omega}{\kappa/2}\bigr)^2 + x^2x
+\end{pmatrix}
+\delta\hat{\mathbf a}_{\mathrm{vac}}[\Omega].
+\end{aligned}
+\endgroup
 \end{equation}
 \section{Numerical Methods and Simulations}
