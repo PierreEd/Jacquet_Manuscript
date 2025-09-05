@@ -945,6 +945,7 @@ INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT ./chap3/chap3.tex
 OUTPUT ./chap3/chap3.aux
 INPUT ./chap3/chap3.tex
@@ -973,7 +974,6 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc4
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
