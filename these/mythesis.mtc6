@@ -1,13 +1,18 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.1}OPO Resonance and Locking}{\reset@font\mtcSfont 56}{section.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.1.1}Resonance Conditions and Sweeps}{\reset@font\mtcSSfont 56}{subsection.6.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.1.2}Lock Acquisition and Optimization}{\reset@font\mtcSSfont 56}{subsection.6.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.1.3}Stability Characterization}{\reset@font\mtcSSfont 56}{subsection.6.1.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.2}Quadrature Spectral Analysis}{\reset@font\mtcSfont 56}{section.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.1}Detection of Squeezing and Anti-squeezing}{\reset@font\mtcSSfont 56}{subsection.6.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.2}Spectral Variation with Frequency}{\reset@font\mtcSSfont 56}{subsection.6.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.3}Optimal Quadrature Conditions}{\reset@font\mtcSSfont 56}{subsection.6.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.3}Filter Cavity Concept}{\reset@font\mtcSfont 56}{section.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 56}{subsection.6.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 56}{subsection.6.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: PDH Derivation}{\reset@font\mtcSfont 59}{appendix*.52}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: Spectra Derivation}{\reset@font\mtcSfont 63}{appendix*.60}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.1}Optical Setup}{\reset@font\mtcSfont 60}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.2}Cavity Resonances and Locks}{\reset@font\mtcSfont 60}{section.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.1}IRMC Cavity}{\reset@font\mtcSSfont 60}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.2}SHG Cavity}{\reset@font\mtcSSfont 61}{subsection.6.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Scanning and Resonance Mapping.}{\reset@font\mtcPfont 61}{section*.62}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Locking.}{\reset@font\mtcPfont 62}{section*.63}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Nonlinear Crystal and Phase Matching.}{\reset@font\mtcPfont 62}{section*.64}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Temperature-Induced Resonance Shifts.}{\reset@font\mtcPfont 62}{section*.65}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.3}OPO Cavity}{\reset@font\mtcSSfont 64}{subsection.6.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.3}Spectral analysis}{\reset@font\mtcSfont 64}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.1}Detection of Squeezing and Anti-squeezing}{\reset@font\mtcSSfont 64}{subsection.6.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.2}Spectral Variation with Frequency}{\reset@font\mtcSSfont 64}{subsection.6.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.3}Optimal Quadrature Conditions}{\reset@font\mtcSSfont 64}{subsection.6.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.4}Filter Cavity Concept}{\reset@font\mtcSfont 64}{section.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 64}{subsection.6.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 64}{subsection.6.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: PDH Derivation}{\reset@font\mtcSfont 67}{appendix*.69}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: Spectra Derivation}{\reset@font\mtcSfont 71}{appendix*.77}}
