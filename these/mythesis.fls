@@ -928,11 +928,11 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc2
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT ./chap2/fig/quantum_states.pdf
 INPUT ./chap2/fig/quantum_states.pdf
 INPUT ./chap2/fig/quantum_states.pdf
@@ -945,7 +945,46 @@ INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
+INPUT ./chap2/fig/cavity_types.pdf
+INPUT ./chap2/fig/cavity_types.pdf
+INPUT ./chap2/fig/cavity_types.pdf
+INPUT ./chap2/fig/cavity_types.pdf
+INPUT ./chap2/fig/cavity_types.pdf
+INPUT ./chap2/fig/CavitySimple.pdf
+INPUT ./chap2/fig/CavitySimple.pdf
+INPUT ./chap2/fig/CavitySimple.pdf
+INPUT ./chap2/fig/CavitySimple.pdf
+INPUT ./chap2/fig/CavitySimple.pdf
+INPUT ./chap2/fig/schema_SHG_OPO_2photons.pdf
+INPUT ./chap2/fig/schema_SHG_OPO_2photons.pdf
+INPUT ./chap2/fig/schema_SHG_OPO_2photons.pdf
+INPUT ./chap2/fig/schema_SHG_OPO_2photons.pdf
+INPUT ./chap2/fig/schema_SHG_OPO_2photons.pdf
+INPUT ./chap2/fig/cavitySHG copy.pdf
+INPUT ./chap2/fig/cavitySHG copy.pdf
+INPUT ./chap2/fig/cavitySHG copy.pdf
+INPUT ./chap2/fig/cavitySHG copy.pdf
+INPUT ./chap2/fig/cavitySHG copy.pdf
+INPUT ./chap2/fig/OPO2.pdf
+INPUT ./chap2/fig/OPO2.pdf
+INPUT ./chap2/fig/OPO2.pdf
+INPUT ./chap2/fig/OPO2.pdf
+INPUT ./chap2/fig/OPO2.pdf
+INPUT ./chap2/fig/amp_deamp.pdf
+INPUT ./chap2/fig/amp_deamp.pdf
+INPUT ./chap2/fig/amp_deamp.pdf
+INPUT ./chap2/fig/amp_deamp.pdf
+INPUT ./chap2/fig/amp_deamp.pdf
+INPUT ./chap2/fig/OPONoises.pdf
+INPUT ./chap2/fig/OPONoises.pdf
+INPUT ./chap2/fig/OPONoises.pdf
+INPUT ./chap2/fig/OPONoises.pdf
+INPUT ./chap2/fig/OPONoises.pdf
+INPUT ./chap2/fig/CavityOM.pdf
+INPUT ./chap2/fig/CavityOM.pdf
+INPUT ./chap2/fig/CavityOM.pdf
+INPUT ./chap2/fig/CavityOM.pdf
+INPUT ./chap2/fig/CavityOM.pdf
 INPUT ./chap3/chap3.tex
 OUTPUT ./chap3/chap3.aux
 INPUT ./chap3/chap3.tex
@@ -974,6 +1013,7 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc4
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd

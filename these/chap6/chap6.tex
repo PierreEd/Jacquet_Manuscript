@@ -3,7 +3,7 @@ This chapter will cover the experimental methods used in the development of freq
 \minitoc
 \newpage 
 
-\section{Optical Setup}
+\section{Optical Setup Overview}
 
 We first provide a general overview of the optical setup used to generate and manipulate squeezed light. 
 Two lasers are used in this setup, to give flexibility as to produce bright squeezing directly from the OPO (one laser only), or produce vacuum squeezing to be mixed with a bright coherent field (two lasers). Both lasers are 1064nm Nd:YAG lasers (Coherent Mephisto and Mephisto S) as in the previous chapter. The full optical layout is shown in figure \ref{fig:opticallayout}. The experiment was designed as to easily switch between the two configurations. Throughout this chapter, we will refer to three different optical cavities common to the two configurations: the infrared mode cleaner (IRMC) cavity, the SHG cavity, and the OPO cavity. Each of these cavities is central to the generation and manipulation of squeezed light, and their characterization is detailed in the following sections. 
@@ -16,7 +16,28 @@ The second configuration employs two independent lasers: one dedicated to pumpin
 \section{Cavity Resonances and Locks}
 
 \subsection{IRMC Cavity}
-The first cavity presented here is the infrared mode cleaner (IRMC) cavity. The purpose of this cavity is to spatially filter the laser beam, ensuring a high-quality TEM00 mode profile, as well as \textit{cleaning} the IR beam from classical noise as developped in Chapter ??. 
+The first cavity presented here is the infrared mode cleaner (IRMC) cavity. The purpose of this cavity is to spatially filter the laser beam, ensuring a high-quality TEM00 mode profile, as well as \textit{cleaning} the IR beam from any excess classical noise as developped in Chapter ??. It consists in a triangular cavity, with a round trip length of $99\,\mathrm{cm}$, and a finesse of $\mathcal{F} = 300$. The input coupler has a transmission of $1.4 \%$, while the other two mirrors are highly reflective. The cavity is designed to be overcoupled, with the input coupler transmission dominating the total round-trip losses. This configuration maximizes the transmission of the fundamental mode while effectively filtering out higher-order spatial modes and excess noise.
+
+\subsection*{MCIR Cavity}
+
+The main reference cavity employed throughout this work is the MCIR cavity, whose relevant parameters are summarized in Table~\ref{tab:MCIR}. 
+It is a three mirror - \textit{travelling wave} Fabry--Pérot resonator with a total round--trip length of $L = 84$ cm, corresponding to a free spectral range of 
+$\mathrm{FSR} = 357$ MHz. With a measured optical bandwidth of $\kappa/2\pi = 60$ kHz, the finesse reaches a value of 
+$\mathcal{F} \approx 6000$, which ensures narrow resonances suitable for frequency stabilization and precision measurements. 
+At resonance, the measured reflectivity is $R_0 \simeq 0.47$. 
+
+The cavity is formed by two mirrors of complementary characteristics. 
+The curved end mirror has a radius of curvature $\mathrm{RoC} = -2$ m, while both the input and output mirrors are plano with transmissions 
+$T_\mathrm{in} = T_\mathrm{out} = 475$ ppm. Additional intracavity losses were estimated to be $P \approx 718$ ppm, as computed from 
+Eq.~(II.72), which assumes ideal mode matching of the laser to the cavity.  
+From these values, one obtains a stable resonator with a well-defined mode geometry. The Gaussian beam waist at the cavity center is 
+$w_0 = 578$ µm, calculated using the standard mode waist formula~\cite{ref:68}.  
+
+The combination of high finesse, moderate cavity length, and relatively large mode waist makes the MCIR cavity particularly well-suited for 
+applications requiring high spectral selectivity with minimal sensitivity to mirror surface imperfections or thermal effects. 
+Its design parameters are optimized to balance transmission through the input and output couplers with the unavoidable excess loss, 
+ensuring a stable operation point for subsequent experiments.
+
 
 
 \begin{figure}[h!]
