@@ -151,3 +151,98 @@ This derivation makes explicit how the PDH method uses phase-sensitive detection
   \Big)
   + \big\langle \delta p[\Omega]\;\delta p[\Omega'] \big\rangle \,.
 \end{align}
+
+
+
+
+
+\chapter*{Derivation of the optimal angle}
+\subsection*{Optimal fixed homodyne angle with complex \texorpdfstring{$\mathcal{K}$}{K}}
+
+Assume the measured (reflected) quadrature is
+\[
+\delta q_r \;=\; \delta q_{\rm in} \;+\; \mathcal{K}\,\delta p_{\rm in},
+\]
+so that, for any input covariance matrix \(S^{\rm in}\),
+\[
+S^{r}_{qq} \;=\; S^{\rm in}_{qq} + |\mathcal{K}|^{2}S^{\rm in}_{pp} + 2\,\mathrm{Re}\{\mathcal{K}\}\,S^{\rm in}_{pq}.
+\]
+
+For an input squeezed state of strength \(R\) and angle \(\theta\),
+\[
+S^{\rm in}(R,\theta)=
+\begin{pmatrix}
+\cosh R - \sinh R \cos 2\theta & -\,\sinh R \sin 2\theta\\[2pt]
+-\,\sinh R \sin 2\theta & \cosh R + \sinh R \cos 2\theta
+\end{pmatrix}.
+\]
+Hence
+\begin{align}
+S^{r}_{qq}(\theta)
+&= \cosh R - \sinh R \cos 2\theta
+ + |\mathcal{K}|^{2}\!\left(\cosh R + \sinh R \cos 2\theta\right)
+ - 2\,\mathrm{Re}\{\mathcal{K}\}\,\sinh R \sin 2\theta \nonumber\\[2pt]
+&= (1+|\mathcal{K}|^{2})\cosh R
+  + (|\mathcal{K}|^{2}-1)\sinh R \cos 2\theta
+  - 2\,\mathrm{Re}\{\mathcal{K}\}\,\sinh R \sin 2\theta .
+\label{eq:Sqq_linearform}
+\end{align}
+
+\paragraph{Optimal fixed angle.}
+Differentiate \eqref{eq:Sqq_linearform} w.r.t.~\(\theta\) and set to zero:
+\[
+\frac{\partial S^{r}_{qq}}{\partial \theta}
+= -2\sinh R\Big[(|\mathcal{K}|^{2}-1)\sin 2\theta + 2\,\mathrm{Re}\{\mathcal{K}\}\cos 2\theta\Big]=0,
+\]
+which gives the optimal fixed readout angle
+\begin{equation}
+\tan(2\theta_{\rm opt})
+= \frac{2\,\mathrm{Re}\{\mathcal{K}\}}{\,1-|\mathcal{K}|^{2}\,}
+\qquad
+\label{eq:theta_opt}
+\end{equation}
+Writing \(\mathcal{K}=|\mathcal{K}|e^{i\varphi_m}\) one may also use
+\[
+\tan(2\theta_{\rm opt})=\frac{2|\mathcal{K}|\cos\varphi_m}{\,1-|\mathcal{K}|^{2}\,}.
+\]
+
+\paragraph{Minimum attained value.}
+Equation \eqref{eq:Sqq_linearform} can be written as
+\[
+S^{r}_{qq}(\theta)
+=(1+|\mathcal{K}|^{2})\cosh R
++ M\,\sinh R\;\cos\!\big(2\theta-\phi\big),
+\]
+with
+\[
+M=\sqrt{(|\mathcal{K}|^{2}-1)^{2}+\big(2\,\mathrm{Re}\{\mathcal{K}\}\big)^{2}},
+\qquad
+\phi=\mathrm{atan2}\!\big(-2\,\mathrm{Re}\{\mathcal{K}\},\,|\mathcal{K}|^{2}-1\big).
+\]
+The minimum is therefore
+\begin{equation}
+\boxed{\quad
+S^{r}_{qq,\min}
+=(1+|\mathcal{K}|^{2})\cosh R - M\,\sinh R .
+\quad}
+\label{eq:Smin_general}
+\end{equation}
+
+\paragraph{Lower bound and the real-\(\mathcal{K}\) case.}
+Using \(M^{2}=(1+|\mathcal{K}|^{2})^{2}-4\,(\mathrm{Im}\{\mathcal{K}\})^{2}\), one finds
+\[
+M \le 1+|\mathcal{K}|^{2} \quad\Longrightarrow\quad
+S^{r}_{qq,\min} \;\ge\; (1+|\mathcal{K}|^{2})\,e^{-R},
+\]
+with equality \emph{iff} \(\mathrm{Im}\{\mathcal{K}\}=0\) (i.e.\ \(\mathcal{K}\) real).  
+When \(\mathcal{K}\in\mathbb{R}\),
+\[
+\tan(2\theta_{\rm opt})=\frac{2\mathcal{K}}{1-\mathcal{K}^{2}}
+\;\;\stackrel{\text{(double-angle)}}{\Longleftrightarrow}\;\;
+\theta_{\rm opt}=\arctan(\mathcal{K}) \; \; (\mathrm{mod}\;\tfrac{\pi}{2}),
+\]
+and the minimum \eqref{eq:Smin_general} saturates the bound:
+\[
+S^{r}_{qq,\min}=(1+\mathcal{K}^{2})\,e^{-R}.
+\]
+

@@ -928,6 +928,8 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc2
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
@@ -943,8 +945,6 @@ INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
 INPUT ./chap2/fig/quantum_quadraturesBis.pdf
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT ./chap2/fig/cavity_types.pdf
 INPUT ./chap2/fig/cavity_types.pdf
 INPUT ./chap2/fig/cavity_types.pdf
@@ -975,6 +975,7 @@ INPUT ./chap2/fig/amp_deamp.pdf
 INPUT ./chap2/fig/amp_deamp.pdf
 INPUT ./chap2/fig/amp_deamp.pdf
 INPUT ./chap2/fig/amp_deamp.pdf
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT ./chap2/fig/OPONoises.pdf
 INPUT ./chap2/fig/OPONoises.pdf
 INPUT ./chap2/fig/OPONoises.pdf
@@ -999,6 +1000,16 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc3
+INPUT ./chap3/fig/SQL0.pdf
+INPUT ./chap3/fig/SQL0.pdf
+INPUT ./chap3/fig/SQL0.pdf
+INPUT ./chap3/fig/SQL0.pdf
+INPUT ./chap3/fig/SQL0.pdf
+INPUT ./chap3/fig/chi_meca.pdf
+INPUT ./chap3/fig/chi_meca.pdf
+INPUT ./chap3/fig/chi_meca.pdf
+INPUT ./chap3/fig/chi_meca.pdf
+INPUT ./chap3/fig/chi_meca.pdf
 INPUT ./chap4/chap4.tex
 OUTPUT ./chap4/chap4.aux
 INPUT ./chap4/chap4.tex
@@ -1013,7 +1024,6 @@ INPUT ./mythesis.mtc
 INPUT mythesis.mtc
 OUTPUT mythesis.mtc
 INPUT mythesis.mtc4
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -1123,6 +1133,7 @@ OUTPUT appA.aux
 INPUT ./appA.tex
 INPUT ./appA.tex
 INPUT appA.tex
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 OUTPUT mythesis.maf
 INPUT ./mythesis.mtc
 INPUT ./mythesis.mtc

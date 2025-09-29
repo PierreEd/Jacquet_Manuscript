@@ -2,6 +2,7 @@
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
 \chapter{Theory: Background}
 This chapter will cover the elementary concepts required to describe an membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will derive the equations of motions of a membrane based optomechanical system with frequency dependent squeezed optical fields. 
+\newpage
 \minitoc
 \newpage
 \section{Optics}
@@ -12,20 +13,21 @@ E(\mathbf r) = E_0 \, \frac{w_0}{w(z)}
 \exp\!\left(-\frac{x^2+y^2}{w^2(z)}\right) 
 \exp\!\left[-i\!\left(kz + \frac{k(x^2+y^2)}{2R(z)} - \psi(z)\right)\right],
 \end{equation}
-where $\mathbf r = (x, y, z)$, $E_0$ is the field amplitude at the beam waist, $k = 2\pi/\lambda$ the wavenumber, and $\lambda$ the optical wavelength. The various quantities introduced above are given by
-\begin{equation}
+where $\mathbf r = (x, y, z)$, $E_0$ is the field amplitude at the beam waist, $k = 2\pi/\lambda$ the wavenumber, and $\lambda$ the optical wavelength. The various quantities introduced above are defined as
+\begin{equation*}
   \begin{split}
 w(z) \equiv w_0 \sqrt{1+(z/z_R)^2}, \quad & \quad
 z_R \equiv \pi w_0^2/\lambda, \\
 R(z) \equiv z\left[1+(z_R/z)^2\right], \quad &\quad
 \psi(z) \equiv \arctan(z/z_R),
   \end{split}
-\end{equation}
+\end{equation*}
 with $w_0$ the waist, $z_R$ the Rayleigh range, $R(z)$ the wavefront curvature, and $\psi(z)$ the Gouy phase. 
 A compact expression of the Gaussian envelope is written as
 \begin{equation}
 E(\mathbf r) \;=\; E_0 \,\frac{i z_R}{q(z)} \,
-\exp\!\left(-\,\frac{i k (x^2+y^2)}{2\,q(z)}\right) e^{i k z}, \quad q(z) \equiv z + i z_R,
+\exp\!\left(-\,\frac{i k (x^2+y^2)}{2\,q(z)}\right) e^{i k z}  \quad  \text{with} \quad q(z) \equiv z + i z_R,
+\label{II.1}
 \end{equation}
 where we defined the complex beam parameter $q(z)$. 
 Beyond the fundamental Gaussian mode, more general solutions of the paraxial equation can be constructed. In Cartesian coordinates, these are the Hermite--Gaussian modes $\mathrm{TEM}_{mn}$, given by
@@ -91,14 +93,15 @@ We describe the phase-space properties of a field mode using hermitian quadratur
 \begin{equation}
 \mathbf{\hat{u}}\;\equiv\;
 \begin{pmatrix}\hat a_1\\[2pt]\hat a_2\end{pmatrix}
-=\mathbf\Gamma \, \mathbf{\hat{a}}, \label{II.2}
-\qquad
+=\mathbf\Gamma \, \mathbf{\hat{a}}  \label{II.2}
+\qquad \text{with} \quad
 \mathbf \Gamma \equiv
 \begin{pmatrix}
 1 & 1 \\
 -i & i
-\end{pmatrix},
+\end{pmatrix}
 \quad
+\text{and} \quad
 \mathbf{\hat{a}}\;\equiv\;
 \begin{pmatrix}\hat a\\ \hat a^\dagger\end{pmatrix}
 \end{equation}
@@ -113,43 +116,19 @@ An arbitrary rotated quadrature pair is obtained by
 \mathbf{\hat{u}_\phi}\;\equiv\;
 \begin{pmatrix}\hat a_\phi\\[2pt]\hat a_{\phi+\pi/2}\end{pmatrix}
 = \mathbf R(\phi)\,\mathbf{\hat{u}}
-= \mathbf R(\phi)\,\mathbf\Gamma \,\mathbf{\hat{a}},
+= \mathbf R(\phi)\,\mathbf\Gamma \,\mathbf{\hat{a}}
 \qquad
+\text{with} \quad
  \mathbf R(\phi)\equiv
 \begin{pmatrix}
 \cos\phi & \sin\phi \\
 -\sin\phi & \cos\phi \label{II.4}
 \end{pmatrix}.
 \end{equation}
-We notice than 
-\begin{equation}
-\mathbf R(\phi)\,\boldsymbol{\Gamma}
-=
-\begin{pmatrix}
-\cos\phi & \sin\phi \\
--\sin\phi & \cos\phi
-\end{pmatrix}
-\begin{pmatrix}
-1 & 1 \\
--i & i
-\end{pmatrix}
-=
-\begin{pmatrix}
-e^{-i\phi} & e^{i\phi} \\[4pt]
--\,i\,e^{-i\phi} & \;\;i\,e^{i\phi}
-\end{pmatrix}.
-\end{equation}
-so that in components we have 
-\begin{equation}
-\begin{alignedat}{3}
-\hat a_\phi \;&=\;& \hat a_1 \cos\phi + \hat a_2 \sin\phi \;&= \hat a\,e^{-i\phi} + \hat a^\dagger\,e^{+i\phi}\\
-\hat a_{\phi+\pi/2} \;&=\;& -\hat a_1 \sin\phi + \hat a_2 \cos\phi \;&= i\!\left(\hat a^\dagger\,e^{+i\phi} - \hat a\,e^{-i\phi}\right).
-\end{alignedat}
-\end{equation}
 The commutators of the rotated quadrature operators read
 \begin{equation}
 [\mathbf{\hat{u}}_\phi , \mathbf{\hat{u}}_\phi^{\dagger}]
-= \mathbf R(\phi) \mathbf \Gamma\,[\hat{\mathbf{a}},\hat{\mathbf{a}}^{\dagger}]\, \mathbf \Gamma^{\dagger} \mathbf R^{\dagger}(\phi) = 2i\,\mathbf J, \qquad
+= \mathbf R(\phi) \mathbf \Gamma\,[\hat{\mathbf{a}},\hat{\mathbf{a}}^{\dagger}]\, \mathbf \Gamma^{\dagger} \mathbf R^{\dagger}(\phi) = 2i\,\mathbf J \qquad \text{with} \quad
 \mathbf{J} \equiv
 \begin{pmatrix}
 0 & 1 \\
@@ -174,10 +153,7 @@ where \( \bar{\alpha} = \langle \hat{a} \rangle \in \mathbb{C}\) is the mean com
 \end{equation}
 and it then follows that the quadrature operators can also be expressed as
 \begin{equation}
-  \begin{split}
-    \mathbf{\hat{u}_\phi} & = \mathbf{R}(\phi) \, \mathbf\Gamma  \,(\mathbf{\bar{a}} + \mathbf{\delta \hat{a}}) \\
-    & = \mathbf{\bar{u}_\phi}  + \mathbf{\delta \hat{u}_\phi} 
-  \end{split}
+    \mathbf{\hat{u}_\phi}  = \mathbf{R}(\phi) \, \mathbf\Gamma  \,(\mathbf{\bar{a}} + \mathbf{\delta \hat{a}})  = \mathbf{\bar{u}_\phi}  + \mathbf{\delta \hat{u}_\phi} 
 \end{equation}
 where the fluctuations retain the canonical commutation relations
 \begin{equation}
@@ -520,10 +496,7 @@ where $\Omega \ll \omega_0$ is the sideband frequency relative to the so called 
 \end{equation}
 To lighten the notation we will use $\hat{a}^\dagger[\pm\Omega]=\hat{a}_\pm$. Carrying out the linearization in the Fourier domain, we have
 \begin{equation}
-  \begin{split}
-      \mathbf{\hat{a}}[\Omega] &=\begin{pmatrix} \bar{\alpha}_+ \\ \bar{\alpha}^*_- \end{pmatrix} + \begin{pmatrix} \delta\hat{a}_+ \\ \delta\hat{a}^\dagger_- \end{pmatrix} \\
-      & = \mathbf{\bar{a}}[\Omega]+ \mathbf{\delta \hat{a}}[\Omega]\\
-  \end{split}
+      \mathbf{\hat{a}}[\Omega] =\begin{pmatrix} \bar{\alpha}_+ \\ \bar{\alpha}^*_- \end{pmatrix} + \begin{pmatrix} \delta\hat{a}_+ \\ \delta\hat{a}^\dagger_- \end{pmatrix} = \mathbf{\bar{a}}[\Omega]+ \mathbf{\delta \hat{a}}[\Omega]
 \end{equation}
 with the fluctuations commutator reading
 \begin{equation}
@@ -552,9 +525,7 @@ such that the amplitude-phase quadrature vector reads
   \delta \hat{p}[\Omega] \\[2pt]
 \delta \hat{q}[\Omega]
 \end{pmatrix}
-\end{equation}
-where we have 
-\begin{equation}
+\quad \text{with} \quad
   \begin{pmatrix}
   \delta \hat{p}[\Omega] \\[2pt]
 \delta \hat{q}[\Omega]
@@ -598,17 +569,9 @@ And the quadrature operators of a modulated field can be expressed as
 \end{equation}
 
 \subsubsection{Vacuum fluctuations}
-Considering a vacuum state or a coherent state, the expectation values of the quadrature fluctuations in the Fourier domain are
+Considering a vacuum state or a coherent state, the expectation values of the quadrature fluctuations moments in the Fourier domain are
 \begin{equation}
-\langle \delta \hat{p}[\Omega] \rangle = \langle \delta \hat{q}[\Omega] \rangle = 0 
-\end{equation}
-and the squared fluctuations read
-\begin{equation}
-\langle \delta \hat{p}[\Omega] \, \delta \hat{p}[\Omega'] \rangle = \langle \delta \hat{q}[\Omega] \, \delta \hat{q}[\Omega'] \rangle = 2\pi  \delta(\Omega + \Omega'), \quad \langle \delta \hat{p}[\Omega] \, \delta \hat{q}[\Omega'] \rangle = 0
-\end{equation}
-so that in vector form these are written as
-\begin{equation}
-  \langle \delta \mathbf{\hat{u}_{\phi}}[\Omega] \rangle = 0, \quad
+  \langle \delta \mathbf{\hat{u}_{\phi}}[\Omega] \rangle = \mathbf 0, \quad
 \langle \delta \mathbf{\hat{\mathbf u}}_{\phi}[\Omega] \, \delta \mathbf{\hat{\mathbf u}}_{\phi}^{T}[\Omega'] \rangle = 2\pi \delta(\Omega + \Omega') \mathbf{1}
 \end{equation}
 \subsubsection{Noise Spectra}
@@ -645,7 +608,7 @@ such that its covariance matrix reads
 \end{equation}
 As seen in the above expression, the covariance matrix display a sum of dirac functions corresponding to a classical amplitude modulation of the field, as well as a flat vacuum noise across all frequencies.
 \subsubsection{Linear Optical Systems}
-As we will develop further in the next section, the output fields of various linear optical systems can be expressed in a general form as
+As we will develop further in the next section, the output fields of various optical systems can be expressed in a general linear form as
 \begin{equation}
 \mathbf{\delta \hat{u}_{\mathrm{out}}}[\Omega]
 =
@@ -669,17 +632,26 @@ Computing the noise spectra is then straightforward :
   \mathbf{S}_{\mathrm{out}}[\Omega] = \mathbf{T}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}^{\dagger}[\Omega] + \mathbf{L}[\Omega] \mathbf{L}^{\dagger}[\Omega] 
 \end{equation}
 where $\mathbf{T}^{T}[-\Omega] = \mathbf{T}^{\dagger}[\Omega]$, $\mathbf{L}^{T}[-\Omega] = \mathbf{L}^{\dagger}[\Omega]$, and $\mathbf{S}_{\mathrm{vac}}[\Omega] = \mathbf{1}$ for vacuum inputs.\\
+For an arbitrary quadrature angle $\phi$, one can simply rotate the transfer matrices as
+\begin{equation}
+  \mathbf{T}_\phi[\Omega] = \mathbf{R}(\phi) \, \mathbf{T}[\Omega] \, \mathbf{R}(-\phi), \quad
+  \mathbf{L}_\phi[\Omega] = \mathbf{R}(\phi) \, \mathbf{L}[\Omega] \, \mathbf{R}(-\phi)
+\end{equation}
+such that
+\begin{equation}
+  \mathbf{S}_{\mathrm{out}, \phi}[\Omega] = \mathbf{T}_\phi[\Omega] \mathbf{S}_{\mathrm{in}, \phi}[\Omega] \mathbf{T}_\phi^{\dagger}[\Omega] + \mathbf{L}_\phi[\Omega] \mathbf{L}_\phi^{\dagger}[\Omega]
+\end{equation}
 
 
 
 \subsection{Quantum Sideband Diagram }
 
 Starting with the simplest case : the vacuum/coherent state. 
-\section{Optical Cavities}
+\section{Cavities}
 Optical cavities are at the heart of this work, as they are used to coherently enhance the light-matter interaction in various systems, and also to filter and manipulate quantum states of light. In this section, we review the basic properties of optical cavities, their resonance conditions, and we derive the covariance matrices of their output fields. 
 
-\subsection{Cavity geometries and Resonance Conditions}
-An optical cavity is a structure that \textit{traps} photons by means of reflection between two or more mirrors. They can be either standing wave cavities, where the light bounces back and forth between two mirrors, or traveling wave cavities, where the light circulates in a loop. In both cases, the cavity supports discrete resonant modes determined by its geometry and the boundary conditions imposed by the mirrors. The stability criteria of a specific cavity configuration is derived considering the round trip ABCD matrix of the cavity, and applying the stability condition $-1 < (A+D)/2 < 1$. In the case of planar - travelling wave cavities, one needs to consider both the tangential and sagittal planes, as these cavities are astigmatic. The stricter condition, generally the sagittal plane one, then defines the stability range of the cavity.\\
+\subsection{Cavity Geometries and Stability Conditions}
+An optical cavity is a structure that \textit{traps} photons by means of reflection between two or more mirrors. They can be either standing wave cavities, where the light bounces back and forth between two mirrors, or traveling wave cavities, where the light circulates in a loop. In both cases, the cavity supports discrete resonant modes determined by its geometry and the boundary conditions imposed by the mirrors. The stability criteria of a specific cavity configuration is derived considering the round trip ABCD matrix of the cavity describing how the complex beam parameter $q(z)$ introduced in \eqref{II.1} transforms after one round trip. The stability condition then simply reads as $-1 < (A+D)/2 < 1$. In the case of planar - travelling wave cavities, one needs to consider both the tangential and sagittal planes, as these cavities are astigmatic. The stricter condition, generally the sagittal plane one, then defines the stability range of the cavity.\\
 
 \begin{figure}
 \centering
@@ -702,34 +674,53 @@ For the plano-concave cavity, the stability condition reads
 \begin{equation}
    \quad 0 < L_{rt} < 2R \cos(\theta)
 \end{equation}
-where $L_{rt} = 2L + l$ is the cavity round trip length, and $\theta$ is the angle of incidence of the beam onto the curved mirror. This condition is the sagital one, and is more stringent than the tangential one.\\
+where $L_{rt} = 2L + l$ is the cavity round trip length, and $\theta$ is the angle of incidence of the beam onto the curved mirror. This condition is the sagittal one, and is more stringent than the tangential one.\\
 
 Considering now a bow-tie cavity formed by two concave mirrors of radius of curvature $R$ and two flat mirrors  (Figure \ref{fig:cavity_types}.(d)), the full stability condition reads
 \begin{equation}
   0 < \left( 1 - \frac{L_1 + 2L'}{R \cos\theta} \right) \left( 1 - \frac{L_2}{R \cos\theta} \right) < 1
 \end{equation}
-where $L_1$ is the distance between the two concave mirrors, $L_2$ the distance between the two flat mirrors, and $L'$ the distance between a concave and a flat mirror (assuming a symmetrical cavity). A simple design rule guaranteeing stability is then to set $L_1 + 2L' < R \cos\theta$ and $L_2 < R \cos\theta$.\\
+where $L_1$ is the distance between the two concave mirrors, $L_2$ the distance between the two flat mirrors, and $L'$ the distance between a concave and a flat mirror (assuming a symmetric cavity). A simple design rule guaranteeing stability is then to set $L_1 + 2L' < R \cos\theta$ and $L_2 < R \cos\theta$.\\
 
-\subsection{Spatial Modes}
 
-In practice, coupling an incoming beam into an optical cavity requires that the spatial mode of the beam matches that of the cavity. This means that the mode function of the incoming beam, assumed to be a TEM$_{00}$ Gaussian mode with spatial profile
+\subsection{Cavity Resonances}
+If the cavity is stable, it will then feature a discrete set of resonant modes everytime the cavity length is an integer multiple of half the wavelength $\lambda/2$ (standing wave cavity) or the wavelength $\lambda$ (traveling wave cavity). In the frequency domain, modes are spaced by the free spectral range $\omega_{\mathrm{FSR}}$ of the cavity, defined as
+\begin{equation}
+  \omega_{\mathrm{FSR}} = \frac{\pi c}{L} \quad \text{(linear cavity)}, \quad \omega_{\mathrm{FSR}} = \frac{2 \pi c}{L_{rt}} \quad \text{(traveling wave cavity)}
+\end{equation}
+such that the resonant frequencies are given by
+\begin{equation}
+  \omega_m = m \, \omega_{\mathrm{FSR}}, \quad m \in \mathbb{N}
+\end{equation}
+and the cavity is on resonance when the input laser frequency $\omega_0$ matches one of the resonant frequencies $\omega_m$ i.e. $\omega_0 = \omega_m$. To achieve this, one can either tune the laser frequency or the cavity length. In our experiments, we use the second option by mounting one of the cavity mirrors on a piezoelectric actuator. Changing the cavity length $L$ by $\delta L$ shifts the resonant frequencies by
+\begin{equation}
+  \delta \omega_m = - m \, \frac{\pi c}{L^2} \, \delta L = - \frac{\omega_m}{L} \, \delta L
+\end{equation}
+
+\subsection{Mode-Matching}
+A cavity also supports $TEM_{mn}$ transverse modes, each with a specific spatial profile and resonant frequency. The resonant frequencies of these transverse modes are shifted relative to the fundamental mode by an amount that depends on the cavity geometry and the mode indices $(m,n)$. Coupling an incoming beam into a stable optical cavity requires that the spatial mode of the beam matches that of the cavity. This means that the mode function of the incoming beam, assumed to be a TEM$_{00}$ Gaussian mode
  $f_{0}(\mathbf{r})$, must overlap with the cavity’s fundamental mode $f_{0}'(\mathbf{r})$. If the basis functions are not perfectly aligned, the incoming field can be expanded in the orthonormal basis of cavity modes as
 \begin{equation}
     f_{0}(\mathbf{r}) = c_{0}\, f_{0}'(\mathbf{r}) + \sum_{m>0} c_{m}\, f_{m}'(\mathbf{r}),
 \end{equation}
-where the coefficients $c_{m}$ quantify the projection of the incident field onto the cavity eigenmodes. Only the component $c_{0} f_{0}'$ couples efficiently to the fundamental cavity mode, while any mismatch excites higher-order transverse modes $f_{m}'$. The mode-matching procedure therefore consists in maximizing the overlap integral
+where the coefficients $c_{m}$ quantify the projection of the incident field onto the cavity eigenmodes. Only the component $c_{0} f_{0}'$ couples efficiently to the fundamental cavity mode due the mirror geometry, while any mismatch excites higher-order transverse modes $f_{m}'$. The mode-matching procedure therefore consists in maximizing the overlap integral
 \begin{equation}
     \eta = \left| \int d^{3}\mathbf{r}\, f_{0}^{*}(\mathbf{r})\, f_{0}'(\mathbf{r}) \right|^{2},
 \end{equation}
-which ensures that essentially all the incoming photons populate the desired cavity mode, while suppressing excitation of spurious modes.
+which ensures that essentially all the incoming photons populate the desired cavity mode, while suppressing excitation of spurious modes. \\
+
+regarding the resonant lengths for which a speci
 
 \subsection{\textrm{Simple} Cavities}
 
-We consider a field cavity mode described by the annihilation operator \(\hat{a}\), interacting with several independent noise inputs. The system is governed by a Hamiltonian 
+We consider a single field cavity mode described by the annihilation operator \(\hat{a}\), interacting with several independent noise inputs. The system is governed by a Hamiltonian 
 \begin{equation}
 \hat{H} = - \hbar \Delta  \hat{a}^\dagger \hat{a} 
 \end{equation}
- with  $\Delta\equiv\omega_0 - \omega_c$ the cavity detuning to the laser frequency, and each input introduces dissipation characterized by a decay rate \(\kappa_i = T_i/\tau\), with $T_i$ the power transmittivity of the mirror and $\tau=2L/c$ the roundtrip time of the cavity. This is we consider an input coupler (mirror) with decay rate $\kappa_1$ and an output coupler (mirror) with decay rate $\kappa_2$. The laser field is shone onto the cavity by the input coupler. In the modulation picture, the dynamics of \(\hat{a}\) is given by the Quantum Langevin Equation (QLE):
+ with  $\Delta\equiv\omega_0 - \omega_c$ the cavity detuning to the laser frequency, and each input introduces dissipation characterized by a decay rate \(\kappa_i = T_i/\tau\), with $T_i$ the power transmittivity of the mirror and $\tau=2L/c$ the roundtrip time of the cavity. This is we consider an input coupler (mirror) with decay rate $\kappa_1$ and an output coupler (mirror) with decay rate $\kappa_2$. The laser field is shone onto the cavity by the input coupler. 
+ 
+ 
+ In the modulation picture, the dynamics of \(\hat{a}\) is given by the Quantum Langevin Equation (QLE):
 %
 \begin{equation}
 \begin{split}
@@ -768,6 +759,7 @@ As introduced in the previous subsection, one can split the annihilation operato
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/CavitySimple.pdf}
 \caption{Yes} 
+\label{fig:CavitySimple}
 \end{figure}
 
 
@@ -778,91 +770,109 @@ As introduced in the previous subsection, one can split the annihilation operato
 \end{equation}
 Patching it up with the input-output formula this gives 
 \begin{equation}
-  \bar{\alpha}_{\mathrm{r}} =  \Bigg( \frac{\kappa_1}{\kappa/2-i\Delta} - 1 \Bigg)  \bar{\alpha}_{\mathrm{in}}  , \quad   \bar{\alpha}_{\mathrm{t}} =  \frac{\sqrt{\kappa_1 \kappa_2}}{\Big(\kappa/2-i\Delta\Big)} \bar{\alpha}_{\mathrm{in}}.
+  \bar{\alpha}_{\mathrm{r}} =  \Bigg( \frac{\kappa_1}{\kappa/2-i\Delta} - 1 \Bigg)  \bar{\alpha}_{\mathrm{in}}   \quad \quad \quad  \bar{\alpha}_{\mathrm{t}} =  \frac{\sqrt{\kappa_1 \kappa_2}}{\Big(\kappa/2-i\Delta\Big)} \bar{\alpha}_{\mathrm{in}}.
 \end{equation}
 The reflection and transmission coefficients are then
-\begin{align}
-R(\Delta) &= \left|\frac{\bar{\alpha}_{\mathrm{r}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
-= \frac{\bigl(\kappa_1-\kappa/2\bigr)^2+\Delta^2}{\bigl(\kappa/2)^2+\Delta^2},\\[10pt]
-T(\Delta) &= \left|\frac{\bar{\alpha}_{\mathrm{t}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
-= \frac{\kappa_1\kappa_2}{\bigl(\kappa/2\bigr)^2+\Delta^2}.
-\end{align}
-Plugging back the expression of $\kappa_i = T_i/\tau$ in the reflection coefficient, we have 
 \begin{equation}
-  R(\pm\infty) = 1 , \quad R(0) = \Bigg(\frac{T_1 - T_2 - \gamma}{T_1 + T_2 + \gamma}\Bigg)^2
+R(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{r}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
+= \frac{\bigl(\kappa_1-\kappa/2\bigr)^2+\Delta^2}{\bigl(\kappa/2)^2+\Delta^2} \quad \quad
+T(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{t}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
+= \frac{\kappa_1\kappa_2}{\bigl(\kappa/2\bigr)^2+\Delta^2}.
+\end{equation}
+The cavity linewidth (FWHM) is then given by $\kappa$, as illustrated In Fig \ref{fig:CavitySimple}.(b). Plugging back the expression of $\kappa_i = T_i/\tau$ in the reflection coefficient, we have 
+\begin{equation}
+  R(\pm\infty) = 1  \qquad R(0) = \Bigg(\frac{T_1 - T_2 - \gamma}{T_1 + T_2 + \gamma}\Bigg)^2
 \end{equation}
 such that the relative depth of the resonance dip gives us information about the cavity losses and couplings. In particular, the resonance dip vanishes when $T_1 = T_2 + \gamma$, which is the so called \textit{impedance matching} condition: no light is reflected at resonance and all of it is transmitted or lost. \\ 
 
+We also define the cavity finesse $\mathcal{F}$, which is a measure of the sharpness of the resonance peaks relative to its FSR, as
+\begin{equation}
+  \mathcal{F} = \frac{\omega_{\mathrm{FSR}}}{\kappa} = \frac{\pi c}{L \kappa} = \frac{2\pi}{T_1 + T_2 + \gamma}
+\end{equation}
+which also gives the average number of round trips a photon makes before escaping the cavity i.e. $\langle n_{rt} \rangle = \mathcal{F}/\pi$. For a given cavity length (so same FSR), the higher the finesse, the longer the photon lifetime in the cavity $\kappa^{-1}$. \\
+
+
 \noindent \textbf{Mean field solution (Dynamical case): } \\
+We now let the detuning vary linearly in time, and express it in units of cavity bandwidth as $\Delta(t)= \Delta_0 + v \frac{\kappa^2}{2}t$ where we defined $v$ as the sweep speed in units of cavity bandwidth per $\kappa^{-1}$. The intracavity field yields the standard differential equation
+\begin{equation}
+  \dot{\bar{\alpha}}(t)  + P(t)\bar{\alpha}(t) = Q(t)
+\end{equation} 
+with 
+\begin{equation*}
+  P(t) = \frac{\kappa}{2} - i\Big(\Delta_0 + v \frac{\kappa^2}{2}t\Big), \quad Q(t) = \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}}(t)
+\end{equation*}
+ans is readily solved using an integrating factor such that,
+\begin{equation}
+  \bar{\alpha}(t) = e^{-\int_0^t P(t') dt'} \Bigg( \bar{\alpha}(0) + \int_0^t Q(t') e^{\int_0^{t'} P(t'') dt''} dt' \Bigg)
+\end{equation}
 
 
+This expression describes the transient response of the intracavity field as the detuning is swept through resonance. The reflected and transmitted fields can be obtained using the input-output relations, allowing one to analyze the dynamic behavior of the cavity under a time-varying detuning. This is particularly useful for understanding phenomena such as cavity ring-down and transient spectral features during rapid scans. \\
 
-\noindent \textbf{Noise spectra: }To derive the covariance matrix we go to Fourier space such that 
+
+\noindent \textbf{Fluctuations solution: }To derive the covariance matrix we go to Fourier space such that 
 \begin{equation}
      \mathbf{M}_\Delta \mathbf{\delta \hat{a}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]   + \sqrt{\kappa_0} \, \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega]   
 \end{equation}
 with 
-\begin{equation}
+\begin{equation*}
   \mathbf{M}_\Delta =\begin{pmatrix}
   \kappa/2-i(\Delta+\Omega) & 0 \\ 
   0 & \kappa/2+i(\Delta-\Omega)\\ 
   \end{pmatrix} 
+\end{equation*}
+The intracavity field fluctuations are then given by
+\begin{equation}
+  \mathbf{\delta \hat{a}}[\Omega]  = \mathbf{M}^{-1}_\Delta \Big( \sqrt{\kappa_1} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_0} \, \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] \Big)
 \end{equation}
-One can then build the intracavity two-photon quadratures as 
+and the reflected and transmitted fields read
 \begin{equation}
   \begin{split}
-  \mathbf{\delta \hat{u}}[\Omega]  = \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} \Big( \sqrt{\kappa_1} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_2} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_0} \, \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] \Big)
-\end{split}
+  \mathbf{\delta \hat{a}_{\mathrm{r}}}[\Omega]  &= ( \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} )\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_2} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] ) \\
+  \mathbf{\delta \hat{a}_{\mathrm{t}}}[\Omega] & =  \sqrt{\kappa_2} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_1} \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] ) +  (\kappa_2 \,\mathbf{M}^{-1}_\Delta - \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] 
+  \end{split}
 \end{equation}
-as well as the reflected and transmitted quadratures 
+Using $\delta \hat{\mathbf{a}} = \mathbf \Gamma^{-1} \delta \hat{\mathbf{u}}$ the reflected and transmitted quadratures read
 \begin{equation}
   \begin{split}
   \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega]  &= ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1} )\, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_2} \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] ) \\
   \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega] & =  \sqrt{\kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_1} \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] ) +  (\kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}) \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
   \end{split}
 \end{equation}
-where the matrix product above equals 
-\begin{equation}
+where the matrix product above reads 
+\begin{equation*}
   \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}
 = \frac{1}{\left(\kappa/2-i\Omega\right)^{2}+\Delta^{2}}
 \begin{pmatrix}
 \kappa/2-i\Omega & \Delta \\[6pt]
 -\Delta & \kappa/2-i\Omega
 \end{pmatrix}.
-\end{equation}
+\end{equation*}
 
 
 The structure above is the engine behind frequency-dependent squeezing. On resonance, we have 
-\begin{equation}
+\begin{equation*}
 \mathbf{M}_0^{-1} = \frac{1}{\kappa/2 - i\Omega} \mathbf{I} \quad \implies \quad  \mathbf{\Gamma} \mathbf{M}_0^{-1} \mathbf{\Gamma}^{-1} = \frac{1}{\kappa/2 - i\Omega} \mathbf{I}
-\end{equation}
+\end{equation*}
 causing symmetric sidebands around the carrier to be filtered identically both in amplitude and phase — so the quadrature along wich these sidebands are correlated (if considering squeezed correlations) remains the same at all frequencies. The moment the cavity is detuned, the $\mathbf{\Gamma}\mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}$ off-diagonal terms asymmetrically mix the upper and lower sidebands; in the two-photon picture this is a frequency-dependent rotation and scaling of the $(p,q)$ basis. The amplitude (Lorentzian) part sets how strongly each sideband passes, while the phase accrued inside the cavity sets the rotation angle that now varies with $\Omega$. A broadband field with a single squeezing angle at the input is therefore converted into an output whose squeezing angle “twists” with frequency: near one band it can align with the phase quadrature, and at another it can align with the amplitude quadrature. This is exactly the mechanism exploited by filter cavities in precision interferometry: by choosing bandwidth, detuning, and coupling, one tailors the rotation profile to the target noise crossover. Practically, the attainable rotation and the preserved squeezing are limited by optical loss and mode mismatch, which inject uncorrelated vacuum and partially unwind the correlations the detuned cavity imprints on sidebands. \\
 
 
-On resonance ($\Delta=0$), the output quadratures can then be written as 
+
+\noindent \textbf{Note: } On resonance ($\Delta=0$), the output quadratures can then be written as 
 \begin{equation}
   \begin{split}
   \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega]   &= \dfrac{\kappa_1-\kappa/2+i\Omega}{\kappa/2-i\Omega}  \,  \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +   \dfrac{\sqrt{\kappa_1 \kappa_2} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] + \dfrac{\sqrt{\kappa_1 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega]  \\
   \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega]   &= \, \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +  \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]   + \dfrac{\sqrt{\kappa_2 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] 
   \end{split}
 \end{equation}
-\textbf{Note: } if we consider the reflected quadratures noise spectra we see that 
+If we consider the reflected quadratures noise spectra we see that 
 \begin{equation}
    \mathbf{S}_{\mathrm{r}}[\Omega] =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}[\Omega]+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_2 \, \mathbf{1}+\kappa_0 \,\mathbf{1}\Big) 
 \end{equation}
-where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$. 
-\subsubsection{Example: Mode Cleaner }
-Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$ where we assume negligible losses $\kappa_0 \ll \kappa_{1,2}$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted quadratures are written
-\begin{equation}
-  \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega]  = \, \dfrac{ \kappa/2}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +  \dfrac{i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] .
-\end{equation}
-The resulting transmitted quadrature convariance matric is given by: 
-\begin{equation}
-  \mathbf{S}_{\mathrm{t}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{In}}[\Omega] +\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
-\end{equation}
-Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is actually a Lorentzian function - a low pass filter. Hence, the noises of the input fields are low pass filtered by the cavity, while the vacuum fluctuations are high pass filtered at precisely the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its super-vacuum fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleant} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many precision experiments to provide a spectrally pure laser field, as well as a spatially filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.\\
+where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$ i.e. $\kappa_1 + \kappa_0 \rightarrow \kappa_1$. \\
 
-\noindent \textbf{Transfer matrices :} Expressing the reflected and transmitted quadratures in matrix form yields
+
+\noindent \textbf{Transfer matrices and Spectra:} Expressing the reflected and transmitted quadratures in matrix form yields
 \begin{equation}
   \begin{split}
    \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega] = \mathbf{T}_{\mathrm{r}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] + \mathbf{L}_{\mathrm{r}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]
@@ -871,20 +881,86 @@ Now consider that the input fluctuations are above those of vacuum i.e. the inpu
   \end{split}
 \end{equation}
 where the transfer matrices for the input and loss ports given by
-\begin{equation}
+\begin{equation*}
   \begin{split}
      \mathbf{T}_{\mathrm{r}}[\Omega]= \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}, \quad \mathbf{L}_{\mathrm{r}}[\Omega]=  \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}\\
       \mathbf{T}_{\mathrm{t}}[\Omega]=   \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{t}}[\Omega]= \kappa_2 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}
   \end{split}
-\end{equation}
+\end{equation*}
 such that the covariance matrices for the reflected and transmitted quadratures of a detuned cavity are given by
 \begin{equation}
-  \mathbf{S}_{\mathrm{r}}[\Omega] = \mathbf{T}_{\mathrm{r}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{r}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{r}}[\Omega] \mathbf{L}_{\mathrm{r}}^{\dagger}[\Omega], \quad  \mathbf{S}_{\mathrm{t}}[\Omega] = \mathbf{T}_{\mathrm{t}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{t}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{t}}[\Omega] \mathbf{L}_{\mathrm{t}}^{\dagger}[\Omega]
+  \begin{split}
+  \mathbf{S}_{\mathrm{r}}[\Omega] &= \mathbf{T}_{\mathrm{r}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{r}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{r}}[\Omega] \mathbf{L}_{\mathrm{r}}^{\dagger}[\Omega] \\ \quad  \mathbf{S}_{\mathrm{t}}[\Omega] &= \mathbf{T}_{\mathrm{t}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{t}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{t}}[\Omega] \mathbf{L}_{\mathrm{t}}^{\dagger}[\Omega]
+  \end{split}
+\end{equation}
+Additionally, we define the one-photon reflection matrix of the input field by 
+\begin{equation}
+  \mathbf{r}_{\Delta}[\Omega] = \kappa_1 \, \mathbf{M}^{-1}_\Delta- \mathbf{1} = \begin{pmatrix}
+    r_{\Delta}[\Omega] & 0 \\
+    0 & r_{\Delta}^*[-\Omega]
+  \end{pmatrix} \quad \text{with} \quad r_{\Delta}[\Omega] = \frac{\kappa_1 }{\kappa/2 - i(\Delta + \Omega)} - 1
+\end{equation}
+such that 
+\begin{equation}
+\mathbf{T}_{\mathrm{r}}[\Omega] = \mathbf{\Gamma} \, \mathbf{r}_{\Delta}[\Omega] \, \mathbf{\Gamma}^{-1} = \frac{1}{2}  \begin{pmatrix}
+    r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega] & i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) \\
+    -i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) & r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega]
+  \end{pmatrix}
+\end{equation}
+and similarly for the one photon transmission matrix
+\begin{equation}
+  \mathbf{t}_{\Delta}[\Omega] = \sqrt{\kappa_1 \kappa_2} \, \mathbf{M}^{-1}_\Delta = \begin{pmatrix}
+    t_{\Delta}[\Omega] & 0 \\
+    0 & t_{\Delta}^*[-\Omega]
+  \end{pmatrix} \quad \text{with} \quad t_{\Delta}[\Omega] = \frac{\sqrt{\kappa_1 \kappa_2}}{\kappa/2 - i(\Delta + \Omega)}
+\end{equation}
+such that
+\begin{equation}
+\mathbf{T}_{\mathrm{t}}[\Omega] = \mathbf{\Gamma} \, \mathbf{t}_{\Delta}[\Omega] \, \mathbf{\Gamma}^{-1} = \frac{1}{2}  \begin{pmatrix}
+    t_{\Delta}[\Omega] + t_{\Delta}^*[-\Omega] & i(t_{\Delta}[\Omega] - t_{\Delta}^*[-\Omega]) \\
+    -i(t_{\Delta}[\Omega] - t_{\Delta}^*[-\Omega]) & t_{\Delta}[\Omega] + t_{\Delta}^*[-\Omega]
+  \end{pmatrix}
 \end{equation}
 
+\subsubsection{Example 1: Mode Cleaner }
+Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$ where we assume negligible losses $\kappa_0 \ll \kappa_{1,2}$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted quadratures are written
+\begin{equation}
+  \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega]  = \, \dfrac{ \kappa/2}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +  \dfrac{i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] .
+\end{equation}
+The resulting transmitted quadrature convariance matric is given by: 
+\begin{equation}
+  \mathbf{S}_{\mathrm{t}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{In}}[\Omega] +\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
+\end{equation}
+Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is a Lorentzian function - a low pass filter. Hence, the noises of the input fields are low pass filtered by the cavity, while the vacuum fluctuations are high pass filtered at precisely the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its super-vacuum fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleant} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many precision experiments to provide a spectrally pure laser field, as well as a spatially filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.\\
 
 
+\subsubsection{Example 2: Detuned single port cavity }
+We now consider a lossless single port cavity with $\kappa_2 = 0$ and $\kappa_1 = \kappa$. The transfer matrix is expressed as 
+\begin{equation}
+  \mathbf{T}_{\mathrm{r}}[\Omega]=  \frac{1}{(\kappa/2 - i\Omega)^{2}+\Delta^{2}}
+\begin{pmatrix}
+     (\kappa/2)^2 - \Delta^2 + \Omega^2  & - \kappa \Delta  \\[6pt]
+    + \kappa \Delta  & ( \kappa/2)^2 - \Delta^2 + \Omega^2 
+\end{pmatrix}
+\end{equation}
 
+\begin{equation*}
+\kappa \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} - \mathbf{1} = \frac{1}{(\kappa/2 - i\Omega)^{2}+\Delta^{2}}
+\begin{pmatrix}
+      (\kappa/2)^2 - \Delta^2 + \Omega^2  & - \kappa \Delta  \\[6pt]
+      + \kappa \Delta  & ( \kappa/2)^2 - \Delta^2 + \Omega^2
+\end{pmatrix}
+\end{equation*}
+such that the covariance matrix is given by
+\begin{equation}
+  \mathbf{S}_{\mathrm{r}}[\Omega] = \begin{pmatrix}
+    S_{pp}^{\mathrm{r}}[\Omega] & S_{pq}^{\mathrm{r}}[\Omega] \\[6pt]
+    S_{qp}^{\mathrm{r}}[\Omega] & S_{qq}^{\mathrm{r}}[\Omega]
+  \end{pmatrix}
+\end{equation}
+where we won't write the full expressions of the matrix elements for brevity. The key point is that the off-diagonal terms are non zero, meaning that the reflected quadratures are correlated. This is the frequency-dependent rotation mechanism described above.
+
+This configuration is used in our experiment to measure the squeezing spectrum of the OPO, as the
 
 
 
@@ -934,9 +1010,8 @@ where subscript $a$ and $b$ refer to the $\omega_0$ and $\omega_p$ fields respec
 \, \Bigg]^{\, 4}.
 \end{align}
 This cumbersome expression can be simplified in two limits. In the low input power limit, the output power scales quadratically with the input power, whereas at high powers it scales as $|\alpha_{\mathrm{in}}|^{4/3}$. \\
-\textbf{Pseudo linear behaviour:} For intermediate powers, the output power scales almost linearly with the input power, which is precisely the regime in which we will operate. The crossover between these regimes is set by the non linear gain $\epsilon$ and the cavity decay rates $\kappa_{a,b}$.
 
-
+\noindent \textbf{Pseudo linear behaviour:} For intermediate powers, the output power scales almost linearly with the input power, which is precisely the regime in which we will operate. The crossover between these regimes is set by the non linear gain $\epsilon$ and the cavity decay rates $\kappa_{a,b}$. \\ 
 
 \subsubsection{Optical Parametric Oscillation \& Amplification}
 For this scheme, we consider a pump field with frequency $\omega_p = 2\omega_0$. A first key difference from the SHG scheme can be highlighted by the fact that we are now pumping at $2\omega_0$, such that pairs of entangled photons are generated at $\omega_0 + \epsilon$ and $\omega_0 - \epsilon$, with $\epsilon$ a sideband frequency allowed by the cavity bandwidth, hence conserving energy. 
@@ -952,8 +1027,8 @@ We further consider the pump is not \textit{depleted}, such that we can change $
   \begin{split}
   0 &= -\Big(\frac{\kappa}{2}-i\Delta\Big) \bar{\alpha} +g e^{i\bar{\varphi}_b} \, \bar{\alpha}^* + \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}} \\
   \mathbf{\delta \dot{\hat{a}}}(t)&= - \begin{pmatrix}
-  \kappa/2-i\Delta & g e^{i\bar{\varphi}_b}\\
-   g e^{-i\bar{\varphi}_b} & \kappa/2+i\Delta \\
+  \kappa/2-i\Delta & -g e^{i\bar{\varphi}_b}\\
+   -g e^{-i\bar{\varphi}_b} & \kappa/2+i\Delta \\
   \end{pmatrix}  \mathbf{\delta \hat{a}}(t) + \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}(t)  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}(t)
   \end{split}
   \right.
@@ -974,32 +1049,38 @@ in which the amplification or deamplification processes are set by the phase of 
 \caption{Yes} 
 \end{figure}
 
-\noindent \textbf{Noise spectra: } The general expression of the QLE in Fourier space is given by 
+\noindent \textbf{Fluctuations solution: } The general expression of the QLE in Fourier space is given by 
 \begin{equation}
   \tilde{\mathbf{M}}_\Delta \,  \mathbf{\delta \hat{a}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]
 \end{equation}
 with
-\begin{equation}
+\begin{equation*}
   \tilde{\mathbf{M}}_\Delta = \begin{pmatrix}
-  \kappa/2-i(\Delta+\Omega) & g e^{i\bar{\varphi}_b}\\
-   g e^{-i\bar{\varphi}_b} & \kappa/2+i(\Delta-\Omega) \\
+  \kappa/2-i(\Delta+\Omega) & -g e^{i\bar{\varphi}_b}\\
+   -g e^{-i\bar{\varphi}_b} & \kappa/2+i(\Delta-\Omega) \\
   \end{pmatrix}
-\end{equation}
+\end{equation*}
 where we defined $\tilde{\mathbf{M}}_\Delta$ to not be confused with the matrix $\mathbf{M}_\Delta$ defined earlier for a simple cavity.
 Note that a genuine \textit{frequency dependent} squeezing angle could be obtained by detuning the OPO cavity, but the frequency range over which the squeezing angle varies is limited by the cavity bandwidth, which is typically small compared to the frequency range of interest in our experiment. This phenomenon was realised experimentally few years ago \cite{Vahlbruch2006}, but is not the focus of our work. \\
 
-In the context of our work, we will focus on the resonant case ($\Delta=0$) when $\varphi_b = \{0,\pi\}$, corresponding to the amplification and deamplification processes respectively. The matrix $\tilde{\mathbf{M}}_0$ is then diagonal in the two-photon basis, which greatly simplifies the algebra. We further normalise all frequencies to the cavity bandwidth $\kappa/2$ such that $\Omega \rightarrow \Omega/(\kappa/2)$ and $g \rightarrow g/(\kappa/2) = x$
-, such that the off diagonal terms below can simply be written $\pm x$ factoring out the cavity bandwidth, and the operator QLE in Fourier space is written as 
+In the context of our work, we will assume : 
+\begin{itemize}
+  \item the pump phase is locked to $\bar{\varphi}_b = \{0,\pi\}$ i.e. amplification or deamplification regime,  
+  \item the cavity is resonant $\Delta=0$,
+\end{itemize}
+We further normalise all frequencies to the cavity bandwidth $\kappa/2$ such that $\Omega \rightarrow \Omega/(\kappa/2)$ and $g \rightarrow g/(\kappa/2) = x$, such that the off diagonal terms below can simply be written $\mp x$ factoring out the cavity bandwidth. We carry out the derivation for $\bar \varphi_b = 0$ (amplification) for simplicity, and the $\bar \varphi_b = \pi$ (deamplification) case is obtained by changing $x$ to $-x$ in the final expressions. The matrix QLE in Fourier space is written as
 \begin{equation}
-     \mathbf{M'}_0 \,  \mathbf{\delta \hat{a}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]  
+     \tilde{\mathbf{M}}_0 \,  \mathbf{\delta \hat{a}}[\Omega]  = \sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega]  
 \end{equation}
 with 
-\begin{equation}
-  \mathbf{M'}_0 = \frac{\kappa}{2}\begin{pmatrix}
-  1-i\dfrac{\Omega}{\kappa/2} & \pm x\\ 
-  \pm x  & 1-i\dfrac{\Omega}{\kappa/2}\\ 
+\begin{equation*}
+  \tilde{\mathbf{M}}_0 = \frac{\kappa}{2}\begin{pmatrix}
+  1-i\dfrac{\Omega}{\kappa/2} & - x\\ 
+  - x  & 1-i\dfrac{\Omega}{\kappa/2}\\ 
   \end{pmatrix} 
-\end{equation}
+\end{equation*}
+
+\noindent \textbf{Transfer matrices and Spectra: }
 As before with a simple cavity, the transmitted quadratures at resonance are then 
 \begin{equation}
 \begin{split}
@@ -1007,15 +1088,15 @@ As before with a simple cavity, the transmitted quadratures at resonance are the
 \end{split}
 \end{equation}
 where we defined the transfer matrices for the input and loss ports as
-\begin{equation}
-  \mathbf{T}_{\mathrm{OPO}}[\Omega]=  \sqrt{\kappa_1 \kappa_2 } \,\mathbf{\Gamma}  \mathbf{M'}^{-1}_0 \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{OPO}}[\Omega]=  \kappa_2 \,\mathbf{\Gamma}  \mathbf{M'}^{-1}_0 \mathbf{\Gamma}^{-1}- \mathbf{1}.
-\end{equation}
+\begin{equation*}
+  \mathbf{T}_{\mathrm{OPO}}[\Omega]=  \sqrt{\kappa_1 \kappa_2 } \,\mathbf{\Gamma}  \tilde{\mathbf{M}}^{-1}_0 \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{OPO}}[\Omega]=  \kappa_2 \,\mathbf{\Gamma}  \tilde{\mathbf{M}}^{-1}_0 \mathbf{\Gamma}^{-1}- \mathbf{1}....
+\end{equation*}
 
-After a bit of algebra, the covariance matrix of the transmitted field is then computed as
+After a bit of algebra, the covariance matrix of the transmitted field at $\bar \varphi_b = 0$ is then computed as
 \begin{equation}
-      \mathbf{S}_{\rm OPO}[\Omega] =\begin{pmatrix}
-        1 \mp \dfrac{\kappa_2}{\kappa} \dfrac{4x}{(1\pm x)^2+ \Big(\dfrac{\Omega}{\kappa/2}\Big)^2} & 0 \\[10pt]
-        0 & 1 \pm \dfrac{\kappa_2}{\kappa} \dfrac{4x}{(1\mp x)^2+ \Big(\dfrac{\Omega}{\kappa/2}\Big)^2} 
+      \mathbf{S}^{0}_{\rm OPO}[\Omega] =\begin{pmatrix}
+        1 + \dfrac{\kappa_2}{\kappa} \dfrac{4x}{(1- x)^2+ \Big(\dfrac{\Omega}{\kappa/2}\Big)^2} & 0 \\[10pt]
+        0 & 1 - \dfrac{\kappa_2}{\kappa} \dfrac{4x}{(1+ x)^2+ \Big(\dfrac{\Omega}{\kappa/2}\Big)^2} 
       \end{pmatrix}
       \label{eq:II85}
 \end{equation}
@@ -1023,21 +1104,21 @@ After a bit of algebra, the covariance matrix of the transmitted field is then c
 
 
 
-On a side note, when deriving the noise spectra for the intracavity field, the maximum amount of squeezing is limited to 3dB, while the transmitted field can feature arbitrarily high squeezing levels. This is interpreted as an interference between vacuum fluctuations being reflected at the output port of the OPO and the squeezed field leaking from this very same output port. \\
+On a side note, when deriving the noise spectra for the intracavity field, the maximum amount of squeezing is limited to 3dB, while the transmitted field can feature arbitrarily high squeezing levels. This is interpreted as additional correlations between vacuum fluctuations being reflected at the output port of the OPO and the squeezed field leaking from this very same output port, allowing for strong squeezing. \\
 
 \noindent \textbf{The perfect squeezer: } Starting from \eqref{eq:II85}, in the idealized limit of perfect escape efficiency ($\eta_{\rm esc}=1$) and for analysis frequencies much smaller than the cavity bandwidth ($\Omega/\kappa \to 0$), the expression simplifies to
 
 \begin{equation}
-      \mathbf{S}_{\rm OPO}[\Omega] =\begin{pmatrix}
-         \dfrac{(1 \mp x)^2}{(1 \pm x)^2} & 0 \\[10pt]
-        0 & \dfrac{(1 \pm x)^2}{(1 \mp x)^2} 
+      \mathbf{S}^{0}_{\rm OPO}[\Omega] =\begin{pmatrix}
+         \dfrac{(1 + x)^2}{(1 - x)^2} & 0 \\[10pt]
+        0 & \dfrac{(1 - x)^2}{(1 + x)^2} 
       \end{pmatrix}
 \end{equation}
 Introducing the standard squeezing parameter $r$ through the relation $x=\tanh \frac{r}{2}$, one can rewrite the numerator and denominator as
 \begin{equation*}
-1 \pm \tanh \frac{r}{2} = \frac{e^{\pm \frac{r}{2}}}{\cosh \frac{r}{2}}, 
+1 + \tanh \frac{r}{2} = \frac{e^{+ \frac{r}{2}}}{\cosh \frac{r}{2}}, 
 \qquad
-1 \mp \tanh \frac{r}{2} = \frac{e^{\mp \frac{r}{2}}}{\cosh \frac{r}{2}},
+1 - \tanh \frac{r}{2} = \frac{e^{- \frac{r}{2}}}{\cosh \frac{r}{2}},
 \end{equation*}
 such that
 \begin{equation*}
@@ -1045,22 +1126,26 @@ such that
 = \left(\frac{e^{\pm \frac{r}{2}}}{e^{\mp \frac{r}{2}}}\right)^2
 = e^{\pm 2r}.
 \end{equation*}
-Thus when $\bar\varphi_b=\{0,\pi\}$, in the lossless, low-frequency limit the transmitted noise levels reduce to the well-known parametric result: the squeezed quadrature exhibits a noise suppression while the anti-squeezed quadrature shows an amplification
+Thus when $\bar\varphi_b=\{0,\pi\}$, in the lossless, low-frequency limit the transmitted noise levels reduce to the well-known parametric result
 \begin{equation}
-      \mathbf{S}_{\rm OPO}[\Omega] =\begin{pmatrix}
-         e^{\mp 2r} & 0 \\
-        0 & e^{\pm 2r} 
+      \mathbf{S}^0_{\rm OPO}[\Omega] =\begin{pmatrix}
+         e^{+ 2r} & 0 \\
+        0 & e^{- 2r} 
+      \end{pmatrix} \quad \quad \text{and} \quad \quad
+      \mathbf{S}^\pi_{\rm OPO}[\Omega] =\begin{pmatrix}
+         e^{- 2r} & 0 \\
+        0 & e^{+ 2r}
       \end{pmatrix}
       \label{eq:perfect_squeezer}
 \end{equation}
-Later on, we will use this idealized expression to describe how squeezed light interacts with a mechanical resonator whose frequency is much smaller than the OPO bandwidth. 
+where we can now establish that an amplified field ($\bar\varphi_b=0$) corresponds to a squeezed phase quadrature and an anti-squeezed amplitude quadrature, while a deamplified field ($\bar\varphi_b=\pi$) corresponds to a squeezed amplitude quadrature and an anti-squeezed phase quadrature. 
+Later on, we will use this idealized expression to describe how squeezed light interacts with a mechanical resonator whose frequency is much smaller than the OPO bandwidth. \\
 
-\subsubsection{Effects of escape efficiency and optical losses}
-Squeezing is very sensitive to optical losses, which couple uncorrelated vacuum fluctuations into the squeezed field and degrade the squeezing level. The escape efficiency $\eta_{\rm esc}=\kappa_2/\kappa$ of the OPO cavity is one such loss mechanism, but there are many others in a real experiment: propagation losses, mode-mismatch, non-unity quantum efficiency of the photodetectors, etc. One can then distinguish between \textit{intracavity} losses, which are accounted for in the escape efficiency, and \textit{extracavity} losses, which we denote by $\eta_{\rm ext}$ and lump all other loss mechanisms into a single effective loss. The effect of these losses can be modeled as a beam-splitter mixing the squeezed field with vacuum fluctuations, such that the lossy covariance matrix is given by
-\begin{equation}\mathbf{S}_{\rm det}[\Omega] = (1-\eta) \, \mathbf{S}_{\rm trans}[\Omega] + \eta \, \mathbf{1}
+\noindent \textbf{Losses: } Squeezing is very sensitive to optical losses, which couple uncorrelated vacuum fluctuations into the squeezed field and degrade the squeezing level. The escape efficiency $\eta_{\rm esc}=\kappa_2/\kappa$ of the OPO cavity is one such loss mechanism, but there are many others in a real experiment: propagation losses, mode-mismatch, non-unity quantum efficiency of the photodetectors, etc. One can then distinguish between \textit{intracavity} losses, which are accounted for in the escape efficiency, and \textit{extracavity} losses, which we denote by $\eta_{\rm ext}$ and lump all other loss mechanisms into a single effective loss. The effect of these losses can be modeled as a beam-splitter mixing the squeezed field with vacuum fluctuations, such that the lossy covariance matrix is given by
+\begin{equation}\mathbf{S}_{\rm det}[\Omega] = (1-\eta) \, \mathbf{S}^{\bar \varphi_b}_{\mathrm{OPO}}[\Omega] + \eta \, \mathbf{1}
   \label{II.xx3}
 \end{equation}
-This expression is actually true for any Gaussian state suffering from losses. 
+This expression is actually true for any Gaussian state suffering from losses. \\ 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPONoises.pdf}
@@ -1072,10 +1157,11 @@ This expression is actually true for any Gaussian state suffering from losses.
 above as
 \begin{equation}
 \mathbf{S}^{\theta}_{\rm OPO}[\Omega] = \mathbf R(\theta[\Omega])
-\mathbf{S}_{\rm OPO}[\Omega] 
-\mathbf R^{T}(\theta[\Omega]).
+\mathbf{S}^0_{\rm OPO}[\Omega] 
+\mathbf R^{\dagger}(\theta[\Omega]).
 \label{II.xx4}
 \end{equation}
+where $\theta[]$
 The $\mathbf{S}[\Omega]$ can either be the full cavity one, or the idealized one. As already mentionned, the mechanical frequencies of interest will be deep in the OPO bandwidth such that we will use the ideal squeezer expression \eqref{eq:perfect_squeezer} in addition with extrinsic losses \eqref{II.xx3}. The explicit of the covariance matrix at a frequency dependent angle is then
 \begin{equation}
       \mathbf{S}^{\theta}_{\rm OPO}[\Omega] =\begin{pmatrix}
@@ -1086,7 +1172,7 @@ The $\mathbf{S}[\Omega]$ can either be the full cavity one, or the idealized one
 
 
 \subsection{Optomechanical Cavities}
-We now turn to standard optomechanical cavities. As in the simple FP case, we consider a cavity mode, in which we now allow one of the the coupler (traditionnaly the output coupler), to be itself a \textit{mechanical} harmonic oscillator with annihilation operator $\hat{c}$, mass $m$, angular frequency $\Omega_m$ and damping rate $\Gamma_m$. In canonical optomechanical systems the mechanics operators are usually denoted as $\hat b$ but in our case it would be redundant with the operators describing the pump field in non linear systems. The position can be expressed in terms of our bosonic operators as  $\hat{x}=x_0(\hat{c}+\hat{c}^{\dagger})$ with $x_0 = \sqrt{\hbar/(2m\Omega_m)}$ the resonator's zero point fluctuations. 
+We now turn to standard optomechanical cavities. As in the simple FP case, we consider a cavity mode, in which we now allow one of the the coupler (traditionnaly the output coupler), to be itself a \textit{mechanical} harmonic oscillator with annihilation operator $\hat{c}$, effective mass $m$, angular frequency $\Omega_m$ and damping rate $\Gamma_m$. In canonical optomechanical systems the mechanics operators are usually denoted as $\hat b$ but in our case it would be redundant with the operators describing the pump field in non linear systems. The position can be expressed in terms of our bosonic operators as  $\hat{x}=x_0(\hat{c}+\hat{c}^{\dagger})$ with $x_0 = \sqrt{\hbar/(2m\Omega_m)}$ the resonator's zero point fluctuations. 
 
 \begin{figure}[h!]
 \centering
@@ -1098,22 +1184,43 @@ We now turn to standard optomechanical cavities. As in the simple FP case, we co
 \subsubsection{Mechanics \& Radiation Pressure Force }
 The equation of motion of such an oscillator are given by 
 \begin{equation}
-  m_{\text{eff}} \, \ddot{\hat x} = -m_{\text{eff}} \, \Omega_m^2 \hat x - m_{\text{eff}} \Gamma_m \dot{\hat x} + \hat F
+  m \, \ddot{\hat x} = -m \, \Omega_m^2 \hat x - m \Gamma_m \dot{\hat x} + \hat F
 \end{equation}
 where $\hat F$ is the total force acting on the oscillator.
 In Fourier space, we recover the standard linear response form
 \begin{equation}
-  \hat x [\Omega] = \chi[\Omega] \hat F[\Omega], \quad \chi[\Omega] = \frac{1/m_{\text{eff}}}{\Omega_m^2 - \Omega^2 - i \Gamma_m \Omega}
+  \hat x [\Omega] = \chi[\Omega] \hat F[\Omega] \quad \text{with} \quad \chi[\Omega] = \frac{1}{m(\Omega_m^2 - \Omega^2 - i \Gamma_m \Omega)}
 \end{equation}
-where $\chi[\Omega]$ is the susceptibility linearly relating the position $\hat x [\Omega]$ to the external force $\hat F[\Omega]$. As before, the position is also linearized considering small quantum fluctuations compared to its mean value, such that we write $\hat{x}= x + \delta \hat{x}$. Due to the continuous yet discrete photon \textit{hits} at a rate exceeding the resonator frequency, the resonator \textit{feels} an effective force. This radiation pressure force is expressed as 
+where $\chi[\Omega]$ is the susceptibility linearly relating the position $\hat x [\Omega]$ to the external force $\hat F[\Omega]$. This susceptibility can also be written as 
 \begin{equation}
-  \hat F_{\textrm{rad}} = 2 \frac{\hbar k_L}{\tau_c}\hat{a}^\dagger \hat{a} = 2 \frac{\hbar k_L}{\tau_c} \, |\bar{\alpha}|^2 +2 \frac{\hbar k_L}{\tau_c} \, |\bar \alpha| \, \delta \hat{p}
+  \chi[\Omega] = |\chi[\Omega]| e^{i \phi_m[\Omega]}
+\end{equation}
+with 
+\begin{equation*}  
+  \quad \text{with} \quad \phi_m[\Omega] = \arctan\Big(\frac{\Gamma_m \Omega}{\Omega_m^2 - \Omega^2}\Big) \quad \text{and} \quad |\chi[\Omega]| = \frac{1}{m\sqrt{(\Omega_m^2 - \Omega^2)^2 + (\Gamma_m \Omega)^2}}.
+\end{equation*}
+
+
+Similarly to the simple Fabry-Perot cavity (being a driven damped harmonic oscillator too), we can define the analog of the Finesse, namely the quality factor, defined as 
+\begin{equation}
+  Q = \frac{\Omega_m}{\Gamma_m}
+\end{equation}
+which is the number of oscillations before the resonator's energy is damped by a factor $1/e$. On resonance, the susceptibility is purely imaginary and reads $\chi[\Omega_m] = -i Q/(m \Omega_m^2)$. 
+
+As before, the position is also linearized considering small quantum fluctuations compared to its mean value, such that we write $\hat{x}= x + \delta \hat{x}$. Importantly, the total position fluctuation $\delta \hat{x} = \Sigma \delta \hat{x}_i$ is the sum of individual fluctuations that can arise from various sources, such as a the zero point fluctuations, thermal fluctuations or radiation pressure induced fluctuations. In the following we will only consider a radiation pressure induced fluctuations $\delta \hat{x}_{\mathrm{RPN}}$, such that $\delta \hat{x} =  \delta \hat{x}_{\mathrm{RPN}}$. 
+
+Due to the continuous yet discrete photon \textit{hits} at a rate exceeding the resonator frequency, the resonator \textit{feels} an effective force. This radiation pressure force is expressed as 
+\begin{equation}
+  \hat F = 2 \frac{\hbar k_L}{\tau_c}\hat{a}^\dagger \hat{a} = 2 \frac{\hbar k_L}{\tau_c} \, |\bar{\alpha}|^2 +2 \frac{\hbar k_L}{\tau_c} \, |\bar \alpha| \, \delta \hat{p} + \mathcal{O}(\delta \hat{a}^\dagger \delta \hat{a})
 \label{eq:Frad}
 \end{equation}
-where $k_L = 2\pi / \lambda$ is the laser wavevector, and $\tau_c=L/c$ is the cavity round-trip time, and we neglect second order terms. This force then features a static component shifting the resonator away from its equilibrium position, that be the $x$ component, as well as a fluctuating component $\delta \hat F_{\mathrm{rad}}\propto \delta \hat{p}$ jittering the resonator around its mean displacement, that's $\delta \hat x$. The position mean value and its fluctuations under radiation pressure can therefore be expressed as 
+where $k_L = 2\pi / \lambda$ is the laser wavevector, and $\tau_c=2L/c$ is the cavity round-trip time, and we neglect second order terms. This force then features a static component shifting the resonator away from its equilibrium position, that be the $x$ component, as well as a fluctuating component $\delta \hat F\propto \delta \hat{p}$ jittering the resonator around its mean displacement, that's $\delta \hat x_{\mathrm{RPN}}$. The position mean value and its fluctuations under radiation pressure can therefore be expressed to first order as 
 \begin{equation}
-  x = \frac{2\hbar k_L |\bar \alpha|^2}{\tau_c}  \,  \chi[0] \, , \quad \delta \hat x [\Omega]= \frac{2\hbar k_L |\bar \alpha|}{\tau_c}  \,  \chi[\Omega] \,  \delta \hat{p}[\Omega]. \label{eq:dx}
+  x = \frac{2\hbar k_L |\bar \alpha|^2}{\tau_c}  \,  \chi[0] \, , \quad \delta \hat x_{\mathrm{RPN}} [\Omega]= \frac{2\hbar k_L |\bar \alpha|}{\tau_c}  \,  \chi[\Omega] \,  \delta \hat{p}[\Omega]. \label{eq:dx}
 \end{equation} 
+
+
+
 \subsubsection{Optomechanical QLE}
 Considering an optomechanical cavity of length $L$ at rest, such that the mean resonator position is initialy 0, the bare cavity free spectral range is given by $\omega_{\mathrm{FSR}}=\pi c /L$ and the cavity frequency $\omega_c = N \omega_{\mathrm{FSR}}$. Injecting light inside this cavity then shifts the mechanical resonator position as seen above, which in turn changes the cavity length $L \rightarrow L+x$, thus its frequency. Writing the Hamiltonian, we simply Taylor expand to first order in $\hat{x}$ the cavity frequency $\omega_c(\hat{x})=\omega_c + \hat x \, \partial \omega_c / \partial x$ such that we have: 
 \begin{equation}
@@ -1123,7 +1230,7 @@ where $G=  \partial \omega_c / \partial x = - \omega_c/L$. One can also identify
 \begin{equation}
   \hat F_{\textrm{rad}} = - \frac{\partial \hat H}{\partial \hat x} = - \hbar G \hat{a}^\dagger \hat{a} \quad \Rightarrow \quad G = - 2 \frac{k_L}{\tau_c}
 \end{equation}
-consistent with our previous expression.
+consistent with our previous expression of $G$ such that we rewrite the position fluctuation as $\delta \hat x_{\mathrm{tot}} [\Omega]= - \hbar G |\bar \alpha| \chi[\Omega]\, \delta\hat p[\Omega]$. 
 Plugging in the QLE and ignoring vacuum and loss fluctuations for notational simplicity, the field's equation are written as 
 \begin{equation}
   \left\{
@@ -1138,123 +1245,125 @@ Plugging in the QLE and ignoring vacuum and loss fluctuations for notational sim
 \end{equation}
 where we introduced the radiation pressure induced detuning $\bar\Delta = \Delta - G x$ - that is, the mean resonator displacement shifts the cavity frequency, hence the detuning - and where we assume the input field to be real. 
 
-This so called \textit{dispersive} coupling, where the cavity frequency $\omega_c(x)$ depends linearly on the resonator's position to firs order, is the hallmark of the optomechanical interaction. In the canonical model, the cavity linewidth $\kappa$ do not depend on the resonator's position. 
+This so called \textit{dispersive} coupling, where the cavity frequency $\omega_c(x)$ depends linearly on the resonator's position to firs order, is the hallmark of the optomechanical interaction. In the canonical model, the cavity linewidth $\kappa$ do not depend on the resonator's position. \\
 
-
-\subsubsection{Mean field solution : bistable behaviour}
+\noindent \textbf{Mean field solution \& Bistability:}
 Writing the mean intracavity amplitude by keeping the \textit{unperturbed} detuning $\Delta$ for clarity and substituting for the static displacement $x$, we get
 \begin{equation}
   \bar{\alpha} = \frac{\sqrt{\kappa_1}}{ \kappa/2 - i \Big( \Delta - \dfrac{\hbar G^2  |\bar{\alpha}|^2}{m_{\text{eff}} \Omega_m^2 } \Big)} |\bar{\alpha}_{\text{in}}|
 \end{equation}
-where the $|\bar{\alpha}|^2$ dependence in disguise in the mean mechanical displacement is the root of the bistable behaviour of optomechanical cavities. We show the induced hysteresis in figure ... For moderate injected powers, one can simply relabel $\Delta - Gx \rightarrow \Delta$ to lighten the notation. Optomechanical cavities do display optical ringdowns too, as detailed in the cavity subpart above, but this is a purely optical phenomenon: the mechanics plays no role in the optical ringdwon (to first order).
-\begin{equation}
-  \bar{\alpha} = \frac{\sqrt{\kappa_1}}{ \kappa/2 - i  \bar \Delta} |\bar{\alpha}_{\text{in}}|\label{eq:alpha}
-\end{equation}
-\subsubsection{Noise Spectra}
+where the $|\bar{\alpha}|^2$ dependence in disguise in the mean mechanical displacement is the root of the bistable behaviour of optomechanical cavities. We show the induced hysteresis in figure ... 
 
-As previously, going to Fourier space now yields 
+For moderate injected powers, this is the standard intracavity field formula where we simply relabel $\Delta - Gx \rightarrow \Delta$ to lighten the notation. When resonant, the intracavity field does not pick up any phase and is real i.e. $\bar{\alpha} = |\bar{\alpha}| = 2\sqrt{\kappa_1}/\kappa \, |\bar{\alpha}_{\mathrm{in}}|$. 
+
+Optomechanical cavities do display optical ringdowns too, as detailed in the cavity subpart above, but this is a purely optical phenomenon: the mechanics plays no role in the optical ringdwon (to first order?). \\
+
+
+\noindent \textbf{Fluctuations solution:} As previously, going to Fourier space now yields 
 \begin{equation}
      \mathbf{M}_{\bar\Delta} \mathbf{\delta \hat{a}}[\Omega]  = i \,  G \bar{\alpha}_{\mathrm{}} \delta \hat{x}[\Omega]   \begin{pmatrix} +1 \\ -1\end{pmatrix}  +\sqrt{\kappa_{\mathrm{1}}} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega]  + \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] 
 \end{equation}
 where we injected the mean field solution \eqref{eq:alpha} in our equations assuming moderate input power to ignore bistable behaviour. We focus on the resonant case to derive our noise spectra, such that $\mathbf{M}_0 = (\kappa/2 - i\Omega) \mathbf{I}$  and the intracavity quadratures are
 \begin{equation}
-  \mathbf{\delta \hat{u}}[\Omega] =  \frac{G|\bar \alpha|}{\kappa/2 - i\Omega}\delta \hat{x}[\Omega] \begin{pmatrix} 0\\ 1\end{pmatrix}  +\frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  +\frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]  
+  \mathbf{\delta \hat{u}}[\Omega] =  \frac{2G|\bar \alpha|}{\kappa/2 - i\Omega}\delta \hat{x}[\Omega] \begin{pmatrix} 0\\ 1\end{pmatrix}  +\frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]  +\frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]  
 \end{equation}
 Writing explicitely our amplitude-phase quadratures then gives 
 \begin{equation}
   \begin{split}
     \delta \hat{p}[\Omega] &= \frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \\
-    \quad \delta \hat{q}[\Omega] &=  \frac{G|\bar \alpha|}{\kappa/2 - i\Omega}\delta \hat{x}[\Omega]  +\frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] 
+    \delta \hat{q}[\Omega] &=  \frac{2G|\bar \alpha|}{\kappa/2 - i\Omega}\delta \hat{x}[\Omega]  +\frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] 
   \end{split}
+   \label{eq:intra_quad}
 \end{equation}
-This expression highlights the fact that only the phase is affected by the resonator position fluctuations. Physically, this can be understood by considering first that a fluctuating field amplitude leads to a fluctuating radiation pressure force, which in turn \textit{shakes} the mechanical resonator, which changes the phase of the field reflected. The reciprocal process does not happen: a fluctuating phase does not lead to a fluctuating radiation pressure force, hence the output amplitude fluctuations are unaffected by the mechanics.
+This expression highlights the fact that only the phase is affected by the resonator position fluctuations. Physically, this can be understood by considering first that a fluctuating field amplitude leads to a fluctuating radiation pressure force, which in turn \textit{shakes} the mechanical resonator, which changes the phase of the field reflected. The reciprocal process does not happen: a fluctuating phase does not lead to a fluctuating radiation pressure force, hence the output amplitude fluctuations are unaffected by the mechanics. Importantly, considering the field reflected off the cavity we define the displacement to phase fluctuation transduction as
+\begin{equation}
+  \frac{\delta \hat{q}_x[\Omega]}{\delta \hat{x}[\Omega]} =  \frac{2\sqrt{\kappa_1}G|\bar \alpha|}{\kappa/2 - i\Omega} = \frac{\kappa_1}{\kappa} \dfrac{16 \mathcal{F}\sqrt{\bar{I}_{\rm in}}}{\lambda (1- i2\Omega/\kappa)}
+\end{equation}
+where we plugged in useful experimental parameters $\mathcal{F}$, $\lambda$ and $\bar I_{\rm in}$. The prefactor $\kappa_1/\kappa$ is the analog of the escape efficiency for optomechanical cavities, and is unity for single port cavities. We stress that the total phase fluctuations are the sum of various contributions, including the input phase fluctuations, the vacuum fluctuations entering from the loss port, and the position induced phase fluctuations, whether they arise from radiation pressure or other sources. This transduction factor will be used later to express the displacement sensitivity/spectra in terms of experimental parameters. \\
+
+
 Plugging in the position fluctuations derived earlier (\eqref{eq:dx} and \eqref{eq:Frad}) in the intracavity phase fluctuations we get
 \begin{equation}
-\delta \hat{q}[\Omega] =  \frac{\kappa_{\mathrm{1}}\sqrt{\kappa_1}}{\kappa^2} \frac{4\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega] \, \delta \hat{p}_{\mathrm{in}}[\Omega] 
-+\frac{\sqrt{\kappa_{\mathrm{1}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  +\frac{\sqrt{\kappa_{\mathrm{2}}}}{\kappa/2 - i\Omega} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] 
+  \begin{split}
+\delta \hat{q}[\Omega] =  &\frac{\kappa_{\mathrm{1}}}{\kappa^2} \frac{8\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega] \, \bigg( \sqrt{\kappa_1} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \sqrt{\kappa_2} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \bigg) \\ 
+ & +\frac{1}{\kappa/2 - i\Omega} \, \bigg( \sqrt{\kappa_1} \, \delta \hat{q}_{\mathrm{in}}[\Omega] + \sqrt{\kappa_2} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] \bigg) 
+  \end{split}
 \end{equation}
 such that we can readily express the intracavity quadratures in matrix form as
 \begin{equation}
 \delta\mathbf{\hat{\mathbf u}} [\Omega]
 =
-\dfrac{\sqrt{\kappa_{1}}}{\kappa/2-i\Omega}
 \left(
 \begin{array}{cc}
-1 & 0\\[6pt]
-\dfrac{\kappa_{1}}{\kappa^{2}}\,
-\dfrac{4\hbar G^{2}\,|\bar\alpha_{\mathrm{in}}|^{2}}{(\kappa/2-i\Omega)}\,
-\chi[\Omega] & 1
-\end{array}
+\dfrac{1}{\kappa/2 - i\Omega} & 0\\[6pt]
+\dfrac{\mathcal{K}[\Omega]}{\kappa_1} & \dfrac{1}{\kappa/2 - i\Omega}
+\end{array}-
 \right)
-\delta\mathbf{\hat{\mathbf u}} _{\mathrm{in}}[\Omega] +\;
-\dfrac{\sqrt{\kappa_{2}}}{\kappa/2-i\Omega}
-\delta\mathbf{\hat{\mathbf u}} _{\mathrm{vac}}[\Omega] \, .
+\bigg( 
+\sqrt{\kappa_1} \delta\mathbf{\hat{\mathbf u}} _{\mathrm{in}}[\Omega] +\;
+\sqrt{\kappa_2} \delta\mathbf{\hat{\mathbf u}} _{\mathrm{vac}}[\Omega] \bigg)  \, .
 \end{equation}
-as well as the reflected and transmitted quadrature fluctuations 
+with
+\begin{equation*}
+  \mathcal{K}[\Omega] = \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{8\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega] = \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{128 \hbar \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2(1 - i2\Omega/\kappa)^2}  \,  \chi[\Omega]
+\end{equation*}
+We then obtain the reflected and transmitted quadrature fluctuations 
 \begin{equation}
 \begin{split}
 \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega] &= 
 \mathbf{T}_{\mathrm{r}}[\Omega]
 \delta\hat{\mathbf u}_{\mathrm{in}}[\Omega] + 
-\mathbf{T}_{\mathrm{r}}[\Omega]
+\mathbf{L}_{\mathrm{r}}[\Omega]
 \delta\hat{\mathbf u}_{\mathrm{vac}}[\Omega] \, \\ 
 \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega] &= \mathbf{T}_{\mathrm{t}}[\Omega]  \delta\hat{\mathbf u}_{\mathrm{in}}[\Omega] +
 \mathbf{L}_{\mathrm{t}}[\Omega]
 \delta\hat{\mathbf u}_{\mathrm{vac}}[\Omega] \, .
 \end{split}
 \end{equation}
- where we defned the transfer matrices as 
-\begin{equation}
+ where we defned the transfer matrices 
+\begin{equation*}
   \begin{alignedat}{3}
-    \mathbf{T}_{\mathrm{r}}[\Omega] &=\begin{pmatrix}
+     \mathbf{T}_{\mathrm{r}}[\Omega] &=\begin{pmatrix}
   \dfrac{\kappa_1}{\kappa/2-i\Omega}  -1  & 0 \\
-  \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{4\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega]  &  \dfrac{\kappa_1}{\kappa/2-i\Omega}  -1
-\end{pmatrix} \quad
- & \mathbf{L}_{\mathrm{r}}[\Omega] &= \dfrac{\sqrt{\kappa_1 \kappa_{2}}}{\kappa/2-i\Omega} \mathbf{1} \\
-    \mathbf{T}_{\mathrm{t}}[\Omega] &=  \begin{pmatrix}
+  \mathcal{K}[\Omega]  &  \dfrac{\kappa_1}{\kappa/2-i\Omega}  -1 
+\end{pmatrix}  \quad
+ & \mathbf{L}_{\mathrm{r}}[\Omega] &= \begin{pmatrix}
    \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}   & 0 \\
-  \dfrac{\kappa_{\mathrm{1}}\sqrt{\kappa_1\kappa_2}}{\kappa^2} \dfrac{4\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega]  &   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  
-\end{pmatrix} \quad 
-& \mathbf{L}_{\mathrm{t}}[\Omega]&= \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega} \mathbf{1} \
+  \sqrt{\dfrac{\kappa_2}{\kappa_1}} \, \mathcal{K}[\Omega] &   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  
+\end{pmatrix} \\
+        \mathbf{T}_{\mathrm{t}}[\Omega] &=  \begin{pmatrix}
+   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}   & 0 \\
+  \sqrt{\dfrac{\kappa_2}{\kappa_1}} \, \mathcal{K}[\Omega] &   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  
+\end{pmatrix}  \quad 
+& \mathbf{L}_{\mathrm{t}}[\Omega]&= \begin{pmatrix}
+  \dfrac{\kappa_2}{\kappa/2-i\Omega}  -1  & 0 \\
+  \dfrac{\kappa_2}{\kappa_1}\mathcal{K}[\Omega]  &  \dfrac{\kappa_2}{\kappa/2-i\Omega}  -1 
+\end{pmatrix} 
   \end{alignedat}
-\end{equation}
+\end{equation*}
 
 
 \noindent \textbf{Convergence to VIRGO/LIGO notation:} To sanity check this expression, we need to make sure we recover the standard expressions used in the LIGO/VIRGO community. This is we will assume the mechanical resonator is free, that is $\Omega_m \rightarrow 0$ and $\Gamma_m \rightarrow 0$. The susceptibility then reduces to $\chi[\Omega] = 1/ M \Omega^2$, and we will consider sideband frequencies $\Omega \ll \kappa/2$ such that all terms in $\Omega/(\kappa/2)$ can be neglected. We also consider a single port cavity such that $\kappa_1 = \kappa$ and $\kappa_2=0$. The reflected quadrature fluctuations then read
 \begin{equation}
-\mathbf{\delta \hat{a}_{\mathrm{r}}}[\Omega]
+\mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega]
 =
 \begin{pmatrix}
   1   & 0 \\[12pt]
-  \dfrac{16 \omega_0P_{\mathrm{in}}}{M L^2\kappa^2 \Omega^2}    &  1
+  \dfrac{32 \omega_0P_{\mathrm{in}}}{M L^2\kappa^2 \Omega^2}    &  1
 \end{pmatrix}
-\delta\hat{\mathbf a}_{\mathrm{in}}[\Omega]
+\delta\hat{\mathbf u}_{\mathrm{in}}[\Omega].
 \end{equation}
-where the off diagonal term is recognised as the radiation pressure to shot noise ratio, often denoted $\mathcal{K}[\Omega]$ in the literature. In GW papers, the pre factor will often be 8 (and not 16) as they consider a dual cavity Michelson interferometer, where the input power is the power at the beamsplitter, hence twice the power in each arm. We indeed recover the standard expression used in the GW community, which is a good sanity check of our derivation. We do stress however that this expression is only valid for a free mass, and that the full expression including the mechanical resonance is required to describe optomechanical cavities in general. We will nonetheless used the same notation $\mathcal{K}[\Omega]$ to denote the off diagonal term in the general case, lightening a bit the notation to
-\begin{equation}
-  \begin{alignedat}{3}
-    \mathbf{T}_{\mathrm{r}}[\Omega] &=\begin{pmatrix}
-  \dfrac{\kappa_1}{\kappa/2-i\Omega}  -1  & 0 \\
-  \mathcal{K}[\Omega]  &  \dfrac{\kappa_1}{\kappa/2-i\Omega}  -1 
-\end{pmatrix}  \\
-    \mathbf{T}_{\mathrm{t}}[\Omega] &=  \begin{pmatrix}
-   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}   & 0 \\
-  \sqrt{\dfrac{\kappa_2}{\kappa_1}} \, \mathcal{K}[\Omega] &   \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  
-\end{pmatrix} 
-  \end{alignedat}
-\end{equation}
-with
-\begin{equation}
-  \mathcal{K}[\Omega] = \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{4\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega]
-\end{equation}
+In GW papers, the pre factor will often be 8 (and not 32) as they use the cavity half width at half maximum rather than $\kappa$. We indeed recover the standard expression used in the GW community, which is a good sanity check of our derivation. We do stress however that this expression is only valid for a free mass, and that the full expression including the mechanical resonance is required to describe optomechanical cavities in general. \\
 
-\noindent \textbf{Reflected spectra:} We can now compute the covariance matrix of the reflected quadratures, assuming vacuum fluctuations both at the input and at the loss port. We additionally consider a quasi single port cavity for simplicity $\kappa_1 \gg \kappa_2$, such that $\kappa_1\sim\kappa$. The reflected covariance matrix is then given by
+
+\noindent \textbf{Reflected spectra:} We can now compute the covariance matrix of the reflected quadratures, assuming vacuum fluctuations both at the input and at the loss port. We additionally consider a quasi single port cavity for simplicity $\kappa_1 \gg \kappa_2$, such that $\kappa_1\sim\kappa$, as well as the bad cavity limit $\Omega \ll \kappa/2$. The reflected covariance matrix is then given by
 \begin{equation}
-      \mathbf{S}_{\rm r}[\Omega] =\begin{pmatrix}
-        1 & \dfrac{\kappa/2 + i\Omega}{\kappa/2 - i\Omega} \mathcal{K}[\Omega]\\[6pt]
-         \dfrac{\kappa/2 - i\Omega}{\kappa/2 + i\Omega} \mathcal{K}^{*}[\Omega]& 1 +  |\mathcal{K}[\Omega]|^2
+      \mathbf{S}_{\rm r}[\Omega] =\mathbf{T}_{\mathrm{r}}[\Omega] \mathbf{S}_{\text{in}}[\Omega] \mathbf{T}_{\mathrm{r}}^{\dagger}[\Omega]  = \begin{pmatrix}
+        1 &  \mathcal{K}[\Omega]\\[6pt]
+          \mathcal{K}^{*}[\Omega]& 1 +  |\mathcal{K}[\Omega]|^2
       \end{pmatrix}
 \end{equation}
 where the off-diagonal entries are complex conjugates of each other, ensuring the covariance matrix is Hermitian as required. The diagonal terms are the amplitude and phase noise spectra respectively, while the off-diagonal terms quantify correlations between amplitude and phase. The presence of these correlations is the hallmark of optomechanical/ponderomotive squeezing i.e. using the non linear response of the resonator to squeeze light. This effect is not seen nor seeked in our experiment, but is a very active field of research in the optomechanics community. \\
 
-One now sees two essential components in the reflected phase spectrum: the direct phase fluctuations, which is simply shot noise, and the back-action term $\propto |\mathcal{K}[\Omega]|^2$, which is the phase fluctuations induced by the resonator motion driven by radiation pressure fluctuations. 
+One now sees two essential components in the reflected phase spectrum. The first is the direct phase fluctuations, which is simply shot noise seen as $1$. The second is the back-action term $\propto |\mathcal{K}[\Omega]|^2$, which is the phase fluctuations induced by the resonator motion driven by radiation pressure fluctuations. 
+

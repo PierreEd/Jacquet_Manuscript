@@ -1,18 +1,21 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.1}Optical Setup Overview}{\reset@font\mtcSfont 87}{section.6.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.2}Cavity Resonances and Locks}{\reset@font\mtcSfont 87}{section.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.1}IRMC Cavity}{\reset@font\mtcSSfont 87}{subsection.6.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.2}SHG Cavity}{\reset@font\mtcSSfont 89}{subsection.6.2.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Scanning and Resonance Mapping.}{\reset@font\mtcPfont 89}{section*.61}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Locking.}{\reset@font\mtcPfont 90}{section*.62}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Nonlinear Crystal and Phase Matching.}{\reset@font\mtcPfont 90}{section*.63}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Temperature-Induced Resonance Shifts.}{\reset@font\mtcPfont 91}{section*.64}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.3}OPO Cavity}{\reset@font\mtcSSfont 93}{subsection.6.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.3}Spectral analysis}{\reset@font\mtcSfont 93}{section.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.1}Detection of Squeezing and Anti-squeezing}{\reset@font\mtcSSfont 93}{subsection.6.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.2}Spectral Variation with Frequency}{\reset@font\mtcSSfont 93}{subsection.6.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.3}Optimal Quadrature Conditions}{\reset@font\mtcSSfont 93}{subsection.6.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.4}Filter Cavity Concept}{\reset@font\mtcSfont 93}{section.6.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 93}{subsection.6.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 93}{subsection.6.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: PDH Derivation}{\reset@font\mtcSfont 97}{appendix*.68}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: Spectra Derivation}{\reset@font\mtcSfont 101}{appendix*.76}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.1}Optical Setup Overview}{\reset@font\mtcSfont 74}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.2}Cavity Resonances and Locks}{\reset@font\mtcSfont 74}{section.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.1}IRMC Cavity}{\reset@font\mtcSSfont 74}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.2}SHG Cavity}{\reset@font\mtcSSfont 76}{subsection.6.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Scanning and Resonance Mapping.}{\reset@font\mtcPfont 76}{section*.63}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Locking.}{\reset@font\mtcPfont 76}{section*.64}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Nonlinear Crystal and Phase Matching.}{\reset@font\mtcPfont 76}{section*.65}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Temperature-Induced Resonance Shifts.}{\reset@font\mtcPfont 77}{section*.66}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.2.3}OPO Cavity}{\reset@font\mtcSSfont 77}{subsection.6.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.3}Spectral analysis}{\reset@font\mtcSfont 77}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.1}Detection of Squeezing and Anti-squeezing}{\reset@font\mtcSSfont 77}{subsection.6.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.2}Spectral Variation with Frequency}{\reset@font\mtcSSfont 77}{subsection.6.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.3.3}Optimal Quadrature Conditions}{\reset@font\mtcSSfont 77}{subsection.6.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {VI.4}Filter Cavity Concept}{\reset@font\mtcSfont 77}{section.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 77}{subsection.6.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {VI.4.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 77}{subsection.6.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: PDH Derivation}{\reset@font\mtcSfont 81}{appendix*.70}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode Appendix: Spectra Derivation}{\reset@font\mtcSfont 85}{appendix*.78}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Optimal fixed angle.}{\reset@font\mtcPfont 87}{section*.81}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Minimum attained value.}{\reset@font\mtcPfont 87}{section*.82}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Lower bound and the real-\(\mathcal {K}\) case.}{\reset@font\mtcPfont 88}{section*.83}}
