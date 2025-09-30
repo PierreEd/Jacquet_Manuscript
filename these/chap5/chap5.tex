@@ -23,7 +23,7 @@ Previous optomechanics experiments at LKB have primarily utilized Fabry--Pérot 
 Although the systems ended up being limited by various factors mentioned above (optical, mechanical and thermal effects)~\cite{}, the parts designed over the years did feature a high level of passive stability as well as good thermalization properties.  A pivotal solution, introduced by Regal, Kimble, Harris, and collaborators\cite{Regal2008,Harris2008}, was to decouple these requirements by embedding a high-$Q$ mechanical resonator within a high-finesse optical cavity, using the optical field to probe and control the resonator’s dynamics.
 
 \subsection{Specifications and Design}
-It was then decided to build on this design and extend it to a three-mirror cavity in a Membrane-At-The-Edge configuration (MATE) to benefit from this large linear coupling range as detailed in the prevoous chapter. That is the work Michael and myself undertook during my M2 internship and the first year of my PhD. 
+It was then decided to build on this design and extend it to a three-mirror cavity in a MATE configuration to benefit from this large linear coupling range as detailed in the previous chapter. That is the work Michael and myself undertook during my M2 internship and the first year of my PhD.
 This new three mirror cavity then needed to fulfill various requirements: 
 \begin{itemize}
     \item \textbf{High Finesse}: input and back mirrors should both have high reflectivities, with low extra losses such as scattering, absorption, etc ...\cite{AmatoPhD}
@@ -74,7 +74,7 @@ The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence
 
 The middle mirror is a commercially\,–\,available stoichiometric silicon-nitride
 (Si$_3$N$_4$) membrane supplied by Norcada (NX10050AS)\cite{SiN_review,Norcada_datasheet}.
-It consists of a $0.50\,\mathrm{mm}\times0.50\,\mathrm{mm}$, $50\,\mathrm{nm}$-thick
+It consists of a $1\,\mathrm{mm}\times1\,\mathrm{mm}$, $50\,\mathrm{nm}$-thick
 Si$_3$N$_4$ film suspended in a $10\,\mathrm{mm}\times10\,\mathrm{mm}$,
 $200\,\mu\mathrm{m}$-thick silicon frame and is marketed specifically for
 \emph{high-$Q$} resonator applications. Because stoichiometric LPCVD Si$_3$N$_4$ is under high intrinsic tensile
@@ -191,10 +191,51 @@ The optical setup is now to be aligned as to ensure a good mode matching between
 \end{figure}
 \section{Experimental Characterization}
 \subsection{Cavity Characterization}
-Once the cavity is aligned, we can scan the cavity length using the piezo actuator mounted on the input mirror, and monitor the cavity resonances using both the reflected and transmitted photodiodes. A typical scan is shown in Fig.~\ref{fig:cavity_scan}, where we can see the cavity resonances in transmission as well as in reflection after mode matching the cavity so the TEM00 mode is optimally matched. These signals are used to fit the cavity parameters. 
+Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in derivation at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). We call the input mirror piezo voltage $V_{\text{SW}}$ as it is used to scan the cavity length, and the back piezo voltage $V_{\text{DC}}$ as it is used to set the membrane position, and we model the these voltages as third order polynomials of the actual displacements $L-x$ and $x$ respectively. \\
 
-\subsubsection{Slow Scans}
-Using the 
+We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM00 mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters.
+
+Using the IR EOM as a frequency ruler, setting a reference between few MHz to $\sim$ 60 MHz (limited by the RedPitaya) we perform lorentzian fits of the three lorentzian dips, and compare the fitted positions. Two typical scans are shown in Fig.~\ref{fig:cavity_scan}, one large scan over few cavity FSRs, and a narrow one. \\ 
+
+\noindent  \textbf{Finesse :} We can used three different methods to evalutate the finesse of the cavity. 
+\begin{itemize}
+  \item The first one would be to scan the cavity over few FSRs, and fit the lorentzian dips such that we can extract the ratio of their interspacings to their linewidths. This method is quite sensitive to the piezo nonlinearities, arising both from the system's transfer function and from the low pass filtering of the voltage ramp by the electronics. One can however used a sine ramp below the electronics cutoff frequency and calibrate the disaplcement owing to the fact that each resonance corresponds to a displacement of $\lambda/2$ (one FSR). 
+  \item The second method would be to scan the cavity over a single resonance, and use the EOM sidebands as a frequency reference to extract the linewidth of the resonance. This method is less sensitive to piezo nonlinearities, assuming the piezo sweep is quasi linear over the resonance width. 
+  \item The third method would be to scan the cavity rapidly and observe a cavity ringdown, and compare the heights of the first two rebounds in transmission to their temporal spacings. This method is less sensitive to piezo nonlinearities, but requires a fast photodiode. Additionally we can vary the piezo sweep frequency to scan for various sweep rates. 
+\end{itemize}
+
+Many trial and errors for such a MATE cavity were realised over this thesis, but the cleaner data were obtained with a cavity made of an input concave mirror of radius of curvature $R=20mm$ and transmittivity $t_1=100ppm$, a plane back mirror of $t_2=20ppm$ and a cavity length of $L=17mm$. Hence, the theoretical finesse would be $\sim 52400$. \\ 
+
+\noindent \textbf{Empty cavity: }By using the second method for our finesse estimation, the empty cavity finesse was measured to be $\sim 28000$, such that we deduce total loss of $\Sigma T_i = 225 \pm 20$ppm  (including losses). The LMA did not provide us with specification sheets for the exact mirrors we used, but the uncertainty on the sum of the transmissions is estimated to be around 15ppm. In turn, we can estimate the excess cavity losses to be around $\gamma = 105ppm$. \color{red} errors \color{black} \\
+
+\noindent \textbf{MATE cavity: }Once the membrane is inserted inside the cavity, both the resonant frequencies and the linewidths-finesse vary as a function of the membrane position $x$. Using our third order polynomials to model the piezos voltage seed to displacements transduction, we renormalize both the input mirror voltage sweep $V_{\text{SW}}$ and the back mirror voltage DC $V_{\text{DC}}$ to the cavity FSR and the nominal membrane displacement $x$ respectively. Knowing or laser wavelenth, this fit allows us to estimate the membrane reflectivity $|r_m|$ which is found to be 0.54. \color{red} link to expected value \color{black} \\ 
+
+These fits then give us the total maps of available displacements $L-x$ and $x$ as a function of both $V_{\text{SW}}$ and $V_{\text{DC}}$, as shown in Fig.~\ref{fig:maps}. \\ 
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/scansTot.pdf}
+    \caption{ }
+    \label{fig:tilt}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/scancoupling.pdf}
+    \caption{ }
+    \label{fig:tilt}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/scantrans.pdf}
+    \caption{ }
+    \label{fig:tilt}
+\end{figure}
+
+\noindent \textbf{Position dependent finesse: } We now record cavity scans at increasing values of $V_{DC}\propto P_3(x)$. The finesse oscillates between $\sim 6000$ and $\sim 20000$, which corresponds to total losses $\Sigma T_i$ between 300ppm and 1050ppm. This is significantly higher than the empty cavity losses, which indicates that the membrane introduces significant additional losses. 
+
+Using the IR EOM as a frequency ruler, we can perform slow scans of the cavity length while monitoring the transmitted intensity. By carefully controlling the piezo voltage and using a lock-in amplifier to extract the signal, we can obtain high-resolution measurements of the cavity resonances. This technique allows us to probe the cavity modes with great precision and is particularly useful for characterizing the effects of the membrane on the cavity dynamics.
 \subsection{Locking Techniques and Stability}
 \subsection{Optical Ringdowns and Loss Measurements}
 \subsection{Mechanical Resonator Characterization}
