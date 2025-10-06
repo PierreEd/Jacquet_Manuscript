@@ -23,7 +23,7 @@ Previous optomechanics experiments at LKB have primarily utilized Fabry--Pérot 
 Although the systems ended up being limited by various factors mentioned above (optical, mechanical and thermal effects)~\cite{}, the parts designed over the years did feature a high level of passive stability as well as good thermalization properties.  A pivotal solution, introduced by Regal, Kimble, Harris, and collaborators\cite{Regal2008,Harris2008}, was to decouple these requirements by embedding a high-$Q$ mechanical resonator within a high-finesse optical cavity, using the optical field to probe and control the resonator’s dynamics.
 
 \subsection{Specifications and Design}
-It was then decided to build on this design and extend it to a three-mirror cavity in a MATE configuration to benefit from this large linear coupling range as detailed in the previous chapter. That is the work Michael and myself undertook during my M2 internship and the first year of my PhD.
+It was then decided to build on this design and extend it to a three-mirror cavity in a MATE configuration to benefit from this large linear and tunable coupling range as detailed in the previous chapter. That is the work Michael and myself undertook during my M2 internship and the following years of my PhD.
 This new three mirror cavity then needed to fulfill various requirements: 
 \begin{itemize}
     \item \textbf{High Finesse}: input and back mirrors should both have high reflectivities, with low extra losses such as scattering, absorption, etc ...\cite{AmatoPhD}
@@ -43,43 +43,42 @@ The coatings were deposited in the LMA's \textit{Veeco SPECTOR} chambers and sub
 \footnote{Identical optics are used for the Advanced LIGO, Advanced Virgo
 and KAGRA interferometers\cite{LIGO_optics}.}.\\
 
-We supplied the LMA with a batch of substrates with various radii of curvature to explore different cavity geometries:
-\begin{itemize}
-  \item \textbf{Plane substrates:} Laseroptik S--00798
-  \item \textbf{Plano-concave substrates:}
-    \begin{itemize}
-        \item Laseroptik S--00128 ($R = 20$ mm)
-        \item Laseroptik S--00127 ($R = 15$ mm)
-        \item Laseroptik S--00126 ($R = 10$ mm)
-    \end{itemize}
-\end{itemize}
+We supplied the LMA with a batch of substrates with various radii of curvature to explore different cavity geometries. The requested specifications are summarized in the table below. The total round‐trip scatter and absorption losses are usually below $ 20\,$ppm, in agreement with the measurements reported (absoption $\sim$0.7ppm, scattering $\sim$10ppm)in Ref.\,\cite{AmatoPhD}.
 
-All optics feature
-\begin{itemize}
-  \item \textbf{Back‐side AR:} $R \lesssim 100\,$ppm. This is not critical for the cavity performance since the back side is not actually contributing to the finesse, but it is important to avoid parasitic reflections in the setup.
-  \item \textbf{Front‐side HR:}
-    \begin{itemize}
-        \item[] $T \sim 20 \pm 4\,$ppm on the plane mirrors,
-        \item[] $T \sim 50 \pm 10\,$ppm and $100 \pm 10\,$ppm on the
-                concave mirrors, respectively,
-    \end{itemize}
-  \item total round‐trip scatter\,+\,absorption
-        $\lesssim 20\,$ppm, in agreement with the measurements reported (absoption $\sim$0.7ppm, scattering $\sim$10ppm)
-        in Ref.\,\cite{AmatoPhD}.
-\end{itemize}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Substrate type} & \textbf{Laseroptik ID} & \textbf{$R$} & \textbf{Front-side HR $T$} & \textbf{Back-side AR} \\
+\hline
+Plane & S--00798 & $\infty$ (plane) & $20 \pm 4$ ppm & $R \lesssim 100$ ppm \\
+\hline
+Plano-concave & S--00128 & -25 mm & $100 , 50 \pm 10$ ppm & $R \lesssim 100$ ppm  \\
+\hline
+Plano-concave & S--00127 & -15 mm & $100 , 50  \pm 10$ ppm & $R \lesssim 100$ ppm  \\
+\hline
+Plano-concave & S--00126 & -10 mm & $100 , 50  \pm 10$ ppm & $R \lesssim 100$ ppm  \\
+\hline
+\end{tabular}
+\caption{Specifications of supplied Laseroptik substrates for different cavity geometries.}
+\end{table}
+
+
 
 The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence.  After annealing, the measured mechanical loss angle of the $\mathrm{TiO_2\!:\!Ta_2O_5}/\mathrm{SiO_2}$ stack is $\phi < 4\times10^{-4}$ at 1 kHz  \color{red} link to mechanical damping needed \color{black}, supporting cavity finesses in the range $200\,000-500\,000$ before excess scatter or absorption dominates\cite{AmatoPhD}.
 
 \subsubsection{High $Q$ factor}
 
 The middle mirror is a commercially\,–\,available stoichiometric silicon-nitride
-(Si$_3$N$_4$) membrane supplied by Norcada (NX10050AS)\cite{SiN_review,Norcada_datasheet}.
-It consists of a $1\,\mathrm{mm}\times1\,\mathrm{mm}$, $50\,\mathrm{nm}$-thick
+(Si$_3$N$_4$) membrane supplied by Norcada\textsuperscript{\textregistered} (NX10050AS)\cite{SiN_review,Norcada_datasheet}.
+It consists of a $l \times l = 500\,\mu m\times500\,\mu m $, $50\,nm$-thick
 Si$_3$N$_4$ film suspended in a $10\,\mathrm{mm}\times10\,\mathrm{mm}$,
 $200\,\mu\mathrm{m}$-thick silicon frame and is marketed specifically for
 \emph{high-$Q$} resonator applications. Because stoichiometric LPCVD Si$_3$N$_4$ is under high intrinsic tensile
 stress ($\sigma\!\approx\!0.9\;\mathrm{GPa}$), the square drum supports
-MHz-frequency modes with exceptionally low mechanical loss\cite{SiN_review}.
+MHz-frequency modes with low mechanical loss\cite{SiN_review}.
 
 \begin{itemize}
   \item \textbf{Room temperature.}  Measurements on nominally identical
@@ -91,38 +90,36 @@ MHz-frequency modes with exceptionally low mechanical loss\cite{SiN_review}.
         $Q>10^{7}$ routinely observed \cite{SiN_cryogenic}.
 \end{itemize}
 
-On the basis of these results we set the following design targets:
-\[
-  Q_{\mathrm{RT}} \ge 5\times10^{6}, \qquad
-  Q_{\mathrm{cryogenic}} \ge 1\times10^{7}.
-\]
 The membrane’s high stress, thin-film nature and dielectric composition make
 it fully compatible with ultra-high-vacuum environments and repeated
 cryogenic cycling, while introducing (a priori) negligible optical loss in the cavity.
-These attributes ensure a robust, spectrally clean mechanical resonator for
-advanced quantum-optomechanics experiments.
+The expected mechanical mode structure can be derived from 
+\begin{equation}
+f_{n,m}= \sqrt{\dfrac{\sigma}{4\rho l^2}(n^2+m^2)}
+\end{equation}
+with $\rho= 2.7 \,\mathrm{g/cm^3}$ the film mass density and $n,m$ the mode indices. The fundamental mode $(n,m)=(1,1)$ is expected at $f_{1,1} \approx 816\,\mathrm{kHz}$, with the two higher order modes $(1,2)$ and $(2,1)$ degenerate at $f_{1,2}\approx f_{2,1} \approx 1.29\,\mathrm{MHz}$.
 
 \subsubsection{Optical alignment}
-The cavity is designed to be compatible with the Thorlabs cage system. The input mirror is mounted on a 3 axis cage mount, allowing for easy alignment of the input mirror with respect to the cavity optical axis. Both the resonator and the back mirror are embedded within a custom-made holder, which is itself integrated into the cage system. The relative tilt between the resonator and the back mirror is adjusted using a set of 3 screws with a very fine thread, allowing for a fine alignment of the parallelism of the back cavity. The alignment procedure is detailed in section~\ref{sec:alignment_procedure}.
+The cavity is designed to be compatible with the Thorlabs\textsuperscript{\textregistered} cage system. The input mirror is mounted on a 3 axis cage mount, allowing for easy alignment of the input mirror with respect to the cavity optical axis. Both the resonator and the back mirror are embedded within a custom-made holder, which is itself integrated into the cage system. The relative tilt between the resonator and the back mirror is adjusted using a set of 3 screws with a very fine thread, allowing for a fine alignment of the parallelism of the back cavity. The alignment procedure is detailed in section~\ref{sec:alignment_procedure}.
 
 \subsubsection{Dynamical range}
 
-The input (front) mirror is glued to a PI \texttt{P-016.00H} ring-stack piezoelectric actuator using vacuum epoxy (Torr Seal). Driven from 0 to $+1000\,\mathrm{V}$ it provides a longitudinal stroke of $5\,\mu\text{m}$, a blocking force of $2.9\,\mathrm{kN}$, as well as an unloaded resonance of 144 kHz, making it suitable for fast, low-noise cavity-length control.
+The input mirror is glued to a PI Ceramic\textsuperscript{\textregistered} \texttt{P-016.00H} ring-stack piezoelectric actuator using vacuum epoxy (Torr Seal\textsuperscript{\textregistered}). Driven from 0 to $+1000\,\mathrm{V}$ it provides a longitudinal stroke of $5\,\mu\text{m}$, a blocking force of $2.9\,\mathrm{kN}$, as well as an unloaded resonance of 144 kHz, making it suitable for fast, low-noise cavity-length control.
 
-The end-mirror–membrane assembly is mounted on a flexure holder actuated by three \texttt{PD080.31} piezo chips arranged mechanically in series. Each chip yields $2\,\mu\text{m}$ of travel over a drive range of $-20$ to $+100\,\mathrm{V}$; the triple stack therefore supplies roughly $6\,\mu\text{m}$ of coarse tuning while preserving high stiffness and sub-microsecond response.
+The end-mirror–membrane assembly is mounted on a custom holder actuated by three \texttt{PD080.31} piezo chips arranged mechanically in series. Each chip yields $2\,\mu\text{m}$ of travel over a drive range of $-20$ to $+100\,\mathrm{V}$; the triple stack therefore supplies roughly $6\,\mu\text{m}$ of coarse tuning while preserving high stiffness and sub-microsecond response. The effective range is lower than this owing to the fact the piezo is constrained within the holder. Furthermore, one should not constrain the piezo to much to avoid damaging it: it happened that the assembly was too tightly screwedn such that it ended up fracturing the piezo pushing against the back mirror holder. 
 
-Combining the $5\,\mu\text{m}$ stroke of the front \texttt{P-016.00H} with the $6\,\mu\text{m}$ range of the rear triple stack provides an overall cavity-length adjustment of about $11\,\mu\text{m}$ — equivalent to more than 20 free spectral ranges — with sub-nanometre resolution when driven by low-noise high-voltage amplifiers.
+Combining the $5\,\mu\text{m}$ stroke of the front \texttt{P-016.00H} with the $6\,\mu\text{m}$ range of the rear triple stack provides an overall cavity-length adjustment sufficient to scan few FSRs, as well as to tune the membrane position over a full wavelength, thus accessing allowing exploration of the three mirror cavity physics.
 
 
 \subsubsection{Compactness \& Stability}
-The entire assembly is built as a cage system using standard Thorlabs cage parts, allowing for a compact and stable assembly\cite{Thorlabs_cage}. The cage system also allows for (relatively) easy alignment of the mirrors, as well as easy access to the piezo actuators.
+The entire assembly is built as a cage system using standard Thorlabs\textsuperscript{\textregistered} cage parts, allowing for a compact and stable assembly. The cage system also allows for (relatively) easy alignment of the mirrors, as well as easy access to the piezo actuators.
 
 \subsubsection{Vacuum and Cryogenic compatibility}
 The back cavity composed of the back mirror and the middle mirror is embedded inside an Oxygen Free Copper (OFHC) assembly with a circular geometry, eventually mitigating for transverse misalignment issues when going to cryogenic temperatures, the constraints compensating themselves radially with respect to the symmetry axis of the cavity assembly\cite{OFHC_review}. Furthermore, the screws used to hold the assembly together are made of brass with a thermal expansion coefficient lower than that of the OFC, tightening up the cavity when reaching cryogenic temperatures.
-Thorlabs cage parts are compatible with moderate vacuum operation down to $\sim 10^{-5} mbar$ if properly degreased and ultrasound cleant, but a custom cryocompatible system to hold the input mirror would be needed for operation at cryogenic temperatures. \\
+Thorlabs cage parts are compatible with moderate vacuum operation down to $\sim 10^{-7} mbar$ if properly degreased and ultrasound cleant, but a custom cryocompatible system to hold the input mirror would be needed for operation at cryogenic temperatures. \\
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/schéma_cavity.pdf}
     \caption{Cavity design and assembly. (a) The figure shows the overall assembly of the MATE system from various views, highlighting the integration of the high-finesse mirrors, the membrane resonator embedded inside the back cavity copper assembly held to the input mirror Thorlabs holder through a cage system.(b) The exploded view details the arrangement of the mechanical and optical components, illustrating the modular design that facilitates alignment, stability, and compatibility with vacuum environments.}
@@ -134,11 +131,11 @@ The initial design of the cavity was made using Autodesk Fusion 360, allowing fo
 
 \subsection{Flexure Actuation}
 
-One specificity of the MATE system is that the back cavity is significantly shorter than the front cavity, which would require high precision in both the machining of the copper pieces and the positioning of the resonator. In our case, we aim at a centimetric cavity which would require to position the membrane at roughly hundreds of microns from the back mirror, and parallel to the back mirror. Moving the membrane independently from the back mirror while maintaining a controllable tilt between both planes is therefore complicated. \\
+One specificity of the MATE system is that the back cavity is significantly shorter than the front cavity, which would require high precision in both the machining of the copper pieces and the positioning of the resonator. In our case, we aim at a centimetric cavity which would require to position the membrane at roughly hundreds of microns from the back mirror, and parallel to the back mirror. Moving the membrane independently from the back mirror while maintaining a controllable tilt between both planes is therefore challenging. \\
 
 
 A smart workaround was introduced by Jack Sankey and its group \cite{Sankey2010}, where the authors introduced a flexure-tuned MATE system. The key innovation lies in actuating the membrane position by flexing its supporting silicon frame rather than translating the entire mount. This is done by mounting the back cavity in a semi-monolitic fashion, and 'locking' the silicon frame of the membrane using three screws with a fine thread, allowing for a fine adjustment of the angle of the membrane plane with respect to the back mirror plane. The piezos pushing on the back of the assembly then force the silicon frame constrained by the screws to bend, thus displacing the membrane with respect to the back mirror, as shown in Fig.~\ref{fig:flexure tune}. 
-This approach preserves the cavity alignment while enabling continuous and wide-range tuning of both the membrane displacement and tilt. 
+This approach preserves the cavity alignment for gentle flexures, while enabling continuous and wide-range tuning of both the membrane displacement and tilt. 
 
 
 \begin{figure}[H]
@@ -186,31 +183,47 @@ The optical setup is now to be aligned as to ensure a good mode matching between
 \begin{figure}[h!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/tilt_alignementB.pdf}
-    \caption{Set up alignment procedure. (a) to (d) show the steps to align the cavity with respect to the optical path (detailed in the main text). The (a.i) to (a.iv) show what is seen on the camera 4 four different tilt positions where (a.iv) displays a 'good' tilt alignement: no visible fringes except for the dim fringes of the camera setup. These dim fringes are present when the beam is a normal incidence with the back mirror (use of the iris) and are believed to be intereferences arising from reflections inside the camera objective as they are seen whatever the plane of focus is. }
+    \caption{Set up alignment procedure. (a) to (d) show the steps to align the cavity with respect to the optical path (detailed in the main text). The (a.i) to (a.iv) show what is seen on the camera for four different tilt positions where (a.iv) displays a 'good' tilt alignement: no visible fringes except for the dim fringes of the camera setup. These dim fringes are present when the beam is a normal incidence with the back mirror (use of the iris) and are believed to be intereferences arising from reflections inside the camera objective as they are seen whatever the plane of focus is. }
     \label{fig:tilt}
 \end{figure}
 \section{Experimental Characterization}
 \subsection{Cavity Characterization}
-Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in derivation at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). We call the input mirror piezo voltage $V_{\text{SW}}$ as it is used to scan the cavity length, and the back piezo voltage $V_{\text{DC}}$ as it is used to set the membrane position, and we model the these voltages as third order polynomials of the actual displacements $L-x$ and $x$ respectively. \\
+Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in parallel at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). 
 
-We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM00 mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters.
+We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM$_{00}$ mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters. \\
 
-Using the IR EOM as a frequency ruler, setting a reference between few MHz to $\sim$ 60 MHz (limited by the RedPitaya) we perform lorentzian fits of the three lorentzian dips, and compare the fitted positions. Two typical scans are shown in Fig.~\ref{fig:cavity_scan}, one large scan over few cavity FSRs, and a narrow one. \\ 
+\noindent \textbf{Cavity resonances versus membrane position: } We first scanned the input mirror piezo with a linear ramp $V_{\rm SW}$ ranging from 0 to 500V at 10-50Hz, corresponding to a displacements of around 2$\mu m$. The back piezo actuating the membrane position was driven by a DC voltage $V_{\rm DC}$ ranging from 0 to 70V, with an associated stroke of 4$\mu m$ (3 piezos). A typical scan is shown in Fig.~\ref{fig:cavity_scan}(a), where we can see three to four distinct resonance branches as well as the avoided crossings, and where one can also notice the non linearity of the piezo actuators. Knowing the FSR of the cavity, we calibrate the piezo displacement as a function of the applied voltage, and fit the resonances positions using the theoretical model detailed in chapter 3. We modelled the front cavity length $L_1$ as well as the back cavity length $L_2$ as third order polynomials of the applied voltages $V_{\rm SW}$ and $V_{\rm DC}$  such that
+\begin{equation}
+  \begin{split}
+    L_1 &= a_0 + a_1 V_{\mathrm{SW}} + a_2 V_{\mathrm{SW}}^2 + a_3 V_{\mathrm{SW}}^3 - \alpha V_{\mathrm{DC}}\\
+    L_2 &= b_0 + b_1 V_{\mathrm{DC}} + b_2 V_{\mathrm{DC}}^2 + b_3 V_{\mathrm{DC}}^3
+  \end{split}
+\end{equation} 
+where we introduced the coefficients $a_i$ and $b_i$ to be fitted, as well as a cross-coupling term $\alpha V_{DC}$ to take into account the fact that the back piezo actuators does change the front cavity length since the piezo pushing the back cavity assembly bends the silicon frame. \\
 
-\noindent  \textbf{Finesse :} We can used three different methods to evalutate the finesse of the cavity. 
+The rescaled scans are shown in Fig.~\ref{fig:cavity_scan}(b), where we can see a good agreement between the experimental data and the theoretical model. This fits allow us to extract the membrane reflectivity $|r_m|$, which was found to be 0.54, such that we estimate the power reflectivity and transmittivity of the membrane to be  0.30 and 0.70, respectively. These transfer functions will also be of use as a calibration to plot the cavity parameters as a function of the membrane position $x$ rather than the applied voltage $V_{DC}$. \color{red} link to expected value\color{black}. \\
+
+\color{red} link to expected value\color{black}. As seen in the scans, and contrary to the model developped earlier, we see an overall increase of the different resonance branches, owing to the shortening of the cavity upong actuation of the back piezo, causing an overall drift of the resonances. \\
+
+\noindent  \textbf{Finesse :} We use three different methods to evalutate the finesse of the cavity. 
 \begin{itemize}
-  \item The first one would be to scan the cavity over few FSRs, and fit the lorentzian dips such that we can extract the ratio of their interspacings to their linewidths. This method is quite sensitive to the piezo nonlinearities, arising both from the system's transfer function and from the low pass filtering of the voltage ramp by the electronics. One can however used a sine ramp below the electronics cutoff frequency and calibrate the disaplcement owing to the fact that each resonance corresponds to a displacement of $\lambda/2$ (one FSR). 
+  \item The first one would be to scan the cavity over few FSRs, and fit the lorentzian dips such that we can extract the ratio of their interspacings to their linewidths. This method is quite sensitive to the piezo nonlinearities, arising both from the system's transfer function and from the low pass filtering of the voltage ramp by the electronics. One can however used a sine ramp below the electronics cutoff frequency and calibrate the displacement owing to the fact that each resonance corresponds to a displacement of $\lambda/2$ (one FSR). For our system, this method turned out to be hardly reliable, since a large sweep amplitude implies a fast sweep over the resonance, which started exhibiting dynamical effects such as cavity ringdowns. 
   \item The second method would be to scan the cavity over a single resonance, and use the EOM sidebands as a frequency reference to extract the linewidth of the resonance. This method is less sensitive to piezo nonlinearities, assuming the piezo sweep is quasi linear over the resonance width. 
   \item The third method would be to scan the cavity rapidly and observe a cavity ringdown, and compare the heights of the first two rebounds in transmission to their temporal spacings. This method is less sensitive to piezo nonlinearities, but requires a fast photodiode. Additionally we can vary the piezo sweep frequency to scan for various sweep rates. 
 \end{itemize}
 
-Many trial and errors for such a MATE cavity were realised over this thesis, but the cleaner data were obtained with a cavity made of an input concave mirror of radius of curvature $R=20mm$ and transmittivity $t_1=100ppm$, a plane back mirror of $t_2=20ppm$ and a cavity length of $L=17mm$. Hence, the theoretical finesse would be $\sim 52400$. \\ 
+
+Many trial and errors for such a MATE cavity were realised over this thesis, but the cleaner data were obtained with a cavity made of an input concave mirror of radius of curvature $R=25mm$, input and output mirrors with requested transmittivities $t_1=100ppm$ and $t_2=20ppm$, and a cavity length of $L=22$mm. Hence, the theoretical finesse would be $\sim 52400$. Another cavity of length $17$mm was also mounted at the start of the project but only gross preliminary results were extracted from it. It however did feature finesses 10 times higher than the one whose result are presented here, and these results are shown in the annexe ??. \\ 
 
 \noindent \textbf{Empty cavity: }By using the second method for our finesse estimation, the empty cavity finesse was measured to be $\sim 28000$, such that we deduce total loss of $\Sigma T_i = 225 \pm 20$ppm  (including losses). The LMA did not provide us with specification sheets for the exact mirrors we used, but the uncertainty on the sum of the transmissions is estimated to be around 15ppm. In turn, we can estimate the excess cavity losses to be around $\gamma = 105ppm$. \color{red} errors \color{black} \\
 
-\noindent \textbf{MATE cavity: }Once the membrane is inserted inside the cavity, both the resonant frequencies and the linewidths-finesse vary as a function of the membrane position $x$. Using our third order polynomials to model the piezos voltage seed to displacements transduction, we renormalize both the input mirror voltage sweep $V_{\text{SW}}$ and the back mirror voltage DC $V_{\text{DC}}$ to the cavity FSR and the nominal membrane displacement $x$ respectively. Knowing or laser wavelenth, this fit allows us to estimate the membrane reflectivity $|r_m|$ which is found to be 0.54. \color{red} link to expected value \color{black} \\ 
+\noindent \textbf{MATE cavity: }Once the membrane is inserted inside the cavity, both the resonant frequencies and the linewidths-finesse vary as a function of the membrane position $x$. 
 
-These fits then give us the total maps of available displacements $L-x$ and $x$ as a function of both $V_{\text{SW}}$ and $V_{\text{DC}}$, as shown in Fig.~\ref{fig:maps}. \\ 
+
+Using the IR EOM as a frequency ruler, setting a reference between few MHz to $\sim$ 60 MHz (limited by the RedPitaya) we perform lorentzian fits of the three lorentzian dips, and compare the fitted positions. Two typical scans are shown in Fig.~\ref{fig:cavity_scan}, one large scan over few cavity FSRs, and a narrow one. \\ 
+
+
+
 
 \begin{figure}[h!]
     \centering  
@@ -225,13 +238,27 @@ These fits then give us the total maps of available displacements $L-x$ and $x$ 
     \caption{ }
     \label{fig:tilt}
 \end{figure}
-
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/map_displacements.pdf}
+    \caption{ }
+    \label{fig:tilt}
+\end{figure}
 \begin{figure}[h!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/scantrans.pdf}
     \caption{ }
     \label{fig:tilt}
 \end{figure}
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/scans_ringdown.pdf}
+    \caption{ }
+    \label{fig:tilt}
+\end{figure}
+
+
 
 \noindent \textbf{Position dependent finesse: } We now record cavity scans at increasing values of $V_{DC}\propto P_3(x)$. The finesse oscillates between $\sim 6000$ and $\sim 20000$, which corresponds to total losses $\Sigma T_i$ between 300ppm and 1050ppm. This is significantly higher than the empty cavity losses, which indicates that the membrane introduces significant additional losses. 
 

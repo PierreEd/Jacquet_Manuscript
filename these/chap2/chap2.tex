@@ -795,19 +795,25 @@ which also gives the average number of round trips a photon makes before escapin
 \noindent \textbf{Mean field solution (Dynamical case): } \\
 We now let the detuning vary linearly in time, and express it in units of cavity bandwidth as $\Delta(t)= \Delta_0 + v \frac{\kappa^2}{2}t$ where we defined $v$ as the sweep speed in units of cavity bandwidth per $\kappa^{-1}$. The intracavity field yields the standard differential equation
 \begin{equation}
-  \dot{\bar{\alpha}}(t)  + P(t)\bar{\alpha}(t) = Q(t)
+  \dot{\bar{\alpha}}(t) = -\Bigg(\frac{\kappa}{2} - i\Big(\Delta_0 + \frac{v \kappa^2}{2}t\Big)\Bigg) \bar{\alpha}(t) + \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}}
 \end{equation} 
-with 
-\begin{equation*}
-  P(t) = \frac{\kappa}{2} - i\Big(\Delta_0 + v \frac{\kappa^2}{2}t\Big), \quad Q(t) = \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}}(t)
-\end{equation*}
-ans is readily solved using an integrating factor such that,
+This is solved by the means of integration factor method, such that we find
+
 \begin{equation}
-  \bar{\alpha}(t) = e^{-\int_0^t P(t') dt'} \Bigg( \bar{\alpha}(0) + \int_0^t Q(t') e^{\int_0^{t'} P(t'') dt''} dt' \Bigg)
+\begin{split}
+\alpha(t) =\;
+& \exp\!\Bigg[ \Big(-\dfrac{\kappa}{2} + i\Delta_{0}\Big)t
++ i\,\dfrac{v\kappa^{2}}{4}\,t^{2} \Bigg] \\
+& \times \left[
+\alpha(0) + \sqrt{\kappa_{1}}\,\bar{\alpha}_{\mathrm{in}}
+\int_{0}^{t} \exp\!\Bigg( \Big(\dfrac{\kappa}{2}-i\Delta_{0}\Big)s
+- i\,\dfrac{v\kappa^{2}}{4}\,s^{2} \Bigg)\,ds
+\right].
+\end{split}
 \end{equation}
 
 
-This expression describes the transient response of the intracavity field as the detuning is swept through resonance. The reflected and transmitted fields can be obtained using the input-output relations, allowing one to analyze the dynamic behavior of the cavity under a time-varying detuning. This is particularly useful for understanding phenomena such as cavity ring-down and transient spectral features during rapid scans. \\
+This expression describes the transient response of the intracavity field as the detuning is swept through resonance. When scanning over the cavity resonance at a rate exceeding the cavity bandwidth, photons at various detuning start to build up in the cavity without reaching the steady state value. This results in a characteristic asymmetric lineshape, where these different \textit{colored} photons start beating against each other, leading to oscillations in the transmitted and reflected intensities. This is illustrated in Fig \ref{fig:CavitySimple}.(c) for different sweep speeds. The above does feature an analytical formula involving error functions erf, such that can either fit the data by performing a numerical integration or the analytical formula. However if the data array feature too few points numerical integration becomes numerically costy. \color{red} figure to do \color{black} \\
 
 
 \noindent \textbf{Fluctuations solution: }To derive the covariance matrix we go to Fourier space such that 
