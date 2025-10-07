@@ -188,6 +188,13 @@ The optical setup is now to be aligned as to ensure a good mode matching between
 \end{figure}
 \section{Experimental Characterization}
 \subsection{Cavity Characterization}
+
+Many trial and errors for such a MATE cavity were realised over this thesis. Their main characteristics are summarized in table 
+
+
+, but the cleaner data were obtained with a cavity made of an input concave mirror of radius of curvature $R=25mm$, input and output mirrors with requested transmittivities $t_1=100ppm$ and $t_2=20ppm$, and a cavity length of $L=22$mm. Hence, the theoretical finesse would be $\sim 52400$. Another cavity of length $17$mm was also mounted at the start of the project but only gross preliminary results were extracted from it. It however did feature finesses 10 times higher than the one whose result are presented here, and these results are shown in the annexe ??. 
+
+
 Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in parallel at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). 
 
 We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM$_{00}$ mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters. \\
@@ -211,9 +218,6 @@ The rescaled scans are shown in Fig.~\ref{fig:cavity_scan}(b), where we can see 
   \item The second method would be to scan the cavity over a single resonance, and use the EOM sidebands as a frequency reference to extract the linewidth of the resonance. This method is less sensitive to piezo nonlinearities, assuming the piezo sweep is quasi linear over the resonance width. 
   \item The third method would be to scan the cavity rapidly and observe a cavity ringdown, and compare the heights of the first two rebounds in transmission to their temporal spacings. This method is less sensitive to piezo nonlinearities, but requires a fast photodiode. Additionally we can vary the piezo sweep frequency to scan for various sweep rates. 
 \end{itemize}
-
-
-Many trial and errors for such a MATE cavity were realised over this thesis, but the cleaner data were obtained with a cavity made of an input concave mirror of radius of curvature $R=25mm$, input and output mirrors with requested transmittivities $t_1=100ppm$ and $t_2=20ppm$, and a cavity length of $L=22$mm. Hence, the theoretical finesse would be $\sim 52400$. Another cavity of length $17$mm was also mounted at the start of the project but only gross preliminary results were extracted from it. It however did feature finesses 10 times higher than the one whose result are presented here, and these results are shown in the annexe ??. \\ 
 
 \noindent \textbf{Empty cavity: }By using the second method for our finesse estimation, the empty cavity finesse was measured to be $\sim 28000$, such that we deduce total loss of $\Sigma T_i = 225 \pm 20$ppm  (including losses). The LMA did not provide us with specification sheets for the exact mirrors we used, but the uncertainty on the sum of the transmissions is estimated to be around 15ppm. In turn, we can estimate the excess cavity losses to be around $\gamma = 105ppm$. \color{red} errors \color{black} \\
 

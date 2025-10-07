@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  6 OCT 2025 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  7 OCT 2025 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1430,16 +1430,16 @@ LaTeX Warning: Citation `harry_advanced_2010' on page 51 undefined on input line
 LaTeX Warning: Citation `aasi_enhanced_2013' on page 51 undefined on input line 187.
 
 
-LaTeX Warning: Citation `thompson_strong_2008' on page 51 undefined on input line 209.
+LaTeX Warning: Citation `thompson_strong_2008' on page 51 undefined on input line 207.
 
 
 
 [51 <./chap3/fig/chi_meca.pdf>]
 
-LaTeX Warning: Citation `jayich_dispersive_2008' on page 52 undefined on input line 221.
+LaTeX Warning: Citation `jayich_dispersive_2008' on page 52 undefined on input line 222.
 
 
-LaTeX Warning: Citation `xu_cavity_2016' on page 52 undefined on input line 229.
+LaTeX Warning: Citation `sankey_strong_2010' on page 52 undefined on input line 226.
 
 
 
@@ -1450,29 +1450,35 @@ Overfull \hbox (135.24886pt too wide) has occurred while \output is active
 
 [52]
 
-LaTeX Warning: Citation `jayich_dispersive_2008' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `thompson_strong_2008' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `sankey_strong_2010' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `xu_cavity_2016' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `purdy_observation_2013' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `sankey_strong_2010' on page 53 undefined on input line 235.
-
-
-LaTeX Warning: Citation `peterson_laser_2016' on page 53 undefined on input line 235.
-
-
-
 [53]
+
+LaTeX Warning: Citation `jayich_dispersive_2008' on page 54 undefined on input line 265.
+
+
+LaTeX Warning: Citation `xu_cavity_2016' on page 54 undefined on input line 273.
+
+
+LaTeX Warning: Citation `jayich_dispersive_2008' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `thompson_strong_2008' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `sankey_strong_2010' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `xu_cavity_2016' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `purdy_observation_2013' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `sankey_strong_2010' on page 54 undefined on input line 279.
+
+
+LaTeX Warning: Citation `peterson_laser_2016' on page 54 undefined on input line 279.
+
+
 
 
 Overfull \hbox (135.24886pt too wide) has occurred while \output is active
@@ -1482,11 +1488,6 @@ Overfull \hbox (135.24886pt too wide) has occurred while \output is active
 [54]
 
 [55]
-Overfull \hbox (5.24327pt too wide) in paragraph at lines 433--442
-\T1/lmr/m/n/10.95 The small pa-ram-e-ter gov-ern-ing all steps is $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^N[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 !\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 . With losses, $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=[]$\T1/lmr/m/n/10.95 .
- []
-
-
 
 
 Overfull \hbox (135.24886pt too wide) has occurred while \output is active
@@ -1496,11 +1497,11 @@ Overfull \hbox (135.24886pt too wide) has occurred while \output is active
 [56]
 
 [57]
-Overfull \hbox (64.17064pt too wide) in paragraph at lines 516--518
-\T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
+Overfull \hbox (5.24327pt too wide) in paragraph at lines 477--486
+\T1/lmr/m/n/10.95 The small pa-ram-e-ter gov-ern-ing all steps is $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^N[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 !\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 . With losses, $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=[]$\T1/lmr/m/n/10.95 .
  []
 
-)
+
 
 
 Overfull \hbox (135.24886pt too wide) has occurred while \output is active
@@ -1508,6 +1509,20 @@ Overfull \hbox (135.24886pt too wide) has occurred while \output is active
  []
 
 [58]
+Overfull \hbox (64.17064pt too wide) in paragraph at lines 560--562
+\T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
+ []
+
+
+
+[59])
+
+
+Overfull \hbox (135.24886pt too wide) has occurred while \output is active
+\T1/lmr/m/n/10.95 60 \T1/lmr/m/sl/10.95 CHAPTER II.  THEORY: FREQUENCY DEPENDENT SQUEEZING & MEMBRANE BASED OPTOMECHANICS
+ []
+
+[60]
 \openout2 = `./chap4/chap4.aux'.
 
  (./chap4/chap4.tex
@@ -1518,7 +1533,7 @@ Chapter III.
 
 (./mythesis.mtc3)
 
-[59
+[61
 
 
 
@@ -1535,7 +1550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
 
 
-[60]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
@@ -1547,7 +1562,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
 
 
-[61]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1584,7 +1599,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
 
 
-[62]
+[64]
 Overfull \hbox (1.6772pt too wide) in paragraph at lines 65--66
 \T1/lmr/m/n/10.95 Another key tech-nique ex-ten-sively used in this work is the \T1/lmr/m/it/10.95 Pound-Drever-Hall \T1/lmr/m/n/10.95 (PDH) method,
  []
@@ -1597,23 +1612,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-<./chap3/fig/PDHplots.pdf, id=37470, 423.94608pt x 199.1693pt>
+<./chap3/fig/PDHplots.pdf, id=37487, 423.94608pt x 199.1693pt>
 File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
 <use ./chap3/fig/PDHplots.pdf>
 Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 74.
 (pdftex.def)             Requested size: 438.17245pt x 205.85475pt.
 
 
-[63])
+[65])
 
-[64 <./chap3/fig/PDHplots.pdf>]
+[66 <./chap3/fig/PDHplots.pdf>]
 
-[65]
+[67]
 \openout2 = `./chap5/chap5.aux'.
 
  (./chap5/chap5.tex
 
-[66
+[68
 
 
 
@@ -1626,56 +1641,56 @@ Chapter IV.
 
 (./mythesis.mtc4)
 
-[67]
+[69]
 
-LaTeX Warning: Citation `coating_review' on page 68 undefined on input line 9.
-
-
-LaTeX Warning: Citation `nanofab_review' on page 68 undefined on input line 9.
+LaTeX Warning: Citation `coating_review' on page 70 undefined on input line 9.
 
 
-LaTeX Warning: Citation `optomech_challenges' on page 68 undefined on input line 9.
+LaTeX Warning: Citation `nanofab_review' on page 70 undefined on input line 9.
 
 
-LaTeX Warning: Citation `' on page 68 undefined on input line 14.
+LaTeX Warning: Citation `optomech_challenges' on page 70 undefined on input line 9.
 
 
-LaTeX Warning: Reference `fig:micropillar_mode' on page 68 undefined on input line 16.
+LaTeX Warning: Citation `' on page 70 undefined on input line 14.
 
 
-LaTeX Warning: Citation `' on page 68 undefined on input line 23.
+LaTeX Warning: Reference `fig:micropillar_mode' on page 70 undefined on input line 16.
 
 
-LaTeX Warning: Citation `Regal2008' on page 68 undefined on input line 23.
+LaTeX Warning: Citation `' on page 70 undefined on input line 23.
 
 
-LaTeX Warning: Citation `Harris2008' on page 68 undefined on input line 23.
+LaTeX Warning: Citation `Regal2008' on page 70 undefined on input line 23.
+
+
+LaTeX Warning: Citation `Harris2008' on page 70 undefined on input line 23.
 
 
 
-[68]
+[70]
 
-LaTeX Warning: Citation `AmatoPhD' on page 69 undefined on input line 29.
-
-
-LaTeX Warning: Citation `SiN_review' on page 69 undefined on input line 30.
+LaTeX Warning: Citation `AmatoPhD' on page 71 undefined on input line 29.
 
 
-LaTeX Warning: Citation `piezo_review' on page 69 undefined on input line 32.
+LaTeX Warning: Citation `SiN_review' on page 71 undefined on input line 30.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 69 undefined on input line 41.
+LaTeX Warning: Citation `piezo_review' on page 71 undefined on input line 32.
 
 
-LaTeX Warning: Citation `LMA_IBS' on page 69 undefined on input line 41.
+LaTeX Warning: Citation `AmatoPhD' on page 71 undefined on input line 41.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 69 undefined on input line 42.
+LaTeX Warning: Citation `LMA_IBS' on page 71 undefined on input line 41.
+
+
+LaTeX Warning: Citation `AmatoPhD' on page 71 undefined on input line 42.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 44.
 
-LaTeX Warning: Citation `LIGO_optics' on page 69 undefined on input line 44.
+LaTeX Warning: Citation `LIGO_optics' on page 71 undefined on input line 44.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--45
@@ -1684,52 +1699,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--45
 
 
 
-[69]
+[71]
 
-LaTeX Warning: Citation `AmatoPhD' on page 70 undefined on input line 46.
-
-
-LaTeX Warning: Citation `AmatoPhD' on page 70 undefined on input line 70.
+LaTeX Warning: Citation `AmatoPhD' on page 72 undefined on input line 46.
 
 
-LaTeX Warning: Citation `SiN_review' on page 70 undefined on input line 75.
+LaTeX Warning: Citation `AmatoPhD' on page 72 undefined on input line 70.
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 70 undefined on input line 75.
+LaTeX Warning: Citation `SiN_review' on page 72 undefined on input line 75.
 
 
-LaTeX Warning: Citation `SiN_review' on page 70 undefined on input line 81.
+LaTeX Warning: Citation `Norcada_datasheet' on page 72 undefined on input line 75.
 
 
-LaTeX Warning: Citation `SiN_review' on page 70 undefined on input line 87.
+LaTeX Warning: Citation `SiN_review' on page 72 undefined on input line 81.
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 70 undefined on input line 87.
+LaTeX Warning: Citation `SiN_review' on page 72 undefined on input line 87.
 
 
-LaTeX Warning: Citation `SiN_cryogenic' on page 70 undefined on input line 90.
+LaTeX Warning: Citation `Norcada_datasheet' on page 72 undefined on input line 87.
+
+
+LaTeX Warning: Citation `SiN_cryogenic' on page 72 undefined on input line 90.
 
 
 
-[70]
+[72]
 
-LaTeX Warning: Reference `sec:alignment_procedure' on page 71 undefined on input line 103.
+LaTeX Warning: Reference `sec:alignment_procedure' on page 73 undefined on input line 103.
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 107.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[71]
+[73]
 
-LaTeX Warning: Citation `OFHC_review' on page 72 undefined on input line 118.
+LaTeX Warning: Citation `OFHC_review' on page 74 undefined on input line 118.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-<./chap5/fig/schéma_cavity.pdf, id=37589, 423.94608pt x 569.05513pt>
+<./chap5/fig/schéma_cavity.pdf, id=37605, 423.94608pt x 569.05513pt>
 File: ./chap5/fig/schéma_cavity.pdf Graphic file (type pdf)
 <use ./chap5/fig/schéma_cavity.pdf>
 Package pdftex.def Info: ./chap5/fig/schéma_cavity.pdf  used on input line 124.
@@ -1743,14 +1758,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
  []
 
 
-LaTeX Warning: Citation `Sankey2010' on page 72 undefined on input line 137.
+LaTeX Warning: Citation `Sankey2010' on page 74 undefined on input line 137.
 
 
 
-[72]
+[74]
 
-[73 <./chap5/fig/schéma_cavity.pdf>]
-<./chap5/fig/flexure tune.pdf, id=37626, 423.94608pt x 184.06267pt>
+[75 <./chap5/fig/schéma_cavity.pdf>]
+<./chap5/fig/flexure tune.pdf, id=37642, 423.94608pt x 184.06267pt>
 File: ./chap5/fig/flexure tune.pdf Graphic file (type pdf)
 <use ./chap5/fig/flexure tune.pdf>
 Package pdftex.def Info: ./chap5/fig/flexure tune.pdf  used on input line 143.
@@ -1760,7 +1775,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-<./chap5/fig/fig_lock_MATE.pdf, id=37628, 423.94608pt x 181.28734pt>
+<./chap5/fig/fig_lock_MATE.pdf, id=37644, 423.94608pt x 181.28734pt>
 File: ./chap5/fig/fig_lock_MATE.pdf Graphic file (type pdf)
 <use ./chap5/fig/fig_lock_MATE.pdf>
 Package pdftex.def Info: ./chap5/fig/fig_lock_MATE.pdf  used on input line 156.
@@ -1770,10 +1785,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[74 <./chap5/fig/flexure tune.pdf>]
+[76 <./chap5/fig/flexure tune.pdf>]
 
-[75 <./chap5/fig/fig_lock_MATE.pdf>]
-<./chap5/fig/tilt_alignementB.pdf, id=37937, 423.94608pt x 327.2067pt>
+[77 <./chap5/fig/fig_lock_MATE.pdf>]
+<./chap5/fig/tilt_alignementB.pdf, id=37952, 423.94608pt x 327.2067pt>
 File: ./chap5/fig/tilt_alignementB.pdf Graphic file (type pdf)
 <use ./chap5/fig/tilt_alignementB.pdf>
 Package pdftex.def Info: ./chap5/fig/tilt_alignementB.pdf  used on input line 185.
@@ -1784,103 +1799,94 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[76]
-
-[77 <./chap5/fig/tilt_alignementB.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
-LaTeX Warning: Reference `fig:cavity_scan' on page 78 undefined on input line 195.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
-
- []
-
-
-LaTeX Warning: Reference `fig:cavity_scan' on page 78 undefined on input line 204.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-
 [78]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+[79 <./chap5/fig/tilt_alignementB.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+LaTeX Warning: Reference `fig:cavity_scan' on page 80 undefined on input line 202.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
 
-LaTeX Warning: Reference `fig:cavity_scan' on page 79 undefined on input line 223.
+LaTeX Warning: Reference `fig:cavity_scan' on page 80 undefined on input line 211.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-<./chap5/fig/scansTot.pdf, id=38349, 423.94608pt x 284.52756pt>
+
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+LaTeX Warning: Reference `fig:cavity_scan' on page 81 undefined on input line 227.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+
+[81]
+<./chap5/fig/scansTot.pdf, id=38369, 423.94608pt x 284.52756pt>
 File: ./chap5/fig/scansTot.pdf Graphic file (type pdf)
 <use ./chap5/fig/scansTot.pdf>
-Package pdftex.def Info: ./chap5/fig/scansTot.pdf  used on input line 230.
+Package pdftex.def Info: ./chap5/fig/scansTot.pdf  used on input line 234.
 (pdftex.def)             Requested size: 438.17245pt x 294.07823pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./chap5/fig/scancoupling.pdf, id=38350, 423.94608pt x 142.26378pt>
+<./chap5/fig/scancoupling.pdf, id=38370, 423.94608pt x 142.26378pt>
 File: ./chap5/fig/scancoupling.pdf Graphic file (type pdf)
 <use ./chap5/fig/scancoupling.pdf>
-Package pdftex.def Info: ./chap5/fig/scancoupling.pdf  used on input line 237.
+Package pdftex.def Info: ./chap5/fig/scancoupling.pdf  used on input line 241.
 (pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./chap5/fig/map_displacements.pdf, id=38351, 423.94608pt x 241.84843pt>
+<./chap5/fig/map_displacements.pdf, id=38371, 423.94608pt x 241.84843pt>
 File: ./chap5/fig/map_displacements.pdf Graphic file (type pdf)
 <use ./chap5/fig/map_displacements.pdf>
-Package pdftex.def Info: ./chap5/fig/map_displacements.pdf  used on input line 243.
+Package pdftex.def Info: ./chap5/fig/map_displacements.pdf  used on input line 247.
 (pdftex.def)             Requested size: 438.17245pt x 249.9665pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./chap5/fig/scantrans.pdf, id=38352, 423.94608pt x 142.26378pt>
+<./chap5/fig/scantrans.pdf, id=38372, 423.94608pt x 142.26378pt>
 File: ./chap5/fig/scantrans.pdf Graphic file (type pdf)
 <use ./chap5/fig/scantrans.pdf>
-Package pdftex.def Info: ./chap5/fig/scantrans.pdf  used on input line 249.
+Package pdftex.def Info: ./chap5/fig/scantrans.pdf  used on input line 253.
 (pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./chap5/fig/scans_ringdown.pdf, id=38353, 424.05733pt x 284.52756pt>
+<./chap5/fig/scans_ringdown.pdf, id=38373, 424.05733pt x 284.52756pt>
 File: ./chap5/fig/scans_ringdown.pdf Graphic file (type pdf)
 <use ./chap5/fig/scans_ringdown.pdf>
-Package pdftex.def Info: ./chap5/fig/scans_ringdown.pdf  used on input line 256.
+Package pdftex.def Info: ./chap5/fig/scans_ringdown.pdf  used on input line 260.
 (pdftex.def)             Requested size: 438.17245pt x 294.0131pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[79]
+[82 <./chap5/fig/scansTot.pdf> <./chap5/fig/scancoupling.pdf>])
 
-[80 <./chap5/fig/scansTot.pdf> <./chap5/fig/scancoupling.pdf>])
+[83 <./chap5/fig/map_displacements.pdf> <./chap5/fig/scantrans.pdf>]
 
-[81 <./chap5/fig/map_displacements.pdf> <./chap5/fig/scantrans.pdf>]
-
-[82 <./chap5/fig/scans_ringdown.pdf>]
+[84 <./chap5/fig/scans_ringdown.pdf>]
 \openout2 = `./chap6/chap6.aux'.
 
  (./chap6/chap6.tex
@@ -1891,30 +1897,30 @@ Chapter V.
 
 (./mythesis.mtc5)
 
-[83
+[85
 
 
 
 
 ]
 
-LaTeX Warning: Reference `fig:opticallayout' on page 84 undefined on input line 9.
+LaTeX Warning: Reference `fig:opticallayout' on page 86 undefined on input line 9.
 
 
-LaTeX Warning: Reference `tab:MCIR' on page 84 undefined on input line 23.
+LaTeX Warning: Reference `tab:MCIR' on page 86 undefined on input line 23.
 
 
 
-[84]
+[86]
 
-LaTeX Warning: Citation `ref:68' on page 85 undefined on input line 34.
+LaTeX Warning: Citation `ref:68' on page 87 undefined on input line 34.
 
-<./chap6/fig/NoiseIRMC.pdf, id=38496, 423.94608pt x 170.71654pt>
+<./chap6/fig/NoiseIRMC.pdf, id=38511, 423.94608pt x 170.71654pt>
 File: ./chap6/fig/NoiseIRMC.pdf Graphic file (type pdf)
 <use ./chap6/fig/NoiseIRMC.pdf>
 Package pdftex.def Info: ./chap6/fig/NoiseIRMC.pdf  used on input line 45.
 (pdftex.def)             Requested size: 438.17245pt x 176.44693pt.
-<./chap6/fig/NoiseLO.pdf, id=38497, 423.94608pt x 170.71654pt>
+<./chap6/fig/NoiseLO.pdf, id=38512, 423.94608pt x 170.71654pt>
 File: ./chap6/fig/NoiseLO.pdf Graphic file (type pdf)
 <use ./chap6/fig/NoiseLO.pdf>
 Package pdftex.def Info: ./chap6/fig/NoiseLO.pdf  used on input line 52.
@@ -1924,25 +1930,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[85 <./chap6/fig/NoiseIRMC.pdf>]
+[87 <./chap6/fig/NoiseIRMC.pdf>]
 
-LaTeX Warning: Reference `fig:VL1' on page 86 undefined on input line 66.
-
-
-
-[86 <./chap6/fig/NoiseLO.pdf>]
-
-LaTeX Warning: Reference `fig:VL1' on page 87 undefined on input line 81.
+LaTeX Warning: Reference `fig:VL1' on page 88 undefined on input line 66.
 
 
 
-[87]
-<./chap6/fig/SHGlock_sweep.pdf, id=38546, 423.94714pt x 281.00215pt>
+[88 <./chap6/fig/NoiseLO.pdf>]
+
+LaTeX Warning: Reference `fig:VL1' on page 89 undefined on input line 81.
+
+
+
+[89]
+<./chap6/fig/SHGlock_sweep.pdf, id=38561, 423.94714pt x 281.00215pt>
 File: ./chap6/fig/SHGlock_sweep.pdf Graphic file (type pdf)
 <use ./chap6/fig/SHGlock_sweep.pdf>
 Package pdftex.def Info: ./chap6/fig/SHGlock_sweep.pdf  used on input line 88.
 (pdftex.def)             Requested size: 438.17245pt x 290.43448pt.
-<./chap6/fig/SHGscansTemp.pdf, id=38547, 423.94608pt x 142.26378pt>
+<./chap6/fig/SHGscansTemp.pdf, id=38562, 423.94608pt x 142.26378pt>
 File: ./chap6/fig/SHGscansTemp.pdf Graphic file (type pdf)
 <use ./chap6/fig/SHGscansTemp.pdf>
 Package pdftex.def Info: ./chap6/fig/SHGscansTemp.pdf  used on input line 96.
@@ -1953,26 +1959,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-[88 <./chap6/fig/SHGlock_sweep.pdf>]
+[90 <./chap6/fig/SHGlock_sweep.pdf>]
 
-[89 <./chap6/fig/SHGscansTemp.pdf>]
+[91 <./chap6/fig/SHGscansTemp.pdf>]
 \openout2 = `./chap7/chap7.aux'.
 
  (./chap7/chap7.tex
 
-[90
+[92
 
 
 
 
 ])
 
-[91]
+[93]
 \openout2 = `appA.aux'.
 
  (./appA.tex
 
-[92
+[94
 
 
 
@@ -1984,13 +1990,13 @@ Overfull \hbox (28.062pt too wide) detected at line 20
 
 
 
-[93]
-
-[94]
-
 [95]
 
-[96
+[96]
+
+[97]
+
+[98
 
 ]
 Overfull \hbox (38.79158pt too wide) detected at line 153
@@ -1999,27 +2005,27 @@ Overfull \hbox (38.79158pt too wide) detected at line 153
 
 
 
-[97]
+[99]
 
-[98
-
-]
-
-[99])
-
-[100]
-
-[101
-
-
+[100
 
 ]
 
-[102
+[101])
+
+[102]
+
+[103
+
+
 
 ]
 
-[103]
+[104
+
+]
+
+[105]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2054,14 +2060,14 @@ Overfull \hbox (38.79158pt too wide) detected at line 153
 
 
 
-[104
+[106
 
 
 ]
 
-[105]
+[107]
 
-[106
+[108
 
 ]
 Package minitoc Info: I0009
@@ -2082,7 +2088,7 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[107
+[109
 
 ] (./mythesis.aux (./thanks.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./chap7/chap7.aux) (./appA.aux))
  ***********
@@ -2097,21 +2103,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 361835FF50495928741322FCBEA0906B;15161.
+(rerunfilecheck)             Checksum: 763BFE400E6F8AA819AF3111198C0086;15128.
  ) 
 Here is how much of TeX's memory you used:
- 23122 strings out of 469590
- 388916 string characters out of 5474519
- 856446 words of memory out of 5000000
+ 23131 strings out of 469590
+ 389023 string characters out of 5474519
+ 856448 words of memory out of 5000000
  48948 multiletter control sequences out of 15000+600000
  753608 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,31n,117p,1499b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on mythesis.pdf (117 pages, 50026629 bytes).
+Output written on mythesis.pdf (119 pages, 50033853 bytes).
 PDF statistics:
- 39029 PDF objects out of 45951 (max. 8388607)
- 26378 compressed objects within 264 object streams
- 480 named destinations out of 1000 (max. 500000)
+ 39046 PDF objects out of 45951 (max. 8388607)
+ 26393 compressed objects within 264 object streams
+ 489 named destinations out of 1000 (max. 500000)
  750 words of extra memory for PDF output out of 10000 (max. 10000000)
 
