@@ -204,18 +204,19 @@ Recalling the transfer matrix for a detuned single port cavity from the previous
 
 \section{Cavity Optomechanics with Membrane based systems }
 \subsection{Classical Description}
-To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields $\alpha_L$ and $\alpha_R$ propagating in a three mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}
+To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}
 \begin{equation}
 r_m = \frac{(n^2-1)\sin k n d}{2 i n \cos k n d  + (n^2+1)\sin k n d}, \qquad t_m = \frac{2 n}{2 i n \cos k n d  + (n^2+1)\sin k n d}. 
 \end{equation}
-In the lossless case, we will assume the index of refraction $n$ is real, such that \(|r_m|^2 + |t_m|^2 = 1\). The cavity fields are then written as
+In the lossless case, we will assume the index of refraction $n$ is real, such that \(|r_m|^2 + |t_m|^2 = 1\). The right-moving mean field amplitudes in the left and right sub-cavities are denoted \(\alpha_L\) and \(\alpha_R\), while the left-moving mean field amplitudes are denoted \(\alpha_L'\) and \(\alpha_R'\). The cavity fields are then related by the following equations
 \begin{equation}
 \begin{split}
-\alpha_R &= t_m \alpha_L + r_m \alpha_R' \\ 
-\alpha_L' &= t_m \alpha_R' + r_m \alpha_L. \\
+\alpha_R  &= t_m \alpha_L + r_m \alpha_R' \\
+\alpha_L' &= t_m \alpha_R'+ r_m \alpha_L. \\
 \end{split}
 \end{equation}
-In this case, energy conservation i.e. $|\alpha_L|^2 + |\alpha_R'|^2 = |\alpha_L'|^2 + |\alpha_R|^2$ imposes that $2(\phi_t-\phi_r) = \pi$ such that we can chose $r_m = |r_m|$ and $t_m = i|t_m|$. We rewrite the the cavity fields by injecting the identities $\alpha_L = - \alpha_L' e^{2ikL_1}$ and $\alpha_R' = - \alpha_R e^{2ikL_2}$ i.e. end mirror reflectivities of -1, leading to
+
+In this case, energy conservation i.e. $|\alpha_L|^2 + |\alpha_R'|^2 = |\alpha_L'|^2 + |\alpha_R|^2$ imposes that $2(\phi_t-\phi_r) = \pi$ such that we can chose $r_m = |r_m|$ and $t_m = i|t_m|$. We rewrite the the cavity fields by injecting the identities $\alpha_L = - \alpha_L' e^{2ikL_1}$ and $\alpha_R' = - \alpha_R e^{2ikL_2}$ leading to
 \begin{equation}
    (t_m^2 - r_m^2) e^{ikL} - e^{-ikL}  = 2 r_m \cos(2kL_2 - kL )
 \end{equation}
@@ -223,29 +224,43 @@ leading to the transcendental equation \cite{jayich_dispersive_2008}
 \begin{equation}
   -\cos kL = |r_m|\cos (2kL_2 - kL)
 \end{equation}
-Following the method in Sankey et al. \cite{sankey_strong_2010}, we then derive the cavity resonance frequencies as a function of the membrane position \(x\) around its mean position \(x=0\). We will also always consider a long cavity such that \( L \gg \lambda,x \). Consequently, the small displacement \(x\) of the membrane around its mean position will weakly affect the cavity resonance frequencies such that 
-\begin{equation}
-  k(x)x = \dfrac{\omega(x)}{c} x = \dfrac{N\omega_{FSR}}{c}x + \dfrac{\delta\omega}{c}x  \implies k_N x + \pi 
-\end{equation}
 
+\subsubsection{Resonance Frequencies}
+Following the method in Sankey et al. \cite{sankey_strong_2010}, we now proceed to derive the cavity resonance frequencies as a function of the membrane position \(x\) around its mean position \(x=0\). We will also always consider a long cavity such that \( L \gg \lambda,x \). The cavity sublenghts considering a non zero mean membrane position are then \(L_1 \rightarrow L_1 +  x\) and \(L_2 \rightarrow L_2 -  x\). We will consider the effect of this displacement on the cavity wavenumbers/frequencies as a perturbation $k(x) = k_N + \delta k(x)$ with $k_N = N \pi/L$, that is the membrane displacement does not change the longitudinal mode index \(N\) but modulates it by at most $\pi/L$ (or equivalently by one free spectral range in the frequency domain). We will omit the x dependency in both $k$ and $\delta k$ for ease of notation. It then follows than terms in $k\, L$ and $k\, x$ can be expanded as
+\begin{equation*}
+    \cos \big( k \, L \big)  = (-1)^N \cos \big( \delta k \,L \big) \quad \text{and} \quad      \cos \big( k \, x \big)  \sim \cos \big( k_N \,  x \big)  
+\end{equation*}
 
-The cavity sublenghts considering a non zero mean membrane position are then \(L_1 \rightarrow L_1 +  x\) and \(L_2 \rightarrow L_2 -  x\). The above equation then becomes
-\begin{equation}
-  -\cos kL = |r_m|\cos (2k(L_2 - L_1) - 2kx ) 
-\end{equation}
-We now consider cases : the historical Membrane In the Middle (MIM) model where $L_1 \sim L_2 \sim L/2$, and the less studied Membrane At The Edge (MATE) model where $L_1 \sim L \gg L_2$. By considering that the membrane displacement perturbs the cavity resonance frequency by an amount at most of the order of one FSR, expanding the the cosine on both sides with the standard trigonometric identities leads to     
+such that the transcendental equation becomes
 \begin{equation}
   \begin{split}
-    \text{MIM:} \quad \omega_c(x) & \simeq N \omega_{FSR} + \frac{c}{L} \arccos( (-1)^{N+1}|r_m| \cos 2 k  x) \\
-    \text{MATE:} \quad \omega_c(x) & \simeq N \omega_{FSR} + \frac{c}{L} \arctan \Bigg( -  \dfrac{1 + |r_m|\cos 2 k  x}{|r_m|\sin 2kx} \Bigg)
+  (-1)^{N+1} \cos \big( \delta k \,L \big) = |r_m|\cos (k_N \,\delta L) \Big[ &\cos( \delta k \,  \delta L) \cos (2 k_N\, x) \\ 
+  & +  \sin(\delta k \,  \delta L) \sin(2 k_N x) \Big]  
   \end{split}
 \end{equation}
+with $\delta L = L_1 - L_2$ and where we simplified the sines terms already equal to zero. 
+
+We now two consider cases : the historical Membrane In the Middle (MIM) model where $L_1 \sim L_2 \sim L/2 \rightarrow \delta L = 0 $, and the less studied Membrane At The Edge (MATE) model where $L_1 \sim L \gg L_2 \rightarrow \delta L \sim L$. Solving for $\delta k$ in both cases and reinjecting in the dispersion relation $\omega_c(x) = c k(x)$ leads to
+\begin{equation}
+  \begin{split}
+    \text{MIM:} \quad \omega_c(x) & \simeq \omega_{FSR} \Bigg(N  + \frac{1}{\pi} \arccos( (-1)^{N+1}|r_m| \cos 2 k_N  x) \Bigg) \\
+    \text{MATE:} \quad \omega_c(x) & \simeq \omega_{FSR} \Bigg( N  + \frac{c}{L} \arctan \bigg( -  \dfrac{1 + |r_m|\cos 2 k_N  x}{|r_m|\sin 2 k_N x} \bigg)\Bigg)
+  \end{split}
+\end{equation}
+When is laser is resonant with the cavity, we then substitute $N \omega_{FSR}$ and $k_N$ by $\omega_0$ and $k$ the laser angular frequency and wavenumber. Taking the derivatives of these resonance frequencies with respect to the membrane position \(x\) then gives the linear dispersive optomechanical coupling \(G = \partial \omega_c/\partial x\) as
+\begin{equation}
+  \begin{split}
+    \text{MIM:} \quad G(x) & =  (-1)^{N+1} \dfrac{2 |r_m|  k_N \omega_{FSR}}{\pi} \dfrac{\sin( 2 k_N  x)}{\sqrt{1 - |r_m|^2 \cos^2( 2 k_N  x)}} \\
+    \text{MATE:} \quad G(x) & = \dfrac{2 |r_m|  k_N \omega_{FSR}}{\pi}  \dfrac{|r_m|  + \cos( 2 k_N  x)}{1 + |r_m|^2 - 2 |r_m| \cos( 2 k_N  x)}
+  \end{split}
+\end{equation}
+\subsubsection{Cavity Linewidth and Finesse}
 
 \subsection{Quantum Langevin Equations}
 
 Using the same tools as in section II.2, we can derive the QLE of a membrane based optomechanical system. The transmissive membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane position operator is described by annihilation operator $\hat x \propto \hat c + \hat c^{\dagger} $ as in the previous section. The central difference with the standard book-keeping optomechanical system of a mirror on a spring is that the membrane splits the cavity in two sub-cavities, such that two bosonic operators \(\hat a_L\) and \(\hat a_R\) are required to describe the intracavity fields. The membrane position then modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as
 \begin{equation}
-\omega_L(\hat x) \simeq \omega_{L,0} + G_L \hat x, \qquad \omega_R(x) \simeq \omega_{R,0} + G_R \hat x,
+\omega_L(\hat x) \simeq \omega_{L,0} + G_L \hat x, \qquad \omega_R(\hat x) \simeq \omega_{R,0} + G_R \hat x,
 \end{equation}
 with \(G_L = \omega_{L,0}/L_1\) and \(G_R = - \omega_{R,0}/L_2\) the optomechanical couplings of the two subcavities, and where \(\omega_{L,0}\) and \(\omega_{R,0}\) are the unperturbed resonance frequencies of the two subcavities. 
 The system now features a network of optical modes varying linearly with the membrane position, coupled by the membrane transmission. The Hamiltonian of this system can then be written as 
@@ -256,7 +271,18 @@ The system now features a network of optical modes varying linearly with the mem
     & - \hbar \, J(\hat{a}_L^\dagger \hat{a}_R^{\vphantom{\dagger}} + \hat{a}_R^\dagger \hat{a}_L^{\vphantom{\dagger}})  
   \end{split}
 \end{equation}
-where we only considered one cavity mode per subcavity, and where \(J\) is the photon tunneling rate through the membrane, proportional to the membrane transmission \(t_m\). The first line describes the free evolution of the two subcavity modes and the mechanical resonator, the second line describes the optomechanical interaction between the membrane position and the two subcavity modes, while the third line describes the photon tunneling through the membrane.
+where we only considered one cavity mode per subcavity, and where \(J\) is the photon tunneling rate through the membrane, proportional to the membrane transmission \(t_m\). The first line describes the free evolution of the two subcavity modes and the mechanical resonator, the second line describes the optomechanical interaction between the membrane position and the two subcavity modes, while the third line describes the photon tunneling through the membrane. As before, the commutation relations are given by 
+\begin{equation*}
+  [\hat a_L^{\vphantom{\dagger}}, \hat a_L^\dagger] = [\hat a_R^{\vphantom{\dagger}}  , \hat a_R^\dagger] = [\hat c, \hat c^\dagger] = 1 \quad \text{and} \quad [\hat a_L^{\vphantom{\dagger}}, \hat a_R^{\vphantom{\dagger}}] = [\hat a_L^{\vphantom{\dagger}},\hat a_R^{\dagger}]  = 0
+\end{equation*}
+So the commuatators of the Hamiltonian are given by
+\begin{equation*}
+  [\hat{H}, \hat a_L] = - \hbar (\omega_{L,0} + G_L \hat x) \hat a_L + \hbar J \hat a_R, \quad [\hat{H}, \hat a_R] = - \hbar (\omega_{R,0} + G_R \hat x) \hat a_R + \hbar J \hat a_L
+\end{equation*}
+and
+\begin{equation*}
+  [\hat{H}, \hat c] = - \hbar \Omega_m \hat c - \hbar (G_L \hat a_L^\dagger \hat a_L + G_R \hat a_R^\dagger \hat a_R)/x_{\mathrm{ZPF}}
+\end{equation*}
 
 
 \subsubsection{Classical Description : Closed cavity model}

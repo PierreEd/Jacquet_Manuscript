@@ -698,7 +698,7 @@ and the cavity is on resonance when the input laser frequency $\omega_0$ matches
 \end{equation}
 
 \subsection{Mode-Matching}
-A cavity also supports $TEM_{mn}$ transverse modes, each with a specific spatial profile and resonant frequency. The resonant frequencies of these transverse modes are shifted relative to the fundamental mode by an amount that depends on the cavity geometry and the mode indices $(m,n)$. Coupling an incoming beam into a stable optical cavity requires that the spatial mode of the beam matches that of the cavity. This means that the mode function of the incoming beam, assumed to be a TEM$_{00}$ Gaussian mode
+A cavity also supports TEM$_{mn}$ transverse modes, each with a specific spatial profile and resonant frequency. The resonant frequencies of these transverse modes are shifted relative to the fundamental mode by an amount that depends on the cavity geometry and the mode indices $(m,n)$. Coupling an incoming beam into a stable optical cavity requires that the spatial mode of the beam matches that of the cavity. This means that the mode function of the incoming beam, assumed to be a TEM$_{00}$ Gaussian mode
  $f_{0}(\mathbf{r})$, must overlap with the cavity’s fundamental mode $f_{0}'(\mathbf{r})$. If the basis functions are not perfectly aligned, the incoming field can be expanded in the orthonormal basis of cavity modes as
 \begin{equation}
     f_{0}(\mathbf{r}) = c_{0}\, f_{0}'(\mathbf{r}) + \sum_{m>0} c_{m}\, f_{m}'(\mathbf{r}),
@@ -708,8 +708,6 @@ where the coefficients $c_{m}$ quantify the projection of the incident field ont
     \eta = \left| \int d^{3}\mathbf{r}\, f_{0}^{*}(\mathbf{r})\, f_{0}'(\mathbf{r}) \right|^{2},
 \end{equation}
 which ensures that essentially all the incoming photons populate the desired cavity mode, while suppressing excitation of spurious modes. \\
-
-regarding the resonant lengths for which a speci
 
 \subsection{\textrm{Simple} Cavities}
 
@@ -850,8 +848,8 @@ where the matrix product above reads
   \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}
 = \frac{1}{\left(\kappa/2-i\Omega\right)^{2}+\Delta^{2}}
 \begin{pmatrix}
-\kappa/2-i\Omega & \Delta \\[6pt]
--\Delta & \kappa/2-i\Omega
+\kappa/2-i\Omega & -\Delta \\[6pt]
+\Delta & \kappa/2-i\Omega
 \end{pmatrix}.
 \end{equation*}
 
