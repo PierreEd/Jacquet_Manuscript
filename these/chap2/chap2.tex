@@ -825,22 +825,27 @@ with
   0 & \kappa/2+i(\Delta-\Omega)\\ 
   \end{pmatrix} 
 \end{equation*}
-The intracavity field fluctuations are then given by
-\begin{equation}
-  \mathbf{\delta \hat{a}}[\Omega]  = \mathbf{M}^{-1}_\Delta \Big( \sqrt{\kappa_1} \, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_2} \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] +  \sqrt{\kappa_0} \, \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] \Big)
-\end{equation}
-and the reflected and transmitted fields read
+For notational convenience, we will drop the explicit dependence on $\Omega$ in the following. Inverting the above relation and plugging it in the input-output relations gives the reflected and transmitted fields as
 \begin{equation}
   \begin{split}
-  \mathbf{\delta \hat{a}_{\mathrm{r}}}[\Omega]  &= ( \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} )\, \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_2} \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] ) \\
-  \mathbf{\delta \hat{a}_{\mathrm{t}}}[\Omega] & =  \sqrt{\kappa_2} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_1} \mathbf{\delta \hat{a}_{\mathrm{in}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}}[\Omega] ) +  (\kappa_2 \,\mathbf{M}^{-1}_\Delta - \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}[\Omega] 
+  \mathbf{\delta \hat{a}_{\mathrm{ref}}}  &= ( \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} )\, \mathbf{\delta \hat{a}_{\mathrm{in}}} +  \sqrt{\kappa_1} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_2} \mathbf{\delta \hat{a}_{\mathrm{vac}}} + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}} ) \\
+  \mathbf{\delta \hat{a}_{\mathrm{trans}}} & =  \sqrt{\kappa_2} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_1} \mathbf{\delta \hat{a}_{\mathrm{in}}} + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}} ) +  (\kappa_2 \,\mathbf{M}^{-1}_\Delta - \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}
   \end{split}
 \end{equation}
+The diagonal matrix multiplying the input field fluctuations i.e. $( \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} )$ is the cavity reflection transfer function. It is conveniently rewritten using the one photon complex reflectivity $r_\Delta [\Omega]$ such that this term reads
+\begin{equation*}
+  \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} = \begin{pmatrix}
+  r_\Delta[\Omega] & 0 \\
+  0 & r_\Delta^{*}[-\Omega]
+  \end{pmatrix}, \quad r_\Delta[\Omega] = \frac{\kappa_1}{\kappa/2 - i(\Delta + \Omega)} - 1 
+\end{equation*}
+A step further, we 
+
 Using $\delta \hat{\mathbf{a}} = \mathbf \Gamma^{-1} \delta \hat{\mathbf{u}}$ the reflected and transmitted quadratures read
 \begin{equation}
   \begin{split}
-  \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega]  &= ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1} )\, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] +  \sqrt{\kappa_1} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_2} \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] ) \\
-  \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega] & =  \sqrt{\kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_1} \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] ) +  (\kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}) \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] 
+  \mathbf{\delta \hat{u}_{\mathrm{ref}}} &= ( \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1} )\, \mathbf{\delta \hat{u}_{\mathrm{in}}} +  \sqrt{\kappa_1} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_2} \mathbf{\delta \hat{u}_{\mathrm{vac}}} + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}} ) \\
+  \mathbf{\delta \hat{u}_{\mathrm{trans}}} & =  \sqrt{\kappa_2} \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1} (\sqrt{\kappa_1} \mathbf{\delta \hat{u}_{\mathrm{in}}} + \sqrt{\kappa_0}  \mathbf{\delta \hat{u}_{\mathrm{l}}} ) +  (\kappa_2 \,\mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}) \, \mathbf{\delta \hat{u}_{\mathrm{vac}}}
   \end{split}
 \end{equation}
 where the matrix product above reads 
@@ -865,13 +870,13 @@ causing symmetric sidebands around the carrier to be filtered identically both i
 \noindent \textbf{Note: } On resonance ($\Delta=0$), the output quadratures can then be written as 
 \begin{equation}
   \begin{split}
-  \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega]   &= \dfrac{\kappa_1-\kappa/2+i\Omega}{\kappa/2-i\Omega}  \,  \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +   \dfrac{\sqrt{\kappa_1 \kappa_2} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] + \dfrac{\sqrt{\kappa_1 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega]  \\
-  \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega]   &= \, \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +  \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]   + \dfrac{\sqrt{\kappa_2 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}[\Omega] 
+  \mathbf{\delta \hat{u}_{\mathrm{ref}}}   &= \dfrac{\kappa_1-\kappa/2+i\Omega}{\kappa/2-i\Omega}  \,  \mathbf{\delta \hat{u}_{\mathrm{in}}}   +   \dfrac{\sqrt{\kappa_1 \kappa_2} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{vac}}} + \dfrac{\sqrt{\kappa_1 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}  \\
+  \mathbf{\delta \hat{u}_{\mathrm{trans}}}   &= \, \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}} +  \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}   + \dfrac{\sqrt{\kappa_2 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}
   \end{split}
 \end{equation}
 If we consider the reflected quadratures noise spectra we see that 
 \begin{equation}
-   \mathbf{S}_{\mathrm{r}}[\Omega] =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}[\Omega]+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_2 \, \mathbf{1}+\kappa_0 \,\mathbf{1}\Big) 
+   \mathbf{S}_{\mathrm{ref}}[\Omega] =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}[\Omega]+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_2 \, \mathbf{1}+\kappa_0 \,\mathbf{1}\Big) 
 \end{equation}
 where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$ i.e. $\kappa_1 + \kappa_0 \rightarrow \kappa_1$. \\
 
@@ -879,36 +884,46 @@ where the vacuum and loss covariance matrices are equal to \textbf{1}. As these 
 \noindent \textbf{Transfer matrices and Spectra:} Expressing the reflected and transmitted quadratures in matrix form yields
 \begin{equation}
   \begin{split}
-   \mathbf{\delta \hat{u}_{\mathrm{r}}}[\Omega] = \mathbf{T}_{\mathrm{r}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] + \mathbf{L}_{\mathrm{r}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]
+   \mathbf{\delta \hat{u}_{\mathrm{ref}}} & = \mathbf{T}_{\mathrm{ref}}\mathbf{\delta \hat{u}_{\mathrm{in}}} + \mathbf{L}_{\mathrm{ref}}  \mathbf{\delta \hat{u}_{\mathrm{vac}}}
     \\
-    \mathbf{\delta \hat{u}_{\mathrm{t}}}[\Omega] = \mathbf{T}_{\mathrm{t}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega] + \mathbf{L}_{\mathrm{t}}[\Omega]  \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega]
+    \mathbf{\delta \hat{u}_{\mathrm{trans}}} & = \mathbf{T}_{\mathrm{trans}}  \mathbf{\delta \hat{u}_{\mathrm{in}}} + \mathbf{L}_{\mathrm{trans}}  \mathbf{\delta \hat{u}_{\mathrm{vac}}}
   \end{split}
 \end{equation}
 where the transfer matrices for the input and loss ports given by
 \begin{equation*}
   \begin{split}
-     \mathbf{T}_{\mathrm{r}}[\Omega]= \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}, \quad \mathbf{L}_{\mathrm{r}}[\Omega]=  \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}\\
-      \mathbf{T}_{\mathrm{t}}[\Omega]=   \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{t}}[\Omega]= \kappa_2 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}
+     \mathbf{T}_{\mathrm{ref}}= \kappa_1 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}, \quad \mathbf{L}_{\mathrm{ref}}=  \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}\\
+      \mathbf{T}_{\mathrm{trans}}=   \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{trans}}= \kappa_2 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}
   \end{split}
 \end{equation*}
 such that the covariance matrices for the reflected and transmitted quadratures of a detuned cavity are given by
 \begin{equation}
   \begin{split}
-  \mathbf{S}_{\mathrm{r}}[\Omega] &= \mathbf{T}_{\mathrm{r}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{r}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{r}}[\Omega] \mathbf{L}_{\mathrm{r}}^{\dagger}[\Omega] \\ \quad  \mathbf{S}_{\mathrm{t}}[\Omega] &= \mathbf{T}_{\mathrm{t}}[\Omega] \mathbf{S}_{\mathrm{in}}[\Omega] \mathbf{T}_{\mathrm{t}}^{\dagger}[\Omega] + \mathbf{L}_{\mathrm{t}}[\Omega] \mathbf{L}_{\mathrm{t}}^{\dagger}[\Omega]
+  \mathbf{S}_{\mathrm{ref}}[\Omega] &= \mathbf{T}_{\mathrm{ref}}\mathbf{S}_{\mathrm{in}} \mathbf{T}_{\mathrm{ref}}^{\dagger}+ \mathbf{L}_{\mathrm{ref}} \mathbf{L}_{\mathrm{ref}}^{\dagger}\\ 
+  \quad  \mathbf{S}_{\mathrm{trans}}[\Omega] &= \mathbf{T}_{\mathrm{trans}} \mathbf{S}_{\mathrm{in}} \mathbf{T}_{\mathrm{trans}}^{\dagger} + \mathbf{L}_{\mathrm{trans}}\mathbf{L}_{\mathrm{trans}}^{\dagger}
   \end{split}
 \end{equation}
 Additionally, we define the one-photon reflection matrix of the input field by 
 \begin{equation}
   \mathbf{r}_{\Delta}[\Omega] = \kappa_1 \, \mathbf{M}^{-1}_\Delta- \mathbf{1} = \begin{pmatrix}
-    r_{\Delta}[\Omega] & 0 \\
-    0 & r_{\Delta}^*[-\Omega]
-  \end{pmatrix} \quad \text{with} \quad r_{\Delta}[\Omega] = \frac{\kappa_1 }{\kappa/2 - i(\Delta + \Omega)} - 1
+    r_+ e^{i \phi_+} & 0 \\
+    0 &  r_- e^{-i \phi_-}
+  \end{pmatrix} \quad \text{with} \quad r_{\Delta}[\Omega] = \frac{\kappa_1 }{\kappa/2 - i(\Delta + \Omega)} - 1. 
+\end{equation}.
+where we wrote the complex reflectivities as $r_{\Delta}[\Omega] = r_+ e^{i \phi_+}$ and $r_{\Delta}^*[-\Omega] = r_- e^{-i \phi_-}$ and we use the usual transformation for the positive and negative sideband reflectivities as
+\begin{equation}
+\begin{split}
+  \bar r  &= \frac{r_+ + r_-}{2} \quad \text{,} \quad  \delta r  = \frac{r_+ - r_-}{2} \\
+  \bar \phi &= \frac{\phi_+ + \phi_-}{2} \quad \text{,} \quad  \delta \phi = \frac{\phi_+ - \phi_-}{2}
+\end{split}
 \end{equation}
-such that 
+
+
+
 \begin{equation}
 \mathbf{T}_{\mathrm{r}}[\Omega] = \mathbf{\Gamma} \, \mathbf{r}_{\Delta}[\Omega] \, \mathbf{\Gamma}^{-1} = \frac{1}{2}  \begin{pmatrix}
-    r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega] & i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) \\
-    -i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) & r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega]
+    r_+e^{i \phi_+}  + r_-e^{-i \phi_-}  & i(r_+e^{i \phi_+}  - r_-e^{-i \phi_-}) \\
+    -i(r_+e^{i \phi_+}  - r_-e^{-i \phi_-}) & r_+e^{i \phi_+}  + r_-e^{-i \phi_-}
   \end{pmatrix}
 \end{equation}
 and similarly for the one photon transmission matrix
@@ -939,7 +954,34 @@ Now consider that the input fluctuations are above those of vacuum i.e. the inpu
 
 
 \subsubsection{Example 2: Detuned single port cavity }
-We now consider a lossless single port cavity with $\kappa_2 = 0$ and $\kappa_1 = \kappa$. The transfer matrix is expressed as 
+We now consider a lossless single port cavity with $\kappa_2 = 0$ and $\kappa_1 = \kappa$. the transfer matrix for the reflected \textbf{field} then reads
+\begin{equation*}
+    \kappa \mathbf{M}^{-1}_\Delta - \mathbf{1} = \begin{pmatrix}
+      \dfrac{\kappa/2 + i(\Delta + \Omega)}{\kappa/2 - i(\Delta + \Omega)} & 0 \\[10pt]
+      0 & \dfrac{\kappa/2 - i(\Delta - \Omega)}{\kappa/2+ i(\Delta - \Omega)}
+    \end{pmatrix}
+\end{equation*}
+where we see that the upper and lower sidebands are reflected with different amplitude $\rho_+$ and $\rho_-$ and phase shifts $\phi_+$ and $\phi_-$ when the cavity is detuned ($\Delta \neq 0$). We then have : 
+\begin{equation}
+    \rho_{+} = \Big|\dfrac{\kappa/2 + i(\Delta + \Omega)}{\kappa/2 - i(\Delta + \Omega)}\Big| = 1, \quad \rho_{-} = \Big|\dfrac{\kappa/2 - i(\Delta - \Omega)}{\kappa/2 + i(\Delta - \Omega)}\Big| = 1
+\end{equation}
+
+\begin{equation}
+    \phi_{+}[\Omega] = 2 \arctan \Big(\dfrac{\Delta + \Omega}{\kappa/2}\Big), \quad \phi_{-}[\Omega] = 2 \arctan \Big(\dfrac{\Delta - \Omega}{\kappa/2}\Big)
+\end{equation}
+such that we can define the overall and differential phase shifts as
+\begin{equation}
+    \bar \phi[\Omega] = \phi_{+}[\Omega] + \phi_{-}[\Omega] = \arctan \dfrac{4 \Omega \kappa}{(\frac{\kappa}{2})^2 + \Delta^2 - \Omega^2} \quad \Delta \phi[\Omega] = \phi_{+}[\Omega] - \phi_{-}[\Omega] = \arctan \dfrac{4 \Delta \kappa}{(\frac{\kappa}{2})^2 - \Delta^2 + \Omega^2}
+\end{equation}
+
+In the two-photon formalism, this asymetric phase shift translates into a frequency-dependent rotation of the quadratures.
+
+
+
+
+
+
+The transfer matrix is expressed as 
 \begin{equation}
   \mathbf{T}_{\mathrm{r}}[\Omega]=  \frac{1}{(\kappa/2 - i\Omega)^{2}+\Delta^{2}}
 \begin{pmatrix}
@@ -1169,8 +1211,8 @@ where $\theta[]$
 The $\mathbf{S}[\Omega]$ can either be the full cavity one, or the idealized one. As already mentionned, the mechanical frequencies of interest will be deep in the OPO bandwidth such that we will use the ideal squeezer expression \eqref{eq:perfect_squeezer} in addition with extrinsic losses \eqref{II.xx3}. The explicit of the covariance matrix at a frequency dependent angle is then
 \begin{equation}
       \mathbf{S}^{\theta}_{\rm OPO}[\Omega] =\begin{pmatrix}
-         \cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega]  & -\sinh 2r \, \sin 2\theta[\Omega]  \\[10pt]
-        -\sinh 2r \, \sin 2\theta[\Omega]  & \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega] 
+         \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega]  & -\sinh 2r \, \sin 2\theta[\Omega]  \\[10pt]
+        -\sinh 2r \, \sin 2\theta[\Omega]  & \cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega] 
       \end{pmatrix}
 \end{equation}
 
@@ -1279,9 +1321,11 @@ Writing explicitely our amplitude-phase quadratures then gives
   \end{split}
    \label{eq:intra_quad}
 \end{equation}
-This expression highlights the fact that only the phase is affected by the resonator position fluctuations. Physically, this can be understood by considering first that a fluctuating field amplitude leads to a fluctuating radiation pressure force, which in turn \textit{shakes} the mechanical resonator, which changes the phase of the field reflected. The reciprocal process does not happen: a fluctuating phase does not lead to a fluctuating radiation pressure force, hence the output amplitude fluctuations are unaffected by the mechanics. Importantly, considering the field reflected off the cavity we define the displacement to phase fluctuation transduction as
+This expression highlights the fact that only the phase is affected by the resonator position fluctuations. Physically, this can be understood by considering first that a fluctuating field amplitude leads to a fluctuating radiation pressure force, which in turn \textit{shakes} the mechanical resonator, which changes the phase of the field reflected. The reciprocal process does not happen: a fluctuating phase does not lead to a fluctuating radiation pressure force, hence the output amplitude fluctuations are unaffected by the mechanics. \\
+
+Importantly, considering the field reflected off the cavity, we define the displacement to phase fluctuation transduction $\mathcal{C}[\Omega]$ such that 
 \begin{equation}
-  \frac{\delta \hat{q}_x[\Omega]}{\delta \hat{x}[\Omega]} =  \frac{2\sqrt{\kappa_1}G|\bar \alpha|}{\kappa/2 - i\Omega} = \frac{\kappa_1}{\kappa} \dfrac{16 \mathcal{F}\sqrt{\bar{I}_{\rm in}}}{\lambda (1- i2\Omega/\kappa)}
+  \delta \hat{q}_{\mathrm{r}}[\Omega] = \mathcal{C}[\Omega] \, \delta \hat{x}[\Omega] \quad \text{with} \quad \mathcal{C}[\Omega] = \frac{2\sqrt{\kappa_1}G|\bar \alpha|}{\kappa/2 - i\Omega} = \frac{\kappa_1}{\kappa} \dfrac{16 \mathcal{F}\sqrt{\bar{I}_{\rm in}}}{\lambda (1- i2\Omega/\kappa)}
 \end{equation}
 where we plugged in useful experimental parameters $\mathcal{F}$, $\lambda$ and $\bar I_{\rm in}$. The prefactor $\kappa_1/\kappa$ is the analog of the escape efficiency for optomechanical cavities, and is unity for single port cavities. We stress that the total phase fluctuations are the sum of various contributions, including the input phase fluctuations, the vacuum fluctuations entering from the loss port, and the position induced phase fluctuations, whether they arise from radiation pressure or other sources. This transduction factor will be used later to express the displacement sensitivity/spectra in terms of experimental parameters. \\
 
@@ -1289,7 +1333,7 @@ where we plugged in useful experimental parameters $\mathcal{F}$, $\lambda$ and 
 Plugging in the position fluctuations derived earlier (\eqref{eq:dx} and \eqref{eq:Frad}) in the intracavity phase fluctuations we get
 \begin{equation}
   \begin{split}
-\delta \hat{q}[\Omega] =  &\frac{\kappa_{\mathrm{1}}}{\kappa^2} \frac{8\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega] \, \bigg( \sqrt{\kappa_1} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \sqrt{\kappa_2} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \bigg) \\ 
+\delta \hat{q}[\Omega] =  &\frac{ \mathcal{C}^2[\Omega]}{2\kappa_1}  \,\hbar  \chi[\Omega] \, \bigg( \sqrt{\kappa_1} \, \delta \hat{p}_{\mathrm{in}}[\Omega] + \sqrt{\kappa_2} \, \delta \hat{p}_{\mathrm{vac}}[\Omega] \bigg) \\ 
  & +\frac{1}{\kappa/2 - i\Omega} \, \bigg( \sqrt{\kappa_1} \, \delta \hat{q}_{\mathrm{in}}[\Omega] + \sqrt{\kappa_2} \, \delta \hat{q}_{\mathrm{vac}}[\Omega] \bigg) 
   \end{split}
 \end{equation}
@@ -1301,7 +1345,7 @@ such that we can readily express the intracavity quadratures in matrix form as
 \begin{array}{cc}
 \dfrac{1}{\kappa/2 - i\Omega} & 0\\[6pt]
 \dfrac{\mathcal{K}[\Omega]}{\kappa_1} & \dfrac{1}{\kappa/2 - i\Omega}
-\end{array}-
+\end{array}
 \right)
 \bigg( 
 \sqrt{\kappa_1} \delta\mathbf{\hat{\mathbf u}} _{\mathrm{in}}[\Omega] +\;
@@ -1309,7 +1353,7 @@ such that we can readily express the intracavity quadratures in matrix form as
 \end{equation}
 with
 \begin{equation*}
-  \mathcal{K}[\Omega] = \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{8\hbar G^2|\bar \alpha_{\textrm{in}}|^2}{(\kappa/2 - i\Omega)^2}  \,  \chi[\Omega] = \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{128 \hbar \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2(1 - i2\Omega/\kappa)^2}  \,  \chi[\Omega]
+  \mathcal{K}[\Omega] = \frac{ \mathcal{C}^2[\Omega]}{2}  \,\hbar  \chi[\Omega]= \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{128 \hbar \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2(1 - i2\Omega/\kappa)^2}  \,  \chi[\Omega]
 \end{equation*}
 We then obtain the reflected and transmitted quadrature fluctuations 
 \begin{equation}

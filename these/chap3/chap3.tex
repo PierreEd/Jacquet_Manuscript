@@ -23,19 +23,24 @@ The question of interest is now:
 
 We start by recalling the reflected phase fluctuation of an optomechanical cavity from section II.2.5 under the aforementioned assumptions:
 \begin{equation*}
-\delta \hat{q}_r[\Omega] = \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \mathcal{K}[\Omega]\, \delta \hat{p}_{\mathrm{in}}[\Omega] \quad  \text{with} \quad \mathcal{K}[\Omega] =  \dfrac{128 \hbar \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2}  \,  \chi[\Omega]
+\delta \hat{q}_r[\Omega] = \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \mathcal{K}[\Omega]\, \delta \hat{p}_{\mathrm{in}}[\Omega] \quad  \text{with} \quad \mathcal{K}[\Omega] = \frac{\mathcal{C}^2}{2}   \,\hbar  \chi[\Omega] =  \dfrac{128 \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2}  \,  \hbar  \chi[\Omega]
 \end{equation*}
-as well as the phase to displacement transduction relation with an optomechanical escape efficiency of 1:
+where $\mathcal{C}$ is now positive and frequency independent. The resulting reflected phase spectrum reads
 \begin{equation*}
-   \delta \hat q_x = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega]  
+  S_{qq}^{r}[\Omega] = S_{qq}^{\rm in}[\Omega] + |\mathcal{K}[\Omega]|^2 S_{pp}^{\rm in}[\Omega] + 2 \, \Re\Big[ \mathcal{K}[\Omega] S_{pq}^{\rm in}[\Omega]\Big]
+\end{equation*}
+
+The phase to displacement transduction relation with an optomechanical escape efficiency of 1:
+\begin{equation*}
+   \delta \hat q_x = \mathcal{C} \delta \hat x [\Omega] = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega]  
 \end{equation*}
 Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_r[\Omega] = \delta \hat q_x[\Omega]$. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
 \begin{equation}
-  \delta \hat{x}[\Omega] = \frac{\lambda }{16 \mathcal{F}\sqrt{\bar I_{\rm in}}} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \dfrac{8 \hbar \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda} \, \chi[\Omega] \, \delta \hat{p}_{\mathrm{in}}[\Omega]
+  \delta \hat{x}[\Omega] =\mathcal{C}^{-1} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \dfrac{\mathcal{C} }{2} \hbar \chi[\Omega] \, \delta \hat{p}_{\mathrm{in}}[\Omega]
 \end{equation}
 such that the associated displacement spectrum reads
 \begin{equation}
-      S_{xx}[\Omega] = \dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}} S_{qq}^{\rm in}[\Omega] +  \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2 S_{pp}^{\rm in}[\Omega]  \quad  + \hbar |\chi[\Omega]| \Re\Big[  e^{i\phi_m[\Omega]} S_{pq}^{\rm in}[\Omega]\Big]
+      S_{xx}[\Omega] = \mathcal{C}^{-2} S_{qq}^{\rm in}[\Omega] + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 S_{pp}^{\rm in}[\Omega]   + \hbar |\chi[\Omega]| \Re\Big[  e^{i\phi_m[\Omega]} S_{pq}^{\rm in}[\Omega]\Big]
   \label{eq:total_displacement_spectrum}
 \end{equation}
 
@@ -47,7 +52,7 @@ We then identify three contributions to the displacement spectrum:
   \end{equation}
   \item The second term is the radiation pressure noise (or backaction noise) scaling linearly with the input power $\bar{I}_\mathrm{in}$, arising from the input amplitude fluctuations $S_{pp}^{\rm in}[\Omega]$ driving the mechanical resonator via radiation pressure given by 
   \begin{equation}
-    S_{xx}^{\rm RPN}[\Omega] = \, \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2 S_{pp}^{\rm in}[\Omega]
+    S_{xx}^{\rm RPN}[\Omega] = \, \dfrac{64 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}\hbar^2 |\chi[\Omega]|^2 S_{pp}^{\rm in}[\Omega]
   \end{equation}
   \item The third term is a correlation term between amplitude and phase fluctuations $S_{pq}^{\rm in}[\Omega]$, which can be non-zero for arbitrary squeezed states as seen in the previous section and given by
   \begin{equation}
@@ -61,13 +66,13 @@ And we write the total displacement spectrum as the sum of these three contribut
 
 We now consider vacuum/coherent fluctuations such that $S_{qq}^{\rm in}[\Omega]=S_{pp}^{\rm in}[\Omega]=1$ and $S_{pq}^{\rm in}[\Omega]=0$, so that the displacement spectrum simplifies to
 \begin{equation}
-  S_{xx}[\Omega] = \dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}} +  \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2 
+  S_{xx}[\Omega] = \mathcal{C}^{-2}  + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2
   \label{eq:total_displacement_spectrum}
 \end{equation}
-and we look at what noise dominates the displacement spectrum around the mechanical resonance $\Omega \sim \Omega_m$. We define the frequency $\Omega_{\text{SQL}}$ as the frequency at which the SQL is achieved, given by
+and we look at what noise dominates the displacement spectrum around the mechanical resonance $\Omega \sim \Omega_m$. In this frequency range, there are two frequencies at which the displacement noise contributions are equal, given by the condition $S_{xx}^{\rm SN}[\Omega] = S_{xx}^{\rm RPN}[\Omega]$, leading to the frequency $\Omega_{\text{SQL}}$ defined as
 \begin{equation}
   \Omega^{\pm}_{\text{SQL}}  =\;\sqrt{\Omega_m^2-\dfrac{\Gamma_m^2}{2}
-\;\pm\;\dfrac{1}{2}\sqrt{\Gamma_m^4-4\Gamma_m^2\Omega_m^2+\Big(\frac{256\,\hbar\,\mathcal F^2 I_{\rm in}}{m\lambda^2}\Big)^2}}
+\;\pm\;\dfrac{1}{2}\sqrt{\Gamma_m^4-4\Gamma_m^2\Omega_m^2+\Big(\frac{\hbar \mathcal{C}^2}{m }\Big)^2}}
 \end{equation}
 and consistent with the LIGO/Virgo notation \cite{harry_advanced_2010, aasi_enhanced_2013}. Over the frequency range of interest $\Omega \in [\Omega_m - \Omega_{\text{SQL}}, \Omega_m + \Omega_{\text{SQL}}]$, the displacement noise is dominated by the radiation pressure noise, while outside this range, the noise is dominated by the shot noise. However, for every sideband frequency, there exists an optimal input power $\bar{I}_\mathrm{in}^{\rm SQL}[\Omega]$ at which both contributions are equal, minimizing the total displacement noise. This limit is called the Standard Quantum Limit (SQL) and is a direct consequence of Heisenberg's uncertainty principle applied to continuous position measurements \cite{braginsky_quantum_1992, clerk_introduction_2010}. This SQL intensity is given by
 \begin{equation}
@@ -77,7 +82,7 @@ such that plugging back in this SQL intensity in \eqref{eq:total_displacement_sp
 \begin{equation}
   S_{xx}^{\rm SQL}[\Omega] = \hbar |\chi[\Omega]| \implies S_{xx}^{\rm SN}[\Omega] + S_{xx}^{\rm RPN}[\Omega] \geq \hbar |\chi[\Omega]|
 \end{equation}
-which is the fundamental limit to continuous position measurements with coherent light. We also note that for high Q resonators, $\Omega_{SQL} \ll \Gamma_m$, so approximating the succeptibility by its real part holds over a relatively large frequency range.
+which is the fundamental limit to continuous position measurements with coherent light. We also note that for high Q resonators, $\Omega_{SQL} \gg \Gamma_m$, so approximating the succeptibility by its real part holds over a relatively large frequency range but fails at resonance where the succeptibility is purely imaginary.
 
 \subsubsection{Thermal Noise}
 Thermal noise is a major limitation in optomechanical experiments, as it can mask the quantum effects one aims to observe. The mechanical resonator is indeed coupled to a thermal bath at temperature $T$, which drives the resonator into a thermal state with mean phonon occupation number $\bar n_{\mathrm{th}} = k_B T / (\hbar \Omega_m)$ in the high temperature limit $k_B T \gg \hbar \Omega_m$. The position fluctuations induced by this thermal force is given by
@@ -120,13 +125,14 @@ We first recall the (idealized) covariance matrices for both a phase squeezed fi
 \end{equation*}
 For a phase squeezed field, the displacement spectrum reads
 \begin{equation}
-  S_{xx}^{0}[\Omega] = \dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}}  e^{-2r} + \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2 e^{+2r}
+  S_{xx}^{0}[\Omega] =   \mathcal{C}^{-2}  e^{-2r} + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 e^{+2r}
 \end{equation}
 while for an amplitude squeezed field, the displacement spectrum reads
 \begin{equation}
-  S_{xx}^{\pi}[\Omega] = \dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}}  e^{+2r} + \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2 e^{-2r}
+  S_{xx}^{\pi}[\Omega] =  \mathcal{C}^{-2}  e^{+2r} + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 e^{-2r}
 \end{equation}
-We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. 
+We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. The input cross correlations being zero, this completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively.
+However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. 
 
 Now consider an input squeezed state with a frequency independent squeezing angle $\theta=\pi/4$ with covariance matrix
 \begin{equation*}
@@ -137,41 +143,46 @@ Now consider an input squeezed state with a frequency independent squeezing angl
 \end{equation*}
 The resulting displacement spectrum then reads
 \begin{equation}
-  S_{xx}^{\pi/4}[\Omega] = \Big(\dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}}+  \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2\Big)\cosh 2r - \hbar |\chi[\Omega]| \sinh 2r \cos \phi_m[\Omega]
+  S_{xx}^{\pi/4}[\Omega] = \Bigg(\mathcal{C}^{-2}  + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2\Bigg)\cosh 2r - \hbar |\chi[\Omega]| \sinh 2r \cos \phi_m[\Omega]
 \end{equation}
 and we seek the frequency range where the displacement spectrum is below the SQL, i.e. $S_{xx}^{\pi/4}[\Omega] < S_{xx}^{\rm SQL}[\Omega]$. This condition is satisfied when
 \begin{equation}
-  \tanh \dfrac{r}{2} < \cos \phi_m[\Omega] < 1
+  \tanh r < \cos \phi_m[\Omega] < 1
 \end{equation}
-Because $\tanh r/2$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$. Furthermore, due to the interplay between quadrature correlations and the projection of the $\pi/4$ ellipse onto the output quadrature axis, acting as an effective increase of the radiation pressure noise with effective intensity $\cosh r \bar{I}_\mathrm{in}$, there is an effective range of $r$ above which the displacement spectrum is always above the SQL (for a fixed input intensity). This is illustrated in figure \ref{fig:freq_indep_squeezing}.
+Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$. Furthermore, due to the interplay between quadrature correlations and the projection of the $\pi/4$ ellipse onto the output quadrature axis, acting as an effective increase of the shot noise floor with effective intensity $\bar{I}_\mathrm{in} \cosh^{-1} r $, there is an effective range of $r$ above which the displacement spectrum is always above the SQL (for a fixed input intensity). This is illustrated in figure \ref{fig:freq_indep_squeezing}.
 
-Additionally, and as seen in Fig ..., the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Gamma_m$. This motivates the use of frequency dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum.
+Additionally, and as seen in Fig ..., the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Omega_{\rm SQL}$. \\
+
+This motivates the use of frequency dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation pressure noise need to be correlated in a frequency dependent manner to optimally cancel the total displacement noise in the vicinity of the mechanical resonance. 
+
 \subsection{Frequency Dependent Squeezing in Optomechanical Cavities}
-We now consider a frequency dependent squeezed state with covariance matrix
+We now consider a squeezed state with a frequency dependent angle whose covariance matrix is given by
 \begin{equation*}
       \mathbf{S}^{\theta}_{\rm OPO}[\Omega] =\begin{pmatrix}
-         \cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega]  & -\sinh 2r \, \sin 2\theta[\Omega]  \\[10pt]
-        -\sinh 2r \, \sin 2\theta[\Omega]  & \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega] 
+         \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega]  & -\sinh 2r \, \sin 2\theta[\Omega]  \\[10pt]
+        -\sinh 2r \, \sin 2\theta[\Omega]  & \cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega] 
       \end{pmatrix}
 \end{equation*}
 The resulting displacement spectrum then reads
 \begin{equation}
   \begin{split}
-      S_{xx}[\Omega] = & \, S_{xx}^{\rm SN}[\Omega] (\cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega])\\
-      & +  S_{xx}^{\rm RPN}[\Omega]( \cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega]) \\
-      & - \hbar |\chi[\Omega]| \Re\Big[  e^{i\phi_m[\Omega]}\sinh 2r \, \sin 2\theta[\Omega]\Big]
+      S_{xx}[\Omega] = & \, \mathcal{C}^{-2} (\cosh 2r  - \sinh 2r \, \cos 2\theta[\Omega])\\
+      & +  \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2( \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega]) \\
+      & - \hbar |\chi[\Omega]| \sinh 2r \, \sin 2\theta[\Omega] \, \cos \phi_m[\Omega]
   \end{split}
 \end{equation}
 As shown in the annex, picking the squeezing angle as
 \begin{equation}
-  \theta[\Omega] = \arctan \Big[\dfrac{2|\mathcal{K}[\Omega]|\cos \phi_m[\Omega]}{1 + |\mathcal{K}[\Omega]|^2}\Big]
+  2 \theta[\Omega] = \arctan \Big[\dfrac{2|\mathcal{K}[\Omega]|\cos \phi_m[\Omega]}{1 - |\mathcal{K}[\Omega]|^2}\Big]
 \end{equation}
 minimizes the displacement spectrum at every sideband frequency, leading to
 \begin{equation}
-  S_{xx}[\Omega] \approx e^{-2r} \Big(\dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}} +  \dfrac{64 \hbar^2 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}|\chi[\Omega]|^2\Big) 
+\begin{split}
+  S_{xx}[\Omega] = & \cosh 2r \Bigg(\mathcal{C}^{-2}  + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2\Bigg)  \\
+  & -  \sinh 2r \sqrt{\Bigg(\mathcal{C}^{-2}  - \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2\Bigg)^2 + \bigg(\hbar |\chi[\Omega]|\cos \phi_m[\Omega]\bigg)^2}.
+\end{split}
 \end{equation}
-where we assumed the mechanical succeptibility is mainly defined by its real component, such that $\chi[\Omega] \sim \Re \chi[\Omega]$ as discussed previously.
-This broadband reduction of the displacement spectrum below the SQL is illustrated in figure \ref{fig:freq_dep_squeezing}. We can also see that for sufficient squeezing factor $r$, the displacement spectrum can, in principle, be reduced to the thermal noise level. One could then imagine using this quantum limited position readout to feedback cool and stabilize the mechanical resonator to its quantum ground state. \\ 
+This broadband reduction of the displacement spectrum below the SQL is illustrated in figure \ref{fig:freq_dep_squeezing}. However, for a resonant optomechanical cavity i.e. $\Delta=0$, it is impossible to beat the SQL at the mechanical resonance, where the succeptibility is purely imaginary $\phi_m[\Omega_m] = \pi/2$. \\ 
 
 \begin{figure}
   \centering
@@ -182,23 +193,42 @@ This broadband reduction of the displacement spectrum below the SQL is illustrat
 
 \noindent \textbf{Convergence to VIRGO/LIGO notation:} We once again show that this general treatment converges to the one used in the context of gravitational wave detectors. In the free mass regime, $\mathcal{K}[\Omega]$ is real, such that $\phi_m[\Omega]=0$. One can then rewrite the optimal squeezing angle as
 \begin{equation}
-  \theta[\Omega] = \arctan \Big[\dfrac{2\mathcal{K}[\Omega]}{1 + \mathcal{K}^2[\Omega]}\Big] = \arctan \mathcal{K}[\Omega]
+  2 \theta[\Omega] = \arctan \Big[\dfrac{2\mathcal{K}[\Omega]}{1 - \mathcal{K}^2[\Omega]}\Big] = 2 \arctan \mathcal{K}[\Omega]
 \end{equation}
-where we used the identity $\arctan 2x/(1+x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{harry_advanced_2010, aasi_enhanced_2013}.
-
+where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{harry_advanced_2010, aasi_enhanced_2013}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the the SQL frequency to the known expression
+\begin{equation}
+  \Omega_{\text{SQL}} = \sqrt{\dfrac{\hbar \mathcal{C}^2}{2 m }} \implies \mathcal{K}[\Omega] = \Big( \dfrac{\Omega_{\text{SQL}}}{\Omega}\Big)^2
+\end{equation}
+The displacement spectrum then reduces to the common expression
+\begin{equation}
+  S_{xx}[\Omega] = \mathcal{C}^{-2} \Bigg( 1  + \Big( \dfrac{\Omega_{\text{SQL}}}{\Omega}\Big)^2 \Bigg)e^{-2r}
+\end{equation}
+which is the free-mass approximation result used in the GW community. 
 
 \subsection{Filter Cavities for Frequency Dependent Squeezing}
 
-To generate frequency dependent squeezed states, one can use a filter cavity to rotate the squeezing angle in a frequency dependent manner. The filter cavity is a detuned optical cavity, such that such that symmetrical sidebands around the carrier will experience different phase shifts upon reflection. 
+To generate frequency dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency independent squeezed state off a single sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency dependent angle. 
+The transfer matrix for a single sideband from a detuned single port cavity was given by
+\begin{equation*}
+    \kappa \mathrm M_{\Delta}^{-1}[\Omega]  - \mathbf{1} = \begin{pmatrix}
+      \dfrac{\kappa/2 + i(\Delta + \Omega)}{\kappa/2 - i(\Delta + \Omega)} & 0 \\[10pt]
+      0 & \dfrac{\kappa/2 - i(\Delta - \Omega)}{\kappa/2+ i(\Delta - \Omega)}
+    \end{pmatrix}
+\end{equation*}
 
-Recalling the transfer matrix for a detuned single port cavity from the previous chapter 
+
+We recall from section II.1.4 that the reflected quadratures from a detuned cavity are given by
+\begin{equation*}
+    \mathbf{T}_{\mathrm{r}}[\Omega]=  \frac{1}{(\kappa/2 - i\Omega)^{2}+\Delta^{2}}
+\begin{pmatrix}
+     (\kappa/2)^2 - \Delta^2 + \Omega^2  & - \kappa \Delta  \\[6pt]
+    + \kappa \Delta  & ( \kappa/2)^2 - \Delta^2 + \Omega^2 
+\end{pmatrix}
+\end{equation*}
+such that the phase picked up by sidebands at frequency $\Omega$ is given by
 \begin{equation}
-\mathbf{T}_{\mathrm{r}}[\Omega] = \mathbf{\Gamma} \, \mathbf{r}_{\Delta}[\Omega] \, \mathbf{\Gamma}^{-1} = \frac{1}{2}  \begin{pmatrix}
-    r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega] & i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) \\
-    -i(r_{\Delta}[\Omega] - r_{\Delta}^*[-\Omega]) & r_{\Delta}[\Omega] + r_{\Delta}^*[-\Omega]
-  \end{pmatrix}
+    \phi_{\mathrm{fc}}[\Omega] = \arctan \Big(\dfrac{2 \Delta \kappa }{\kappa^2/4 - \Delta^2 + \Omega^2}\Big) 
 \end{equation}
-
 
 
 
