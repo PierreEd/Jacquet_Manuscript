@@ -2,10 +2,12 @@
 % !TeX spellcheck = fr_FR
 % !TeX root = mythesis.tex
 
-\chapter*{Appendix 1: Derivation of the PDH Error Signal }\label{app:PDH}
-\addcontentsline{toc}{section}{Appendix: PDH Derivation}
+\chapter*{Appendix A: Error Signals}\label{app:App}
+\addcontentsline{toc}{chapter}{Appendix A: Error Signals} % ensures it appears in the main TOC
 
 In this appendix, we derive the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
+\section*{PDH error signal}
+\addcontentsline{toc}{section}{PDH error signal}
 
 \subsection*{1. Input Phase-Modulated Field}
 
@@ -115,8 +117,168 @@ Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linea
 
 This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
 
-\chapter*{Appendix 2: Spectra derivation  }\label{app:spectra}
-\addcontentsline{toc}{section}{Appendix: Spectra Derivation}
+% \chapter*{Appendix 2:  }\label{app:spectra}
+
+\chapter*{Appendix B: Two-photon derivations}\label{app:App}
+\addcontentsline{toc}{chapter}{Appendix B: Two-photon derivations} % ensures it appears in the main TOC
+
+
+\section*{Field Quantization}
+\addcontentsline{toc}{section}{Field Quantization}
+\subsubsection*{From discrete to continuous modes}
+
+We consider the quantised electromagnetic field in a volume $V$ along a single polarization direction. We assume the field to be a gaussian beam such that the quantization volume is written as $\mathcal{V} = \mathcal{A}L$, with $\mathcal{A} $ the effective mode cross-sectional area, normal to the propagation direction $z$. The electric field operator can be written as  
+\begin{equation}
+\hat{\mathbf{E}}(\mathbf{r}, t) 
+= i \sum_{ \ell } \sqrt{\dfrac{\hbar \omega_{\ell}}{2 \varepsilon_0 \mathcal{V}}} \,
+\left[ \hat{a}^{\vphantom{\dagger}}_{ \omega_\ell }\,\mathbf{f}_{\ell }(\mathbf{r})\,e^{-i\omega_{\ell} t} 
+- \hat{a}_{\omega_\ell  }^\dagger\,\mathbf{f}_{\ell }^*(\mathbf{r})\,e^{+i\omega_{\ell} t} \right],
+\end{equation}
+The index $\ell$ then labels the different modes, discrete at this point. The bosonic operators satisfy the canonical commutation relations
+\[
+[\hat{a}_{\omega_{\ell\vphantom{'}}}^{\vphantom{\dagger}}, \hat{a}_{\omega_{\ell'}}^\dagger] = \delta_{\ell \ell'} \,, \quad
+[\hat{a}_{\omega_\ell}^{\vphantom{\dagger}}, \hat{a}_{\omega_{\ell'}}^{\vphantom{\dagger}} ] = [\hat{a}_{\omega_\ell}^\dagger, \hat{a}_{\omega_\ell'}^\dagger] = 0.
+\]
+We consider a the polarization along the $\hat{\mathbf{x}}$ direction where the hat denotes the unit vector and not an operator. The mode function can then be written as $\mathbf{f}_{\ell }(\mathbf{r}) = \text{f}_{\ell}(\mathbf{r})\hat{\mathbf{x}}$. We consider 1D wavevectors along the $+z$ direction i.e. positive $k_\ell$ only, such that in the limit of quantization volumes tending to infinity i.e. $L \to \infty$, the discrete sum over k modes turns into an integral over frequencies
+\[
+\sum_{\ell} (...) \quad \to \quad  \frac{L}{2\pi} \int^{\infty}_0 dk (...) = \frac{1}{\Delta f} \int^{\infty}_0 \dfrac{d\omega}{2\pi} (...) \quad \text{with} \quad \Delta f = \dfrac{c}{L}
+\]
+using the dispersion relation $\omega = c |k|$. We then simply relabel $\hat a_{\omega_\ell} \to \hat a_\omega$,  $\text{f}_{\ell}^{\vphantom{*}}(\mathbf{r})\to \text{f}^{\vphantom{*}}(\mathbf{r}, \omega)$ and plug back into the original expression to have
+\[
+\hat{\mathbf{E}}(\mathbf{r}, t)
+= i \int^{\infty}_0 \dfrac{d\omega}{2\pi} \sqrt{\dfrac{\hbar \omega}{2 \varepsilon_0 \mathcal{A} c}} \,
+\left[ \lim_{L \to \infty}\dfrac{\hat a^{\vphantom{\dagger}}[\Omega]}{\sqrt{\Delta f}}\,\text{f}^{\vphantom{*}}(\mathbf{r}, \omega)\,e^{-i\omega t}
+-  \lim_{L \to \infty}\dfrac{\hat a^{\dagger}[\Omega]}{\sqrt{\Delta f}}\,\text{f}^{*}(\mathbf{r}, \omega)\,e^{+i\omega t} \right] \hat{\mathbf{x}}.
+\]
+and we can define the continuous bosonic operators as
+\[\hat{a}[\omega] =  \lim_{L \to \infty}\dfrac{\hat{a}^{\vphantom{\dagger}}_{ \omega}}{\sqrt{\Delta f}} \quad \text{and} \quad \hat{a}^\dagger[\omega] =  \lim_{L \to \infty} \dfrac{\hat{a}^{\dagger}_{ \omega}}{\sqrt{\Delta f}}\]
+such that the electric field operator reads
+\[
+\hat{\mathbf{E}}(\mathbf{r}, t) = i \int^{\infty}_0 \dfrac{d\omega}{2\pi} \mathcal{E} \,\left[ \hat{a}^{\vphantom{\dagger}}[\omega]\,\text{f}^{\vphantom{*}}(\mathbf{r}, \omega)\,e^{-i\omega t}
+- \hat{a}^\dagger[\omega]\,\text{f}^{*}(\mathbf{r}, \omega)\,e^{+i\omega t} \right] \hat{\mathbf{x}}, \quad \text{with} \quad \mathcal{E} = \sqrt{\dfrac{\hbar \omega}{2 \varepsilon_0 \mathcal{A} c}}.
+\]
+
+\subsubsection*{Commutation relations }
+Using standard complex analysis techniques, the kronecker delta can be expressed as
+\[\delta_{\ell \ell'} =  \int^{+\pi}_{-\pi} dt \, \dfrac{e^{i(\ell - \ell') t}}{2\pi}. \]
+Upon the aforementioned assumptions, we can introduce the frequency spacing $\Delta \omega = 2\pi \Delta f$ such that the discrete angular frequencies are written as $\omega_\ell = \ell \Delta \omega$. It then follows that $\ell - \ell' = (\omega_\ell - \omega_{\ell'})/\Delta \omega$. By changing the variable of integration from $t$ to $t' = t / \Delta \omega$, we can rewrite the kronecker delta as
+\[\delta_{\ell \ell'} =  \int^{+L/2c}_{-L/2c} dt' \Delta f\, e^{i(\omega_\ell - \omega_{\ell'}) t'}.\]
+We can then see that in the limit of $L \to \infty$ i.e. $\Delta \omega \to 0$, the integral limits tend to infinity and the kronecker delta turns into a dirac delta such that
+\[ \lim_{L \to \infty} \dfrac{\delta_{\ell \ell'}}{\Delta f} =  \int^{+\infty}_{-\infty} dt'  \, e^{i(\omega- \omega') t'}= 2\pi \delta(\omega - \omega').
+\]
+where we relabeled $\omega_\ell \to \omega$ and $\omega_{\ell'} \to \omega'$. The commutation relations for the continuous bosonic operators then read
+which satisfy the commutation relations
+\[
+[\hat{a}[\omega], \hat{a}^\dagger[\omega']] = \lim_{L \to \infty} \dfrac{[\hat{a}_{\omega_{\ell\vphantom{'}}}^{\vphantom{\dagger}}, \hat{a}_{\omega_{\ell'}}^\dagger] }{\Delta f} =  2\pi\delta(\omega - \omega'), \quad [\hat{a}[\omega], \hat{a}[\omega']] = [\hat{a}^\dagger[\omega], \hat{a}^\dagger[\omega']] = 0.
+\] 
+
+
+
+\section*{Two photon formalism}
+\addcontentsline{toc}{section}{Two photon formalism}
+\subsubsection{Quadratures}
+
+We will now consider mode field frequencies $\omega = \omega_0 + \Omega$ around a carrier frequency $\omega_0$, such that the integral term becomes
+\[
+\int^{\infty}_0 \dfrac{d\omega}{2\pi}(...) \quad \to \quad \int_{-\omega_0}^{\infty} \dfrac{d\Omega}{2\pi}(...) \sim \int_{-B}^{B} \dfrac{d\Omega}{2\pi}(...) \sim \int_{-\infty}^{\infty} \dfrac{d\Omega}{2\pi}(...)
+\]
+where $B$ is the detection bandwidth, which is always much smaller than the optical frequency $\omega_0$. We can then safely extend the integral limits to infinity. Assuming that the mode function $\text{f}(\mathbf{r}, \omega)$ does not vary significantly over the bandwidth $B$, we can approximate it by its value at the carrier frequency $\text{f}(\mathbf{r}, \omega_0) \equiv \text{f}(\mathbf{r})$. Pulling out this term from the integral, one can then project the electric field operator onto both the proper polarization axis and this mode function such that the electric field operator becomes spatially independent and reads
+\begin{equation}
+  \begin{split}
+\hat{E}(t) = i  \mathcal{E}_0 \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[&\hat{a}_+^{\vphantom{\dagger}}\,e^{-i(\omega_0 + \Omega )t}
+- \hat{a}_+^{\dagger}\,e^{+i(\omega_0 + \Omega )t} \\
+& + \hat{a}_-^{\vphantom{\dagger}}\,e^{-i(\omega_0 - \Omega )t}
+- \hat{a}^{\dagger}_-\,e^{+i(\omega_0 - \Omega )t} \Big]
+\end{split}
+\end{equation}
+with $\mathcal{E}_0 = \sqrt{\hbar \omega/2 \varepsilon_0 \mathcal{A} c}$, and where we additionally split the integral term in two, introducing negative and positive sideband frequencies whose annihilation and creation operators are written as
+\[\hat{a}^{\vphantom{\dagger}}_{ \pm} \equiv c_\pm\hat{a}^{\vphantom{\dagger}}[\omega_0 \pm \Omega] \quad \text{and} \quad \hat{a}^\dagger_{ \pm} \equiv c_\pm \hat{a}^\dagger[\omega_0 \pm \Omega]\quad \text{with}\quad  c_\pm = \sqrt{\dfrac{\omega_0 \pm \Omega}{\omega_0}}.\]
+The commutators then read
+\[[\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\pm}^\dagger] = 2 \pi c_\pm^2 \delta(\Omega - \Omega') \,, \quad
+[\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\pm}^{\vphantom{\dagger}} ] = [\hat{a}_{\pm}^\dagger, \hat{a}_{\pm}^\dagger] = 0\]
+\[[\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\mp}^\dagger] = 2 \pi c_+ c_- \delta(\Omega + \Omega') \,, \quad
+[\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\mp}^{\vphantom{\dagger}} ] = [\hat{a}_{\pm}^\dagger, \hat{a}_{\mp}^\dagger] = 0\]
+We then regroup the terms along common quadratures $\cos \omega_0 t$ and $\sin \omega_0 t$ such that we get
+\begin{equation*}
+  \begin{split}
+   \hat{E}(t) = i  \mathcal{E}_0 \bigg[ \cos \omega_0 t  \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[& (\hat{a}_+^{\vphantom{\dagger}} - \, \hat{a}_-^{\dagger})\,e^{-i\Omega t} + (\hat{a}_-^{\vphantom{\dagger}} - \, \hat{a}_+^{\dagger})\,e^{+i \Omega t} \Big] \\ 
+    - i   \sin \omega_0 t  \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[&(\hat{a}_+^{\vphantom{\dagger}} + \, \hat{a}_-^{\dagger})\,e^{-i\Omega t} + (\hat{a}_-^{\vphantom{\dagger}} + \, \hat{a}_+^{\dagger})\,e^{+i \Omega t} \Big] \bigg] 
+  \end{split}
+\end{equation*}
+We now define the two-photon quadrature operators as
+\[\hat{p}^{\vphantom{\dagger}}[\Omega] = \hat{a}_+^{\vphantom{\dagger}} + \hat{a}_-^{\dagger} \,, \quad \hat{q}^{\vphantom{\dagger}}[\Omega] = i(\hat{a}_-^{\dagger} - \hat{a}_+^{\vphantom{\dagger}} )\]
+such that the electric field operator reads
+\begin{equation}
+  \begin{split}
+   \hat{E}(t) = \mathcal{E}_0 \bigg[  \cos ( \omega_0 t - \dfrac{\pi}{2}) \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[& \hat{p}^{\vphantom{\dagger}}[\Omega] \,e^{-i\Omega t} +\hat{p}^{\dagger}[\Omega] \,e^{+i \Omega t} \Big] \\ 
+    +  \sin ( \omega_0 t - \dfrac{\pi}{2})  \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[&\hat{q}^{\vphantom{\dagger}}[\Omega]\,e^{-i\Omega t} + \hat{q}^{\dagger}[\Omega]\,e^{+i \Omega t} \Big] \bigg] 
+  \end{split}
+\end{equation}
+where we used the fact that $\hat{p}^\dagger[\Omega] = \hat{p}^{\vphantom{\dagger}}[-\Omega]$ and $\hat{q}^\dagger[\Omega] = \hat{q}^{\vphantom{\dagger}}[-\Omega]$. The $\pi/2$ phase shifts originate from the leading factor $i$ in the electric-field operator. Had the field operator been written without that prefactor (and without the minus sign in the creation-term), the resulting cosine and sine components would contain no such phase offset. The commutation relations for these quadrature operators read
+\begin{equation*}
+  \begin{split}
+[\hat{p}^{\vphantom{\dagger}}[\Omega], \hat{q}^\dagger[\Omega']] & = [\hat{q}^{\vphantom{\dagger}}[\Omega], \hat{p}^\dagger[\Omega']] = 4 \pi i  \delta(\Omega - \Omega') \, \\ 
+[\hat{p}^{\vphantom{\dagger}}[\Omega], \hat{p}^\dagger[\Omega']] & = [\hat{q}^{\vphantom{\dagger}}[\Omega], \hat{q}^\dagger[\Omega']] = 4 \pi  \dfrac{\Omega}{\omega_0}\delta(\Omega - \Omega') \sim 0 \,\quad \text{if} \quad  \Omega \ll \omega_0  \\
+[\hat{p}^{\vphantom{\dagger}}[\Omega], \hat{q}^{\vphantom{\dagger}}[\Omega']] & = [\hat{p}^\dagger[\Omega], \hat{q}^\dagger[\Omega']] = 0 \,.
+  \end{split}
+\end{equation*}
+In the limit where the sideband frequencies are small compared to the carrier frequency i.e. $\Omega \ll \omega_0$, we can approximate these prefactors by $c_\pm \sim 1$. 
+
+\subsubsection*{States and Operators in the Two-Photon Formalism}
+In a similar fashion as in the single-mode case, we can define the displacement operator as
+\[\hat{D}(\alpha) = \exp\left( \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, \left[ \alpha(\Omega) \hat{a}^\dagger_- - \alpha^*(\Omega) \hat{a}^{\vphantom{\dagger}}_+  \right] \right)\]
+as well as a squeezing operator
+\[\hat{S}(r, \theta) = \exp\left( \dfrac{r}{2} \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \,\left[ e^{- i \theta(\Omega)} \hat{a}^{\vphantom{\dagger}}_+ \hat{a}^{\vphantom{\dagger}}_- - e^{ i \theta(\Omega)} \hat{a}^\dagger_+ \hat{a}^\dagger_- \right] \right)\]
+where $r$ is the squeezing factor and $\theta(\Omega)$ the squeezing angle. Here we assumed the squeezing parameter to be frequency independent, but one can easily generalize to a frequency dependent squeezing parameter $r(\Omega)$. Using the sidebands annihilation operators defined previously, we can compute the action of the displacement and squeezing operators as
+\begin{align*}
+\hat{D}^\dagger(\alpha) \,\hat{a}^{\vphantom{\dagger}}_+ \,\hat{D}(\alpha) & = \hat{a}^{\vphantom{\dagger}}_+ + \alpha(\Omega) \,, \\
+\hat{S}^\dagger(r, \theta) \,\hat{a}^{\vphantom{\dagger}}_+ \,\hat{S}(r, \theta) & = \hat{a}^{\vphantom{\dagger}}_+ \cosh r - e^{i \theta(\Omega)} \hat{a}^\dagger_- \sinh r \,.
+\end{align*}
+such that one can then compute the expectation values and variances of the quadrature operators for displaced squeezed states. We consider a intial vacuum state $|0\rangle$, and we displace it by a coherent amplitude $\alpha(\Omega) = \alpha \delta(\Omega)$ i.e. a carrier, monochromatic field of complex amplitude $\alpha$ sitting at frequency 0 (we factored out the $e^{-i\omega_0t} $ already) and squeeze it with parameters $r$ and $\theta(\Omega)$. The resulting state reads
+\[|\psi\rangle = \hat{S}(r, \theta) \hat{D}(\alpha)  |0\rangle.\]
+Applying both operators to the annihilation operators yields 
+\begin{align*}
+\hat{D}^\dagger(\alpha) \hat{S}^\dagger(r, \theta)  \,\hat{a}^{\vphantom{\dagger}}_+ \, \hat{S}(r, \theta) \hat{D}(\alpha) & = \left( \hat{a}^{\vphantom{\dagger}}_+ + \alpha \delta (\Omega) \right) \cosh r - e^{i \theta(\Omega)} \left( \hat{a}^\dagger_- + \alpha^* \delta (\Omega) \right) \sinh r \, \\
+\hat{D}^\dagger(\alpha) \hat{S}^\dagger(r, \theta)  \,\hat{a}^{\dagger}_- \, \hat{S}(r, \theta) \hat{D}(\alpha) & = \left( \hat{a}^\dagger_- + \alpha^* \delta (\Omega) \right) \cosh r - e^{-i \theta(\Omega)} \left( \hat{a}^{\vphantom{\dagger}}_+ + \alpha \delta (\Omega) \right) \sinh r \,.
+\end{align*}
+such that the expectation valurs are computed as
+\begin{align*}
+\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle & = \delta(\Omega) (\alpha \cosh r - \alpha^* e^{i \theta(\Omega)} \sinh r) \,, \\
+\langle \hat{a}^{\dagger}_{-} \rangle & = \delta(\Omega) (\alpha^* \cosh r - \alpha e^{-i \theta(\Omega)} \sinh r) \,.
+\end{align*}
+
+and we compute the expectation value of our two-photon annihilation operator as
+\[\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle = \alpha \delta(\Omega) \, \quad  \text{and} \quad   \langle \hat{a}^{\dagger}_{-} \rangle = \alpha^* \delta(\Omega) \]
+
+
+
+The electric field operator finally reads
+\begin{equation}
+  \begin{split}
+\hat{\mathbf{E}}(\mathbf{r}, t)
+= i \sqrt{\dfrac{\hbar \omega_0}{\varepsilon_0 \mathcal{A} c}} &  \Bigg[ \,\int_{-\infty}^{\infty} \dfrac{d\Omega}{2\pi} \,\left[ \hat{a}^{\vphantom{\dagger}}_{ \Omega}\,e^{-i(\omega_0 + \Omega) t}
+- \hat{a}^{\dagger}_{ \Omega}\,e^{+i(\omega_0 + \Omega) t} \right] \\ 
+& \Bigg]
+  \end{split}
+\end{equation}
+
+such that the classical part of the electric field reads
+
+
+We start from the standard single-mode field quantization in terms of annihilation and creation operators \(\hat a\) and \(\hat a^\dagger\):
+\[
+\hat E(t) = \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \left( \hat a e^{-i\omega_0 t} + \hat a^\dagger e^{i\omega_0 t} \right).
+\]  
+and we now make our bosonic operators time-dependent, \(\hat a \to \hat a(t)\), to account for sidebands around the carrier frequency \(\omega_0\). Using the Fourier transform convention
+\[
+\hat a(t) = \int_{-\infty}^{+\infty} \frac{d\Omega}{2\pi} \hat a[\Omega] e^{-i\Omega t},
+\]
+we rewrite the field operator as
+\[
+\hat E(t) = \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \int_{-\infty}^{+\infty} \frac{d\Omega}{2\pi} \left( \hat a[\Omega] e^{-i(\omega_0 + \Omega) t} + \hat a^\dagger[\Omega] e^{i(\omega_0 + \Omega) t} \right).
+\]  
+
+
 
 \begin{align}
 \hat p[\Omega]
@@ -156,7 +318,8 @@ This derivation makes explicit how the PDH method uses phase-sensitive detection
 
 
 
-\chapter*{Derivation of the optimal angle}
+\section*{Derivation of the optimal angle}
+\addcontentsline{toc}{section}{Derivation of the optimal angle}
 \subsection*{Optimal fixed homodyne angle with complex \texorpdfstring{$\mathcal{K}$}{K}}
 
 Assume the measured (reflected) quadrature is

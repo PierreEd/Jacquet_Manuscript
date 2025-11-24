@@ -50,21 +50,20 @@ We consider the quantised electromagnetic field in a volume $V$. The electric fi
 \left[ \hat{a}^{\vphantom{\dagger}}_{\ell}\,\mathbf{f}_{\ell}(\mathbf{r})\,e^{-i\omega_{\ell} t} 
 - \hat{a}_{\ell}^\dagger\,\mathbf{f}_{\ell}^*(\mathbf{r})\,e^{+i\omega_{\ell} t} \right],
 \end{equation}
-where   $\mathcal{E}_l = \sqrt{\dfrac{\hbar \omega_l}{2 \varepsilon_0 V}}$ is the field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
+where   $\mathcal{E}_\ell = \sqrt{\dfrac{\hbar \omega_\ell}{2 \varepsilon_0 V}}$ is the field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
 \begin{equation*}
 \int_V d^3r\; \mathbf{f}_{\ell}^*(\mathbf{r}) \cdot \mathbf{f}_{\ell'}(\mathbf{r}) 
-= \delta_{\ell \ell'} , \quad \mathbf{f}_{\ell}(\mathbf{r}) \propto E_{mn}(\mathbf{r}) 
+= \delta_{\ell \ell'} , \quad \mathbf{f}_{\ell}(\mathbf{r}) \propto E_{mn}(\mathbf{r}) \boldsymbol{\epsilon}_x
 \end{equation*}
-The index $\ell$ then labels the different modes, which can include spatial, polarization, and frequency degrees of freedom. \\
+where we assumed a linearly polarized field along the $x$-axis, with $\boldsymbol{\epsilon}_x$ the corresponding unit vector. The index $\ell = (m,n,\Pi)$ then labels the different modes, which can include spatial and polarization degrees of freedom $\Pi$. \\
 
+\subsubsection{Fock basis}
 The annihilation and creation operators $\hat{a}_{\ell}$ and $\hat{a}_{\ell}^\dagger$ satisfy the canonical commutation relations  
 \[
 [\hat{a}_{\ell}^{\vphantom{\dagger}}, \hat{a}_{\ell'}^\dagger] = \delta_{\ell \ell'} \,, \quad
 [\hat{a}_{\ell}^{\vphantom{\dagger}}, \hat{a}_{\ell'}^{\vphantom{\dagger}} ] = 0, \quad [\hat{a}_{\ell}^\dagger, \hat{a}_{\ell'}^\dagger] = 0. 
 \]
-
-\subsubsection{Fock basis}
-In this description of the optical field, each mode $\ell$ is modeled as a quantum harmonic oscillator with a discrete set of energy eigenstates known as \textit{Fock states} or number states, denoted $\ket{n_\ell}$. These states form an orthonormal basis and satisfy $\hat{n}_{\ell} \ket{n_\ell} = n_\ell \ket{n_\ell}$, where $\hat{n}_{\ell}$ is the number operator defined by
+Each mode $\ell$ is then modeled as a quantum harmonic oscillator with a discrete set of energy eigenstates known as \textit{Fock states} or number states, denoted $\ket{n_\ell}$. These states form an orthonormal basis and satisfy $\hat{n}_{\ell} \ket{n_\ell} = n_\ell \ket{n_\ell}$, where $\hat{n}_{\ell}$ is the number operator defined by
 \[
 \hat{n}_{\ell} = \hat{a}_{\ell}^\dagger \hat{a}^{\vphantom{\dagger}}_{\ell}.
 \]
@@ -79,12 +78,25 @@ They allow transitions between Fock states by lowering or raising the photon num
 \end{equation}
 where we ignore the constant zero-point energy term $\frac{1}{2} \hbar \omega_{\ell}$ for simplicity. \\
 
+We now turn to the standard description of EM modes we will use throughout this thesis. We consider EM modes in an infinite volume, with a propagation direction along the $z$-axis, and a transverse spatial mode profile given by $\mathbf{f}(\mathbf{r})$. Projecting the electric field operator onto this mode, we obtain a scalar field operator
+\begin{equation}
+  \hat E (t) = i \sqrt{\frac{2\pi\hbar\omega_0}{\mathcal A c}} \left( \hat{a}^{\vphantom{\dagger}} e^{-i\omega_0 t} - \hat{a}^\dagger e^{+i\omega_0 t} \right)
+\end{equation}
+where $\mathcal A$ is the effective mode cross-sectional area, defined by
+
+
+
+
 In the following parts, we will always focus on a single mode of the electromagnetic field unless stated otherwise (for the mode matching part), which is sufficient to illustrate the concepts of quantum optics and optomechanics. The generalization to multiple modes is straightforward and follows the same principles. The electric field operator is then written
 \begin{equation}
 \hat{\mathbf{E}}(\mathbf{r}, t)
 = i \mathcal{E}_0
 \left[ \hat{a}^{\vphantom{\dagger}}\,\mathbf{f}(\mathbf{r})\,e^{-i\omega_0 t}
 - \hat{a}^\dagger\,\mathbf{f}^*(\mathbf{r})\,e^{+i\omega_0 t} \right].
+\end{equation}
+and we can conveniently project it in the mode function $\mathbf{f}(\mathbf{r})$ to obtain a scalar field operator
+\begin{equation}
+\hat{E}(t) = i \sqrt{\frac{2\pi\hbar}{\mathcal A c}} \left( \hat{a}^{\vphantom{\dagger}} e^{-i\omega_0 t} - \hat{a}^\dagger e^{+i\omega_0 t} \right).
 \end{equation}
 
 
@@ -158,7 +170,7 @@ and it then follows that the quadrature operators can also be expressed as
 where the fluctuations retain the canonical commutation relations
 \begin{equation}
 [\delta \mathbf{\hat{a}}, \delta \mathbf{\hat{a}}^{\dagger}] = \mathbf{\sigma_z} \qquad \Rightarrow \qquad
-[\delta \mathbf{\hat{u}}_\phi^T, \delta \mathbf{\hat{u}}_\phi^T] = 2i\,\mathbf{J}.
+[\delta \mathbf{\hat{u}}_\phi, \delta \mathbf{\hat{u}}_\phi^\dagger] = 2i\,\mathbf{J}.
 \label{II.11}
 \end{equation}
 
@@ -277,11 +289,11 @@ That is, coherent states display Poissonian photon statistics.
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/quantum_states.pdf}
-\caption{Phase-space representations of quantum states and transformations.
-(a) Wigner function of the vacuum state: a circular Gaussian centered at the origin, representing equal quantum fluctuations in both quadratures $a_1$ and $a_2$.
-(b) Wigner function of a coherent state: a displaced circular Gaussian, showing a shift in phase space along an angle $\varphi$ with unchanged, isotropic noise.
-(c) Wigner function of a squeezed vacuum state: an elliptical Gaussian centered at the origin, with reduced noise along a rotated quadrature $X_\theta$ and increased noise in the orthogonal direction.
-(d) Wigner function of a displaced squeezed state: an ellipse shifted away from the origin, combining anisotropic fluctuations and a nonzero mean amplitude. The displacement angle $\varphi$ and squeezing angle $\theta$ are independent.} 
+\caption{Phase-space representations of Gaussian quantum states. 2D cuts of the Wigner function in the quadrature plane $(a_1[\Omega], a_2[\Omega])$ at a given frequency.
+(a) vacuum state: a circular Gaussian centered at the origin, featuring equal quantum fluctuations in both $a_1$ and $a_2$ quadratures.
+(b) coherent state: a displaced circular Gaussian, showing a shift in phase space along an angle $\varphi$ with vacuum fluctuations. This corresponds to either the carrier ($\Omega=0$), or a sideband frequency with a non zero modulation.  
+(c) vacuum squeezed state: an elliptical Gaussian centered at the origin, with reduced noise along a rotated quadrature and increased noise in the orthogonal direction. 
+(d) bright squeezed state: an ellipse shifted away from the origin, combining anisotropic fluctuations and a nonzero mean amplitude. The displacement angle $\varphi$ and squeezing angle $\theta$ are independent. } 
 \end{figure}
 
 
@@ -338,11 +350,11 @@ The corresponding mean vector is
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/quantum_quadraturesBis.pdf}
-\caption{Phase-space representations of quantum states and transformations.
-(a) Wigner function of the vacuum state: a circular Gaussian centered at the origin, representing equal quantum fluctuations in both quadratures $X_1$ and $X_2$.
-(b) Wigner function of a coherent state: a displaced circular Gaussian, showing a shift in phase space along an angle $\varphi$ with unchanged, isotropic noise.
-(c) Wigner function of a squeezed vacuum state: an elliptical Gaussian centered at the origin, with reduced noise along a rotated quadrature $X_\theta$ and increased noise in the orthogonal direction.
-(d) Wigner function of a displaced squeezed state: an ellipse shifted away from the origin, combining anisotropic fluctuations and a nonzero mean amplitude. The displacement angle $\varphi$ and squeezing angle $\theta$ are independent. \color{red} mistake on p and q  \color{black}}
+\caption{Phase-space representations of bright squeezed states with the different quadratures choices.
+(a) generic bright squeezed state. 
+(b) projection of the quantum noise on the standard quadratures  ($a_1,a_2$). 
+(c) projection of the quantum noise on the ellipse major axes quadratures ($a_\theta,a_{\theta + \pi/2}$), with $\theta$ the ellipse angle with respect to the standard quadratures. 
+(d) projection of the quantum noise on the amplitude and phase quadratures ($p,q$). } 
 \end{figure}
 
 \noindent \textbf{Covariance matrix: }
@@ -656,12 +668,16 @@ An optical cavity is a structure that \textit{traps} photons by means of reflect
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/cavity_types.pdf}
-\caption{Yes} 
+\caption{Geometries of various cavity types used in this work. 
+(a) Linear concave-concave cavity (confocal in the $L \sim 2R$ case). 
+(b) Linear plano-concave cavity. (a) and (b) are both standing wave cavities. 
+(c) Planar triangular cavity. 
+(d) Planar bow-tie cavity. (c) and (d) are both travelling wave cavities. } 
 \label{fig:cavity_types}
 \end{figure}
 
 
-\noindent \textbf{Linear standing wave cavities:} We first consider the two linear cavities used in this work, namely a confocal cavity (Fig \ref{fig:cavity_types}.(a)) with two identical concave mirrors, and a plano-concave cavity with one flat mirror and one concave mirror  (Fig \ref{fig:cavity_types}.(b)). Using the ABCD formalism for a confocal cavity of length $L$ formed by two identical mirrors of radii of curvature $R$, the stability condition reads
+\noindent \textbf{Linear standing wave cavities:} We first consider the two linear cavities used in this work, namely a concave-concave cavity (Fig \ref{fig:cavity_types}.(a)) with two identical concave mirrors, and a plano-concave cavity with one flat mirror and one concave mirror  (Fig \ref{fig:cavity_types}.(b)). Using the ABCD formalism for a confocal cavity of length $L$ formed by two identical mirrors of radii of curvature $R$, the stability condition reads
 \begin{equation}
    \quad 0 < L < 2R
 \end{equation}
@@ -729,7 +745,7 @@ We consider a single field cavity mode described by the annihilation operator \(
 \end{equation}
 where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\gamma/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Here losses $\gamma$ have ppm units. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by:
 \begin{equation}
-  \hat{a}_{\mathrm{r}} = \sqrt{\kappa_{1}}\hat{a} - \hat{a}_{\mathrm{in}} , \quad \hat{a}_{\mathrm{t}} = \sqrt{\kappa_{2}}\hat{a} - \delta \hat{a}_{\mathrm{vac}} 
+  \hat{a}_{\mathrm{ref}} = \sqrt{\kappa_{1}}\hat{a} - \hat{a}_{\mathrm{in}} , \quad \hat{a}_{\mathrm{trans}} = \sqrt{\kappa_{2}}\hat{a} - \delta \hat{a}_{\mathrm{vac}} 
 \end{equation}
 for both the reflected and transmitted field. In the input-output formula, the $\hat{a}_{\mathrm{in}}$ refers to the field incoming on the coupler considered, which are simple vacuum fluctuations on the output coupler since we don't shine the laser by this port.\\
 
@@ -756,7 +772,10 @@ As introduced in the previous subsection, one can split the annihilation operato
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/CavitySimple.pdf}
-\caption{Yes} 
+\caption{Filtering properties of optical cavities. 
+(a) Cavity diagram and definitions. $\hat a$'s are the various fields at play. $\kappa$'s are the various couplings involved i.e. input and output mirrors, as well as intrinsic cavity cavity losse, with $\delta \hat  a$'s the associated fluctuations. 
+(b) Amplitude and phase response of an optical cavity as a function of the laser detuning (in cavity linewidth unit). In this case, both mirrors are identical ($\kappa_1 = \kappa_2$) and cavity losses are negligible ($\kappa_0 \ll \kappa_1$). 
+(c) Transfer functions of the input classical noises as in \eqref{eq:MCIR}}. 
 \label{fig:CavitySimple}
 \end{figure}
 
@@ -768,13 +787,13 @@ As introduced in the previous subsection, one can split the annihilation operato
 \end{equation}
 Patching it up with the input-output formula this gives 
 \begin{equation}
-  \bar{\alpha}_{\mathrm{r}} =  \Bigg( \frac{\kappa_1}{\kappa/2-i\Delta} - 1 \Bigg)  \bar{\alpha}_{\mathrm{in}}   \quad \quad \quad  \bar{\alpha}_{\mathrm{t}} =  \frac{\sqrt{\kappa_1 \kappa_2}}{\Big(\kappa/2-i\Delta\Big)} \bar{\alpha}_{\mathrm{in}}.
+  \bar{\alpha}_{\mathrm{ref}} =  \Bigg( \frac{\kappa_1}{\kappa/2-i\Delta} - 1 \Bigg)  \bar{\alpha}_{\mathrm{in}}   \quad \quad \quad  \bar{\alpha}_{\mathrm{trans}} =  \frac{\sqrt{\kappa_1 \kappa_2}}{\Big(\kappa/2-i\Delta\Big)} \bar{\alpha}_{\mathrm{in}}.
 \end{equation}
 The reflection and transmission coefficients are then
 \begin{equation}
-R(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{r}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
+R(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{ref}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
 = \frac{\bigl(\kappa_1-\kappa/2\bigr)^2+\Delta^2}{\bigl(\kappa/2)^2+\Delta^2} \quad \quad
-T(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{t}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
+T(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{trans}}}{\bar{\alpha}_{\mathrm{in}}}\right|^2
 = \frac{\kappa_1\kappa_2}{\bigl(\kappa/2\bigr)^2+\Delta^2}.
 \end{equation}
 The cavity linewidth (FWHM) is then given by $\kappa$, as illustrated In Fig \ref{fig:CavitySimple}.(b). Plugging back the expression of $\kappa_i = T_i/\tau$ in the reflection coefficient, we have 
@@ -832,15 +851,6 @@ For notational convenience, we will drop the explicit dependence on $\Omega$ in 
   \mathbf{\delta \hat{a}_{\mathrm{trans}}} & =  \sqrt{\kappa_2} \,\mathbf{M}^{-1}_\Delta (\sqrt{\kappa_1} \mathbf{\delta \hat{a}_{\mathrm{in}}} + \sqrt{\kappa_0}  \mathbf{\delta \hat{a}_{\mathrm{l}}} ) +  (\kappa_2 \,\mathbf{M}^{-1}_\Delta - \mathbf{1}) \, \mathbf{\delta \hat{a}_{\mathrm{vac}}}
   \end{split}
 \end{equation}
-The diagonal matrix multiplying the input field fluctuations i.e. $( \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} )$ is the cavity reflection transfer function. It is conveniently rewritten using the one photon complex reflectivity $r_\Delta [\Omega]$ such that this term reads
-\begin{equation*}
-  \kappa_1 \, \mathbf{M}^{-1}_\Delta - \mathbf{1} = \begin{pmatrix}
-  r_\Delta[\Omega] & 0 \\
-  0 & r_\Delta^{*}[-\Omega]
-  \end{pmatrix}, \quad r_\Delta[\Omega] = \frac{\kappa_1}{\kappa/2 - i(\Delta + \Omega)} - 1 
-\end{equation*}
-A step further, we 
-
 Using $\delta \hat{\mathbf{a}} = \mathbf \Gamma^{-1} \delta \hat{\mathbf{u}}$ the reflected and transmitted quadratures read
 \begin{equation}
   \begin{split}
@@ -858,7 +868,6 @@ where the matrix product above reads
 \end{pmatrix}.
 \end{equation*}
 
-
 The structure above is the engine behind frequency-dependent squeezing. On resonance, we have 
 \begin{equation*}
 \mathbf{M}_0^{-1} = \frac{1}{\kappa/2 - i\Omega} \mathbf{I} \quad \implies \quad  \mathbf{\Gamma} \mathbf{M}_0^{-1} \mathbf{\Gamma}^{-1} = \frac{1}{\kappa/2 - i\Omega} \mathbf{I}
@@ -874,9 +883,12 @@ causing symmetric sidebands around the carrier to be filtered identically both i
   \mathbf{\delta \hat{u}_{\mathrm{trans}}}   &= \, \dfrac{ \sqrt{\kappa_1 \kappa_2}}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}} +  \dfrac{\kappa_2-\kappa/2+i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}   + \dfrac{\sqrt{\kappa_2 \kappa_0} }{\kappa/2-i\Omega}  \mathbf{\delta \hat{u}_{\mathrm{l}}}
   \end{split}
 \end{equation}
-If we consider the reflected quadratures noise spectra we see that 
+and their noise spectra are 
 \begin{equation}
-   \mathbf{S}_{\mathrm{ref}}[\Omega] =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}[\Omega]+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_2 \, \mathbf{1}+\kappa_0 \,\mathbf{1}\Big) 
+  \begin{split}
+   \mathbf{S}_{\mathrm{ref}}[\Omega] & =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}[\Omega]+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_0 \,\mathbf{1} + \kappa_2 \, \mathbf{1}\Big) \\ 
+     \mathbf{S}_{\mathrm{trans}}[\Omega] & =\frac{(\kappa_2-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{1}+\frac{\kappa_2}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_0 \, \mathbf{1}+\kappa_1 \mathbf{S}_{\mathrm{in}} \,\Big) \\ 
+   \end{split}
 \end{equation}
 where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$ i.e. $\kappa_1 + \kappa_0 \rightarrow \kappa_1$. \\
 
@@ -896,6 +908,57 @@ where the transfer matrices for the input and loss ports given by
       \mathbf{T}_{\mathrm{trans}}=   \sqrt{\kappa_1 \kappa_2} \, \mathbf{\Gamma}  \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}, \quad \mathbf{L}_{\mathrm{trans}}= \kappa_2 \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}
   \end{split}
 \end{equation*}
+
+
+Conveniently, we introduce the complex reflectivities and transmissivities experienced by the sideband fields as 
+\begin{equation}
+  \begin{split}
+  r_{\Delta}[\Omega] &= \frac{\kappa_1 }{\kappa/2 - i(\Delta + \Omega)} - 1 \\
+   r'_{\Delta}[\Omega] &= \frac{\kappa_2 }{\kappa/2 - i(\Delta + \Omega)} - 1  \\
+  t_{\Delta}[\Omega] &= \frac{\sqrt{\kappa_1 \kappa_2}}{\kappa/2 - i(\Delta + \Omega)}
+  \end{split}
+\end{equation}
+Here we introduced two different reflection coefficients: $r_{\Delta}[\Omega]$ for the input coupler, and $r'_{\Delta}[\Omega]$ for the output coupler describing the reflection of the incoming field fluctuations on each port. The transmission coefficient $t_{\Delta}[\Omega]$ is the same for both ports since it describes the field fluctuations transmitted from one port to the other, no matter what the direction of propagation is. We can now define the modulus and phase of the positive and negative sideband reflectivities and transmissivities as
+\begin{equation}
+\begin{split}
+  r_+ e^{i \phi_+}  &= r_{\Delta}[\Omega]   \quad \text{,} \quad    r_- e^{-i \phi_-} = r_{\Delta}^*[-\Omega]  \\
+  r'_+ e^{i \phi'_+}  &= r'_{\Delta}[\Omega]   \quad \text{,} \quad    r'_- e^{-i \phi'_-} = r_{\Delta}^{'*}[-\Omega]  \\
+   t_+ e^{i \theta_+}  &= t_{\Delta}[\Omega]\quad \text{,} \quad  t_- e^{-i \theta_-} = t_{\Delta}^*[-\Omega] \\ 
+\end{split}
+\end{equation}
+describing the amplitude filtering and dephasing underwent by a sideband at $\Omega$ and its two-photon conjugate in both reflection and transmission. The output quadrature transfer matrices can then be expressed as
+\begin{equation*}
+     \mathbf{T}_{\mathrm{ref}} = \mathbf{\Gamma} \begin{pmatrix} r_+ e^{i \phi_+} & 0 \\ 0 & r_- e^{-i \phi_-} \end{pmatrix} \mathbf{\Gamma}^{-1}  \quad \text{and} \quad 
+     \mathbf{L}_{\mathrm{ref}}  =  \mathbf{\Gamma} \begin{pmatrix} t_+ e^{i \theta_+} & 0 \\ 0 & t_- e^{-i \theta_-} \end{pmatrix} \mathbf{\Gamma}^{-1} 
+\end{equation*}
+and in transmission as 
+\begin{equation*}
+     \mathbf{T}_{\mathrm{trans}} = \mathbf{\Gamma} \begin{pmatrix} t_+ e^{i \theta_+} & 0 \\ 0 & t_- e^{-i \theta_-} \end{pmatrix} \mathbf{\Gamma}^{-1}  \quad \text{and} \quad 
+     \mathbf{L}_{\mathrm{trans}}  =  \mathbf{\Gamma} \begin{pmatrix} r'_+ e^{i \phi'_+} & 0 \\ 0 & r'_- e^{-i \phi'_-} \end{pmatrix} \mathbf{\Gamma}^{-1} 
+\end{equation*}
+
+
+
+
+We use the usual transformation for the positive and negative sideband reflectivities as
+\begin{equation}
+\begin{split}
+  \bar r  &= \frac{r_+ + r_-}{2} \quad \text{,} \quad  \delta r  = \frac{r_+ - r_-}{2} \\
+  \bar \phi &= \frac{\phi_+ + \phi_-}{2} \quad \text{,} \quad  \delta \phi = \frac{\phi_+ - \phi_-}{2}
+\end{split}
+\end{equation}
+to finally write the reflected quadrature transfer matrices as
+\begin{equation}
+  \mathbf{T}_{\mathrm{ref}} = e^{i\delta \phi} \mathbf{R}(- \bar \phi ) \Big(\bar r \,  \mathbf{1} + i \, \delta r \,  \mathbf{R}(\pi/2)\Big) \quad \text{and} \quad
+  \mathbf{L}_{\mathrm{ref}} = e^{i\delta \theta} \mathbf{R}(- \bar \theta)(\bar t \mathbf{1} + i \delta t \mathbf{R}(\frac{\pi}{2}))
+\end{equation}
+as well as the transmitted quadrature transfer matrices
+\begin{equation}
+  \mathbf{T}_{\mathrm{trans}} = e^{i\delta \theta} \mathbf{R}(- \bar \theta)(\bar t \mathbf{1} + i \delta t \mathbf{R}(\dfrac{\pi}{2})) \quad \text{and} \quad
+  \mathbf{L}_{\mathrm{trans}} = e^{i\delta \phi} \mathbf{R}(- \bar \phi)(\bar r' \mathbf{1} + i \delta r' \mathbf{R}(\dfrac{\pi}{2}))
+\end{equation}
+
+
 such that the covariance matrices for the reflected and transmitted quadratures of a detuned cavity are given by
 \begin{equation}
   \begin{split}
@@ -903,20 +966,7 @@ such that the covariance matrices for the reflected and transmitted quadratures 
   \quad  \mathbf{S}_{\mathrm{trans}}[\Omega] &= \mathbf{T}_{\mathrm{trans}} \mathbf{S}_{\mathrm{in}} \mathbf{T}_{\mathrm{trans}}^{\dagger} + \mathbf{L}_{\mathrm{trans}}\mathbf{L}_{\mathrm{trans}}^{\dagger}
   \end{split}
 \end{equation}
-Additionally, we define the one-photon reflection matrix of the input field by 
-\begin{equation}
-  \mathbf{r}_{\Delta}[\Omega] = \kappa_1 \, \mathbf{M}^{-1}_\Delta- \mathbf{1} = \begin{pmatrix}
-    r_+ e^{i \phi_+} & 0 \\
-    0 &  r_- e^{-i \phi_-}
-  \end{pmatrix} \quad \text{with} \quad r_{\Delta}[\Omega] = \frac{\kappa_1 }{\kappa/2 - i(\Delta + \Omega)} - 1. 
-\end{equation}.
-where we wrote the complex reflectivities as $r_{\Delta}[\Omega] = r_+ e^{i \phi_+}$ and $r_{\Delta}^*[-\Omega] = r_- e^{-i \phi_-}$ and we use the usual transformation for the positive and negative sideband reflectivities as
-\begin{equation}
-\begin{split}
-  \bar r  &= \frac{r_+ + r_-}{2} \quad \text{,} \quad  \delta r  = \frac{r_+ - r_-}{2} \\
-  \bar \phi &= \frac{\phi_+ + \phi_-}{2} \quad \text{,} \quad  \delta \phi = \frac{\phi_+ - \phi_-}{2}
-\end{split}
-\end{equation}
+
 
 
 
@@ -949,6 +999,7 @@ Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$
 The resulting transmitted quadrature convariance matric is given by: 
 \begin{equation}
   \mathbf{S}_{\mathrm{t}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{In}}[\Omega] +\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
+  \label{eq:MCIR}
 \end{equation}
 Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is a Lorentzian function - a low pass filter. Hence, the noises of the input fields are low pass filtered by the cavity, while the vacuum fluctuations are high pass filtered at precisely the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its super-vacuum fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleant} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many precision experiments to provide a spectrally pure laser field, as well as a spatially filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.\\
 
@@ -1020,7 +1071,8 @@ where we assumed perfect phase matching for simplicity, that is $\epsilon \in\ma
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/schema_SHG_OPO_2photons.pdf}
-\caption{Yes} 
+\caption{Diagrams of $\chi^{(2)}$ non linear processes. 
+(a) Second Harmonic Generation ($2\omega_0 = \omega_p$). (b) Parametric Down Conversion. The outcoming photons are entangled.  } 
 \end{figure}
 
 
@@ -1030,7 +1082,7 @@ The SHG scheme consists in shining a laser field at frequency $\omega_0$ onto th
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/cavitySHG copy.pdf}
-\caption{Yes} 
+\caption{ Cavity diagram for the Second Harmonic Generation. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations, similar as in Fig I.4, now considering both the infrared pump, and the generated green beam.  } 
 \end{figure}
 
 We rather focus on the mean field solution. The scalar part of the QLE on resonance for both fields are given by 
@@ -1064,7 +1116,7 @@ For this scheme, we consider a pump field with frequency $\omega_p = 2\omega_0$.
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPO2.pdf}
-\caption{Yes} 
+\caption{Cavity diagram for the Optical Parametric Oscillator. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations, similar as in Fig I.4, now considering both the green pump, and the generated infrared squeezed beam. The beams are shifted for illustrative purposes but share the same optical axis in the experiment. } 
 \end{figure}
 
 We further consider the pump is not \textit{depleted}, such that we can change $\hat{b}$ to its mean field value $|\bar{\beta}|e^{i\bar{\varphi}_b}$, and we disregard the $\hat{b}$ fluctuations in the equations of motion for simplicity. A careful and complete derivations could also be carried out by keeping all terms in the equations of motion, but it is not serving our purpose here so we will these assumptions to lighten the notation. The total non linear gain is defined as $g = \epsilon |\bar\beta|$, and the QLEs for the steady state and fluctuation parts of the $\hat{a}$ field yields: 
@@ -1092,7 +1144,9 @@ in which the amplification or deamplification processes are set by the phase of 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/amp_deamp.pdf}
-\caption{Yes} 
+\caption{\color{red} add pump phase colorbar \color{black} Classical amplification-deamplification of a infrared seed in an Optical Parametric Oscillator below threshold. 
+(a) Gain of the infrared seed as a function of the green pump phase. The color variations correspond to the pump phase. 
+(b) Amplification-Deamplification of a infrared seed as a function of the normalised pump paramter $x$ ($<1$). The colors correspond to the ones on figure (a) (its extremas). } 
 \end{figure}
 
 \noindent \textbf{Fluctuations solution: } The general expression of the QLE in Fourier space is given by 
@@ -1195,7 +1249,10 @@ This expression is actually true for any Gaussian state suffering from losses. \
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPONoises.pdf}
-\caption{Yes} 
+\caption{Squeezing degradation properties of a non perfect OPO. 
+(a) Squeezing-Antisqueezing levels obtained as a function of frequency (in cavity linewidth unit). The squeezing-antisqueezing levels are maximised at 100\% escape efficiency and inside the cavity linewidth (see dark red and dark blue curves). 
+(b) Squeezing-antisqueezing levels as a function of the escape efficiency. 
+(c) Output Squeezing level as a function of the Input Squeezing level (right at the OPO output) considering various optical loss values (extrinsic losses). } 
 \end{figure}
 
 
@@ -1223,7 +1280,7 @@ We now turn to standard optomechanical cavities. As in the simple FP case, we co
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/CavityOM.pdf}
-\caption{Yes} 
+\caption{Diagram generic optomechanical system. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations. $\hat x$ is the quantum position operator of the mechanical resonator which linearly shifts the cavity resonance frequency. } 
 \label{fig:cavity_types}
 \end{figure}
 
