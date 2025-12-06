@@ -1,0 +1,478 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{arcizet_radiation-pressure_2006}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=dcf41525351bdb0f34600fda8786bb08}{%
+           family={Arcizet},
+           familyi={A\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a8ea3d4e89c0c0c291fa6469a4ce8523}{%
+           family={Cohadon},
+           familyi={C\bibinitperiod},
+           given={P.-F.},
+           giveni={P\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=30deb9e73d54c40eb2220d5a1779954a}{%
+           family={Briant},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=76577fd5f84e8031819da12a42a59ab4}{%
+           family={Pinard},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e87fde409b609a5c3db3683847d38ec9}{%
+           family={Heidmann},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{495c972da6c80b0e50b151f355cbd0a7}
+      \strng{fullhash}{c440a7b14de4675d355cfeeb57b81faa}
+      \strng{fullhashraw}{c440a7b14de4675d355cfeeb57b81faa}
+      \strng{bibnamehash}{495c972da6c80b0e50b151f355cbd0a7}
+      \strng{authorbibnamehash}{495c972da6c80b0e50b151f355cbd0a7}
+      \strng{authornamehash}{495c972da6c80b0e50b151f355cbd0a7}
+      \strng{authorfullhash}{c440a7b14de4675d355cfeeb57b81faa}
+      \strng{authorfullhashraw}{c440a7b14de4675d355cfeeb57b81faa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0028-0836, 1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{7115}
+      \field{shortjournal}{Nature}
+      \field{title}{Radiation-pressure cooling and optomechanical instability of a micromirror}
+      \field{urlday}{9}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{volume}{444}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{71\bibrangedash 74}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nature05244
+      \endverb
+      \verb{file}
+      \verb nature05244.pdf:C\:\\Users\\jacqu\\Downloads\\nature05244.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/articles/nature05244
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/articles/nature05244
+      \endverb
+    \endentry
+    \entry{Kimble2001}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=aea70dd628dc6535ce5213ef85f63855}{%
+           family={Kimble},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6246006486aa4f55a80efddc774ef379}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Yuri},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c64517556e37f697ce33f9e637a8cce2}{%
+           family={Matsko},
+           familyi={M\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=03d1a9e22728f8baf71813d4154e7c34}{%
+           family={Thorne},
+           familyi={T\bibinitperiod},
+           given={Kip},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0503a086d7ab6718bad3d6af8b58b41c}{%
+           family={Vyatchanin},
+           familyi={V\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{fullhash}{0f872389b25df4b39a5b52b23a321a4f}
+      \strng{fullhashraw}{0f872389b25df4b39a5b52b23a321a4f}
+      \strng{bibnamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authorbibnamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authornamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authorfullhash}{0f872389b25df4b39a5b52b23a321a4f}
+      \strng{authorfullhashraw}{0f872389b25df4b39a5b52b23a321a4f}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0556-2821}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{{Conversion of conventional gravitational-wave interferometers into quantum nondemolition interferometers by modifying their input and/or output optics}}
+      \field{volume}{65}
+      \field{year}{2001}
+      \field{pages}{022002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.65.022002
+      \endverb
+      \verb{urlraw}
+      \verb http://link.aps.org/doi/10.1103/PhysRevD.65.022002
+      \endverb
+      \verb{url}
+      \verb http://link.aps.org/doi/10.1103/PhysRevD.65.022002
+      \endverb
+    \endentry
+    \entry{clerk_introduction_2010}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=53516e70e3f4d823e360e95e4df4b51d}{%
+           family={Clerk},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0d9f84b792e96adb5dfcaa8565fc5c67}{%
+           family={Devoret},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=99c24bab5bbf3a303c540e7825722dc1}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=702489c1f664d1120cc37aafe7cdc98a}{%
+           family={Schoelkopf},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{95cb63106604316da6ed6bc56b3cc991}
+      \strng{fullhash}{832ac2e357a7a97e69f43f64efbcd955}
+      \strng{fullhashraw}{832ac2e357a7a97e69f43f64efbcd955}
+      \strng{bibnamehash}{95cb63106604316da6ed6bc56b3cc991}
+      \strng{authorbibnamehash}{95cb63106604316da6ed6bc56b3cc991}
+      \strng{authornamehash}{95cb63106604316da6ed6bc56b3cc991}
+      \strng{authorfullhash}{832ac2e357a7a97e69f43f64efbcd955}
+      \strng{authorfullhashraw}{832ac2e357a7a97e69f43f64efbcd955}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The topic of quantum noise has become extremely timely due to the rise of quantum information physics and the resulting interchange of ideas between the condensed matter and {AMO}/quantum optics communities. This review gives a pedagogical introduction to the physics of quantum noise and its connections to quantum measurement and quantum amplification. After introducing quantum noise spectra and methods for their detection, we describe the basics of weak continuous measurements. Particular attention is given to treating the standard quantum limit on linear amplifiers and position detectors using a general linear-response framework. We show how this approach relates to the standard Haus-Caves quantum limit for a bosonic amplifier known in quantum optics, and illustrate its application for the case of electrical circuits, including mesoscopic detectors and resonant cavity detectors.}
+      \field{day}{15}
+      \field{eprinttype}{arxiv}
+      \field{issn}{0034-6861, 1539-0756}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Rev. Mod. Phys.}
+      \field{title}{Introduction to Quantum Noise, Measurement and Amplification}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{82}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1155\bibrangedash 1208}
+      \range{pages}{54}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.82.1155
+      \endverb
+      \verb{eprint}
+      \verb 0810.4729 [cond-mat, physics:quant-ph]
+      \endverb
+      \verb{file}
+      \verb 0810.pdf:C\:\\Users\\jacqu\\Zotero\\storage\\UW5L737N\\0810.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/0810.4729
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/0810.4729
+      \endverb
+      \keyw{Quantum Physics,Condensed Matter - Mesoscale and Nanoscale Physics}
+    \endentry
+    \entry{kimble_conversion_2001}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=aea70dd628dc6535ce5213ef85f63855}{%
+           family={Kimble},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6246006486aa4f55a80efddc774ef379}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Yuri},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=803b9142ff01df971df3f27f8a479763}{%
+           family={Matsko},
+           familyi={M\bibinitperiod},
+           given={Andrey\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=09e928bef0c66042b777c23f5eb91c00}{%
+           family={Thorne},
+           familyi={T\bibinitperiod},
+           given={Kip\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0fe267a4a78c8139b7c535d4571f5aab}{%
+           family={Vyatchanin},
+           familyi={V\bibinitperiod},
+           given={Sergey\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{fullhash}{5edd995e63f3dc6cac5730764ccd7556}
+      \strng{fullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
+      \strng{bibnamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authorbibnamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authornamehash}{f2ca855a4e9cd7629b289280e093e982}
+      \strng{authorfullhash}{5edd995e63f3dc6cac5730764ccd7556}
+      \strng{authorfullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{issn}{0556-2821, 1089-4918}
+      \field{journaltitle}{Physical Review D}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{2}
+      \field{shortjournal}{Phys. Rev. D}
+      \field{title}{Conversion of conventional gravitational-wave interferometers into quantum nondemolition interferometers by modifying their input and/or output optics}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{volume}{65}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{022002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.65.022002
+      \endverb
+      \verb{file}
+      \verb Kimble et al. - 2001 - Conversion of conventional gravitational-wave inte.pdf:C\:\\Users\\jacqu\\Zotero\\storage\\ZIN9A44D\\Kimble et al. - 2001 - Conversion of conventional gravitational-wave inte.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.65.022002
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevD.65.022002
+      \endverb
+    \endentry
+    \entry{jayich_dispersive_2008}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=d3f46162d73fd1735b431b265a825ba6}{%
+           family={Jayich},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=728ad0aae91926434904f31a44bbd8a0}{%
+           family={Sankey},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=66370b3393e1d6a8f4be1d62742f9af9}{%
+           family={Zwickl},
+           familyi={Z\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8a9ab49f0fe827e25142df0f1ec23209}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cd73d2a1224ea92c8ec865582cefe63e}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=53516e70e3f4d823e360e95e4df4b51d}{%
+           family={Clerk},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=99c24bab5bbf3a303c540e7825722dc1}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{94c75496a854a6b59cec4c9430113db9}
+      \strng{fullhash}{6ffb59a358fb052f5aa81c306faea3c4}
+      \strng{fullhashraw}{6ffb59a358fb052f5aa81c306faea3c4}
+      \strng{bibnamehash}{94c75496a854a6b59cec4c9430113db9}
+      \strng{authorbibnamehash}{94c75496a854a6b59cec4c9430113db9}
+      \strng{authornamehash}{94c75496a854a6b59cec4c9430113db9}
+      \strng{authorfullhash}{6ffb59a358fb052f5aa81c306faea3c4}
+      \strng{authorfullhashraw}{6ffb59a358fb052f5aa81c306faea3c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present the results of theoretical and experimental studies of dispersively coupled (or ‘membrane in the middle’) optomechanical systems. We calculate the linear optical properties of a high finesse cavity containing a thin dielectric membrane. We focus on the cavity's transmission, reflection and finesse as a function of the membrane's position along the cavity axis and as a function of its optical loss. We compare these calculations with measurements and find excellent agreement in cavities with empty-cavity finesses in the range 104–105. The imaginary part of the membrane's index of refraction is found to be ∼10−4. We calculate the laser cooling performance of this system, with a particular focus on the less-intuitive regime in which photons ‘tunnel’ through the membrane on a timescale comparable to the membrane's period of oscillation. Lastly, we present calculations of quantum non-demolition measurements of the membrane's phonon number in the low signal-to-noise regime where the phonon lifetime is comparable to the {QND} readout time.}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{New J. Phys.}
+      \field{shorttitle}{Dispersive optomechanics}
+      \field{title}{Dispersive optomechanics: a membrane inside a cavity}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{10}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{095008}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/10/9/095008
+      \endverb
+      \verb{file}
+      \verb Version soumise:C\:\\Users\\jacqu\\Zotero\\storage\\A77K297X\\Jayich et al. - 2008 - Dispersive optomechanics a membrane inside a cavi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1367-2630/10/9/095008
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1367-2630/10/9/095008
+      \endverb
+    \endentry
+    \entry{sankey_strong_2010}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=728ad0aae91926434904f31a44bbd8a0}{%
+           family={Sankey},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8a9ab49f0fe827e25142df0f1ec23209}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=66370b3393e1d6a8f4be1d62742f9af9}{%
+           family={Zwickl},
+           familyi={Z\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d3f46162d73fd1735b431b265a825ba6}{%
+           family={Jayich},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{fullhash}{045a3f5b20ae3a6917a692fc320c32de}
+      \strng{fullhashraw}{045a3f5b20ae3a6917a692fc320c32de}
+      \strng{bibnamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authorbibnamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authornamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authorfullhash}{045a3f5b20ae3a6917a692fc320c32de}
+      \strng{authorfullhashraw}{045a3f5b20ae3a6917a692fc320c32de}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A major goal in optomechanics is to observe and control quantum behaviour in a system consisting of a mechanical resonator coupled to an optical cavity. Work towards this goal has focused on increasing the strength of the coupling between the mechanical and optical degrees of freedom. However, the form of this coupling is crucial in determining which phenomena can be observed in such a system. Here we demonstrate that avoided crossings in the spectrum of an optical cavity containing a flexible dielectric membrane enable us to realize several different forms of the optomechanical coupling. These include cavity detunings that are (to lowest order) linear, quadratic or quartic in the membrane’s displacement, and a cavity finesse that is linear in (or independent of) the membrane’s displacement. All these couplings are realized in a single device with extremely low optical loss and can be tuned over a wide range in situ. In particular, we find that the quadratic coupling can be increased three orders of magnitude beyond previous devices. As a result of these advances, the device presented here should be capable of demonstrating the quantization of the membrane’s mechanical energy.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{9}
+      \field{shortjournal}{Nature Phys}
+      \field{title}{Strong and tunable nonlinear optomechanical coupling in a low-loss system}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{6}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{707\bibrangedash 712}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys1707
+      \endverb
+      \verb{file}
+      \verb Version soumise:C\:\\Users\\jacqu\\Zotero\\storage\\AJ6X3F4R\\Sankey et al. - 2010 - Strong and tunable nonlinear optomechanical coupli.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nphys1707
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nphys1707
+      \endverb
+      \keyw{Atomic,Classical and Continuum Physics,Complex Systems,Condensed Matter Physics,general,Mathematical and Computational Physics,Molecular,Optical and Plasma Physics,Physics,Theoretical}
+    \endentry
+  \enddatalist
+  \missing{Neuhauser_Thesis_2021}
+  \missing{PyRPL_Article}
+  \missing{PyRPL_Docs}
+  \missing{Vahlbruch2006}
+  \missing{Vyatchanin1993}
+  \missing{aasi_enhanced_2013}
+  \missing{braginsky_quantum_1992}
+  \missing{dumont_cavity_2017}
+  \missing{harry_advanced_2010}
+  \missing{peterson_laser_2016}
+  \missing{purdy_observation_2013}
+  \missing{thompson_coupling_2013}
+  \missing{thompson_strong_2008}
+  \missing{xu_cavity_2016}
+\endrefsection
+\endinput
+

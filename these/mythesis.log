@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  24 NOV 2025 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.16)  6 DEC 2025 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -366,84 +366,17 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen197
 \xmathstrut@box=\box59
 \xmathstrut@dim=\dimen198
-) (./preamb/preamb-graph.tex (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-LaTeX Info: Redefining \color on input line 762.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
-) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count337
-Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count338
-)) (c:/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
-Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
- (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
-)))
-Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
-Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
-) (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-) (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-) (c:/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
-)
-\c@svg@param@lastpage=\count339
-\svg@box=\box60
-\c@svg@param@currpage=\count340
-) (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
-Package: transparent 2022-10-27 v1.5 Transparency with color stacks
- (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
-Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen199
 \pgfutil@tempdimb=\dimen256
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box61
+\pgfutil@abb=\box60
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks33
@@ -463,14 +396,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen266
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count341
-\c@pgf@countb=\count342
-\c@pgf@countc=\count343
-\c@pgf@countd=\count344
+\c@pgf@counta=\count337
+\c@pgf@countb=\count338
+\c@pgf@countc=\count339
+\c@pgf@countd=\count340
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count345
+\pgf@sys@id@count=\count341
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -481,11 +414,424 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count346
-\pgfsyssoftpath@bigbuffer@items=\count347
+\pgfsyssoftpath@smallbuffer@items=\count342
+\pgfsyssoftpath@bigbuffer@items=\count343
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (./preamb/preamb-math.tex (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
+)) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen267
+\pgfmath@count=\count344
+\pgfmath@box=\box61
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count345
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen268
+\pgf@picmaxx=\dimen269
+\pgf@picminy=\dimen270
+\pgf@picmaxy=\dimen271
+\pgf@pathminx=\dimen272
+\pgf@pathmaxx=\dimen273
+\pgf@pathminy=\dimen274
+\pgf@pathmaxy=\dimen275
+\pgf@xx=\dimen276
+\pgf@xy=\dimen277
+\pgf@yx=\dimen278
+\pgf@yy=\dimen279
+\pgf@zx=\dimen280
+\pgf@zy=\dimen281
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen282
+\pgf@path@lasty=\dimen283
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen284
+\pgf@shorten@start@additional=\dimen285
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count346
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen286
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen287
+\pgf@pt@y=\dimen288
+\pgf@pt@temp=\dimen289
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen290
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen291
+\pgf@sys@shading@range@num=\count347
+\pgf@shadingcount=\count348
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box65
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box66
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count349
+\pgfplotmarksize=\dimen296
+)
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count350
+\tikznumberofchildren=\count351
+\tikznumberofcurrentchild=\count352
+\tikz@fig@count=\count353
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count354
+\pgfmatrixcurrentcolumn=\count355
+\pgf@matrix@numberofcolumns=\count356
+)
+\tikz@expandcount=\count357
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count358
+ (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count359
+\c@listtotal=\count360
+\c@listcount=\count361
+\c@liststart=\count362
+\c@liststop=\count363
+\c@citecount=\count364
+\c@citetotal=\count365
+\c@multicitecount=\count366
+\c@multicitetotal=\count367
+\c@instcount=\count368
+\c@maxnames=\count369
+\c@minnames=\count370
+\c@maxitems=\count371
+\c@minitems=\count372
+\c@citecounter=\count373
+\c@maxcitecounter=\count374
+\c@savedcitecounter=\count375
+\c@uniquelist=\count376
+\c@uniquename=\count377
+\c@refsection=\count378
+\c@refsegment=\count379
+\c@maxextratitle=\count380
+\c@maxextratitleyear=\count381
+\c@maxextraname=\count382
+\c@maxextradate=\count383
+\c@maxextraalpha=\count384
+\c@abbrvpenalty=\count385
+\c@highnamepenalty=\count386
+\c@lownamepenalty=\count387
+\c@maxparens=\count388
+\c@parenlevel=\count389
+\blx@tempcnta=\count390
+\blx@tempcntb=\count391
+\blx@tempcntc=\count392
+\c@blx@maxsection=\count393
+\blx@maxsegment@0=\count394
+\blx@notetype=\count395
+\blx@parenlevel@text=\count396
+\blx@parenlevel@foot=\count397
+\blx@sectionciteorder@0=\count398
+\blx@sectionciteorderinternal@0=\count399
+\blx@entrysetcounter=\count400
+\blx@biblioinstance=\count401
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language91
+\c@mincomprange=\count402
+\c@maxcomprange=\count403
+\c@mincompwidth=\count404
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count405
+\c@savedafterword=\count406
+\c@annotator=\count407
+\c@savedannotator=\count408
+\c@author=\count409
+\c@savedauthor=\count410
+\c@bookauthor=\count411
+\c@savedbookauthor=\count412
+\c@commentator=\count413
+\c@savedcommentator=\count414
+\c@editor=\count415
+\c@savededitor=\count416
+\c@editora=\count417
+\c@savededitora=\count418
+\c@editorb=\count419
+\c@savededitorb=\count420
+\c@editorc=\count421
+\c@savededitorc=\count422
+\c@foreword=\count423
+\c@savedforeword=\count424
+\c@holder=\count425
+\c@savedholder=\count426
+\c@introduction=\count427
+\c@savedintroduction=\count428
+\c@namea=\count429
+\c@savednamea=\count430
+\c@nameb=\count431
+\c@savednameb=\count432
+\c@namec=\count433
+\c@savednamec=\count434
+\c@translator=\count435
+\c@savedtranslator=\count436
+\c@shortauthor=\count437
+\c@savedshortauthor=\count438
+\c@shorteditor=\count439
+\c@savedshorteditor=\count440
+\c@labelname=\count441
+\c@savedlabelname=\count442
+\c@institution=\count443
+\c@savedinstitution=\count444
+\c@lista=\count445
+\c@savedlista=\count446
+\c@listb=\count447
+\c@savedlistb=\count448
+\c@listc=\count449
+\c@savedlistc=\count450
+\c@listd=\count451
+\c@savedlistd=\count452
+\c@liste=\count453
+\c@savedliste=\count454
+\c@listf=\count455
+\c@savedlistf=\count456
+\c@location=\count457
+\c@savedlocation=\count458
+\c@organization=\count459
+\c@savedorganization=\count460
+\c@origlocation=\count461
+\c@savedoriglocation=\count462
+\c@origpublisher=\count463
+\c@savedorigpublisher=\count464
+\c@publisher=\count465
+\c@savedpublisher=\count466
+\c@language=\count467
+\c@savedlanguage=\count468
+\c@origlanguage=\count469
+\c@savedoriglanguage=\count470
+\c@pageref=\count471
+\c@savedpageref=\count472
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count473
+\c@textcitetotal=\count474
+\c@textcitemaxnames=\count475
+\c@biburlbigbreakpenalty=\count476
+\c@biburlbreakpenalty=\count477
+\c@biburlnumpenalty=\count478
+\c@biburlucpenalty=\count479
+\c@biburllcpenalty=\count480
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count481
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count482
+\c@bbx:relatedtotal=\count483
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-04-29 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+)) (./preamb/preamb-graph.tex (c:/texlive/2025/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count484
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count485
+)) (c:/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+ (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
+ (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
+ (c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+) (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\c@svg@param@lastpage=\count486
+\svg@box=\box71
+\c@svg@param@currpage=\count487
+) (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+ (c:/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+))) (./preamb/preamb-math.tex (c:/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -508,13 +854,11 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
 )) (./preamb/preamb-util.tex (c:/texlive/2025/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen267
-\ESO@tempdimb=\dimen268
+\ESO@tempdima=\dimen305
+\ESO@tempdimb=\dimen306
 )) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+ (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
@@ -526,16 +870,14 @@ Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
-\c@section@level=\count348
+)
+\c@section@level=\count488
 ) (c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen269
-\Hy@linkcounter=\count349
-\Hy@pagecounter=\count350
+\@linkdim=\dimen307
+\Hy@linkcounter=\count489
+\Hy@pagecounter=\count490
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -543,7 +885,7 @@ Now handling font encoding PD1 ...
 ) (c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count351
+\Hy@SavedSpaceFactor=\count491
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -553,40 +895,24 @@ Package hyperref Info: Hyper figures OFF on input line 4157.
 Package hyperref Info: Link nesting OFF on input line 4162.
 Package hyperref Info: Hyper index ON on input line 4165.
 Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing ON on input line 4175.
+Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
- (c:/texlive/2025/texmf-dist/tex/latex/hyperref/backref.sty
-Package: backref 2023-11-26 v1.44 Bibliographical back referencing
- (c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-) (c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+\c@Hy@tempcnt=\count492
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen308
+ (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
-))
-\c@Hy@tempcnt=\count352
- (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen270
- (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-)
-\Fld@menulength=\count353
-\Field@Width=\dimen271
-\Fld@charsize=\dimen272
+\Fld@menulength=\count493
+\Field@Width=\dimen309
+\Fld@charsize=\dimen310
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing ON on input line 6055.
+Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
@@ -594,18 +920,29 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count354
-\c@Item=\count355
-\c@Hfootnote=\count356
+\Hy@abspage=\count494
+\c@Item=\count495
+\c@Hfootnote=\count496
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
-\Fld@listcount=\count357
-\c@bookmark@seq@number=\count358
-\Hy@SectionHShift=\skip60
+ (c:/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+\Fld@listcount=\count497
+\c@bookmark@seq@number=\count498
+ (c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip82
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
  (c:/texlive/2025/texmf-dist/tex/latex/minitoc/minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
  (c:/texlive/2025/texmf-dist/tex/latex/minitoc/mtcmess.sty
@@ -613,23 +950,23 @@ Package: mtcmess 2006/03/14
 )
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 62 ***.
-\tf@mtc=\write4
-\mtcindent=\skip61
-\mtcskipamount=\skip62
+\tf@mtc=\write5
+\mtcindent=\skip83
+\mtcskipamount=\skip84
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
 (minitoc)             part level macros available.
 Package minitoc Info: I0003
 (minitoc)             chapter level macros available.
-\mtc@toks=\toks39
-\mtc@strutbox=\box62
-\mtc@hstrutbox=\box63
+\mtc@toks=\toks44
+\mtc@strutbox=\box72
+\mtc@hstrutbox=\box73
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
-\openout4 = `mythesis.mtc0'.
+\openout5 = `mythesis.mtc0'.
 
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
  (./mythesis.mtc0)
 Package minitoc Info: I0012
@@ -637,15 +974,15 @@ Package minitoc Info: I0012
 Package minitoc Info: I0031
 (minitoc)             ==> this version is configured for UNIX-like 
 (minitoc)                 (long extensions) file names.
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
-\openout4 = `mythesis.mtc0'.
+\openout5 = `mythesis.mtc0'.
 
-\c@mtc=\count359
-\c@minitocdepth=\count360
-\c@ptc=\count361
-\c@parttocdepth=\count362
-\ptcindent=\skip63
+\c@mtc=\count499
+\c@minitocdepth=\count500
+\c@ptc=\count501
+\c@parttocdepth=\count502
+\ptcindent=\skip85
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -654,114 +991,42 @@ File: english.mld 2006/01/13
 ) (c:/texlive/2025/texmf-dist/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
 ))
-Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM mythesis.toc on input line 39.
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc1.
-\openout4 = `mythesis.mtc1'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc2.
-\openout4 = `mythesis.mtc2'.
+Package minitoc Warning: W0010
+(minitoc)                No file mythesis.toc. 
+(minitoc)                MINITOCS NOT PREPARED on input line 49.
 
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc3.
-\openout4 = `mythesis.mtc3'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc4.
-\openout4 = `mythesis.mtc4'.
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
 
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc5.
-\openout4 = `mythesis.mtc5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc6.
-\openout4 = `mythesis.mtc6'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc7.
-\openout4 = `mythesis.mtc7'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc8.
-\openout4 = `mythesis.mtc8'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc9.
-\openout4 = `mythesis.mtc9'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mythesis.mtc10.
-\openout4 = `mythesis.mtc10'.
-
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 40.
- (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
+\@quotelevel=\count503
+\@quotereset=\count504
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 50.
+(c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux
-
-LaTeX Warning: Label `II.xx3' multiply defined.
-
-
-LaTeX Warning: Label `II.xx4' multiply defined.
-
-
-LaTeX Warning: Label `fig:cavity_types' multiply defined.
-
-) (./chap3/chap3.aux
-
-LaTeX Warning: Label `eq:total_displacement_spectrum' multiply defined.
-
-
-LaTeX Warning: Label `fig:freq_indep_squeezing' multiply defined.
-
-) (./chap4/chap4.aux) (./chap5/chap5.aux
-
-LaTeX Warning: Label `fig:tilt' multiply defined.
-
-
-LaTeX Warning: Label `fig:tilt' multiply defined.
-
-
-LaTeX Warning: Label `fig:tilt' multiply defined.
-
-
-LaTeX Warning: Label `fig:tilt' multiply defined.
-
-
-LaTeX Warning: Label `fig:tilt' multiply defined.
-
-) (./chap6/chap6.aux
-
-LaTeX Warning: Label `fig:irmcnoise' multiply defined.
-
-) (./chap7/chap7.aux) (./appA.aux
-
-LaTeX Warning: Label `app:App' multiply defined.
-
-))
+)
+No file mythesis.aux.
 \openout1 = `mythesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -798,17 +1063,17 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen273
-\scratchbox=\box64
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen274
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count505
+\scratchdimen=\dimen311
+\scratchbox=\box74
+\nofMPsegments=\count506
+\nofMParguments=\count507
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count508
+\MPscratchDim=\dimen312
+\MPnumerator=\count509
+\makeMPintoPDFobject=\count510
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -818,10 +1083,123 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 40.
- (./mythesis.out) (./mythesis.out)
-\@outlinefile=\write5
-\openout5 = `mythesis.out'.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `mythesis.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'mythesis.bbl' found.
+ (./mythesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Neuhauser_Thesis_2021
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PyRPL_Article
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PyRPL_Docs
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Vahlbruch2006
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Vyatchanin1993
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                aasi_enhanced_2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                braginsky_quantum_1992
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                dumont_cavity_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                harry_advanced_2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                peterson_laser_2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                purdy_observation_2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                thompson_coupling_2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                thompson_strong_2008
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                xu_cavity_2016
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
+Package hyperref Info: Link coloring ON on input line 50.
+\@outlinefile=\write6
+\openout6 = `mythesis.out'.
 
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
@@ -859,63 +1237,63 @@ Package minitoc(hints) Info: I0049
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./fig/Sciences_SU.png, id=356, 390.9807pt x 157.0668pt>
+<./fig/Sciences_SU.png, id=7, 390.9807pt x 157.0668pt>
 File: ./fig/Sciences_SU.png Graphic file (type png)
 <use ./fig/Sciences_SU.png>
-Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 47.
+Package pdftex.def Info: ./fig/Sciences_SU.png  used on input line 57.
 (pdftex.def)             Requested size: 141.64781pt x 56.9055pt.
-<./fig/Logo_LKB.png, id=358, 549.9747pt x 123.8226pt>
+<./fig/Logo_LKB.png, id=9, 549.9747pt x 123.8226pt>
 File: ./fig/Logo_LKB.png Graphic file (type png)
 <use ./fig/Logo_LKB.png>
-Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 47.
+Package pdftex.def Info: ./fig/Logo_LKB.png  used on input line 57.
 (pdftex.def)             Requested size: 252.75645pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 47.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 47.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 47.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 47.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 47.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 47.
+(Font)              <12> on input line 57.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 57.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 47.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+(Font)              <6> on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 47--47
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 57--57
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
 
-Overfull \hbox (12.28476pt too wide) in paragraph at lines 47--47
+Overfull \hbox (12.28476pt too wide) in paragraph at lines 57--57
 []\T1/lmr/bx/n/12 Mme.| 
  []
 
-<./fig/logos.png, id=359, 292.9344pt x 92.0238pt>
+<./fig/logos.png, id=10, 292.9344pt x 92.0238pt>
 File: ./fig/logos.png Graphic file (type png)
 <use ./fig/logos.png>
-Package pdftex.def Info: ./fig/logos.png  used on input line 47.
+Package pdftex.def Info: ./fig/logos.png  used on input line 57.
 (pdftex.def)             Requested size: 284.52756pt x 89.39075pt.
 
 
@@ -929,7 +1307,7 @@ Package pdftex.def Info: ./fig/logos.png  used on input line 47.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \frontcover
+l.57 \frontcover
                 \ % requires thcover.sty loaded and thcoverdata.tex filled [0
 
 
@@ -950,28 +1328,22 @@ l.47 \frontcover
 [4
 
 
-] (./mythesis.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 4.
+]
+No file mythesis.toc.
+\tf@toc=\write7
+\openout7 = `mythesis.toc'.
+
 
 
 [5
 
 ]
 
-[6]
-
-[7])
-\tf@toc=\write6
-\openout6 = `mythesis.toc'.
-
-
-
-[8]
-
-[1
+[6
 
 ]
+
+[1]
 \openout2 = `./chap1/chap1.aux'.
 
  (./chap1/chap1.tex
@@ -996,9 +1368,9 @@ Chapter I.
 
 
 [5]
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 7.
@@ -1009,28 +1381,41 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  (./mythesis.mtc2)
 
 [6]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 10.
+
 Overfull \hbox (3.08145pt too wide) in paragraph at lines 10--11
 \T1/lmr/m/n/10.95 scribed by a set of well-defined trans-verse modes, which are so-lu-tions of the parax-ial Helmholtz
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
 
 [7{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
@@ -1039,190 +1424,226 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--155
 [10]
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
-
- []
-
-
 
 [12]
-<./chap2/fig/quantum_states.pdf, id=614, 423.94608pt x 147.76636pt>
-File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
-<use ./chap2/fig/quantum_states.pdf>
-Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 291.
-(pdftex.def)             Requested size: 438.17245pt x 152.7264pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
-
- []
-
-
-
-[13 <./chap2/fig/quantum_states.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-<./chap2/fig/quantum_quadraturesBis.pdf, id=729, 423.94608pt x 143.48956pt>
-File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
-<use ./chap2/fig/quantum_quadraturesBis.pdf>
-Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 352.
-(pdftex.def)             Requested size: 438.17245pt x 148.30605pt.
-
+[13]
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 389--392
+
+LaTeX Warning: Reference `II.8' on page 15 undefined on input line 287.
+
+
+LaTeX Warning: Reference `II.14' on page 15 undefined on input line 305.
+
+
+LaTeX Warning: Reference `II.4' on page 15 undefined on input line 314.
+
+
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--395
+LaTeX Warning: Reference `II.18' on page 16 undefined on input line 326.
 
- []
-
-
-
-[15 <./chap2/fig/quantum_quadraturesBis.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
-
- []
-
+<./chap2/fig/quantum_states.pdf, id=214, 423.94608pt x 147.76636pt>
+File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_states.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 339.
+(pdftex.def)             Requested size: 438.17245pt x 152.7264pt.
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 472--474
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
 
-
-[17]
-
-LaTeX Warning: Citation `Caves1985' on page 18 undefined on input line 551.
+LaTeX Warning: Reference `II.26' on page 17 undefined on input line 368.
 
 
-LaTeX Warning: Citation `Caves1985a' on page 18 undefined on input line 551.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+[17 <./chap2/fig/quantum_states.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
+
+
+LaTeX Warning: Reference `II.26' on page 18 undefined on input line 381.
 
 
 
 [18]
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
+LaTeX Warning: Citation 'Vyatchanin1993' on page 19 undefined on input line 436.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
+
+ []
+
+<./chap2/fig/quantum_quadraturesBis.pdf, id=346, 423.94608pt x 143.48956pt>
+File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_quadraturesBis.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 441.
+(pdftex.def)             Requested size: 438.17245pt x 148.30605pt.
+
+LaTeX Warning: Reference `II.xx4' on page 19 undefined on input line 450.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
+
+ []
+
+
+
+[19 <./chap2/fig/quantum_quadraturesBis.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--475
 
  []
 
 
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
-
- []
-
-<./chap2/fig/cavity_types.pdf, id=968, 423.94608pt x 305.63097pt>
-File: ./chap2/fig/cavity_types.pdf Graphic file (type pdf)
-<use ./chap2/fig/cavity_types.pdf>
-Package pdftex.def Info: ./chap2/fig/cavity_types.pdf  used on input line 670.
-(pdftex.def)             Requested size: 438.17245pt x 315.89001pt.
-
 
 [21]
 
-[22 <./chap2/fig/cavity_types.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 692--694
+LaTeX Warning: Reference `II.1' on page 22 undefined on input line 553.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+<./chap2/fig/cavity_types.pdf, id=538, 423.94608pt x 305.63097pt>
+File: ./chap2/fig/cavity_types.pdf Graphic file (type pdf)
+<use ./chap2/fig/cavity_types.pdf>
+Package pdftex.def Info: ./chap2/fig/cavity_types.pdf  used on input line 557.
+(pdftex.def)             Requested size: 438.17245pt x 315.89001pt.
+
+LaTeX Warning: Reference `fig:cavity_types' on page 22 undefined on input line 567.
+
+
+LaTeX Warning: Reference `fig:cavity_types' on page 22 undefined on input line 567.
+
+
+
+[22]
+
+LaTeX Warning: Reference `fig:cavity_types' on page 23 undefined on input line 576.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
- []
+[23 <./chap2/fig/cavity_types.pdf>]
+
+LaTeX Warning: Reference `fig:cavity_types' on page 24 undefined on input line 582.
 
 
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 725--727
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
 
  []
 
 
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 749--751
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
 
  []
 
-<./chap2/fig/CavitySimple.pdf, id=1204, 423.9472pt x 267.36398pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--622
+
+ []
+
+
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
+
+ []
+
+<./chap2/fig/CavitySimple.pdf, id=766, 423.9472pt x 267.36398pt>
 File: ./chap2/fig/CavitySimple.pdf Graphic file (type pdf)
 <use ./chap2/fig/CavitySimple.pdf>
-Package pdftex.def Info: ./chap2/fig/CavitySimple.pdf  used on input line 774.
+Package pdftex.def Info: ./chap2/fig/CavitySimple.pdf  used on input line 661.
 (pdftex.def)             Requested size: 438.17245pt x 276.33852pt.
 
+LaTeX Warning: Reference `eq:MCIR' on page 26 undefined on input line 665.
 
-[25
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1.78}) has been already used, duplicate ignored
+
+LaTeX Warning: Reference `eq:MCIR' on page 26 undefined on input line 665.
+
+
+LaTeX Warning: Reference `fig:CavitySimple' on page 26 undefined on input line 686.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--691
+
+ []
+
+
+
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.65}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 \end{equation}
-                    ]
-Underfull \hbox (badness 10000) in paragraph at lines 802--804
+l.692 W
+       e also define the cavity finesse $\mathcal{F}$, which is a measure of...]
+Underfull \hbox (badness 10000) in paragraph at lines 695--697
 
  []
 
 
 
-[26 <./chap2/fig/CavitySimple.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 808--810
+[27 <./chap2/fig/CavitySimple.pdf>]
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 833--834
-
- []
+LaTeX Warning: Reference `fig:CavitySimple' on page 28 undefined on input line 719.
 
 
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 874--876
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
 
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 892--894
+Underfull \hbox (badness 10000) in paragraph at lines 760--762
 
  []
 
 
 
 [29]
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1005
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
 
  []
 
 
 
+[30]
+
 [31]
-Overfull \hbox (26.43504pt too wide) detected at line 1026
+Underfull \hbox (badness 10000) in paragraph at lines 889--891
+
+ []
+
+
+
+[32]
+Overfull \hbox (26.43504pt too wide) detected at line 912
 [][][][]\OT1/lmr/m/n/10.95 [
 ] = \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
 ] + \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
@@ -1234,824 +1655,813 @@ Overfull \hbox (26.43504pt too wide) detected at line 1026
 
 
 
-[32]
-<./chap2/fig/schema_SHG_OPO_2photons.pdf, id=1507, 423.94608pt x 96.31834pt>
+[33]
+<./chap2/fig/schema_SHG_OPO_2photons.pdf, id=1065, 423.94608pt x 96.31834pt>
 File: ./chap2/fig/schema_SHG_OPO_2photons.pdf Graphic file (type pdf)
 <use ./chap2/fig/schema_SHG_OPO_2photons.pdf>
-Package pdftex.def Info: ./chap2/fig/schema_SHG_OPO_2photons.pdf  used on input line 1073.
+Package pdftex.def Info: ./chap2/fig/schema_SHG_OPO_2photons.pdf  used on input line 959.
 (pdftex.def)             Requested size: 438.17245pt x 99.55142pt.
-<./chap2/fig/cavitySHG copy.pdf, id=1508, 423.94608pt x 86.65764pt>
+<./chap2/fig/cavitySHG copy.pdf, id=1066, 423.94608pt x 86.65764pt>
 File: ./chap2/fig/cavitySHG copy.pdf Graphic file (type pdf)
 <use ./chap2/fig/cavitySHG copy.pdf>
-Package pdftex.def Info: ./chap2/fig/cavitySHG copy.pdf  used on input line 1084.
+Package pdftex.def Info: ./chap2/fig/cavitySHG copy.pdf  used on input line 970.
 (pdftex.def)             Requested size: 438.17245pt x 89.56644pt.
 
 
-[33 <./chap2/fig/schema_SHG_OPO_2photons.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1111
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[34 <./chap2/fig/schema_SHG_OPO_2photons.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 995--997
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1113
+Underfull \hbox (badness 10000) in paragraph at lines 998--999
 
  []
 
-
-
-[34 <./chap2/fig/cavitySHG copy.pdf>]
-<./chap2/fig/OPO2.pdf, id=1644, 423.94601pt x 155.85205pt>
+<./chap2/fig/OPO2.pdf, id=1101, 423.94601pt x 155.85205pt>
 File: ./chap2/fig/OPO2.pdf Graphic file (type pdf)
 <use ./chap2/fig/OPO2.pdf>
-Package pdftex.def Info: ./chap2/fig/OPO2.pdf  used on input line 1118.
+Package pdftex.def Info: ./chap2/fig/OPO2.pdf  used on input line 1004.
 (pdftex.def)             Requested size: 438.17245pt x 161.0835pt.
 
 
+[35 <./chap2/fig/cavitySHG copy.pdf>]
+
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1131.
+(amsmath)                trying to recover with `aligned' on input line 1017.
 
 
 
-[35 <./chap2/fig/OPO2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1143
+[36 <./chap2/fig/OPO2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1029
 
  []
 
-<./chap2/fig/amp_deamp.pdf, id=1876, 423.94608pt x 142.26378pt>
+<./chap2/fig/amp_deamp.pdf, id=1434, 423.94608pt x 142.26378pt>
 File: ./chap2/fig/amp_deamp.pdf Graphic file (type pdf)
 <use ./chap2/fig/amp_deamp.pdf>
-Package pdftex.def Info: ./chap2/fig/amp_deamp.pdf  used on input line 1146.
+Package pdftex.def Info: ./chap2/fig/amp_deamp.pdf  used on input line 1032.
 (pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
 
 
-[36 <./chap2/fig/amp_deamp.pdf>]
+[37 <./chap2/fig/amp_deamp.pdf>]
 
-LaTeX Warning: Citation `Vahlbruch2006' on page 37 undefined on input line 1164.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1165
-
- []
+LaTeX Warning: Citation 'Vahlbruch2006' on page 38 undefined on input line 1050.
 
 
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1240--1243
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1051
 
  []
 
 
 
 [38]
-<./chap2/fig/OPONoises.pdf, id=32111, 423.94608pt x 284.52756pt>
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
+
+ []
+
+
+LaTeX Warning: Reference `eq:II85' on page 39 undefined on input line 1095.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1129
+
+ []
+
+
+
+[39]
+<./chap2/fig/OPONoises.pdf, id=31666, 423.94608pt x 284.52756pt>
 File: ./chap2/fig/OPONoises.pdf Graphic file (type pdf)
 <use ./chap2/fig/OPONoises.pdf>
-Package pdftex.def Info: ./chap2/fig/OPONoises.pdf  used on input line 1251.
+Package pdftex.def Info: ./chap2/fig/OPONoises.pdf  used on input line 1137.
 (pdftex.def)             Requested size: 438.17245pt x 294.07823pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `eq:perfect_squeezer' on page 40 undefined on input line 1154.
 
-[39]
-<./chap2/fig/CavityOM.pdf, id=32121, 423.94608pt x 109.68973pt>
+
+LaTeX Warning: Reference `II.xx3' on page 40 undefined on input line 1154.
+
+<./chap2/fig/CavityOM.pdf, id=31667, 423.94608pt x 109.68973pt>
 File: ./chap2/fig/CavityOM.pdf Graphic file (type pdf)
 <use ./chap2/fig/CavityOM.pdf>
-Package pdftex.def Info: ./chap2/fig/CavityOM.pdf  used on input line 1282.
+Package pdftex.def Info: ./chap2/fig/CavityOM.pdf  used on input line 1168.
 (pdftex.def)             Requested size: 438.17245pt x 113.37164pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[40]
 
+[41 <./chap2/fig/OPONoises.pdf> <./chap2/fig/CavityOM.pdf
 
-
-[40 <./chap2/fig/OPONoises.pdf>]
-
-[41 <./chap2/fig/CavityOM.pdf>]
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1346.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1352
-
- []
-
-
+pdfTeX warning: pdflatex.exe (file ./chap2/fig/CavityOM.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1363
 
- []
-
-
-LaTeX Warning: Reference `eq:alpha' on page 43 undefined on input line 1369.
+LaTeX Warning: Reference `eq:Frad' on page 43 undefined on input line 1218.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1382
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 1232.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1238
 
  []
 
 
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1386--1388
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1249
+
+ []
+
+
+LaTeX Warning: Reference `eq:alpha' on page 44 undefined on input line 1255.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1268
 
  []
 
 
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1460--1462
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1472
+LaTeX Warning: Reference `eq:dx' on page 45 undefined on input line 1276.
+
+
+LaTeX Warning: Reference `eq:Frad' on page 45 undefined on input line 1276.
+
+
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1346--1348
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1358
 
-[45])
+ []
+
+
 
 [46]
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1367
+
+ []
+
+
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1397
+
+ []
+
+
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1411
+
+ []
+
+
+
+[49]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 1431.
+
+
+Overfull \hbox (2.99176pt too wide) in paragraph at lines 1433--1435
+\T1/lmr/m/n/10.95 The two pho-to-di-odes then mea-sure the pho-tocur-rents $[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 e [][]$ \T1/lmr/m/n/10.95 and $[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 e [][]$\T1/lmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1451
+
+ []
+
+)
+
+[50]
 \openout2 = `./chap3/chap3.aux'.
 
  (./chap3/chap3.tex
 Chapter II.
 
 
-[47
+[51
 
 
 
 
 ]
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
-\openout4 = `mythesis.mtc'.
+\openout5 = `mythesis.mtc'.
 
  (./mythesis.mtc3)
 
-[48]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
 
-LaTeX Warning: Citation `clerk_introduction_2010' on page 49 undefined on input line 37.
+
+[53]
+
+LaTeX Warning: Citation 'harry_advanced_2010' on page 54 undefined on input line 77.
 
 
-
-[49]
-
-LaTeX Warning: Citation `harry_advanced_2010' on page 50 undefined on input line 77.
+LaTeX Warning: Citation 'aasi_enhanced_2013' on page 54 undefined on input line 77.
 
 
-LaTeX Warning: Citation `aasi_enhanced_2013' on page 50 undefined on input line 77.
+LaTeX Warning: Citation 'braginsky_quantum_1992' on page 54 undefined on input line 77.
 
 
-LaTeX Warning: Citation `braginsky_quantum_1992' on page 50 undefined on input line 77.
-
-
-LaTeX Warning: Citation `clerk_introduction_2010' on page 50 undefined on input line 77.
-
-
-
-[50]
-
-[51]
-<./chap3/fig/SQL0.pdf, id=37333, 423.94608pt x 426.79132pt>
-File: ./chap3/fig/SQL0.pdf Graphic file (type pdf)
-<use ./chap3/fig/SQL0.pdf>
-Package pdftex.def Info: ./chap3/fig/SQL0.pdf  used on input line 105.
-(pdftex.def)             Requested size: 438.17245pt x 441.11734pt.
-
-
-[52]
-
-[53 <./chap3/fig/SQL0.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
+Overfull \hbox (33.78586pt too wide) in paragraph at lines 76--78
+\T1/lmr/m/n/10.95 and con-sis-tent with the LIGO/Virgo no-ta-tion [[], []].
  []
 
 
 
 [54]
 
-LaTeX Warning: Reference `fig:freq_dep_squeezing' on page 55 undefined on input line 185.
+LaTeX Warning: Reference `eq:total_displacement_spectrum' on page 55 undefined on input line 81.
+
+
+
+[55]
+<./chap3/fig/SQL0.pdf, id=36923, 423.94608pt x 426.79132pt>
+File: ./chap3/fig/SQL0.pdf Graphic file (type pdf)
+<use ./chap3/fig/SQL0.pdf>
+Package pdftex.def Info: ./chap3/fig/SQL0.pdf  used on input line 105.
+(pdftex.def)             Requested size: 438.17245pt x 441.11734pt.
+
+
+LaTeX Warning: Reference `fig:freq_indep_squeezing' on page 56 undefined on input line 135.
+
+
+
+[56]
+
+[57 <./chap3/fig/SQL0.pdf>]
+
+LaTeX Warning: Reference `fig:freq_indep_squeezing' on page 58 undefined on input line 152.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+
+[58]
+
+LaTeX Warning: Reference `fig:freq_dep_squeezing' on page 59 undefined on input line 185.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-<./chap3/fig/chi_meca.pdf, id=37420, 423.94608pt x 142.26378pt>
+<./chap3/fig/chi_meca.pdf, id=37007, 423.94608pt x 142.26378pt>
 File: ./chap3/fig/chi_meca.pdf Graphic file (type pdf)
 <use ./chap3/fig/chi_meca.pdf>
 Package pdftex.def Info: ./chap3/fig/chi_meca.pdf  used on input line 189.
 (pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
 
-
-[55 <./chap3/fig/chi_meca.pdf>]
-
-LaTeX Warning: Citation `harry_advanced_2010' on page 56 undefined on input line 198.
+LaTeX Warning: Citation 'harry_advanced_2010' on page 59 undefined on input line 198.
 
 
-LaTeX Warning: Citation `aasi_enhanced_2013' on page 56 undefined on input line 198.
+LaTeX Warning: Citation 'aasi_enhanced_2013' on page 59 undefined on input line 198.
 
 
-LaTeX Warning: Citation `kimble_conversion_2001' on page 56 undefined on input line 210.
+Overfull \hbox (38.37999pt too wide) in paragraph at lines 197--199
+\T1/lmr/m/n/10.95 down to the ex-pres-sion used in the con-text of grav-i-ta-tional wave de-tec-tors [[],
+ []
 
 
-LaTeX Warning: Citation `thompson_strong_2008' on page 56 undefined on input line 237.
-
-
-
-[56]
-
-LaTeX Warning: Citation `jayich_dispersive_2008' on page 57 undefined on input line 253.
-
-
-LaTeX Warning: Citation `sankey_strong_2010' on page 57 undefined on input line 259.
-
-
-
-[57]
-
-[58]
 
 [59]
 
-LaTeX Warning: Citation `jayich_dispersive_2008' on page 60 undefined on input line 325.
+[60 <./chap3/fig/chi_meca.pdf>]
+
+LaTeX Warning: Citation 'thompson_strong_2008' on page 61 undefined on input line 237.
 
 
-LaTeX Warning: Citation `xu_cavity_2016' on page 60 undefined on input line 333.
-
-
-LaTeX Warning: Citation `jayich_dispersive_2008' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `thompson_strong_2008' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `sankey_strong_2010' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `xu_cavity_2016' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `purdy_observation_2013' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `sankey_strong_2010' on page 60 undefined on input line 339.
-
-
-LaTeX Warning: Citation `peterson_laser_2016' on page 60 undefined on input line 339.
-
-
-
-[60]
 
 [61]
+
+LaTeX Warning: Reference `eq:cavity_fields_system' on page 62 undefined on input line 289.
+
+
 
 [62]
 
 [63]
-Overfull \hbox (5.24327pt too wide) in paragraph at lines 537--546
-\T1/lmr/m/n/10.95 The small pa-ram-e-ter gov-ern-ing all steps is $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^N[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 !\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 . With losses, $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=[]$\T1/lmr/m/n/10.95 .
- []
+
+LaTeX Warning: Citation 'dumont_cavity_2017' on page 64 undefined on input line 335.
+
+
+LaTeX Warning: Citation 'thompson_strong_2008' on page 64 undefined on input line 337.
+
+
+LaTeX Warning: Citation 'thompson_coupling_2013' on page 64 undefined on input line 337.
+
+
+LaTeX Warning: Citation 'thompson_strong_2008' on page 64 undefined on input line 341.
+
+
+LaTeX Warning: Reference `fig:mate_modes' on page 64 undefined on input line 344.
 
 
 
 [64]
-Overfull \hbox (64.17064pt too wide) in paragraph at lines 620--622
-\T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
+
+LaTeX Warning: Citation 'thompson_strong_2008' on page 65 undefined on input line 366.
+
+
+Overfull \hbox (67.59581pt too wide) in paragraph at lines 365--367
+\T1/lmr/m/n/10.95 where $\OML/lmm/m/it/10.95 J \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 c\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 t[]\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 =\OT1/lmr/m/n/10.95 2[]$ \T1/lmr/m/n/10.95 is the pho-ton tun-nel-ing rate through the mem-brane [[]],
  []
 
 
 
-[65])
+[65]
+
+LaTeX Warning: Citation 'xu_cavity_2016' on page 66 undefined on input line 417.
+
+
 
 [66]
-\openout2 = `./chap4/chap4.aux'.
 
- (./chap4/chap4.tex
-Chapter III.
-\openout4 = `mythesis.mtc'.
-
-\openout4 = `mythesis.mtc'.
-
-(./mythesis.mtc4)
-
-[67
+LaTeX Warning: Citation 'thompson_strong_2008' on page 67 undefined on input line 423.
 
 
+LaTeX Warning: Citation 'xu_cavity_2016' on page 67 undefined on input line 423.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
+LaTeX Warning: Citation 'purdy_observation_2013' on page 67 undefined on input line 423.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+LaTeX Warning: Citation 'peterson_laser_2016' on page 67 undefined on input line 423.
 
+
+
+[67]
+
+LaTeX Warning: Reference `eq:H' on page 68 undefined on input line 507.
+
+
+LaTeX Warning: Reference `eq:slaving' on page 68 undefined on input line 522.
+
+
+LaTeX Warning: Reference `eq:EOM' on page 68 undefined on input line 522.
+
+
+LaTeX Warning: Reference `eq:ae-effective' on page 68 undefined on input line 527.
+
+
+LaTeX Warning: Reference `eq:ratios' on page 68 undefined on input line 538.
+
+
+LaTeX Warning: Reference `eq:slaving' on page 68 undefined on input line 538.
+
+
+Overfull \hbox (20.64682pt too wide) in paragraph at lines 538--539
+ []\T1/lmr/bx/n/10.95 Connection to eigen-vec-tors.[] \T1/lmr/m/n/10.95 Us-ing [], for the branch con-nected to $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 one has $\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^L=\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^M=\OMS/lmsy/m/n/10.95 j \OT1/lmr/m/n/10.95 =
  []
 
 
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
- []
+LaTeX Warning: Reference `eq:ratios' on page 69 undefined on input line 541.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
+LaTeX Warning: Reference `eq:omega-phys-compact' on page 69 undefined on input line 565.
 
 
 
 [69]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \begin{equation}
-                     
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
+LaTeX Warning: Reference `eq:omega-phys-first' on page 70 undefined on input line 603.
+
+
+LaTeX Warning: Reference `eq:omega-phys-compact' on page 70 undefined on input line 617.
+
+
+Overfull \hbox (5.24327pt too wide) in paragraph at lines 621--630
+\T1/lmr/m/n/10.95 The small pa-ram-e-ter gov-ern-ing all steps is $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/10.95 ^^N[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 !\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 . With losses, $\OML/lmm/m/it/10.95 "[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 J=[]$\T1/lmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
+LaTeX Warning: Reference `eq:omega-phys-compact' on page 70 undefined on input line 644.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-
- []
+LaTeX Warning: Reference `eq:omega-linear' on page 70 undefined on input line 644.
 
 
 
 [70]
-Overfull \hbox (1.6772pt too wide) in paragraph at lines 65--66
-\T1/lmr/m/n/10.95 Another key tech-nique ex-ten-sively used in this work is the \T1/lmr/m/it/10.95 Pound-Drever-Hall \T1/lmr/m/n/10.95 (PDH) method,
+
+[71]
+Overfull \hbox (64.17064pt too wide) in paragraph at lines 704--706
+\T1/lmr/m/n/10.95 revealing two in-de-pen-dent har-monic os-cil-la-tors whose fre-quency split-ting $\OML/lmm/m/it/10.95 ![] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ![] \OT1/lmr/m/n/10.95 = 2[]$
  []
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 67.
-(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
- []
+[72]
+\openout2 = `./chap4/chap4.aux'.
 
-<./chap3/fig/PDHplots.pdf, id=37593, 423.94608pt x 199.1693pt>
-File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
-<use ./chap3/fig/PDHplots.pdf>
-Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 74.
-(pdftex.def)             Requested size: 438.17245pt x 205.85475pt.
+ (./chap4/chap4.tex
+Chapter III.
+
+LaTeX Warning: Citation 'Neuhauser_Thesis_2021' on page 73 undefined on input line 2.
 
 
-[71])
+LaTeX Warning: Citation 'PyRPL_Docs' on page 73 undefined on input line 2.
 
-[72 <./chap3/fig/PDHplots.pdf>]
 
-[73]
-\openout2 = `./chap5/chap5.aux'.
+LaTeX Warning: Citation 'PyRPL_Article' on page 73 undefined on input line 2.
 
- (./chap5/chap5.tex
+\openout5 = `mythesis.mtc'.
 
-[74
+\openout5 = `mythesis.mtc'.
+
+(./mythesis.mtc4)
+
+[73
 
 
 
 
 ]
-Chapter IV.
-\openout4 = `mythesis.mtc'.
 
-\openout4 = `mythesis.mtc'.
+LaTeX Warning: Reference `eq:Vmeas' on page 74 undefined on input line 40.
 
-(./mythesis.mtc5)
+
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
+
 
 [75]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
-LaTeX Warning: Citation `coating_review' on page 76 undefined on input line 9.
-
-
-LaTeX Warning: Citation `nanofab_review' on page 76 undefined on input line 9.
+ []
 
 
-LaTeX Warning: Citation `optomech_challenges' on page 76 undefined on input line 9.
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
 
 
-LaTeX Warning: Citation `' on page 76 undefined on input line 14.
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
 
 
-LaTeX Warning: Reference `fig:micropillar_mode' on page 76 undefined on input line 16.
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
 
 
-LaTeX Warning: Citation `' on page 76 undefined on input line 23.
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
 
 
-LaTeX Warning: Citation `Regal2008' on page 76 undefined on input line 23.
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
 
 
-LaTeX Warning: Citation `Harris2008' on page 76 undefined on input line 23.
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+ []
 
 
 
 [76]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
-LaTeX Warning: Citation `AmatoPhD' on page 77 undefined on input line 29.
-
-
-LaTeX Warning: Citation `SiN_review' on page 77 undefined on input line 30.
+ []
 
 
-LaTeX Warning: Citation `piezo_review' on page 77 undefined on input line 32.
+LaTeX Warning: Citation 'PyRPL_Article' on page 77 undefined on input line 108.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 77 undefined on input line 41.
+LaTeX Warning: Citation 'PyRPL_Docs' on page 77 undefined on input line 108.
 
 
-LaTeX Warning: Citation `LMA_IBS' on page 77 undefined on input line 41.
+LaTeX Warning: Citation 'Neuhauser_Thesis_2021' on page 77 undefined on input line 108.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 77 undefined on input line 42.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 44.
-
-LaTeX Warning: Citation `LIGO_optics' on page 77 undefined on input line 44.
+LaTeX Warning: Citation 'PyRPL_Docs' on page 77 undefined on input line 108.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--45
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
 
 [77]
+<./chap3/fig/IQraw.pdf, id=37220, 423.94608pt x 296.3361pt>
+File: ./chap3/fig/IQraw.pdf Graphic file (type pdf)
+<use ./chap3/fig/IQraw.pdf>
+Package pdftex.def Info: ./chap3/fig/IQraw.pdf  used on input line 116.
+(pdftex.def)             Requested size: 306.71938pt x 214.3973pt.
+<./chap3/fig/IQuserB.pdf, id=37221, 423.94727pt x 334.46014pt>
+File: ./chap3/fig/IQuserB.pdf Graphic file (type pdf)
+<use ./chap3/fig/IQuserB.pdf>
+Package pdftex.def Info: ./chap3/fig/IQuserB.pdf  used on input line 124.
+(pdftex.def)             Requested size: 438.17245pt x 345.68689pt.
 
-LaTeX Warning: Citation `AmatoPhD' on page 78 undefined on input line 46.
+./chap4/chap4.tex:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127     }
+           \label{fig:IQuserB}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chap4/chap4.tex:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127     }
+           \label{fig:IQuserB}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chap4/chap4.tex:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127     }
+           \label{fig:IQuserB}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./chap4/chap4.tex:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127     }
+           \label{fig:IQuserB}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `AmatoPhD' on page 78 undefined on input line 70.
+Overfull \hbox (541.50914pt too wide) in paragraph at lines 127--127
+\T1/lmr/m/sl/10.95 quadrature$[]\OML/lmm/m/it/10.95 actor; themoduleactsasatunablenarrowbandfiltercenteredattheLOfrequency:\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b\OT1/lmr/m/n/10.95 )[]\OML/lmm/m/it/10.95 Asinusoidalexcitationisgeneratedbysettingtheamplituderegistertoanon \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `SiN_review' on page 78 undefined on input line 75.
+Overfull \hbox (362.0605pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 zerovalueandroutingthesignalthroughoutput[]irect:TheresponseofthedeviceundertestisdemodulatedandaccumulatedintheNAregisterstoobtainaveragedin \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 78 undefined on input line 75.
+Overfull \hbox (1067.60474pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 phaseandquadraturecomponentswhilesweepingthefrequencyregister:\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )[]\OML/lmm/m/it/10.95 Withbothgainandamplitudesettozero; onlythedemodulationpathisactive:TheCORDICphaseestimatorcomputestheinstantaneousphaseoftheinputsignalrelativetotheLO; providingareal \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `SiN_review' on page 78 undefined on input line 81.
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 timephaseorfrequencyerrorsuitablefordigitalphase \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 locked \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `SiN_review' on page 78 undefined on input line 87.
+Overfull \hbox (130.7537pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 loopoperation:\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 d\OT1/lmr/m/n/10.95 )[]\OML/lmm/m/it/10.95 Asmallmodulationtoneisgeneratedviaanon \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `Norcada_datasheet' on page 78 undefined on input line 87.
+Overfull \hbox (208.25395pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 zeroamplitudevalueandappliedtotheactuatorusingoutput[]irect:Theincomingsignalisdemodulatedatthesamefrequency; low \OMS/lmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Citation `SiN_cryogenic' on page 78 undefined on input line 90.
+Overfull \hbox (132.27899pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 passfiltered; andoneofthedemodulatedquadraturesisroutedasthePDHerrorsignalbyselectingoutput[]ignal \OT1/lmr/m/n/10.95 =
+ []
+
+
+Overfull \hbox (554.54411pt too wide) in paragraph at lines 127--127
+\OML/lmm/m/it/10.95 quadrature:Together; theseconfigurationshighlighttheversatilityoftheIQmoduleinimplementingfiltering; networkanalysis; phasedetection; anddigitallockingschemeswithinthesameFPGAblock:$ 
+ []
 
 
 
 [78]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \begin{equation}
+                      
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
-LaTeX Warning: Reference `sec:alignment_procedure' on page 79 undefined on input line 103.
+ []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 107.
-(c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+
+[79 <./chap3/fig/IQraw.pdf>]
+
+[80 <./chap3/fig/IQuserB.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Overfull \hbox (1.6772pt too wide) in paragraph at lines 162--163
+\T1/lmr/m/n/10.95 Another key tech-nique ex-ten-sively used in this work is the \T1/lmr/m/it/10.95 Pound-Drever-Hall \T1/lmr/m/n/10.95 (PDH) method,
+ []
+
+
+
+[81]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 164.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-
-[79]
-
-LaTeX Warning: Citation `OFHC_review' on page 80 undefined on input line 118.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
-<./chap5/fig/schéma_cavity.pdf, id=37711, 423.94608pt x 569.05513pt>
-File: ./chap5/fig/schéma_cavity.pdf Graphic file (type pdf)
-<use ./chap5/fig/schéma_cavity.pdf>
-Package pdftex.def Info: ./chap5/fig/schéma_cavity.pdf  used on input line 124.
-(pdftex.def)             Requested size: 438.17245pt x 588.1565pt.
+<./chap3/fig/PDHplots.pdf, id=37247, 423.94608pt x 199.1693pt>
+File: ./chap3/fig/PDHplots.pdf Graphic file (type pdf)
+<use ./chap3/fig/PDHplots.pdf>
+Package pdftex.def Info: ./chap3/fig/PDHplots.pdf  used on input line 171.
+(pdftex.def)             Requested size: 438.17245pt x 205.85475pt.
 
-LaTeX Warning: Float too large for page by 66.98184pt on input line 127.
 
+[82 <./chap3/fig/PDHplots.pdf>])
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-
-LaTeX Warning: Citation `Sankey2010' on page 80 undefined on input line 137.
-
-
-
-[80]
-
-[81 <./chap5/fig/schéma_cavity.pdf>]
-<./chap5/fig/flexure tune.pdf, id=37749, 423.94608pt x 184.06267pt>
-File: ./chap5/fig/flexure tune.pdf Graphic file (type pdf)
-<use ./chap5/fig/flexure tune.pdf>
-Package pdftex.def Info: ./chap5/fig/flexure tune.pdf  used on input line 143.
-(pdftex.def)             Requested size: 438.17245pt x 190.24104pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
-<./chap5/fig/fig_lock_MATE.pdf, id=37751, 423.94608pt x 181.28734pt>
-File: ./chap5/fig/fig_lock_MATE.pdf Graphic file (type pdf)
-<use ./chap5/fig/fig_lock_MATE.pdf>
-Package pdftex.def Info: ./chap5/fig/fig_lock_MATE.pdf  used on input line 156.
-(pdftex.def)             Requested size: 438.17245pt x 187.37256pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[82 <./chap5/fig/flexure tune.pdf>]
-
-[83 <./chap5/fig/fig_lock_MATE.pdf>]
-<./chap5/fig/tilt_alignementB.pdf, id=38059, 423.94608pt x 327.2067pt>
-File: ./chap5/fig/tilt_alignementB.pdf Graphic file (type pdf)
-<use ./chap5/fig/tilt_alignementB.pdf>
-Package pdftex.def Info: ./chap5/fig/tilt_alignementB.pdf  used on input line 185.
-(pdftex.def)             Requested size: 438.17245pt x 338.18996pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[84]
-
-[85 <./chap5/fig/tilt_alignementB.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-LaTeX Warning: Reference `fig:cavity_scan' on page 86 undefined on input line 202.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
-
- []
-
-
-LaTeX Warning: Reference `fig:cavity_scan' on page 86 undefined on input line 211.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
-
- []
-
-
-
-[86]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-
- []
-
-
-LaTeX Warning: Reference `fig:cavity_scan' on page 87 undefined on input line 227.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-
-
-[87]
-<./chap5/fig/scansTot.pdf, id=38476, 423.94608pt x 284.52756pt>
-File: ./chap5/fig/scansTot.pdf Graphic file (type pdf)
-<use ./chap5/fig/scansTot.pdf>
-Package pdftex.def Info: ./chap5/fig/scansTot.pdf  used on input line 234.
-(pdftex.def)             Requested size: 438.17245pt x 294.07823pt.
-<./chap5/fig/scancoupling.pdf, id=38477, 423.94608pt x 142.26378pt>
-File: ./chap5/fig/scancoupling.pdf Graphic file (type pdf)
-<use ./chap5/fig/scancoupling.pdf>
-Package pdftex.def Info: ./chap5/fig/scancoupling.pdf  used on input line 241.
-(pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
-<./chap5/fig/map_displacements.pdf, id=38478, 423.94608pt x 241.84843pt>
-File: ./chap5/fig/map_displacements.pdf Graphic file (type pdf)
-<use ./chap5/fig/map_displacements.pdf>
-Package pdftex.def Info: ./chap5/fig/map_displacements.pdf  used on input line 247.
-(pdftex.def)             Requested size: 438.17245pt x 249.9665pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./chap5/fig/scantrans.pdf, id=38479, 423.94608pt x 142.26378pt>
-File: ./chap5/fig/scantrans.pdf Graphic file (type pdf)
-<use ./chap5/fig/scantrans.pdf>
-Package pdftex.def Info: ./chap5/fig/scantrans.pdf  used on input line 253.
-(pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./chap5/fig/scans_ringdown.pdf, id=38480, 424.05733pt x 284.52756pt>
-File: ./chap5/fig/scans_ringdown.pdf Graphic file (type pdf)
-<use ./chap5/fig/scans_ringdown.pdf>
-Package pdftex.def Info: ./chap5/fig/scans_ringdown.pdf  used on input line 260.
-(pdftex.def)             Requested size: 438.17245pt x 294.0131pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[88 <./chap5/fig/scansTot.pdf> <./chap5/fig/scancoupling.pdf>])
-
-[89 <./chap5/fig/map_displacements.pdf> <./chap5/fig/scantrans.pdf>]
-
-[90 <./chap5/fig/scans_ringdown.pdf>]
-\openout2 = `./chap6/chap6.aux'.
-
- (./chap6/chap6.tex
-Chapter V.
-\openout4 = `mythesis.mtc'.
-
-\openout4 = `mythesis.mtc'.
-
-(./mythesis.mtc6)
-
-[91
-
-
-
-
-]
-
-LaTeX Warning: Reference `fig:opticallayout' on page 92 undefined on input line 9.
-
-
-LaTeX Warning: Reference `tab:MCIR' on page 92 undefined on input line 23.
-
-
-
-[92]
-
-LaTeX Warning: Citation `ref:68' on page 93 undefined on input line 34.
-
-<./chap6/fig/NoiseIRMC.pdf, id=38615, 423.94608pt x 170.71654pt>
-File: ./chap6/fig/NoiseIRMC.pdf Graphic file (type pdf)
-<use ./chap6/fig/NoiseIRMC.pdf>
-Package pdftex.def Info: ./chap6/fig/NoiseIRMC.pdf  used on input line 45.
-(pdftex.def)             Requested size: 438.17245pt x 176.44693pt.
-<./chap6/fig/NoiseLO.pdf, id=38616, 423.94608pt x 170.71654pt>
-File: ./chap6/fig/NoiseLO.pdf Graphic file (type pdf)
-<use ./chap6/fig/NoiseLO.pdf>
-Package pdftex.def Info: ./chap6/fig/NoiseLO.pdf  used on input line 52.
-(pdftex.def)             Requested size: 438.17245pt x 176.44693pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[93 <./chap6/fig/NoiseIRMC.pdf>]
-
-LaTeX Warning: Reference `fig:VL1' on page 94 undefined on input line 66.
-
-
-
-[94 <./chap6/fig/NoiseLO.pdf>]
-
-LaTeX Warning: Reference `fig:VL1' on page 95 undefined on input line 81.
-
-
-
-[95]
-<./chap6/fig/SHGlock_sweep.pdf, id=38666, 423.94714pt x 281.00215pt>
-File: ./chap6/fig/SHGlock_sweep.pdf Graphic file (type pdf)
-<use ./chap6/fig/SHGlock_sweep.pdf>
-Package pdftex.def Info: ./chap6/fig/SHGlock_sweep.pdf  used on input line 88.
-(pdftex.def)             Requested size: 438.17245pt x 290.43448pt.
-<./chap6/fig/SHGscansTemp.pdf, id=38667, 423.94608pt x 142.26378pt>
-File: ./chap6/fig/SHGscansTemp.pdf Graphic file (type pdf)
-<use ./chap6/fig/SHGscansTemp.pdf>
-Package pdftex.def Info: ./chap6/fig/SHGscansTemp.pdf  used on input line 96.
-(pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-
-[96 <./chap6/fig/SHGlock_sweep.pdf>]
-
-[97 <./chap6/fig/SHGscansTemp.pdf>]
-\openout2 = `./chap7/chap7.aux'.
-
- (./chap7/chap7.tex
-
-[98
-
-
-
-
-])
-
-[99]
+[83]
 \openout2 = `appA.aux'.
 
  (./appA.tex
 
-[100
+[84
 
 
 
 
 ]
-Overfull \hbox (28.062pt too wide) detected at line 22
+
+[85]
+
+[86]
+
+[87]
+
+[88]
+
+[89]
+Overfull \hbox (42.10345pt too wide) detected at line 181
+[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r; ^^R\OT1/lmr/m/n/10.95 ) [][
+] [](\OML/lmm/m/it/10.95 r; ^^R\OT1/lmr/m/n/10.95 ) = \OT1/lmr/bx/n/10.95 S\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r; ^^R\OT1/lmr/m/n/10.95 ) [][
+] \OML/lmm/m/it/10.95 ;  [] \OT1/lmr/bx/n/10.95 S\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 r; ^^R\OT1/lmr/m/n/10.95 ) = [] \OML/lmm/m/it/10.95 :
+ []
+
+
+
+[90]
+
+[91]
+
+[92]
+Overfull \hbox (38.79158pt too wide) detected at line 302
+[]
+ []
+
+
+
+[93]
+
+LaTeX Warning: Reference `eq:Sqq_linearform' on page 94 undefined on input line 342.
+
+
+LaTeX Warning: Reference `eq:Sqq_linearform' on page 94 undefined on input line 360.
+
+
+LaTeX Warning: Reference `eq:Smin_general' on page 94 undefined on input line 369.
+
+
+
+[94]
+
+[95
+
+]
+
+[96]
+Overfull \hbox (28.062pt too wide) detected at line 456
 [][][]\OML/lmm/m/it/10.95 E[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/lmr/m/n/10.95 ) = \OML/lmm/m/it/10.95 i[] [] []
  []
 
 
 
+[97]
+
+LaTeX Warning: Reference `eq:intensity_beats' on page 98 undefined on input line 496.
+
+
+LaTeX Warning: Reference `eq:error_signal_general' on page 98 undefined on input line 525.
+
+
+
+[98]
+
+LaTeX Warning: Reference `eq:pdh_final' on page 99 undefined on input line 543.
+
+)
+
+[99]
+
+[100
+
+
+
+]
+
 [101]
 
-[102]
+[102
+
+]
 
 [103]
 
 [104
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 79.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 [105]
-
-[106]
-
-[107]
-
-[108]
-
-[109]
-Overfull \hbox (38.79158pt too wide) detected at line 315
-[]
- []
-
-
-
-[110])
-
-[111]
-
-[112
-
-
-
-]
-
-[113]
-
-[114
-
-]
-No file mythesis.bbl.
-
-
-[115]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2086,20 +2496,20 @@ No file mythesis.bbl.
 
 
 
-[116
+[106
 
 
 ]
 
-[117]
+[107]
 
-[118
+[108
 
 ]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the mythesis.maf file.
-\openout4 = `mythesis.maf'.
+\openout5 = `mythesis.maf'.
 
 Package minitoc(hints) Info: I0053
 (minitoc(hints))             You have loaded the float package; 
@@ -2114,9 +2524,9 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[119
+[109
 
-] (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./chap5/chap5.aux) (./chap6/chap6.aux) (./chap7/chap7.aux) (./appA.aux))
+] (./mythesis.aux (./thanks.aux) (./chap1/chap1.aux) (./chap2/chap2.aux) (./chap3/chap3.aux) (./chap4/chap4.aux) (./appA.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
@@ -2126,24 +2536,38 @@ L3 programming layer <2025-04-29>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3EC6C15B2674306019E85339EAC4E0F9;16820.
+
+Package rerunfilecheck Warning: File `mythesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mythesis.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  80B0F6A9317074020B85833916B11280;9422.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                mythesis
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'mythesis.run.xml'.
+\openout1 = `mythesis.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 23229 strings out of 469590
- 390565 string characters out of 5474519
- 857880 words of memory out of 5000000
- 48992 multiletter control sequences out of 15000+600000
- 753608 words of font info for 147 fonts, out of 8000000 for 9000
+ 38635 strings out of 469590
+ 714815 string characters out of 5474519
+ 1568456 words of memory out of 5000000
+ 64306 multiletter control sequences out of 15000+600000
+ 756342 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,31n,117p,1499b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on mythesis.pdf (129 pages, 50068354 bytes).
+ 98i,22n,117p,1999b,1851s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on mythesis.pdf (117 pages, 5374931 bytes).
 PDF statistics:
- 39186 PDF objects out of 45951 (max. 8388607)
- 26518 compressed objects within 266 object streams
- 530 named destinations out of 1000 (max. 500000)
- 854 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37712 PDF objects out of 38293 (max. 8388607)
+ 25278 compressed objects within 253 object streams
+ 490 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

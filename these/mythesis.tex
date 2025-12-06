@@ -15,12 +15,22 @@
 \usepackage{caption} % Load caption before minitoc
 \usepackage{setspace}
 \usepackage{mathtools}
+\usepackage{tikz}
+
+\usepackage[backend=biber,style=numeric,sorting=none,backref=true]{biblatex}
+\addbibresource{./bib/bib_these.bib}
+\addbibresource{./bib/references.bib}
+\addbibresource{./bib/references_these.bib}
+% \addbibresource{./bib/library_these.bib}
+% \addbibresource{./bib/optomechanics.bib}
+% \addbibresource{./bib/quantum.bib}
+
 
 \onehalfspacing % or \singlespacing or \doublespacing
 \input{./preamb/preamb-graph.tex}
 \input{./preamb/preamb-math.tex}
 \input{./preamb/preamb-util.tex}
-\usepackage[pagebackref]{hyperref}
+\usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -55,9 +65,9 @@
 \include{./chap2/chap2.tex}
 \include{./chap3/chap3.tex}
 \include{./chap4/chap4.tex}
-\include{./chap5/chap5.tex}
-\include{./chap6/chap6.tex}
-\include{./chap7/chap7.tex}
+% \include{./chap5/chap5.tex}
+% \include{./chap6/chap6.tex}
+% \include{./chap7/chap7.tex}
 \include{appA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter\ 
@@ -66,8 +76,7 @@
 \phantomsection\ 
 \addcontentsline{toc}{chapter}{Bibliography}
 %%%%% use of BiBTeX:
-\bibliographystyle{these/bib/thesefr-href}
-\bibliography{these/bib/references_these.bib}
+\printbibliography[heading=bibintoc]
 %%%%% to be replaced by,  for final version:
 %\intput{mythesis.bbl}
 %%%%%%%%%%%%%%%%%%%%%%%%%  4th COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

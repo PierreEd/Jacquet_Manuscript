@@ -2,124 +2,9 @@
 % !TeX spellcheck = fr_FR
 % !TeX root = mythesis.tex
 
-\chapter*{Appendix A: Error Signals}\label{app:App}
-\addcontentsline{toc}{chapter}{Appendix A: Error Signals} % ensures it appears in the main TOC
-
-In this appendix, we derive the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
-\section*{PDH error signal}
-\addcontentsline{toc}{section}{PDH error signal}
-
-\subsection*{1. Input Phase-Modulated Field}
-
-The electric field at the input of the cavity is assumed to be a coherent state that has been phase-modulated at frequency \( \Omega \), such that the classical (real) electric field takes the form:
-\begin{equation}
-    E_{\text{cl}}^{(\text{PM})}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \left[
-        e^{-i\omega_0 t} - e^{i\omega_0 t}
-        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 - \Omega)t} + e^{i(\omega_0 - \Omega)t} \right)
-        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 + \Omega)t} + e^{i(\omega_0 + \Omega)t} \right)
-    \right]
-    \label{eq:pm_field}
-\end{equation}
-where \( \alpha_0 \) is the coherent amplitude of the carrier, \( \epsilon_\phi \ll 1 \) is a small modulation index (related to the phase modulation depth), and \( \omega_0 \) is the optical carrier frequency. This field includes both the positive and negative frequency components, as expected for a physical (Hermitian) electric field operator.
-
-\subsection*{2. Reflection from the Cavity}
-
-Each frequency component of the field is reflected with a complex frequency-dependent amplitude reflection coefficient \( r(\omega) \), such that the reflected field is:
-\begin{equation}
-\begin{aligned}
-    E_{\text{refl}}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \Big[
-    & r(\omega_0) e^{-i\omega_0 t} - r^*(\omega_0) e^{i\omega_0 t} \\
-    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 - \Omega) e^{-i(\omega_0 - \Omega)t} + r^*(\omega_0 - \Omega) e^{i(\omega_0 - \Omega)t} \right) \\
-    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 + \Omega) e^{-i(\omega_0 + \Omega)t} + r^*(\omega_0 + \Omega) e^{i(\omega_0 + \Omega)t} \right)
-    \Big]
-\end{aligned}
-\label{eq:refl_field}
-\end{equation}
-
-\subsection*{3. Photodetected Intensity}
-
-The photodetector measures the intensity:
-\[
-I(t) \propto |E_{\text{refl}}(t)|^2
-\]
-We isolate the terms oscillating at \( \Omega \), which arise from the interference between the carrier and sideband components. Keeping only the beat terms between the carrier and sidebands, we find:
-\begin{equation}
-I(t) \supset \epsilon_\phi \cdot \Re\left[ A_+ - A_- \right] \cos(\Omega t)
-+ \epsilon_\phi \cdot \Im\left[ A_+ - A_- \right] \sin(\Omega t)
-\label{eq:intensity_beats}
-\end{equation}
-where we define:
-\[
-A_\pm = r(\omega_0) r^*(\omega_0 \pm \Omega)
-\]
-
-\subsection*{4. Demodulation with Arbitrary Phase}
-
-The signal is demodulated using a local oscillator \( \cos(\Omega t + \phi) \), where \( \phi \) is the demodulation phase. Using trigonometric identities:
-\[
-\cos(\Omega t + \phi) = \cos(\Omega t)\cos\phi - \sin(\Omega t)\sin\phi
-\]
-we multiply Equation~\eqref{eq:intensity_beats} and low-pass filter to obtain:
-\begin{equation}
-\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
-\Re[A_+ - A_-] \cos\phi + \Im[A_+ - A_-] \sin\phi
-\right\}
-\label{eq:error_signal_general}
-\end{equation}
-
-\subsection*{5. Sidebands Far Off-Resonance Approximation}
-
-In the standard PDH regime, the modulation frequency is much greater than the cavity linewidth:
-\[
-\Omega \gg \kappa
-\]
-so the sidebands are far off-resonance. This means:
-\[
-r(\omega_0 \pm \Omega) \approx 1 \quad \Rightarrow \quad A_\pm \approx r(\omega_0)
-\]
-and therefore:
-\[
-A_+ - A_- \approx 0
-\]
-However, if we retain the asymmetry between the sidebands (e.g., due to dispersion), or keep the finite detuning contribution, we approximate:
-\[
-A_+ - A_- \approx r(\omega_0) \left[ r^*(\omega_0 + \Omega) - r^*(\omega_0 - \Omega) \right] = r(\omega_0) \Delta r^*
-\]
-
-\subsection*{6. Final Result}
-
-Substituting into Equation~\eqref{eq:error_signal_general}, we obtain:
-\begin{equation}
-\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
-\Re[r(\omega_0) \Delta r^*] \cos\phi + \Im[r(\omega_0) \Delta r^*] \sin\phi
-\right\}
-\label{eq:error_signal_deltar}
-\end{equation}
-
-In the limit where \( \Delta r^* \rightarrow 1 \) (normalized, symmetric sidebands), this simplifies to:
-\begin{equation}
-\boxed{
-\epsilon_{\text{PDH}}(\omega_0, \phi) \propto \cos\phi \cdot \Re[r(\omega_0)] + \sin\phi \cdot \Im[r(\omega_0)]
-}
-\label{eq:pdh_final}
-\end{equation}
-
-\subsection*{7. Interpretation}
-
-Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linear superposition of the real and imaginary parts of the complex reflection coefficient. The demodulation phase \( \phi \) selects the detected quadrature:
-\begin{itemize}
-    \item \( \phi = 0 \): error signal is proportional to \( \Re[r] \) — symmetric around resonance, not suitable for locking.
-    \item \( \phi = \pi/2 \): error signal is proportional to \( \Im[r] \) — antisymmetric, ideal dispersive error signal.
-    \item \( \phi \ne 0, \pi/2 \): mixes quadratures, possibly introducing offset or distortion.
-\end{itemize}
-
-\bigskip
-
-This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
-
 % \chapter*{Appendix 2:  }\label{app:spectra}
 
-\chapter*{Appendix B: Two-photon derivations}\label{app:App}
+\chapter*{Appendix A: Two-photon derivations}\label{app:App}
 \addcontentsline{toc}{chapter}{Appendix B: Two-photon derivations} % ensures it appears in the main TOC
 
 
@@ -198,7 +83,8 @@ The commutators then read
 [\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\pm}^{\vphantom{\dagger}} ] = [\hat{a}_{\pm}^\dagger, \hat{a}_{\pm}^\dagger] = 0\]
 \[[\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\mp}^\dagger] = 2 \pi c_+ c_- \delta(\Omega + \Omega') \,, \quad
 [\hat{a}_{\pm}^{\vphantom{\dagger}}, \hat{a}_{\mp}^{\vphantom{\dagger}} ] = [\hat{a}_{\pm}^\dagger, \hat{a}_{\mp}^\dagger] = 0\]
-We then regroup the terms along common quadratures $\cos \omega_0 t$ and $\sin \omega_0 t$ such that we get
+
+Computing expectation values for these operators in vacuum yields $\langle \hat{a}^{\vphantom{\dagger}}_{ \pm} \rangle = \langle \hat{a}^{\dagger}_{ \pm}\rangle = \langle 0 | \hat{a}^{\dagger}_{\pm} \hat{a}^{\vphantom{\dagger}}_{\pm} | 0 \rangle = 0$ and $\langle 0 | \hat{a}^{\vphantom{\dagger}}_{\pm} \hat{a}^{\dagger}_{\pm} | 0 \rangle = 2 \pi c_\pm^2 \delta(0)$, which is consistent with the fact that no photons are present in these modes. We then regroup the terms along common quadratures $\cos \omega_0 t$ and $\sin \omega_0 t$ such that we get
 \begin{equation*}
   \begin{split}
    \hat{E}(t) = i  \mathcal{E}_0 \bigg[ \cos \omega_0 t  \int^{\infty}_0 \dfrac{d\Omega}{2\pi} \, \Big[& (\hat{a}_+^{\vphantom{\dagger}} - \, \hat{a}_-^{\dagger})\,e^{-i\Omega t} + (\hat{a}_-^{\vphantom{\dagger}} - \, \hat{a}_+^{\dagger})\,e^{+i \Omega t} \Big] \\ 
@@ -223,34 +109,135 @@ where we used the fact that $\hat{p}^\dagger[\Omega] = \hat{p}^{\vphantom{\dagge
   \end{split}
 \end{equation*}
 In the limit where the sideband frequencies are small compared to the carrier frequency i.e. $\Omega \ll \omega_0$, we can approximate these prefactors by $c_\pm \sim 1$. 
+\subsubsection*{Expectations values in vacuum}
+We now proceed to evaluate the first and second momenta of our field operators in the vacuum state $|0\rangle$. As expected, the annihilation and creation operators have zero mean in vacuum, such that
+\[\langle 0 | \hat{a}^{\vphantom{\dagger}}_{+} | 0 \rangle = \langle 0 | \hat{a}^\dagger_{-} | 0 \rangle = 0\]
+so it follows that
+\[\langle 0 | \hat{p}^{\vphantom{\dagger}}[\Omega] | 0 \rangle = \langle 0 | \hat{q}^{\vphantom{\dagger}}[\Omega] | 0 \rangle = 0. \]
+Building the two-photon quadrature column vector as
+\[\mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega] = \begin{pmatrix}
+\hat{p}^{\vphantom{\dagger}}[\Omega] \\[4pt]
+\hat{q}^{\vphantom{\dagger}}[\Omega] \\
+\end{pmatrix}, \quad \text{we have} \quad \langle\mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega]\rangle = \begin{pmatrix}
+0 \\[4pt]
+0 \\
+\end{pmatrix}\]
+where we see that, for a vacuum state, the full operator $\mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega]$ actually equates the fluctuating part $\delta \mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega] = \mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega] - \langle \mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega] \rangle$ since the mean value is zero. In the following, we will assume that expectation values are always computed in the vacuum state unless otherwise specified (we will omit the $|0\rangle$ notation for clarity). 
+We only wrote the results for the $\hat a^{\vphantom{\dagger}}_+$ and $\hat a_-^\dagger$ operators as there are the ones composing the $\hat p$ and $\hat q$ quadratures, but the same results hold for the other sideband operators as well.
+We can then compute the second momenta of the annihilation and creation operators, yielding
+\[\langle 0 | \hat{a}^{\dagger}_{-} \hat{a}^{\vphantom{\dagger}}_{-} | 0 \rangle = \langle 0 | \hat{a}^{\vphantom{\dagger}}_{+} \hat{a}^{\vphantom{\dagger}}_{-} | 0 \rangle = \langle 0 | \hat{a}^{\dagger}_{-} \hat{a}^{\dagger}_{+} | 0 \rangle = 0 \]
+\[ \langle 0 | \hat{a}^{\vphantom{\dagger}}_{\pm} \hat{a}^{\dagger}_{\pm} | 0 \rangle = 2 \pi \delta(\Omega - \Omega') \,.\]
+Using these relations, we can compute the second momenta for the two-photon quadrature operators as 
+\begin{align*}
+\langle 0 | \hat{p}^{\vphantom{\dagger}}[\Omega] \hat{p}^{\dagger}[\Omega'] | 0 \rangle & =  \langle 0 | \hat{a}^{\vphantom{\dagger}}_{+}\hat{a}^{\dagger}_{+} +  \hat{a}^{\vphantom{\dagger}}_{+} \hat{a}^{\vphantom{\dagger}}_{-} +   \hat{a}^{\dagger}_{-} \hat{a}^{\dagger}_{+}  + \hat{a}^{\dagger}_{-}\hat{a}^{\vphantom{\dagger}}_{-}|0 \rangle \\
+& = 2 \pi \delta(\Omega - \Omega') \,, \\
+\langle 0 | \hat{q}^{\vphantom{\dagger}}[\Omega] \hat{q}^{\dagger}[\Omega'] | 0 \rangle & = 2 \pi \delta(\Omega - \Omega') \,. \\
+\end{align*}
+as well as 
+\[\langle 0 | \hat{p}^{\vphantom{\dagger}}[\Omega] \hat{q}^{\dagger}[\Omega'] | 0 \rangle = - \langle 0 | \hat{q}^{\dagger}[\Omega] \hat{p}^{\vphantom{\dagger}}[\Omega'] | 0 \rangle = i 2\pi \delta (\Omega - \Omega'). \]
+Using the expression for the symmetrized double sided covariance matrix given in the main text, we can compute the covariance matrix for the two-photon quadrature operators in vacuum as
+\begin{align*}
+  \mathbf{S}[\Omega]& =  \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi} \langle\{  \delta \mathbf{\hat{u}}{\vphantom{\dagger}}[\Omega]\, , \delta \mathbf{\hat{u}}^{\dagger}[\Omega'] \}  \rangle \\
+  & = \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi}  \begin{pmatrix}
+  \langle \{ \hat{p}^{\vphantom{\dagger}}[\Omega]\,, \hat{p}^{\dagger}[\Omega'] \}\rangle & \langle \{ \hat{p}^{\vphantom{\dagger}}[\Omega]\,, \hat{q}^{\dagger}[\Omega'] \} \rangle \\[4pt]
+  \langle \{ \hat{q}^{\vphantom{\dagger}}[\Omega]\,, \hat{p}^{\dagger}[\Omega'] \} \rangle & \langle \{ \hat{q}^{\vphantom{\dagger}}[\Omega]\,, \hat{q}^{\dagger}[\Omega'] \} \rangle \\
+  \end{pmatrix} \\
+  & = \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi}  \begin{pmatrix}
+  2 \cdot 2 \pi \delta(\Omega - \Omega') & 0 \\[4pt]
+  0 & 2 \cdot 2 \pi \delta(\Omega - \Omega') \\
+  \end{pmatrix} \\
+  & = \begin{pmatrix}
+  1 & 0 \\[4pt] 
+  0 & 1 \\
+  \end{pmatrix} = \mathbf{1}.
+\end{align*}
+The vacuum state then features vacuum fluctuations of unity in both quadratures, across all sideband frequencies $\Omega$, and no correlations between the quadratures. 
 
 \subsubsection*{States and Operators in the Two-Photon Formalism}
 In a similar fashion as in the single-mode case, we can define the displacement operator as
 \[\hat{D}(\alpha) = \exp\left( \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, \left[ \alpha(\Omega) \hat{a}^\dagger_- - \alpha^*(\Omega) \hat{a}^{\vphantom{\dagger}}_+  \right] \right)\]
 as well as a squeezing operator
-\[\hat{S}(r, \theta) = \exp\left( \dfrac{r}{2} \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \,\left[ e^{- i \theta(\Omega)} \hat{a}^{\vphantom{\dagger}}_+ \hat{a}^{\vphantom{\dagger}}_- - e^{ i \theta(\Omega)} \hat{a}^\dagger_+ \hat{a}^\dagger_- \right] \right)\]
-where $r$ is the squeezing factor and $\theta(\Omega)$ the squeezing angle. Here we assumed the squeezing parameter to be frequency independent, but one can easily generalize to a frequency dependent squeezing parameter $r(\Omega)$. Using the sidebands annihilation operators defined previously, we can compute the action of the displacement and squeezing operators as
+\[\hat{S}(r, \theta) = \exp\left( r \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \,\left[ e^{- i 2\theta(\Omega)} \hat{a}^{\vphantom{\dagger}}_+ \hat{a}^{\vphantom{\dagger}}_- - e^{ i 2\theta(\Omega)} \hat{a}^\dagger_+ \hat{a}^\dagger_- \right] \right)\]
+where $r$ is the squeezing factor and $\theta(\Omega)$ the squeezing angle. Here we assumed the squeezing parameter to be frequency independent, but one can easily generalize to a frequency dependent squeezing parameter $r(\Omega)$. Using the sidebands annihilation operators defined previously, we can compute the action of the displacement and squeezing operators on the annihilation operator as
 \begin{align*}
 \hat{D}^\dagger(\alpha) \,\hat{a}^{\vphantom{\dagger}}_+ \,\hat{D}(\alpha) & = \hat{a}^{\vphantom{\dagger}}_+ + \alpha(\Omega) \,, \\
-\hat{S}^\dagger(r, \theta) \,\hat{a}^{\vphantom{\dagger}}_+ \,\hat{S}(r, \theta) & = \hat{a}^{\vphantom{\dagger}}_+ \cosh r - e^{i \theta(\Omega)} \hat{a}^\dagger_- \sinh r \,.
-\end{align*}
-such that one can then compute the expectation values and variances of the quadrature operators for displaced squeezed states. We consider a intial vacuum state $|0\rangle$, and we displace it by a coherent amplitude $\alpha(\Omega) = \alpha \delta(\Omega)$ i.e. a carrier, monochromatic field of complex amplitude $\alpha$ sitting at frequency 0 (we factored out the $e^{-i\omega_0t} $ already) and squeeze it with parameters $r$ and $\theta(\Omega)$. The resulting state reads
-\[|\psi\rangle = \hat{S}(r, \theta) \hat{D}(\alpha)  |0\rangle.\]
-Applying both operators to the annihilation operators yields 
+\hat{S}^\dagger(r, \theta) \,\hat{a}^{\vphantom{\dagger}}_+ \,\hat{S}(r, \theta) & = \hat{a}^{\vphantom{\dagger}}_+ \cosh r - e^{i 2 \theta(\Omega)} \hat{a}^\dagger_- \sinh r \,.
+\end{align*} 
+We consider a intial vacuum state $|0\rangle$, and we displace it by a coherent amplitude $\alpha(\Omega) = \alpha \delta(\Omega)$ i.e. a carrier, monochromatic field of complex amplitude $\alpha$ sitting at frequency 0 (we are in the frame rotating at $\omega_0$ already since we factored out the $e^{-i\omega_0t} $ term). The displacement operator then acts on the two photon quadrature operators as 
+\[ \hat{D}^\dagger(\alpha) \,\hat{p}^{\vphantom{\dagger}}[\Omega] \, \hat{D}(\alpha) = \hat{p}^{\vphantom{\dagger}}[\Omega] + 2 \Re{\alpha} \delta(\Omega) \,, \]
+\[ \hat{D}^\dagger(\alpha) \,\hat{q}^{\vphantom{\dagger}}[\Omega] \, \hat{D}(\alpha) = \hat{q}^{\vphantom{\dagger}}[\Omega] + 2 \Im{\alpha} \delta(\Omega) \,.\]
+or in matrix form
+\[\hat{D}^\dagger(\alpha) \,\mathbf{\hat{u}}[\Omega] \, \hat{D}(\alpha) = \mathbf{\hat{u}}[\Omega] + 2 \begin{pmatrix}
+\Re{\alpha} \\[4pt]
+\Im{\alpha} \\
+\end{pmatrix} \delta(\Omega) \,.\]
+In a similar fashion, the squeezing operator acts as
+\[\hat{S}^\dagger(r, \theta) \,\hat{p}^{\vphantom{\dagger}}[\Omega] \, \hat{S}(r, \theta) = \hat{p}^{\vphantom{\dagger}}[\Omega] (\cosh r - \sinh r \cos 2\theta) - \hat{q}^{\vphantom{\dagger}}[\Omega] \, \sin 2\theta \sinh r \,,\]
+\[\hat{S}^\dagger(r, \theta) \,\hat{q}^{\vphantom{\dagger}}[\Omega] \, \hat{S}(r, \theta) = \hat{q}^{\vphantom{\dagger}}[\Omega] (\cosh r + \sinh r \cos 2\theta) - \hat{p}^{\vphantom{\dagger}}[\Omega] \, \sin 2\theta \sinh r \,.\]
+and its matrix form reads
+\[\hat{S}^\dagger(r, \theta) \,\mathbf{\hat{u}}[\Omega] \, \hat{S}(r, \theta) = \mathbf{S}(r, \theta) \, \mathbf{\hat{u}}[\Omega] \,, \quad \text{with} \quad \mathbf{S}(r, \theta) = \begin{pmatrix}
+\cosh r - \sinh r \cos 2\theta & - \sin 2\theta \sinh r \\[6pt]
+- \sin 2\theta \sinh r & \cosh r + \sinh r \cos 2\theta \\
+\end{pmatrix}.\]
+The state resulting from applying both operators onto the vacuum is written as
+\[|\psi\rangle = \hat{S}(r, \theta) \hat{D}(\alpha)  |0\rangle\]
+and describes a squeezed coherent state, or bright squeezed state. One can then set the coherent amplitude to 0 as to get a vacuum squeezed state, or set the squeezing parameter to 0 to get a coherent state. This is one of the most generic gaussian state one can define in quantum optics.
+We write the operator product as $\hat{D}\hat{S}$ and we drop the $\Omega$ dependencies to lighten the notation, such that applying them to the field operators yields 
 \begin{align*}
-\hat{D}^\dagger(\alpha) \hat{S}^\dagger(r, \theta)  \,\hat{a}^{\vphantom{\dagger}}_+ \, \hat{S}(r, \theta) \hat{D}(\alpha) & = \left( \hat{a}^{\vphantom{\dagger}}_+ + \alpha \delta (\Omega) \right) \cosh r - e^{i \theta(\Omega)} \left( \hat{a}^\dagger_- + \alpha^* \delta (\Omega) \right) \sinh r \, \\
-\hat{D}^\dagger(\alpha) \hat{S}^\dagger(r, \theta)  \,\hat{a}^{\dagger}_- \, \hat{S}(r, \theta) \hat{D}(\alpha) & = \left( \hat{a}^\dagger_- + \alpha^* \delta (\Omega) \right) \cosh r - e^{-i \theta(\Omega)} \left( \hat{a}^{\vphantom{\dagger}}_+ + \alpha \delta (\Omega) \right) \sinh r \,.
+\hat{D}^\dagger \hat{S}^\dagger  \,\hat{a}^{\vphantom{\dagger}}_+ \, \hat{S} \hat{D} & = \hat{a}^{\vphantom{\dagger}}_+ \cosh r - e^{i 2\theta} \hat{a}^\dagger_- \sinh r + \gamma \delta (\Omega) \, \\
+\hat{D}^\dagger \hat{S}^\dagger  \,\hat{a}^{\dagger}_- \, \hat{S} \hat{D} & = \hat{a}^\dagger_- \cosh r - e^{-i 2\theta} \hat{a}^{\vphantom{\dagger}}_+ \sinh r + \gamma^* \delta (\Omega) \,.
 \end{align*}
-such that the expectation valurs are computed as
+as well as the quadratures 
 \begin{align*}
-\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle & = \delta(\Omega) (\alpha \cosh r - \alpha^* e^{i \theta(\Omega)} \sinh r) \,, \\
-\langle \hat{a}^{\dagger}_{-} \rangle & = \delta(\Omega) (\alpha^* \cosh r - \alpha e^{-i \theta(\Omega)} \sinh r) \,.
+\hat{D}^\dagger \hat{S}^\dagger  \,\hat{p}^{\vphantom{\dagger}}\, \hat{S} \hat{D} & = \hat{p}^{\vphantom{\dagger}} (\cosh r - \cos 2\theta \sinh r) - \hat{q}^{\vphantom{\dagger}} \, \sin 2\theta \sinh r + 2 \Re{\gamma} \delta(\Omega) \,, \\
+\hat{D}^\dagger \hat{S}^\dagger  \,\hat{q}^{\vphantom{\dagger}} \, \hat{S} \hat{D} & = \hat{q}^{\vphantom{\dagger}} (\cosh r + \cos 2\theta \sinh r) - \hat{p}^{\vphantom{\dagger}} \, \sin 2\theta \sinh r + 2 \Im{\gamma} \delta(\Omega) \,.
+\end{align*}
+where we introduced the scalar part of these transformed operators as 
+\begin{align*}
+  \gamma = \alpha \cosh r - \alpha^* e^{i 2\theta} \sinh r \,, \\
+  \gamma^* = \alpha^* \cosh r - \alpha e^{-i 2\theta} \sinh r \,.
+\end{align*}
+The matrix form then reads
+\[\hat{D}^\dagger \hat{S}^\dagger  \,\mathbf{\hat{u}} \, \hat{S} \hat{D} = \mathbf{S}(r, \theta) \, \mathbf{\hat{u}} + 2 \begin{pmatrix}
+\Re{\gamma} \\[4pt]
+\Im{\gamma} \\
+\end{pmatrix} \delta(\Omega) \,.\]
+The mean values is then straightforward to compute
+\begin{align*}
+  \langle \hat{D}^\dagger \hat{S}^\dagger  \,\mathbf{\hat{u}} \, \hat{S} \hat{D} \rangle & =  \mathbf{S}(r, \theta) \, \langle \mathbf{\hat{u}}\rangle  + 2 \begin{pmatrix}
+\Re{\gamma} \\[4pt]
+\Im{\gamma} \\
+\end{pmatrix} \delta(\Omega)  \\
+  & = 2 \begin{pmatrix}
+\Re{\gamma} \\[4pt]
+\Im{\gamma} \\
+\end{pmatrix} \delta(\Omega) \,.
+\end{align*} 
+such that the fluctuating part reads
+\[\delta \mathbf{\hat{u}}^{\vphantom{\dagger}} = \hat{D}^\dagger \hat{S}^\dagger  \,\mathbf{\hat{u}} \, \hat{S} \hat{D} - \langle \hat{D}^\dagger \hat{S}^\dagger  \,\mathbf{\hat{u}} \, \hat{S} \hat{D} \rangle = \mathbf{S}(r, \theta) \, \mathbf{\hat{u}}^{\vphantom{\dagger}} \, \quad \text{and} \, \quad \delta \mathbf{\hat{u}}^{\dagger} =  \mathbf{\hat{u}}^{\dagger}  \mathbf{S}(r, \theta) .\]
+where we used the fact that the squeezing matrix is symmetric, i.e. $\mathbf{S} = \mathbf{S}^T$.
+The covariance matrix for this squeezed coherent state then reads
+\begin{align*}
+  \mathbf{S}[\Omega] & =  \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi} \langle\{  \delta \mathbf{\hat{u}}{\vphantom{\dagger}}[\Omega]\, , \delta \mathbf{\hat{u}}^{\dagger}[\Omega'] \}  \rangle \\
+  & =  \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi} \langle\{  \mathbf{S}(r, \theta) \, \mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega]\, ,  \mathbf{\hat{u}}^{\dagger}[\Omega']  \mathbf{S}(r, \theta) \}  \rangle \\
+  & =  \mathbf{S}(r, \theta)  \left(  \dfrac{1}{2}  \int \dfrac{\delta \Omega'}{2\pi} \langle\{   \mathbf{\hat{u}}^{\vphantom{\dagger}}[\Omega]\, ,  \mathbf{\hat{u}}^{\dagger}[\Omega']  \}  \rangle \right)  \mathbf{S}(r, \theta)  \\
+  & =  \mathbf{S}(r, \theta)  \cdot \mathbf{1}  \cdot  \mathbf{S}(r, \theta)  =  \mathbf{S}(r, \theta)^2 \\
+  & = \begin{pmatrix}
+  \cosh 2r - \sinh 2r \cos 2\theta & - \sin 2\theta \sinh 2r \\[6pt]
+  - \sin 2\theta \sinh 2r & \cosh 2r + \sinh 2r \cos 2\theta \\
+  \end{pmatrix} \,.
 \end{align*}
 
+such that the expectation values are computed as
+\begin{align*}
+\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle & = \gamma \delta(\Omega) \\
+\langle \hat{a}^{\dagger}_{-} \rangle & = \gamma^* \delta(\Omega) \,\\ 
+\langle \hat{p} \rangle & = 2 \Re{\gamma}\delta(\Omega) \\
+\langle \hat{q} \rangle & = 2 \Im{\gamma} \delta(\Omega) \,.
+\end{align*}
 and we compute the expectation value of our two-photon annihilation operator as
 \[\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle = \alpha \delta(\Omega) \, \quad  \text{and} \quad   \langle \hat{a}^{\dagger}_{-} \rangle = \alpha^* \delta(\Omega) \]
-
-
+as well as their second momenta as 
 
 The electric field operator finally reads
 \begin{equation}
@@ -383,3 +370,184 @@ In the free mass limit, \(\mathcal{K}\) is purely real, so that \(\varphi_m=0\) 
 \[
 S^{r}_{qq,\min}=(1+|\mathcal{K}|^{2})e^{-2r} 
 \]
+
+
+
+
+
+\chapter*{Appendix B: Error Signals}\label{app:App}
+\addcontentsline{toc}{chapter}{Appendix B: Error Signals} % ensures it appears in the main TOC
+
+In this appendix, we detail calculation details not mentionned in the main text regarding the detection of optical fields and error signals. 
+
+\section*{Direct detection error signals}
+\addcontentsline{toc}{section}{Direct detection error signals}
+
+We describe the completely generic photocurrent obtained from direct detection of two optical fields interfering on a photodetector. We consider two fields with field operators $\hat a$ and $\hat a'$, with classical amplitudes $|\bar{\alpha}|$ and $|\bar{\alpha}'| e^{-i(\Delta \omega t + \phi)}$ as well as fluctuations $\delta \hat a$ and $\delta \hat a' e^{-i(\Delta \omega t + \phi)}$ i.e. $\bar \alpha$ is real. The photocurrent operator is then given by
+\begin{equation*}
+\hat I = \left( |\bar{\alpha}| + \delta \hat a^\dagger + |\bar{\alpha}'| e^{i(\Delta \omega t + \phi)} + \delta \hat a'^\dagger e^{i(\Delta \omega t + \phi)} \right) \left( |\bar{\alpha}| + \delta \hat a + |\bar{\alpha}'| e^{-i(\Delta \omega t + \phi)} + \delta \hat a' e^{-i(\Delta \omega t + \phi)} \right)
+\end{equation*}
+We remind here the expression for the amplitude and phase quadratures for both fields
+\[
+\delta \hat p = \delta \hat a + \delta \hat a^\dagger \,, \quad \delta \hat q = -i \left( \delta \hat a - \delta \hat a^\dagger \right) \,,
+\]
+and 
+\[
+\delta \hat p' = e^{-i(\Delta \omega t + \phi)} \delta \hat a' + e^{i(\Delta \omega t + \phi)} \delta \hat a'^\dagger \,, \quad \delta \hat q' = -i \left( e^{-i(\Delta \omega t + \phi)} \delta \hat a' - e^{i(\Delta \omega t + \phi)} \delta \hat a'^\dagger \right) \,.
+\]
+Expanding this expression and keeping only terms up to first order in the fluctuations, we find
+\begin{equation*}
+\begin{aligned}
+\hat I(t) \approx & |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\Delta \omega t + \phi) \\
+& + |\bar{\alpha}| \left( \delta \hat p + \delta \hat p'\right)  \\
+& + |\bar{\alpha}'| \cos (\Delta \omega t + \phi) \left( \delta \hat p + \delta \hat p'\right) \\  
+& + |\bar{\alpha}'|\sin (\Delta \omega t + \phi) \left( \delta \hat q - \delta \hat q'\right)\\
+\end{aligned}
+\end{equation*}
+The first line corresponds to the classical DC and beatnote terms, while the remaining lines correspond to the fluctuations. We will now explore the different detection regimes covered in the main text.
+
+\subsection*{Single field detection}
+Let's first consider the single field case where we get rid of all terms related to $\hat a'$. The photocurrent operator then reduces to
+\begin{equation*}
+\hat I   \approx |\bar{\alpha}|^2 + |\bar{\alpha}|\delta \hat p.
+\end{equation*}
+The photocurrent fluctuations are then directly proportional to the amplitude quadrature fluctuations of the input field, scaled by the classical amplitude.
+
+\subsection*{Two fields detection}
+Let's first consider two fields with the same frequency, i.e. $\Delta \omega = 0$. The photocurrent operator then reads
+\begin{equation*}
+\begin{aligned}
+\hat I   \approx & |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\phi) \\
+& + |\bar{\alpha}| \left( \delta \hat p + \delta \hat p'\right)  \\
+& + |\bar{\alpha}'| \cos (\phi) \left( \delta \hat p + \delta \hat p'\right) \\  
+& + |\bar{\alpha}'|\sin (\phi) \left( \delta \hat q - \delta \hat q'\right)\\
+\end{aligned}
+\end{equation*}
+where the mean field is a simple interference between the two fields, while the fluctuations depend on both amplitude and phase quadratures of the two fields. By adjusting the relative phase $\phi$, one can select which quadrature is measured. For example, setting $\phi = 0$ selects the amplitude quadratures, while setting $\phi = \pi/2$ selects the phase quadratures. The issue is that in this case, both fields contribute to the measured quadrature fluctuations, which is not desired when probing sub shotnoise fluctuations of a signal (the LO will add its own fluctuations).
+
+\subsection*{Two fields detection with frequency offset}
+Now, we consider the case where the two fields have a frequency offset $\Delta \omega \neq 0$. The mean photocurrent then contains a beatnote at frequency $\Delta \omega$ and reads 
+\begin{equation*}
+\bar I= |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\Delta \omega t + \phi).
+\end{equation*}
+such that demodulating the photocurrent at frequency $\Delta \omega' \sim \Delta \tilde \omega$ with phase $\tilde \phi$ and low-pass filtering yields
+\begin{equation*}
+\bar I_{\rm demod} \approx |\bar{\alpha}| |\bar{\alpha}'| \cos ((\Delta \omega - \Delta \tilde \omega)t + \phi - \tilde \phi).
+\end{equation*}
+This very signal can then be used to lock the frequency of an auxiliary laser to the desired frequency offset $\Delta \tilde \omega$ from the main laser. However, this signal featuring many zero crossings, one needs to tune the auxiliary laser frequency close enough to the desired offset so that it ensures the feedback loop locks to the correct zero crossing. This is generally done manually by scanning the auxiliary laser frequency until the right zero crossing is found, confirmed by monitoring the beatnote on a spectrum analyzer.
+
+
+\section*{PDH error signal}
+\addcontentsline{toc}{section}{PDH error signal} 
+
+the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
+
+
+\subsection*{Input Phase-Modulated Field}
+
+The electric field at the input of the cavity is assumed to be a coherent state that has been phase-modulated at frequency \( \Omega \), such that the classical (real) electric field takes the form:
+\begin{equation}
+    E_{\text{cl}}^{(\text{PM})}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \left[
+        e^{-i\omega_0 t} - e^{i\omega_0 t}
+        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 - \Omega)t} + e^{i(\omega_0 - \Omega)t} \right)
+        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 + \Omega)t} + e^{i(\omega_0 + \Omega)t} \right)
+    \right]
+    \label{eq:pm_field}
+\end{equation}
+where \( \alpha_0 \) is the coherent amplitude of the carrier, \( \epsilon_\phi \ll 1 \) is a small modulation index (related to the phase modulation depth), and \( \omega_0 \) is the optical carrier frequency. This field includes both the positive and negative frequency components, as expected for a physical (Hermitian) electric field operator.
+
+\subsection*{Reflection from the Cavity}
+
+Each frequency component of the field is reflected with a complex frequency-dependent amplitude reflection coefficient \( r(\omega) \), such that the reflected field is:
+\begin{equation}
+\begin{aligned}
+    E_{\text{refl}}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \Big[
+    & r(\omega_0) e^{-i\omega_0 t} - r^*(\omega_0) e^{i\omega_0 t} \\
+    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 - \Omega) e^{-i(\omega_0 - \Omega)t} + r^*(\omega_0 - \Omega) e^{i(\omega_0 - \Omega)t} \right) \\
+    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 + \Omega) e^{-i(\omega_0 + \Omega)t} + r^*(\omega_0 + \Omega) e^{i(\omega_0 + \Omega)t} \right)
+    \Big]
+\end{aligned}
+\label{eq:refl_field}
+\end{equation}
+
+\subsection*{Photodetected Intensity}
+
+The photodetector measures the intensity:
+\[
+I(t) \propto |E_{\text{refl}}(t)|^2
+\]
+We isolate the terms oscillating at \( \Omega \), which arise from the interference between the carrier and sideband components. Keeping only the beat terms between the carrier and sidebands, we find:
+\begin{equation}
+I(t) \supset \epsilon_\phi \cdot \Re\left[ A_+ - A_- \right] \cos(\Omega t)
++ \epsilon_\phi \cdot \Im\left[ A_+ - A_- \right] \sin(\Omega t)
+\label{eq:intensity_beats}
+\end{equation}
+where we define:
+\[
+A_\pm = r(\omega_0) r^*(\omega_0 \pm \Omega)
+\]
+
+\subsection*{Demodulation with Arbitrary Phase}
+
+The signal is demodulated using a local oscillator \( \cos(\Omega t + \phi) \), where \( \phi \) is the demodulation phase. Using trigonometric identities:
+\[
+\cos(\Omega t + \phi) = \cos(\Omega t)\cos\phi - \sin(\Omega t)\sin\phi
+\]
+we multiply Equation~\eqref{eq:intensity_beats} and low-pass filter to obtain:
+\begin{equation}
+\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
+\Re[A_+ - A_-] \cos\phi + \Im[A_+ - A_-] \sin\phi
+\right\}
+\label{eq:error_signal_general}
+\end{equation}
+
+\subsection*{Sidebands Far Off-Resonance Approximation}
+
+In the standard PDH regime, the modulation frequency is much greater than the cavity linewidth:
+\[
+\Omega \gg \kappa
+\]
+so the sidebands are far off-resonance. This means:
+\[
+r(\omega_0 \pm \Omega) \approx 1 \quad \Rightarrow \quad A_\pm \approx r(\omega_0)
+\]
+and therefore:
+\[
+A_+ - A_- \approx 0
+\]
+However, if we retain the asymmetry between the sidebands (e.g., due to dispersion), or keep the finite detuning contribution, we approximate:
+\[
+A_+ - A_- \approx r(\omega_0) \left[ r^*(\omega_0 + \Omega) - r^*(\omega_0 - \Omega) \right] = r(\omega_0) \Delta r^*
+\]
+
+\subsection*{Final Result}
+
+Substituting into Equation~\eqref{eq:error_signal_general}, we obtain:
+\begin{equation}
+\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
+\Re[r(\omega_0) \Delta r^*] \cos\phi + \Im[r(\omega_0) \Delta r^*] \sin\phi
+\right\}
+\label{eq:error_signal_deltar}
+\end{equation}
+
+In the limit where \( \Delta r^* \rightarrow 1 \) (normalized, symmetric sidebands), this simplifies to:
+\begin{equation}
+\boxed{
+\epsilon_{\text{PDH}}(\omega_0, \phi) \propto \cos\phi \cdot \Re[r(\omega_0)] + \sin\phi \cdot \Im[r(\omega_0)]
+}
+\label{eq:pdh_final}
+\end{equation}
+
+\subsection*{7. Interpretation}
+
+Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linear superposition of the real and imaginary parts of the complex reflection coefficient. The demodulation phase \( \phi \) selects the detected quadrature:
+\begin{itemize}
+    \item \( \phi = 0 \): error signal is proportional to \( \Re[r] \) — symmetric around resonance, not suitable for locking.
+    \item \( \phi = \pi/2 \): error signal is proportional to \( \Im[r] \) — antisymmetric, ideal dispersive error signal.
+    \item \( \phi \ne 0, \pi/2 \): mixes quadratures, possibly introducing offset or distortion.
+\end{itemize}
+
+\bigskip
+
+This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
+  

@@ -1,38 +1,135 @@
 \chapter{Experimental Methods}
-This chapter will cover the experimental methods used in the development of optomechanical systems, focusing on the generation of squeezed light and the techniques for optical locking and quadrature measurement. The methods are designed to enhance the sensitivity of measurements in quantum optics and optomechanics.
+This chapter essentially covers feedback control techniques used in Chapter IV and V. It is thought as a practical guide to the implementation of various locking schemes using the LKB \textit{home grown} control software PyRPL. The chapter begins with a general introduction to feedback control, PI controllers and error signal requirements. It then details specific locking techniques used in this work, with an emphasis on experimental aspects. For in depth technical description of the PyRPL working principle, we refer the reader to Chapter III or Leonard Neuhaus thesis \cite{Neuhauser_Thesis_2021}, as well as the PyRPL documentation \cite{PyRPL_Docs} and original article \cite{PyRPL_Article}. Some figures are adapted from this last reference (with authorization)
+ \newline
 \minitoc
 \newpage
-\section{Optical Locking Techniques with PyRPL}
-A central aspect of the experimental setups is the ability to stabilize various optical features. In this work, it is the case for the relative phase between two optical paths, keeping optical cavities on resonance, or fixing the detuning between a master and a slave laser. \newline
+\section{Feedback control}
+A central aspect of experimental quantum optics is the ability to stabilize various parameters of an optical setup against environmental fluctuations. These parameters include cavity lengths, laser frequencies, optical phases, and temperatures of nonlinear crystals, which all undergo unwanted drifts and noise due to thermal, acoustic, and mechanical perturbations. To achieve this stabilization, feedback control systems are employed, which rely on generating an error signal that quantifies the deviation from a desired setpoint. This error signal is then processed by a controller to compute a corrective feedback signal that drives an actuator to counteract the disturbance and maintain the parameter at its target value.
 
-\noindent This section will cover the locking techniques used in this work, from basic Michelson-type locking to more advanced Pound-Drever-Hall techniques and phase-locked loops. The implementation of these techniques using the in-house library PyRPL is presented. 
+
+\subsection{Overview}
+
+A feedback control loop then aims to stabilize the behaviour of a physical system that is continuously subject to disturbances.  
+When the system may be linearized around its operating point, its response to a harmonic perturbation at angular frequency $\omega_0$ is fully characterized by its complex transfer function $G(\omega)$. We denote by $V_{\mathrm{exc}}(t)$ the real excitation applied to the system, taken to be sinusoidal,
+\begin{equation}
+V_{\mathrm{exc}}(t) = A_{\mathrm{exc}} \cos(\omega_0 t),
+\label{eq:Vexc}
+\end{equation}
+with amplitude $A_{\mathrm{exc}}$.  
+In the frequency domain the system is described by its complex transfer function
+\begin{equation}
+G(\omega) = |G(\omega)| e^{i\phi(\omega)},
+\label{eq:Gomega}
+\end{equation}
+which specifies the amplitude response $|G(\omega)|$ and the phase shift $\phi(\omega)$ experienced by a sinusoid at frequency $\omega$. The relation between input and output is expressed most naturally in complex notation.  
+Writing the excitation as the real part of a complex exponential,
+\[
+V_{\mathrm{exc}}(t)= \Re\!\left\{A_{\mathrm{exc}} e^{i\omega_0 t}\right\} \implies V_{\mathrm{meas}}(t)
+= \Re\!\left\{\, G(\omega_0)\, A_{\mathrm{exc}} e^{i\omega_0 t} \right\}
+\]
+so that explicitly
+\begin{equation}
+V_{\mathrm{meas}}(t)
+= |G(\omega_0)| A_{\mathrm{exc}}
+  \cos\!\left(\omega_0 t + \phi(\omega_0)\right).
+\label{eq:Vmeas}
+\end{equation}
+Thus the physical output remains real, while the complex transfer function $G(\omega_0)$ determines how the amplitude and phase of the input harmonic are modified.
+
+\subsubsection{In-phase and quadrature decomposition.}
+It is convenient to decompose the transfer function into its in-phase (I) and quadrature (Q) components such that Eq.~\eqref{eq:Vmeas} can be written as
+\begin{equation}
+V_{\mathrm{meas}}(t)
+= I(\omega_0)\cos(\omega_0 t)
+  + Q(\omega_0)\sin(\omega_0 t),
+\label{eq:IQreal}
+\end{equation}
+which forms the basis of IQ demodulation.  
+By multiplying $V_{\mathrm{meas}}(t)$ by $\cos(\omega_0 t)$ and $\sin(\omega_0 t)$ and low-pass filtering the results with a filter $H_f(\omega)$ with a cutoff frequency $\omega_f \ll \omega_0$, one obtains the slowly varying quadratures
+$\,I(t)$ and $Q(t)$, from which the complex baseband signal
+\begin{equation}
+s_{\mathrm{meas}}(t) = I(\omega_0) + i\,Q(\omega_0)
+\end{equation}
+is constructed.  \\  
+
+Obviously, realistic excitation signals are never pure sinusoids, such that they can be decomposed into a superposition of harmonic components
+\begin{equation*}
+V_{\mathrm{exc}}(t) = \Re{\int_{0}^{\infty} \dfrac{d\omega}{2\pi} \, A_{\mathrm{exc}}(\omega) \, e^{i\omega t}}.
+\end{equation*} 
+where $A_{\mathrm{exc}}(\omega)$ is the complex amplitude of the component at angular frequency $\omega$. Demodulating the measured signal at a frequency $\omega_0$ and low pass filtering it yields a measured signal given by 
+\begin{equation}
+\begin{split}
+s_{\mathrm{meas}}(t) &= \int_{0}^{\infty} \dfrac{d\omega}{2\pi} \, G(\omega- \omega_0) H_f(\omega) \, A_{\mathrm{exc}}(\omega-\omega_0) \, e^{i\omega t} \\
+& = I(t) + i \, Q(t)
+\end{split}
+\end{equation}
+such that the IQ demodulation produces time-dependent quadratures $I(t)$ and $Q(t)$, whose complex combination $s_{\mathrm{meas}}(t)$ represents the slowly varying complex envelope. \\ 
+
+In a feedback loop, a relevant observable derived from $s_{\mathrm{meas}}(t)$ is fed into the controller and is denoted $s_{\mathrm{in}}(t)$. Depending on the application, $s_{\mathrm{in}}(t)$ may correspond to one of the quadratures, the reconstructed phase, or any real-valued function of $(I,Q)$. 
+
 
 \subsection{Proportion-Integral (PI) Controllers}
-Proportional-Integral (PI) controllers are widely used in quantum optics experiments to stabilize critical parameters such as cavity length, laser frequency, and optical phase. To this end, one needs to extract an error signal \( \epsilon(t) \) that quantifies the deviation from a desired setpoint, such as a target temperature, phase difference or cavity resonance. It is typically expressed as the difference between a measured signal and its reference value:
-\[
-\epsilon(t) = s_{\text{meas}}(t) - s_{\text{ref}},
-\]
-where \( s_{\text{meas}}(t) \) denotes the physical quantity monitored in the experiment (e.g., reflected intensity or interferometric signal), and \( s_{\text{ref}} \) is the target value corresponding to the lock point.\newline
-
-\noindent For effective feedback stabilization, the error signal must satisfy several essential criteria:
-\begin{itemize}
-    \item \textbf{High SNR:} Near the setpoint, \( \epsilon(t) \) should exhibit a high SNR to ensure robust locking and minimize the influence of technical and electronic noise.
-    \item \textbf{Linearity and antisymmetry:} The error signal should be linear and antisymmetric in a neighborhood of the operating point. Small deviations from the setpoint should produce a proportional response in \( \epsilon(t) \), with opposite signs for deviations of opposite direction.
-    \item \textbf{Monotonicity and uniqueness:} The slope \( \partial \epsilon / \partial x \), where \( x \) denotes the control parameter (e.g., cavity length or laser frequency), should be monotonic and unambiguous near the lock point to avoid multiple equilibrium points and ensure stable locking behavior.
-    \item \textbf{Steep slope near the setpoint:} A steeper slope improves sensitivity to small deviations and enhances lock accuracy, although it must be balanced against potential noise amplification.
-    \item \textbf{Bandwidth compatibility:} The spectral content of \( \epsilon(t) \) must be compatible with the bandwidth of the actuator and the dynamics of the system. For example, in the case of a piezoelectric transducer, which acts as a low-pass mechanical element, the error signal high-frequency components won't be compensated by the actuator.  
-\end{itemize}
-
-\noindent The PI controller computes the feedback signal \( u(t) \) from the error signal \( \epsilon(t) \) according to:
+Now that both quadratures are accessible through the IQ demodulation, and that we obtained a signal $s_{\mathrm{in}}(t)$ relevant for the control task at hand, we need to extract an error signal \( \varepsilon(t) \) that quantifies the deviation from a desired setpoint at which we wish to \textit{lock} the system. It is typically expressed as the difference between a measured signal and its reference value:
 \begin{equation}
-    u(t) = K_P \, \epsilon(t) + K_I \int_0^t \epsilon(\tau) d\tau
+    \varepsilon(t) = s_{\text{in}}(t) - s_{\text{ref}},
+\end{equation}
+where \( s_{\text{in}}(t) \) is the physical quantity monitored in the experiment, and \( s_{\text{ref}} \) is the target value.\\ 
+
+For effective feedback stabilization, this error signal must satisfy several essential criteria listed below. \\ 
+
+\noindent \textbf{High SNR: }
+Near the setpoint, \( \varepsilon(t) \) should exhibit a high SNR to ensure robust locking and minimize the influence of technical and electronic noise. \\ 
+
+\noindent \textbf{Linearity and antisymmetry: }
+The error signal should be linear and antisymmetric in a neighborhood of the operating point. Small deviations from the setpoint should produce a proportional response in \( \varepsilon(t) \), with opposite signs for deviations of opposite direction. \\
+
+\noindent \textbf{Monotonicity and uniqueness: }
+The slope \( \partial \varepsilon / \partial x \), where \( x \) denotes the control parameter (e.g., cavity length or laser frequency), should be monotonic and unambiguous near the lock point to avoid multiple equilibrium points and ensure stable locking behavior. \\
+
+\noindent \textbf{Steep slope near the setpoint: }
+A steeper slope improves sensitivity to small deviations and enhances lock accuracy, although it must be balanced against potential noise amplification. \\
+
+\noindent \textbf{Bandwidth compatibility: }
+The spectral content of \( \varepsilon(t) \) must be compatible with the bandwidth of the actuator and the dynamics of the system. For example, in the case of a piezoelectric transducer, which acts as a low-pass mechanical element, the error signal high-frequency components won't be compensated by the actuator.  \\ 
+
+A standard way to achieve this stabilization is to use a Proportion-Integral (PI) controller.The PI controller computes the feedback signal \( u(t) \) from the error signal \( \varepsilon(t) \) according to:
+\begin{equation}
+    s_{\text{out}}(t) = K_P \, \varepsilon(t) + K_I \int_0^t \varepsilon(\tau) d\tau
     \tag{III.1}
 \end{equation}
-where \( K_P \) and \( K_I \) are the proportional and integral gains, respectively. The proportional term \( K_P \, e(t) \) responds to the current error and primarily acts on mid-frequency deviations, enabling rapid corrections. The integral term \( K_I \int \epsilon(\tau) d\tau \) accumulates past errors and is most effective at low frequencies, helping to eliminate long-term drifts and steady-state offsets. \newline
+where \( K_P \) and \( K_I \) are the proportional and integral gains, respectively. The proportional term \( K_P \, \varepsilon(t) \) responds to the current error and primarily acts on mid-frequency deviations, enabling rapid corrections. The integral term \( K_I \int \varepsilon(\tau) d\tau \) accumulates past errors and is most effective at low frequencies, helping to eliminate long-term drifts and steady-state offsets. \\ 
 
-\noindent In classical control theory, PID (Proportional-Integral-Derivative) controllers are designed to stabilize dynamic systems by combining three terms: a proportional term for immediate response, an integral term to eliminate steady-state error, and a derivative term that anticipates future error based on the rate of change. However, in practical experimental setups—particularly in quantum optics—PI control (Proportional-Integral) is typically sufficient and even preferable to full PID control. The derivative term, which acts predominantly at high frequencies, is generally unnecessary and can be counterproductive. This is because the feedback actuator is often a piezoelectric transducer, which exhibits non-zero capacitance. Combined with the finite output impedance of the control electronics, this forms a natural low-pass filter that significantly attenuates high-frequency components of the feedback signal. As a result, any derivative term—which primarily targets high-frequency correction—would be both ineffective due to this filtering and potentially harmful by injecting high-frequency noise into the loop. \newline 
+In classical control theory, PID (Proportional-Integral-Derivative) controllers are designed to stabilize dynamic systems by combining three terms: a proportional term for immediate response, an integral term to eliminate steady-state error, and a derivative term that anticipates future error based on the rate of change. However, in practical experimental setups—particularly in quantum optics—PI control (Proportional-Integral) is typically sufficient and even preferable to full PID control. The derivative term, which acts predominantly at high frequencies, is generally unnecessary and can be counterproductive. This is because the feedback actuator is often a piezoelectric transducer, which exhibits non-zero capacitance. Combined with the finite output impedance of the control electronics, this forms a natural low-pass filter that significantly attenuates high-frequency components of the feedback signal. As a result, any derivative term—which primarily targets high-frequency correction—would be both ineffective due to this filtering and potentially harmful by injecting high-frequency noise into the loop. \newline 
 
-\noindent Therefore, PI control offers a balanced and robust approach: the integral term suppresses low-frequency drifts (typically below a few Hz to tens of Hz), the proportional term corrects intermediate-frequency deviations (up to a few kHz), and high-frequency components (above the mechanical resonance or actuation bandwidth) are naturally filtered out and deliberately left uncorrected. This allows for stable feedback while preserving high-frequency signals—such as thermal noise or mechanical sidebands—which carry essential physical information for analysis and measurement.
+Therefore, PI control offers a balanced and robust approach: the integral term suppresses low-frequency drifts (typically below a few Hz to tens of Hz), the proportional term corrects intermediate-frequency deviations (up to a few kHz), and high-frequency components (above the mechanical resonance or actuation bandwidth) are naturally filtered out and deliberately left uncorrected. This allows for stable feedback while preserving high-frequency signals—such as thermal noise or mechanical sidebands—which carry essential physical information for analysis and measurement.
+
+
+\subsection{PyRPL overview}
+With the rise of digital signal processing, many feedback control systems have transitioned from analog electronics to software-based implementations. One such powerful and flexible platform is PyRPL (Python Red Pitaya Lockbox), an open-source software suite designed for real-time digital signal processing and feedback control using the Red Pitaya hardware and developed in our team. PyRPL provides a user-friendly interface for implementing various control algorithms, including PI controllers, and is now widely used in experimental physics laboratories across the world \cite{PyRPL_Article, PyRPL_Docs}. While we refer the reader to Leonhard Neuhaus' thesis \cite{Neuhauser_Thesis_2021} and the PyRPL documentation \cite{PyRPL_Docs} for an in-depth technical description of the PyRPL working principle, we will concisely summarize the main performance metrics and high abstraction blocks relevant for this work. \\
+
+Red Pitaya is a compact FPGA-based platform that combines high-speed analog-to-digital (ADC) and digital-to-analog (DAC) converters with a powerful FPGA for real-time signal processing. The onboard ADCs and DACs operate at a 125\,MHz sampling rate with 14-bit nominal resolution, which enables the digitization and synthesis of signals up to about 60\,MHz according to the Nyquist criterion. In practice, the effective resolution is about 12\,bits for the ADC and 11\,bits for the DAC, which remains more than sufficient for precision photodetection, modulation, and error-signal processing in quantum optics. A notable limitation is the digitization noise floor, as well as the noise added from the voltage shifter, bounding the output to $\pm 1V$. Sensible improvement of the order of 5 dBm/Hz can be achieved in the 100 Hz - 1 MHz frequency range by unsoldering the voltage shifter circuit, as well as taking of the regulator from the board and powering the Red Pitaya with a low noise external voltage source. Taking the voltage offset off actually makes the output range 0-2V, ideal as to not feed (high voltage amplified) negative voltages to our piezoelectric actuators (which would kill them). This modification was performed on all Red Pitayas used in this work, bringing the noise floor down to 140dBM/Hz at 1MHz. In the frequency range relevant to experimental quantum optics (from a few kHz to a few hundred kHz), the Red Pitaya noise floor is remarkably close—within 10–15 dB—to that of high-end laboratory lockboxes and diagnostic instruments. Above ~1 MHz, however, professional RF analyzers remain significantly quieter and cleaner. 10dB for a fraction of the cost is a fair trade off in our opinion. \\
+
+PyRPL leverages this hardware to implement various digital signal processing tasks. The modules available in PyRPL are a scope, a spectrum analyser, 2 Arbitrary Signal Generators (ASG), 3 PID controllers, 3 IQ modules and an Infinite Impulse Response (IIR) filter module. These modules can be interconnected in a flexible manner to create complex feedback loops tailored to specific experimental needs, by simply rerouting the signal flow either in a programmatic way using the PyRPL Python API, or graphically through the PyRPL GUI. This makes PyRPL a very versatile and cheap tool for monitoring and piloting a wide range of experimental setups. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{./chap3/fig/IQraw.pdf}
+    \caption{
+        Basic working principle of the IQ module in PyRPL. One can set any register value using either the GUI or the Python API to manipulate the input signal as desired.
+    }\label{fig:IQs}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/IQuserB.pdf}
+    \caption{
+        Basic operating modes of the IQ module in PyRPL, illustrating how different DSP functions can be implemented by appropriate choices of the module registers. (a) \textbf{Filter mode.} The input signal is demodulated using the internal $\cos(\omega t+\phi)$ and $\sin(\omega t+\phi)$ local oscillators, low-pass filtered, and subsequently remodulated. With amplitude set to zero and a finite gain and quadrature_factor, the module acts as a tunable narrowband filter centered at the LO frequency. (b) \textbf{Network analyzer mode.} A sinusoidal excitation is generated by setting the amplitude register to a non-zero value and routing the signal through output_direct. The response of the device under test is demodulated and accumulated in the NA registers to obtain averaged in-phase and quadrature components while sweeping the frequency register. (c) \textbf{Offset-frequency locking / PLL mode.} With both gain and amplitude set to zero, only the demodulation path is active. The CORDIC phase estimator computes the instantaneous phase of the input signal relative to the LO, providing a real-time phase or frequency error suitable for digital phase-locked-loop operation. (d) \textbf{PDH error-signal / dither-locking mode.} A small modulation tone is generated via a non-zero amplitude value and applied to the actuator using output_direct. The incoming signal is demodulated at the same frequency, low-pass filtered, and one of the demodulated quadratures is routed as the PDH error signal by selecting output_signal = quadrature. Together, these configurations highlight the versatility of the IQ module in implementing filtering, network analysis, phase detection, and digital locking schemes within the same FPGA block.
+    }\label{fig:IQuserB}
+\end{figure}
+
+\subsection{IQ modules}
+We now turn more specifically to the PyRPL IQ modules, which can be used to filter inputs, generate error signals, and set as to be used as a network analyser. Using the Python API or the GUI, one can select which input channel (in1 or in2) is fed to the IQ module. The user can then set the various registers associated to gain, amplitude, phase etc... to set the IQ module as to perform the desired task. 
+\section{Locking techniques}
 
 \subsection{Temperature Locks}
 A first example of a PI lock used in this work is the temperature lock, which is used to stabilize the temperature of non linear crystals embedded inside optical cavities. The error signal is derived from a temperature sensor, such as a thermistor, which measures the temperature of the crystal and simply written as:
@@ -88,19 +185,4 @@ This imaginary component encodes the rapid phase dispersion near resonance that 
 \begin{equation}
 \epsilon(\Delta \omega_{\mathrm{beat}}) \propto \Delta \omega_{\mathrm{beat}}
 \end{equation}
-\subsection{Coherent Sideband Locks}
-\subsection{PyRPL Control Implementation}
 
-\section{Optical Cavities and Squeezed Light Generation}
-Maybe I need to add a section on the theory of squeezed light generation, but for now I will just focus on the experimental methods.
-\subsection{Cavity Types and Alignement Procedures}
-
-
-\subsection{Bowtie-type Optical Parametric Oscillator (OPO)}
-\subsection{Phase Matching and Nonlinear Crystals}
-\subsection{Filter Cavities for Squeezing Rotation}
-
-\section{Quadrature Measurement Techniques}
-\subsection{Direct Detection with Photodiodes}
-\subsection{Balanced Homodyne Detection}
-\subsection{Local Oscillator Design and Control}
