@@ -92,7 +92,7 @@ A steeper slope improves sensitivity to small deviations and enhances lock accur
 \noindent \textbf{Bandwidth compatibility: }
 The spectral content of \( \varepsilon(t) \) must be compatible with the bandwidth of the actuator and the dynamics of the system. For example, in the case of a piezoelectric transducer, which acts as a low-pass mechanical element, the error signal high-frequency components won't be compensated by the actuator.  \\ 
 
-A standard way to achieve this stabilization is to use a Proportion-Integral (PI) controller.The PI controller computes the feedback signal \( u(t) \) from the error signal \( \varepsilon(t) \) according to:
+A standard way to achieve this stabilization is to use a Proportion-Integral (PI) controller. The PI controller computes the feedback signal \( u(t) \) from the error signal \( \varepsilon(t) \) according to:
 \begin{equation}
     s_{\text{out}}(t) = K_P \, \varepsilon(t) + K_I \int_0^t \varepsilon(\tau) d\tau
     \tag{III.1}
@@ -105,67 +105,116 @@ Therefore, PI control offers a balanced and robust approach: the integral term s
 
 
 \subsection{PyRPL overview}
-With the rise of digital signal processing, many feedback control systems have transitioned from analog electronics to software-based implementations. One such powerful and flexible platform is PyRPL (Python Red Pitaya Lockbox), an open-source software suite designed for real-time digital signal processing and feedback control using the Red Pitaya hardware and developed in our team. PyRPL provides a user-friendly interface for implementing various control algorithms, including PI controllers, and is now widely used in experimental physics laboratories across the world \cite{PyRPL_Article, PyRPL_Docs}. While we refer the reader to Leonhard Neuhaus' thesis \cite{Neuhauser_Thesis_2021} and the PyRPL documentation \cite{PyRPL_Docs} for an in-depth technical description of the PyRPL working principle, we will concisely summarize the main performance metrics and high abstraction blocks relevant for this work. \\
+With the rise of digital signal processing, many feedback control systems have transitioned from analog electronics to software-based implementations. One such powerful and flexible platform is PyRPL (Python Red Pitaya Lockbox), an open-source software suite designed for real-time digital signal processing and feedback control using the Red Pitaya (RP) hardware and developed in our team. PyRPL provides a user-friendly interface for implementing various control algorithms, including PI controllers, and is now widely used in experimental physics laboratories across the world \cite{PyRPL_Article, PyRPL_Docs}. While we refer the reader to Leonhard Neuhaus' thesis \cite{Neuhauser_Thesis_2021} and the PyRPL documentation \cite{PyRPL_Docs} for an in-depth technical description of the PyRPL working principle, we will concisely summarize the main performance metrics and high abstraction blocks relevant for this work. \\
 
-Red Pitaya is a compact FPGA-based platform that combines high-speed analog-to-digital (ADC) and digital-to-analog (DAC) converters with a powerful FPGA for real-time signal processing. The onboard ADCs and DACs operate at a 125\,MHz sampling rate with 14-bit nominal resolution, which enables the digitization and synthesis of signals up to about 60\,MHz according to the Nyquist criterion. In practice, the effective resolution is about 12\,bits for the ADC and 11\,bits for the DAC, which remains more than sufficient for precision photodetection, modulation, and error-signal processing in quantum optics. A notable limitation is the digitization noise floor, as well as the noise added from the voltage shifter, bounding the output to $\pm 1V$. Sensible improvement of the order of 5 dBm/Hz can be achieved in the 100 Hz - 1 MHz frequency range by unsoldering the voltage shifter circuit, as well as taking of the regulator from the board and powering the Red Pitaya with a low noise external voltage source. Taking the voltage offset off actually makes the output range 0-2V, ideal as to not feed (high voltage amplified) negative voltages to our piezoelectric actuators (which would kill them). This modification was performed on all Red Pitayas used in this work, bringing the noise floor down to 140dBM/Hz at 1MHz. In the frequency range relevant to experimental quantum optics (from a few kHz to a few hundred kHz), the Red Pitaya noise floor is remarkably close—within 10–15 dB—to that of high-end laboratory lockboxes and diagnostic instruments. Above ~1 MHz, however, professional RF analyzers remain significantly quieter and cleaner. 10dB for a fraction of the cost is a fair trade off in our opinion. \\
-
-PyRPL leverages this hardware to implement various digital signal processing tasks. The modules available in PyRPL are a scope, a spectrum analyser, 2 Arbitrary Signal Generators (ASG), 3 PID controllers, 3 IQ modules and an Infinite Impulse Response (IIR) filter module. These modules can be interconnected in a flexible manner to create complex feedback loops tailored to specific experimental needs, by simply rerouting the signal flow either in a programmatic way using the PyRPL Python API, or graphically through the PyRPL GUI. This makes PyRPL a very versatile and cheap tool for monitoring and piloting a wide range of experimental setups. 
-
-\begin{figure}[htbp]
+\begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{./chap3/fig/IQraw.pdf}
+    \includegraphics[width=\textwidth]{./chap3/fig/signals.pdf}
+    \caption{coucou}\label{fig:signal}
+\end{figure} 
+
+Red Pitaya is a compact FPGA-based platform that combines high-speed analog-to-digital (ADC) and digital-to-analog (DAC) converters with a powerful FPGA for real-time signal processing. The onboard ADCs and DACs operate at a 125\,MHz sampling rate with 14-bit nominal resolution, which enables the digitization and synthesis of signals up to about 60\,MHz according to the Nyquist criterion. In practice, the effective resolution is about 12\,bits for the ADC and 11\,bits for the DAC, which remains more than sufficient for precision photodetection, modulation, and error-signal processing in quantum optics. A notable limitation is the digitization noise floor, as well as the noise added from the voltage shifter, bounding the output to $\pm 1V$. Sensible improvement of the order of 5 dBm/Hz can be achieved in the 100 Hz - 1 MHz frequency range by unsoldering the voltage shifter circuit, as well as taking of the regulator from the board and powering the Red Pitaya with a low noise external voltage source. Taking the voltage offset off actually makes the output range 0-2V, ideal as to not feed (high voltage amplified) negative voltages to our piezoelectric actuators (which would kill them). This modification was performed on all RPs used in this work, bringing the noise floor down to 140dBM/Hz at 1MHz. In the frequency range relevant to experimental quantum optics (from a few kHz to a few hundred kHz), the RP noise floor is remarkably close—within 10–15 dB—to that of high-end laboratory lockboxes and diagnostic instruments. Above ~1 MHz, however, professional RF analyzers remain significantly quieter and cleaner. 10dB for a fraction of the cost is a fair trade off in our opinion. \\
+
+PyRPL leverages this hardware to implement various digital signal processing tasks. The modules available in PyRPL are a scope, a spectrum analyser, 2 Arbitrary Signal Generators (ASG), 3 PID controllers, 3 IQ modules, an Infinite Impulse Response (IIR) filter module, and 4 pulse width modulation modules (pwm). These modules can be interconnected in a flexible manner to create complex feedback loops tailored to specific experimental needs, by simply rerouting the signal flow either in a programmatic way using the PyRPL Python API, or graphically through the PyRPL GUI. The signal flow architecture is illustrated in figure \ref{fig:signal}, where one can see how the various modules can be interconnected. This makes PyRPL a very versatile and cheap tool for monitoring and piloting a wide range of experimental setups. \\
+
+An additional experimental tricks to circumvent the number of output issues (2 DAC channels only) is to use the slow analog outputs of the RP, which need to be soldered manually to BNC/SMA outputs. These outputs send 4 0-1.8V signals synthesized from filtered pwm signals, have a sensibly noisier floor as well as a limited bandwidth (up to $\sim$100kHz only), but are very useful for sending DC offsets as well as slow feedback signals. Additionally, we make extensive use of minicircuits bias tess to direct both slow and RF signals to the same output, as to be able to artifically double the number of output channels (2 RF + 2 DC). 
+
+
+\subsection{IQ modules}
+We now turn more specifically to the PyRPL IQ modules, which can be used for various purposes. Using the Python API or the GUI, one can select which input channel (in1 or in2) is fed to the IQ module. Similarly, one can chose to which output channel (out1 or out2) the processed signal is sent. In between, various registers allow the user to manipulate the input signal as desired. The latent available operations of the mpdule are illustrated in figure \ref{fig:IQs}. The input signal can first be high pass filtered to eventually remove DC offsets. It is then mixed with the $\cos \omega_0 t$ and $\sin \omega_0 t$ signals discussed above, with an additional phase shift $\phi$ that can be set by the user. They are then lowpass filtered to yield the in-phase and quadrature components \( I(t) \) and \( Q(t) \). Finally, these quadratures can be manipulated in various ways before being sent to the output channel, or sent to other modules such as the scope or the spectrum analyzer for diagnostic purposes. \\ 
+    
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/IQraww.pdf}
     \caption{
         Basic working principle of the IQ module in PyRPL. One can set any register value using either the GUI or the Python API to manipulate the input signal as desired.
     }\label{fig:IQs}
 \end{figure}
 
+\noindent \textbf{Filters: } setting the various registers as in fig \ref{fig:IQuserB}(a), one can choose to lowpass, highpass or bandpass an input signal by chosing the cutoff frequencies the filter orders. \\
+
+\noindent \textbf{Network Analyzer: } by setting the registers as in fig \ref{fig:IQuserB}(b), one can use the IQ module as a network analyzer. The input signal is swept over a user-defined frequency range, and the in-phase and quadrature components are recorded at each frequency step. This allows to reconstruct the complex transfer function of a system connected to the input channel, which is very useful for characterizing the response of feedback loops. \\
+
+\noindent \textbf{Phase Lock Loop: } by setting the registers as in fig \ref{fig:IQuserB}(c), one can use the IQ module as a phase lock loop (PLL). The phase of the input signal is continuously monitored through the IQ demodulation, and a feedback signal is generated. This error signal then needs to be routed to the PID modules to lock the phase to a desired reference value. This is particularly useful for stabilizing optical phases in interferometric setups, as well as implemental frequency offset locks and PLLs. \\
+
+\noindent \textbf{Error Signals - Lock-in Detection: } by setting the registers as in fig \ref{fig:IQuserB}(d), one can use the IQ module to generate error signals for feedback control. The user can select which quadrature (I or Q) is sent to the output channel, as well as apply additional processing such as scaling, offsetting, or filtering. A modulation with known phase relationship to the demodulated signal can be sent off to an EOM, and AOM or a PZT to implement locks.
+This allows to tailor the error signal to the specific requirements of the feedback loop, ensuring optimal performance and stability. \\ 
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{./chap3/fig/IQuserB.pdf}
-    \caption{
-        Basic operating modes of the IQ module in PyRPL, illustrating how different DSP functions can be implemented by appropriate choices of the module registers. (a) \textbf{Filter mode.} The input signal is demodulated using the internal $\cos(\omega t+\phi)$ and $\sin(\omega t+\phi)$ local oscillators, low-pass filtered, and subsequently remodulated. With amplitude set to zero and a finite gain and quadrature_factor, the module acts as a tunable narrowband filter centered at the LO frequency. (b) \textbf{Network analyzer mode.} A sinusoidal excitation is generated by setting the amplitude register to a non-zero value and routing the signal through output_direct. The response of the device under test is demodulated and accumulated in the NA registers to obtain averaged in-phase and quadrature components while sweeping the frequency register. (c) \textbf{Offset-frequency locking / PLL mode.} With both gain and amplitude set to zero, only the demodulation path is active. The CORDIC phase estimator computes the instantaneous phase of the input signal relative to the LO, providing a real-time phase or frequency error suitable for digital phase-locked-loop operation. (d) \textbf{PDH error-signal / dither-locking mode.} A small modulation tone is generated via a non-zero amplitude value and applied to the actuator using output_direct. The incoming signal is demodulated at the same frequency, low-pass filtered, and one of the demodulated quadratures is routed as the PDH error signal by selecting output_signal = quadrature. Together, these configurations highlight the versatility of the IQ module in implementing filtering, network analysis, phase detection, and digital locking schemes within the same FPGA block.
-    }\label{fig:IQuserB}
-\end{figure}
+    \caption{coucou}\label{fig:IQuserB}
+\end{figure} 
 
-\subsection{IQ modules}
-We now turn more specifically to the PyRPL IQ modules, which can be used to filter inputs, generate error signals, and set as to be used as a network analyser. Using the Python API or the GUI, one can select which input channel (in1 or in2) is fed to the IQ module. The user can then set the various registers associated to gain, amplitude, phase etc... to set the IQ module as to perform the desired task. 
+
+
 \section{Locking techniques}
-
-\subsection{Temperature Locks}
+We now proceed to give a list of the various locks used in this work, along with their practical implementation as well as their error signal expression. The details of the derivations of the error signals are given in Appendix B. \\ 
+\subsection{Temperature Lock}
 A first example of a PI lock used in this work is the temperature lock, which is used to stabilize the temperature of non linear crystals embedded inside optical cavities. The error signal is derived from a temperature sensor, such as a thermistor, which measures the temperature of the crystal and simply written as:
 \begin{equation}
-\epsilon(\Delta T) \propto \Delta T 
+\varepsilon(\Delta T) \propto \Delta T 
 \end{equation}
 where \( \Delta T = T_{\text{meas}} - T_{\text{set}} \).
-The error signal is then fed into a PI controller, which adjusts the heating element, a peltier module in our case, to maintain the desired temperature setpoint. \newline
+The error signal is then fed into a PI controller, which adjusts the heating element, a peltier module in our case, to maintain the desired temperature setpoint. In the case of our SHG, temperature lock is actually performed using a commercial temperature controller provided along the PPLN crystal array provided by Covesion. Similarly, the OPO crystal temperature is stabilized using a Thorlabs temperature controller (TED???) connected to a thermistor and a peltier module, the RP just allowing us to module the lock point by feeding an offset voltage to the temperature controller. \\
 
-The temperature lock is crucial for maintaining the phase matching conditions in nonlinear optical processes (developped in the next section), such as second-harmonic generation or optical parametric oscillation, where the efficiency of frequency conversion depends sensitively on the crystal temperature. By stabilizing the temperature, we ensure that the nonlinear interactions remain optimal, leading to consistent and reproducible results in experiments involving squeezed light generation or other nonlinear optical phenomena. \newline
+A full PyRPL lock has however been implemented on the quantum thermometry experiment led by Tristan Briant, and the details of this implementation can be found in the thesis of Emile Ferreux. The RP wiring diagram is shown in figure \ref{fig:TLock}. \\ 
+
+The temperature lock is crucial for maintaining the phase matching conditions in nonlinear optical processes (developped in the next section), such as second-harmonic generation or optical parametric oscillation, where the efficiency of frequency conversion depends sensitively on the crystal temperature. By stabilizing the temperature, we ensure that the nonlinear interactions remain optimal, leading to consistent and reproducible results in experiments involving squeezed light generation or other nonlinear optical phenomena. \\ 
 
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/Tlock.pdf}
+    \caption{coucou}\label{fig:TLock}
+\end{figure} 
 
-\subsection{Optical paths Locks - Dither Locks }
+
+\subsection{Optical phase Lock}
 Controlling the relative path length between two arms of an interferometer is a fundamental technique in quantum optics. The basic idea is to use the interference of light from two paths to lock the phase difference between them. Although not being the same experiental setups, Michelson interferometers, Mach-Zhender interferometers, and Local Oscillator stabilization error signals fall in the same category as they are derived from the same principle. Namely, the error signal is proportional to the sine of the phase difference between the two arms: 
 \begin{equation}
-\epsilon(\Delta\phi) \propto \sin(\Delta\phi) \simeq \Delta\phi 
+\varepsilon(\Delta\phi) \propto \sin(\Delta\phi) \simeq \Delta\phi 
 \end{equation}
-where $\Delta \phi = \phi_a - \phi_b$ is the phase difference between the two optical paths. Analogically, we would need to add an adjustable voltage offset, as to be able to tune the error signal to zero at the desired phase difference, before seeding this error signal to the PI block. Digitally, this is performed by adding a constant offset to the error signal, which can be adjusted to set the desired phase difference. \newline
+where $\Delta \phi = \phi_a - \phi_b$ is the phase difference between the two optical paths. Analogically, we would need to add an adjustable voltage offset, as to be able to tune the error signal to zero at the desired phase difference, before seeding this error signal to the PI block. Digitally, this is performed by adding a constant offset to the error signal, which can be adjusted to set the desired phase difference. \\
 
-\noindent In practice, this is implemented by mounting a mirror on which one of the arms is reflected, and then using a piezoelectric transducer to control the position of the mirror, hence modulating the relative phase between the two optical paths. The piezo is then feedback controlled through a PI loop, which adjusts the voltage applied to the piezo to set the error signal to 0. 
-FIGURE 
-
-\subsection{Side of Fringe Locks}
+In practice, this is implemented by mounting a mirror on which one of the arms is reflected, and then using a piezoelectric transducer to control the position of the mirror, hence modulating the relative phase between the two optical paths. The piezo is then feedback controlled through a PI loop, which adjusts the voltage applied to the piezo to set the error signal to 0. The RP wiring diagram is shown in figure \ref{fig:Tphase}. \\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/Tphase.pdf}
+    \caption{coucou}\label{fig:Tphase}
+\end{figure} 
+\subsection{Cavity Locks}
+We now turn to the locking of optical cavities, and will develop 3 techniques used in this work: the side of fringe lock, the dither lock and the Pound-Drever-Hall (PDH) lock. The RP wiring and the typical error signal shapes are shown in figure \ref{fig:Tcav}. \\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/Tcav.pdf}
+    \caption{coucou}\label{fig:Tcav}
+\end{figure} 
+\subsubsection{Side of Fringe}
+A lorentzian dip does not qualify as a valid error signal to lock the cavity on resonance, according to the requirements listed above, as it is symmetric around resonance. However, by locking the cavity on the side of the resonance fringe, one can obtain a usable error signal that is linear and antisymmetric in a small neighborhood around the lock point. This technique is known as the \textit{side of fringe} lock. The error signal near resonance is then given by
 \begin{equation}
-\epsilon(\Delta \omega) \propto \Delta \omega
+\varepsilon(\Delta \omega) \propto (\Delta \omega - \Delta_{\text{lock}})
 \end{equation}
+where the $\Delta_{\text{lock}}$ is the detuning at which the cavity is locked. In PyRPL, calibrating the lorentzian dip in transmission or reflection allows to set the lock point in units of the cavity linewidth, which is very convenient. This would also allow to explore off resonant optomechanical effects, such as optical spring and damping. \\ 
 
-\subsection{Pound-Drever-Hall Locks}
-Another key technique extensively used in this work is the \textit{Pound-Drever-Hall} (PDH) method, a high-sensitivity scheme for stabilizing either the cavity length to a fluctuating laser frequency, or vice versa. The method relies on imposing phase modulation sidebands on the laser field, typically using an electro-optic modulator (EOM), and using these sidebands as phase-stable references. Because they lie far outside the cavity linewidth (\( \Omega_{\text{mod}} \gg \kappa \)), the sidebands are reflected nearly unchanged: \( r(\omega_\ell \pm \Omega_{\text{mod}}) \approx 1 \). In contrast, the carrier field near resonance acquires a frequency-dependent phase shift upon reflection, captured by the complex cavity reflection coefficient \( r_c(\delta) \). The PDH error signal is obtained by detecting the reflected beam and demodulating the photocurrent at the modulation frequency, isolating the beat terms between carrier and sidebands. The resulting signal is proportional to the \textit{imaginary part} of \( r_c(\delta) \), which varies antisymmetrically with detuning and provides a zero-crossing error signal ideal for linear feedback. The error signal near resonance is then given by 
+The side of fringe lock is almost always used in this work as a preliminary step to bring the cavity close to resonance before engaging a more sophisticated lock such as PDH or dither lock. However, it is less robust and sensitive compared to other techniques, making it less suitable for long-term stabilization or high-precision applications. 
+
+\subsubsection{Dither lock}
+A first technique to lock an optical cavity on resonance is the dither lock. The basic idea is to impose a small sinusoidal modulation modulating the cavity resonant frequency, typically by applying a phase modulation using an EOM, or by modulating the cavity length using a piezoelectric actuator. Linking this to the IQ section above, we would modulate the cavity at frequency \(\omega_0 \lesssim \kappa\) with $\kappa$ the cavity linewidth, and demodulate the reflected or transmitted signal at the same frequency using an IQ module. The error signal is then proportional to the in-phase or quadrature component of the demodulated signal, depending on the demodulation phase chosen. The error signal near resonance is then given by
+\begin{equation}
+\varepsilon(\Delta \omega) \propto \Delta \omega
+\end{equation}
+This technique is relatively simple to implement and can provide a robust lock, although it may introduce additional noise due to the imposed modulation. The modulation frequency and depth need to be carefully chosen to optimize the lock performance while minimizing the impact on the system's dynamics. This technique has the advantage of being implementable with the transmitted signal of the cavity (while PDH requires the reflected signal), since the modulation frequency is lower than the cavity linewidth (otherwise the sidebands would only be reflected). 
+
+\subsubsection{Pound-Drever-Hall Lock}
+The second method to lock an optical cavity on resonance is the Pound-Drever-Hall (PDH) technique \cite{Black_PDH_2001}, which can be used to lock a laser frequency to a stable optical cavity, or conversely to lock the cavity length to a stable laser frequency. 
+The method relies on imposing phase modulation sidebands on the laser field outside the cavity bandwidth this time, typically using an electro-optic modulator (EOM), and using these sidebands as phase-stable references. Because they lie far outside the cavity linewidth (\( \Omega_{\text{mod}} \gg \kappa \)), the sidebands are reflected nearly unchanged: \( r(\omega_\ell \pm \Omega_{\text{mod}}) \approx 1 \). In contrast, the carrier field near resonance acquires a frequency-dependent phase shift upon reflection, captured by the complex cavity reflection coefficient \( r_c(\delta) \). The PDH error signal is obtained by detecting the reflected beam and demodulating the photocurrent at the modulation frequency, isolating the beat terms between carrier and sidebands. The resulting signal is proportional to the \textit{imaginary part} of \( r_c(\delta) \), which varies antisymmetrically with detuning and provides a zero-crossing error signal ideal for linear feedback. The error signal near resonance is then given by 
 \begin{equation}
 \epsilon(\Delta \omega) \propto \mathfrak{Im} \Bigl(r_c(\Delta \omega)\Bigr)\simeq \Delta \omega
 \end{equation}
-This imaginary component encodes the rapid phase dispersion near resonance that allows the system to discriminate the sign and magnitude of frequency deviations. In contrast, the real part of \( r_c(\delta) \), being symmetric around resonance, does not yield a usable error signal. \newline
+This imaginary component encodes the rapid phase dispersion near resonance that allows the system to discriminate the sign and magnitude of frequency deviations. In contrast, the real part of \( r_c(\delta) \), being symmetric around resonance, does not yield a usable error signal. The PDH lock is generally preferred to the dither lock due to its superior sensitivity, larger linear range, and reduced susceptibility to technical noise. \\
 
-\noindent The \textit{demodulation phase} plays a critical role in selecting the appropriate quadrature of the signal for feedback. Since the beat signal between the carrier and sidebands has both in-phase (cosine) and quadrature (sine) components, choosing the correct demodulation phase ensures that the extracted error signal aligns with the imaginary part of the reflection coefficient. A misaligned demodulation phase can lead to mixing of the symmetric (real) part into the error signal, thereby reducing sensitivity and introducing offset or distortion near the lock point. In practice, the demodulation phase is optimized empirically---either via a variable phase shifter in the electronic demodulation path or by adjusting the physical delay in the reference oscillator---to maximize the slope of the error signal at zero-crossing, corresponding to pure detection of the dispersive component.
+The \textit{demodulation phase} plays a critical role in selecting the appropriate quadrature of the signal for feedback. Since the beat signal between the carrier and sidebands has both in-phase and quadrature components, choosing the correct demodulation phase ensures that the extracted error signal aligns with the imaginary part of the reflection coefficient. A misaligned demodulation phase can lead to mixing of the symmetric (real) part into the error signal, thereby reducing sensitivity and introducing offset or distortion near the lock point. In practice, the demodulation phase is optimized empirically---either via a variable phase shifter in the electronic demodulation path or by adjusting the physical delay in the reference oscillator---to maximize the slope of the error signal at zero-crossing, corresponding to pure detection of the dispersive component.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{./chap3/fig/PDHplots.pdf}
@@ -180,9 +229,18 @@ This imaginary component encodes the rapid phase dispersion near resonance that 
 
 
 
-\subsection{Offset frequency Locks}
-
+\subsection{Offset Frequency Locks and Phase Lock Loop}
+Finally, we discuss the implementation of frequency offset locks and phase lock loops (PLL) using the IQ modules in PyRPL. These techniques are essential for stabilizing the frequency offset and the relative phase of the beatnote between two lasers. The RP wiring diagram is shown in figure \ref{fig:Tfreq}. \\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{./chap3/fig/Tfreq.pdf}
+    \caption{coucou}\label{fig:Tfreq}
+\end{figure}
+The basic principle is to detect the beatnote between two lasers on a fast photodiode, and to demodulate this signal using an IQ module at a frequency close to the desired offset frequency. The error signal is then derived from one of the quadratures of the demodulated signal. The error signal near the lock point is then given by
 \begin{equation}
-\epsilon(\Delta \omega_{\mathrm{beat}}) \propto \Delta \omega_{\mathrm{beat}}
+\varepsilon(\Delta \omega_{\mathrm{beat}}) \propto \Delta \omega_{\mathrm{beat}}
 \end{equation}
+where \( \Delta \omega_{\mathrm{beat}} = \omega_{\mathrm{beat}} - \omega_{\mathrm{ref}} \) is the deviation of the beatnote frequency from the reference frequency. This error signal is then fed into a PI controller, which adjusts the frequency of one of the lasers (typically via a piezoelectric actuator or current modulation) to maintain the desired offset frequency. \\
+
+As explained before, a high voltage piezoelectric actuator has a limited bandwidth, typically up to a few kHz, due to the naturally occuring lowpass filtering effect of the piezo capacitance and the output impedance of the driving electronics. To overcome this limitation, we resort to the so called floating ground technique, which consists in locking both the piezo actuator through a standard PI loop, as well as locking the piezo ground to a higher frequency without amplifying it (or using an Operational Amplifier with high bandwidth i.e. OP27? 37?). This technique effectively extends the bandwidth of the piezo actuator up to a few tens of kHz, allowing for more robust and stable locks. Additionally, the laser current or temperature (the case here), is also locked to ensure the piezo remains in its mid-range of operation. Although not detailed in figure \ref{fig:Tfreq}, the temperature can be locked using the PyRPL PWM module, such that the modulated pwm signal (duty cycle) is sent to the laser temperature controller. The heating element of the laser will then naturally lowpass filter the pwm signal, providing a smooth and stable temperature control. This dual feedback approach enhances the overall stability and performance of the frequency offset lock and PLL. \\
 

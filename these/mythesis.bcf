@@ -2395,23 +2395,37 @@
     <bcf:citekey order="15" intorder="1">thompson_strong_2008</bcf:citekey>
     <bcf:citekey order="15" intorder="2">thompson_coupling_2013</bcf:citekey>
     <bcf:citekey order="16" intorder="1">thompson_strong_2008</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">thompson_strong_2008</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">jayich_dispersive_2008</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">xu_cavity_2016</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">jayich_dispersive_2008</bcf:citekey>
-    <bcf:citekey order="20" intorder="2">thompson_strong_2008</bcf:citekey>
-    <bcf:citekey order="20" intorder="3">sankey_strong_2010</bcf:citekey>
-    <bcf:citekey order="20" intorder="4">xu_cavity_2016</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">purdy_observation_2013</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">sankey_strong_2010</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">peterson_laser_2016</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Neuhauser_Thesis_2021</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">PyRPL_Docs</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">PyRPL_Article</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">PyRPL_Article</bcf:citekey>
-    <bcf:citekey order="27" intorder="2">PyRPL_Docs</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Neuhauser_Thesis_2021</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">PyRPL_Docs</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Neuhauser_Thesis_2021</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">PyRPL_Docs</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">PyRPL_Article</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">PyRPL_Article</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">PyRPL_Docs</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Neuhauser_Thesis_2021</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">PyRPL_Docs</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Black_PDH_2001</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">coating_review</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">nanofab_review</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">optomech_challenges</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Regal2008</bcf:citekey>
+    <bcf:citekey order="27" intorder="2">Harris2008</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">AmatoPhD</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">SiN_review</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">piezo_review</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">AmatoPhD</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">LMA_IBS</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">AmatoPhD</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">LIGO_optics</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">AmatoPhD</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">AmatoPhD</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">SiN_review</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">Norcada_datasheet</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">SiN_review</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">SiN_review</bcf:citekey>
+    <bcf:citekey order="38" intorder="2">Norcada_datasheet</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">SiN_cryogenic</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">OFHC_review</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Sankey2010</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">ref:68</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

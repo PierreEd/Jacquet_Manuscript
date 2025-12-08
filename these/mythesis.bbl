@@ -422,6 +422,7 @@
       \strng{authornamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
       \strng{authorfullhash}{045a3f5b20ae3a6917a692fc320c32de}
       \strng{authorfullhashraw}{045a3f5b20ae3a6917a692fc320c32de}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -458,21 +459,144 @@
       \endverb
       \keyw{Atomic,Classical and Continuum Physics,Complex Systems,Condensed Matter Physics,general,Mathematical and Computational Physics,Molecular,Optical and Plasma Physics,Physics,Theoretical}
     \endentry
+    \entry{Regal2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d1f45cd382775faf93c643b9594e0907}{%
+           family={Regal},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bace5ed02e1ef518b7b5803f51869df7}{%
+           family={Teufel},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ab513a16b998e6975e7db9f425fc194c}{%
+           family={Lehnert},
+           familyi={L\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{fullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{fullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{bibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorbibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authornamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorfullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorfullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1745-2473}
+      \field{journaltitle}{Nature Physics}
+      \field{month}{5}
+      \field{number}{7}
+      \field{title}{{Measuring nanomechanical motion with a microwave cavity interferometer}}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{555\bibrangedash 560}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys974
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \endverb
+    \endentry
+    \entry{Sankey2010}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=728ad0aae91926434904f31a44bbd8a0}{%
+           family={Sankey},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8a9ab49f0fe827e25142df0f1ec23209}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=66370b3393e1d6a8f4be1d62742f9af9}{%
+           family={Zwickl},
+           familyi={Z\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=10ad048d47638680ecb143257f5fb956}{%
+           family={Jayich},
+           familyi={J\bibinitperiod},
+           given={a.\bibnamedelimi M.},
+           giveni={a\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{fullhash}{1e7a073c6ce31445f4ff0f0dc5138abd}
+      \strng{fullhashraw}{1e7a073c6ce31445f4ff0f0dc5138abd}
+      \strng{bibnamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authorbibnamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authornamehash}{a74aa6d5b05c1cde175853762c0cbb3d}
+      \strng{authorfullhash}{1e7a073c6ce31445f4ff0f0dc5138abd}
+      \strng{authorfullhashraw}{1e7a073c6ce31445f4ff0f0dc5138abd}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1745-2473}
+      \field{journaltitle}{Nature Physics}
+      \field{month}{6}
+      \field{number}{9}
+      \field{title}{{Strong and tunable nonlinear optomechanical coupling in a low-loss system}}
+      \field{volume}{6}
+      \field{year}{2010}
+      \field{pages}{707\bibrangedash 712}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys1707
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/doifinder/10.1038/nphys1707
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/nphys1707
+      \endverb
+    \endentry
   \enddatalist
+  \missing{AmatoPhD}
+  \missing{Black_PDH_2001}
+  \missing{Harris2008}
+  \missing{LIGO_optics}
+  \missing{LMA_IBS}
   \missing{Neuhauser_Thesis_2021}
+  \missing{Norcada_datasheet}
+  \missing{OFHC_review}
   \missing{PyRPL_Article}
   \missing{PyRPL_Docs}
+  \missing{SiN_cryogenic}
+  \missing{SiN_review}
   \missing{Vahlbruch2006}
   \missing{Vyatchanin1993}
   \missing{aasi_enhanced_2013}
   \missing{braginsky_quantum_1992}
+  \missing{coating_review}
   \missing{dumont_cavity_2017}
   \missing{harry_advanced_2010}
-  \missing{peterson_laser_2016}
-  \missing{purdy_observation_2013}
+  \missing{nanofab_review}
+  \missing{optomech_challenges}
+  \missing{piezo_review}
+  \missing{ref:68}
   \missing{thompson_coupling_2013}
   \missing{thompson_strong_2008}
-  \missing{xu_cavity_2016}
 \endrefsection
 \endinput
 

@@ -48,38 +48,79 @@
 \contentsline {section}{\numberline {II.2}Cavity Optomechanics with Membrane based systems }{61}{section.2.2}%
 \contentsline {subsection}{\numberline {II.2.1}Classical Description}{61}{subsection.2.2.1}%
 \contentsline {subsubsection}{Resonance Frequencies}{62}{section*.40}%
-\contentsline {subsubsection}{Cavity transmission and reflection}{63}{section*.41}%
-\contentsline {subsubsection}{Cavity Linewidth and Finesse}{63}{section*.42}%
-\contentsline {subsection}{\numberline {II.2.2}Quantum Langevin Equations}{64}{subsection.2.2.2}%
-\contentsline {subsubsection}{Classical Description : Closed cavity model}{66}{section*.51}%
-\contentsline {paragraph}{Connection to eigenvectors.}{69}{section*.54}%
-\contentsline {paragraph}{Summary.}{70}{section*.60}%
-\contentsline {subsection}{\numberline {II.2.3}Mechanical Resonators}{71}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {II.2.4}Noise spectra}{71}{subsection.2.2.4}%
-\contentsline {paragraph}{Diagonalisation of two non-degenerate, tunnel-coupled optical cavities.}{71}{section*.61}%
-\contentsline {chapter}{\numberline {III}Experimental Methods}{73}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Feedback control}{74}{section.3.1}%
-\contentsline {subsection}{\numberline {III.1.1}Overview}{74}{subsection.3.1.1}%
-\contentsline {subsubsection}{In-phase and quadrature decomposition.}{75}{section*.62}%
-\contentsline {subsection}{\numberline {III.1.2}Proportion-Integral (PI) Controllers}{75}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {III.1.3}PyRPL overview}{77}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {III.1.4}IQ modules}{78}{subsection.3.1.4}%
-\contentsline {section}{\numberline {III.2}Locking techniques}{79}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Temperature Locks}{79}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Optical paths Locks - Dither Locks }{81}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Side of Fringe Locks}{81}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {III.2.4}Pound-Drever-Hall Locks}{81}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {III.2.5}Offset frequency Locks}{83}{subsection.3.2.5}%
-\contentsline {chapter}{Appendix B: Two-photon derivations}{85}{chapter*.67}%
-\contentsline {section}{Field Quantization}{85}{section*.68}%
-\contentsline {section}{Two photon formalism}{87}{section*.71}%
-\contentsline {subsubsection}{Quadratures}{87}{section*.72}%
-\contentsline {section}{Derivation of the optimal angle}{93}{section*.75}%
-\contentsline {paragraph}{Optimal fixed angle.}{94}{section*.77}%
-\contentsline {paragraph}{Minimum attained value.}{94}{section*.78}%
-\contentsline {paragraph}{Lower bound and the real-\(\mathcal {K}\) case.}{94}{section*.79}%
-\contentsline {chapter}{Appendix B: Error Signals}{95}{chapter*.80}%
-\contentsline {section}{Direct detection error signals}{95}{section*.81}%
-\contentsline {section}{PDH error signal}{97}{section*.85}%
-\contentsline {chapter}{Bibliography}{103}{section*.93}%
-\contentsline {chapter}{Bibliography}{105}{chapter*.94}%
+\contentsline {subsubsection}{Cavity transmission and reflection}{63}{section*.42}%
+\contentsline {subsubsection}{Cavity Linewidth and Finesse}{64}{section*.43}%
+\contentsline {subsection}{\numberline {II.2.2}Quantum Description}{64}{subsection.2.2.2}%
+\contentsline {subsubsection}{Two Cavity Mode Model}{64}{section*.44}%
+\contentsline {subsubsection}{Single Mode Model}{66}{section*.54}%
+\contentsline {subsubsection}{Comparison to Single Mode Model}{67}{section*.55}%
+\contentsline {chapter}{\numberline {III}Experimental Methods}{69}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Feedback control}{70}{section.3.1}%
+\contentsline {subsection}{\numberline {III.1.1}Overview}{70}{subsection.3.1.1}%
+\contentsline {subsubsection}{In-phase and quadrature decomposition.}{71}{section*.56}%
+\contentsline {subsection}{\numberline {III.1.2}Proportion-Integral (PI) Controllers}{71}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {III.1.3}PyRPL overview}{73}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {III.1.4}IQ modules}{75}{subsection.3.1.4}%
+\contentsline {section}{\numberline {III.2}Locking techniques}{77}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Temperature Lock}{78}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Optical phase Lock}{78}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Cavity Locks}{79}{subsection.3.2.3}%
+\contentsline {subsubsection}{Side of Fringe}{79}{section*.64}%
+\contentsline {subsubsection}{Dither lock}{81}{section*.65}%
+\contentsline {subsubsection}{Pound-Drever-Hall Lock}{82}{section*.66}%
+\contentsline {subsection}{\numberline {III.2.4}Offset Frequency Locks and Phase Lock Loop}{82}{subsection.3.2.4}%
+\contentsline {chapter}{\numberline {IV}Experiments: Optomechanics}{85}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}System Description and Setup}{86}{section.4.1}%
+\contentsline {subsection}{\numberline {IV.1.1}Previous LKB work and Motivation}{86}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {IV.1.2}Specifications and Design}{87}{subsection.4.1.2}%
+\contentsline {subsubsection}{High Finesse}{88}{section*.69}%
+\contentsline {subsubsection}{High $Q$ factor}{88}{section*.71}%
+\contentsline {subsubsection}{Optical alignment}{89}{section*.72}%
+\contentsline {subsubsection}{Dynamical range}{89}{section*.73}%
+\contentsline {subsubsection}{Compactness \& Stability}{90}{section*.74}%
+\contentsline {subsubsection}{Vacuum and Cryogenic compatibility}{90}{section*.75}%
+\contentsline {subsection}{\numberline {IV.1.3}Flexure Actuation}{90}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {IV.1.4}Experimental Setup}{92}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {IV.1.5}Alignment Procedures}{94}{subsection.4.1.5}%
+\contentsline {section}{\numberline {IV.2}Experimental Characterization}{96}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Cavity Characterization}{96}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Locking Techniques and Stability}{101}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {IV.2.3}Optical Ringdowns and Loss Measurements}{101}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {IV.2.4}Mechanical Resonator Characterization}{101}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {IV.2.5}Bistability}{101}{subsection.4.2.5}%
+\contentsline {section}{\numberline {IV.3}Design of an Optomechanical Fibered Cavity}{101}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Design considerations}{101}{subsection.4.3.1}%
+\contentsline {chapter}{\numberline {V}Experiments: Squeezed Light}{103}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Optical Setup Overview}{104}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Cavity Resonances and Locks}{104}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}IRMC Cavity}{104}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}SHG Cavity}{106}{subsection.5.2.2}%
+\contentsline {paragraph}{Cavity Scanning and Resonance Mapping.}{106}{section*.88}%
+\contentsline {paragraph}{Cavity Locking.}{107}{section*.89}%
+\contentsline {paragraph}{Nonlinear Crystal and Phase Matching.}{107}{section*.90}%
+\contentsline {paragraph}{Temperature-Induced Resonance Shifts.}{107}{section*.91}%
+\contentsline {subsection}{\numberline {V.2.3}OPO Cavity}{109}{subsection.5.2.3}%
+\contentsline {section}{\numberline {V.3}Spectral analysis}{109}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Detection of Squeezing and Anti-squeezing}{109}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Spectral Variation with Frequency}{109}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {V.3.3}Optimal Quadrature Conditions}{109}{subsection.5.3.3}%
+\contentsline {section}{\numberline {V.4}Filter Cavity Concept}{109}{section.5.4}%
+\contentsline {subsection}{\numberline {V.4.1}Virgo Filter Cavity }{109}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {V.4.2}Thermal effects in bichromatic locks}{109}{subsection.5.4.2}%
+\contentsline {chapter}{Conclusion}{111}{chapter*.94}%
+\contentsline {section}{Summary of Work}{111}{section*.95}%
+\contentsline {section}{Outlooks}{111}{section*.96}%
+\contentsline {section}{Final Remarks}{111}{section*.97}%
+\contentsline {chapter}{Appendix A: Two-photon derivations}{113}{chapter*.98}%
+\contentsline {section}{Field Quantization}{113}{section*.99}%
+\contentsline {section}{Two photon formalism}{115}{section*.102}%
+\contentsline {subsubsection}{Quadratures}{115}{section*.103}%
+\contentsline {section}{Derivation of the optimal angle}{121}{section*.106}%
+\contentsline {paragraph}{Optimal fixed angle.}{122}{section*.108}%
+\contentsline {paragraph}{Minimum attained value.}{122}{section*.109}%
+\contentsline {paragraph}{Lower bound and the real-\(\mathcal {K}\) case.}{122}{section*.110}%
+\contentsline {chapter}{Appendix B: Error Signals}{123}{chapter*.111}%
+\contentsline {section}{Direct detection error signals}{123}{section*.112}%
+\contentsline {section}{PDH error signal}{125}{section*.116}%
+\contentsline {chapter}{Bibliography}{131}{section*.124}%
+\contentsline {chapter}{Bibliography}{133}{chapter*.125}%

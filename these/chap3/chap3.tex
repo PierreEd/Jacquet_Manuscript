@@ -283,6 +283,12 @@ where $\omega_{FSR} = \pi c / L$ is the empty cavity free spectral range. When t
   \end{split}
 \end{equation}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/MATEres.pdf}
+  \caption{rrlist = [0, 0.1, 0.25 , 0.5 , 0.75 , 0.9 ]}
+  \label{fig:mate_res}
+\end{figure}
 
 
 \subsubsection{Cavity transmission and reflection}
@@ -323,37 +329,35 @@ We can then derive the cavity finesse as
   \mathcal{F}(x) = \dfrac{\pi c}{ L \kappa(x)}.
 \end{equation}
 
-\subsection{Quantum Langevin Equations}
+\subsection{Quantum Description}
+We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? \\ 
 
-Using the same tools as in section II.2, we can derive the QLE of a membrane based optomechanical system. The membrane position now turns into an operator such that $\hat x \propto \hat c + \hat c^{\dagger} $ with $\hat c$ the mechanical annihilation operator as in the previous section. As seen above, the membrane position modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as
+\subsubsection{Two Cavity Mode Model}
+We start by looking at the two cavity model. Using the same tools as in section II.2, we can derive the QLE of a membrane based optomechanical system. The membrane position now turns into an operator such that $\hat x \propto \hat c + \hat c^{\dagger} $ with $\hat c$ the mechanical annihilation operator as in the previous section. As seen above, the membrane position modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as
 \begin{equation}
 \omega_L(\hat x) \simeq \omega_{L} + G_L \hat x, \qquad \omega_R(\hat x) \simeq \omega_{R} + G_R \hat x,
 \end{equation}
 with \(\omega_{L,R}\) the unperturbed resonance frequencies of the subcavities and \(G_L = \omega_{L}/L_1\) and \(G_R = - \omega_{R}/L_2\) their respective optomechanical couplings. 
-The whole system features a network of optical modes varying linearly with the membrane position, coupled by the membrane transmission.
+The whole system features a network of optical modes varying linearly with the membrane position, coupled by the membrane transmission. \\ 
 
-In Vincent Dumont's PhD work, quadratic points (where \(G^{(1)} = 0\) and \(G^{(2)} \neq 0\)) were the centerfold of the study, in the high membrane reflectivity regime \cite{dumont_cavity_2017}. It was then sufficient to consider two optical modes coupled by photon tunneling through the membrane. 
+In Vincent Dumont's PhD work, quadratic points (where \(G^{(1)} = 0\) and \(G^{(2)} \neq 0\)) were the centerfold of the study, in the high membrane reflectivity regime \cite{dumont_cavity_2017}. It was then sufficient to consider two optical modes coupled by photon tunneling through the membrane. \\ 
 
-However, in our case, we focus on the sole dispersive coupling regime in the MATE configuration, and we additionally consider a low membrane reflectivity. The optimal point to do so is when the first long cavity is on resonance, and when the short one is anti-resonant. With a lowered reflectivity, the coupling between subcavity modes increases, leading to larger mode splittings at the avoided crossings, until the two subcavities are fully hybridized into new cavity modes spanning both subcavities \cite{thompson_strong_2008, thompson_coupling_2013}. In this regime, we need to rescale the optomechanical couplings by the membrane reflectivity as 
-\begin{equation}
-G_{L,R} \rightarrow \tilde{G}_{L,R} = |r_m| G_{L,R}  
-\end{equation}
-to account for the reduced sensitivity of the cavity resonance frequencies to the membrane position \cite{thompson_strong_2008}
+However, in our case, we focus on the sole dispersive coupling regime in the MATE configuration, and we additionally consider a low membrane reflectivity. The optimal point to do so is when the first long cavity is on resonance, and when the short one is anti-resonant. With a lowered reflectivity, the coupling between subcavity modes increases, leading to larger mode splittings at the avoided crossings, until the two subcavities are fully hybridized into new cavity modes spanning both subcavities \cite{thompson_strong_2008, thompson_coupling_2013}. \\ 
 
 The short cavity being precisely at an anti-node, is is equally probable for the tunneled photons from the long cavity to populate two short cavity modes on either side of the anti-node. 
 We then need to describe the system by a single long cavity mode coupled to two short cavity modes, as illustrated in figure \ref{fig:mate_modes}. We introduce the annihilation operators \(\hat a_L\) for the long cavity mode, and \(\hat a_{R+}\) and \(\hat a_{R-}\) for the two short cavity modes on either side of the anti-node. The Hamiltonian of this system can then be written as
 \begin{align}
 \hat H
-&= \hbar (\omega_L + \tilde G_L x ) \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}}
- + \hbar (\omega_{R-} - \tilde G_R x ) \hat a_{R-}^\dagger \hat a_{R-}^{\vphantom{\dagger}}
- + \hbar (\omega_{R+} - \tilde G_R x ) \hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}
+&= \hbar (\omega_L + G_L x ) \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}}
+ + \hbar (\omega_{R-} -  G_R x ) \hat a_{R-}^\dagger \hat a_{R-}^{\vphantom{\dagger}}
+ + \hbar (\omega_{R+} -  G_R x ) \hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}
 \tag*{(= $\hat H_\gamma$)}
 \\[2mm]
 & \quad + \hbar \Omega_m \hat c^\dagger \hat c^{\vphantom{\dagger}}
 \tag*{(= $\hat H_m$)}
 \\[2mm]
-&\quad + \hbar\tilde G_L \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}} \, \delta \hat x
- - \hbar \tilde G_R (\hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}
+&\quad + \hbar G_L \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}} \, \delta \hat x
+ - \hbar G_R (\hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}
               +\hat a_{R-}^\dagger \hat a_{R-}^{\vphantom{\dagger}})\, \delta \hat x
 \tag*{(= $\hat H_{\rm OM}$)}
 \\[2mm]
@@ -369,9 +373,9 @@ where \(J = c|t_m|/2\sqrt{L_1 L_2}\) is the photon tunneling rate through the me
 \end{equation*}
 We will only consider the photonic part of the Hamiltonian, as to put it in matrix form such that we can diagonalize it and work in the basis of the new eigenmodes. Furthermore, we go the frame rotating at frequency $\omega_0 = \omega_{R-} = \omega_L$ i.e. when the long cavity mode is degenerate with the left short cavity mode, such that the photonic Hamiltonian becomes
 \begin{equation}
- \hat H_\gamma = \hbar  \tilde G_L x  \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}}
- - \hbar  \tilde G_R \bigg(x+ \dfrac{\lambda}{4}\bigg)  \hat a_{R-}^\dagger \hat a_{R-}^{\vphantom{\dagger}}
- + \hbar \Bigg(\omega_{FSR} - \tilde G_R \bigg(x- \dfrac{\lambda}{4}\bigg) \Bigg) \hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}\end{equation}
+ \hat H_\gamma = \hbar  G_L x  \hat a_L^\dagger \hat a_L^{\vphantom{\dagger}}
+ - \hbar  G_R \bigg(x+ \dfrac{\lambda}{4}\bigg)  \hat a_{R-}^\dagger \hat a_{R-}^{\vphantom{\dagger}}
+ + \hbar \Bigg(\omega_{FSR} -  G_R \bigg(x- \dfrac{\lambda}{4}\bigg) \Bigg) \hat a_{R+}^\dagger \hat a_{R+}^{\vphantom{\dagger}}\end{equation}
 and we can rewrite both the photonic and tunneling hamiltonian i.e. the photonic manifold in matrix form as
 \begin{equation} 
   \hat H_\gamma + \hat H_{\rm tun} = \hbar
@@ -389,38 +393,37 @@ with
 \begin{equation*}
   \mathbf{M} =
   \begin{pmatrix}
-    \tilde G_L x & -J & -J \\[6pt]
-    -J & - \tilde G_R (x + \lambda/4) & 0 \\[6pt]
-    -J & 0 & \omega_{FSR} - \tilde G_R (x - \lambda/4)
+    G_L x & -J & -J \\[6pt]
+    -J & - G_R (x + \lambda/4) & 0 \\[6pt]
+    -J & 0 & \omega_{FSR} -  G_R (x - \lambda/4)
   \end{pmatrix}.
 \end{equation*}
 One could then diagonalize this \(3 \times 3\) matrix to get the new eigenmodes of the system, and rewrite the optomechanical interaction in this new basis. In the limit where the membrane transmittivity is high such that \( |t_m| \sim 1\) and \( |r_m| \ll 1\), the tunneling rate \(J\) becomes much larger than both optomechanical couplings \(\tilde G_{L,R}\, x\) and the free spectral range \(\omega_{FSR}\). The cumberstone expression of the eigenmodes is not displayed here, but is equivalent to considering an system's eigenstate described by a annihilation operator \(\hat a \) with optomechanical coupling \( G^{(1)}(x)\) and decay rate \(\kappa(x)\) as derived in the previous section. The system's Hamiltonian can then be written as
 \begin{equation}
 \hat{H} = \hbar \omega_c(x=\lambda/4) \hat a^\dagger \hat{a} + \hbar \Omega_m \hat c^\dagger \hat c + \hbar G^{(1)}(x) \hat a^\dagger \hat a \,  \hat x
 \end{equation}
-where we omitted the tilde on the optomechanical coupling for ease of notation. 
-\subsubsection{Classical Description : Closed cavity model}
-We start by describing the classical behaviour of the cavity. Considering a high finesse cavity, with high reflectivity mirrors \(r_1, r_2 \approx 1\), the cavity fields are written as 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/models.pdf}
+  \caption{0, 0.1, 0.25 , 0.5 , 0.75 , 0.9 }
+  \label{fig:mate_modes}
+\end{figure}
+
+\subsubsection{Single Mode Model}
+If the membrane is more transmissive than reflective, one could ask if the system could be described by a single optical mode, whose resonance frequency is weakly perturbed by the membrane position as derived in the previous section. In this case, the Hamiltonian of the system reads
 \begin{equation}
-\begin{aligned}
-\alpha_1 = \alpha_1'
-\end{aligned}
+\hat{H} = \hbar \omega_c(x) \hat a^\dagger \hat{a} + \hbar \Omega_m \hat c^\dagger \hat c
 \end{equation}
-where \(E_{\mathrm{in}}\) is the input field, \(E_1\) the intracavity field before the membrane, \(E_2\) the intracavity field after the membrane, \(E_3\) the transmitted field and \(E_4\) the reflected field. The cavity resonance frequencies are then obtained by solving these equations in the absence of input field \(E_{\mathrm{in}}=0\), leading to the transcendental equation \cite{jayich_dispersive_2008}
+where \(\omega_c(x)\) is given by the expression derived above. This description is then matching the two mode model in the limit of highly reflective membranes as seen in figure \ref{fig:models}, as well as in the limit of low reflectivity membranes where the subcavities are fully hybridized. 
 
+\subsubsection{Comparison to Single Mode Model}
+Since we are ineterested in the dispersive coupling regime in the MATE configuration with a low reflectivity membrane, such that we will operate the system where the linear dispersive coupling is dominant over quadratic dispersive coupling and dissipative coupling, we need to compare which model is best suited to describe the system. \\
 
+Obviously the two mode model breaks down in the limit of low reflectivity membranes where the subcavities are fully hybridized, and the single mode model is then more appropriate. In the opposite limit of highly reflective membranes, both models converge to the same description as seen above. Regarding the radiation pressure force acting on the membrane, in the two mode model, the radiation pressure force is given by the sum of the forces exerted by each subcavity mode as \( \hat F_{rp} = - \hbar G_L \hat a_L^\dagger \hat a_L + \hbar G_R (\hat a_{R+}^\dagger \hat a_{R+} + \hat a_{R-}^\dagger \hat a_{R-})\). In the single mode model, the radiation pressure force is given by \( \hat F_{rp} = - \hbar \partial \omega_c(x)/\partial x \, \hat a^\dagger \hat a\). In the limit of highly reflective membranes, the two mode model radiation pressure force is then more appropriate since the optical mode is split in two subcavity modes, each exerting a force on the membrane. In the opposite limit of low reflectivity membranes where the subcavities are fully hybridized and where we focus on the dispersive coupling regime, it would genuinely be of no interest when studying radiation pressure effects, and a relevant description of the radiation pressure force is tricky to derive (because there are actually photons in both subcavities, but the model breaks down). In our middle ground case of moderately reflective membranes, we will assume the optical mode is mostly localized in the long cavity mode such that the single mode description is valid, and that the radiation pressure force is given by the derivative of the cavity resonance frequency with respect to the membrane position as seen in the textbook case of a single mirror cavity. The same QLEs as in the previous chapter can then be derived and used in our case. 
 
-We describe the subcavity modes by annihilation operators \( \hat a_1\) and \(\hat a_2\), with unperturbed resonance frequencies \(\omega_1\) and \(\omega_2\). The membrane position operator is described by annihilation operator $\hat x \propto \hat c + \hat c^{\dagger} $ as in the previous section. Considering how the membrane position under the effect of radiation pressure modifies the resonance frequencies of the two subcavities, the subcavity length can be written as \(L_1 = L_{1,0} +  x\) and \(L_2 = L_{2,0} -  x\), with \(L_{1,0}\) and \(L_{2,0}\) the equilibrium lengths, and $x$ the mean static displacement of the membrane. This mean displacement being small compared to the cavity length, we can linearize the resonance frequencies as
-\begin{equation}
-\omega_1(x) \simeq \omega_{0} + G_1 x, \qquad \omega_2(x) \simeq \omega_{0} - G_2 x,
-\end{equation}
-with \(G_1 = \omega_{0}/L_{1,0}\) and \(G_2 = \omega_{0}/L_{2,0}\) the optomechanical couplings of the two subcavities, and where \(\omega_{0}\) is the common frequency of the two modes i.e. \(\omega_{1,0} = \omega_{2,0} = \omega_{0}\). The system now features a network of optical modes varying linearly with the membrane position, coupled by the membrane transmission. The Hamiltonian of the system is then given by \cite{xu_cavity_2016}
-\begin{equation}
-\hat{H} = \hbar \omega_1(x) \hat a_1^\dagger \hat{a}_1 + \hbar \omega_2(x) \hat{a}_2^\dagger \hat{a}_2 + \hbar g(\hat{a}_1^\dagger \hat{a}_2 + \hat{a}_2^\dagger \hat{a}_1) + \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega_m^2 \hat{x}^2
-\end{equation}
 
 
-Two configurations are then possible: position the membrane at approximately half the total cavity length \(L/2\), such that \(L_{1,0} \simeq L_{2,0}\) and \(G_1 \simeq G_2\); or position the membrane close to one of the mirrors, such that one subcavity is much shorter than the other, e.g. \(L_{1,0} \gg L_{2,0}\) and \(G_1 \ll G_2\). The first configuration is called the \emph{membrane-in-the-middle} (MIM) configuration, while the second one is called the \emph{membrane-at-the-edge} (MATE) configuration. The MIM configuration has been widely studied in the literature \cite{jayich_dispersive_2008, thompson_strong_2008, sankey_strong_2010, xu_cavity_2016}, and has been used to demonstrate various quantum effects such as ponderomotive squeezing \cite{purdy_observation_2013}, quantum non-demolition measurements of phonon number \cite{sankey_strong_2010}, or ground-state cooling of a mechanical resonator \cite{peterson_laser_2016}. However, the MIM configuration suffers from a low optomechanical coupling rate due to the small value of \(G_{1,2}\), which limits its use for quantum experiments. The MATE configuration has been less studied, but offers a much larger optomechanical coupling rate due to the large value of \(G_1\). This makes it a promising candidate for quantum experiments. In this work, we will focus on the MATE configuration.
 
 
 
@@ -428,280 +431,4 @@ Two configurations are then possible: position the membrane at approximately hal
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsubsection*{Set-up and notation}
-We consider a three–mode optical model for a membrane-at-the-edge (MATE) cavity with a \emph{highly transmissive} middle membrane. The long cavity mode is denoted by \(a\); the short cavity contributes two nearby modes, \(b_{+}\) and \(b_{-}\), centered \(\pm \lambda/4\) away in displacement. In the mode basis \((a,b_+,b_-)^\top\) we take (with \(\hbar=1\))
-\begin{equation}
-\label{eq:H}
-\mathbf H=
-\begin{pmatrix}
-\delta_a & J & -J\\[2pt]
-J & \delta_+ & 0\\[2pt]
--\,J & 0 & \delta_-
-\end{pmatrix},
-\qquad
-\begin{aligned}
-&\delta_a = r_m G_1\,\Delta x,\\
-&\delta_\pm = r_m G_2\!\left(\Delta x \mp \frac{\lambda}{4}\right),
-\end{aligned}
-\end{equation}
-with
-\begin{equation}
-J=\frac{c\,t_m}{2\sqrt{L_1L_2}},\qquad
-t_m^2+r_m^2=1,\qquad
-G_1=\frac{\omega_0}{L_1},\qquad
-G_2=-\frac{\omega_0}{L_2}.
-\end{equation}
-Here \(\Delta x\) is the membrane displacement from the symmetry point, \(\lambda\) the optical wavelength, \(t_m\) (\(r_m\)) the middle-membrane amplitude transmission (reflection), and \(L_{1,2}\) the long/short sub-cavity lengths. High transmissivity means \(r_m\ll 1\) while \(J=O(t_m)\) can be sizable.
-
-The exact normal modes are eigenoperators \(A_k=\alpha_k a+\beta_k b_+ + \gamma_k b_-\) obtained from \((\mathbf H-\omega_k\mathbb I)\,(\alpha_k,\beta_k,\gamma_k)^\top=0\). From the lower rows one finds the exact amplitude ratios
-\begin{equation}
-\label{eq:ratios}
-\frac{\beta_k}{\alpha_k}=-\frac{J}{\delta_+-\omega_k},
-\qquad
-\frac{\gamma_k}{\alpha_k}=+\frac{J}{\delta_--\omega_k}.
-\end{equation}
-The ``physical'' orange branch in the figures is the one continuously connected to the long-cavity mode \(a\).
-
-\section*{Time-domain adiabatic elimination}
-Away from the two avoided crossings at \(\Delta x\approx\pm \lambda/4\), the short-cavity detunings \(|\delta_\pm-\omega|\) are large compared to the coupling:
-\begin{equation}
-\varepsilon_\pm \equiv \frac{J}{|\delta_\pm-\omega|}\ll 1 .
-\end{equation}
-The Heisenberg equations generated by \eqref{eq:H} read
-\begin{equation}
-\label{eq:EOM}
-\begin{aligned}
-i\dot a &= \delta_a a + J b_+ - J b_-,\\
-i\dot b_+ &= \delta_+ b_+ + J a,\\
-i\dot b_- &= \delta_- b_- - J a.
-\end{aligned}
-\end{equation}
-The fast spectators \(b_\pm\) can be slaved to the slow variable \(a\) by setting \(\dot b_\pm\simeq 0\) to leading order:
-\begin{equation}
-\label{eq:slaving}
-b_+ \simeq -\frac{J}{\delta_+}\,a,\qquad
-b_- \simeq \phantom{-}\frac{J}{\delta_-}\,a.
-\end{equation}
-Substituting \eqref{eq:slaving} into the \(a\) equation in \eqref{eq:EOM} gives an effective single-mode dynamics
-\begin{equation}
-\label{eq:ae-effective}
-i\dot a = \Bigg[\delta_a - J^2\!\left(\frac{1}{\delta_+}+\frac{1}{\delta_-}\right)\Bigg] a .
-\end{equation}
-Equation \eqref{eq:ae-effective} shows that, in the dispersive region, the spectators do not acquire population to leading order; they merely induce a frequency (phase) shift of the \(a\) mode of order \(J^2/\delta_\pm\).
-
-If optical losses are included as \(\kappa_a,\kappa_\pm\) (phenomenologically via \(\delta_a\to\delta_a-i\kappa_a/2\) etc.), the same elimination yields
-\begin{equation}
-\label{eq:ae-loss}
-i\dot a = \left[\delta_a-\frac{i\kappa_a}{2} - J^2
-\left(\frac{1}{\delta_+ - i\kappa_+/2}+\frac{1}{\delta_- - i\kappa_-/2}\right)\right] a,
-\end{equation}
-and the validity condition strengthens to \(J\ll \sqrt{\Delta_\pm^2+\kappa_\pm^2/4}\) with \(\Delta_\pm=\Re(\delta_\pm-\omega)\).
-
-\paragraph{Connection to eigenvectors.}
-Using \eqref{eq:ratios}, for the branch connected to \(a\) one has \(|\beta/\alpha|,|\gamma/\alpha|=O(\varepsilon_\pm)\ll1\). Thus the \(b_\pm\) weights in the physical eigenoperator are \(O(\varepsilon_\pm^2)\), fully consistent with the slaving picture \eqref{eq:slaving}.
-
-\subsubsection*{Closed form for the physical eigenfrequency}
-The exact eigenvalue equation for the orange branch obtained from the first row of \((\mathbf H-\omega\mathbb I)v=0\) together with \eqref{eq:ratios} is
-\begin{equation}
-\label{eq:selfconsistent}
-\omega \;=\; \delta_a - J^2\!\left(\frac{1}{\delta_+ - \omega}+\frac{1}{\delta_- - \omega}\right).
-\end{equation}
-In the dispersive regime \(|\delta_\pm|\gg |\omega|\) one can set \(\omega\to 0\) in the denominators at first order, giving the explicit approximation
-\begin{equation}
-\label{eq:omega-phys-first}
-\boxed{\;
-\omega_{\rm phys}(\Delta x)\;\approx\; r_m G_1\,\Delta x
-- J^2\!\left[\frac{1}{r_m G_2(\Delta x-\tfrac{\lambda}{4})}
-+\frac{1}{r_m G_2(\Delta x+\tfrac{\lambda}{4})}\right].
-\;}
-\end{equation}
-Combining the two fractions yields a compact dispersive form
-\begin{equation}
-\label{eq:omega-phys-compact}
-\boxed{\;
-\omega_{\rm phys}(\Delta x)\;\approx\;
-r_m G_1\,\Delta x
--\frac{2J^2}{r_m G_2}\,
-\frac{\Delta x}{\Delta x^2-(\lambda/4)^2}\;.
-\;}
-\end{equation}
-Close to the symmetry point \(|\Delta x|\ll \lambda/4\), \eqref{eq:omega-phys-compact} becomes nearly linear:
-\begin{equation}
-\label{eq:omega-linear}
-\boxed{\;
-\omega_{\rm phys}(\Delta x)\;\approx\;
-\underbrace{\left[r_m G_1+\frac{32J^2}{r_m G_2\,\lambda^2}\right]}_{\text{renormalized slope}}
-\,\Delta x .
-\;}
-\end{equation}
-In the usual MATE limit \(L_1\gg L_2\) (hence \(|G_1|\ll |G_2|\)), the second term typically dominates the slope; this analytic form explains the gentle ``tilt'' of the orange branch between the two avoided crossings.
-
-\subsubsection*{Schrieffer--Wolff (block-diagonal) derivation}
-For completeness, write \(H=H_0+V\) with
-\(
-H_0=\mathrm{diag}(\delta_a,\delta_+,\delta_-)
-\)
-and
-\(
-V=\begin{psmallmatrix}
-0 & J & -J\\ J & 0 & 0\\ -J & 0 & 0
-\end{psmallmatrix}.
-\)
-Let \(S\) be anti-Hermitian satisfying \([H_0,S]=-V\).
-A suitable choice is
-\begin{equation}
-S = 
-\begin{pmatrix}
-0 & \frac{J}{\delta_a-\delta_+} & -\frac{J}{\delta_a-\delta_-}\\[2pt]
--\frac{J}{\delta_a-\delta_+} & 0 & 0\\[2pt]
-\frac{J}{\delta_a-\delta_-} & 0 & 0
-\end{pmatrix}.
-\end{equation}
-The transformed Hamiltonian \(\tilde H=e^{S}He^{-S}=H_0+\frac{1}{2}[S,V]+O(J^3/\Delta^2)\) is block-diagonal to second order, with the \(a\) block
-\begin{equation}
-\label{eq:SW-effective}
-H_{\rm eff}^{(a)}=\delta_a
-- J^2\left(\frac{1}{\delta_+-\delta_a}+\frac{1}{\delta_--\delta_a}\right),
-\end{equation}
-which reduces to \eqref{eq:omega-phys-first} when \(|\delta_\pm|\gg |\delta_a|\). Residual \(a\!\leftrightarrow\!b_\pm\) couplings are suppressed to \(O(J^3/\Delta^2)\).
-
-\subsubsection*{Local avoided crossings (breakdown of elimination)}
-Near \(\Delta x\simeq +\lambda/4\), only \(b_+\) is near resonant; the relevant subspace is \((a,b_+)\) with
-\begin{equation}
-H_{\rm loc}^{(+)}=
-\begin{pmatrix}
-\delta_a & J\\ J & \delta_+
-\end{pmatrix},
-\qquad
-\Rightarrow\qquad
-\omega_{\pm}^{(+)}=\frac{\delta_a+\delta_+}{2}\pm
-\sqrt{\left(\frac{\delta_a-\delta_+}{2}\right)^2+J^2}.
-\end{equation}
-The orange branch is the one connecting continuously to \eqref{eq:omega-phys-compact} away from the crossing. The same holds at \(\Delta x\simeq -\lambda/4\) with \(b_-\).
-Adiabatic elimination is invalid in windows where \(\varepsilon_\pm\not\ll1\).
-
-\section*{Validity conditions and practical rule}
-The small parameter governing all steps is
-\(
-\varepsilon_\pm = J/|\delta_\pm-\omega|
-\).
-With losses,
-\(
-\varepsilon_\pm=J/\sqrt{\Delta_\pm^2+\kappa_\pm^2/4}
-\).
-A conservative working criterion is
-\begin{equation}
-\boxed{\;
-\max\{\varepsilon_+,\varepsilon_-\}\lesssim 0.2\!-\!0.3
-\quad\Rightarrow\quad
-\text{errors in }\omega_{\rm phys}\text{ are }O(\varepsilon^2),\
-\text{and }|b_\pm|^2/|a|^2=O(\varepsilon^2).
-\;}
-\end{equation}
-
-\subsubsection*{Optional bright/dark re-basis}
-Defining \(b_s=(b_+-b_-)/\sqrt2\) and \(b_d=(b_++b_-)/\sqrt2\), one finds that \(a\) couples only to the \emph{bright} mode \(b_s\) with strength \(\sqrt2\,J\), while \(b_d\) is dark to first order. In this basis the cubic spectrum becomes a quadratic (for \(a,b_s\)) plus a spectator \(b_d\) whose frequency lies near \(r_m G_2\Delta x\) and mixes weakly via \(O(r_m G_2\lambda/2)\). This re-basis is often convenient for fitting and for visualizing how the orange branch acquires its dispersive tilt.
-
-\paragraph{Summary.}
-In a high-\(T\) middle-membrane MATE system, the short-cavity modes are far detuned for most \(\Delta x\). They can be adiabatically eliminated, yielding the explicit orange-branch dispersion
-\eqref{eq:omega-phys-compact} (or \eqref{eq:omega-linear} near the center), with controlled accuracy quantified by \(\varepsilon_\pm\). Only in narrow windows around \(\Delta x=\pm\lambda/4\) is a \(2\times2\) avoided-crossing description required.
-
-\subsection{Mechanical Resonators}{Mechanical Resonators}
-\subsection{Noise spectra}
-We will derive the Hamiltonian formalism of a three mirror cavity, and show how it can be used to describe the optomechanical coupling of a membrane in the cavity.
-We now have to consider two optical modes coupled to one another through the membrane transmitivities. The Hamiltonian of the system can be written as:
-\begin{equation}
-\hat{H} = \hbar \omega_1 \hat{a}_1^\dagger \hat{a}_1 + \hbar \omega_2 \hat{a}_2^\dagger \hat{a}_2 + \hbar g(\hat{a}_1^\dagger \hat{a}_2 + \hat{a}_2^\dagger \hat{a}_1) + \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega_m^2 \hat{x}^2
-\end{equation}
-where $\hat{a}_1$ and $\hat{a}_2$ are the annihilation operators of the two optical modes, $\omega_1$ and $\omega_2$ their respective frequencies, $g$ the optomechanical coupling strength, $\hat{p}$ and $\hat{x}$ the momentum and position operators of the membrane, $m$ its mass and $\omega_m$ its mechanical frequency. The optomechanical coupling strength $g$ is defined as:
-\begin{equation}
-g = \frac{\omega_1}{L} \sqrt{\frac{\hbar}{2 m \omega_m}} \left( T_1 + T_2 \right)
-\end{equation}
-where $T_1$ and $T_2$ are the transmitivities of the two optical modes through the membrane. The Hamiltonian can be diagonalized by introducing the normal modes of the system, which are the eigenstates of the Hamiltonian. The normal modes can be expressed as:
-\begin{equation}
-\hat{b}_1 = \frac{1}{\sqrt{2}} \left( \hat{a}_1 + \hat{a}_2 \right), \quad \hat{b}_2 = \frac{1}{\sqrt{2}} \left( \hat{a}_1 - \hat{a}_2 \right)
-\end{equation}
-The normal modes $\hat{b}_1$ and $\hat{b}_2$ are the symmetric and antisymmetric modes of the system, respectively. The Hamiltonian can then be rewritten in terms of the normal modes as:
-\begin{equation}
-\hat{H} = \hbar \omega_1 \hat{b}_1
-^\dagger \hat{b}_1 + \hbar \omega_2 \hat{b}_2^\dagger \hat{b}_2 + \hbar g(\hat{b}_1^\dagger \hat{b}_2 + \hat{b}_2^\dagger \hat{b}_1) + \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega_m^2 \hat{x}^2
-\end{equation}
-
-
-\paragraph{Diagonalisation of two non-degenerate, tunnel-coupled optical cavities.}
-Let \(a_{1}\) and \(a_{2}\) (with the usual bosonic commutation relations) annihilate photons in the first and second cavity, whose bare resonance frequencies are \(\omega_{1}\neq\omega_{2}\).  Photon tunnelling at rate \(J>0\) through the semi-transparent middle mirror couples the two modes, giving the second-quantised Hamiltonian
-\[
-H
-  =\hbar
-    \begin{pmatrix}
-      a_{1}^{\dagger} & a_{2}^{\dagger}
-    \end{pmatrix}
-    \underbrace{\begin{pmatrix}
-      \omega_{1} & J\\
-      J          & \omega_{2}
-    \end{pmatrix}}_{\,\mathbf M}
-    \begin{pmatrix}
-      a_{1}\\ a_{2}
-    \end{pmatrix}.
-\]
-Diagonalising the \(2\times2\) Hermitian matrix \(\mathbf M\) one finds the normal–mode (super-mode) eigenfrequencies
-\begin{equation}
-\label{eq:split}
-\omega_{\pm}= \frac{\omega_{1}+\omega_{2}}{2}\;\pm\;
-              \sqrt{J^{2}+\bigl(\tfrac{\omega_{1}-\omega_{2}}{2}\bigr)^{2}},
-\end{equation}
-and introduces a mixing angle \(\theta\) via
-\[
-\tan 2\theta \;=\;\frac{2J}{\,\omega_{2}-\omega_{1}\,}, 
-\qquad 0<\theta<\pi/2.
-\]
-The corresponding canonical operators
-\[
-A_{+}= \cos\theta\,a_{1}+\sin\theta\,a_{2},
-\qquad
-A_{-}=-\sin\theta\,a_{1}+\cos\theta\,a_{2},
-\]
-obey \([A_{\mu},A_{\nu}^{\dagger}]=\delta_{\mu\nu}\) and bring the Hamiltonian to the diagonal form
-\[
-H=\hbar\omega_{+}\,A_{+}^{\dagger}A_{+}\;+\;\hbar\omega_{-}\,A_{-}^{\dagger}A_{-},
-\]
-revealing two independent harmonic oscillators whose frequency splitting \(\omega_{+}-\omega_{-}=2\sqrt{J^{2}+[(\omega_{1}-\omega_{2})/2]^{2}}\) interpolates smoothly between the strong-coupling limit (\(\omega_{1}\approx\omega_{2}\)) and the large-detuning regime where each cavity mode retains its individuality and the admixture of its neighbour is suppressed by the small parameter \(J/|\omega_{2}-\omega_{1}|\ll1\).
-
-
+\newpage 
