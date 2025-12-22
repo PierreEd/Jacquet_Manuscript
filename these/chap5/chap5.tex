@@ -286,12 +286,11 @@ The second method to estimate the cavity finesse, turned out to be inconclusive,
     \label{fig:finesse_cav_exp}
 \end{figure}
 
-\begin{figure}[h!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/G1G2s.pdf}
-    \caption{Linear and quadratic dispersive couplings extracted from the rescaled scans of cavity I and II. Units are given in GHz/$\mu$m for $G_1$ and in GHz/$\mu$m$^2$ for $G_2$, as rescaling by the zero point fluctuation in a cavity with a large number of photon obscures the true meaning of the vacuum optomechanical couplings. }
-    \label{fig:G1G2s}
-\end{figure}
+\subsubsection{Cavity outcouplings}
+Monitoring the cavity transmission while scanning over resonances with the input piezo allows us to extract the tranmission and reflections dips of the cavity at a given position (calibrated using the scans). We then fit these position dependent outcoupling tranmittivities using the model developped in chapter III. The resulting scans for both cavities are shown in Fig ... \\
+
+Interestingly, the second cavity displayed anomalous dips, seen as abrupt changes in the transmittivies. These have been reported years ago in Jack Harris lab [ref], and occur when two optical modes become degenerate at a given membrane position. This was verified experimentally, as the mode matching was de facto less qualitative in the second cavity than in the first one. 
+
 
 \begin{figure}[h!]
     \centering  
@@ -300,30 +299,16 @@ The second method to estimate the cavity finesse, turned out to be inconclusive,
     \label{fig:etaTs}
 \end{figure}
 
-\subsubsection{Cavity outcouplings}
-
-
-\begin{figure}[h!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/scancoupling.pdf}
-    \caption{ }
-    \label{fig:scancoupling}
-\end{figure}
+\subsubsection{Dispersive couplings}
+The next essential parameters central to MATE systems are the linear and quadratic dispersive couplings, as developped in chapter III. These are computed from the rescaled scans of the cavity resonances, giving access to the first and second derivative of the peak positions (once rescaled, expressed in FSR units) with respect to the membrane position. These are plotted in Fig \ref{fig:G1G2s}, and we see that, although the second cavity featured a lower finesse, it does display a larger linear dispersive coupling. Due to the different cavity geometry/constraints. These were observed to vary greatly from one cavity to another, independently of the cavity finesse. 
 
 \begin{figure}[h!]
     \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/scantrans.pdf}
-    \caption{ }
-    \label{fig:scantrans}
+    \includegraphics[width=\textwidth]{./chap5/fig/G1G2s.pdf}
+    \caption{Linear and quadratic dispersive couplings extracted from the rescaled scans of cavity I and II. Units are given in GHz/$\mu$m for $G_1$ and in GHz/$\mu$m$^2$ for $G_2$, as rescaling by the zero point fluctuation in a cavity with a large number of photon obscures the true meaning of the vacuum optomechanical couplings. }
+    \label{fig:G1G2s}
 \end{figure}
 
-
-\begin{figure}[h!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/lock_sequence.pdf}
-    \caption{ }
-    \label{fig:lock_sequence}
-\end{figure}
 
 \begin{figure}[h!]
     \centering  
@@ -340,8 +325,17 @@ The second method to estimate the cavity finesse, turned out to be inconclusive,
 \end{figure}
 
 
-\subsection{Locking Techniques and Stability}
-\subsection{Optical Ringdowns and Loss Measurements}
+\subsection{Cavity Locking}
+One the cavity was characterized, we proceeded to lock it using the PDH technique detailed in chapter 3. The whole lock was done using PyRPL, as to showcase its versatility and ease of use. The analogic signal was manipulated with standard MiniCircuits\textsuperscript{\textregistered} RF components, as to amplify/filter/mix the signals as needed. The overall locking sequence is shown in Fig.~\ref{fig:lock_sequence}, where we can see the various steps needed to lock the cavity. The lock was found to be fairly robust, and could stay locked for hours without any intervention. The critical point in maintaining the lock was the cavity circulating power. We believe that heating, bistability and photothermal effects were playing a significant role in the lock stability. 
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/lock_sequence.pdf}
+    \caption{ }
+    \label{fig:lock_sequence}
+\end{figure}
+
+
 \subsection{Mechanical Resonator Characterization}
 \subsection{Bistability}
 
