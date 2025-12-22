@@ -23,18 +23,18 @@ The question of interest is now:
 
 We start by recalling the reflected phase fluctuation of an optomechanical cavity from section I.2.5 under the aforementioned assumptions:
 \begin{equation*}
-\delta \hat{q}_r[\Omega] = \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \mathcal{K}[\Omega]\, \delta \hat{p}_{\mathrm{in}}[\Omega] \quad  \text{with} \quad \mathcal{K}[\Omega] = \frac{\mathcal{C}^2}{2}   \,\hbar  \chi[\Omega] =  \dfrac{128 \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2}  \,  \hbar  \chi[\Omega]
+\delta \hat{q}_{\mathrm{ref}}[\Omega] = \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \mathcal{K}[\Omega]\, \delta \hat{p}_{\mathrm{in}}[\Omega] \quad  \text{with} \quad \mathcal{K}[\Omega] = \frac{\mathcal{C}^2}{2}   \,\hbar  \chi[\Omega] =  \dfrac{128 \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2}  \,  \hbar  \chi[\Omega]
 \end{equation*}
 where $\mathcal{C}$ is now positive and frequency independent. The resulting reflected phase spectrum reads
 \begin{equation*}
-  S_{qq}^{r}[\Omega] = S_{qq}^{\rm in}[\Omega] + |\mathcal{K}[\Omega]|^2 S_{pp}^{\rm in}[\Omega] + 2 \, \Re\Big[ \mathcal{K}[\Omega] S_{pq}^{\rm in}[\Omega]\Big]
+  S_{qq}^{\mathrm{ref}}[\Omega] = S_{qq}^{\rm in}[\Omega] + |\mathcal{K}[\Omega]|^2 S_{pp}^{\rm in}[\Omega] + 2 \, \Re\Big[ \mathcal{K}[\Omega] S_{pq}^{\rm in}[\Omega]\Big]
 \end{equation*}
 
 The phase to displacement transduction relation with an optomechanical escape efficiency of 1:
 \begin{equation*}
    \delta \hat q_x = \mathcal{C} \delta \hat x [\Omega] = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega]  
 \end{equation*}
-Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_r[\Omega] = \delta \hat q_x[\Omega]$. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
+Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_{\mathrm{ref}}[\Omega] = \delta \hat q_x[\Omega]$. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
 \begin{equation}
   \delta \hat{x}[\Omega] =\mathcal{C}^{-1} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \dfrac{\mathcal{C} }{2} \hbar \chi[\Omega] \, \delta \hat{p}_{\mathrm{in}}[\Omega]
 \end{equation}
@@ -237,6 +237,7 @@ such that the phase picked up by sidebands at frequency $\Omega$ is given by
 To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}
 \begin{equation}
 r_m = \frac{(n^2-1)\sin k n d}{2 i n \cos k n d  + (n^2+1)\sin k n d}, \qquad t_m = \frac{2 n}{2 i n \cos k n d  + (n^2+1)\sin k n d}. 
+\label{eq:membrane_rt}
 \end{equation}
 In the lossless case, we will assume the index of refraction $n$ is real, such that \(|r_m|^2 + |t_m|^2 = 1\). The right-moving mean field amplitudes in the left and right sub-cavities are denoted \(\bar \alpha_L\) and \(\bar \alpha_R\), while the left-moving mean field amplitudes are denoted \(\bar \alpha_L'\) and \(\bar \alpha_R'\). The cavity fields are then related by 
 \begin{equation}
@@ -285,8 +286,17 @@ where $\omega_{FSR} = \pi c / L$ is the empty cavity free spectral range. When t
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{./chap3/fig/MATEres.pdf}
-  \caption{rrlist = [0, 0.1, 0.25 , 0.5 , 0.75 , 0.9 ]}
+  \includegraphics[width=\textwidth]{./chap3/fig/modelsMATE.pdf}
+  \caption{rrlist = 0.7, L = 3e-2, }
+  \label{fig:models_MATE}
+\end{figure}
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/MATEresTot.pdf}
+  \caption{rrlist = [0, 0.1, 0.9 ], T1 = 100ppm, T2=20ppm, L = 2e-2, }
   \label{fig:mate_res}
 \end{figure}
 
@@ -294,7 +304,7 @@ where $\omega_{FSR} = \pi c / L$ is the empty cavity free spectral range. When t
 \subsubsection{Cavity transmission and reflection}
 From the system in \eqref{eq:cavity_fields_system}, and having derived just above the resonant cavity wavevectors $k$, we can compute the power ratio of the two sub-cavity fields as a function of $x$ when the MATE system is on resonance. This is
 \begin{equation}
-  \dfrac{|\bar \alpha_R|^2}{|\bar \alpha_L'|^2} = \dfrac{P_R}{P_L} = \dfrac{1 + 2|r_m|\cos (2k L_1+2kx) + |r_m|^2}{1- |r_m|}. 
+  \dfrac{|\bar \alpha_R|^2}{|\bar \alpha_L'|^2} = \dfrac{P_R}{P_L} = \dfrac{1 + 2|r_m|\cos (2k L_1+2kx) + |r_m|^2}{1- |r_m|^2}. 
 \end{equation}
 with $P_{L,R} \propto |\bar \alpha_{L,R}|^2$. It then follows that the the power fraction leaking from the left and right mirrors, i.e. the resonant reflection and transmission coefficients $R(\Delta=0,x)$ and $T(\Delta = 0, x)$ are given by
 \begin{equation}
@@ -313,7 +323,7 @@ To derive the position dependent cavity linewidth $\kappa(x)$ and finesse $\math
 \begin{equation}
   E = \dfrac{2(L_1+x)}{c} P_L + \dfrac{2(L_2 - x)}{c} P_R
 \end{equation}
-and the rate at which energy leaves the cavity is given by
+and the rate at which energy leaves the cavity 
 \begin{equation}
   \partial_t E = - |t_1|^2 P_L + -|t_2|^2 P_R
 \end{equation}
@@ -323,6 +333,7 @@ such that the cavity energy decay rate is given by
   \kappa(x) & = - \dfrac{\partial_t E}{E} = \dfrac{c (|t_1|^2 + |t_2|^2 P_R/P_L)}{2(L_1+x) + 2(L_2 - x) P_R/P_L} \\
   & = \dfrac{c|t_1|^2 (1-|r_m|^2) + c|t_2|^2 \bigl(1 + |r_m|^2 + 2|r_m|\cos 2kx \bigr)}{2(L_1+x)(1-|r_m|^2) + 2(L_2 - x)\bigl(1 + |r_m|^2 + 2|r_m|\cos 2kx \bigr)}.
   \end{split}
+  \label{eq:kappa_mate}
 \end{equation}
 We can then derive the cavity finesse as
 \begin{equation}
@@ -384,8 +395,8 @@ and we can rewrite both the photonic and tunneling hamiltonian i.e. the photonic
   \end{pmatrix}
   \mathbf{M}
   \begin{pmatrix}
-    \hat a_L^{\vphantom{\dagger}} \\[6pt]
-    \hat a_{R-}^{\vphantom{\dagger}} \\[6pt]
+    \hat a_L^{\vphantom{\dagger}} \\
+    \hat a_{R-}^{\vphantom{\dagger}} \\
     \hat a_{R+}^{\vphantom{\dagger}}
   \end{pmatrix}
 \end{equation}
@@ -393,8 +404,8 @@ with
 \begin{equation*}
   \mathbf{M} =
   \begin{pmatrix}
-    G_L x & -J & -J \\[6pt]
-    -J & - G_R (x + \lambda/4) & 0 \\[6pt]
+    G_L x & -J & -J \\
+    -J & - G_R (x + \lambda/4) & 0 \\
     -J & 0 & \omega_{FSR} -  G_R (x - \lambda/4)
   \end{pmatrix}.
 \end{equation*}
@@ -406,7 +417,7 @@ One could then diagonalize this \(3 \times 3\) matrix to get the new eigenmodes 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/models.pdf}
-  \caption{0, 0.1, 0.25 , 0.5 , 0.75 , 0.9 }
+  \caption{0.01, 0.99 }
   \label{fig:mate_modes}
 \end{figure}
 

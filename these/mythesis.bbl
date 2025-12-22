@@ -148,6 +148,64 @@
       \verb http://link.aps.org/doi/10.1103/PhysRevD.65.022002
       \endverb
     \endentry
+    \entry{Poirson:97}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=bed7e49600c355c2c33b8bfe5147fcd9}{%
+           family={Poirson},
+           familyi={P\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=532a5c847d00b48828cff4b26db0c642}{%
+           family={Bretenaker},
+           familyi={B\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b0d1d6e92d3d4a89d51396903081e285}{%
+           family={Vallet},
+           familyi={V\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef6d933f03a8c0ad7871de6ddccb680e}{%
+           family={Floch},
+           familyi={F\bibinitperiod},
+           given={Albert\bibnamedelima Le},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{d001f6bae19a9e4d9b130f6c495aa783}
+      \strng{fullhash}{c74f16e69519d817547c3ac4485a33fc}
+      \strng{fullhashraw}{c74f16e69519d817547c3ac4485a33fc}
+      \strng{bibnamehash}{d001f6bae19a9e4d9b130f6c495aa783}
+      \strng{authorbibnamehash}{d001f6bae19a9e4d9b130f6c495aa783}
+      \strng{authornamehash}{d001f6bae19a9e4d9b130f6c495aa783}
+      \strng{authorfullhash}{c74f16e69519d817547c3ac4485a33fc}
+      \strng{authorfullhashraw}{c74f16e69519d817547c3ac4485a33fc}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phenomenon of ringing in swept Fabry--Perot cavities, which leads to discrepancies with respect to usual Airy peaks, exhibits three different regimes, depending on the values of the finesse, the sweep frequency, and the free spectral range of the cavity. In particular, the intermediate case in which the Fabry--Perot cavity transmission essentially oscillates is shown theoretically and experimentally to provide a new simple method to measure the finesse of the cavity. For cavities with intermediate finesses (F$\approx$10 000) this method is experimentally shown to have a precision of the order of 1\%.}
+      \field{journaltitle}{J. Opt. Soc. Am. B}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Analytical and experimental study of ringing effects in a Fabry--Perot cavity. Application to the measurement of high finesses}
+      \field{volume}{14}
+      \field{year}{1997}
+      \field{pages}{2811\bibrangedash 2817}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1364/JOSAB.14.002811
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/josab/abstract.cfm?URI=josab-14-11-2811
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/josab/abstract.cfm?URI=josab-14-11-2811
+      \endverb
+      \keyw{Frequency modulation; Laser sources; Phase measurement; Phase modulation; Phase shift; Precision metrology}
+    \endentry
     \entry{clerk_introduction_2010}{article}{}{}
       \name{author}{5}{}{%
         {{hash=53516e70e3f4d823e360e95e4df4b51d}{%
@@ -184,8 +242,8 @@
       \strng{authornamehash}{95cb63106604316da6ed6bc56b3cc991}
       \strng{authorfullhash}{832ac2e357a7a97e69f43f64efbcd955}
       \strng{authorfullhashraw}{832ac2e357a7a97e69f43f64efbcd955}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The topic of quantum noise has become extremely timely due to the rise of quantum information physics and the resulting interchange of ideas between the condensed matter and {AMO}/quantum optics communities. This review gives a pedagogical introduction to the physics of quantum noise and its connections to quantum measurement and quantum amplification. After introducing quantum noise spectra and methods for their detection, we describe the basics of weak continuous measurements. Particular attention is given to treating the standard quantum limit on linear amplifiers and position detectors using a general linear-response framework. We show how this approach relates to the standard Haus-Caves quantum limit for a bosonic amplifier known in quantum optics, and illustrate its application for the case of electrical circuits, including mesoscopic detectors and resonant cavity detectors.}
@@ -261,8 +319,8 @@
       \strng{authorfullhash}{5edd995e63f3dc6cac5730764ccd7556}
       \strng{authorfullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -580,6 +638,7 @@
   \missing{Neuhauser_Thesis_2021}
   \missing{Norcada_datasheet}
   \missing{OFHC_review}
+  \missing{PatangePhD}
   \missing{PyRPL_Article}
   \missing{PyRPL_Docs}
   \missing{SiN_cryogenic}
@@ -593,7 +652,6 @@
   \missing{harry_advanced_2010}
   \missing{nanofab_review}
   \missing{optomech_challenges}
-  \missing{piezo_review}
   \missing{ref:68}
   \missing{thompson_coupling_2013}
   \missing{thompson_strong_2008}
