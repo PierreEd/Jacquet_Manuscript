@@ -90,9 +90,9 @@
 \contentsline {subsubsection}{Cavity outcouplings}{105}{section*.96}%
 \contentsline {subsubsection}{Dispersive couplings}{106}{section*.98}%
 \contentsline {subsection}{\numberline {IV.2.2}Cavity Locking and Mechanical Characterization}{106}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Bistability}{109}{subsection.4.2.3}%
-\contentsline {section}{\numberline {IV.3}Design of an Optomechanical Fibered Cavity}{109}{section.4.3}%
-\contentsline {subsection}{\numberline {IV.3.1}Design considerations}{109}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.2.3}Bistability}{108}{subsection.4.2.3}%
+\contentsline {section}{\numberline {IV.3}Design of an Optomechanical Fibered Cavity}{108}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Design considerations}{108}{subsection.4.3.1}%
 \contentsline {chapter}{\numberline {V}Experiments: Squeezed Light}{111}{chapter.5}%
 \contentsline {section}{\numberline {V.1}Optical Setup Overview}{112}{section.5.1}%
 \contentsline {section}{\numberline {V.2}Cavity Resonances and Locks}{113}{section.5.2}%
