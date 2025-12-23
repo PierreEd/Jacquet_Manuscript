@@ -3,22 +3,21 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.2}Specifications and Design}{\reset@font\mtcSSfont 89}{subsection.4.1.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode High Finesse}{\reset@font\mtcSSSfont 89}{section*.73}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode High $Q$ factor}{\reset@font\mtcSSSfont 90}{section*.75}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Optical alignement}{\reset@font\mtcSSSfont 91}{section*.76}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Dynamical range}{\reset@font\mtcSSSfont 91}{section*.77}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Compactness \& Stability}{\reset@font\mtcSSSfont 92}{section*.78}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Vacuum and Cryogenic compatibility}{\reset@font\mtcSSSfont 92}{section*.79}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.3}Flexure Actuation}{\reset@font\mtcSSfont 92}{subsection.4.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.4}Experimental Setup}{\reset@font\mtcSSfont 94}{subsection.4.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.5}Alignment Procedures}{\reset@font\mtcSSfont 96}{subsection.4.1.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {IV.2}Experimental Characterization}{\reset@font\mtcSfont 98}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.1}Cavity Scans}{\reset@font\mtcSSfont 98}{subsection.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Cavity resonances versus membrane position }{\reset@font\mtcSSSfont 99}{section*.85}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Slow and Fast Scans}{\reset@font\mtcSSSfont 101}{section*.88}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Finesse}{\reset@font\mtcSSSfont 103}{section*.91}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Cavity outcouplings}{\reset@font\mtcSSSfont 104}{section*.94}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Dispersive couplings}{\reset@font\mtcSSSfont 105}{section*.96}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.2}Cavity Locking}{\reset@font\mtcSSfont 107}{subsection.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.3}Mechanical Resonator Characterization}{\reset@font\mtcSSfont 107}{subsection.4.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.4}Bistability}{\reset@font\mtcSSfont 107}{subsection.4.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {IV.3}Design of an Optomechanical Fibered Cavity}{\reset@font\mtcSfont 107}{section.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.3.1}Design considerations}{\reset@font\mtcSSfont 107}{subsection.4.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Optical alignement}{\reset@font\mtcSSSfont 91}{section*.78}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Dynamical range}{\reset@font\mtcSSSfont 92}{section*.79}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Compactness \& Stability}{\reset@font\mtcSSSfont 92}{section*.80}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Vacuum and Cryogenic compatibility}{\reset@font\mtcSSSfont 92}{section*.81}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.3}Flexure Actuation}{\reset@font\mtcSSfont 93}{subsection.4.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.4}Experimental Setup}{\reset@font\mtcSSfont 95}{subsection.4.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.1.5}Alignment Procedures}{\reset@font\mtcSSfont 97}{subsection.4.1.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {IV.2}Experimental Characterization}{\reset@font\mtcSfont 97}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.1}Cavity Scans}{\reset@font\mtcSSfont 97}{subsection.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Cavity resonances versus membrane position }{\reset@font\mtcSSSfont 99}{section*.87}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Slow and Fast Scans}{\reset@font\mtcSSSfont 102}{section*.90}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Finesse}{\reset@font\mtcSSSfont 102}{section*.93}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Cavity outcouplings}{\reset@font\mtcSSSfont 105}{section*.96}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Dispersive couplings}{\reset@font\mtcSSSfont 106}{section*.98}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.2}Cavity Locking and Mechanical Characterization}{\reset@font\mtcSSfont 106}{subsection.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.2.3}Bistability}{\reset@font\mtcSSfont 109}{subsection.4.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {IV.3}Design of an Optomechanical Fibered Cavity}{\reset@font\mtcSfont 109}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {IV.3.1}Design considerations}{\reset@font\mtcSSfont 109}{subsection.4.3.1}}

@@ -2425,7 +2425,10 @@
     <bcf:citekey order="39" intorder="1">OFHC_review</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Sankey2010</bcf:citekey>
     <bcf:citekey order="41" intorder="1">SiN_review</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">ref:68</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Thompson2008</bcf:citekey>
+    <bcf:citekey order="42" intorder="2">Sankey2010</bcf:citekey>
+    <bcf:citekey order="42" intorder="3">Wilson2015</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">ref:68</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

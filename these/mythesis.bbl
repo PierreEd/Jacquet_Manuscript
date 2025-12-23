@@ -629,6 +629,131 @@
       \verb http://www.nature.com/doifinder/10.1038/nphys1707
       \endverb
     \endentry
+    \entry{Thompson2008}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=cd73d2a1224ea92c8ec865582cefe63e}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=66370b3393e1d6a8f4be1d62742f9af9}{%
+           family={Zwickl},
+           familyi={Z\bibinitperiod},
+           given={B\bibnamedelima M},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d3f46162d73fd1735b431b265a825ba6}{%
+           family={Jayich},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=99c24bab5bbf3a303c540e7825722dc1}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{fullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{fullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{bibnamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authorbibnamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authornamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authorfullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{authorfullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{3}
+      \field{number}{7183}
+      \field{title}{{Strong dispersive coupling of a high-finesse cavity to a micromechanical membrane.}}
+      \field{volume}{452}
+      \field{year}{2008}
+      \field{pages}{72\bibrangedash 75}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nature06715
+      \endverb
+      \verb{urlraw}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/18322530
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/18322530
+      \endverb
+    \endentry
+    \entry{Wilson2015}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=21e0d55b0c2afdccbfa490a7bd68deab}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d002924826e81e62f7fb96146ba43c66}{%
+           family={Sudhir},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3f9bcbca56c66269d7c399aa0d9de493}{%
+           family={Piro},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2004d538fca86c0b09a3aefa1f6b01f2}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=75627af91137165d22b883145dc8ad95}{%
+           family={Ghadimi},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fc39d185e7ddc568c7b41c6e76963588}{%
+           family={Kippenberg},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3dc58b0cf4d19829f3f4290ad4a20d1}
+      \strng{fullhash}{1e2fe143e4a69fcc0e003b18436317ce}
+      \strng{fullhashraw}{1e2fe143e4a69fcc0e003b18436317ce}
+      \strng{bibnamehash}{c3dc58b0cf4d19829f3f4290ad4a20d1}
+      \strng{authorbibnamehash}{c3dc58b0cf4d19829f3f4290ad4a20d1}
+      \strng{authornamehash}{c3dc58b0cf4d19829f3f4290ad4a20d1}
+      \strng{authorfullhash}{1e2fe143e4a69fcc0e003b18436317ce}
+      \strng{authorfullhashraw}{1e2fe143e4a69fcc0e003b18436317ce}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0028-0836}
+      \field{journaltitle}{Nature}
+      \field{title}{{Measurement-based control of a mechanical oscillator at its thermal decoherence rate}}
+      \field{year}{2015}
+      \field{pages}{2\bibrangedash 6}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nature14672
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/doifinder/10.1038/nature14672
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/nature14672
+      \endverb
+    \endentry
   \enddatalist
   \missing{AmatoPhD}
   \missing{Black_PDH_2001}

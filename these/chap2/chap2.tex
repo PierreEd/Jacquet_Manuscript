@@ -629,7 +629,7 @@ We consider a single field cavity mode described by the annihilation operator \(
 \label{eq:qle}
 \end{split}
 \end{equation}
-where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\gamma/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Here losses $\gamma$ have ppm units. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by:
+where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\mathcal{L}/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Here losses $\mathcal{L}$ have ppm units. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by:
 \begin{equation}
   \hat{a}_{\mathrm{ref}} = \sqrt{\kappa_{1}}\hat{a} - \hat{a}_{\mathrm{in}} , \quad \hat{a}_{\mathrm{trans}} = \sqrt{\kappa_{2}}\hat{a} - \delta \hat{a}_{\mathrm{vac}} 
 \end{equation}
@@ -685,15 +685,21 @@ T(\Delta) = \left|\frac{\bar{\alpha}_{\mathrm{trans}}}{\bar{\alpha}_{\mathrm{in}
 \end{equation}
 The cavity linewidth (FWHM) is then given by $\kappa/2\pi$ (Hz), as illustrated In Fig \ref{fig:CavitySimple}.(b). We will then refer to $\kappa/4\pi$ (HWHM) as the cavity bandwidth (Hz). Plugging back the expression of $\kappa_i = T_i/\tau$ in the reflection coefficient, we have 
 \begin{equation}
-  R(\pm\infty) = 1  \qquad R(0) = \Bigg(\frac{T_1 - T_2 - \gamma}{T_1 + T_2 + \gamma}\Bigg)^2
+  R(\pm\infty) = 1  \qquad R(0) = \Bigg(\frac{T_1 - T_2 - \mathcal{L}}{T_1 + T_2 + \mathcal{L}}\Bigg)^2
 \end{equation}
-such that the relative depth of the resonance dip gives us information about the cavity losses and couplings. In particular, the resonance dip vanishes when $T_1 = T_2 + \gamma$, which is the so called \textit{impedance matching} condition: no light is reflected at resonance and all of it is transmitted or lost. \\ 
+such that the relative depth of the resonance dip gives us information about the cavity losses and couplings. In particular, the resonance dip vanishes when $T_1 = T_2 + \mathcal{L}$, which is the so called \textit{impedance matching} condition: no light is reflected at resonance and all of it is transmitted or lost. Similarly, the transmission coefficient reads
+\begin{equation}
+  T(\pm \infty) = 0  \qquad T(0) = \frac{4 T_1 T_2}{(T_1 + T_2 + \mathcal{L})^2}
+\end{equation}
 
 We also define the cavity finesse $\mathcal{F}$, which is a measure of the sharpness of the resonance peaks relative to its FSR, as
 \begin{equation}
-  \mathcal{F} = \frac{\omega_{\mathrm{FSR}}}{\kappa} = \frac{\pi c}{L \kappa} = \frac{2\pi}{T_1 + T_2 + \gamma}
+  \mathcal{F} = \frac{\omega_{\mathrm{FSR}}}{\kappa} = \frac{\pi c}{L \kappa} = \frac{2\pi}{T_1 + T_2 + \mathcal{L}}
 \end{equation}
 which also gives the average number of round trips a photon makes before escaping the cavity i.e. $\langle n_{rt} \rangle = \mathcal{F}/\pi$. For a given cavity length (so same FSR), the higher the finesse, the longer the photon lifetime in the cavity $\kappa^{-1}$. \\
+
+Measuring all these quantities then allows to fully characterize the cavity parameters $T_1$, $T_2$ and $\mathcal{L}$. This is done by measuring the reflection and transmission coefficients at resonance and far from resonance, as well as the cavity linewidth (or finesse). \\ 
+
 
 
 \noindent \textbf{Mean field solution (Dynamical case): } \\

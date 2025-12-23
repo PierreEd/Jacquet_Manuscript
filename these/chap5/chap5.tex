@@ -35,34 +35,36 @@ and KAGRA interferometers\cite{LIGO_optics}.}.\\
 We supplied the LMA with a batch of substrates with various radii of curvature to explore different cavity geometries. The requested specifications are summarized in the table below. The total round‐trip scatter and absorption losses are usually below $ 20\,$ppm, in agreement with the measurements reported (absoption $\sim$0.7ppm, scattering $\sim$10ppm)in Ref.\,\cite{AmatoPhD}.
 
 
-
 \begin{table}[h!]
 \centering
-\begin{tabular}{|l|c|c|c|c|}
+\begin{tabular}{lcccc}
+\textbf{Substrate type} & \textbf{Laseroptik ID} & \textbf{$R$} &
+\textbf{Front-side HR $T$} & \textbf{Back-side AR} \\
 \hline
-\textbf{Substrate type} & \textbf{Laseroptik ID} & \textbf{$R$} & \textbf{Front-side HR $T$} & \textbf{Back-side AR} \\
-\hline
-Plane & S--00798 & $\infty$ (plane) & $20 \pm 4$ ppm & $R \lesssim 100$ ppm \\
-\hline
-Plano-concave & S--00128 & -25 mm & $100 , 50 \pm 10$ ppm & $R \lesssim 100$ ppm  \\
-\hline
-Plano-concave & S--00127 & -15 mm & $100 , 50  \pm 10$ ppm & $R \lesssim 100$ ppm  \\
-\hline
-Plano-concave & S--00126 & -10 mm & $100 , 50  \pm 10$ ppm & $R \lesssim 100$ ppm  \\
-\hline
+Plane         & S--00798 & $\infty$ (plane) & $20 \pm 45$ ppm        & $R \lesssim 100$ ppm \\
+Plano-concave & S--00128 & -25 mm           & $100,\,50 \pm 10$ ppm  & $R \lesssim 100$ ppm \\
+Plano-concave & S--00127 & -15 mm           & $100,\,50 \pm 10$ ppm  & $R \lesssim 100$ ppm \\
+Plano-concave & S--00126 & -10 mm           & $100,\,50 \pm 10$ ppm  & $R \lesssim 100$ ppm \\
 \end{tabular}
 \caption{Specifications of supplied Laseroptik substrates for different cavity geometries.}
 \end{table}
 
-
-
-The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence.  After annealing, the measured mechanical loss angle of the $\mathrm{TiO_2\!:\!Ta_2O_5}/\mathrm{SiO_2}$ stack is $\phi < 4\times10^{-4}$ at 1 kHz  \color{red} link to mechanical damping needed \color{black}, supporting cavity finesses in the range $200\,000-500\,000$ before excess scatter or absorption dominates\cite{AmatoPhD}. \\ 
+The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence.  After annealing, the measured mechanical loss angle of the $\mathrm{TiO_2\!:\!Ta_2O_5}/\mathrm{SiO_2}$ stack is $\phi < 4\times10^{-4}$ at 1 kHz  \color{red} link to mechanical damping needed \color{black}, supporting cavity finesses in the range $200\,000-500\,000$ before excess scatter or absorption dominates\cite{AmatoPhD}. 
 
 \subsubsection{High $Q$ factor} 
 
-Two different square membranes were used in the MATE cavities, both made of high-stress silicon nitride (Si$_3$N$_4$), a material known for its excellent mechanical properties, including high tensile stress and low intrinsic mechanical loss, making it ideal for optomechanical applications\cite{SiN_review}, and of nominal side lengths $l \times l = 500\,\mu m\times500\,\mu m $. \\ 
+Two different square membranes were used in the MATE cavities, both made of high-stress silicon nitride (Si$_3$N$_4$), a material known for its excellent mechanical properties, including high tensile stress and low intrinsic mechanical loss, making it ideal for optomechanical applications\cite{SiN_review}, and of nominal side lengths $l_n \times l_m = 500\,\mu m\times500\,\mu m $. \\ 
 
-The first membrane was made in-house at LKB by \textbf{Thibaut Jacqmin} and \textbf{Himanshu Patange} during Himanshu's PhD work. The silicon wafer was 350 $\mu$m thick, and the SiN layers thicknesses was nominally 100 nm. Starting with the silicon wafer/chip coated with SiN on both sides, a photoresist is patterned by lithography to define a square window. Reactive-ion etching (RIE) then opens a square window through the top SiN layer. The exposed silicon is then wet-etched in KOH from the opened side until the cavity breaks through, leaving a released, free-standing SiN membrane spanning the opening. The membrane is then cleaned using HF to remove any residuals from the fabrication process. This very process etches the SiN layer as well, resulting in a final membrane thickness of less than 100nm. For detailed fabrication steps, refer to Himanshu's PhD thesis\cite{PatangePhD}. \\ 
+The first membrane was made in-house at LKB by \textbf{Thibaut Jacqmin} and \textbf{Himanshu Patange} during Himanshu's PhD work. The silicon wafer was 350 $\mu$m thick, and the SiN layers thicknesses was nominally 100 nm. Starting with the silicon wafer/chip coated with SiN on both sides, a photoresist is patterned by lithography to define a square window. Reactive-ion etching (RIE) then opens a square window through the top SiN layer. The exposed silicon is then wet-etched in KOH from the opened side until the cavity breaks through, leaving a released, free-standing SiN membrane spanning the opening. The membrane is then cleaned using HF to remove any residuals from the fabrication process. This very process etches the SiN layer as well, resulting in a final membrane thickness of less than 100nm. For detailed fabrication steps, refer to Himanshu's PhD thesis\cite{PatangePhD}. We nonetheless succintly display the fabrication steps in Fig \ref{fig:plain_sin_fab}. \\ 
+
+
+\begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/plain_sin_fab.pdf}
+    \caption{Fabrication steps of the SiN membrane resonator used in the MATE cavity. (a) starting from a silicon wafer coated with SiN on both sides. (b) lithography and RIE to open a square window in the top SiN layer. (c) KOH wet etching from the opened side until the cavity breaks through, leaving a free-standing SiN membrane. The membrane is then cleaned using HF to remove any residuals from the fabrication process.}
+    \label{fig:plain_sin_fab}    
+\end{figure}
+
 
 The second membrane is a commercially Norcada\textsuperscript{\textregistered} (NX10050AS)\cite{SiN_review,Norcada_datasheet} SiN square membrane, specifically marketed as a \textit{high Q} standard membrane for optomechanics applications. It features a Silicon frame of 200 $\mu$m thickness, and a SiN layer of nominal thickness 50 nm. Regarding the quality factor, literature reports:
 \begin{itemize}
@@ -82,10 +84,20 @@ The expected mechanical mode structure can be derived from
 \begin{equation}
 f_{n,m}= \sqrt{\dfrac{\sigma}{4\rho}\left(\left(\dfrac{n}{l_n}\right)^2+\left(\dfrac{m}{l_m}\right)^2\right)}
 \end{equation}
-with $\rho \sim 3 \,\mathrm{g/cm^3}$ the film mass density, $\sigma \sim 1 \text{GPa}$, ($n,m$) the mode indices, and ($l_n,l_m$) the membrane side lengths. Considering a square membrane of identical side lengths of $500\mu m$ yields a fundamental mode frequency at $f_{1,1} \sim 861\,\mathrm{kHz}$, with the two higher order modes $(1,2)$ and $(2,1)$ degenerate at $f_{1,2}\sim f_{2,1} \sim 1.36\,\mathrm{MHz}$. 
+with $\rho \sim 3 \,\mathrm{g/cm^3}$ the film mass density, $\sigma \sim 1 \text{GPa}$, ($n,m$) the mode indices, and ($l_n,l_m$) the membrane side lengths. Considering a square membrane of identical side lengths of $500\mu m$ yields a fundamental mode frequency at $f_{1,1} \sim 816\,\mathrm{kHz}$, with the two higher order modes $(1,2)$ and $(2,1)$ degenerate at $f_{1,2}\sim f_{2,1} \sim 1.29\,\mathrm{MHz}$ etc.. We display the first few mode shapes and expected frequencies in Fig.~\ref{fig:simumode}. 
+ \begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/simumode.pdf}
+    \caption{Simulated mode shapes and frequencies of a square SiN membrane of side length $500\mu m$ under high tensile stress ($\sigma \sim 1 \text{GPa}$).}
+    \label{fig:simumode}
+\end{figure}
 
 \subsubsection{Optical alignement}
  The cavity is designed to be compatible with the Thorlabs\textsuperscript{\textregistered} cage system. The input mirror is mounted on a 3 axis cage mount, allowing for easy alignment of the input mirror with respect to the cavity optical axis. Both the resonator and the back mirror are embedded within a custom-made holder, which is itself integrated into the cage system. The relative tilt between the resonator and the back mirror is adjusted using a set of 3 screws with a very fine thread, allowing for a fine alignment of the parallelism of the back cavity. The alignment procedure is detailed in section~\ref{sec:alignment_procedure}.
+
+
+
+
 
 \subsubsection{Dynamical range}
 
@@ -179,27 +191,15 @@ The optical setup is now to be aligned as to ensure a good mode matching between
     \begin{tabular}{lcc}
          & Cavity I & Cavity II \\
         \hline
+        Input mirror RoC (mm)        & \multicolumn{2}{c}{-25} \\
+        Back mirror RoC (mm)         & \multicolumn{2}{c}{$\infty$} \\
+        Nominal input mirror $T_1$ (ppm) & \multicolumn{2}{c}{100} \\
+        Nominal back mirror $T_2$ (ppm)  & \multicolumn{2}{c}{20} \\
         Length $L$ (mm)               & 17 & 24 \\ 
         FSR (GHz)                  & 8.817 & 6.246  \\[0.6em]
         
-        Empty Cavity & \quad & \quad  \\ 
-        \hline
-        Finesse $\mathcal{F}$& 14 000 & 12 780 \\
-        Linewidth (kHz)            & 630 & 489\\
-        Round-trip loss (ppm) & 449 & 492  \\[0.6em]
-
-        MATE cavity & \quad & \quad  \\
-        \hline
-        Fitted reflectivity $|r_m|$ & 0.54 & 0.33 \\
-        Finesse $\mathcal{F}$ & 5 000 - 10 000 &  \\ 3 000 - 5 000
-        Linewidth  & 880 kHz - 2.20 MHz &  \\
-        Round-trip loss (ppm) & 630 - 1570 &  \\
-        Input mirror transmission (ppm) & Row 6 Col 2 & Row 6 Col 3 \\
-        Output mirror transmission (ppm) & Row 7 Col 2 & Row 7 Col 3 \\
-        Input power        &  10$\mu$W- 50 mW & 10$\mu$W- 50 mW  \\
-
     \end{tabular}
-    \caption{Summary of relevant parameters.}
+    \caption{Summary of relevant parameters for the two cavities used in this work.}
     \label{tab:mate_parameters}
 \end{table}
  
@@ -207,7 +207,7 @@ Once the cavity is aligned, we can scan the cavity length by driving the front m
 
 We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM$_{00}$ mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters. We observed that putting the cavity under vacuum did sometimes misalign the cavity, such that even mode matching to our best ability using two mirrors outside the vacuum tank did not yield a perfect $\text{TEM}_{00}$ match. We also saw some membranes/phononic crystals break throughout the pumping process, most likely due to dust or degazing of the setup. \\
 
-Once aligned and mode matched, we can proceed to the cavity characterization. Over the course of my PhD, few \textit{functional} cavities were mounted inside the vacuum tank. We only present the results for two of these, as to display various physical effects observed. The key parameters of these two cavities are summarized in Table~\ref{tab:mate_parameters}. 
+Once aligned and mode matched, we can proceed to the cavity characterization. Over the course of my PhD, few \textit{functional} cavities were mounted inside the vacuum tank. We chose to only present the results for two of these, as to display various physical effects observed. The key parameters of these two cavities are summarized in Table~\ref{tab:mate_parameters}. Both were mounted using 100ppm input mirrors, with a concave radius of curvature of -25mm, and a plane back mirror with a nominal transmission of 20ppm. Cavity I used the in-house fabricated membrane of nominal thickness 100nm, while cavity II used the commercial Norcada membrane of nominal thickness 50nm. The reason why we used the 100ppm input mirror rather than the 50ppm one was to ensure that the cavity linewidth would be larger than the mechanical resonance frequency of the membrane, such that we would be in the genuine unresolved sideband regime. Had we chosen the 50ppm mirror, the cavity linewidth would have been around 85kHz, an order of magnitude below the expected fundamental mechanical resonance frequency of the membrane at 861kHz (see above). A tradeoff is to be made here, as using a higher transmission input mirror reduces the intracavity power for a given input power, thus reducing radiation pressure effects. 
 
 \subsubsection{Cavity resonances versus membrane position } 
 We first scan the input mirror piezo with a linear ramp $V_{\rm SW}$ ranging from 0 to 500V at 10-50Hz, corresponding to a displacements of around 2$\mu m$ ($\sim$ 4 FSRs). The back piezo actuating the membrane position was driven by a DC voltage $V_{\rm DC}$ ranging from 0 to 70V, with an associated stroke of 4$\mu m$ (3 piezos). Knowing the FSR of the cavity, we calibrate the piezo displacement as a function of the applied voltage, and fit the resonances positions using the theoretical model detailed in chapter 3. We modelled the front cavity length $L_1$ as well as the back cavity length $L_2$ as third order polynomials of the applied voltages $V_{\rm SW}$ and $V_{\rm DC}$  such that
@@ -243,7 +243,7 @@ Importantly, we see that, contrary to the model developped earlier, the back pie
 
 
 \subsubsection{Slow and Fast Scans}
-As developped in \ref{chap:theory}, scanning over a cavity resonance can be done in two different regimes, depending on the sweep rate of the cavity length with respect to the cavity linewidth. In the adiabatic limit where the sweep rate is much smaller than the cavity linewidth, the intracavity field adiabatically follows the input field, and the transmitted and reflected intensities follow lorentzian lineshapes. In the opposite limit where the sweep rate is much larger than the cavity linewidth, dynamical effects such as cavity ringdowns appear, where the intracavity field undergoes damped oscillations as the cavity length is swept over the resonance. This effect is visible both in transmission and reflection, as shown in Fig.~\ref{fig:scans_ringdown}. This effect can be used to extract the cavity linewidth/finesse by comparing the heights of the first two rebounds in transmission to their temporal spacings, as detailed in section~\ref{chap:theory}. We will come back to this point later. \\ 
+As developped in \ref{chap:theory}, scanning over a cavity resonance can be done in two different regimes, depending on the sweep rate of the cavity length with respect to the cavity linewidth. In the adiabatic limit where the sweep rate is much smaller than the cavity linewidth, the intracavity field adiabatically follows the input field, and the transmitted and reflected intensities follow lorentzian lineshapes. In the opposite limit where the sweep rate is much larger than the cavity linewidth, dynamical effects such as cavity ringdowns appear, where the intracavity field undergoes damped oscillations as the cavity length is swept over the resonance. This effect is visible both in transmission and reflection, as shown in Fig.~\ref{fig:scans_ringdown}. This effect can be used to extract the cavity linewidth/finesse by comparing the heights of the first two rebounds in transmission to their temporal spacings, as detailed in chapter I. We will come back to this point later, particularly regarding the accuracy of the finesse estimation. \\ 
 
 \begin{figure}[h!]
     \centering  
@@ -270,7 +270,7 @@ We now turn to the evaluation of the system's finesse as a function of the membr
 
 We then evaluate the finesse of the empty cavity as well as the cavity with the membrane inserted, at various membrane positions. This allow for an evaluation of the losses introduced by the membrane insertion, as well as their position dependence i.e. position dependent linewidths/finesse. Assuming low scattering losses and absorption as reported in the literature for high-stress SiN membranes\cite{SiN_review}, we can attribute these excess losses to imperfect membrane alignment, i.e. remaining tilt between the membrane plane and the back mirror plane, imperfect mode matching to the cavity mode, and clipping loss due to the finite size of the membrane. The latter is not thought to be significant given the large size of the membrane with respect to the cavity mode waist, but could still contribute to few percents of the total losses. \\
 
-The second method to estimate the cavity finesse, turned out to be inconclusive, as it didn't yield consistent and reproducible results. Furthermore, numerical integration as to fit the measured data produces divergences (due to a low number of data points), which in turn forbids a proper estimation of the finesse. The reliable method was therefore taken to be the sideband method. A typical linear regression (detailed in Chap II) is still shown as an example in Fig.~\ref{fig:Ffromring}, but the results shown in Fig.~\ref{fig:finesse_cav_exp} are only extracted from the sideband method. \\ 
+The second method to estimate the cavity finesse turned out to be slightly disappointing, as it didn't yield consistent and reproducible results. Furthermore, numerical integration as to fit the measured data produces divergences (due to a low number of data points), which in turn forbids a proper estimation of the finesse. The reliable method was therefore taken to be the sideband method. A typical linear regression (detailed in Chap II) is still shown as an example in Fig.~\ref{fig:Ffromring}, but the results shown in Fig.~\ref{fig:finesse_cav_exp} are only extracted from the sideband method. \\ 
 
 \begin{figure}[h!]
     \centering  
@@ -279,6 +279,7 @@ The second method to estimate the cavity finesse, turned out to be inconclusive,
     \label{fig:Ffromring}
 \end{figure}
 
+The results from the first method are shown in Fig.~\ref{fig:finesse_cav_exp}, where we can see a good qualitative agreement with the theoretical model developped in chapter III. While cavity I featured an empty cavity finesse of 14 000, the insertion of the membrane reduced it to values ranging from 6 000 to 10 000 depending on the membrane position. Cavity II featured a lower empty cavity finesse of 12 780, which was further reduced to values ranging from 3 000 to 5 000 with the membrane inserted. These values are in line with other MIM/MATE systems reported in the literature\cite{Thompson2008, Sankey2010, Wilson2015}, and could be improved by better membrane alignment (tilt and transverse position). 
 \begin{figure}[h!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/FinesseCavExp.pdf}
@@ -300,24 +301,68 @@ Interestingly, the second cavity displayed anomalous dips, seen as abrupt change
 \end{figure}
 
 \subsubsection{Dispersive couplings}
-The next essential parameters central to MATE systems are the linear and quadratic dispersive couplings, as developped in chapter III. These are computed from the rescaled scans of the cavity resonances, giving access to the first and second derivative of the peak positions (once rescaled, expressed in FSR units) with respect to the membrane position. These are plotted in Fig \ref{fig:G1G2s}, and we see that, although the second cavity featured a lower finesse, it does display a larger linear dispersive coupling. Due to the different cavity geometry/constraints. These were observed to vary greatly from one cavity to another, independently of the cavity finesse. 
+The next essential parameters central to MATE systems are the linear and quadratic dispersive couplings, as developped in chapter II. These are computed from the rescaled scans of the cavity resonances, giving access to the first and second derivative of the peak positions (once rescaled, expressed in FSR units) with respect to the membrane position. These are plotted in Fig \ref{fig:G1G2s}, and we see that, although the second cavity featured a lower finesse, it does display a larger linear dispersive coupling. Due to the different cavity geometry/constraints. These were observed to vary greatly from one cavity to another, independently of the cavity finesse. \\ 
 
-\begin{figure}[h!]
+
+From these various characterization sequences, we extract the key parameters of the two cavities, summarized in Table~\ref{tab:measure_mate_parameters}.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{lcc}
+        & Cavity I & Cavity II \\
+        Empty cavity & \quad & \quad  \\
+        \hline
+        FSR (GHz)                  & 8.817 & 6.246  \\
+        Finesse $\mathcal{F}$& 14 000 & 12 780 \\
+        Linewidth (kHz)            & 630 & 489\\
+        Round-trip loss $T_1 + T_2 + \mathcal{L}$ (ppm) & 449 & 492  \\
+        Resonant reflection R(0) & 0.76 & 0.85 \\
+        $T_1$ (ppm) & 396 & 455 \\
+        $T_2 + \mathcal{L}$ (ppm) & 53 & 37 \\[0.6em]
+
+        MATE cavity & \quad & \quad  \\
+        \hline
+        Fitted reflectivity $|r_m|$ & 0.54 & 0.33 \\
+        Finesse $\mathcal{F}$ &  6 000 - 10 000 &  3 000 - 5 000 \\ 
+        Linewidth  (MHz) & 0.88 - 2.20 &  1.25 - 2.10 \\  
+        Round-trip loss $T_1 + T_2 + \mathcal{L}_{\text{mem}}$ (ppm) & 630 - 1570 &  1255 - 2095 \\
+        Input power        &  10$\mu$W- 50 mW & 10$\mu$W- 50 mW  \\
+
+    \end{tabular}
+    \caption{Summary of the measured parameters for the two cavities used in this work.}
+    \label{tab:measure_mate_parameters}
+\end{table}
+
+
+\begin{figure}
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/G1G2s.pdf}
     \caption{Linear and quadratic dispersive couplings extracted from the rescaled scans of cavity I and II. Units are given in GHz/$\mu$m for $G_1$ and in GHz/$\mu$m$^2$ for $G_2$, as rescaling by the zero point fluctuation in a cavity with a large number of photon obscures the true meaning of the vacuum optomechanical couplings. }
     \label{fig:G1G2s}
 \end{figure}
 
+\subsection{Cavity Locking and Mechanical Characterization}
+One the cavity was characterized, we proceeded to lock it using the PDH technique detailed in chapter III. The whole lock was done using PyRPL, as to showcase its versatility and ease of use. The analogic signal was manipulated with standard MiniCircuits\textsuperscript{\textregistered} RF components, as to amplify/filter/mix the signals as needed. The overall locking sequence is shown in Fig.~\ref{fig:lock_sequence}, where we can see the various steps needed to lock the cavity. First, performing a fine scan over a cavity resonance as to recover a lorentzian lineshape. From this, we tune the error signal amplitude and demodulation phase as to optimize the PDH error signal (Fig \ref{fig:lock_sequence}(b)). We then engage the lock by first locking on the side of the resonance dip. It was observed that at mW powers, locking on the blue side of the resonance was not feasible. This could be explained by optomechanical heating of the membrane, as changing the side of the lock to the red side made the lock stable. Finally, we engage the PDH lock to lock onto the cavity resonance. The critical point in maintaining the lock was the input power i.e. the cavity circulating power. In terms of power range, locking at 1-50 $\mu$W held the lock, while ramping the input power to 1-50 mW greatly perturbed the optomechanical system such that it was no possible to keep the lock. We suspect that optomechanical heating, bistability and photothermal effects were playing a significant role in the lock stability. \\
 
-\begin{figure}[h!]
+Keeping the optical power low, the lock held, and we could proceed to the mechanical characterization of the membrane resonator. Using a spectrum analyzer (Agilent 90A20???), we monitored the spectrum of both the transmitted and reflected intensities. The membrane motion modulating the cavity resonance faster than the lock could respond, the membrane motion modulates the intracavity field intensity, which can in turn be detected in direct detection in both transmission and reflection. The resulting spectra are shown for cavity II in Fig.~\ref{fig:mechproperties}, where we can see the fundamental mechanical resonance at 861kHz, as well as various higher order modes. To reduce the averaging time, we used a Resolution Bandwith (RBW) of 1kHz, which broadens the mechanical peaks, masking the true linewidth from which we could have extracted the effective mechanical quality factor. \\
+
+To extract the intrinsic mechanical quality factor, we then proceeded to do mechanical ringdown measurements. Knowing the mechanical resonance frequencies from the spectra, we excited the membrane motion using the back mirror piezo, while sweeping the cavity. 
+
+\begin{figure}
     \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/lock_sequence.pdf}
+    \caption{Lock sequence of the MATE cavity using the PDH technique. (a) Steps of the lock sequence, wgere we launch the side of fringe lock at approcimately -0.3s. The red pitaya then sets its output voltage to 1 and starts PID control as to lock on the 0 of the error signal, which is achieved at time 0s. Being locked at a HWHM from resonance, launching the PDH lock then brings the cavity to resonance at time $\sim$ 0.35s. (b) Zoom on the error signal and reflected intensity during the lock sequence upon prior cavity scan. These traces are used to fine tune the error signal amplitude and demodulation phase as to optimize the PDH error signal. }
+    \label{fig:lock_sequence}
+\end{figure}
+
+
+\begin{figure}
+    \centering 
     \includegraphics[width=\textwidth]{./chap5/fig/mechproperties.pdf}
     \caption{ }
     \label{fig:mechproperties}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/mech_ringdown.pdf}
     \caption{ }
@@ -325,18 +370,6 @@ The next essential parameters central to MATE systems are the linear and quadrat
 \end{figure}
 
 
-\subsection{Cavity Locking}
-One the cavity was characterized, we proceeded to lock it using the PDH technique detailed in chapter 3. The whole lock was done using PyRPL, as to showcase its versatility and ease of use. The analogic signal was manipulated with standard MiniCircuits\textsuperscript{\textregistered} RF components, as to amplify/filter/mix the signals as needed. The overall locking sequence is shown in Fig.~\ref{fig:lock_sequence}, where we can see the various steps needed to lock the cavity. The lock was found to be fairly robust, and could stay locked for hours without any intervention. The critical point in maintaining the lock was the cavity circulating power. We believe that heating, bistability and photothermal effects were playing a significant role in the lock stability. 
-
-\begin{figure}[h!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/lock_sequence.pdf}
-    \caption{ }
-    \label{fig:lock_sequence}
-\end{figure}
-
-
-\subsection{Mechanical Resonator Characterization}
 \subsection{Bistability}
 
 \section{Design of an Optomechanical Fibered Cavity}
