@@ -375,7 +375,7 @@ S^{r}_{qq,\min}=(1+|\mathcal{K}|^{2})e^{-2r}
 
 
 
-\chapter*{Appendix B: Error Signals}\label{app:App}
+\chapter*{Appendix B: Error Signals}\label{app:AppB}
 \addcontentsline{toc}{chapter}{Appendix B: Error Signals} % ensures it appears in the main TOC
 
 In this appendix, we detail calculation details not mentionned in the main text regarding the detection of optical fields and error signals. 
@@ -551,3 +551,36 @@ Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linea
 
 This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
   
+
+
+
+\chapter*{Appendix C: Three Mirror cavities}\label{app:AppC}
+\addcontentsline{toc}{chapter}{Appendix C: Three Mirror cavities} % ensures it appears in the main TOC
+
+In this appendix, we detail calculation details not mentionned in the main text regarding three-mirror cavities.
+
+\section*{Three-mirror cavity fields}
+
+We consider an input coupler mirror with amplitude reflectivity and transmissivity $r_1$ and $t_1$, a second mirror with $r_m$ and $t_m$ (to be consistent with the main text) and a third mirror with $r_2$ and $t_2$. We will consider the input and output mirrors to be HR mirrors i.e. $R_i = |r_i|^2 \sim 1$ and $T_i = |t_i|^2 \ll 1$ for $i=1,2$. This will allow us to neglect terms in $t_1^2$ and $t_2^2$ in the following calculations. The input-output relation at various coupler interfaces read
+\begin{align*}
+\hat a_R &= t_m \hat a_L + r_m \hat a'_R \, \\
+\hat a'_L &= t_m \hat a'_R + r_m \hat a_L \, \\
+\end{align*}
+as well as the reflections on the input and output couplers
+\begin{align*}
+\hat a_L &= - r_1 \hat a_R e^{i \phi_L} + t_1 \hat a_{\rm in} \sim - \hat a_R e^{i \phi_L} + t_1 \hat a_{\rm in} \\
+\hat a'_{R} &= - r_2 \hat a_{R} e^{i \phi_R} \sim \hat a_R e^{i \phi_R} \, \\
+\end{align*}
+where $\phi_L = 2 k L_1$ and $\phi_R = 2 k L_2$ are the lengths of the two sub-cavities. Here we will consider the reflection coefficient of the input/output couplers to be $r_{i} \sim -1$ for $i=1,2$, and $r_m = |r_m|$ and $t_m = i|t_m|$ for the middle mirror / membrane. Injecting the second system in the first one yields
+\begin{align*}
+  (1-r_m e^{i \phi_R}) \hat a_R & = t_m e^{i \phi_L} \hat a'_L + t_m t_1 \hat a_{\rm in} \, \\
+  (1 - r_m e^{i \phi_L}) \hat a'_L & = t_m e^{i \phi_R} \hat a_R + r_m t_1 \hat a_{\rm in} \, \\
+\end{align*}
+such that isolating the $\hat a_{\rm in}$ and considering the mean fields yileds 
+\begin{align*}
+  \dfrac{\alpha_R}{\alpha'_L} = \dfrac{|t_m|(2|r_m|\sin \phi_L + i )}{|r_m|^2 - e^{i\phi_R}}
+\end{align*}
+and the power ration for a driven cavity yields 
+\begin{align*}
+  \dfrac{P_R}{P'_L} = \dfrac{|t_m|^2(4|r_m|^2 \sin^2 \phi_L +1)}{|r_m|^4 - 2 |r_m|^2 \cos \phi_R +1 } \,
+\end{align*}

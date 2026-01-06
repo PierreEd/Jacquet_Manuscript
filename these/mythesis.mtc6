@@ -1,16 +1,13 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.1}Optical Setup Overview}{\reset@font\mtcSfont 112}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.2}Cavity Resonances and Locks}{\reset@font\mtcSfont 113}{section.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.1}IRMC Cavity}{\reset@font\mtcSSfont 113}{subsection.5.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.2}SHG Cavity}{\reset@font\mtcSSfont 114}{subsection.5.2.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Scanning and Resonance Mapping.}{\reset@font\mtcPfont 114}{section*.108}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cavity Locking.}{\reset@font\mtcPfont 115}{section*.109}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Nonlinear Crystal and Phase Matching.}{\reset@font\mtcPfont 115}{section*.110}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Temperature-Induced Resonance Shifts.}{\reset@font\mtcPfont 116}{section*.111}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.3}OPO Cavity}{\reset@font\mtcSSfont 116}{subsection.5.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.3}Spectral analysis}{\reset@font\mtcSfont 116}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.3.1}Detection of Squeezing and Anti-squeezing}{\reset@font\mtcSSfont 116}{subsection.5.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.3.2}Spectral Variation with Frequency}{\reset@font\mtcSSfont 116}{subsection.5.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.3.3}Optimal Quadrature Conditions}{\reset@font\mtcSSfont 116}{subsection.5.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.4}Filter Cavity Concept}{\reset@font\mtcSfont 116}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.4.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 116}{subsection.5.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.4.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 116}{subsection.5.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.1}Optical Setup Overview}{\reset@font\mtcSfont 116}{section.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Configuration I: bright squeezing from OPO}{\reset@font\mtcSSSfont 117}{section*.106}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Configuration II: vacuum squeezing + bright seed}{\reset@font\mtcSSSfont 117}{section*.107}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.2}Cavity Resonances and Locks}{\reset@font\mtcSfont 118}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.1}IRMC Cavity}{\reset@font\mtcSSfont 118}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.2}SHG Cavity}{\reset@font\mtcSSfont 121}{subsection.5.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.2.3}OPO Cavity}{\reset@font\mtcSSfont 126}{subsection.5.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.3}Squeezed State Characterization}{\reset@font\mtcSfont 130}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.3.1}Bright squeezed state from configuration I}{\reset@font\mtcSSfont 130}{subsection.5.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.3.2}Vacuum and Bright squeezed state from configuration II}{\reset@font\mtcSSfont 132}{subsection.5.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {V.4}Filter Cavity Concept}{\reset@font\mtcSfont 132}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.4.1}Virgo Filter Cavity }{\reset@font\mtcSSfont 133}{subsection.5.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {V.4.2}Thermal effects in bichromatic locks}{\reset@font\mtcSSfont 133}{subsection.5.4.2}}

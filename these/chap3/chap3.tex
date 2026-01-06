@@ -319,13 +319,15 @@ with $P_{L,R} \propto |\bar \alpha_{L,R}|^2$. It then follows that the the power
 and we get the expected relation $R(\Delta=0,x) + T(\Delta=0,x) = 1$.
 
 \subsubsection{Cavity Linewidth and Finesse}
-To derive the position dependent cavity linewidth $\kappa(x)$ and finesse $\mathcal{F}(x)$, we once again resort to the Sankey et al. method \cite{sankey_strong_2010}. The total energy stored in the cavity is given by
+Here, and similarly as in the next section detailing the quantum description of the MATE system, we can derive the cavity linewidth and finesse considering two different approaches. The firts one, best for high membrane reflectivities, consists in considering two coupled subcavities, each with their own low linewidth/ high finesse, coupled by photon transmission through the membrane. The second one, appropriate for MATE geometries and low membrane reflectivities, consists in considering the whole cavity as a single optical mode, where the back short cavity act as an effective mirror with position dependent reflectivity. We will derive both and compare them. \\
+
+To derive the position dependent cavity linewidth $\kappa(x)$ and finesse $\mathcal{F}(x)$ in the two cavity approach, we once again resort to the Sankey et al. method \cite{sankey_strong_2010}. The total energy stored in the cavity is given by
 \begin{equation}
   E = \dfrac{2(L_1+x)}{c} P_L + \dfrac{2(L_2 - x)}{c} P_R
 \end{equation}
 and the rate at which energy leaves the cavity 
 \begin{equation}
-  \partial_t E = - |t_1|^2 P_L + -|t_2|^2 P_R
+  \partial_t E = - |t_1|^2 P_L + -|t_2|^2 P_R = - \kappa(x) E.
 \end{equation}
 such that the cavity energy decay rate is given by
 \begin{equation}
@@ -340,8 +342,22 @@ We can then derive the cavity finesse as
   \mathcal{F}(x) = \dfrac{\pi c}{ L \kappa(x)}.
 \end{equation}
 
+\color{red} add comparison with effective mirror approach \color{black}
+
+In the single cavity, effective mirror approach, the membrane acts as a position dependent mirror modifying the cavity resonance frequency as derived above. The back cavity then acts as an effective mirror with complex reflection coefficient given by 
+\begin{equation}
+r_{\rm eff}(x) = r_m + \dfrac{t_m^2 r_2 e^{2ik(L_2 - x)}}{1 - r_m r_2 e^{2ik(L_2 - x)}}
+\end{equation}
+such that the resulting cavity finesse is given by 
+\begin{equation}
+  \mathcal{F}(x) \sim \dfrac{2\pi }{|t_1|^2 + (1- |r_{\rm eff}(x)|^2)}
+\end{equation} and the associated linewidth $\kappa(x) = \pi c / L \mathcal{F}(x)$.\\
+
+
+
 \subsection{Quantum Description}
 We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? \\ 
+
 
 \subsubsection{Two Cavity Mode Model}
 We start by looking at the two cavity model. Using the same tools as in section II.2, we can derive the QLE of a membrane based optomechanical system. The membrane position now turns into an operator such that $\hat x \propto \hat c + \hat c^{\dagger} $ with $\hat c$ the mechanical annihilation operator as in the previous section. As seen above, the membrane position modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as

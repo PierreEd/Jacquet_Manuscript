@@ -19,75 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{arcizet_radiation-pressure_2006}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=dcf41525351bdb0f34600fda8786bb08}{%
-           family={Arcizet},
-           familyi={A\bibinitperiod},
-           given={O.},
-           giveni={O\bibinitperiod}}}%
-        {{hash=a8ea3d4e89c0c0c291fa6469a4ce8523}{%
-           family={Cohadon},
-           familyi={C\bibinitperiod},
-           given={P.-F.},
-           giveni={P\bibinithyphendelim F\bibinitperiod}}}%
-        {{hash=30deb9e73d54c40eb2220d5a1779954a}{%
-           family={Briant},
-           familyi={B\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=76577fd5f84e8031819da12a42a59ab4}{%
-           family={Pinard},
-           familyi={P\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e87fde409b609a5c3db3683847d38ec9}{%
-           family={Heidmann},
-           familyi={H\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{495c972da6c80b0e50b151f355cbd0a7}
-      \strng{fullhash}{c440a7b14de4675d355cfeeb57b81faa}
-      \strng{fullhashraw}{c440a7b14de4675d355cfeeb57b81faa}
-      \strng{bibnamehash}{495c972da6c80b0e50b151f355cbd0a7}
-      \strng{authorbibnamehash}{495c972da6c80b0e50b151f355cbd0a7}
-      \strng{authornamehash}{495c972da6c80b0e50b151f355cbd0a7}
-      \strng{authorfullhash}{c440a7b14de4675d355cfeeb57b81faa}
-      \strng{authorfullhashraw}{c440a7b14de4675d355cfeeb57b81faa}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0028-0836, 1476-4687}
-      \field{journaltitle}{Nature}
-      \field{langid}{english}
-      \field{month}{11}
-      \field{number}{7115}
-      \field{shortjournal}{Nature}
-      \field{title}{Radiation-pressure cooling and optomechanical instability of a micromirror}
-      \field{urlday}{9}
-      \field{urlmonth}{1}
-      \field{urlyear}{2023}
-      \field{volume}{444}
-      \field{year}{2006}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{71\bibrangedash 74}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1038/nature05244
-      \endverb
-      \verb{file}
-      \verb nature05244.pdf:C\:\\Users\\jacqu\\Downloads\\nature05244.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://www.nature.com/articles/nature05244
-      \endverb
-      \verb{url}
-      \verb http://www.nature.com/articles/nature05244
-      \endverb
-    \endentry
     \entry{Kimble2001}{article}{}{}
       \name{author}{5}{}{%
         {{hash=aea70dd628dc6535ce5213ef85f63855}{%
@@ -125,8 +56,8 @@
       \strng{authorfullhash}{0f872389b25df4b39a5b52b23a321a4f}
       \strng{authorfullhashraw}{0f872389b25df4b39a5b52b23a321a4f}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0556-2821}
@@ -182,8 +113,8 @@
       \strng{authornamehash}{d001f6bae19a9e4d9b130f6c495aa783}
       \strng{authorfullhash}{c74f16e69519d817547c3ac4485a33fc}
       \strng{authorfullhashraw}{c74f16e69519d817547c3ac4485a33fc}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phenomenon of ringing in swept Fabry--Perot cavities, which leads to discrepancies with respect to usual Airy peaks, exhibits three different regimes, depending on the values of the finesse, the sweep frequency, and the free spectral range of the cavity. In particular, the intermediate case in which the Fabry--Perot cavity transmission essentially oscillates is shown theoretically and experimentally to provide a new simple method to measure the finesse of the cavity. For cavities with intermediate finesses (F$\approx$10 000) this method is experimentally shown to have a precision of the order of 1\%.}
@@ -242,8 +173,8 @@
       \strng{authornamehash}{95cb63106604316da6ed6bc56b3cc991}
       \strng{authorfullhash}{832ac2e357a7a97e69f43f64efbcd955}
       \strng{authorfullhashraw}{832ac2e357a7a97e69f43f64efbcd955}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The topic of quantum noise has become extremely timely due to the rise of quantum information physics and the resulting interchange of ideas between the condensed matter and {AMO}/quantum optics communities. This review gives a pedagogical introduction to the physics of quantum noise and its connections to quantum measurement and quantum amplification. After introducing quantum noise spectra and methods for their detection, we describe the basics of weak continuous measurements. Particular attention is given to treating the standard quantum limit on linear amplifiers and position detectors using a general linear-response framework. We show how this approach relates to the standard Haus-Caves quantum limit for a bosonic amplifier known in quantum optics, and illustrate its application for the case of electrical circuits, including mesoscopic detectors and resonant cavity detectors.}
@@ -319,8 +250,8 @@
       \strng{authorfullhash}{5edd995e63f3dc6cac5730764ccd7556}
       \strng{authorfullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -606,8 +537,8 @@
       \strng{authorfullhash}{1e7a073c6ce31445f4ff0f0dc5138abd}
       \strng{authorfullhashraw}{1e7a073c6ce31445f4ff0f0dc5138abd}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-2473}
@@ -771,13 +702,17 @@
   \missing{Vahlbruch2006}
   \missing{Vyatchanin1993}
   \missing{aasi_enhanced_2013}
+  \missing{bachor_guide_2004}
   \missing{braginsky_quantum_1992}
   \missing{coating_review}
+  \missing{croquette_thesis}
   \missing{dumont_cavity_2017}
+  \missing{eckardt_high-efficiency_2019}
   \missing{harry_advanced_2010}
+  \missing{kourogi_high-efficiency_2020}
   \missing{nanofab_review}
+  \missing{neuhaus_thesis_2021}
   \missing{optomech_challenges}
-  \missing{ref:68}
   \missing{thompson_coupling_2013}
   \missing{thompson_strong_2008}
 \endrefsection
