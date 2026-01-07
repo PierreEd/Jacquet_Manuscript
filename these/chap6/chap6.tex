@@ -5,8 +5,18 @@ This chapter will cover the experimental methods used in the development of freq
 
 \section{Optical Setup Overview}
 
+The generation and manipulation of squeezed light is a complex process that requires a carefully designed optical setup. Over the course of \textbf{Sheon CHUA} postdoctoral work at the lab, \textbf{Michael CROQUETTE} PhD work, and my own PhD work, we have developed a versatile setup aiming at producing both bright and vacuum squeezed states of light using an Optical Parametric Oscillator (OPO) below threshold. Squeezing experiments being very prone to losses, noises, or any type of imperfection, the optical table is protected from air currents and temperature fluctuations using a custom-made cabin (inspired from the lab of \textbf{Julien LAURAT} and \textbf{Alban URVOY}), and the optics were initially mounted in two boxes such that they could be transported easily between different labs, or stacked on top of each other to save space (inspired from \textbf{Roman SCHNABEL} lab). Pictures of the setup are shown in \\
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap6/fig/manipssqz.pdf}
+    \caption{Pictures of the optical setup for squeezed light generation and detection. (a) Overview of the experiment inside the cabin. (b) Top view of the two boxes containing the optics for squeezed light generation and detection.}
+    \label{fig:opticalpath}
+\end{figure}
+
+
 We first provide a general overview of the optical setup used to generate and manipulate squeezed light. 
-Two lasers are used in this setup, to give flexibility as to produce bright squeezing directly from the OPO (one laser only), or produce vacuum squeezing to be mixed with a bright coherent field (two lasers). Both lasers are 1064nm Nd:YAG lasers (Coherent Mephisto and Mephisto S) as in the previous chapter. The full optical layout is shown in figure \ref{fig:opticalpath}. The dashed box on the right part of the squeezing setup is the one to be changed to implement both configurations, as shown in figure \ref{fig:configsqueezer}. The experiment was designed as to easily switch between the two configurations. Throughout this chapter, we will refer to three different optical cavities common to the two configurations: the infrared mode cleaner (IRMC) cavity, the SHG cavity, and the OPO cavity. Each of these cavities is central to the generation and manipulation of squeezed light, and their characterization is detailed in the following sections. 
+Two lasers are used in this setup, to give flexibility as to produce bright squeezing directly from the OPO (one laser only), or produce vacuum squeezing to be mixed with a bright coherent field (two lasers). Both lasers are 1064nm Nd:YAG lasers (Coherent Mephisto and Mephisto S) as in the previous chapter. The full optical layout is shown in figure \ref{fig:opticalpath}. The dashed box on the right part of the squeezing setup is the one to be changed to implement both configurations, as shown in figure \ref{fig:configsqueezer}. The experiment was designed as to easily switch between the two configurations. Throughout this chapter, we will refer to three different optical cavities common to the two configurations: the infrared mode cleaner (IRMC) cavity, the SHG cavity, and the OPO cavity. Each of these cavities is central to the generation and manipulation of squeezed light, and their characterization is detailed in the following sections. \\ 
 
 \begin{figure}[h!]
     \centering  
@@ -66,7 +76,7 @@ This cavity is mounted in a aluminium housing to make it as monolitic as possibl
 
 The cavity is then locked using a standard PDH technique, with a preliminary side-of-fringe lock to bring the cavity close to resonance. The input beam is phase-modulated at $\Omega_\mathrm{mod} = 21$ MHz using a free space EOM (New Focus IR 4003). The cavity length is swept, and the detected reflected beam is manipulated with PyRPL to generate the PDH error signal. The finesse being relatively high, we observed cavity ringing effects when scanning the cavity length resonance too quickly, as already seen in the previous chapter. The cavity length was then swept over gently at 0.5 Hz as to recover the expected lorentzian resonance peaks in reflection. \\
 
-Once locked, the intensity noise spectrum of the transmitted beam is first measured in direct detection. The results are shown in figure \ref{fig:irmcnoise}, where we observe significant noise suppression above the cavity bandwidth (half linewidth) of $26$ kHz. This is notably seen in the attenuation of the laser relaxation oscillation peak around $1$ MHz. However, at low frequencies, the intensity noise is amplified, most likely due to the feedback loop, and exceeds the laser classical noise by 30dB. Above 2 MHz, the intensity noise reaches the shot noise level, indicating that the IRMC effectively filters classical intensity noise from the laser. At the membrane fundamental mode frequency of $\sim$ 850 kHz, the laser intensity noise is suppressed by approximately 20 dB, which is beneficial for optomechanical experiments. It does however not reach the shot noise level, indicating that further improvements in the cavity locking or laser stabilization may be necessary for optimal performance. \\
+Once locked, the intensity noise spectra of the reflected and transmitted beam are measured in direct detection. We then renormalize the transmitted spectra by the known $R(0)$ to yield equivalent optical powers. The results are shown in figure \ref{fig:irmcnoise}, where we observe significant noise suppression above the cavity bandwidth (half linewidth) of $26$ kHz. This is notably seen in the attenuation of the laser relaxation oscillation peak around $1$ MHz. However, at low frequencies, the intensity noise is amplified, most likely due to the feedback loop. Above 2 MHz, the intensity noise reaches the shot noise level, indicating that the IRMC effectively filters classical intensity noise from the laser. At the membrane fundamental mode frequency of $\sim$ 850 kHz, the laser intensity noise is suppressed by approximately 20 dB, which is beneficial for optomechanical experiments. It does however not reach the shot noise level, indicating that further improvements in the cavity locking or laser stabilization may be necessary for optimal performance. \\
 
 \begin{figure}[h!]
     \centering  
@@ -217,9 +227,9 @@ To precisly estimate the OPO threshold power, we measure the amplified and deamp
 \end{figure}
 
 We then need to lock the pump phase to stabilize the squeezed quadrature angle. When seeding the OPO with a bright coherent field from the IRMC output, we detect the transmitted IR beam on a photodiode by placing a 99:1 beamsplitter and directing the 1\% port to a fast photodiode in direct detection while the 99\% port is sent to the homodyne detection setup. We then implement a dithering lock technique by modulating the pump phase at $\sim$50kHz using the PZT mounted mirror in the pump path. The detected IR signal is demodulated at the dither frequency with a variable phase shift to generate an error signal proportional to the derivative of the amplified/deamplified output power with respect to the pump phase. This error signal is then fed to a PyRPL PID module before seeding it back to the PZT actuator to lock the pump phase to the deamplification phase. The error signal is shown in Fig \ref{fig:ampdeamp}(a), where we observe a clear zero-crossing at the deamplification point. Once locked and optimized, we can proceed to the noise study of the resulting bright squeezed state. 
-\section{Squeezed State Characterization}
+\section{Squeezed State Detection}
 
-\subsection{Bright squeezed state from configuration I}\label{sec:bright_squeezingI}
+\subsection{Configuration I}\label{sec:bright_squeezingI}
 In order to characterise the generated squeezed states from the OPO, we direct the transmitted squeezed beam to the homodyne detection setup. We first calibrate the shot noise level by blocking the OPO output beam and measuring the homodyne noise spectrum for various LO powers, as seen in Fig \ref{fig:noiseLO}. The homodyne detection is carefully balanced to ensure maximum common mode rejection of classical noises, and the LO power is set to about 10mW for optimal clearance above the electronic noise floor, 10dB in our case. The common mode rejection ratio is measured to be at least 10dB across the measured frequency range using the attenuation of the LO intensity noise when both photodiodes are illuminated. A proper calibration of the CMRR would be needed to be more precise (using a proper AM tone), but this is sufficient for a preliminary characterization. \\
 
 The circuit of the homodyne detection was elaborated by \textbf{L. Neuhaus} in his PhD thesis \cite{neuhaus_thesis_2021}, and features two output channels. The first one, a DC-100kHz output, is used to monitor the DC level of the homodyne signal, useful for alignment and mode matching optimization. The second output channel is a RF output, AC coupled (1-100MHz), which is sent to a spectrum analyser to measure the noise spectrum of the detected quadrature. The LO phase can be scanned using a PZT actuator on which one of the homodyne mirrors is glued, or locked to a specific quadrature using a dithering lock technique similar to the one used for the OPO pump phase lock. Injecting the bright squeezed beam from the OPO of about $10\mu$W, the visibility of the detection is optimized by adjusting the LO mode matching and alignment, as well as the relative angle of the two polarizations using a half-wave plate before the PBS. A visibility of 98\% is achieved, which is satisfactory. The beam splitter used to mix the signals being very angle dependent as well as polarization dependent, we need to carefully adjust both the angle of incidence and the polarization of the incoming beams to maximize the visibility. A trick is to slightly ellipticize the beams using a quarter waveplate, as to converge to the optimal balance more easily. \\ 
@@ -244,14 +254,61 @@ Further characterization of the squeezing level at various pump powers and analy
 \end{figure}
 
 
-\subsection{Vacuum and Bright squeezed state from configuration II}\label{sec:bright_squeezingII}
+\subsection{Configuration II}\label{sec:bright_squeezingII}
 
 
 
 
 \section{Filter Cavity Concept}
-As detailed in the previous chapters, the generation of squeezed states of light alone cannot provide a reduction of quantum noise across a broad frequency range in interferometric measurements, nor allow subSQL measurements of a mechanical resonator. To achieve this, the squeezed states must be manipulated in a frequency-dependent manner to optimally reduce quantum noise at each frequency of interest. This is accomplished by reflecting the squeezed states off a detuned optical cavity. 
+As detailed in the previous chapters, the generation of squeezed states of light alone cannot provide a reduction of quantum noise across a broad frequency range in interferometric measurements, nor allow subSQL measurements of a mechanical resonator embedded within a resonant optical cavity. To achieve this, the squeezed states must be manipulated in a frequency-dependent manner to optimally reduce quantum noise at each frequency of interest. This is accomplished by reflecting the squeezed states off a detuned optical cavity. \\ 
 
-Over the course of my PhD, I was lucky enough to collaborate the Virgo collaboration to characterize their filter cavity, designed to provide frequency-dependent squeezing for the Advanced Virgo gravitational wave detector. Although drastically different in scale compared to our tabletop OPO setup, the underlying principles remain the same, and it was a great opportunity to gain insight into the challenges of implementing frequency-dependent squeezing in interferometers. In the following sections, I will briefly present the Virgo filter cavity and some thermal effects encountered when implementing bichromatic locks for such cavities. This work was carried out under the supervision of \textbf{Jean Pierre Zendri}, and in collaboration with \textbf{Luis Diego Bonavena} and \textbf{Yuhang Zhao} from the Virgo collaboration. 
+Over the course of my PhD, I was lucky enough to collaborate the Virgo collaboration to help characterizing their filter cavity, designed to provide frequency-dependent squeezing for the Advanced Virgo gravitational wave detector. Although drastically different in scale compared to our tabletop OPO setup, the underlying principles remain the same, and it was a great opportunity to gain insight into the challenges of implementing frequency-dependent squeezing in interferometers. In the following sections, I will briefly present the Virgo filter cavity and some thermal effects encountered when implementing bichromatic locks for such cavities. This work was carried out under the supervision of \textbf{Jean Pierre ZENDRI}, and in collaboration with \textbf{Luis Diego BONAVENA} and \textbf{Yuhang ZHAO} from the Virgo collaboration. \\ 
+
+This part will very briefly summarize the work done on the Virgo filter cavity, focusing on the thermal effects encountered when implementing bichromatic locks for such cavities. No extensive reviews of the optical setup nor the detailed characterization of the cavity will be provided here, as they are out of the scope of this thesis. For further details on the Virgo filter cavity and its characterization, I refer the reader to the PhD thesis of \textbf{Luis Diego BONAVENA} \cite{bonavena_thesis_2024},as well as the associated publications \cite{bonavena_frequency-dependent_2023, bonavena_characterization_2024}. \\
 \subsection{Virgo Filter Cavity }
+
+The Virgo Filter cavity aims to implement frequency-dependent squeezing in the Advanced Virgo gravitational wave detector, enhancing its sensitivity to gravitational waves. The cavity is a 285m long Fabry-Perot cavity located in Cascina, in the North arm of the interferometer. The cavity provides a frequency-dependent rotation of the squeezed quadrature at about 25Hz, where the radiation pressure noise and shot noise contributions are equivalent. The cavity is mounted inside a vacuum tank, and is formed by two dual coating mirrors treated by the LMA, with input mirror IR transmittivity of 562ppm and an end mirror transmittivity of 3ppm, leading to a finesse of about 10000 at 1064nm, as well as a green transmittivity of both mirrors of 2.7\%, leading to a finesse of about 120 at 532nm. This setup involves two lasers, that we will refer to as the main laser and the sub carrier laser (SC). \\
+
+\noindent \textbf{The main laser:} The first one is an IR laser (1064nm) at frequency $\omega_0$, which is used to pump the SHG cavity in order to generate a green beam at frequency $\omega_p = 2\omega_0$ (532nm). This green beam is then seperated in two paths. The first path is used to pump the OPO cavity below threshold to generate the vacuum squeezed states at $\omega_0$. The second path is frequency shifted using an AOM to generate a beam at frequency $\omega_p'=\omega_p + \Delta \omega_p$, phase modulated and subsequently injected into the filter cavity for locking. Demodulation of the reflected signal generates a PDH error signal at 532nm.  \\  
+
+\noindent \textbf{The SC laser:} The second laser is another IR laser at frequency $\omega_0' = \omega_0 + \Delta \omega_0$, phase locked to the main laser with an offset frequency of $\Delta \omega_0$. This SC laser is used to probe the filter cavity at IR wavelength, by injecting it into the cavity after being phase modulated to generate a PDH error signal. \\ 
+
+The two lasers are phase/frequency locked using a PLL scheme, such that the detuning of the SC laser with respect to both the green beam and the squeezed beam is kept constant at $\Delta \omega_0$.
+
+\subsubsection{Cavity locking}
+
+The cavity locking scheme relies on a bichromatic locking technique, where both the SC laser at $\omega_0'$ and the green beam at $\omega_p'$ are injected into the cavity to achieve coresonance. The schematic of the locking setup is shown in Fig \ref{fig:bichromatic_lock}. Upon coresonance, the squeezed beam would be locked at the right detuning. The green beam at frequency $\omega_p'$ is obtained by frequency shifting the green beam generated from the main laser using the AOM. The AOM is driven by a VCO, and the name of the game is to lock the VCO frequency by adjusting the seeded offset voltage. The cavity being continuously locked to the green beam while changing the VCO offset, the right VCO offset would then yield coresonance. The error signal being fed back to the VCO is therefore the SC PDH error signal, which monitors the detuning of the cavity with respect to the SC laser. The PID controller output seeking to minimize this error signal is then used to adjust the VCO offset voltage, thereby locking the cavity to coresonance. \\ 
+
+\subsubsection{Detection}
+The reflected squeezed beam from the filter cavity is then directed to a homodyne detection setup for characterization. The LO is derived from the main laser, and the homodyne detection is performed similarly as described in section \ref{sec:bright_squeezingI}. By scanning the LO phase and recording the RF noise spectrum, the squeezing levels can be measured and the optimal LO phase can be locked. 
+
+\begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap6/fig/bichromatic lock.pdf}
+    \caption{ Detuning drifts observed over time, correlated with temperature fluctuations of the end cavity mirror.  (top) Cavity detuning evoluation over 14 hours. The detuning 
+        11 of january 2023}
+    \label{fig:bichromatic_lock}
+\end{figure}
+
+
 \subsection{Thermal effects in bichromatic locks}
+Once locked, the squeezed beam reflected from the filter cavity is directed to the homodyne detection setup for characterization. The LO 
+
+
+This was implemented and successfully used to lock the Virgo filter cavity at 180Hz detuning to maximise the squeezing level. However, during the operation of the cavity over tens of hours, we observed significant drifts in the cavity detuning, as seen in Fig \ref{fig:driftT}. Recording the temperarure of both cavity mirrors continuously, it was realized that these detuning drifts were correlated with temperature fluctuations of the end mirrors, as shown in Fig \ref{fig:variationT}. This effect was attributed to thermal effects, and notably to a sensitive change in the phase picked up by both beam upon reflection on the end cavity mirror (the 3ppm one), changing the effective optical length of the cavity as seen by both wavelengths. This effect was further confirmed by performing controlled temperature variations of the end mirror, and measuring the corresponding variation in cavity detuning. 
+
+\begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap6/fig/driftT.pdf}
+    \caption{11 of january 2023}
+    \label{fig:driftT}
+\end{figure}
+
+
+\begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap6/fig/variationT.pdf}
+    \caption{11 of january 2023}
+    \label{fig:variationT}
+\end{figure}
+

@@ -146,14 +146,16 @@ This approach preserves the cavity alignment for gentle flexures, while enabling
 \color{black}
 
 \subsection{Experimental Setup}
-The assembly is now to be integrated into the optical setup shown in Fig.~\ref{fig:optical layout}. The source laser is a 1064nm Nd:YAG laser (Coherent Mephisto). We did not require the full optical power delivered by the laser, so a short optical path not detailed here splits the laser in 3 arms to eventually fiber couple some laser power and bring it to other experiments that would need 1064nm laser light. \newline
+The assembly is now to be integrated into the optical setup shown in Fig.~\ref{fig:optical pics}, as well as schematically in Fig.~\ref{fig:optical layout}. The source laser is a 1064nm Nd:YAG laser (Coherent Mephisto). We did not require the full optical power delivered by the laser, so a short optical path not detailed here splits the laser in 3 arms to eventually fiber couple some laser power and bring it to other experiments that would need 1064nm laser light. \newline
 
 \begin{figure}[h!]
     \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/fig_lock_MATE.pdf}
-    \caption{}
-    \label{fig:optical layout}
+    \includegraphics[width=\textwidth]{./chap5/fig/manips.pdf}
+    \caption{Pictures of the optical setup used for the MATE cavity experiments. (a) Overall view of the optical table, with the laser source in the back, the optical path in the middle, and the vacuum tank on the left. (b) Top view of the MATE cavity mounted inside the vacuum tank, with AR coated windows to allow for optical access.}
+    \label{fig:optical pics}
 \end{figure}
+
+
 The optical path then consists of : 
 \begin{itemize}
   \item a first half waveplate and a beam splitter to adjust the total power injected into the experimental setup,
@@ -165,6 +167,15 @@ The optical path then consists of :
   \item the cavity itself. 
   \item two photodiodes (Thorlabs ???) to detect the reflected beam and the transmitted beam, respectively, with 40mm focal length lenses to focus the beam onto the photodiodes. 
 \end{itemize}
+
+
+\begin{figure}[h!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/fig_lock_MATE.pdf}
+    \caption{Schematic of the optical layout used for the MATE cavity experiments. The various optical components are detailed in the main text. The transparent lines show two additional optical paths that were not used during this thesis, one for a prospective LO, and another to deflect the reflected beam to a Homodyne Detection setup using a flip mirror.}
+    \label{fig:optical layout}
+\end{figure}
+
 
 The optical path was designed to be as modular as possible, allowing for easy replacement of the components if needed, as well as additions of optical elements. For this reason, it features two fainted additional optical paths as seen on Fig.~\ref{fig:optical layout}, one for a prospective LO, and another to deflect the reflected beam to a Homodyne Detection setup using a flip mirror. Polarization optics would aslo need to be added on the Homodyne Detection path to mix the LO and the reflected beam, but this was not done during this thesis.
 
@@ -186,6 +197,13 @@ The optical setup is now to be aligned as to ensure a good mode matching between
 \section{Experimental Characterization}
 \subsection{Cavity Scans}
 
+
+Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in parallel at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). \\ 
+
+We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM$_{00}$ mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters. We observed that putting the cavity under vacuum did sometimes misalign the cavity, such that even mode matching to our best ability using two mirrors outside the vacuum tank did not yield a perfect $\text{TEM}_{00}$ match. We also saw some membranes/phononic crystals break throughout the pumping process, most likely due to dust or degazing of the setup. \\
+
+Once aligned and mode matched, we can proceed to the cavity characterization. Over the course of my PhD, few \textit{functional} cavities were mounted inside the vacuum tank. We chose to only present the results for two of these, as to display various physical effects observed. The key parameters of these two cavities are summarized in Table~\ref{tab:mate_parameters}. Both were mounted using 100ppm input mirrors, with a concave radius of curvature of -25mm, and a plane back mirror with a nominal transmission of 20ppm. Cavity I used the in-house fabricated membrane of nominal thickness 100nm, while cavity II used the commercial Norcada membrane of nominal thickness 50nm. The reason why we used the 100ppm input mirror rather than the 50ppm one was to ensure that the cavity linewidth would be larger than the mechanical resonance frequency of the membrane, such that we would be in the genuine unresolved sideband regime. Had we chosen the 50ppm mirror, the cavity linewidth would have been around 85kHz, an order of magnitude below the expected fundamental mechanical resonance frequency of the membrane at 861kHz (see above). A tradeoff is to be made here, as using a higher transmission input mirror reduces the intracavity power for a given input power, thus reducing radiation pressure effects. 
+
 \begin{table}[h!]
     \centering
     \begin{tabular}{lcc}
@@ -203,11 +221,6 @@ The optical setup is now to be aligned as to ensure a good mode matching between
     \label{tab:mate_parameters}
 \end{table}
  
-Once the cavity is aligned, we can scan the cavity length by driving the front mirror piezo with a triangular or a sine wave voltage. This signal is first amplified using a high voltage amplifier made by the LKB electronic workshop, which can deliver up to 1000V. The output impedance of the amplifier is a standard 50 Ohms, but the piezo in parallel at the end of the line with capacitance of about 15 nF low pass filters the signal at  $\sim$ 200 Hz. We can also modulated the back piezo actuators, in DC or AC, and a similar lowpass filtering occurs with a lower cutoff frequency $\sim$ 50Hz (3 piezo actuators in parallel with a capacitance of around 100 nF each). \\ 
-
-We then monitor the cavity resonances using both the reflected and transmitted photodiodes and scanning the cavity over a large range, as to mode match the cavity to the TEM$_{00}$ mode. By beam walking, we optimally mode match the cavity such that higher order modes vanish in the photodiode noise floor and the reflected and transmitted signals are maximised, we can then perform finer scans to characterize the cavity parameters. We observed that putting the cavity under vacuum did sometimes misalign the cavity, such that even mode matching to our best ability using two mirrors outside the vacuum tank did not yield a perfect $\text{TEM}_{00}$ match. We also saw some membranes/phononic crystals break throughout the pumping process, most likely due to dust or degazing of the setup. \\
-
-Once aligned and mode matched, we can proceed to the cavity characterization. Over the course of my PhD, few \textit{functional} cavities were mounted inside the vacuum tank. We chose to only present the results for two of these, as to display various physical effects observed. The key parameters of these two cavities are summarized in Table~\ref{tab:mate_parameters}. Both were mounted using 100ppm input mirrors, with a concave radius of curvature of -25mm, and a plane back mirror with a nominal transmission of 20ppm. Cavity I used the in-house fabricated membrane of nominal thickness 100nm, while cavity II used the commercial Norcada membrane of nominal thickness 50nm. The reason why we used the 100ppm input mirror rather than the 50ppm one was to ensure that the cavity linewidth would be larger than the mechanical resonance frequency of the membrane, such that we would be in the genuine unresolved sideband regime. Had we chosen the 50ppm mirror, the cavity linewidth would have been around 85kHz, an order of magnitude below the expected fundamental mechanical resonance frequency of the membrane at 861kHz (see above). A tradeoff is to be made here, as using a higher transmission input mirror reduces the intracavity power for a given input power, thus reducing radiation pressure effects. 
 
 \subsubsection{Cavity resonances versus membrane position } 
 We first scan the input mirror piezo with a linear ramp $V_{\rm SW}$ ranging from 0 to 500V at 10-50Hz, corresponding to a displacements of around 2$\mu m$ ($\sim$ 4 FSRs). The back piezo actuating the membrane position was driven by a DC voltage $V_{\rm DC}$ ranging from 0 to 70V, with an associated stroke of 4$\mu m$ (3 piezos). Knowing the FSR of the cavity, we calibrate the piezo displacement as a function of the applied voltage, and fit the resonances positions using the theoretical model detailed in chapter 3. We modelled the front cavity length $L_1$ as well as the back cavity length $L_2$ as third order polynomials of the applied voltages $V_{\rm SW}$ and $V_{\rm DC}$  such that
