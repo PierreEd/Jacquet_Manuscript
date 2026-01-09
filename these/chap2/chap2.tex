@@ -59,7 +59,7 @@ We first consider the quantised electromagnetic field in a volume $V$. The elect
 \left[ \hat{a}^{\vphantom{\dagger}}_{\ell}\,\mathbf{f}_{\ell}(\mathbf{r})\,e^{-i\omega_{\ell} t} 
 - \hat{a}_{\ell}^\dagger\,\mathbf{f}_{\ell}^*(\mathbf{r})\,e^{+i\omega_{\ell} t} \right],
 \end{equation}
-where   $\mathcal{E}_\ell = \sqrt{\dfrac{\hbar \omega_\ell}{2 \varepsilon_0 V}}$ is the field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
+where   $\mathcal{E}_\ell = \sqrt{\hbar \omega_\ell / 2 \varepsilon_0 V}$ is the field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
 \begin{equation*}
 \int_V d^3r\; \mathbf{f}_{\ell}^*(\mathbf{r}) \cdot \mathbf{f}_{\ell'}(\mathbf{r}) 
 = \delta_{\ell \ell'} , \quad \mathbf{f}_{\ell}(\mathbf{r}) \propto E_{mn}(\mathbf{r}) \boldsymbol{\epsilon}_x
@@ -68,9 +68,9 @@ where we assumed a linearly-polarized field along the $x$-axis, with $\boldsymbo
 
 In the limit of an infinite quantisation volume $V \to \infty$, the discrete mode index $\ell$ becomes a continuous variable i.e. the mode spacing becomes infinitesimal. As detailed in the Appendix A, we now need to consider a continuum of modes with annihilation operator $\hat a[\omega]$ labeled by their angular frequency $\omega$. To come down to the two-photon formalism, we make the following assumptions : 
 \begin{itemize}
-    \item We consider frequencies $\omega = \omega_0 \pm \Omega$ centered around a carrier frequency $\omega_0$, with $\Omega  \in [-2 \pi B,+2 \pi B] \ll \omega_0$ where $B$ is the bandwidth. This is valid since the bandwidth $B$, generally up to tens of GHz, is small compared to $\omega_0/2\pi$ wich is hundreds of THz for optical frequencies. 
-    \item We consider a single spatial mode, i.e. we drop the spatial dependence of the field and consider only one transverse mode function $\mathbf{f}(\mathbf{r})$, the fundamental Gaussian mode imposed by the laser source and/or spatial filtering elements. This is valid since the spatial envelope of the beam does not vary significantly over the considered bandwidth. The spatial mode function is then factored out of the integrals over frequency.
-    \item We consider the electric field operator to only be dependent on time $t$, having projected the field onto the transverse mode function and integrated over the transverse plane, as well as setting the propagation coordinate $z=0$ for simplicity.
+    \item we consider frequencies $\omega = \omega_0 \pm \Omega$ centered around a carrier frequency $\omega_0$, with $\Omega  \in [-2 \pi B,+2 \pi B] \ll \omega_0$ where $B$ is the bandwidth. This is valid since the bandwidth $B$, generally up to tens of GHz, is small compared to $\omega_0/2\pi$ wich is hundreds of THz for optical frequencies. 
+    \item we consider a single spatial mode, i.e. we drop the spatial dependence of the field and consider only one transverse mode function $\mathbf{f}(\mathbf{r})$, the fundamental Gaussian mode imposed by the laser source and/or spatial filtering elements. This is valid since the spatial envelope of the beam does not vary significantly over the considered bandwidth. The spatial mode function is then factored out of the integrals over frequency.
+    \item we consider the electric field operator to only be dependent on time $t$, having projected the field onto the transverse mode function and integrated over the transverse plane, as well as setting the propagation coordinate $z=0$ for simplicity.
 \end{itemize}
 
 Upon these assumptions, the electric field operator reduces to a time-dependent operator (Heisenberg picture) expressed as
@@ -329,7 +329,7 @@ such that we can verify the eigenvalue equation (Eq.\ref{II.14}) straightforward
 \end{equation}
 such that the components reduce to $2\mathrm{Re} (\alpha)$ and  $2\mathrm{Im} (\alpha)$ if $\phi=0$, and to $2|\alpha|$ and $0$ if $\phi = \bar{\varphi}$, or equivalently if we set $\bar{\varphi} = \phi  = 0$ as mentioned earlier (such that $\mathbf{\hat u}$ corresponds to the amplitude and phase quadratures). We also notice the delta function at $\Omega = 0$, indicating that the coherent state has a non-zero mean field only at the carrier frequency. \\
 
-\noindent \textbf{Spectrum: } For a coherent state, the fluctuations are identical to that of the vacuum state, seen directly from Eq.\ref{II.18}. Since the fluctuation operators are unchanged by the displacement, the noise spectral density matrix remains that of the vacuum:
+\noindent \textbf{Spectrum:} For a coherent state, the fluctuations are identical to that of the vacuum state, seen directly from Eq.\ref{II.18}. Since the fluctuation operators are unchanged by the displacement, the noise spectral density matrix remains that of the vacuum:
 \begin{equation}
 \mathbf{S}_{\text{coh}}[\Omega] = \mathbf{S}_{\text{vac}} = 
 \begin{pmatrix}
