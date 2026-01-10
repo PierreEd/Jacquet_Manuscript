@@ -97,6 +97,7 @@
 \contentsline {subsubsection}{Choice of fibers}{117}{section*.107}%
 \contentsline {subsection}{\numberline {IV.3.2}Fiber mirror fabrication}{120}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {IV.3.3}Designs and optical layout}{121}{subsection.4.3.3}%
+\contentsline {section}{\numberline {IV.4}Conclusion \& perspectives}{126}{section.4.4}%
 \contentsline {chapter}{\numberline {V}Experiments: Squeezed Light}{127}{chapter.5}%
 \contentsline {section}{\numberline {V.1}Optical Setup Overview}{128}{section.5.1}%
 \contentsline {subsubsection}{Configuration I: bright squeezing from OPO}{129}{section*.118}%
@@ -110,9 +111,9 @@
 \contentsline {subsection}{\numberline {V.3.2}Configuration II}{145}{subsection.5.3.2}%
 \contentsline {section}{\numberline {V.4}Filter Cavity Concept}{145}{section.5.4}%
 \contentsline {subsection}{\numberline {V.4.1}Virgo Filter Cavity }{146}{subsection.5.4.1}%
-\contentsline {subsubsection}{Cavity locking}{147}{section*.133}%
-\contentsline {subsubsection}{Detection}{147}{section*.134}%
-\contentsline {subsection}{\numberline {V.4.2}Thermal effects in bichromatic locks}{148}{subsection.5.4.2}%
+\contentsline {subsubsection}{Naive GR lock}{147}{section*.133}%
+\contentsline {subsubsection}{Bichromatic lock}{149}{section*.136}%
+\contentsline {section}{\numberline {V.5}Conclusion \& perspectives}{149}{section.5.5}%
 \contentsline {chapter}{Conclusion}{151}{chapter*.138}%
 \contentsline {section}{Summary of Work}{151}{section*.139}%
 \contentsline {section}{Outlooks}{151}{section*.140}%

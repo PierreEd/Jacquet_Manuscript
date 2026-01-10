@@ -270,12 +270,16 @@ As detailed in the previous chapters, the generation of squeezed states of light
     \label{fig:imgFC}
 \end{figure}
 
-Over the course of my PhD, I was lucky enough to collaborate the Virgo collaboration to help characterizing their filter cavity, designed to provide frequency-dependent squeezing for the Advanced Virgo gravitational wave detector. Although drastically different in scale compared to our tabletop OPO setup, the underlying principles remain the same, and it was a great opportunity to gain insight into the challenges of implementing frequency-dependent squeezing in interferometers. In the following sections, I will briefly present the Virgo filter cavity and some thermal effects encountered when implementing bichromatic locks for such cavities. This work was carried out under the supervision of \textbf{Jean Pierre ZENDRI}, and in collaboration with \textbf{Luis Diego BONAVENA} and \textbf{Yuhang ZHAO} from the Virgo collaboration. \\ 
+Over the course of my PhD, I was lucky enough to collaborate the Virgo collaboration to help characterizing their filter cavity (FC), designed to provide frequency-dependent squeezing for the Advanced Virgo gravitational wave detector. Although drastically different in scale compared to our tabletop OPO setup, the underlying principles remain the same, and it was a great opportunity to gain insight into the challenges of implementing frequency-dependent squeezing in interferometers.  \\ 
 
-This part will very briefly summarize the work done on the Virgo filter cavity, focusing on the thermal effects encountered when implementing bichromatic locks for such cavities. No extensive reviews of the optical setup nor the detailed characterization of the cavity will be provided here, as they are out of the scope of this thesis. For further details on the Virgo filter cavity and its characterization, I refer the reader to the PhD thesis of \textbf{Luis Diego BONAVENA} \cite{bonavena_thesis_2024},as well as the associated publications \cite{bonavena_frequency-dependent_2023, bonavena_characterization_2024}. \\
+This part will briefly summarize the work done on the Virgo FC, focusing on the thermal effects encountered when implementing a bichromatic lock. This work was carried out under the supervision of \textbf{Jean Pierre ZENDRI}, and in collaboration with \textbf{Luis Diego BONAVENA} and \textbf{Yuhang ZHAO} from the Virgo collaboration. No extensive reviews of the optical setup nor the detailed characterization of the cavity will be provided here, as they are out of the scope of this thesis. For further details on the Virgo filter cavity and its characterization, I refer the reader to the PhD thesis of \textbf{Luis Diego BONAVENA} \cite{bonavena_thesis_2024},as well as the associated publications \cite{bonavena_frequency-dependent_2023, bonavena_characterization_2024}. \\
 \subsection{Virgo Filter Cavity }
 
-The Virgo Filter cavity aims to implement frequency-dependent squeezing in the Advanced Virgo gravitational wave detector, enhancing its sensitivity to gravitational waves. The cavity is a 285m long Fabry-Perot cavity located in Cascina, in the North arm of the interferometer. The cavity provides a frequency-dependent rotation of the squeezed quadrature at about 25Hz, where the radiation pressure noise and shot noise contributions are equivalent. The cavity is mounted inside a vacuum tank, and is formed by two dual coating mirrors treated by the LMA, with input mirror IR transmittivity of 562ppm and an end mirror transmittivity of 3ppm, leading to a finesse of about 10000 at 1064nm, as well as a green transmittivity of both mirrors of 2.7\%, leading to a finesse of about 120 at 532nm. This setup involves two lasers, that we will refer to as the main laser and the sub carrier laser (SC). \\
+The Virgo FC aims to implement frequency-dependent squeezing in the Advanced Virgo gravitational wave detector, enhancing its sensitivity to gravitational waves. The cavity is a 285m long Fabry-Perot cavity located in Cascina, in the North arm of the interferometer. The cavity provides a frequency-dependent rotation of the squeezed quadrature at about 25Hz, where the radiation pressure noise and shot noise contributions are equivalent. The cavity is mounted inside a vacuum tank, and is formed by two dual coating mirrors treated by the LMA, with input mirror IR transmittivity of 562ppm and an end mirror transmittivity of 3ppm, leading to a finesse of about 10000 at 1064nm, as well as a green transmittivity of both mirrors of 2.7\%, leading to a finesse of about 120 at 532nm. \\ 
+
+The vacuum squeezed light source developped for Virgo is similar to the one described earlier. It outputs squeezing level as high as -8.5dB down to the Hz level. When characterizing the filter cavity, a retro-reflector used induces a stray light bump below 20Hz, and limits the achievable FIS squeezing level at low frequencies. It produces FIS squeezing levels of about -5dB which is subsequently injected into the FC. \\ 
+
+This setup involves two IR lasers, that we will refer to as the main laser and the sub carrier laser (SC). \\
 
 
 \noindent \textbf{The main laser:} The first one is an IR laser (1064nm) at frequency $\omega_0$, which is used to pump the SHG cavity in order to generate a green beam at frequency $\omega_p = 2\omega_0$ (532nm). This green beam is then seperated in two paths. The first path is used to pump the OPO cavity below threshold to generate the vacuum squeezed states at $\omega_0$. The second path is frequency shifted using an AOM to generate a beam at frequency $\omega_p'=\omega_p + \Delta \omega_p$, phase modulated and subsequently injected into the filter cavity for locking. Demodulation of the reflected signal generates a PDH error signal at 532nm.  \\  
@@ -284,31 +288,11 @@ The Virgo Filter cavity aims to implement frequency-dependent squeezing in the A
 
 The two lasers are phase/frequency locked using a PLL scheme, such that the detuning of the SC laser with respect to both the green beam and the squeezed beam is kept constant at $\Delta \omega_0$.
 
-\subsubsection{Cavity locking}
+\subsubsection{Naive GR lock}
 
-The cavity locking scheme relies on a bichromatic locking technique, where both the SC laser at $\omega_0'$ and the green beam at $\omega_p'$ are injected into the cavity to achieve coresonance. The schematic of the locking setup is shown in Fig \ref{fig:bichromatic_lock}. Upon coresonance, the squeezed beam would be locked at the right detuning. The green beam at frequency $\omega_p'$ is obtained by frequency shifting the green beam generated from the main laser using the AOM. The AOM is driven by a VCO, and the name of the game is to lock the VCO frequency by adjusting the seeded offset voltage. The cavity being continuously locked to the green beam while changing the VCO offset, the right VCO offset would then yield coresonance. The error signal being fed back to the VCO is therefore the SC PDH error signal, which monitors the detuning of the cavity with respect to the SC laser. The PID controller output seeking to minimize this error signal is then used to adjust the VCO offset voltage, thereby locking the cavity to coresonance. \\ 
+The initial locking scheme implemented for the Virgo FC involved locking the cavity length to the green beam only, using a standard PDH technique. The green beam at frequency $\omega_p'$ is injected into the cavity, and the reflected signal used for the lock. The detuning of the squeezed beam with respect to the cavity resonance is then set by adjusting the frequency offset $\Delta \omega_p$ introduced by the AOM. To circumvent the issue of the stray light bump at low frequency, the detuning was set to 180Hz, where the squeezing level is not significantly affected. The reflected IR FDS beam is then directed towards the HD detection. The LO is derived from the main laser, and the homodyne detection is performed similarly as described in section \ref{sec:bright_squeezingI}. By scanning the LO phase and recording the AC noise spectrum, the squeezing levels can be measured and the optimal LO phase can be locked. \\
 
-\subsubsection{Detection}
-The reflected squeezed beam from the filter cavity is then directed to a homodyne detection setup for characterization. The LO is derived from the main laser, and the homodyne detection is performed similarly as described in section \ref{sec:bright_squeezingI}. By scanning the LO phase and recording the RF noise spectrum, the squeezing levels can be measured and the optimal LO phase can be locked. 
-
-\begin{figure}
-    \centering  
-    \includegraphics[width=\textwidth]{./chap6/fig/bichromatic lock.pdf}
-    \caption{ Detuning drifts observed over time, correlated with temperature fluctuations of the end cavity mirror.  (top) Cavity detuning evoluation over 14 hours. The detuning 
-        11 of january 2023}
-    \label{fig:bichromatic_lock}
-\end{figure}
-
-
-\subsection{Thermal effects in bichromatic locks}
-
-Initially, the single green lock was thought to be sufficient as to lock the squeezed beam to a static detuning. The filter cavity was then locked on the green beam and the squeezed beam injected at a detuning of about 180 Hz for days. The reflected beam was then directed towards the HD detection. \\
-
-Operating this setup for tens of hours (even days), it was observed that the HD trace drifted over time, with a characteristic period of about 24 hours. A typical trace of such a drift with the filter cavity locked as well as the HD angle (at a $\pi/2$ phase) over more than ten hours is shown in Fig \ref{fig:driftT}. The clear drift of the FDS minimum over time, points towards bichromatic detuning of the filter cavity. 
-Once locked, the squeezed beam reflected from the filter cavity is directed to the homodyne detection setup for characterization. The LO 
-
-
-This was implemented and successfully used to lock the Virgo filter cavity at 180Hz detuning to maximise the squeezing level. However, during the operation of the cavity over tens of hours, we observed significant drifts in the cavity detuning, as seen in Fig \ref{fig:driftT}. Recording the temperarure of both cavity mirrors continuously, it was realized that these detuning drifts were correlated with temperature fluctuations of the end mirrors, as shown in Fig \ref{fig:variationT}. This effect was attributed to thermal effects, and notably to a sensitive change in the phase picked up by both beam upon reflection on the end cavity mirror (the 3ppm one), changing the effective optical length of the cavity as seen by both wavelengths. This effect was further confirmed by performing controlled temperature variations of the end mirror, and measuring the corresponding variation in cavity detuning. 
+Operating this setup for tens of hours (even days), it was observed that the squeezing minima drifted over time, with a characteristic period of about 24 hours. A typical trace of such a drift with the filter cavity locked as well as the HD angle (at a $\pi/2$ phase) over more than ten hours is shown in Fig \ref{fig:driftT}. The clear drift of the FDS minimum over time, points towards bichromatic detuning of the filter cavity. Recording the temperarure of both cavity mirrors continuously, it was realized that these detuning drifts were correlated with temperature fluctuations of the end mirrors, as shown in Fig \ref{fig:variationT}. This effect was attributed to thermal effects, and notably to a sensitive change in the phase picked up by both beam upon reflection on the end cavity mirror (the 3ppm one), changing the effective optical length of the cavity as seen by both wavelengths. This effect was further confirmed by performing controlled temperature variations of the end mirror, and measuring the corresponding variation in cavity detuning. 
 
 \begin{figure}
     \centering  
@@ -324,4 +308,22 @@ This was implemented and successfully used to lock the Virgo filter cavity at 18
     \caption{11 of january 2023}
     \label{fig:variationT}
 \end{figure}
+
+\subsubsection{Bichromatic lock}
+
+To circumvent these thermal effects, a more robust locking scheme was implemented, relying on bichromatic locking of the cavity to both the green beam and the SC laser. This scheme ensures that the cavity remains at coresonance for both wavelengths, thereby stabilizing the detuning of the squeezed beam with respect to the cavity resonance. Both the SC laser at $\omega_0'$ and the green beam at $\omega_p'$ are injected into the cavity to achieve coresonance. Upon coresonance, the squeezed beam would be locked at the right detuning, since its detuning with respect to the SC beam is set by the PLL. The green beam at frequency $\omega_p'$ is once again obtained by frequency shifting the green beam generated from the main laser using the AOM. The AOM is driven by a VCO, and the name of the game is to lock the VCO frequency by adjusting the seeded offset voltage. The cavity being continuously locked to the green beam while changing the VCO offset, the correct VCO offset yields coresonance. The error signal being fed back to the VCO is therefore the SC PDH error signal, which monitors the detuning of the cavity with respect to the SC laser. The PID controller output seeking to minimize this error signal is then used to adjust the VCO offset voltage, thereby locking the cavity to coresonance. The schematic of the locking setup is shown in Fig \ref{fig:bichromatic_lock}. \\ 
+
+Thermally induced bichromatic detuning of the cavity was then further confirmed operating this setup for a long period of time upon forced temperature variations of the end mirror. The probe of this detuning over time is now the seeded VCO voltage, which directly indicates the detuning of the cavity with respect to the SC laser. We refer the reader to the associated publication \cite{bonavena_frequency-dependent_2023} for further details on this locking scheme and an extensive analysis of the thermal effects encountered. \\
+
+\begin{figure}
+    \centering  
+    \includegraphics[width=\textwidth]{./chap6/fig/bichromatic lock.pdf}
+    \caption{ Detuning drifts observed over time, correlated with temperature fluctuations of the end cavity mirror.  (top) Cavity detuning evoluation over 14 hours. The detuning 
+        11 of january 2023}
+    \label{fig:bichromatic_lock}
+\end{figure}
+
+\section{Conclusion \& perspectives}
+
+
 

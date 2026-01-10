@@ -1448,11 +1448,6 @@ INPUT ./chap6/fig/imgFC.pdf
 INPUT ./chap6/fig/imgFC.pdf
 INPUT ./chap6/fig/imgFC.pdf
 INPUT ./chap6/fig/imgFC.pdf
-INPUT ./chap6/fig/bichromatic lock.pdf
-INPUT ./chap6/fig/bichromatic lock.pdf
-INPUT ./chap6/fig/bichromatic lock.pdf
-INPUT ./chap6/fig/bichromatic lock.pdf
-INPUT ./chap6/fig/bichromatic lock.pdf
 INPUT ./chap6/fig/driftT.pdf
 INPUT ./chap6/fig/driftT.pdf
 INPUT ./chap6/fig/driftT.pdf
@@ -1463,6 +1458,11 @@ INPUT ./chap6/fig/variationT.pdf
 INPUT ./chap6/fig/variationT.pdf
 INPUT ./chap6/fig/variationT.pdf
 INPUT ./chap6/fig/variationT.pdf
+INPUT ./chap6/fig/bichromatic lock.pdf
+INPUT ./chap6/fig/bichromatic lock.pdf
+INPUT ./chap6/fig/bichromatic lock.pdf
+INPUT ./chap6/fig/bichromatic lock.pdf
+INPUT ./chap6/fig/bichromatic lock.pdf
 INPUT ./chap7/chap7.tex
 OUTPUT ./chap7/chap7.aux
 INPUT ./chap7/chap7.tex
