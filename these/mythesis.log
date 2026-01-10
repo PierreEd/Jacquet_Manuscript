@@ -1483,4 +1483,385 @@ Overfull \hbox (4.28078pt too wide) in paragraph at lines 57--57
  []
 
 
-Overfull \hbox (4.28078pt too wide) in paragraph at 
+Overfull \hbox (4.28078pt too wide) in paragraph at lines 57--57
+[]\T1/lmr/bx/n/12 M$[]$| 
+ []
+
+<./fig/logos.png, id=339, 292.9344pt x 92.0238pt>
+File: ./fig/logos.png Graphic file (type png)
+<use ./fig/logos.png>
+Package pdftex.def Info: ./fig/logos.png  used on input line 57.
+(pdftex.def)             Requested size: 284.52756pt x 89.39075pt.
+
+
+[-1
+
+
+
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./fig/Sciences_SU.png> <./fig/Logo_LKB.png> <./fig/logos.png>]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \frontcover
+                \ % requires thcover.sty loaded and thcoverdata.tex filled [0
+
+
+]
+
+[1]
+\openout2 = `./thanks.aux'.
+
+ (./thanks.tex
+
+[2
+
+
+])
+
+[3]
+
+[4
+
+
+] (./mythesis.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 4.
+
+
+[5
+
+]
+
+[6]
+
+[7])
+\tf@toc=\write7
+\openout7 = `mythesis.toc'.
+
+
+
+[8]
+
+[1
+
+]
+\openout2 = `./chap1/chap1.aux'.
+
+ (./chap1/chap1.tex
+
+[2
+
+
+])
+
+[3]
+\openout2 = `./chap2/chap2.aux'.
+
+ (./chap2/chap2.tex
+
+[4
+
+
+
+
+]
+Chapter I.
+
+
+[5]
+\openout5 = `mythesis.mtc'.
+
+\openout5 = `mythesis.mtc'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 7.
+ (./mythesis.mtc2)
+
+[6]
+Overfull \hbox (3.08145pt too wide) in paragraph at lines 10--11
+\T1/lmr/m/n/10.95 scribed by a set of well-defined trans-verse modes, which are so-lu-tions of the parax-ial Helmholtz
+ []
+
+<./chap2/fig/gaussianbeam.pdf, id=517, 423.94608pt x 142.26378pt>
+File: ./chap2/fig/gaussianbeam.pdf Graphic file (type pdf)
+<use ./chap2/fig/gaussianbeam.pdf>
+Package pdftex.def Info: ./chap2/fig/gaussianbeam.pdf  used on input line 45.
+(pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+
+[7{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+
+
+[8 <./chap2/fig/gaussianbeam.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
+
+ []
+
+<./chap2/fig/quantum_states.pdf, id=749, 423.94608pt x 147.76636pt>
+File: ./chap2/fig/quantum_states.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_states.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_states.pdf  used on input line 345.
+(pdftex.def)             Requested size: 438.17245pt x 152.7264pt.
+
+
+[16]
+
+[17 <./chap2/fig/quantum_states.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
+
+ []
+
+
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 433--435
+
+ []
+
+
+LaTeX Warning: Citation 'Vyatchanin1993' on page 19 undefined on input line 436.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+<./chap2/fig/quantum_quadraturesBis.pdf, id=882, 423.94608pt x 143.48956pt>
+File: ./chap2/fig/quantum_quadraturesBis.pdf Graphic file (type pdf)
+<use ./chap2/fig/quantum_quadraturesBis.pdf>
+Package pdftex.def Info: ./chap2/fig/quantum_quadraturesBis.pdf  used on input line 441.
+(pdftex.def)             Requested size: 438.17245pt x 148.30605pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+
+[19]
+
+[20 <./chap2/fig/quantum_quadraturesBis.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 473--475
+
+ []
+
+
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+
+
+[22]
+<./chap2/fig/cavity_types.pdf, id=1085, 423.94608pt x 305.63097pt>
+File: ./chap2/fig/cavity_types.pdf Graphic file (type pdf)
+<use ./chap2/fig/cavity_types.pdf>
+Package pdftex.def Info: ./chap2/fig/cavity_types.pdf  used on input line 557.
+(pdftex.def)             Requested size: 438.17245pt x 315.89001pt.
+
+
+[23 <./chap2/fig/cavity_types.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
+
+ []
+
+
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
+
+ []
+
+
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 620--622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
+
+ []
+
+
+
+[26]
+<./chap2/fig/CavitySimple.pdf, id=1318, 423.9472pt x 267.36398pt>
+File: ./chap2/fig/CavitySimple.pdf Graphic file (type pdf)
+<use ./chap2/fig/CavitySimple.pdf>
+Package pdftex.def Info: ./chap2/fig/CavitySimple.pdf  used on input line 662.
+(pdftex.def)             Requested size: 438.17245pt x 276.33852pt.
+
+
+[27
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.65}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.679 \end{equation}
+                     <./chap2/fig/CavitySimple.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--735
+
+ []
+
+<./chap2/fig/opticalRD.pdf, id=1574, 423.94608pt x 142.26378pt>
+File: ./chap2/fig/opticalRD.pdf Graphic file (type pdf)
+<use ./chap2/fig/opticalRD.pdf>
+Package pdftex.def Info: ./chap2/fig/opticalRD.pdf  used on input line 740.
+(pdftex.def)             Requested size: 438.17245pt x 147.03911pt.
+
+
+[29]
+
+[30 <./chap2/fig/opticalRD.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 794--796
+
+ []
+
+
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 812--814
+
+ []
+
+
+
+[32]
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 918--920
+
+ []
+
+
+
+[34]
+Overfull \hbox (26.43504pt too wide) detected at line 941
+[][][][]\OT1/lmr/m/n/10.95 [
+] = \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
+] + \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
+] = [] [] ^^A\OML/lmm/m/it/10.95 ^^^\OT1/lmr/m/n/10.95 [
+] = \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
+] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ^^^[]\OT1/lmr/m/n/10.95 [
+] = [] []
+ []
+
+
+
+[35]
+<./chap2/fig/schema_SHG_OPO_2photons.pdf, id=1733, 423.94608pt x 96.31834pt>
+File: ./chap2/fig/schema_SHG_OPO_2photons.pdf Graphic file (type pdf)
+<use ./chap2/fig/schema_SHG_OPO_2photons.pdf>
+Package pdftex.def Info: ./chap2/fig/schema_SHG_OPO_2photons.pdf  used on input line 988.
+(pdftex.def)             Requested size: 438.17245pt x 99.55142pt.
+<./chap2/fig/cavitySHG copy.pdf, id=1734, 423.94608pt x 86.65764pt>
+File: ./chap2/fig/cavitySHG copy.pdf Graphic file (type pdf)
+<use ./chap2/fig/cavitySHG copy.pdf>
+Package pdftex.def Info: ./chap2/fig/cavitySHG copy.pdf  used on input line 999.
+(pdftex.def)             Requested size: 438.17245pt x 89.56644pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[36 <./chap2/fig/schema_SHG_OPO_2photons.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+
+ []
+
+<./chap2/fig/OPO2.pdf, id=1768, 423.94601pt x 155.85205pt>
+File: ./chap2/fig/OPO2.pdf Graphic file (type pdf)
+<use ./chap2/fig/OPO2.pdf>
+Package pdftex.def Info: ./chap2/fig/OPO2.pdf  used on input line 1033.
+(pdftex.def)             Requested size: 438.17245pt x 161.0835pt.
+
+
+[37 <./chap2/fig/cavitySHG copy.pdf>]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned'
