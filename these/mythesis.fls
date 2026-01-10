@@ -1358,6 +1358,16 @@ INPUT ./chap5/fig/OMFFPdesigns.pdf
 INPUT ./chap5/fig/OMFFPdesigns.pdf
 INPUT ./chap5/fig/OMFFPdesigns.pdf
 INPUT ./chap5/fig/OMFFPdesigns.pdf
+INPUT ./chap5/fig/cavityFFP.pdf
+INPUT ./chap5/fig/cavityFFP.pdf
+INPUT ./chap5/fig/cavityFFP.pdf
+INPUT ./chap5/fig/cavityFFP.pdf
+INPUT ./chap5/fig/cavityFFP.pdf
+INPUT ./chap5/fig/OMFFPlayout.pdf
+INPUT ./chap5/fig/OMFFPlayout.pdf
+INPUT ./chap5/fig/OMFFPlayout.pdf
+INPUT ./chap5/fig/OMFFPlayout.pdf
+INPUT ./chap5/fig/OMFFPlayout.pdf
 INPUT ./chap6/chap6.tex
 OUTPUT ./chap6/chap6.aux
 INPUT ./chap6/chap6.tex
