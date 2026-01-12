@@ -90,44 +90,46 @@
 \contentsline {subsubsection}{Cavity outcouplings}{110}{section*.97}%
 \contentsline {subsubsection}{Dispersive couplings}{110}{section*.99}%
 \contentsline {subsection}{\numberline {IV.2.2}Cavity Locking and Mechanical Characterization}{111}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Bistability}{114}{subsection.4.2.3}%
-\contentsline {section}{\numberline {IV.3}Optomechanical Fibered Cavity}{114}{section.4.3}%
-\contentsline {subsection}{\numberline {IV.3.1}Design considerations}{115}{subsection.4.3.1}%
-\contentsline {subsubsection}{Cavity mode \& coupling efficiency}{116}{section*.105}%
-\contentsline {subsubsection}{Choice of fibers}{117}{section*.107}%
-\contentsline {subsection}{\numberline {IV.3.2}Fiber mirror fabrication}{120}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {IV.3.3}Designs and optical layout}{121}{subsection.4.3.3}%
-\contentsline {section}{\numberline {IV.4}Conclusion \& perspectives}{126}{section.4.4}%
-\contentsline {chapter}{\numberline {V}Experiments: Squeezed Light}{127}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Optical Setup Overview}{128}{section.5.1}%
-\contentsline {subsubsection}{Configuration I: bright squeezing from OPO}{129}{section*.118}%
-\contentsline {subsubsection}{Configuration II: vacuum squeezing + bright seed}{130}{section*.119}%
-\contentsline {section}{\numberline {V.2}Cavity Resonances and Locks}{131}{section.5.2}%
-\contentsline {subsection}{\numberline {V.2.1}IRMC Cavity}{131}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {V.2.2}SHG Cavity}{133}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {V.2.3}OPO Cavity}{139}{subsection.5.2.3}%
-\contentsline {section}{\numberline {V.3}Squeezed State Detection}{143}{section.5.3}%
-\contentsline {subsection}{\numberline {V.3.1}Configuration I}{143}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {V.3.2}Configuration II}{145}{subsection.5.3.2}%
-\contentsline {section}{\numberline {V.4}Filter Cavity Concept}{145}{section.5.4}%
-\contentsline {subsection}{\numberline {V.4.1}Virgo Filter Cavity }{146}{subsection.5.4.1}%
-\contentsline {subsubsection}{Naive GR lock}{147}{section*.133}%
-\contentsline {subsubsection}{Bichromatic lock}{148}{section*.136}%
-\contentsline {section}{\numberline {V.5}Conclusion \& perspectives}{149}{section.5.5}%
-\contentsline {chapter}{Conclusion}{151}{chapter*.138}%
-\contentsline {section}{Summary of Work}{151}{section*.139}%
-\contentsline {section}{Outlooks}{151}{section*.140}%
-\contentsline {section}{Final Remarks}{151}{section*.141}%
-\contentsline {chapter}{Appendix A: Two-photon derivations}{153}{chapter*.142}%
-\contentsline {section}{Field Quantization}{153}{section*.143}%
-\contentsline {section}{Two photon formalism}{155}{section*.146}%
-\contentsline {subsubsection}{Quadratures}{155}{section*.147}%
-\contentsline {section}{Derivation of the optimal angle}{161}{section*.150}%
-\contentsline {paragraph}{Optimal fixed angle.}{162}{section*.152}%
-\contentsline {paragraph}{Minimum attained value.}{162}{section*.153}%
-\contentsline {paragraph}{Lower bound and the real-\(\mathcal {K}\) case.}{162}{section*.154}%
-\contentsline {chapter}{Appendix B: Error Signals}{163}{chapter*.155}%
-\contentsline {section}{Direct detection error signals}{163}{section*.156}%
-\contentsline {section}{PDH error signal}{165}{section*.160}%
-\contentsline {chapter}{Appendix C: Three Mirror cavities}{169}{chapter*.168}%
-\contentsline {chapter}{Bibliography}{175}{chapter*.171}%
+\contentsline {subsection}{\numberline {IV.2.3}Bistability}{115}{subsection.4.2.3}%
+\contentsline {section}{\numberline {IV.3}Optomechanical Fibered Cavity}{116}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Design considerations}{117}{subsection.4.3.1}%
+\contentsline {subsubsection}{Cavity mode \& coupling efficiency}{117}{section*.106}%
+\contentsline {subsubsection}{Choice of fibers}{118}{section*.108}%
+\contentsline {subsection}{\numberline {IV.3.2}Fiber mirror fabrication}{121}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}Designs and optical layout}{123}{subsection.4.3.3}%
+\contentsline {section}{\numberline {IV.4}Conclusion \& perspectives}{127}{section.4.4}%
+\contentsline {chapter}{\numberline {V}Experiments: Squeezed Light}{129}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Optical Setup Overview}{130}{section.5.1}%
+\contentsline {subsubsection}{Configuration I: bright squeezing from OPO}{131}{section*.119}%
+\contentsline {subsubsection}{Configuration II: vacuum squeezing + bright seed}{132}{section*.120}%
+\contentsline {section}{\numberline {V.2}Cavity Resonances and Locks}{133}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}IRMC Cavity}{133}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}SHG Cavity}{135}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {V.2.3}OPO Cavity}{141}{subsection.5.2.3}%
+\contentsline {section}{\numberline {V.3}Squeezed State Detection}{145}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Configuration I}{145}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Configuration II}{147}{subsection.5.3.2}%
+\contentsline {section}{\numberline {V.4}Filter Cavity Concept}{148}{section.5.4}%
+\contentsline {subsection}{\numberline {V.4.1}Virgo Filter Cavity}{149}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {V.4.2}Lock and thermal effects}{151}{subsection.5.4.2}%
+\contentsline {subsubsection}{Naive GR lock}{151}{section*.136}%
+\contentsline {subsubsection}{Bichromatic lock}{151}{section*.139}%
+\contentsline {subsection}{\numberline {V.4.3}Filter cavity for tabletop experiments}{153}{subsection.5.4.3}%
+\contentsline {section}{\numberline {V.5}Conclusion \& perspectives}{153}{section.5.5}%
+\contentsline {chapter}{Conclusion}{155}{chapter*.141}%
+\contentsline {section}{Summary of Work}{155}{section*.142}%
+\contentsline {section}{Outlooks}{155}{section*.143}%
+\contentsline {section}{Final Remarks}{155}{section*.144}%
+\contentsline {chapter}{Appendix A: Two-photon derivations}{157}{chapter*.145}%
+\contentsline {section}{Field Quantization}{157}{section*.146}%
+\contentsline {section}{Two photon formalism}{159}{section*.149}%
+\contentsline {subsubsection}{Quadratures}{159}{section*.150}%
+\contentsline {section}{Derivation of the optimal angle}{165}{section*.153}%
+\contentsline {paragraph}{Optimal fixed angle.}{166}{section*.155}%
+\contentsline {paragraph}{Minimum attained value.}{166}{section*.156}%
+\contentsline {paragraph}{Lower bound and the real-\(\mathcal {K}\) case.}{166}{section*.157}%
+\contentsline {chapter}{Appendix B: Error Signals}{167}{chapter*.158}%
+\contentsline {section}{Direct detection error signals}{167}{section*.159}%
+\contentsline {section}{PDH error signal}{169}{section*.163}%
+\contentsline {chapter}{Appendix C: Three Mirror cavities}{173}{chapter*.171}%
+\contentsline {chapter}{Bibliography}{179}{chapter*.174}%

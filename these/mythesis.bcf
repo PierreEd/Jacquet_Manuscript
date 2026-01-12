@@ -2437,10 +2437,11 @@
     <bcf:citekey order="48" intorder="2">kourogi_high-efficiency_2020</bcf:citekey>
     <bcf:citekey order="49" intorder="1">bachor_guide_2004</bcf:citekey>
     <bcf:citekey order="50" intorder="1">neuhaus_thesis_2021</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">bonavena_thesis_2024</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">bonavena_frequency-dependent_2023</bcf:citekey>
-    <bcf:citekey order="52" intorder="2">bonavena_characterization_2024</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">croquette_thesis</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">bonavena_thesis_2024</bcf:citekey>
     <bcf:citekey order="53" intorder="1">bonavena_frequency-dependent_2023</bcf:citekey>
+    <bcf:citekey order="53" intorder="2">bonavena_characterization_2024</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">bonavena_frequency-dependent_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
