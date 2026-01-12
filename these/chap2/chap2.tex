@@ -541,10 +541,54 @@ As seen in the above expression, the covariance matrix display a sum of Dirac fu
 
 \subsection{Quantum Sideband Diagram }
 
-We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called quantum sideband diagram is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields and their sidebands. In this representation, we plot the carrier frequency $\omega_0$ at the center, and the sidebands at frequencies $\omega_0 \pm \Omega$ on either side. 
+We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called quantum sideband diagram is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields or squeezed fields. In this representation, we plot the carrier frequency $\omega_0$ at the center, and the sidebands at frequencies $\omega_0 \pm \Omega$ on either side. In the frame rotating at $\omega_0$, the carrier field is a DC term, while the sidebands are located at $\pm \Omega$ and rotate at these frequencies. Each sideband photon is actually drawn from a distribution (Wigner function in our case) in the quadrature plane at a given frequency $\Omega$. When they \textit{click}, they contribute to the overall quantum state of the field. In the $\mu$W/mW optical power range, the rate at which these photons are generated and measured is generally way above the detection bandwidth, such that experimentalists probe the noise properties of the field by averaging over many photons. In other words, we measure the statistical properties of these sidebands rather than individual photons. Experimentally, this means we measure the single-sided power spectral density of a quantum field, where photons at $\pm \Omega$ contribute to the signal seen at this frequency. The state individual photons are drawn from is then inferred from the statistics of many photons detected over time, which defines the so-called \textit{ball-on-stick} picture of quantum sidebands \cite{Caves1985,Schumaker1986,Schumaker1987,McKenzie2004}. The mean value of the distribution can be zero or non-zero, while its variance is always non zero. Looking only at the fluctuating part, we can represent the quantum state of light at a given sideband frequency $\Omega_1$ as shown in Fig.~\ref{fig:ballonstick}(a)-(b). In the case of a coherent state (Fig.~\ref{fig:ballonstick}(a)-(b)), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures. \\ 
 
-Each sideband is represented by a vector in the quadrature plane, with its length and angle determined by the amplitude and phase of the sideband as seen above. The quantum noise associated with each sideband is represented by a gaussian distribution around the tip of the vector, with its shape and orientation determined by the noise spectral density matrix of the quantum state. The additional ingredient that the sideband diagram provides is the correlation between symmetrical sidebands, represented by markers connecting the two sidebands at $\omega_0 + \Omega$ and $\omega_0 - \Omega$. These correlations are crucial in understanding the properties of squeezed states, where the noise in one quadrature is reduced below the vacuum level, while the noise in the conjugate quadrature is increased. The sideband diagram allows us to visualize these correlations and their impact on the overall quantum state of light. This representation is particularly useful when analyzing the effects of optical cavities and other linear optical systems on quantum states, as they modify the amplitude and phase of the sidebands, hence the correlated/anticorrelated quadratures.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/ballonstick.pdf}
+\caption{} 
+\label{fig:ballonstick}
+\end{figure}
 
+We start by describing a coherent state modulated at $\Omega_\mathbf{mod}$, as seen in Fig.~.. As seen above, depending on the nature of the modulation (amplitude or phase), the modulation sidebands are created with a specific phase relation to the carrier, while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$. Upon time evolution, the signal seen at the modulation frequency $\Omega_\mathbf{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathbf{mod}$, as seen in Fig.~\ref{fig:QSD_mod}. When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting  
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/QSD_mod.pdf}
+\caption{} 
+\label{fig:QSD_mod}
+\end{figure}
+
+
+We may reproduce the quadrature statistics of squeezed states fluctuations using an equivalent \textit{sum of random variables} picture. Let $\mathbf u=(-\sin\theta,\cos\theta)^T$ be the unit vector defining the (rotated) quadrature direction (note the convention $\theta\to-\theta$), and draw a \textit{correlated} displacement constrained to that direction,
+$X_{\rm a}=Z\mathbf u$ with $Z\sim\mathcal N(0,\,2\sinh 2r)$, together with an independent isotropic fluctuation
+$X_{\rm b}\sim\mathcal N(0,\,e^{-2r}\mathbf{1})$ (vacuum-normalized). The detected point is $X=X_{\rm a}+X_{\rm b}$, hence $\langle X\rangle=0$ and the covariance is the sum
+$\Sigma=\langle XX^{ T}\rangle=e^{-2r}\mathbf 1+2\sinh 2r\,\mathbf u\mathbf u^{ T}$, i.e.
+\begin{equation}
+\begin{split}
+\Sigma= & 
+\begin{pmatrix}
+e^{-2r}+2\sinh 2r\,\sin^2\theta & -\,\sinh 2r\,\sin 2\theta\\
+-\,\sinh 2r\,\sin 2\theta & e^{-2r}+2\sinh 2r\,\cos^2\theta
+\end{pmatrix}\\ 
+&=
+\begin{pmatrix}
+\cosh 2r-\sinh 2r\,\cos 2\theta & -\,\sinh 2r\,\sin 2\theta\\
+-\,\sinh 2r\,\sin 2\theta & \cosh 2r+\sinh 2r\,\cos 2\theta
+\end{pmatrix}.
+\end{split}
+\end{equation}
+This is strictly the same noise matrix obtained in the two-photon formalism, where the diagonal terms give the variances and the off-diagonal terms encode the correlations/anticorrelations between quadratures; the eigen-axes of $\Sigma$ have variances $e^{\mp 2r}$, as expected for a squeezed state. Additionally if $r=0$, the correlated displacement vanishes and we recover the vacuum noise $\Sigma=\mathbf 1$. Graphically, it corresponds to photons clicking in the upper and lower sidebands and drawn from a thermal distribution (larger than vacuum), as seen in Fig.~\ref{fig:ballonstick}(c). These clicks are then decomposed in a correlated part/arrow and a random fluctuation as detailed above. The arrows are correlated such that they always mirror each other with respect to the correlation axis set by the phase of the pump (Fig.~\ref{fig:ballonstick}(d)). On top of these correlated arrows, the sub-vacuum fluctuations are drawn isotropically, and the resulting signal can be seen as the sum of these two contributions, as seen in Fig.~\ref{fig:ballonstick}(d). The resulting distribution, as seen in the single-sided spectrum is then an ellipse oriented along the correlation axis, with a reduced variance in one quadrature and an increased variance in the orthogonal quadrature. This picture is very useful to intuitively understand how squeezed states behave when going through various optical systems, and particularly for frequency dependent squeezing, as we will see in Chapter II. \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/QSD_sqz2.pdf}
+\caption{ cocou} 
+\label{fig:QSD_sqz}
+\end{figure}
+
+
+
+Interestingly, the thermal distribution from which the sideband photons are drawn can be given a physical meaning. First, the \textit{non-zero} number of photons in the quantum state can be interpreted as the energy pumped into the system to generate the squeezed state, for instance by a pump field in a parametric down-conversion process. Second, if we imagined measuring the sidebands individually rather than jointly as in a homodyne detection (where they \textit{beat} together), we would find that each sideband is in a thermal state, highlighting that entanglement is lost when tracing the quantum state on a single sideband space. This actually means that the squeezing process generates entanglement between the upper and lower sidebands, which is revealed when measuring them jointly. An experiment where the two sidebands are spatially separated using an appropriate filter cavity, and measured individually could then be used to demonstrate this property. Each sideband would then appear as a thermal state, while measuring them jointly would reveal the squeezed state and the entanglement between them. Although we traditionally distinguish type I and type II squeezing processes depending on whether the two sidebands have the same or orthogonal polarizations, both processes generate entanglement between the sidebands, and can then be seen as EPR (Einstein-Podolsky-Rosen) type entanglement ressources. 
 
 \section{Cavities}
 Optical cavities are at the heart of this work, as they are used to coherently enhance the light-matter interaction in various systems, and also to filter and manipulate quantum states of light. In this section, we review the basic properties of optical cavities, their resonance conditions, and we derive the covariance matrices of their output fields. 
