@@ -1,5 +1,5 @@
 \chapter{Theory: Squeezed Light \& Optomechanics}
-This chapter will cover the elementary concepts required to describe an membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will derive the equations of motions of a membrane based optomechanical system with frequency dependent squeezed optical fields. 
+This chapter will cover the elementary concepts required to describe a membrane based optomechanical system interacting with quantum light. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency-dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. 
 \newpage
 \minitoc
 \newpage
@@ -7,9 +7,9 @@ This chapter will cover the elementary concepts required to describe an membrane
 
 \section{Squeezed Light and Optomechanics}
 
-We will now introduce the concept of Standard Quantum Limit (SQL) in the context of optomechanical measurements, and show how frequency dependent squeezed light can be used to surpass this limit. \\ 
+We will now introduce the concept of the Standard Quantum Limit (SQL) in the context of optomechanical measurements, and show how frequency-dependent squeezed light can be used to go beyond this limit. \\ 
 
-For the rest of this section we will assume the following
+For the rest of this section we will assume the following:
 \begin{itemize}
   \item A cavity on resonance: $\Delta=0$.
   \item A single port optomechanical cavity: $\kappa_1 \sim \kappa$ .
@@ -27,12 +27,12 @@ We start by recalling the reflected phase fluctuation of an optomechanical cavit
 \end{equation*}
 where $\mathcal{C}$ is now positive and frequency independent. The resulting reflected phase spectrum reads
 \begin{equation*}
-  S_{qq}^{\mathrm{ref}}[\Omega] = S_{qq}^{\rm in}[\Omega] + |\mathcal{K}[\Omega]|^2 S_{pp}^{\rm in}[\Omega] + 2 \, \Re\Big[ \mathcal{K}[\Omega] S_{pq}^{\rm in}[\Omega]\Big]
+  S_{qq}^{\mathrm{ref}}[\Omega] = S_{qq}^{\rm in}[\Omega] + |\mathcal{K}[\Omega]|^2 S_{pp}^{\rm in}[\Omega] + 2 \, \Re\Big[ \mathcal{K}[\Omega] S_{pq}^{\rm in}[\Omega]\Big].
 \end{equation*}
 
-The phase to displacement transduction relation with an optomechanical escape efficiency of 1:
+The phase to displacement transduction relation with an optomechanical escape efficiency of 1 is:
 \begin{equation*}
-   \delta \hat q_x = \mathcal{C} \delta \hat x [\Omega] = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega]  
+   \delta \hat q_x = \mathcal{C} \delta \hat x [\Omega] = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega].
 \end{equation*}
 Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_{\mathrm{ref}}[\Omega] = \delta \hat q_x[\Omega]$. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
 \begin{equation}
@@ -46,15 +46,15 @@ such that the associated displacement spectrum reads
 
 We then identify three contributions to the displacement spectrum:
 \begin{itemize}
-  \item The first term is the laser shot noise (or imprecision noise) scaling inversely with the input power $\bar{I}_\mathrm{in}$, arising from the input phase fluctuations $S_{qq}^{\rm in}[\Omega]$ and given by
+  \item The first term is the laser phase noise (also called historically 'shot noise', or more recently 'imprecision noise') scaling inversely with the input power $\bar{I}_\mathrm{in}$, arising from the input phase fluctuations $S_{qq}^{\rm in}[\Omega]$ and given by
   \begin{equation}
     S_{xx}^{\rm SN}[\Omega] = \dfrac{\lambda^2}{256 \mathcal{F}^2 \bar{I}_\mathrm{in}} S_{qq}^{\rm in}[\Omega]
   \end{equation}
-  \item The second term is the radiation pressure noise (or backaction noise) scaling linearly with the input power $\bar{I}_\mathrm{in}$, arising from the input amplitude fluctuations $S_{pp}^{\rm in}[\Omega]$ driving the mechanical resonator via radiation pressure given by 
+  \item The second term is the radiation pressure noise (or backaction noise), scaling linearly with the input power $\bar{I}_\mathrm{in}$, arising from the input amplitude fluctuations $S_{pp}^{\rm in}[\Omega]$ driving the mechanical resonator via radiation pressure given by 
   \begin{equation}
     S_{xx}^{\rm RPN}[\Omega] = \, \dfrac{64 \mathcal{F}^2 \bar{I}_\mathrm{in}}{\lambda^2}\hbar^2 |\chi[\Omega]|^2 S_{pp}^{\rm in}[\Omega]
   \end{equation}
-  \item The third term is a correlation term between amplitude and phase fluctuations $S_{pq}^{\rm in}[\Omega]$, which can be non-zero for arbitrary squeezed states as seen in the previous section and given by
+  \item The third term is a correlation term between amplitude and phase fluctuations $S_{pq}^{\rm in}[\Omega]$, which is non-zero for a detuned cavity and/or for arbitrary squeezed states as seen in the previous section, and given by
   \begin{equation}
     S_{xx}^{\rm cor}[\Omega] = \hbar |\chi[\Omega]|\Re\Big[ e^{i\phi_m[\Omega]} S_{pq}^{\rm in}[\Omega]\Big]
   \end{equation}
@@ -72,9 +72,9 @@ We now consider vacuum/coherent fluctuations such that $S_{qq}^{\rm in}[\Omega]=
 and we look at what noise dominates the displacement spectrum around the mechanical resonance $\Omega \sim \Omega_m$. In this frequency range, there are two frequencies at which the displacement noise contributions are equal, given by the condition $S_{xx}^{\rm SN}[\Omega] = S_{xx}^{\rm RPN}[\Omega]$, leading to the frequency $\Omega_{\text{SQL}}$ defined as
 \begin{equation}
   \Omega^{\pm}_{\text{SQL}}  =\;\sqrt{\Omega_m^2-\dfrac{\Gamma_m^2}{2}
-\;\pm\;\dfrac{1}{2}\sqrt{\Gamma_m^4-4\Gamma_m^2\Omega_m^2+\Big(\frac{\hbar \mathcal{C}^2}{m }\Big)^2}}
+\;\pm\;\dfrac{1}{2}\sqrt{\Gamma_m^4-4\Gamma_m^2\Omega_m^2+\left(\frac{\hbar \mathcal{C}^2}{m }\right)^2}}
 \end{equation}
-and consistent with the LIGO/Virgo notation \cite{harry_advanced_2010, aasi_enhanced_2013}. Over the frequency range of interest $\Omega \in [\Omega_m - \Omega_{\text{SQL}}, \Omega_m + \Omega_{\text{SQL}}]$, the displacement noise is dominated by the radiation pressure noise, while outside this range, the noise is dominated by the shot noise. However, for every sideband frequency, there exists an optimal input power $\bar{I}_\mathrm{in}^{\rm SQL}[\Omega]$ at which both contributions are equal, minimizing the total displacement noise. This limit is called the Standard Quantum Limit (SQL) and is a direct consequence of Heisenberg's uncertainty principle applied to continuous position measurements \cite{braginsky_quantum_1992, clerk_introduction_2010}. This SQL intensity is given by
+and consistent with the LIGO/Virgo notation \cite{harry_advanced_2010, aasi_enhanced_2013}. Over the frequency range of interest $\Omega \in [\Omega_m - \Omega_{\text{SQL}}, \Omega_m + \Omega_{\text{SQL}}]$, the displacement noise is dominated by radiation pressure noise, while outside this range, the noise is dominated by shot noise. However, for every sideband frequency, there exists an optimal input power $\bar{I}_\mathrm{in}^{\rm SQL}[\Omega]$ at which both contributions are equal, minimizing the total displacement noise. This limit is called the Standard Quantum Limit (SQL) and is a direct consequence of Heisenberg's inequality applied to continuous position measurements \cite{braginsky_quantum_1992, clerk_introduction_2010}. This SQL intensity is given by
 \begin{equation}
   S_{xx}^{\rm SN}[\Omega] = S_{xx}^{\rm RPN}[\Omega] \implies \bar{I}_\mathrm{in}^{\rm SQL}[\Omega] = \dfrac{\lambda^2}{128\mathcal{F}^2 \hbar |\chi[\Omega]|}
 \end{equation}
@@ -82,20 +82,20 @@ such that plugging back in this SQL intensity in \eqref{eq:total_displacement_sp
 \begin{equation}
   S_{xx}^{\rm SQL}[\Omega] = \hbar |\chi[\Omega]| \implies S_{xx}^{\rm SN}[\Omega] + S_{xx}^{\rm RPN}[\Omega] \geq \hbar |\chi[\Omega]|
 \end{equation}
-which is the fundamental limit to continuous position measurements with coherent light. We also note that for high Q resonators, $\Omega_{SQL} \gg \Gamma_m$, so approximating the succeptibility by its real part holds over a relatively large frequency range but fails at resonance where the succeptibility is purely imaginary.
+which is the fundamental limit to continuous position measurements with coherent light. We also note that for high-Q resonators, $\Omega_{SQL} \gg \Gamma_m$, so approximating the succeptibility by its real part holds over a relatively large frequency range but fails at resonance where the succeptibility is purely imaginary.
 
 \subsubsection{Thermal Noise}
-Thermal noise is a major limitation in optomechanical experiments, as it can mask the quantum effects one aims to observe. The mechanical resonator is indeed coupled to a thermal bath at temperature $T$, which drives the resonator into a thermal state with mean phonon occupation number $\bar n_{\mathrm{th}} = k_B T / (\hbar \Omega_m)$ in the high temperature limit $k_B T \gg \hbar \Omega_m$. The position fluctuations induced by this thermal force is given by
+Thermal noise is a major limitation in optomechanical experiments, as it can mask the quantum effects. The mechanical resonator is coupled to a thermal bath at temperature $T>0$, which drives the resonator into a thermal state with mean phonon occupation number $\bar n_{\mathrm{th}} \simeq k_B T / (\hbar \Omega_m)$ in the high temperature limit $k_B T \gg \hbar \Omega_m$. The position fluctuations induced by this thermal force is given by
 \begin{equation}
   S_{xx}^{\mathrm{th}}[\Omega] = \dfrac{2\hbar}{1 - e^{-\hbar \Omega / k_B T}} \Im \chi[\Omega] \simeq 2 m \Gamma_m k_B T |\chi[\Omega]|^2 \quad \text{if} \quad k_B T \gg \hbar \Omega
 \end{equation}
-where we used the identity $\Im \chi[\Omega] = m\Gamma_m \Omega |\chi[\Omega]|^2$. At $T=0K$, this reduces to the zero point fluctuations spectrum $S_{xx}^{\mathrm{ZPF}}[\Omega] =\, m \Gamma_m \hbar \Omega_m  |\chi[\Omega]|^2 < $$S_{xx}^{\rm SQL}[\Omega]$, such that is often neglected in the total displacement spectrum. However, at finite temperature, the thermal noise can be much larger than the SQL. Therefore, the total displacement spectrum now reads
+where we used the identity $\Im \chi[\Omega] = m\Gamma_m \Omega |\chi[\Omega]|^2$. At $T=0$ K, this reduces to the zero-point fluctuations spectrum $S_{xx}^{\mathrm{ZPF}}[\Omega] =\, m \Gamma_m \hbar \Omega_m  |\chi[\Omega]|^2 < S_{xx}^{\rm SQL}[\Omega]$, such that is often neglected in the total displacement spectrum. However, at finite temperature, the thermal noise can be much larger than the SQL. Therefore, the total displacement spectrum now reads
 \begin{equation}
   S_{xx}[\Omega] = S_{xx}^{\rm SN}[\Omega] + S_{xx}^{\rm RPN}[\Omega] + S_{xx}^{\rm cor}[\Omega] + S_{xx}^{\mathrm{th}}[\Omega]
 \end{equation}
 In order to experimentally probe these quantum limits without being limited by various technical noises, one would then need: 
 \begin{itemize}
-  \item A high finesse cavity, such that the shot noise $S_{xx}^{\rm SN} \propto \mathcal{F}^{-2}$ level is low, and the radiation pressure noise $S_{xx}^{\rm RPN} \propto \mathcal{F}^{2}$ is high. One should however ensure the cavity bandwidth $\kappa$ is still much larger than the mechanical frequency $\Omega_m$. This can be ensure tuning the cavity length $L$ and mirror transmissions.
+  \item A high finesse cavity, such that the shot noise $S_{xx}^{\rm SN} \propto \mathcal{F}^{-2}$ level is low, and the radiation pressure noise $S_{xx}^{\rm RPN} \propto \mathcal{F}^{2}$ is high. One should however ensured the cavity bandwidth $\kappa$ is still much larger than the mechanical frequency $\Omega_m$. This can be ensured tuning the cavity length $L$ and mirror transmissions.
   \item A low mass, low frequency, high quality factor mechanical resonator, such that the susceptibility modulus at resonance $|\chi[\Omega_m]|=Q/m \Omega_{m}^2$ is high, and it comes out of the shot noise level significantly. 
   \item A low temperature environment, such that the thermal noise $S_{xx}^{\mathrm{th}} \propto T$ is low and does not mask the quantum effects. This can be ensured by cryogenic cooling of the mechanical resonator, as well as using high quality factor resonators to reduce the mechanical linewidth $\Gamma_m$.
 \end{itemize}
@@ -103,13 +103,13 @@ In order to experimentally probe these quantum limits without being limited by v
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/SQL0.pdf}
-  \caption{DYes}
-  \label{fig:freq_indep_squeezing}
+  \caption{Displacement spectrum contributions for a coherent input field (vacuum fluctuations) with typical table-top experiment parameters. (a) Displacement spectrum contributions as a function of the input power at the mechanical resonance frequency $\Omega_m$. The shot noise (red) decreases with increasing input power, while the radiation pressure noise (yellow) increase with increasing input power. The SQL power (dashed line) is the input power at which both contributions are equal, minimizing the total displacement spectrum (black). (b) Displacement spectrum as a function of frequency for a fixed input power on a large frequency band. The shot noise is flat as long as the resonator sits in the unresolved sideband regime, and the radiation pressure noise peaks around the mechanical resonance frequency $\Omega_m$. The zero point motion sits orders of magnitude below the SQL. (c) Displacement spectrum as a function of frequency in the vicinity of the mechanical resonance frequency $\Omega_m$. Only two frequencies $\Omega_m \pm \Omega_{\rm SQL}$ (dashed lines) exist where both contributions are equal, with radiation pressure noise dominating in between, and shot noise dominating outside this range. The total displacement spectrum (black) reaches the SQL (dotted line) at these two frequencies for the given input power.}
+    \label{fig:freq_indep_squeezing}
 \end{figure}
 
-We now want to derive the displacement spectrum of an optomechanical system driven by a squeezed light field, whether frequency independent or dependent. 
+We now want to derive the displacement spectrum of an optomechanical system driven by a squeezed light field, whether frequency-independent or frequency-dependent. 
 
-\subsection{Frequency Independent Squeezing in Optomechanical Cavities}
+\subsection{Frequency-Independent Squeezing in Optomechanical Cavities}
 We first recall the (idealized) covariance matrices for both a phase squeezed field and an amplitude squeezed field 
 \begin{equation*}
   \mathbf{S}^{0}_{\rm OPO}[\Omega] = 
@@ -131,10 +131,10 @@ while for an amplitude squeezed field, the displacement spectrum reads
 \begin{equation}
   S_{xx}^{\pi}[\Omega] =  \mathcal{C}^{-2}  e^{+2r} + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 e^{-2r}
 \end{equation}
-We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. The input cross correlations being zero, this completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively.
-However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. 
+We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. The input cross correlations being zero, this is completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively.
+However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. \\ 
 
-Now consider an input squeezed state with a frequency independent squeezing angle $\theta=\pi/4$ with covariance matrix
+Now consider an input squeezed state with a frequency-independent squeezing angle $\theta=\pi/4$ with covariance matrix
 \begin{equation*}
   \mathbf{S}^{\pi/4}_{\rm OPO}[\Omega] = \begin{pmatrix}
          \cosh 2r   & -\sinh 2r  \\[10pt]
@@ -149,14 +149,14 @@ and we seek the frequency range where the displacement spectrum is below the SQL
 \begin{equation}
   \tanh r < \cos \phi_m[\Omega] < 1
 \end{equation}
-Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$. Furthermore, due to the interplay between quadrature correlations and the projection of the $\pi/4$ ellipse onto the output quadrature axis, acting as an effective increase of the shot noise floor with effective intensity $\bar{I}_\mathrm{in} \cosh^{-1} r $, there is an effective range of $r$ above which the displacement spectrum is always above the SQL (for a fixed input intensity). This is illustrated in figure \ref{fig:freq_indep_squeezing}.
+Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$: the larger the effect, the smaller the frequency band where it is effective. Furthermore, due to the interplay between quadrature correlations and the projection of the $\pi/4$ ellipse onto the output quadrature axis, acting as an effective increase of the shot noise floor with effective intensity $\bar{I}_\mathrm{in} \cosh^{-1} r $, there is an effective range of $r$ above which the displacement spectrum is always above the SQL (for a fixed input intensity). This is illustrated in figure \ref{fig:freq_indep_squeezing}. \\ 
 
 Additionally, and as seen in Fig ..., the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Omega_{\rm SQL}$. \\
 
-This motivates the use of frequency dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation pressure noise need to be correlated in a frequency dependent manner to optimally cancel the total displacement noise in the vicinity of the mechanical resonance. 
+This motivates the use of frequency-dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation pressure noise need to be correlated in a frequency-dependent manner to optimally lower the total displacement noise in the vicinity of the mechanical resonance. 
 
-\subsection{Frequency Dependent Squeezing in Optomechanical Cavities}
-We now consider a squeezed state with a frequency dependent angle whose covariance matrix is given by
+\subsection{Frequency-Dependent Squeezing in Optomechanical Cavities}
+We now consider a squeezed state with a frequency-dependent angle whose covariance matrix is given by
 \begin{equation*}
       \mathbf{S}^{\theta}_{\rm OPO}[\Omega] =\begin{pmatrix}
          \cosh 2r  + \sinh 2r \, \cos 2\theta[\Omega]  & -\sinh 2r \, \sin 2\theta[\Omega]  \\[10pt]
@@ -184,31 +184,24 @@ minimizes the displacement spectrum at every sideband frequency, leading to
 \end{equation}
 This broadband reduction of the displacement spectrum below the SQL is illustrated in figure \ref{fig:freq_dep_squeezing}. However, for a resonant optomechanical cavity i.e. $\Delta=0$, it is impossible to beat the SQL at the mechanical resonance, where the succeptibility is purely imaginary $\phi_m[\Omega_m] = \pi/2$. \\ 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{./chap3/fig/chi_meca.pdf}
-  \caption{DYes}
-  \label{fig:freq_indep_squeezing}
-\end{figure}
-
 \noindent \textbf{Convergence to VIRGO/LIGO notation:} We once again show that this general treatment converges to the one used in the context of gravitational wave detectors. In the free mass regime, $\mathcal{K}[\Omega]$ is real, such that $\phi_m[\Omega]=0$. One can then rewrite the optimal squeezing angle as
 \begin{equation}
   2 \theta[\Omega] = \arctan \Big[\dfrac{2\mathcal{K}[\Omega]}{1 - \mathcal{K}^2[\Omega]}\Big] = 2 \arctan \mathcal{K}[\Omega]
 \end{equation}
-where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{harry_advanced_2010, aasi_enhanced_2013}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the the SQL frequency to the known expression
+where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{harry_advanced_2010, aasi_enhanced_2013}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the SQL frequency to the known expression
 \begin{equation}
-  \Omega_{\text{SQL}} = \sqrt{\dfrac{\hbar \mathcal{C}^2}{2 m }} \implies \mathcal{K}[\Omega] = \Big( \dfrac{\Omega_{\text{SQL}}}{\Omega}\Big)^2
+  \Omega_{\text{SQL}} = \sqrt{\dfrac{\hbar \mathcal{C}^2}{2 m }} \implies \mathcal{K}[\Omega] = \left( \dfrac{\Omega_{\text{SQL}}}{\Omega}\right)^2
 \end{equation}
 The displacement spectrum then reduces to the common expression
 \begin{equation}
-  S_{xx}[\Omega] = \mathcal{C}^{-2} \Bigg( 1  + \Big( \dfrac{\Omega_{\text{SQL}}}{\Omega}\Big)^2 \Bigg)e^{-2r}
+  S_{xx}[\Omega] = \mathcal{C}^{-2} \Bigg( 1  + \left( \dfrac{\Omega_{\text{SQL}}}{\Omega}\right)^2 \Bigg)e^{-2r}
 \end{equation}
 which is the free-mass approximation result used in the GW community. 
 
-\subsection{Filter Cavities for Frequency Dependent Squeezing}
+\subsection{Filter Cavities for Frequency-Dependent Squeezing}
 
-To generate frequency dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency independent squeezed state off a single sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency dependent angle. 
-The transfer matrix for a single sideband from a detuned single port cavity was given by
+To generate frequency-dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency-independent squeezed state off a single-sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency-dependent angle. 
+The transfer matrix for a single sideband from a detuned single port cavity is given by
 \begin{equation*}
     \kappa \mathrm M_{\Delta}^{-1}[\Omega]  - \mathbf{1} = \begin{pmatrix}
       \dfrac{\kappa/2 + i(\Delta + \Omega)}{\kappa/2 - i(\Delta + \Omega)} & 0 \\[10pt]
@@ -227,14 +220,18 @@ We recall from section II.1.4 that the reflected quadratures from a detuned cavi
 \end{equation*}
 such that the phase picked up by sidebands at frequency $\Omega$ is given by
 \begin{equation}
-    \phi_{\mathrm{fc}}[\Omega] = \arctan \Big(\dfrac{2 \Delta \kappa }{\kappa^2/4 - \Delta^2 + \Omega^2}\Big) 
+    \phi_{\mathrm{fc}}[\Omega] = \arctan \left(\dfrac{2 \Delta \kappa }{\kappa^2/4 - \Delta^2 + \Omega^2}\right) 
 \end{equation}
+
+
+
+\subsection{Numerical simulations}
 
 
 
 \section{Cavity Optomechanics with Membrane based systems }
 \subsection{Classical Description}
-To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}
+To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three-mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}:
 \begin{equation}
 r_m = \frac{(n^2-1)\sin k n d}{2 i n \cos k n d  + (n^2+1)\sin k n d}, \qquad t_m = \frac{2 n}{2 i n \cos k n d  + (n^2+1)\sin k n d}. 
 \label{eq:membrane_rt}
@@ -246,7 +243,7 @@ In the lossless case, we will assume the index of refraction $n$ is real, such t
 \bar \alpha_L' &= t_m \bar \alpha_R'+ r_m \bar \alpha_L. \\
 \end{split}
 \end{equation}
-In this case, energy conservation i.e. $|\bar \alpha_L|^2 + |\bar \alpha_R'|^2 = |\bar \alpha_L'|^2 + |\bar \alpha_R|^2$ imposes that $2(\phi_t-\phi_r) = \pi$ such that we can chose $r_m = |r_m|$ and $t_m = i|t_m|$. We rewrite the the cavity fields by injecting the identities $\bar \alpha_L = - \bar \alpha_L' e^{2ikL_1}$ and $\bar \alpha_R' = - \bar \alpha_R e^{2ikL_2}$ such that we get the useful system 
+In this case, energy conservation i.e. $|\bar \alpha_L|^2 + |\bar \alpha_R'|^2 = |\bar \alpha_L'|^2 + |\bar \alpha_R|^2$ imposes that $2(\phi_t-\phi_r) = \pi$ such that we can choose $r_m = |r_m|$ and $t_m = i|t_m|$. We rewrite the the cavity fields by injecting the identities $\bar \alpha_L = - \bar \alpha_L' e^{2ikL_1}$ and $\bar \alpha_R' = - \bar \alpha_R e^{2ikL_2}$ such that we get the useful system 
 \begin{equation}
 \begin{split}
   (1+ |r_m| e^{2ikL_2}) \bar \alpha_R & = -i |t_m| \, e^{2ikL_1}  \, \bar \alpha_L'\\
@@ -256,11 +253,11 @@ In this case, energy conservation i.e. $|\bar \alpha_L|^2 + |\bar \alpha_R'|^2 =
 \end{equation}
 
 \subsubsection{Resonance Frequencies}
-By eliminating the right and left fields in the above system, we arrive at the transcendental equation \cite{jayich_dispersive_2008}
+By eliminating the right and left fields in the above system, we arrive at the transcendental equation \cite{jayich_dispersive_2008}:
 \begin{equation}
   -\cos kL = |r_m|\cos (k \Delta L), \quad \text{with} \quad \Delta L = L_2 - L_1.
 \end{equation}
-Following the method in Sankey et al. \cite{sankey_strong_2010}, we now proceed to derive the cavity resonance frequencies as a function of the membrane position \(x\) around its mean position \(x=0\). We will also always consider a long cavity such that \( L \gg \lambda,x \). The cavity sublenghts considering a non zero mean membrane position are then \(L_1 \rightarrow L_1 +  x\) and \(L_2 \rightarrow L_2 -  x\). It follows that $\Delta L \rightarrow \Delta L - 2x$. We will consider the effect of this displacement on the cavity wavenumbers/frequencies as a perturbation $k(x) = k_N + \delta k(x)$ with $k_N = N \pi/L$, that is the membrane displacement does not change the longitudinal mode index \(N\) but modulates it by at most $\pi/L$ (or equivalently by one empty cavity FSR in the frequency domain). We will omit the $x$ dependency in both $k$ and $\delta k$ for ease of notation. It then follows than terms in $k\, L$ and $k\, x$ can be expanded as
+Following the method in Sankey \textit{et al.} \cite{sankey_strong_2010}, we now proceed to derive the cavity resonance frequencies as a function of the membrane position \(x\) around its mean position \(x=0\). We will also always consider a long cavity such that \( L \gg \lambda,|x| \). The cavity sublenghts considering a non zero mean membrane position are then \(L_1 \rightarrow L_1 +  x\) and \(L_2 \rightarrow L_2 -  x\). It follows that $\Delta L \rightarrow \Delta L - 2x$. We will consider the effect of this displacement on the cavity wavenumbers/frequencies as a perturbation $k(x) = k_N + \delta k(x)$ with $k_N = N \pi/L$, that is the membrane displacement does not change the longitudinal mode index \(N\) but modulates it by at most $\pi/L$ (or equivalently by one empty cavity FSR in the frequency domain). We will omit the $x$ dependency in both $k$ and $\delta k$ for ease of notation. It then follows than terms in $k\, L$ and $k\, x$ can be expanded as
 \begin{equation*}
     \cos \big( k \, L \big)  = (-1)^N \cos \big( \delta k \,L \big) \quad \text{and} \quad      \cos \big( k \, x \big)  \sim \cos \big( k_N \,  x \big)  
 \end{equation*}
@@ -271,7 +268,7 @@ where we assumed that $\delta k \, x \sim 0$. The transcendental equation become
   & +  \sin(\delta k \,  \Delta L) \sin(2 k_N x) \Big]  
   \end{split}
 \end{equation}
- and where we simplified the sines terms already equal to zero. 
+ and where we have simplified the sines terms already equal to zero. 
 We will now consider the Membrane At The Edge (MATE) model where $L_1 \sim L \gg L_2 \rightarrow \Delta L \sim L$. Solving for $\delta k$ reinjecting in the dispersion relation $\omega_c(x) = c k(x)$ leads to
 \begin{equation}
     \omega_c(x)  \simeq \omega_{FSR} \Bigg( N  + \frac{1}{\pi} \arctan \bigg( -  \dfrac{1 + |r_m|\cos 2 k_N  x}{|r_m|\sin 2 k_N x} \bigg)\Bigg)
@@ -283,6 +280,8 @@ where $\omega_{FSR} = \pi c / L$ is the empty cavity free spectral range. When t
   G^{(2)}(x) & = -\dfrac{4 |r_m|  k_N^2 \omega_{FSR}}{\pi}  \dfrac{|r_m| (1- |r_m|^2 ) \sin( 2 k_N  x)}{(1 + |r_m|^2 - 2 |r_m| \cos( 2 k_N  x))^2}
   \end{split}
 \end{equation}
+
+\color{red} use of G2 ??  \color{black}
 
 \begin{figure}
   \centering
@@ -306,7 +305,7 @@ From the system in \eqref{eq:cavity_fields_system}, and having derived just abov
 \begin{equation}
   \dfrac{|\bar \alpha_R|^2}{|\bar \alpha_L'|^2} = \dfrac{P_R}{P_L} = \dfrac{1 + 2|r_m|\cos (2k L_1+2kx) + |r_m|^2}{1- |r_m|^2}. 
 \end{equation}
-with $P_{L,R} \propto |\bar \alpha_{L,R}|^2$. It then follows that the the power fraction leaking from the left and right mirrors, i.e. the resonant reflection and transmission coefficients $R(\Delta=0,x)$ and $T(\Delta = 0, x)$ are given by
+with $P_{L,R} \propto |\bar \alpha_{L,R}|^2$. It then follows that the power fraction leaking from the left and right mirrors, i.e. the resonant reflection and transmission coefficients $R(\Delta=0,x)$ and $T(\Delta = 0, x)$ are given by:
 \begin{equation}
   \begin{split}
   R(\Delta=0,x)& = \dfrac{|t_1|^2 P_L}{|t_1|^2 P_L + |t_2|^2 P_R} \\
@@ -321,13 +320,13 @@ and we get the expected relation $R(\Delta=0,x) + T(\Delta=0,x) = 1$.
 \subsubsection{Cavity Linewidth and Finesse}
 Here, and similarly as in the next section detailing the quantum description of the MATE system, we can derive the cavity linewidth and finesse considering two different approaches. The firts one, best for high membrane reflectivities, consists in considering two coupled subcavities, each with their own low linewidth/ high finesse, coupled by photon transmission through the membrane. The second one, appropriate for MATE geometries and low membrane reflectivities, consists in considering the whole cavity as a single optical mode, where the back short cavity act as an effective mirror with position dependent reflectivity. We will derive both and compare them. \\
 
-To derive the position dependent cavity linewidth $\kappa(x)$ and finesse $\mathcal{F}(x)$ in the two cavity approach, we once again resort to the Sankey et al. method \cite{sankey_strong_2010}. The total energy stored in the cavity is given by
+To derive the position-dependent cavity linewidth $\kappa(x)$ and finesse $\mathcal{F}(x)$ in the two cavity approach, we once again resort to the Sankey \textit{et al.} method \cite{sankey_strong_2010}. The total energy stored in the cavity is given by
 \begin{equation}
   E = \dfrac{2(L_1+x)}{c} P_L + \dfrac{2(L_2 - x)}{c} P_R
 \end{equation}
 and the rate at which energy leaves the cavity 
 \begin{equation}
-  \partial_t E = - |t_1|^2 P_L + -|t_2|^2 P_R = - \kappa(x) E.
+  \partial_t E = - |t_1|^2 P_L  -|t_2|^2 P_R = - \kappa(x) E.
 \end{equation}
 such that the cavity energy decay rate is given by
 \begin{equation}
@@ -356,11 +355,11 @@ such that the resulting cavity finesse is given by
 
 
 \subsection{Quantum Description}
-We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? \\ 
+We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three-mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? \\ 
 
 
-\subsubsection{Two Cavity Mode Model}
-We start by looking at the two cavity model. Using the same tools as in section II.2, we can derive the QLE of a membrane based optomechanical system. The membrane position now turns into an operator such that $\hat x \propto \hat c + \hat c^{\dagger} $ with $\hat c$ the mechanical annihilation operator as in the previous section. As seen above, the membrane position modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as
+\subsubsection{Two-Cavity Model}
+We start by looking at the two-cavity model. Using the same tools as in Chapter I, we can derive the QLE of a membrane based optomechanical system. The membrane position now turns into an operator such that $\hat x \propto \hat c + \hat c^{\dagger} $ with $\hat c$ the mechanical annihilation operator as in the previous section. As seen above, the membrane position modifies the resonance frequencies of the two subcavities, such that they both depend on the membrane position as \(\omega_L(x)\) and \(\omega_R(x)\) but with inverse trend: when one cavity shortens and its FSR increases, the other lengthens and its FSR decreases. To first order, we can linearize the resonance frequencies as
 \begin{equation}
 \omega_L(\hat x) \simeq \omega_{L} + G_L \hat x, \qquad \omega_R(\hat x) \simeq \omega_{R} + G_R \hat x,
 \end{equation}
