@@ -19,65 +19,126 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Kimble2001}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=aea70dd628dc6535ce5213ef85f63855}{%
-           family={Kimble},
-           familyi={K\bibinitperiod},
-           given={H.\bibnamedelimi J.},
-           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=6246006486aa4f55a80efddc774ef379}{%
-           family={Levin},
-           familyi={L\bibinitperiod},
-           given={Yuri},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=c64517556e37f697ce33f9e637a8cce2}{%
-           family={Matsko},
-           familyi={M\bibinitperiod},
-           given={Andrey},
-           giveni={A\bibinitperiod}}}%
-        {{hash=03d1a9e22728f8baf71813d4154e7c34}{%
-           family={Thorne},
-           familyi={T\bibinitperiod},
-           given={Kip},
-           giveni={K\bibinitperiod}}}%
-        {{hash=0503a086d7ab6718bad3d6af8b58b41c}{%
-           family={Vyatchanin},
-           familyi={V\bibinitperiod},
-           given={Sergey},
-           giveni={S\bibinitperiod}}}%
+    \entry{siegman1986lasers}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=eb7ab71d80f32086bfc635acd0abc09f}{%
+           family={Siegman},
+           familyi={S\bibinitperiod},
+           given={Anthony\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \strng{namehash}{f2ca855a4e9cd7629b289280e093e982}
-      \strng{fullhash}{0f872389b25df4b39a5b52b23a321a4f}
-      \strng{fullhashraw}{0f872389b25df4b39a5b52b23a321a4f}
-      \strng{bibnamehash}{f2ca855a4e9cd7629b289280e093e982}
-      \strng{authorbibnamehash}{f2ca855a4e9cd7629b289280e093e982}
-      \strng{authornamehash}{f2ca855a4e9cd7629b289280e093e982}
-      \strng{authorfullhash}{0f872389b25df4b39a5b52b23a321a4f}
-      \strng{authorfullhashraw}{0f872389b25df4b39a5b52b23a321a4f}
-      \field{extraname}{1}
+      \list{location}{1}{%
+        {Mill Valley, CA}%
+      }
+      \list{publisher}{1}{%
+        {University Science Books}%
+      }
+      \strng{namehash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{fullhash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{fullhashraw}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{bibnamehash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{authorbibnamehash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{authornamehash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{authorfullhash}{eb7ab71d80f32086bfc635acd0abc09f}
+      \strng{authorfullhashraw}{eb7ab71d80f32086bfc635acd0abc09f}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0556-2821}
-      \field{journaltitle}{Physical Review D}
-      \field{month}{12}
-      \field{number}{2}
-      \field{title}{{Conversion of conventional gravitational-wave interferometers into quantum nondemolition interferometers by modifying their input and/or output optics}}
-      \field{volume}{65}
-      \field{year}{2001}
-      \field{pages}{022002}
-      \range{pages}{1}
+      \field{isbn}{9780935702118}
+      \field{title}{Lasers}
+      \field{year}{1986}
+    \endentry
+    \entry{knightoptics}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=1a4def17d8b18d5df931133c2427536a}{%
+           family={Gerry},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3c9863d3b3a4eb3d67f64a9ad1145651}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{fullhash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{fullhashraw}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{bibnamehash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{authorbibnamehash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{authornamehash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{authorfullhash}{fca0777964cda9b106d97c2bd48d190a}
+      \strng{authorfullhashraw}{fca0777964cda9b106d97c2bd48d190a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780521527354}
+      \field{title}{Introductory Quantum Optics}
+      \field{year}{2004}
       \verb{doi}
-      \verb 10.1103/PhysRevD.65.022002
+      \verb 10.1017/CBO9780511791239
       \endverb
-      \verb{urlraw}
-      \verb http://link.aps.org/doi/10.1103/PhysRevD.65.022002
-      \endverb
-      \verb{url}
-      \verb http://link.aps.org/doi/10.1103/PhysRevD.65.022002
-      \endverb
+    \endentry
+    \entry{Oelker2016PhD}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=97940827651c750c3efa1302b7d6f349}{%
+           family={Oelker},
+           familyi={O\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MIT}%
+      }
+      \strng{namehash}{97940827651c750c3efa1302b7d6f349}
+      \strng{fullhash}{97940827651c750c3efa1302b7d6f349}
+      \strng{fullhashraw}{97940827651c750c3efa1302b7d6f349}
+      \strng{bibnamehash}{97940827651c750c3efa1302b7d6f349}
+      \strng{authorbibnamehash}{97940827651c750c3efa1302b7d6f349}
+      \strng{authornamehash}{97940827651c750c3efa1302b7d6f349}
+      \strng{authorfullhash}{97940827651c750c3efa1302b7d6f349}
+      \strng{authorfullhashraw}{97940827651c750c3efa1302b7d6f349}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Squeezed States for Advanced Gravitational Wave Detectors}
+      \field{type}{PhD thesis}
+      \field{year}{2016}
+    \endentry
+    \entry{Whittle2023PhD}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=1af0b778254db40af14c47c00377d594}{%
+           family={Whittle},
+           familyi={W\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MIT}%
+      }
+      \strng{namehash}{1af0b778254db40af14c47c00377d594}
+      \strng{fullhash}{1af0b778254db40af14c47c00377d594}
+      \strng{fullhashraw}{1af0b778254db40af14c47c00377d594}
+      \strng{bibnamehash}{1af0b778254db40af14c47c00377d594}
+      \strng{authorbibnamehash}{1af0b778254db40af14c47c00377d594}
+      \strng{authornamehash}{1af0b778254db40af14c47c00377d594}
+      \strng{authorfullhash}{1af0b778254db40af14c47c00377d594}
+      \strng{authorfullhashraw}{1af0b778254db40af14c47c00377d594}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Quantum Optics and Mechanics in Gravitational-Wave Detectors}
+      \field{type}{PhD thesis}
+      \field{year}{2023}
     \endentry
     \entry{Caves1985}{article}{}{}
       \name{author}{1}{}{%
@@ -95,8 +156,8 @@
       \strng{authornamehash}{0b6ecaa5ef5b6b5c7a86670582f15682}
       \strng{authorfullhash}{0b6ecaa5ef5b6b5c7a86670582f15682}
       \strng{authorfullhashraw}{0b6ecaa5ef5b6b5c7a86670582f15682}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0556-2791}
@@ -116,6 +177,100 @@
       \endverb
       \verb{url}
       \verb http://link.aps.org/doi/10.1103/PhysRevA.31.3068
+      \endverb
+    \endentry
+    \entry{Kogelnik66}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4a2476887e18c5e39626229d5b6cdddd}{%
+           family={Kogelnik},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=317adb20c6b3ea65befa45a219f6410d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{fullhash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{fullhashraw}{e2553abada897e626b29c1bcf188dd02}
+      \strng{bibnamehash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{authorbibnamehash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{authornamehash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{authorfullhash}{e2553abada897e626b29c1bcf188dd02}
+      \strng{authorfullhashraw}{e2553abada897e626b29c1bcf188dd02}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is a review of the theory-of laser beams and resonators. It is meant to be tutorial in nature and useful in scope. No attempt is made to be exhaustive in the treatment. Rather, emphasis is placed on formulations and derivations which lead to basic understanding and on results which bear practical significance.}
+      \field{journaltitle}{Appl. Opt.}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Laser Beams and Resonators}
+      \field{volume}{5}
+      \field{year}{1966}
+      \field{pages}{1550\bibrangedash 1567}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1364/AO.5.001550
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/ao/abstract.cfm?URI=ao-5-10-1550
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/ao/abstract.cfm?URI=ao-5-10-1550
+      \endverb
+      \keyw{Fabry Perot interferometers; Laser beams; Laser resonators; Optical elements; Optical systems; Reflectors}
+    \endentry
+    \entry{gardiner}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=75c694bd409e025e7e08c106891ff87c}{%
+           family={Gardiner},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=90fc8354daf72e09f6eb0daea315f0f3}{%
+           family={Collett},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{fullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{fullhashraw}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{bibnamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authorbibnamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authornamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authorfullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authorfullhashraw}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Phys. Rev. A}
+      \field{month}{6}
+      \field{title}{Input and output in damped quantum systems: Quantum stochastic differential equations and the master equation}
+      \field{volume}{31}
+      \field{year}{1985}
+      \field{pages}{3761\bibrangedash 3774}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.31.3761
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3761
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3761
       \endverb
     \endentry
     \entry{Poirson:97}{article}{}{}
@@ -152,8 +307,8 @@
       \strng{authornamehash}{d001f6bae19a9e4d9b130f6c495aa783}
       \strng{authorfullhash}{c74f16e69519d817547c3ac4485a33fc}
       \strng{authorfullhashraw}{c74f16e69519d817547c3ac4485a33fc}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phenomenon of ringing in swept Fabry--Perot cavities, which leads to discrepancies with respect to usual Airy peaks, exhibits three different regimes, depending on the values of the finesse, the sweep frequency, and the free spectral range of the cavity. In particular, the intermediate case in which the Fabry--Perot cavity transmission essentially oscillates is shown theoretically and experimentally to provide a new simple method to measure the finesse of the cavity. For cavities with intermediate finesses (F$\approx$10 000) this method is experimentally shown to have a precision of the order of 1\%.}
@@ -175,6 +330,138 @@
       \verb https://opg.optica.org/josab/abstract.cfm?URI=josab-14-11-2811
       \endverb
       \keyw{Frequency modulation; Laser sources; Phase measurement; Phase modulation; Phase shift; Precision metrology}
+    \endentry
+    \entry{Sorensen1998PhD}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=8c43f4e6ccec504a59207c3f9a8b5527}{%
+           family={S{ø}rensen},
+           familyi={S\bibinitperiod},
+           given={Jens\bibnamedelima Lykke},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Institute of Physics}%
+        {Astronomy}%
+      }
+      \list{location}{1}{%
+        {Aarhus, Denmark}%
+      }
+      \strng{namehash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{fullhash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{fullhashraw}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{bibnamehash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{authorbibnamehash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{authornamehash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{authorfullhash}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \strng{authorfullhashraw}{8c43f4e6ccec504a59207c3f9a8b5527}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{note}{PhD thesis}
+      \field{title}{Nonclassical Light for Atomic Physics and Quantum Teleportation}
+      \field{type}{phdthesis}
+      \field{year}{1998}
+    \endentry
+    \entry{burks_thesis_2010}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=395618318c1839adee4539236dd23f7a}{%
+           family={Burks},
+           familyi={B\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université Pierre et Marie Curie - Paris VI}%
+      }
+      \strng{namehash}{395618318c1839adee4539236dd23f7a}
+      \strng{fullhash}{395618318c1839adee4539236dd23f7a}
+      \strng{fullhashraw}{395618318c1839adee4539236dd23f7a}
+      \strng{bibnamehash}{395618318c1839adee4539236dd23f7a}
+      \strng{authorbibnamehash}{395618318c1839adee4539236dd23f7a}
+      \strng{authornamehash}{395618318c1839adee4539236dd23f7a}
+      \strng{authorfullhash}{395618318c1839adee4539236dd23f7a}
+      \strng{authorfullhashraw}{395618318c1839adee4539236dd23f7a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{{Towards A Quantum Memory For Non-Classical Light With Cold Atomic Ensembles}}
+      \field{type}{PhD thesis}
+      \field{year}{2010}
+      \verb{file}
+      \verb https://theses.hal.science/tel-00699270v1/file/Towards_a_Quantum_Memory_For_Non-Classical_Light_With_Cold_Atomic_Ensembles_Ph._D_Thesis_-_Sidney_Burks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://theses.hal.science/tel-00699270
+      \endverb
+      \verb{url}
+      \verb https://theses.hal.science/tel-00699270
+      \endverb
+      \keyw{quantum optics ; quantum information ; continuous variables ; quantum memory ; optical parametric oscillator ; squeezed states ; entanglement ; quantum tomography ; electromagnetically induced transparency ; cesium vapor}
+    \endentry
+    \entry{detunedOPOsqz}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d5de0ac3865f6fa4c79e8544c3af50fb}{%
+           family={Junker},
+           familyi={J\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=627ed01a8b8fb910f312c286aa275c5e}{%
+           family={Wilken},
+           familyi={W\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1e0c831d02c3860c3e44f84bfc6d8a3e}{%
+           family={Johny},
+           familyi={J\bibinitperiod},
+           given={Nived},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3da36d258a9bcb75c2b72b0fe4b2ce9b}{%
+           family={Steinmeyer},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eab2db120268b1fa0aae0c3d749b1490}{%
+           family={Heurs},
+           familyi={H\bibinitperiod},
+           given={Michèle},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{517f8027f7f7013366fdf211e55703d5}
+      \strng{fullhash}{73b5d17dc9b8b4632a00ff2521fc2bdc}
+      \strng{fullhashraw}{73b5d17dc9b8b4632a00ff2521fc2bdc}
+      \strng{bibnamehash}{517f8027f7f7013366fdf211e55703d5}
+      \strng{authorbibnamehash}{517f8027f7f7013366fdf211e55703d5}
+      \strng{authornamehash}{517f8027f7f7013366fdf211e55703d5}
+      \strng{authorfullhash}{73b5d17dc9b8b4632a00ff2521fc2bdc}
+      \strng{authorfullhashraw}{73b5d17dc9b8b4632a00ff2521fc2bdc}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{7}
+      \field{title}{Frequency-Dependent Squeezing from a Detuned Squeezer}
+      \field{volume}{129}
+      \field{year}{2022}
+      \field{pages}{033602}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.129.033602
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.129.033602
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.129.033602
+      \endverb
     \endentry
     \entry{clerk_introduction_2010}{article}{}{}
       \name{author}{5}{}{%
@@ -212,8 +499,8 @@
       \strng{authornamehash}{95cb63106604316da6ed6bc56b3cc991}
       \strng{authorfullhash}{832ac2e357a7a97e69f43f64efbcd955}
       \strng{authorfullhashraw}{832ac2e357a7a97e69f43f64efbcd955}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The topic of quantum noise has become extremely timely due to the rise of quantum information physics and the resulting interchange of ideas between the condensed matter and {AMO}/quantum optics communities. This review gives a pedagogical introduction to the physics of quantum noise and its connections to quantum measurement and quantum amplification. After introducing quantum noise spectra and methods for their detection, we describe the basics of weak continuous measurements. Particular attention is given to treating the standard quantum limit on linear amplifiers and position detectors using a general linear-response framework. We show how this approach relates to the standard Haus-Caves quantum limit for a bosonic amplifier known in quantum optics, and illustrate its application for the case of electrical circuits, including mesoscopic detectors and resonant cavity detectors.}
@@ -288,7 +575,6 @@
       \strng{authornamehash}{f2ca855a4e9cd7629b289280e093e982}
       \strng{authorfullhash}{5edd995e63f3dc6cac5730764ccd7556}
       \strng{authorfullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
-      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -321,6 +607,63 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevD.65.022002
+      \endverb
+    \endentry
+    \entry{Thompson2008Nature}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=cd73d2a1224ea92c8ec865582cefe63e}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=66370b3393e1d6a8f4be1d62742f9af9}{%
+           family={Zwickl},
+           familyi={Z\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d3f46162d73fd1735b431b265a825ba6}{%
+           family={Jayich},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=99c24bab5bbf3a303c540e7825722dc1}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{fullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{fullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{bibnamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authorbibnamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authornamehash}{ccedbaf9137a5906fa4d830752046d08}
+      \strng{authorfullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \strng{authorfullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7183}
+      \field{title}{Strong dispersive coupling of a high-finesse cavity to a micromechanical membrane}
+      \field{volume}{452}
+      \field{year}{2008}
+      \field{pages}{72\bibrangedash 75}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nature06715
       \endverb
     \endentry
     \entry{jayich_dispersive_2008}{article}{}{}
@@ -487,53 +830,894 @@
       \endverb
       \keyw{Atomic,Classical and Continuum Physics,Complex Systems,Condensed Matter Physics,general,Mathematical and Computational Physics,Molecular,Optical and Plasma Physics,Physics,Theoretical}
     \endentry
-    \entry{Regal2008}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=d1f45cd382775faf93c643b9594e0907}{%
-           family={Regal},
-           familyi={R\bibinitperiod},
-           given={C.\bibnamedelimi A.},
-           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=bace5ed02e1ef518b7b5803f51869df7}{%
-           family={Teufel},
-           familyi={T\bibinitperiod},
-           given={J.\bibnamedelimi D.},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=ab513a16b998e6975e7db9f425fc194c}{%
-           family={Lehnert},
-           familyi={L\bibinitperiod},
-           given={K.\bibnamedelimi W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+    \entry{neuhaus}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=9c6ae6c177f89473350abbc6f36bb3a0}{%
+           family={Neuhaus},
+           familyi={N\bibinitperiod},
+           given={Leonhard},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{fullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{fullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{bibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{authorbibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{authornamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{authorfullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \strng{authorfullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \list{institution}{1}{%
+        {LKB}%
+      }
+      \strng{namehash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{fullhash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{fullhashraw}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{bibnamehash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{authorbibnamehash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{authornamehash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{authorfullhash}{9c6ae6c177f89473350abbc6f36bb3a0}
+      \strng{authorfullhashraw}{9c6ae6c177f89473350abbc6f36bb3a0}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1745-2473}
-      \field{journaltitle}{Nature Physics}
-      \field{month}{5}
-      \field{number}{7}
-      \field{title}{{Measuring nanomechanical motion with a microwave cavity interferometer}}
-      \field{volume}{4}
-      \field{year}{2008}
-      \field{pages}{555\bibrangedash 560}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1038/nphys974
+      \field{month}{12}
+      \field{number}{2016PA066555}
+      \field{title}{{Cooling a macroscopic mechanical oscillator close to its quantum ground state}}
+      \field{type}{PhD thesis}
+      \field{year}{2016}
+      \verb{file}
+      \verb https://theses.hal.science/tel-01467924v2/file/these_archivage_3270194a.pdf
       \endverb
       \verb{urlraw}
-      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \verb https://theses.hal.science/tel-01467924
       \endverb
       \verb{url}
-      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \verb https://theses.hal.science/tel-01467924
+      \endverb
+      \keyw{Optomachanics ; MEMS ; Quantum ground state ; Cryogénie ; Asservissements ; Fpga ; Refroidissement laser ; Action en retour quantique ; Optomécanique}
+    \endentry
+    \entry{PyRPLDocs}{misc}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://pyrpl.readthedocs.io/en/latest/}
+      \field{note}{Version 0.9.4.0}
+      \field{title}{PyRPL Documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{PyRPL2024}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=9c6ae6c177f89473350abbc6f36bb3a0}{%
+           family={Neuhaus},
+           familyi={N\bibinitperiod},
+           given={Leonhard},
+           giveni={L\bibinitperiod}}}%
+        {{hash=817f51fefe5f8a35f58a0a6a4522b6d3}{%
+           family={Croquette},
+           familyi={C\bibinitperiod},
+           given={Michaël},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f70f68463a601392786ca1638e96eeba}{%
+           family={Metzdorff},
+           familyi={M\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0277a2299eb933f0abd9213903b04a56}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={Sheon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=95a28501d9d98b42c9d2c9451117f418}{%
+           family={Jacquet},
+           familyi={J\bibinitperiod},
+           given={Pierre-Edouard},
+           giveni={P\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=5ceab55e1619cdecdc1131b5140f473a}{%
+           family={Journeaux},
+           familyi={J\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d4e1980e0577e0f99533b2e5b6659e69}{%
+           family={Heidmann},
+           familyi={H\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=06edd7b72fd81b856c0daf42eb2f39c7}{%
+           family={Briant},
+           familyi={B\bibinitperiod},
+           given={Tristan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0c17d7169b424d3e519c353adcffc485}{%
+           family={Jacqmin},
+           familyi={J\bibinitperiod},
+           given={Thibaut},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7c4966255470017cdd3ec7ec5c2f2781}{%
+           family={Cohadon},
+           familyi={C\bibinitperiod},
+           given={Pierre-François},
+           giveni={P\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=a748a3b6d030e01b0bd0e7c0444518dc}{%
+           family={Deléglise},
+           familyi={D\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{15700fbcfb0eb009a12de16bda60ef75}
+      \strng{fullhash}{adaa0f5ef54557a7735aac65648a56ef}
+      \strng{fullhashraw}{adaa0f5ef54557a7735aac65648a56ef}
+      \strng{bibnamehash}{15700fbcfb0eb009a12de16bda60ef75}
+      \strng{authorbibnamehash}{15700fbcfb0eb009a12de16bda60ef75}
+      \strng{authornamehash}{15700fbcfb0eb009a12de16bda60ef75}
+      \strng{authorfullhash}{adaa0f5ef54557a7735aac65648a56ef}
+      \strng{authorfullhashraw}{adaa0f5ef54557a7735aac65648a56ef}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{number}{3}
+      \field{title}{Python Red Pitaya Lockbox (PyRPL): An open source software package for digital feedback control in quantum optics experiments}
+      \field{volume}{95}
+      \field{year}{2024}
+      \field{pages}{033003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0178481
+      \endverb
+    \endentry
+    \entry{feedback_physicists}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=393ce9fd0c0cd420b218f93f9607580b}{%
+           family={Bechhoefer},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{fullhash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{fullhashraw}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{bibnamehash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{authorbibnamehash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{authornamehash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{authorfullhash}{393ce9fd0c0cd420b218f93f9607580b}
+      \strng{authorfullhashraw}{393ce9fd0c0cd420b218f93f9607580b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{8}
+      \field{title}{Feedback for physicists: A tutorial essay on control}
+      \field{volume}{77}
+      \field{year}{2005}
+      \field{pages}{783\bibrangedash 836}
+      \range{pages}{54}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.77.783
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.77.783
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.77.783
+      \endverb
+    \endentry
+    \entry{LukinNature2025}{article}{}{}
+      \name{author}{18}{}{%
+        {{hash=940fb66d3d33ad4681bf6e7e59b720fd}{%
+           family={Chiu},
+           familyi={C\bibinitperiod},
+           given={Neng-Chun},
+           giveni={N\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=7ce7eb34b6d13345561d2a627edc7295}{%
+           family={Trapp},
+           familyi={T\bibinitperiod},
+           given={Elias\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c7f463452703fee9f612c83fb87ede29}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jinen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ba84229226a03e48d3ebc09574e70764}{%
+           family={Abobeih},
+           familyi={A\bibinitperiod},
+           given={Mohamed\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2c1aeedc7bc600eee394146aa03c2f0c}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Luke\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=609d9f8ba2112a5f9b47a3b131f02452}{%
+           family={Hollerith},
+           familyi={H\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4d2dc06f56f517b1d47901ba5d7d2c7a}{%
+           family={Stroganov},
+           familyi={S\bibinitperiod},
+           given={Pavel\bibnamedelima L},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0c9bc04c854755cbf21c4b8fdde71207}{%
+           family={Kalinowski},
+           familyi={K\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d5035822b257a5501e8e194f1d881e1}{%
+           family={Geim},
+           familyi={G\bibinitperiod},
+           given={Alexandra\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1689d33e5a6c1c7ee608d780f77c992b}{%
+           family={Evered},
+           familyi={E\bibinitperiod},
+           given={Simon\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=331c9116d0f5d6a5a43593ef1d1e8177}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Sophie\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=485e0b540063e10b369ffeee8081baaa}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Xingjian},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8b8eba1b361212a55ff62adb664391f7}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={Lisa\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=19f3e92397a12fdf21c4d824ebe1eb20}{%
+           family={Bluvstein},
+           familyi={B\bibinitperiod},
+           given={Dolev},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fc04f12436419e44a762e0e24ee966cd}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tout\bibnamedelima T},
+           giveni={T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=28a6aa289448ed258d404c6982cd2dd7}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6fc77d1d8f2ac7e701e7a4d34f8b42d4}{%
+           family={Vuletić},
+           familyi={V\bibinitperiod},
+           given={Vladan},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8fd921a549ae6718702b6c8c84fef487}{%
+           family={Lukin},
+           familyi={L\bibinitperiod},
+           given={Mikhail\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{09da78d32eadfbf09e8ccb9423077467}
+      \strng{fullhash}{d6f3de848918b6783c328e5d914e9778}
+      \strng{fullhashraw}{d6f3de848918b6783c328e5d914e9778}
+      \strng{bibnamehash}{09da78d32eadfbf09e8ccb9423077467}
+      \strng{authorbibnamehash}{09da78d32eadfbf09e8ccb9423077467}
+      \strng{authornamehash}{09da78d32eadfbf09e8ccb9423077467}
+      \strng{authorfullhash}{d6f3de848918b6783c328e5d914e9778}
+      \strng{authorfullhashraw}{d6f3de848918b6783c328e5d914e9778}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Neutral atoms are a promising platform for quantum science, enabling advances in areas ranging from quantum simulations1-3 and computation4-10 to metrology, atomic clocks11-13 and quantum networking14-16. Although atom losses typically limit these systems to a pulsed mode, continuous operation17-22 could substantially enhance cycle rates, remove bottlenecks in metrology23 and enable deep-circuit quantum evolution through quantum error correction24,25. Here we demonstrate an experimental architecture for high-rate reloading and continuous operation of a large-scale atom-array system while realizing coherent storage and manipulation of quantum information. Our approach utilizes a series of two optical lattice conveyor belts to transport atom reservoirs into the science region, where atoms are repeatedly extracted into optical tweezers without affecting the coherence of qubits stored nearby. Using a reloading rate of 300,000 atoms in tweezers per second, we create over 30,000 initialized qubits per second, which we leverage to assemble and maintain an array of over 3,000 atoms for more than 2 hours. Furthermore, we demonstrate persistent refilling of the array with atomic qubits in either a spin-polarized or a coherent superposition state while preserving the quantum state of stored qubits. Our results pave the way for the realization of large-scale continuously operated atomic clocks, sensors and fault-tolerant quantum computers.}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{number}{8087}
+      \field{title}{Continuous operation of a coherent 3,000-qubit system}
+      \field{volume}{646}
+      \field{year}{2025}
+      \field{pages}{1075\bibrangedash 1080}
+      \range{pages}{6}
+    \endentry
+    \entry{Suzuki25}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=028cc32d216f749bd829a16e529679b9}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Kaido},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4578e310e3f2d08e112190aa2401c585}{%
+           family={Harada},
+           familyi={H\bibinitperiod},
+           given={Ken-ichi},
+           giveni={K\bibinithyphendelim i\bibinitperiod}}}%
+        {{hash=4acaa9ae9a8a8579241294f1b0235838}{%
+           family={Iden},
+           familyi={I\bibinitperiod},
+           given={Ryo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d36cd0c2d9f6b0c6fbb8076396b35537}{%
+           family={Otabe},
+           familyi={O\bibinitperiod},
+           given={Sotatsu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bd364beb3f1e8f196d040e61b2f198c3}{%
+           family={Komori},
+           familyi={K\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f4ea57688c5ef1518ed45d9d69df0e2d}{%
+           family={Michimura},
+           familyi={M\bibinitperiod},
+           given={Yuta},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=82c572e18df0acb2117344d43a4cf63e}{%
+           family={Somiya},
+           familyi={S\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{3b1ec048db99572d0cbb07a12f0d544c}
+      \strng{fullhash}{e82ae3a52afa9b2d7bca43846419cbf3}
+      \strng{fullhashraw}{e82ae3a52afa9b2d7bca43846419cbf3}
+      \strng{bibnamehash}{3b1ec048db99572d0cbb07a12f0d544c}
+      \strng{authorbibnamehash}{3b1ec048db99572d0cbb07a12f0d544c}
+      \strng{authornamehash}{3b1ec048db99572d0cbb07a12f0d544c}
+      \strng{authorfullhash}{e82ae3a52afa9b2d7bca43846419cbf3}
+      \strng{authorfullhashraw}{e82ae3a52afa9b2d7bca43846419cbf3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present, to the best of our knowledge, the first demonstration of an optical spring in a signal-recycled Michelson interferometer without arm cavities. The setup utilizes multiple laser fields to achieve stable and precisely controllable detuning and incorporates a compliant suspension system comprising two double-spiral springs. These results support optical spring-enhanced interferometers with intracavity amplification, offering a promising avenue for improving high-frequency sensitivity in future gravitational-wave detectors.}
+      \field{journaltitle}{Opt. Express}
+      \field{month}{9}
+      \field{number}{19}
+      \field{title}{Observation of an optical spring in a robustly controlled signal-recycled Michelson interferometer}
+      \field{volume}{33}
+      \field{year}{2025}
+      \field{pages}{40026\bibrangedash 40039}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1364/OE.574126
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/oe/abstract.cfm?URI=oe-33-19-40026
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/oe/abstract.cfm?URI=oe-33-19-40026
+      \endverb
+      \keyw{Beam splitters; Michelson interferometers; Nonlinear optical crystals; Optical amplifiers; Optical constants; Quantum noise}
+    \endentry
+    \entry{Muller:10}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=bd3a94ded53b2df3f4d08462262f8a64}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0210659c69f3ec49fa1df7dd569edcf6}{%
+           family={Flagg},
+           familyi={F\bibinitperiod},
+           given={Edward\bibnamedelima B.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=39923a3c3461a1f19893775e3422608a}{%
+           family={Lawall},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=44025990c82d261fc76d51b09f77d3b9}{%
+           family={Solomon},
+           familyi={S\bibinitperiod},
+           given={Glenn\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{bc72c6e76de00616da005822a293e0dc}
+      \strng{fullhash}{7f02927f1ad046dbaca9171775719bf4}
+      \strng{fullhashraw}{7f02927f1ad046dbaca9171775719bf4}
+      \strng{bibnamehash}{bc72c6e76de00616da005822a293e0dc}
+      \strng{authorbibnamehash}{bc72c6e76de00616da005822a293e0dc}
+      \strng{authornamehash}{bc72c6e76de00616da005822a293e0dc}
+      \strng{authorfullhash}{7f02927f1ad046dbaca9171775719bf4}
+      \strng{authorfullhashraw}{7f02927f1ad046dbaca9171775719bf4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ultralow-loss concave micromirrors with radius of curvature below 60\&\#x3BC;m were fabricated by laser ablation and reflective coatings. A 10-\&\#x3BC;m-long microcavity with a mode volume of 40\&\#x3BC;m3 was set up with two such mirrors, and the cavity linewidth was measured both spectrally and temporally. The smallest linewidth obtained was 96MHz, corresponding to a quality factor of 3.3\&\#xD7;106 and a finesse in excess of 1.5\&\#xD7;105. With these parameters, we estimate that a variety of solid-state quantum emitters coupled to the cavity may enter the strong coupling regime.}
+      \field{journaltitle}{Opt. Lett.}
+      \field{month}{7}
+      \field{number}{13}
+      \field{title}{Ultrahigh-finesse, low-mode-volume Fabry\&\#x2013;Perot microcavity}
+      \field{volume}{35}
+      \field{year}{2010}
+      \field{pages}{2293\bibrangedash 2295}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1364/OL.35.002293
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/ol/abstract.cfm?URI=ol-35-13-2293
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/ol/abstract.cfm?URI=ol-35-13-2293
+      \endverb
+      \keyw{Fabry-Perot; Quantum optics; Cavity quantum electrodynamics; Laser ablation; Micromirrors; Mirrors; Tunable diode lasers; Whispering gallery modes}
+    \endentry
+    \entry{Hunger2010-nm}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=08177bf46eec93eca1e08e2fed2c211d}{%
+           family={Hunger},
+           familyi={H\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2a148424d1588a85f7488011822f1abf}{%
+           family={Steinmetz},
+           familyi={S\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=20999518b708bcbc84372180b08313ee}{%
+           family={Colombe},
+           familyi={C\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4707dab3c745dc61fac40f3ab4bbb214}{%
+           family={Deutsch},
+           familyi={D\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9298e5194eb6d3a8d20a7ce76491d65e}{%
+           family={Hänsch},
+           familyi={H\bibinitperiod},
+           given={T\bibnamedelima W},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=49db3c0e857efaf2115a866db2ad7190}{%
+           family={Reichel},
+           familyi={R\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{93af0de076ea5d3c31a980718cf80725}
+      \strng{fullhash}{aaabb3382324a77f82840a09761fe810}
+      \strng{fullhashraw}{aaabb3382324a77f82840a09761fe810}
+      \strng{bibnamehash}{93af0de076ea5d3c31a980718cf80725}
+      \strng{authorbibnamehash}{93af0de076ea5d3c31a980718cf80725}
+      \strng{authornamehash}{93af0de076ea5d3c31a980718cf80725}
+      \strng{authorfullhash}{aaabb3382324a77f82840a09761fe810}
+      \strng{authorfullhashraw}{aaabb3382324a77f82840a09761fe810}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have realized a fiber-based Fabry?Perot cavity with CO2 laser-machined mirrors. It combines very small size, high finesse , small waist and mode volume, and good mode matching between the fiber and cavity modes. This combination of features is a major advance for cavity quantum electrodynamics (CQED), as shown in recent CQED experiments with Bose?Einstein condensates enabled by this cavity (Colombe Y et al 2007 Nature 450 272). It will also be suitable for a wide range of other applications, including coupling to solid-state emitters, gas detection at the single-particle level, fiber-coupled single-photon sources and high-resolution optical filters with large stopband.}
+      \field{journaltitle}{New J. Phys.}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{A fiber {Fabry--Perot} cavity with high finesse}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{065038}
+      \range{pages}{1}
+    \endentry
+    \entry{enzian_phononically_2023}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=5f9a44110c5c25bf9e6c1bb3c20f1b59}{%
+           family={Enzian},
+           familyi={E\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=118cf5b00980f4c7a1e9983296cef241}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zihua},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9f42701df749ad12969baccaa0ece26a}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+        {{hash=71ac1138e8c1babbc26630e3f2bbe4ac}{%
+           family={Mathiassen},
+           familyi={M\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=affbefd7017a5d755fa416b975c46c9a}{%
+           family={Vibel},
+           familyi={V\bibinitperiod},
+           given={Toke},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0f17e05615b4ebf73051e0498c25a2c6}{%
+           family={Tsaturyan},
+           familyi={T\bibinitperiod},
+           given={Yeghishe},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=39d6778991b1ca6707f51a7460a12012}{%
+           family={Tagantsev},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2c4bbb878e4422db7f301c9d9068885c}{%
+           family={Schliesser},
+           familyi={S\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0e2343b74760639ad1efa14c67de7e19}{%
+           family={Polzik},
+           familyi={P\bibinitperiod},
+           given={Eugene\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5ad6f664a1cbf30fb1a30ed047908c2}
+      \strng{fullhash}{a1b53867aa3154ac1d787a45f6880aaf}
+      \strng{fullhashraw}{a1b53867aa3154ac1d787a45f6880aaf}
+      \strng{bibnamehash}{a5ad6f664a1cbf30fb1a30ed047908c2}
+      \strng{authorbibnamehash}{a5ad6f664a1cbf30fb1a30ed047908c2}
+      \strng{authornamehash}{a5ad6f664a1cbf30fb1a30ed047908c2}
+      \strng{authorfullhash}{a1b53867aa3154ac1d787a45f6880aaf}
+      \strng{authorfullhashraw}{a1b53867aa3154ac1d787a45f6880aaf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a highly reflective, sub-wavelength-thick membrane resonator featuring high mechanical quality factor and discuss its applicability for cavity optomechanics. The 88.5 nm thin stoichiometric silicon-nitride membrane, designed and fabricated to combine 2D-photonic and phononic crystal patterns, reaches reflectivities up to 99.89 \% and a mechanical quality factor of 2.9 × 107 at room temperature. We construct a Fabry-Perot-type optical cavity, with the membrane forming one terminating mirror. The optical beam shape in cavity transmission shows a stark deviation from a simple Gaussian mode-shape, consistent with theoretical predictions. We demonstrate optomechanical sideband cooling to {mK}-mode temperatures, starting from room temperature. At higher intracavity powers we observe an optomechanically induced optical bistability. The demonstrated device has potential to reach high cooperativities at low light levels desirable, for example, for optomechanical sensing and squeezing applications or fundamental studies in cavity quantum optomechanics; and meets the requirements for cooling to the quantum ground state of mechanical motion from room temperature.}
+      \field{day}{10}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{month}{4}
+      \field{note}{Publisher: Optica Publishing Group}
+      \field{number}{8}
+      \field{shortjournal}{Opt. Express, {OE}}
+      \field{title}{Phononically shielded photonic-crystal mirror membranes for cavity quantum optomechanics}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{31}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{13040\bibrangedash 13052}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1364/OE.484369
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\jacqu\\Zotero\\storage\\Q9SNQ5WN\\Enzian et al. - 2023 - Phononically shielded photonic-crystal mirror memb.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-31-8-13040
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-31-8-13040
+      \endverb
+      \keyw{Deformable mirrors,Dielectric mirrors,Light beams,Optical absorption,Quantum technology,Scanning electron microscopy}
+    \endentry
+    \entry{Ghadimi2018-ko}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=4b13d6f4387679b6795b8a7bdfe79768}{%
+           family={Ghadimi},
+           familyi={G\bibinitperiod},
+           given={A\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6d221c8fc2ef3ba8bfac393075b285e9}{%
+           family={Fedorov},
+           familyi={F\bibinitperiod},
+           given={S\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e90c5ed7ee4dd200c76e248b0f1e6222}{%
+           family={Engelsen},
+           familyi={E\bibinitperiod},
+           given={N\bibnamedelima J},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2028c954f9d46e896991202b4fd8d452}{%
+           family={Bereyhi},
+           familyi={B\bibinitperiod},
+           given={M\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2004d538fca86c0b09a3aefa1f6b01f2}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=21e0d55b0c2afdccbfa490a7bd68deab}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={D\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fc39d185e7ddc568c7b41c6e76963588}{%
+           family={Kippenberg},
+           familyi={K\bibinitperiod},
+           given={T\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science (AAAS)}%
+      }
+      \strng{namehash}{6d782018c58cd547a5ab88d704cb44de}
+      \strng{fullhash}{ecf8e664ef7c11194af6bb54f2a5b49c}
+      \strng{fullhashraw}{ecf8e664ef7c11194af6bb54f2a5b49c}
+      \strng{bibnamehash}{6d782018c58cd547a5ab88d704cb44de}
+      \strng{authorbibnamehash}{6d782018c58cd547a5ab88d704cb44de}
+      \strng{authornamehash}{6d782018c58cd547a5ab88d704cb44de}
+      \strng{authorfullhash}{ecf8e664ef7c11194af6bb54f2a5b49c}
+      \strng{authorfullhashraw}{ecf8e664ef7c11194af6bb54f2a5b49c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Better performance under stress Engineering stress or strain into materials can improve their performance. Adding mechanical stress to silicon chips, for instance, produces transistors with enhanced electron mobility. Ghadimi et al. explore the possibility of enhancing the vibrational properties of a micromechanical oscillator by engineering stress within the structure (see the Perspective by Eichler). By careful design of the micromechanical oscillator, and by building in associated stresses, exceptional vibrational properties can be produced. Such enhanced oscillators could be used as exquisite force sensors. Science , this issue p. 764 ; see also p. 706}
+      \field{journaltitle}{Science}
+      \field{month}{5}
+      \field{number}{6390}
+      \field{title}{Elastic strain engineering for ultralow mechanical dissipation}
+      \field{volume}{360}
+      \field{year}{2018}
+      \field{pages}{764\bibrangedash 768}
+      \range{pages}{5}
+    \endentry
+    \entry{amato}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=7caa5017a431848f37cfbda31aba3a68}{%
+           family={Amato},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Lyon}%
+      }
+      \strng{namehash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{fullhash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{fullhashraw}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{bibnamehash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{authorbibnamehash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{authornamehash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{authorfullhash}{7caa5017a431848f37cfbda31aba3a68}
+      \strng{authorfullhashraw}{7caa5017a431848f37cfbda31aba3a68}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{number}{2019LYSE1245}
+      \field{title}{{Low Thermal Noise Coating for New Generation Gravitational-Wave Detectors}}
+      \field{type}{PhD thesis}
+      \field{year}{2019}
+      \verb{file}
+      \verb https://theses.hal.science/tel-02475821v1/file/TH2019AmatoAlex2.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://theses.hal.science/tel-02475821
+      \endverb
+      \verb{url}
+      \verb https://theses.hal.science/tel-02475821
+      \endverb
+      \keyw{Thin films ; Internal friction ; Thermal noise ; Ellipsometry ; Urbach energy ; Gravitational waves ; Couches minces ; Frottement interne ; Bruit thermique ; Ellipsométrie ; Énergie d'Urbach ; Ondes gravitationnelles}
+    \endentry
+    \entry{Amato_2018}{article}{}{}
+      \name{author}{13}{}{%
+        {{hash=7caa5017a431848f37cfbda31aba3a68}{%
+           family={Amato},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=010b5511fc307d528d501e6a3703e7b9}{%
+           family={Cagnoli},
+           familyi={C\bibinitperiod},
+           given={Gianpietro},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b44e201f995d79a6463278e5d530d12c}{%
+           family={Canepa},
+           familyi={C\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0edb3a5f51dae21f3a0c6dc65aaeb1a}{%
+           family={Coillet},
+           familyi={C\bibinitperiod},
+           given={Elodie},
+           giveni={E\bibinitperiod}}}%
+        {{hash=68fa0dec7ad23e84ced20f6b8947c5b7}{%
+           family={Degallaix},
+           familyi={D\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a5a8d1879ab5d55ca4a4231e9d8dea0b}{%
+           family={Dolique},
+           familyi={D\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2ae0b34778d8abccffdf18a793c57267}{%
+           family={Forest},
+           familyi={F\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=10da7571c3798299f0c0948ff6599f3f}{%
+           family={Granata},
+           familyi={G\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=476b7bf3a5358860288b9b750715c58c}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Valérie},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c3f0c23b522b876a37a6398aa1a0ffd6}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fb0a54a678baa4b98e88e2c56d6931d1}{%
+           family={Pinard},
+           familyi={P\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=51729cc34e13d5940047e5ea0d221870}{%
+           family={Sassolas},
+           familyi={S\bibinitperiod},
+           given={Benoit},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0cb96c3e5cc3e3e5d60ea576790151dd}{%
+           family={Teillon},
+           familyi={T\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{03b076b63436ab5edda3c6ff41378fbe}
+      \strng{fullhash}{0031fa61061d4c3b612d1f073c609485}
+      \strng{fullhashraw}{0031fa61061d4c3b612d1f073c609485}
+      \strng{bibnamehash}{03b076b63436ab5edda3c6ff41378fbe}
+      \strng{authorbibnamehash}{03b076b63436ab5edda3c6ff41378fbe}
+      \strng{authornamehash}{03b076b63436ab5edda3c6ff41378fbe}
+      \strng{authorfullhash}{0031fa61061d4c3b612d1f073c609485}
+      \strng{authorfullhashraw}{0031fa61061d4c3b612d1f073c609485}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report on the optical, mechanical and structural characterization of the sputtered coating materials of Advanced LIGO, Advanced Virgo and KAGRA gravitational- waves detectors. We present the latest results of our research program aiming at decreasing coating thermal noise through doping, optimization of deposition parameters and post- deposition annealing. Finally, we propose sputtered Si3N4 as a candidate material for the mirrors of future detectors.}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{High-Reflection Coatings for Gravitational-Wave Detectors: State of The Art and Future Developments}
+      \field{volume}{957}
+      \field{year}{2018}
+      \field{pages}{012006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/957/1/012006
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1742-6596/957/1/012006
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1742-6596/957/1/012006
+      \endverb
+    \endentry
+    \entry{patange}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=ab7afc8ed87140093326d1aa0ed3a8e2}{%
+           family={Patange},
+           familyi={P\bibinitperiod},
+           given={Himanshu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Sorbonne Université}%
+      }
+      \strng{namehash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{fullhash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{fullhashraw}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{bibnamehash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{authorbibnamehash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{authornamehash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{authorfullhash}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \strng{authorfullhashraw}{ab7afc8ed87140093326d1aa0ed3a8e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{number}{2025SORUS100}
+      \field{title}{{RF Transduction in a DC-Biased Superconducting Electromechanical System}}
+      \field{type}{PhD thesis}
+      \field{year}{2025}
+      \verb{file}
+      \verb https://theses.hal.science/tel-05167100v1/file/147969_PATANGE_2025_archivage.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://theses.hal.science/tel-05167100
+      \endverb
+      \verb{url}
+      \verb https://theses.hal.science/tel-05167100
+      \endverb
+      \keyw{Cryogenic ; Radio Frequency ; Transduction ; Microwave ; Silicon Nitride ; Electromechanics ; Cryogénique ; Radiofréquence ; Transduction ; Micro-ondes ; Nitrure de silicium ; Electromécanique}
+    \endentry
+    \entry{norcada_sinmembrane}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c34736a912c5efa85dbb917cb4ee02ba}{%
+           family={{Norcada Inc.}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{fullhash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{fullhashraw}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{bibnamehash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{authorbibnamehash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{authornamehash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{authorfullhash}{c34736a912c5efa85dbb917cb4ee02ba}
+      \strng{authorfullhashraw}{c34736a912c5efa85dbb917cb4ee02ba}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.norcada.com/mems-products/high-q-silicon-nitride-membranes/}}
+      \field{note}{Accessed: 2026-01-15}
+      \field{title}{{High-Q Silicon Nitride Membranes}}
+      \field{year}{2026}
+    \endentry
+    \entry{norte_mechanical_2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1ee27713385e91d0860c42c1ade67600}{%
+           family={Norte},
+           familyi={N\bibinitperiod},
+           given={RA},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3ef7bef4031cf9752fd8c646e59532b7}{%
+           family={Moura},
+           familyi={M\bibinitperiod},
+           given={JP},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1f45cd382775faf93c643b9594e0907}{%
+           family={Regal},
+           familyi={R\bibinitperiod},
+           given={CA},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{fullhash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{fullhashraw}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{bibnamehash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{authorbibnamehash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{authornamehash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{authorfullhash}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \strng{authorfullhashraw}{6c10ae5f7a28cda8c6283e7393f42f86}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{14}
+      \field{title}{Mechanical resonators for quantum optomechanics experiments at room temperature}
+      \field{volume}{116}
+      \field{year}{2016}
+      \field{pages}{147202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.116.147202
       \endverb
     \endentry
     \entry{Sankey2010}{article}{}{}
@@ -640,6 +1824,7 @@
       \strng{authornamehash}{ccedbaf9137a5906fa4d830752046d08}
       \strng{authorfullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
       \strng{authorfullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -724,41 +1909,319 @@
       \verb http://www.nature.com/doifinder/10.1038/nature14672
       \endverb
     \endentry
+    \entry{Regal2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d1f45cd382775faf93c643b9594e0907}{%
+           family={Regal},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bace5ed02e1ef518b7b5803f51869df7}{%
+           family={Teufel},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ab513a16b998e6975e7db9f425fc194c}{%
+           family={Lehnert},
+           familyi={L\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{fullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{fullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{bibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorbibnamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authornamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorfullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \strng{authorfullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1745-2473}
+      \field{journaltitle}{Nature Physics}
+      \field{month}{5}
+      \field{number}{7}
+      \field{title}{{Measuring nanomechanical motion with a microwave cavity interferometer}}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{555\bibrangedash 560}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys974
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/nphys974
+      \endverb
+    \endentry
+    \entry{Groblacher_2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1ee27713385e91d0860c42c1ade67600}{%
+           family={Norte},
+           familyi={N\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3ef7bef4031cf9752fd8c646e59532b7}{%
+           family={Moura},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=37c735a96081a9db20cb8b056d3da9ee}{%
+           family={Gröblacher},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{fullhash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{fullhashraw}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{bibnamehash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{authorbibnamehash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{authornamehash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{authorfullhash}{3fd23d406523cdbcfdffcc10042759bb}
+      \strng{authorfullhashraw}{3fd23d406523cdbcfdffcc10042759bb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{4}
+      \field{title}{Mechanical Resonators for Quantum Optomechanics Experiments at Room Temperature}
+      \field{volume}{116}
+      \field{year}{2016}
+      \field{pages}{147202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.116.147202
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.116.147202
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.116.147202
+      \endverb
+    \endentry
+    \entry{Kippenberg_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9ef86c3b94e24ab7f66f649239494784}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Guanhao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0c407e365669b8566675d6760a2e53b3}{%
+           family={Beccari},
+           familyi={B\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e21f58aea699399be8dac3b01282822}{%
+           family={Engelsen},
+           familyi={E\bibinitperiod},
+           given={Nils\bibnamedelima J},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e942028fdca5a59483132ea52e113088}{%
+           family={Kippenberg},
+           familyi={K\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{7fbc25ece43ccb7ebe359d39c1d20c35}
+      \strng{fullhash}{bf9d18825a1d1b6132fd223b0a41a6f9}
+      \strng{fullhashraw}{bf9d18825a1d1b6132fd223b0a41a6f9}
+      \strng{bibnamehash}{7fbc25ece43ccb7ebe359d39c1d20c35}
+      \strng{authorbibnamehash}{7fbc25ece43ccb7ebe359d39c1d20c35}
+      \strng{authornamehash}{7fbc25ece43ccb7ebe359d39c1d20c35}
+      \strng{authorfullhash}{bf9d18825a1d1b6132fd223b0a41a6f9}
+      \strng{authorfullhashraw}{bf9d18825a1d1b6132fd223b0a41a6f9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At room temperature, mechanical motion driven by the quantum backaction of light has been observed only in pioneering experiments in which an optical restoring force controls the oscillator stiffness1,2. For solid-state mechanical resonators in which oscillations are controlled by the material rigidity, the observation of these effects has been hindered by low mechanical quality factors, optical cavity frequency fluctuations3, thermal intermodulation noise4,5 and photothermal instabilities. Here we overcome these challenges with a phononic-engineered membrane-in-the-middle system. By using phononic-crystal-patterned cavity mirrors, we reduce the cavity frequency noise by more than 700-fold. In this ultralow noise cavity, we insert a membrane resonator with high thermal conductance and a quality factor (Q) of 180 million, engineered using recently developed soft-clamping techniques6,7. These advances enable the operation of the system within a factor of 2.5 of the Heisenberg limit for displacement sensing8, leading to the squeezing of the probe laser by 1.09(1) dB below the vacuum fluctuations. Moreover, the long thermal decoherence time of the membrane oscillator (30 vibrational periods) enables us to prepare conditional displaced thermal states of motion with an occupation of 0.97(2) phonons using a multimode Kalman filter. Our work extends the quantum control of solid-state macroscopic oscillators to room temperature.}
+      \field{journaltitle}{Nature}
+      \field{month}{2}
+      \field{number}{7999}
+      \field{title}{Room-temperature quantum optomechanics using an ultralow noise cavity}
+      \field{volume}{626}
+      \field{year}{2024}
+      \field{pages}{512\bibrangedash 516}
+      \range{pages}{5}
+    \endentry
+    \entry{Schliesser_2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e9df2f76125113a9c5b018b835fcb64a}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=42bb131bd18bdc2c6af3dcec64b81c54}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Junxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0c3decd7361978627b0623ab30ac2ae7}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0f17e05615b4ebf73051e0498c25a2c6}{%
+           family={Tsaturyan},
+           familyi={T\bibinitperiod},
+           given={Yeghishe},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2c4bbb878e4422db7f301c9d9068885c}{%
+           family={Schliesser},
+           familyi={S\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{431dc4e1a6a83c1feaa9fe8e739a7d51}
+      \strng{fullhash}{ba2f075bafa7d5b192f01906c02b2c1e}
+      \strng{fullhashraw}{ba2f075bafa7d5b192f01906c02b2c1e}
+      \strng{bibnamehash}{431dc4e1a6a83c1feaa9fe8e739a7d51}
+      \strng{authorbibnamehash}{431dc4e1a6a83c1feaa9fe8e739a7d51}
+      \strng{authornamehash}{431dc4e1a6a83c1feaa9fe8e739a7d51}
+      \strng{authorfullhash}{ba2f075bafa7d5b192f01906c02b2c1e}
+      \strng{authorfullhashraw}{ba2f075bafa7d5b192f01906c02b2c1e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum mechanics dictates that the precision of physical measurements must always comply with certain noise constraints. In the case of interferometric displacement measurements, these restrictions impose a standard quantum limit (SQL), which optimally balances the precision of a measurement with its unwanted backaction1. To go beyond this limit, one must devise more sophisticated measurement techniques, which either `evade' the backaction of the measurement2 or achieve clever cancellation of the unwanted noise at the detector3,4. In the half-century since the SQL was established, systems ranging from LIGO5 to ultracold atoms6 and nanomechanical devices7,8 have pushed displacement measurements towards this limit, and a variety of sub-SQL techniques have been tested in proof-of-principle experiments9--13. However, so far, no experimental system has successfully demonstrated an interferometric displacement measurement with sensitivity (including all relevant noise sources---thermal, backaction and imprecision) below the SQL. Here, we exploit strong quantum correlations in an ultracoherent optomechanical system to demonstrate off-resonant force and displacement sensitivity reaching 1.5 dB below the SQL. This achieves an outstanding goal in mechanical quantum sensing and further enhances the prospects of using such devices for state-of-the-art force sensing applications.Strong quantum correlations in an ultracoherent optomechanical system are used to demonstrate a displacement sensitivity that is below the standard quantum limit.}
+      \field{journaltitle}{Nat. Phys.}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Continuous force and displacement measurement below the standard quantum limit}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{pages}{745\bibrangedash 749}
+      \range{pages}{5}
+    \endentry
+    \entry{Underwood_2015}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=f3ebe3040c5e0c29424e901a08345acd}{%
+           family={Underwood},
+           familyi={U\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ddd8f6843cce6082484cfde9cf3df7d5}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=98056d9ddecda0076a31a183e3e69326}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c0614e3cda3d136f04f8e826877d2c3d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ccf87731e812c2775e6cdb36ce249710}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bc314b0fde106a5a23750e4ab0c0fb99}{%
+           family={Shkarin},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=033e22c1ba8598867866ad28ac8d0004}{%
+           family={Børkje},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{ddd075d4bf5d26bd796cdbb558e0461c}
+      \strng{fullhash}{50684d40018879ba5346bdb8e338b6cb}
+      \strng{fullhashraw}{50684d40018879ba5346bdb8e338b6cb}
+      \strng{bibnamehash}{ddd075d4bf5d26bd796cdbb558e0461c}
+      \strng{authorbibnamehash}{ddd075d4bf5d26bd796cdbb558e0461c}
+      \strng{authornamehash}{ddd075d4bf5d26bd796cdbb558e0461c}
+      \strng{authorfullhash}{50684d40018879ba5346bdb8e338b6cb}
+      \strng{authorfullhashraw}{50684d40018879ba5346bdb8e338b6cb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Phys. Rev. A}
+      \field{month}{12}
+      \field{title}{Measurement of the motional sidebands of a nanogram-scale oscillator in the quantum regime}
+      \field{volume}{92}
+      \field{year}{2015}
+      \field{pages}{061801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.92.061801
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.92.061801
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.92.061801
+      \endverb
+    \endentry
   \enddatalist
   \missing{AmatoPhD}
   \missing{Black_PDH_2001}
-  \missing{Harris2008}
-  \missing{LIGO_optics}
-  \missing{LMA_IBS}
   \missing{McKenzie2004}
-  \missing{Neuhauser_Thesis_2021}
-  \missing{Norcada_datasheet}
   \missing{OFHC_review}
-  \missing{PatangePhD}
-  \missing{PyRPL_Article}
-  \missing{PyRPL_Docs}
+  \missing{Saarinen:23}
   \missing{Schumaker1986}
   \missing{Schumaker1987}
   \missing{SiN_cryogenic}
   \missing{SiN_review}
   \missing{Siegman1986}
-  \missing{Vahlbruch2006}
-  \missing{Vyatchanin1993}
   \missing{aasi_enhanced_2013}
   \missing{bachor_guide_2004}
   \missing{bonavena_characterization_2024}
   \missing{bonavena_frequency-dependent_2023}
   \missing{bonavena_thesis_2024}
   \missing{braginsky_quantum_1992}
-  \missing{coating_review}
   \missing{croquette_thesis}
   \missing{dumont_cavity_2017}
   \missing{eckardt_high-efficiency_2019}
   \missing{harry_advanced_2010}
   \missing{kourogi_high-efficiency_2020}
-  \missing{nanofab_review}
   \missing{neuhaus_thesis_2021}
-  \missing{optomech_challenges}
   \missing{thompson_coupling_2013}
   \missing{thompson_strong_2008}
 \endrefsection

@@ -372,6 +372,143 @@ S^{r}_{qq,\min}=(1+|\mathcal{K}|^{2})e^{-2r}
 \]
 
 
+\paragraph{Derivative of the optimal readout angle at \texorpdfstring{$\Omega=\Omega_m$}{Omega = Omega\_m}.}
+We start from the optimal readout angle condition
+\begin{equation}
+2\theta_{\rm opt}(\Omega)=
+\arctan\!\left(
+\frac{2\,|\mathcal K(\Omega)|\cos\varphi_m(\Omega)}{1-|\mathcal K(\Omega)|^2}
+\right),
+\end{equation}
+where \(\mathcal K(\Omega)=|\mathcal K(\Omega)|e^{i\varphi_m(\Omega)}\). Using
+\begin{equation}
+|\mathcal K(\Omega)|\cos\varphi_m(\Omega)=\Re\{\mathcal K(\Omega)\},
+\end{equation}
+this may be written equivalently as
+\begin{equation}
+2\theta_{\rm opt}(\Omega)=
+\arctan\!\left(
+\frac{2\,\Re\{\mathcal K(\Omega)\}}{1-|\mathcal K(\Omega)|^2}
+\right).
+\end{equation}
+Define
+\begin{equation}
+u(\Omega)\equiv \frac{2\,\Re\{\mathcal K(\Omega)\}}{1-|\mathcal K(\Omega)|^2},
+\end{equation}
+so that \(2\theta_{\rm opt}(\Omega)=\arctan u(\Omega)\). Differentiating yields
+\begin{equation}
+\frac{d\theta_{\rm opt}}{d\Omega}
+=\frac{1}{2}\,\frac{1}{1+u(\Omega)^2}\,\frac{du}{d\Omega}.
+\label{eq:dtheta_du}
+\end{equation}
+
+To compute \(du/d\Omega\), write \(u(\Omega)=N(\Omega)/D(\Omega)\) with
+\begin{equation}
+N(\Omega)=2\,\Re\{\mathcal K(\Omega)\},\qquad D(\Omega)=1-|\mathcal K(\Omega)|^2.
+\end{equation}
+The quotient rule gives
+\begin{equation}
+\frac{du}{d\Omega}
+=
+\frac{N'(\Omega)D(\Omega)-N(\Omega)D'(\Omega)}{D(\Omega)^2}.
+\end{equation}
+Using \(N'(\Omega)=2\,\dfrac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\) and
+\(D'(\Omega)=-\dfrac{d}{d\Omega}|\mathcal K(\Omega)|^2\), we obtain
+\begin{equation}
+\frac{du}{d\Omega}
+=
+\frac{
+2\left(1-|\mathcal K|^2\right)\dfrac{d}{d\Omega}\Re\{\mathcal K\}
++
+2\,\Re\{\mathcal K\}\,\dfrac{d}{d\Omega}|\mathcal K|^2
+}{
+\left(1-|\mathcal K|^2\right)^2
+}.
+\label{eq:du}
+\end{equation}
+Combining Eqs.~\eqref{eq:dtheta_du} and \eqref{eq:du} yields the general expression
+\begin{equation}
+\frac{d\theta_{\rm opt}}{d\Omega}
+=
+\frac{
+\left(1-|\mathcal K|^2\right)\dfrac{d}{d\Omega}\Re\{\mathcal K\}
++
+\Re\{\mathcal K\}\,\dfrac{d}{d\Omega}|\mathcal K|^2
+}{
+\left(1-|\mathcal K|^2\right)^2\left(1+u^2\right)
+}.
+\label{eq:dtheta_general}
+\end{equation}
+
+We now specialize to the case
+\begin{equation}
+\mathcal K(\Omega)=\frac{\mathcal C^2}{2}\hbar\,\chi(\Omega),
+\qquad
+\chi(\Omega)=\frac{1}{m\big(\Omega_m^2-\Omega^2-i\Gamma_m\Omega\big)}.
+\end{equation}
+At \(\Omega=\Omega_m\), the denominator reduces to \(-i\Gamma_m\Omega_m\), so
+\begin{equation}
+\chi(\Omega_m)=\frac{i}{m\Gamma_m\Omega_m},
+\qquad\Rightarrow\qquad
+\Re\{\mathcal K(\Omega_m)\}=0.
+\end{equation}
+Consequently \(u(\Omega_m)=0\), and Eq.~\eqref{eq:dtheta_general} simplifies to
+\begin{equation}
+\left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
+=
+\frac{1}{1-|\mathcal K(\Omega_m)|^2}\;
+\left.\frac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\right|_{\Omega_m}.
+\label{eq:dtheta_res_simplified}
+\end{equation}
+
+To evaluate the remaining derivative, write the susceptibility denominator as
+\(a(\Omega)-ib(\Omega)\) with \(a(\Omega)=\Omega_m^2-\Omega^2\) and
+\(b(\Omega)=\Gamma_m\Omega\). One finds
+\begin{equation}
+\chi(\Omega)=\frac{a(\Omega)+ib(\Omega)}{m\big(a(\Omega)^2+b(\Omega)^2\big)},
+\qquad\Rightarrow\qquad
+\Re\{\chi(\Omega)\}=\frac{a(\Omega)}{m\big(a(\Omega)^2+b(\Omega)^2\big)}.
+\end{equation}
+Differentiating and evaluating at \(\Omega=\Omega_m\) (for which \(a(\Omega_m)=0\)) gives
+\begin{equation}
+\left.\frac{d}{d\Omega}\Re\{\chi(\Omega)\}\right|_{\Omega_m}
+=
+-\frac{2}{m\,\Gamma_m^2\,\Omega_m}.
+\end{equation}
+Using \(\Re\{\mathcal K\}=\dfrac{\mathcal C^2}{2}\hbar\,\Re\{\chi\}\), we obtain
+\begin{equation}
+\left.\frac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\right|_{\Omega_m}
+=
+-\frac{\mathcal C^2\hbar}{m\,\Gamma_m^2\,\Omega_m}.
+\label{eq:dReK_res}
+\end{equation}
+Inserting Eq.~\eqref{eq:dReK_res} into Eq.~\eqref{eq:dtheta_res_simplified} finally yields
+\begin{equation}
+\boxed{
+\left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
+=
+-\frac{\mathcal C^2\hbar}{m\,\Gamma_m^2\,\Omega_m}\;
+\frac{1}{1-|\mathcal K(\Omega_m)|^2}
+}.
+\end{equation}
+
+Equivalently, since
+\begin{equation}
+|\mathcal K(\Omega_m)|
+=
+\left|\frac{\mathcal C^2}{2}\hbar\,\chi(\Omega_m)\right|
+=
+\frac{\mathcal C^2\hbar}{2m\,\Gamma_m\,\Omega_m},
+\end{equation}
+one may rewrite the result as
+\begin{equation}
+\boxed{
+\left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
+=
+-\frac{2|\mathcal K(\Omega_m)|}{\Gamma_m\left(1-|\mathcal K(\Omega_m)|^2\right)}
+}.
+\end{equation}
+
 \paragraph{resultst to be used}
 
 \begin{equation}

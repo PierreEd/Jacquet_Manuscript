@@ -130,8 +130,7 @@ while for an amplitude squeezed field, the displacement spectrum reads
 \begin{equation}
   S_{xx}^{\pi}[\Omega] =  \mathcal{C}^{-2}  e^{+2r} + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 e^{-2r}
 \end{equation}
-We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. The input cross correlations being zero, this is completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively.
-However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. \\ 
+We then see that phase squeezing reduces the shot noise contribution but increases the radiation pressure noise contribution, while amplitude squeezing reduces the radiation pressure noise contribution but increases the shot noise contribution. The input cross correlations being zero, this is completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively, as seen in Fig.\ref{fig:SQLVirgo}.(a) and Fig.\ref{fig:SQL_LKB}.(a). However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit. This is illustrated in figure \ref{fig:freq_indep_squeezing}. \\ 
 
 Now consider an input squeezed state with a frequency-independent squeezing angle $\theta=\pi/4$ with covariance matrix
 \begin{equation*}
@@ -164,7 +163,7 @@ Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the dis
   \label{fig:SQL_LKB}
 \end{figure}
 
-Additionally, and as seen in Fig ..., the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Omega_{\rm SQL}$. \\
+Additionally, and as seen in Fig.\ref{fig:FDS_angle}, the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Omega_{\rm SQL}$. \\
 
 This motivates the use of frequency-dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation pressure noise need to be correlated in a frequency-dependent manner to optimally lower the total displacement noise in the vicinity of the mechanical resonance. 
 
@@ -184,7 +183,7 @@ The resulting displacement spectrum then reads
       & - \hbar |\chi[\Omega]| \sinh 2r \, \sin 2\theta[\Omega] \, \cos \phi_m[\Omega]
   \end{split}
 \end{equation}
-As shown in the annex, picking the squeezing angle as
+As shown in the Annex A, picking the squeezing angle as
 \begin{equation}
   2 \theta[\Omega] = \arctan \Big[\dfrac{2|\mathcal{K}[\Omega]|\cos \phi_m[\Omega]}{1 - |\mathcal{K}[\Omega]|^2}\Big]
 \end{equation}
@@ -220,34 +219,71 @@ which is the free-mass approximation result used in the GW community.
 
 \subsection{Filter Cavities for Frequency-Dependent Squeezing}
 
-To generate frequency-dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency-independent squeezed state off a single-sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency-dependent angle. 
-The transfer matrix for a single sideband from a detuned single port cavity is given by
-\begin{equation*}
-    \kappa \mathrm M_{\Delta}^{-1}[\Omega]  - \mathbf{1} = \begin{pmatrix}
-      \dfrac{\kappa/2 + i(\Delta + \Omega)}{\kappa/2 - i(\Delta + \Omega)} & 0 \\[10pt]
-      0 & \dfrac{\kappa/2 - i(\Delta - \Omega)}{\kappa/2+ i(\Delta - \Omega)}
-    \end{pmatrix}
-\end{equation*}
+To generate frequency-dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency-independent squeezed state off a single-sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency-dependent angle as seen in Fig.\cite{FDS_QSD} \\ 
 
-
-We recall from section II.1.4 that the reflected quadratures from a detuned cavity are given by
+In the table-top optomechanical experiment context where the mechanical resonance frequency $\Omega_m$ is much larger than the mechanical linewidth $\Gamma_m$, the optimal squeezing angle varies rapidly around the mechanical resonance frequency, requiring a filter cavity with a bandwidth on the order of the mechanical linewidth $\kappa_{\rm fc} \sim \Gamma_m$. Since it needs to match the phase response of the optomechanical system dictated by the mechanical succeptibility, the filter cavity needs to be detuned by $\Delta_{\rm fc} = - \Omega_m$ to provide the right rotation direction. We then want to derive the derivative of the optimal squeezing angle at the mechanical resonance frequency to relate it to the filter cavity bandwidth. We start from the optimal squeezing angle expression
 \begin{equation*}
-    \mathbf{T}_{\mathrm{r}}[\Omega]=  \frac{1}{(\kappa/2 - i\Omega)^{2}+\Delta^{2}}
-\begin{pmatrix}
-     (\kappa/2)^2 - \Delta^2 + \Omega^2  & - \kappa \Delta  \\[6pt]
-    + \kappa \Delta  & ( \kappa/2)^2 - \Delta^2 + \Omega^2 
-\end{pmatrix}
+  \theta[\Omega] = \dfrac{1}{2} \arctan \Big[\dfrac{2|\mathcal{K}[\Omega]|\cos \phi_m[\Omega]}{1 - |\mathcal{K}[\Omega]|^2}\Big]
 \end{equation*}
-such that the phase picked up by sidebands at frequency $\Omega$ is given by
+and we give the derivative at the mechanical resonance frequency $\Omega = \Omega_m$ derived in the Annex A:
 \begin{equation}
-    \phi_{\mathrm{fc}}[\Omega] = \arctan \left(\dfrac{2 \Delta \kappa }{\kappa^2/4 - \Delta^2 + \Omega^2}\right) 
+  \left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
+=
+-\frac{2|\mathcal K(\Omega_m)|}{\Gamma_m\left(1-|\mathcal K(\Omega_m)|^2\right)}
 \end{equation}
+As seen in \ref{sec:simple_cavities}, the derivative of the phase shift picked up by the two-photon quadratures in a high-finesse cavity is given by 
+\begin{equation*}
+  \left.\dfrac{\partial \bar \phi}{\partial \Omega}\right|_{\Omega = -\Delta} = -\dfrac{2}{\kappa}
+\end{equation*}
+and simply equating both derivatives leads to the filter cavity bandwidth required to match the optimal squeezing angle rotation:
+\begin{equation}
+  \kappa_{\rm fc} = \Gamma_m   \dfrac{1 - |\mathcal K(\Omega_m)|^2}{|\mathcal K(\Omega_m)|}. 
+\end{equation}
+Upon the single-port cavity assumption, this expression can be used to compute the required input mirror transmittivity of the filter cavity to achieve the desired bandwidth $\kappa_{\rm fc}$, this is 
+\begin{equation}
+  T_{\rm fc} = \dfrac{L_{\rm fc} \kappa_{\rm fc}}{c} 
+\end{equation}
+where $L_{\rm fc}$ is the filter cavity length. Although this expression gives a first estimate for the required length and finesse necessary for such a task, a more accurate treatment taking into account losses and non-ideal escape efficiency is required to optimize the filter cavity design. This additionally motivates the use of three-mirror cavities as filter cavities to have more degrees of freedom to optimize the cavity parameters. The properties of such cavities are detailed in the next subsection. \\
+
+For a Virgo-LIGO type interferometer, where both the bandwidth of the filter cavity are sideband frequencies of interest are comparable to the mechanical resonance frequency $\kappa_{\rm fc}, \Omega \sim \Omega_m$, and where the free-mass approximation holds, the relative optimal squeezing angle varies slowly with frequency, requiring a filter cavity bandwidth on the order of the mechanical resonance frequency $\kappa_{\rm fc} \sim \Omega_m$. The filter cavity detuning is then set to $\Delta_{\rm fc} = - \Omega_{\rm SQL}$ to provide the right rotation direction around the SQL frequency. In this regime, the optimal filter cavity parameters were derived by C. Whittle \textit{et al.} \cite{whittle_optimal_2020}, leading to the expressions
+
+\newpage 
+
+Following Whittle \textit{et al.} (Phys.\ Rev.\ D \textbf{102}, 102002 (2020)), in the single-port (single-ended) and low-loss regime, the filter cavity can be parametrized by a coupler-limited bandwidth $\gamma$ and a loss-limited bandwidth $\lambda$,
+\[
+\gamma=\frac{c\,T_{\rm in}}{4L_{\rm fc}},\qquad \lambda=\frac{c\,A}{4L_{\rm fc}},
+\]
+where $L_{\rm fc}$ is the cavity length, $T_{\rm in}$ the input-mirror power transmissivity, and $A$ the round-trip power loss. Requiring the quadrature rotation produced by the cavity reflection to match the optimal frequency-dependent rotation $\alpha_{\rm opt}(\Omega)=\arctan(\Omega_{\rm SQL}^2/\Omega^2)$ leads to the phase-matching conditions
+\[
+2\gamma\,\Delta\omega_{\rm fc}=\Omega_{\rm SQL}^2,\qquad
+\gamma^2-\lambda^2-\Delta\omega_{\rm fc}^{\,2}=0,
+\]
+which admit the closed-form solution (expressed in terms of $\lambda$ and $\Omega_{\rm SQL}$):
+\[
+\gamma=\sqrt{\frac{\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}},\qquad
+|\Delta\omega_{\rm fc}|=\sqrt{\frac{-\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}}.
+\]
+The \emph{sign} of $\Delta\omega_{\rm fc}$ is then chosen to obtain the desired \emph{rotation direction} (in many GW-detector conventions one sets $\Delta\omega_{\rm fc}=-|\Delta\omega_{\rm fc}|$ around $\Omega_{\rm SQL}$). Finally, the corresponding optimal input coupler transmissivity follows directly from the bandwidth,
+\[
+T_{\rm in}^{\rm(opt)}=\frac{4L_{\rm fc}}{c}\,\gamma,
+\]
+(with losses entering through $\gamma(\lambda,\Omega_{\rm SQL})$ above).
 
 
+  
+
+
+Eventually, the assumptions we made to derive the table-top optomechanical experiment filter cavity parameters break down, since both derivatives $\partial_\Omega \phi_+$ and $\partial_\Omega \phi_-$ contribute significantly to the optimal squeezing angle rotation rate. 
+
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/QSD_sqzFDS.pdf}
+  \caption{}
+  \label{fig:FDS_QSD}
+\end{figure}
 
 \subsection{Numerical simulations}
-
-
 
 \section{Cavity Optomechanics with Membrane based systems }
 \subsection{Classical Description}
@@ -375,7 +411,7 @@ such that the resulting cavity finesse is given by
 
 
 \subsection{Quantum Description}
-We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three-mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? \\ 
+We now turn to the quantum description of the membrane based optomechanical system. A question that naturally arises is how to describe best this three-mirror cavity quantum mechanically: should we consider two independent optical modes in each subcavity, coupled by photon tunneling through the membrane? Or should we consider the whole cavity as a single optical mode, whose resonance frequency is modified by the membrane position (and given above)? 
 
 
 \subsubsection{Two-Cavity Model}
@@ -386,7 +422,7 @@ We start by looking at the two-cavity model. Using the same tools as in Chapter 
 with \(\omega_{L,R}\) the unperturbed resonance frequencies of the subcavities and \(G_L = \omega_{L}/L_1\) and \(G_R = - \omega_{R}/L_2\) their respective optomechanical couplings. 
 The whole system features a network of optical modes varying linearly with the membrane position, coupled by the membrane transmission. \\ 
 
-In Vincent Dumont's PhD work, quadratic points (where \(G^{(1)} = 0\) and \(G^{(2)} \neq 0\)) were the centerfold of the study, in the high membrane reflectivity regime \cite{dumont_cavity_2017}. It was then sufficient to consider two optical modes coupled by photon tunneling through the membrane. \\ 
+In V. Dumont's PhD work, quadratic points (where \(G^{(1)} = 0\) and \(G^{(2)} \neq 0\)) were the centerfold of the study, in the high membrane reflectivity regime \cite{dumont_cavity_2017}. It was then sufficient to consider two optical modes coupled by photon tunneling through the membrane. \\ 
 
 However, in our case, we focus on the sole dispersive coupling regime in the MATE configuration, and we additionally consider a low membrane reflectivity. The optimal point to do so is when the first long cavity is on resonance, and when the short one is anti-resonant. With a lowered reflectivity, the coupling between subcavity modes increases, leading to larger mode splittings at the avoided crossings, until the two subcavities are fully hybridized into new cavity modes spanning both subcavities \cite{thompson_strong_2008, thompson_coupling_2013}. \\ 
 
