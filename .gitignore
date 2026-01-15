@@ -1,11 +1,23 @@
-# Ignore log files
-*.log
-
 # Ignore LaTeX auxiliary files
 *.aux
-*.toc
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.maf
+*.mtc*
 *.out
+*.run.xml
+*.synctex
 *.synctex.gz
+*.toc
+*.lot
+*.lof
+*.nav
+*.snm
+*.vrb
 
 # Ignore temporary files
 *.tmp
