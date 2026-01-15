@@ -2,7 +2,6 @@
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
 \chapter{Theory: Background} \label{chap:theory}
 This chapter covers the elementary concepts required to describe a membrane based optomechanical system in a quantum regime. We will first recall basics on optical field quantization as well as describe the coherent and squeezed light fields, to then turn to the more specific frequency-dependent squeezed light fields. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. Finally, we will describe optical detection schemes and what they measure. 
-\newpage
 \minitoc
 \newpage
 \section{Optics}
@@ -47,12 +46,11 @@ where $H_m, H_n$ are Hermite polynomials.
 \end{figure}
 
 \subsection{Quantum Description}
-
 \subsubsection{Quantised Electromagnetic Field }
 % \the\textwidth
 We will consider both cases of a finite quantisation volume $V$ and an infinite volume: when dealing with cavity modes, we will use the finite volume description, while for propagating modes carrying sideband correlations we will use the infinite volume description, under the two-photon formalism prescription. Both description are linked through the input-output formalism introduced later on. \\
 
-We first consider the quantised electromagnetic field in a volume $V$. The electric field operator can be written as  
+We first consider the quantised electromagnetic field in a volume $V$. The electric field operator can be written as \cite{Oelker2016PhD} 
 \begin{equation}
 \hat{\mathbf{E}}(\mathbf{r}, t) 
 = i \sum_{\ell} \mathcal{E}_\ell 
@@ -66,14 +64,14 @@ where   $\mathcal{E}_\ell = \sqrt{\hbar \omega_\ell / 2 \varepsilon_0 V}$ is the
 \end{equation*}
 where we assumed a linearly-polarized field along the $x$-axis, with $\boldsymbol{\epsilon}_x$ the corresponding unit vector. The index $\ell = (m,n)$ then labels the different spatial modes, the Hermite--Gaussian modes in our case. \\ 
 
-In the limit of an infinite quantisation volume $V \to \infty$, the discrete mode index $\ell$ becomes a continuous variable i.e. the mode spacing becomes infinitesimal. As detailed in the Appendix A, we now need to consider a continuum of modes with annihilation operator $\hat a[\omega]$ labeled by their angular frequency $\omega$. To come down to the two-photon formalism, we make the following assumptions : 
+In the limit of an infinite quantisation volume $V \to \infty$, the discrete mode index $\ell$ becomes a continuous variable i.e. the mode spacing becomes infinitesimal. As detailed in the Appendix A, we now need to consider a continuum of modes with annihilation operator $\hat a[\omega]$ labeled by their angular frequency $\omega$. To come down to the two-photon formalism, we make the following assumptions 
 \begin{itemize}
     \item we consider frequencies $\omega = \omega_0 \pm \Omega$ centered around a carrier frequency $\omega_0$, with $\Omega  \in [-2 \pi B,+2 \pi B] \ll \omega_0$ where $B$ is the bandwidth. This is valid since the bandwidth $B$, generally up to tens of GHz, is small compared to $\omega_0/2\pi$ wich is hundreds of THz for optical frequencies. 
     \item we consider a single spatial mode, i.e. we drop the spatial dependence of the field and consider only one transverse mode function $\mathbf{f}(\mathbf{r})$, the fundamental Gaussian mode imposed by the laser source and/or spatial filtering elements. This is valid since the spatial envelope of the beam does not vary significantly over the considered bandwidth. The spatial mode function is then factored out of the integrals over frequency.
     \item we consider the electric field operator to only be dependent on time $t$, having projected the field onto the transverse mode function and integrated over the transverse plane, as well as setting the propagation coordinate $z=0$ for simplicity.
 \end{itemize}
 
-Upon these assumptions, the electric field operator reduces to a time-dependent operator (Heisenberg picture) expressed as
+Upon these assumptions, the electric field operator reduces to a time-dependent operator (Heisenberg picture) expressed as 
 \begin{equation}
   \begin{split}
    \hat{E}(t) =  \mathcal{E}_0 \bigg[ \cos ( \omega_0 \, t - \frac{\pi}{2} )   \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, \ & (\hat{a}_+^{\vphantom{\dagger}} + \, \hat{a}_-^{\dagger})\,e^{-i\Omega t}   \\ 
@@ -616,7 +614,7 @@ For the plano-concave cavity, the stability condition reads
     L < R
 \end{equation}
 
-\noindent \textbf{Planar traveling wave cavities:} We now consider a triangular cavity formed by two concave mirrors of radius of curvature $R$ and one flat mirror  (Fig \ref{fig:cavity_types}.(c)). The stability condition reads
+\noindent \textbf{Planar traveling-wave cavities:} We now consider a triangular cavity formed by two concave mirrors of radius of curvature $R$ and one flat mirror  (Fig \ref{fig:cavity_types}.(c)). The stability condition reads
 \begin{equation}
    \quad 0 < L_{rt} < 2R \cos(\theta)
 \end{equation}
@@ -673,7 +671,7 @@ We consider a single field cavity mode described by the annihilation operator \(
 \label{eq:qle}
 \end{split}
 \end{equation}
-where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\mathcal{L}/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Here losses $\mathcal{L}$ are unitless. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by:
+where  \(\kappa = \kappa_0 + \kappa_1 + \kappa_2\) is the total decay rate, with $\kappa_0=\mathcal{L}/\tau$ and $ \delta \hat{a}_{\mathrm{l}}(t)$ the rate and fluctuation operator of additional losses. Here losses $\mathcal{L}$ are unitless. Another key element to deriving both steady state behaviour as well as quadrature spectra is the input-output formula given by \cite{gardiner}:
 \begin{equation}
   \hat{a}_{\mathrm{ref}} = \sqrt{\kappa_{1}}\hat{a} - \hat{a}_{\mathrm{in}} , \quad \hat{a}_{\mathrm{trans}} = \sqrt{\kappa_{2}}\hat{a} - \delta \hat{a}_{\mathrm{vac}} 
 \end{equation}
@@ -746,10 +744,11 @@ Measuring all these quantities then allows to fully characterize the cavity para
 
 
 
-\noindent \textbf{Mean field solution (Dynamical case): } \\
+\noindent \textbf{Mean field solution (Dynamical case): } 
 We now let the detuning vary linearly in time, and express it in units of cavity bandwidth as $\Delta(t)= \Delta_0 + v \frac{\kappa^2}{2}t$ where we define $v$ as the sweep speed in units of cavity bandwidth per $\kappa^{-1}$. The intracavity field yields the utile differential equation
 \begin{equation}
   \dot{\bar{\alpha}}(t) = -\Bigg(\frac{\kappa}{2} - i\Big(\Delta_0 + \frac{v \kappa^2}{2}t\Big)\Bigg) \bar{\alpha}(t) + \sqrt{\kappa_1} \, \bar{\alpha}_{\mathrm{in}}
+  \label{eq:dyn_cav}
 \end{equation} 
 This is solved by the means of integration factor method, such that we find
 \begin{equation}
@@ -769,7 +768,7 @@ This is solved by the means of integration factor method, such that we find
 This expression describes the transient response of the intracavity field as the detuning is swept through resonance. When scanning over the cavity resonance at a rate exceeding the cavity bandwidth, photons at various detuning start to build up in the cavity without reaching the steady state value. This results in a characteristic asymmetric lineshape, where these different \textit{colored} photons start beating against each other, leading to oscillations in the transmitted and reflected intensities. This is illustrated in Fig \ref{fig:opticalRD}.(a) for different sweep speeds. The above does feature an analytical formula involving error functions erf, such that can either fit the data by performing a numerical integration or the analytical formula. However if the data array feature too few points numerical integration becomes numerically costly.  \\
 
 
-The finesse–extraction procedure of Poirson \textit{et al.}~\cite{Poirson:97} can be expressed in our notation by identifying their cavity length $d_{0}$ with our $L$, and their bandwidth $\Omega_{r}$ with $\kappa/2$. In the fast--sweep regime—equivalent to our linear detuning sweep $\Delta(t)=\Delta_{0}+v_{\Delta} t$—the transmitted intensity displays a sequence of maxima originating from the same interference mechanism responsible for the oscillatory behaviour in our analytical solution (Eq.~(1.71)). Poirson \textit{et al.} show that the time interval $\Delta t$ between the first two transmitted maxima satisfies, near $\Delta t\simeq \tau$, the relation
+The finesse–extraction procedure of Poirson \textit{et al.}~\cite{Poirson:97} can be expressed in our notation by identifying their cavity length $d_{0}$ with our $L$, and their bandwidth $\Omega_{r}$ with $\kappa/2$. In the fast--sweep regime—equivalent to our linear detuning sweep $\Delta(t)=\Delta_{0}+v_{\Delta} t$—the transmitted intensity displays a sequence of maxima originating from the same interference mechanism responsible for the oscillatory behaviour in our analytical solution (\ref{eq:dyn_cav}). Poirson \textit{et al.} show that the time interval $\Delta t$ between the first two transmitted maxima satisfies, near $\Delta t\simeq \tau$, the relation
 \begin{equation}
     \frac{\pi c}{L}\,\Delta t \;\simeq\; \frac{F}{e}\,\frac{I_{1}}{I_{2}},
     \label{eq:poirsoneq21}
@@ -847,6 +846,7 @@ and their noise spectra are
    \mathbf{S}_{\mathrm{ref}}[\Omega] & =\frac{(\kappa_1-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{S}_{\mathrm{in}}+\frac{\kappa_1}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_0 \,\mathbf{1} + \kappa_2 \, \mathbf{1}\Big) \\ 
      \mathbf{S}_{\mathrm{trans}}[\Omega] & =\frac{(\kappa_2-\kappa/2)^2+\Omega^2}{(\kappa/2)^2+\Omega^2}\,\mathbf{1}+\frac{\kappa_2}{(\kappa/2)^2+\Omega^2}\,\Big(\kappa_0 \, \mathbf{1}+\kappa_1 \mathbf{S}_{\mathrm{in}} [\Omega]\,\Big) \\ 
    \end{split}
+  \label{eq:MCIR}
 \end{equation}
 where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$ i.e. $\kappa_1 + \kappa_0 \rightarrow \kappa_1$. \\ 
 
@@ -944,12 +944,8 @@ such that
   \end{pmatrix}
 \end{equation}
 
-\subsubsection{Example 1: Mode Cleaner }
-Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$, and where we assume negligible losses $\kappa_0 \ll \kappa_{1,2}$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted quadratures are written
-\begin{equation}
-  \mathbf{\delta \hat{u}_{\mathrm{trans}}}[\Omega]  = \, \dfrac{ \kappa/2}{\kappa/2-i\Omega}  \, \mathbf{\delta \hat{u}_{\mathrm{in}}}[\Omega]   +  \dfrac{i\Omega}{\kappa/2-i\Omega}   \mathbf{\delta \hat{u}_{\mathrm{vac}}}[\Omega] .
-\end{equation}
-The resulting transmitted quadrature convariance matric is given by: 
+\subsubsection{Example 1: Symmetric cavity on resonance / Mode Cleaner }
+Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$, and where we assume negligible losses $\kappa_0 \ll \kappa_{1,2}$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted spectra in \ref{eq:MCIR} reduces to
 \begin{equation}
   \mathbf{S}_{\mathrm{trans}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{in}}+\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
   \label{eq:MCIR}
@@ -1057,7 +1053,7 @@ where subscript $a$ and $b$ refer to the $\omega_0$ and $\omega_p$ fields respec
 \bigg(1+\sqrt{1+\frac{\kappa_a^{3}\kappa_b}{54\,\varepsilon^{2}\kappa_{1,a}\,|\bar{\alpha}_{\rm in}|^{2}}} \, \bigg)\Bigg)^{\!-1/6 \, }
 \, \Bigg]^{\, 4}.
 \end{align}
-This cumbersome expression can be simplified in two limits. In the low input power limit, the output power scales quadratically with the input power, whereas at high powers it scales as $|\alpha_{\mathrm{in}}|^{4/3}$. \\
+consistent with \cite{Sorensen1998PhD,burks_thesis_2010}. This cumbersome expression can be simplified in two limits. In the low input power limit, the output power scales quadratically with the input power, whereas at high powers it scales as $|\alpha_{\mathrm{in}}|^{4/3}$. \\
 
 \noindent \textbf{Pseudo linear behaviour:} For intermediate powers, the output power scales almost linearly with the input power, which is precisely the regime in which we will operate. The crossover between these regimes is set by the non-linear gain $\epsilon$ and the cavity decay rates $\kappa_{a,b}$. \\ 
 
@@ -1436,7 +1432,7 @@ Having layed out the theoretical framework to describe the optical fields intera
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/detection.pdf}
-\caption{coucou } 
+\caption{Detection schemes used to probe the optical fields reflected or transmitted from the cavities. (a) Direct detection scheme, where the intensity of the field is measured using a photodiode. (b) Direct detection of the interference between a signal and a local oscillator (LO) field. (c) Direct detection of two fields at slightly different frequencies (smaller than the PD bandwidth). (d) Balanced homodyne detection scheme, where the signal field is interfered with a strong local oscillator (LO) field on a 50:50 beam-splitter, and the difference of intensity between the two output ports is measured, allowing effective access to arbitrary quadrature fluctuations of the signal field. }
 \label{fig:cavity_types}
 \end{figure}
 

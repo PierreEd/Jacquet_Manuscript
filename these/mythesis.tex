@@ -18,10 +18,17 @@
 \usepackage{tikz}
 \usepackage{gensymb}
 % \usepackage[backend=biber,style=numeric,sorting=none,backref=true,url=false,doi=false,isbn=false,eprint=false]{biblatex}
-\usepackage[backend=biber,style=numeric,sorting=none,backref=false, url=false,doi=false,isbn=false,eprint=false]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none, date=year, backref=false, url=false,doi=false,isbn=false,eprint=false,giveninits=true]{biblatex}
 \addbibresource{./bib/bib_these.bib}
 \addbibresource{./bib/references.bib}
 \addbibresource{./bib/references_these.bib}
+
+\AtEveryBibitem{\clearlist{publisher}\clearname{publisher}}
+\AtEveryBibitem{\clearfield{month}\clearfield{day}}
+% if your .bib uses 'date' (YYYY-MM-DD), this ensures only the year prints:
+\AtEveryBibitem{\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}} 
+
+
 % \addbibresource{./bib/library_these.bib}
 % \addbibresource{./bib/optomechanics.bib}
 % \addbibresource{./bib/quantum.bib}
@@ -35,7 +42,8 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
-    filecolor=magenta,      
+    filecolor=magenta,  
+    citecolor=blue,
     urlcolor=blue,
     pdftitle={My Thesis Title},
     pdfauthor={Author Name},

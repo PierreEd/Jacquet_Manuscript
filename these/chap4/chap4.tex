@@ -1,6 +1,5 @@
 \chapter{Experimental Methods}
-This chapter essentially covers feedback control techniques used in Chapter IV and V. It is thought as a practical guide to the implementation of various locking schemes using the LKB \textit{home grown} control software PyRPL. The chapter begins with a general introduction to feedback control, PI controllers and error signal requirements. It then details specific locking techniques used in this work, with an emphasis on experimental aspects. For in depth technical description of the PyRPL working principle, we refer the reader to Chapter III or Leonard Neuhaus thesis \cite{Neuhauser_Thesis_2021}, as well as the PyRPL documentation \cite{PyRPL_Docs} and original article \cite{PyRPL_Article}. Some figures are adapted from this last reference (with authorization)
- \newline
+This chapter essentially covers feedback control techniques used in Chapter IV and V. It is thought as a practical guide to the implementation of various locking schemes using the LKB \textit{home grown} control software PyRPL. The chapter begins with a general introduction to feedback control, PI controllers and error signal requirements. It then details specific locking techniques used in this work, with an emphasis on experimental aspects. For in depth technical description of the PyRPL working principle, we refer the reader to Chapter III or Leonard Neuhaus thesis \cite{neuhaus}, as well as the PyRPL documentation \cite{PyRPLDocs} and original article \cite{PyRPL2024}. Some figures are adapted from this last reference (with authorization)
 \minitoc
 \newpage
 \section{Feedback control}
@@ -10,7 +9,7 @@ A central aspect of experimental quantum optics is the ability to stabilize vari
 \subsection{Overview}
 
 A feedback control loop then aims to stabilize the behaviour of a physical system that is continuously subject to disturbances.  
-When the system may be linearized around its operating point, its response to a harmonic perturbation at angular frequency $\omega_0$ is fully characterized by its complex transfer function $G(\omega)$. We denote by $V_{\mathrm{exc}}(t)$ the real excitation applied to the system, taken to be sinusoidal,
+When the system may be linearized around its operating point, its response to a harmonic perturbation at angular frequency $\omega_0$ is fully characterized by its complex transfer function $G(\omega)$ \cite{feedback_physicists}. We denote by $V_{\mathrm{exc}}(t)$ the real excitation applied to the system, taken to be sinusoidal,
 \begin{equation}
 V_{\mathrm{exc}}(t) = A_{\mathrm{exc}} \cos(\omega_0 t),
 \label{eq:Vexc}
@@ -105,7 +104,7 @@ Therefore, PI control offers a balanced and robust approach: the integral term s
 
 
 \subsection{PyRPL overview}
-With the rise of digital signal processing, many feedback control systems have transitioned from analog electronics to software-based implementations. One such powerful and flexible platform is PyRPL (Python Red Pitaya Lockbox), an open-source software suite designed for real-time digital signal processing and feedback control using the Red Pitaya (RP) hardware and developed in our team. PyRPL provides a user-friendly interface for implementing various control algorithms, including PI controllers, and is now widely used in experimental physics laboratories across the world \cite{PyRPL_Article, PyRPL_Docs}. While we refer the reader to Leonhard Neuhaus' thesis \cite{Neuhauser_Thesis_2021} and the PyRPL documentation \cite{PyRPL_Docs} for an in-depth technical description of the PyRPL working principle, we will concisely summarize the main performance metrics and high abstraction blocks relevant for this work. \\
+With the rise of digital signal processing, many feedback control systems have transitioned from analog electronics to software-based implementations. One such powerful and flexible platform is PyRPL (Python Red Pitaya Lockbox), an open-source software suite designed for real-time digital signal processing and feedback control using the Red Pitaya (RP) hardware and developed in our team. PyRPL provides a user-friendly interface for implementing various control algorithms, including PI controllers, and is now widely used in experimental physics laboratories across the world \cite{LukinNature2025,Suzuki25}. While we refer the reader to Leonhard Neuhaus' thesis \cite{neuhaus} and the PyRPL documentation and paper \cite{PyRPLDocs,PyRPL2024} for an in-depth technical description of the PyRPL working principle, we will concisely summarize the main performance metrics and high abstraction blocks relevant for this work. \\
 
 \begin{figure}
     \centering

@@ -1,6 +1,5 @@
 \chapter{Theory: Squeezed Light \& Optomechanics}
 This chapter will cover the elementary concepts required to describe a membrane based optomechanical system interacting with quantum light. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency-dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the seminal optomechanical system of a mirror on a spring. 
-\newpage
 \minitoc
 \newpage
 
@@ -100,7 +99,7 @@ In order to experimentally probe these quantum limits without being limited by v
   \item A low temperature environment, such that the thermal noise $S_{xx}^{\mathrm{th}} \propto T$ is low and does not mask the quantum effects. This can be ensured by cryogenic cooling of the mechanical resonator, as well as using high quality factor resonators to reduce the mechanical linewidth $\Gamma_m$.
 \end{itemize}
 
-\begin{figure}
+\begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/SQL0.pdf}
   \caption{Displacement spectrum contributions for a coherent input field (vacuum fluctuations) with typical table-top experiment parameters. (a) Displacement spectrum contributions as a function of the input power at the mechanical resonance frequency $\Omega_m$. The shot noise (red) decreases with increasing input power, while the radiation pressure noise (yellow) increase with increasing input power. The SQL power (dashed line) is the input power at which both contributions are equal, minimizing the total displacement spectrum (black). (b) Displacement spectrum as a function of frequency for a fixed input power on a large frequency band. The shot noise is flat as long as the resonator sits in the unresolved sideband regime, and the radiation pressure noise peaks around the mechanical resonance frequency $\Omega_m$. The zero point motion sits orders of magnitude below the SQL. (c) Displacement spectrum as a function of frequency in the vicinity of the mechanical resonance frequency $\Omega_m$. Only two frequencies $\Omega_m \pm \Omega_{\rm SQL}$ (dashed lines) exist where both contributions are equal, with radiation pressure noise dominating in between, and shot noise dominating outside this range. The total displacement spectrum (black) reaches the SQL (dotted line) at these two frequencies for the given input power.}
@@ -151,6 +150,20 @@ and we seek the frequency range where the displacement spectrum is below the SQL
 \end{equation}
 Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$: the larger the effect, the smaller the frequency band where it is effective. Furthermore, due to the interplay between quadrature correlations and the projection of the $\pi/4$ ellipse onto the output quadrature axis, acting as an effective increase of the shot noise floor with effective intensity $\bar{I}_\mathrm{in} \cosh^{-1} r $, there is an effective range of $r$ above which the displacement spectrum is always above the SQL (for a fixed input intensity). This is illustrated in figure \ref{fig:freq_indep_squeezing}. \\ 
 
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/SQLVirgo.pdf}
+  \caption{Displacement spectrum for a Virgo-LIGO type interferometer. (a) Spectra for increasing powers which doesn't allow to beat the SQL. (b) Spectra for the various squeezing angles at fixed power allowing to beat the SQL around the mechanical resonance frequency only at $\theta= \pi/4$. Phase and amplitude squeezing are equivalent to rescaling the input power, and cannot beat the SQL. The grey area indicates the range over which sub-SQL sensitivity is achieved for a given squeezing factor.} 
+  \label{fig:SQLVirgo}
+\end{figure}
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/SQL_LKB.pdf}
+  \caption{Displacement spectrum for a table-top optomechanical experiment. (a) As in the Virgo-LIGO type interferometer, spectra for increasing powers don't allow to beat the SQL. (b) Spectra for the various squeezing angles at fixed power allowing to beat the SQL around the mechanical resonance frequency only at $\theta= \pi/4$.}
+  \label{fig:SQL_LKB}
+\end{figure}
+
 Additionally, and as seen in Fig ..., the optimal angle to maximally reduce the displacement spectrum varies with frequency, being 0 at frequencies outside the resonator's bandwidth, $\pi/2$ at the mechanical resonance frequency $\Omega_m$, and about $\pm\pi/4$ at $\Omega_m \pm \Omega_{\rm SQL}$. \\
 
 This motivates the use of frequency-dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation pressure noise need to be correlated in a frequency-dependent manner to optimally lower the total displacement noise in the vicinity of the mechanical resonance. 
@@ -182,7 +195,14 @@ minimizes the displacement spectrum at every sideband frequency, leading to
   & -  \sinh 2r \sqrt{\Bigg(\mathcal{C}^{-2}  - \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2\Bigg)^2 + \bigg(\hbar |\chi[\Omega]|\cos \phi_m[\Omega]\bigg)^2}.
 \end{split}
 \end{equation}
-This broadband reduction of the displacement spectrum below the SQL is illustrated in figure \ref{fig:freq_dep_squeezing}. However, for a resonant optomechanical cavity i.e. $\Delta=0$, it is impossible to beat the SQL at the mechanical resonance, where the succeptibility is purely imaginary $\phi_m[\Omega_m] = \pi/2$. \\ 
+This broadband reduction of the displacement spectrum below the SQL is illustrated in figure \ref{fig:freq_dep_squeezing}. However, for a resonant optomechanical cavity i.e. $\Delta=0$, it is impossible to beat the SQL at the mechanical resonance, where the succeptibility is purely imaginary $\phi_m[\Omega_m] = \pi/2$. \\
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{./chap3/fig/FDS_angle.pdf}
+  \caption{Justification of the use of frequency-dependent squeezing to beat the SQL, shown for both a table-top optomechanical experiment (a) and a Virgo-LIGO type interferometer (b). At each frequency, a different angle is required to minimize the displacement spectrum. The optimal angle varies from 0 far from the mechanical resonance to $\pi/2$ at resonance, passing through $\pm \pi/4$ at the SQL frequencies $\Omega_m \pm \Omega_{\rm SQL}$.}
+  \label{fig:FDS_angle}
+\end{figure}
 
 \noindent \textbf{Convergence to VIRGO/LIGO notation:} We once again show that this general treatment converges to the one used in the context of gravitational wave detectors. In the free mass regime, $\mathcal{K}[\Omega]$ is real, such that $\phi_m[\Omega]=0$. One can then rewrite the optimal squeezing angle as
 \begin{equation}
@@ -231,7 +251,7 @@ such that the phase picked up by sidebands at frequency $\Omega$ is given by
 
 \section{Cavity Optomechanics with Membrane based systems }
 \subsection{Classical Description}
-To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three-mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{thompson_strong_2008}:
+To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three-mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{Thompson2008Nature, jayich_dispersive_2008}:
 \begin{equation}
 r_m = \frac{(n^2-1)\sin k n d}{2 i n \cos k n d  + (n^2+1)\sin k n d}, \qquad t_m = \frac{2 n}{2 i n \cos k n d  + (n^2+1)\sin k n d}. 
 \label{eq:membrane_rt}
@@ -283,19 +303,19 @@ where $\omega_{FSR} = \pi c / L$ is the empty cavity free spectral range. When t
 
 \color{red} use of G2 ??  \color{black}
 
-\begin{figure}
+\begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/modelsMATE.pdf}
-  \caption{rrlist = 0.7, L = 3e-2, }
-  \label{fig:models_MATE}
+  \caption{Resonance frequencies as a function of membrane position for various membrane reflectivities in the MATE configuration for a realistic system ($r_m = 0.7$, $L=30mm$). (a) Schematic of the MATE system. (b) Schematic of the two approaches used to derive the resonance frequencies: field nodes weakly modulated by a dielectric layer (top) and two coupled sub-cavities (bottom). (c) Resonance frequencies as a function of membrane position for various membrane reflectivities. The green and yellow lines correspond to the two eigenmodes of the uncoupled sub-cavities. (d) Absolute values of the linear and quadratic optomechanical couplings as a function of membrane position, displaying regions where the quadratic coupling dominates.}
+    \label{fig:models_MATE} 
 \end{figure}
 
 
 
-\begin{figure}
+\begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/MATEresTot.pdf}
-  \caption{rrlist = [0, 0.1, 0.9 ], T1 = 100ppm, T2=20ppm, L = 2e-2, }
+  \caption{Behaviour of the MATE resonance frequencies as a function of membrane reflectivity for a realistic system ($L=30mm$, $T_1=100$ppm, $T2=20$ppm) with different membrane reflectivities. (a) Resonance frequencies as a function of membrane position. (b) Linear optomechanical coupling as a function of membrane position. (c) outcoupling efficiency as a function of membrane position. (d) Cavity finesse as a function of membrane position.}
   \label{fig:mate_res}
 \end{figure}
 
