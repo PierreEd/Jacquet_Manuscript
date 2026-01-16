@@ -536,7 +536,7 @@ As seen in the above expression, the covariance matrix display a sum of Dirac fu
 
 \subsection{Quantum Sideband Diagram }
 
-We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\). Once in the frame rotating at \(\omega_0\), the carrier field is a DC term, while the sidebands are located at \(\pm \Omega\) and rotate at these frequencies. Each sideband mode is then associated with a quantum state: it can, for instance, be in a given squeezed state or in a given coherent state. The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{balloon-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig.~\ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig.\ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.
+We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\). Once in the frame rotating at \(\omega_0\), the carrier field is a DC term, while the sidebands are located at \(\pm \Omega\) and rotate at these frequencies. Each sideband mode is then associated with a quantum state: it can, for instance, be in a given squeezed state or in a given coherent state. The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{balloon-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig.~\ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig.\ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.\\ 
 
 \begin{figure}[h!]
 \centering
@@ -547,7 +547,7 @@ We now have all the tools to graphically represent the quantum states of light i
 \label{fig:ballonstick}
 \end{figure}
 
-We start by describing a coherent state modulated at $\Omega_\mathbf{mod}$, as seen in Fig.~\ref{fig:QSD_mod}(a)-(b).As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathbf{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathbf{mod}$ (Fig.~\ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal. 
+We start by describing a coherent state modulated at $\Omega_\mathbf{mod}$, as seen in Fig.~\ref{fig:QSD_mod}(a)-(b).As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathbf{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathbf{mod}$ (Fig.~\ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal. \\ 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/QSD_mod.pdf}
@@ -586,9 +586,9 @@ This is strictly the same noise matrix obtained in the two-photon formalism, whe
 
 
 
-Interestingly, the thermal distribution from which the sideband photons are drawn can be given a physical meaning. First, the \textit{non-zero} number of photons in the quantum state can be interpreted as the energy pumped into the system to generate the squeezed state, for instance by a pump field in a parametric down-conversion process. Second, if we imagined measuring the sidebands individually rather than jointly as in a homodyne detection (where they \textit{beat} together), we would find that each sideband is in a thermal state, highlighting that entanglement is lost when tracing the quantum state on a single sideband space. This actually means that the squeezing process generates entanglement between the upper and lower sidebands, which is revealed when measuring them jointly. An experiment where the two sidebands are spatially separated using an appropriate filter cavity, and measured individually could then be used to demonstrate this property. Each sideband would then appear as a thermal state, while measuring them jointly would reveal the squeezed state and the entanglement between them. Although we traditionally distinguish type I and type II squeezing processes depending on whether the two sidebands have the same or orthogonal polarizations, both processes generate entanglement between the sidebands, and can then be seen as EPR (Einstein-Podolsky-Rosen) type entanglement ressources. 
+Interestingly, the thermal distribution from which the sideband photons are drawn can be given a physical meaning. First, the \textit{non-zero} number of photons in the quantum state can be interpreted as the energy pumped into the system to generate the squeezed state, for instance by a pump field in a parametric down-conversion process. Second, if we imagined measuring the sidebands individually rather than jointly as in a homodyne detection (where they \textit{beat} together), we would find that each sideband is in a thermal state, highlighting that entanglement is lost when tracing the quantum state on a single sideband space. 
 
-\section{Cavities}
+\section{Optical Cavities}
 Optical cavities are at the heart of this work, as they are used to coherently enhance the light-matter interaction in various systems, and also to filter and manipulate quantum states of light. In this section, we review the basic properties of optical cavities, their resonance conditions, and we derive the covariance matrices of their output fields. 
 
 \subsection{Cavity Geometries and Stability Conditions}
@@ -822,9 +822,7 @@ where the matrix product above explicitely reads
 \Delta & \kappa/2-i\Omega
 \end{pmatrix}.
 \end{equation*}
-This structure is the engine behind frequency-dependent squeezing. When the cavity is detuned and sidebands are correlated, the off-diagonal terms asymmetrically mix the upper and lower sidebands; in the two-photon picture this is a frequency-dependent rotation and scaling of the $(p,q)$ basis. The amplitude (Lorentzian) part sets how strongly each sideband is transmitted, while the phase accumulated inside the cavity sets the rotation angle that now varies with $\Omega$. A broadband field with a single squeezing angle at the input is therefore converted into an output whose squeezing angle “twists” with frequency: near one band it can align with the phase quadrature, and at another it can align with the amplitude quadrature. This is exactly the mechanism exploited by filter cavities in precision interferometry: by choosing bandwidth, detuning, and coupling, one tailors the rotation profile to the target noise crossover. Practically, the attainable rotation and the preserved squeezing are limited by optical loss and mode mismatch, which inject uncorrelated vacuum and partially unwind the correlations the detuned cavity imprints on sidebands. \\
-
-
+This structure is the engine behind frequency-dependent squeezing. When the cavity is detuned and sidebands are correlated, the off-diagonal terms asymmetrically mix the upper and lower sidebands; in the two-photon picture this is a frequency-dependent rotation and scaling of the $(p,q)$ basis. The amplitude (Lorentzian) part sets how strongly each sideband is transmitted, while the phase accumulated inside the cavity sets the rotation angle that now varies with $\Omega$. A broadband field with a single squeezing angle at the input is therefore converted into an output whose squeezing angle “twists” with frequency: near one band it can align with the phase quadrature, and at another it can align with the amplitude quadrature. This is exactly the mechanism exploited by filter cavities (FC) in precision interferometry: by choosing bandwidth, detuning, and coupling, one tailors the rotation profile to the target noise crossover. Practically, the attainable rotation and the preserved squeezing are limited by the frequency range over which the cavity can efficiently manipulate the sidebands, which can require very high-finesse cavities. \\
 
 \noindent \textbf{Resonant behaviour: } On resonance ($\Delta=0$), the output quadratures in Eq.\eqref{eq:cavity_quad} are written as 
 \begin{equation}
@@ -861,7 +859,7 @@ where the transfer matrices for the input and loss ports are given by
 \end{equation}
 From these, one can derive the general transfer matrices and noise spectra for any detuning $\Delta$ in both transmission and reflection. \\ 
 
-Although Example I below illustrates the Mode Cleaner working principle, we will focus on the reflected quadratures regarding the detuned case, as optomechanical cavities and the quantum filter studied in this thesis are operated in reflection, in the single-port cavity configuration i.e. $\kappa_2 = 0$ and $\kappa \sim \kappa_1$ and where we assume negligible losses. We can then approximate the reflected quadrature transfer matrices in Eq.\ref{eq:cav_transf} as
+Although Example I below illustrates the Mode Cleaner working principle, we will focus on the reflected quadratures regarding the detuned case, since the optomechanical cavities and quantum filters studied in this thesis are mostly operated in reflection, in the single-port cavity configuration i.e. $\kappa_2 = 0$ and $\kappa \sim \kappa_1$ and where we assume negligible losses. We can then approximate the reflected quadrature transfer matrices in Eq.\ref{eq:cav_transf} as
 \begin{equation}
       \mathbf{T}_{\mathrm{ref}} = \kappa \, \mathbf{\Gamma} \mathbf{M}^{-1}_\Delta \mathbf{\Gamma}^{-1}- \mathbf{1}  \quad \text{and} \quad 
       \mathbf{L}_{\mathrm{ref}}  =  \mathbf{L}_{\mathrm{trans}} = \mathbf{T}_{\mathrm{trans}} = 0.
@@ -890,7 +888,7 @@ with the two-photon average and differential phase shifts as
 \begin{equation*}
   \bar \phi = \frac{\phi_+ + \phi_-}{2} \quad \text{,} \quad  \delta \phi = \frac{\phi_+ - \phi_-}{2}.
 \end{equation*}
-Here, the cavity acts as an ideal phase retarder, rotating the quadratures by an angle $- \bar \phi$ and adding an overall phase shift $\delta \phi$ that vanishes when computing noise spectra. Explicitely, the two-photon average phase shift and its derivative are given by 
+Here, the cavity acts as an ideal frequency dependent phase shifter, rotating the quadratures by an angle $- \bar \phi$ and adding an overall phase shift $\delta \phi$ that vanishes when computing noise spectra. Explicitely, the two-photon average phase shift and its derivative are given by 
 \begin{equation}
     \bar \phi =  \arctan \dfrac{\Delta \kappa}{(\kappa/2)^2 - \Delta^2 + \Omega^2}, \quad \text{and} \quad \dfrac{\partial \bar \phi}{\partial \Omega} = \frac{1}{2} \left( \dfrac{\partial \phi_+}{\partial \Omega} + \dfrac{\partial \phi_-}{\partial \Omega} \right)
 \end{equation}
@@ -908,7 +906,7 @@ with $\bar t$, $\delta t$, $\bar \theta$ and $\delta \theta$ defined from the fi
 Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$, and where we assume negligible losses $\kappa_0 \ll \kappa_{1,2}$. It represents a cavity where the input and output mirror transmittivities are equal, and we set the laser resonant to the cavity ($\Delta=0$), such that the transmitted spectra in \ref{eq:MCIR} reduces to
 \begin{equation}
   \mathbf{S}_{\mathrm{trans}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{in}}+\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
-  \label{eq:MCIR}
+  \label{eq:MCIR2}
 \end{equation}
 Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and/or $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is a Lorentzian function - a low-pass filter. Hence, the noises of the input fields are low-pass filtered by the cavity, while the vacuum fluctuations are high-pass filtered precisely above the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its classical fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleaned} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many precision experiments to provide a spectrally pure laser field, as well as a spatially filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.\\
 
@@ -922,19 +920,21 @@ The derivative at $\Omega = \Delta$ then reads
 \begin{equation}
   \left.\dfrac{\partial \bar \phi}{\partial \Omega}\right|_{\Omega = \Delta} = - \dfrac{2}{\kappa}
 \end{equation}
-which shows that the slope of the rotation angle at the detuning frequency is inversely proportional to the cavity bandwidth. A narrower cavity leads to a steeper rotation angle variation with frequency, which is desirable to \textit{phase-match} the filter cavity to the optomechanical cavity, as will be seen in Chap. II. \\
+which shows that the slope of the rotation angle at the detuning frequency is inversely proportional to the cavity bandwidth. A narrower cavity leads to a steeper rotation angle variation with frequency, which is desirable to \textit{phase-match} the filter cavity to the optomechanical cavity, as will be seen in Chap. II. 
 
 \subsection{Non-Linear Cavities}
 We now turn to the description of optical cavities with a $\chi^{(2)}$ medium embedded within. This non-linear medium can be used both for sum frequency generation, or difference frequency generation. The generic Hamiltonian describing a  degenerate $\chi^{(2)}$ parametric process is 
 \begin{equation}
   \hat H = \hbar \omega_p \hat{b}^{\dagger}\hat{b} + \hbar \omega_0 \hat{a}^\dagger \hat{a} + \frac{i\hbar\epsilon}{2}( \hat{b} \, \hat{a}^{\dagger2} - \hat{b}^\dagger \, \hat{a}^2).
 \end{equation}
-We assume perfect phase matching for simplicity ($\epsilon \in\mathbb{R}$). In our experiment wih squeezed light, we do use both processes to first generate a pump field using a SHG scheme, then use the generated field to \textit{pump} a degenerate Optical Parametric Oscillator (OPO). The equations of motion of both fields are very similar in their structure, yet different in their phenomenology. Here we outline the main results and predictions for both. 
+where $\hat{a}$ and $\hat{b}$ are the annihilation operators of the fundamental field at frequency $\omega_0$ and the pump field at frequency $\omega_p = 2\omega_0$ respectively, and $\epsilon$ is the non-linear coupling strength. The second term describes the up-conversion process where two photons at $\omega_0$ are converted into a single photon at $\omega_p$, while the third term describes the down-conversion process where a single photon at $\omega_p$ is converted into two photons at $\omega_0$.
+We assume perfect phase matching for simplicity ($\epsilon \in\mathbb{R}$). The first non-linear term $\hat{b} \, \hat{a}^{\dagger2}$ corresponds to Parametric Down Conversion (PDC), while the second term $\hat{b}^\dagger \, \hat{a}^2$ corresponds to Second Harmonic Generation (SHG). Both processes are illustrated in Fig. \ref{fig:chi2_process}. In our experiment wih squeezed light, we use both processes to first generate a pump field using a SHG scheme, then use the generated field to \textit{pump} a degenerate Optical Parametric Oscillator (OPO). The equations of motion of both fields are very similar in their structure, yet different in their phenomenology. Here we outline the main results and predictions for both. 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/schema_SHG_OPO_2photons.pdf}
 \caption{Diagrams of $\chi^{(2)}$ non-linear processes. 
 (a) Second Harmonic Generation ($2\omega_0 = \omega_p$). (b) Parametric Down Conversion. The outcoming photons are entangled.  } 
+\label{fig:chi2_process}
 \end{figure}
 
 
@@ -1108,11 +1108,11 @@ Later on, we will use this idealized expression to describe how squeezed light i
 \begin{equation}\mathbf{S}_{\rm det}[\Omega] = (1-\eta) \, \mathbf{S}^{\bar \varphi_b}_{\mathrm{OPO}}[\Omega] + \eta \, \mathbf{1}
   \label{II.xx3}
 \end{equation}
-This expression is actually true for any Gaussian state suffering from losses. \\ 
+This expression is actually true for any Gaussian state suffering from losses. As seen in Fig.\ref{fig:OPO_noises}, losses have a dramatic effect on the squeezing level. Fig.\ref{fig:OPO_noises}(a) shows the frequency dependence of the squeezing and antisqueezing levels for various escape efficiencies, while Fig.\ref{fig:OPO_noises}(b) shows the squeezing and antisqueezing levels at frequencies inside teh cavity bandwidth as a function of the escape efficiency, where we notice losses have a stronger effect on squeezing than antisqueezing. Finally, Fig.\ref{fig:OPO_noises}(c) shows how extrinsic losses degrade the output squeezing level as a function of the input squeezing level (right at the OPO output). For example, 1 \% losses will limit the maximum squeezing level to $\sim 20$ dB, while 50 \% losses will limit it to $\sim 3$ dB only. Ths squeezing-antisqueezing asymetry is then used to estimate the total losses. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPONoises.pdf}
-\caption{Squeezing degradation properties of a non-perfect OPO. 
+\caption{Squeezing degradation properties of a non-perfect OPO generating 5 dB of squeezing. 
 (a) Squeezing-Antisqueezing levels obtained as a function of frequency (in cavity linewidth unit). The squeezing-antisqueezing levels are maximised at 100\% escape efficiency and inside the cavity linewidth (see dark red and dark blue curves). 
 (b) Squeezing-antisqueezing levels as a function of the escape efficiency. 
 (c) Output Squeezing level as a function of the Input Squeezing level (right at the OPO output) considering various optical loss values (extrinsic losses). } 
@@ -1348,7 +1348,7 @@ Having layed out the theoretical framework to describe the optical fields intera
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/detection.pdf}
-\caption{Detection schemes used to probe the optical fields reflected or transmitted from the cavities. (a) Direct detection scheme, where the intensity of the field is measured using a photodiode. (b) Direct detection of the interference between a signal and a local oscillator (LO) field. (c) Direct detection of two fields at slightly different frequencies (smaller than the PD bandwidth). (d) Balanced homodyne detection scheme, where the signal field is interfered with a strong local oscillator (LO) field on a 50:50 beam-splitter, and the difference of intensity between the two output ports is measured, allowing effective access to arbitrary quadrature fluctuations of the signal field. }
+\caption{Detection schemes used to probe the optical fields reflected or transmitted from the cavities. (a) Direct detection scheme, where the intensity of the field is measured using a photodiode. $\eta_d$ represents the detection efficiency. (b) Direct detection of the interference between a signal and a local oscillator (LO) field. (c) Direct detection of two fields at slightly different frequencies (smaller than the PD bandwidth). (d) Balanced homodyne detection scheme, where the signal field is interfered with a strong local oscillator (LO) field on a 50:50 beam-splitter, and the difference of intensity between the two output ports is measured, allowing effective access to arbitrary quadrature fluctuations of the signal field, while rejecting classical noises. }
 \label{fig:cavity_types}
 \end{figure}
 

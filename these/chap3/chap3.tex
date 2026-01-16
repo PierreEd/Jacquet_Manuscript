@@ -33,7 +33,7 @@ The phase to displacement transduction relation with an optomechanical escape ef
 \begin{equation*}
    \delta \hat q_x = \mathcal{C} \delta \hat x [\Omega] = \frac{16 \mathcal{F}\sqrt{\bar I_{\rm in}}}{\lambda}\delta \hat{x}[\Omega].
 \end{equation*}
-Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_{\mathrm{ref}}[\Omega] = \delta \hat q_x[\Omega]$. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
+Using these two relations, we can then express displacement fluctuations in terms of input amplitude and phase fluctuations, assuming the reflected field is a perfect probe of the mechanical resonator position fluctuations i.e. $\delta \hat q_{\mathrm{ref}}[\Omega] = \delta \hat q_x[\Omega]$ \cite{Jaekel1990}. This treatment is formally equivalent to considering the output phase as a statistical estimator of the position fluctuations being a stationary random process as done in quantum measurement theory \cite{clerk_introduction_2010}. We then write
 \begin{equation}
   \delta \hat{x}[\Omega] =\mathcal{C}^{-1} \, \delta \hat{q}_{\mathrm{in}}[\Omega]  + \dfrac{\mathcal{C} }{2} \hbar \chi[\Omega] \, \delta \hat{p}_{\mathrm{in}}[\Omega]
 \end{equation}
@@ -207,7 +207,7 @@ This broadband reduction of the displacement spectrum below the SQL is illustrat
 \begin{equation}
   2 \theta[\Omega] = \arctan \Big[\dfrac{2\mathcal{K}[\Omega]}{1 - \mathcal{K}^2[\Omega]}\Big] = 2 \arctan \mathcal{K}[\Omega]
 \end{equation}
-where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{harry_advanced_2010, aasi_enhanced_2013}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the SQL frequency to the known expression
+where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{kimble_conversion_2001}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the SQL frequency to the known expression
 \begin{equation}
   \Omega_{\text{SQL}} = \sqrt{\dfrac{\hbar \mathcal{C}^2}{2 m }} \implies \mathcal{K}[\Omega] = \left( \dfrac{\Omega_{\text{SQL}}}{\Omega}\right)^2
 \end{equation}
@@ -219,7 +219,7 @@ which is the free-mass approximation result used in the GW community.
 
 \subsection{Filter Cavities for Frequency-Dependent Squeezing}
 
-To generate frequency-dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency-independent squeezed state off a single-sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency-dependent angle as seen in Fig.\cite{FDS_QSD} \\ 
+To generate frequency-dependent squeezed states, one can use a detuned optical cavity called a filter cavity \cite{kimble_conversion_2001}. The principle is to reflect a frequency-independent squeezed state off a single-sided detuned cavity, such that only the sidebands resonant with the cavity will undergo a phase shift, effectively rotating the squeezing ellipse by a frequency-dependent angle as seen in Fig.\ref{fig:FDS_QSD} \\ 
 
 In the table-top optomechanical experiment context where the mechanical resonance frequency $\Omega_m$ is much larger than the mechanical linewidth $\Gamma_m$, the optimal squeezing angle varies rapidly around the mechanical resonance frequency, requiring a filter cavity with a bandwidth on the order of the mechanical linewidth $\kappa_{\rm fc} \sim \Gamma_m$. Since it needs to match the phase response of the optomechanical system dictated by the mechanical succeptibility, the filter cavity needs to be detuned by $\Delta_{\rm fc} = - \Omega_m$ to provide the right rotation direction. We then want to derive the derivative of the optimal squeezing angle at the mechanical resonance frequency to relate it to the filter cavity bandwidth. We start from the optimal squeezing angle expression
 \begin{equation*}
@@ -241,50 +241,34 @@ and simply equating both derivatives leads to the filter cavity bandwidth requir
 \end{equation}
 Upon the single-port cavity assumption, this expression can be used to compute the required input mirror transmittivity of the filter cavity to achieve the desired bandwidth $\kappa_{\rm fc}$, this is 
 \begin{equation}
-  T_{\rm fc} = \dfrac{L_{\rm fc} \kappa_{\rm fc}}{c} 
+  T_{\rm in} = \dfrac{2L_{\rm fc} \kappa_{\rm fc}}{c} 
 \end{equation}
-where $L_{\rm fc}$ is the filter cavity length. Although this expression gives a first estimate for the required length and finesse necessary for such a task, a more accurate treatment taking into account losses and non-ideal escape efficiency is required to optimize the filter cavity design. This additionally motivates the use of three-mirror cavities as filter cavities to have more degrees of freedom to optimize the cavity parameters. The properties of such cavities are detailed in the next subsection. \\
+where $L_{\rm fc}$ is the filter cavity length. Although this expression gives a first estimate for the required length and finesse necessary for such a task, a more accurate treatment taking into account losses and non-ideal escape efficiency is required to optimize the filter cavity design. This additionally motivates the use of three-mirror cavities as filter cavities to have more degrees of freedom to optimize the cavity parameters. Some properties of such cavities are detailed in the next subsection. \\
 
-For a Virgo-LIGO type interferometer, where both the bandwidth of the filter cavity are sideband frequencies of interest are comparable to the mechanical resonance frequency $\kappa_{\rm fc}, \Omega \sim \Omega_m$, and where the free-mass approximation holds, the relative optimal squeezing angle varies slowly with frequency, requiring a filter cavity bandwidth on the order of the mechanical resonance frequency $\kappa_{\rm fc} \sim \Omega_m$. The filter cavity detuning is then set to $\Delta_{\rm fc} = - \Omega_{\rm SQL}$ to provide the right rotation direction around the SQL frequency. In this regime, the optimal filter cavity parameters were derived by C. Whittle \textit{et al.} \cite{whittle_optimal_2020}, leading to the expressions
-
-\newpage 
-
-Following Whittle \textit{et al.} (Phys.\ Rev.\ D \textbf{102}, 102002 (2020)), in the single-port (single-ended) and low-loss regime, the filter cavity can be parametrized by a coupler-limited bandwidth $\gamma$ and a loss-limited bandwidth $\lambda$,
-\[
-\gamma=\frac{c\,T_{\rm in}}{4L_{\rm fc}},\qquad \lambda=\frac{c\,A}{4L_{\rm fc}},
-\]
-where $L_{\rm fc}$ is the cavity length, $T_{\rm in}$ the input-mirror power transmissivity, and $A$ the round-trip power loss. Requiring the quadrature rotation produced by the cavity reflection to match the optimal frequency-dependent rotation $\alpha_{\rm opt}(\Omega)=\arctan(\Omega_{\rm SQL}^2/\Omega^2)$ leads to the phase-matching conditions
-\[
-2\gamma\,\Delta\omega_{\rm fc}=\Omega_{\rm SQL}^2,\qquad
-\gamma^2-\lambda^2-\Delta\omega_{\rm fc}^{\,2}=0,
-\]
-which admit the closed-form solution (expressed in terms of $\lambda$ and $\Omega_{\rm SQL}$):
-\[
-\gamma=\sqrt{\frac{\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}},\qquad
-|\Delta\omega_{\rm fc}|=\sqrt{\frac{-\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}}.
-\]
-The \emph{sign} of $\Delta\omega_{\rm fc}$ is then chosen to obtain the desired \emph{rotation direction} (in many GW-detector conventions one sets $\Delta\omega_{\rm fc}=-|\Delta\omega_{\rm fc}|$ around $\Omega_{\rm SQL}$). Finally, the corresponding optimal input coupler transmissivity follows directly from the bandwidth,
-\[
-T_{\rm in}^{\rm(opt)}=\frac{4L_{\rm fc}}{c}\,\gamma,
-\]
-(with losses entering through $\gamma(\lambda,\Omega_{\rm SQL})$ above).
+For a Virgo-LIGO type interferometer, where both the FC bandwidth and sideband frequencies of interest are comparable to the mechanical resonance frequency $\kappa_{\rm fc}, \Omega \sim \Omega_m$, and where the free-mass approximation holds, the relative optimal squeezing angle varies slowly with frequency, requiring a filter cavity bandwidth on the order of the mechanical resonance frequency $\kappa_{\rm fc} \sim \Omega_m$. Eventually, the assumptions we made to derive the table-top optomechanical experiment filter cavity parameters break down, since both derivatives $\partial_\Omega \phi_+$ and $\partial_\Omega \phi_-$ contribute significantly to the optimal squeezing angle rotation rate. The filter cavity detuning is then set to $\Delta_{\rm fc} \sim - \Omega_{\rm SQL}$ to provide the right rotation direction around the SQL frequency. In this regime, the optimal filter cavity parameters were derived by C. Whittle \textit{et al.} \cite{whittle_optimal_2020}, leading to the expressions
+\begin{equation}
+\gamma_\text{fc}=\sqrt{\frac{\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}},\qquad
+|\Delta\omega_{\rm fc}|=\sqrt{\frac{-\lambda^2+\sqrt{\lambda^4+\Omega_{\rm SQL}^4}}{2}}
+\end{equation}
+where they define the coupler-limited bandwidth $\gamma_{\rm fc}$ and loss-limited bandwidth $\lambda$ as
+\[\gamma_{\rm fc}=\frac{c\,T_{\rm in}}{4L_{\rm fc}},\qquad \lambda=\frac{c\,\mathcal{L}_{\rm rt}}{4L_{\rm fc}},\]
+with $T_{\rm in}$ the input mirror power transmissivity, $\mathcal{L}_{\rm rt}$ the round-trip power loss, and $L_{\rm fc}$ the filter cavity length. 
 
 
-  
 
 
-Eventually, the assumptions we made to derive the table-top optomechanical experiment filter cavity parameters break down, since both derivatives $\partial_\Omega \phi_+$ and $\partial_\Omega \phi_-$ contribute significantly to the optimal squeezing angle rotation rate. 
 
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{./chap3/fig/QSD_sqzFDS.pdf}
-  \caption{}
+  \includegraphics[width=\textwidth]{./chap2/fig/QSD_sqzFDS.pdf}
+  \caption{Schematic representation of a frequency-dependent squeezed state generation using a detuned filter cavity. (a)-(b) Quantum sideband diagram of a frequency-dependent squeezed state generated by reflecting a frequency-independent squeezed state off a detuned filter cavity. (a) The resonant sidebands undergo a $\pi$ shift upon reflection, effectively rotating the squeezing ellipse by a frequency-dependent angle in (b). We show the transmission resonse the filter cavity for illustration purposes only, as the squeezed state is reflected off the cavity. (c)-(d) Typical phase responses expected for both table-top optomechanical experiments (c) and Virgo-LIGO type interferometers (d).}
+
   \label{fig:FDS_QSD}
 \end{figure}
 
 \subsection{Numerical simulations}
-
+Using the linear optical system equations seen in Chap. I, A. Journeau and myself developed a program to numerically simulate the quadrature spectra of various optical systems. The idea, starting from standard vacuum fluctuations, is to propagate the quadrature operators through the optical system using the input-output relations of each optical element, taking into account losses and non-ideal efficiencies. Ideal squeezed states can be generated, a squeezer element, the finite OPO bdandwidth can be takeb into account by sending the squeezed state onto an symmetric resonant optical cavity element, frequency-dependence can be added by sending the squeezed state onto a single-ended detuned cavity element, and finally the optomechanical interaction can be modelled using a movable mirror element. The basic working principle is simply 
 \section{Cavity Optomechanics with Membrane based systems }
 \subsection{Classical Description}
 To gain intuition and derive elementary parameters used in the next section, we first describe the classical fields propagating in a three-mirror cavity where a membrane with complex amplitude reflection and transmission coefficients \(r_m=|r_m|e^{i\phi_r}\) and \(t_m=|t_m|e^{i\phi_t}\) is placed between two high reflectivity mirrors of amplitude reflection coefficients \( \sim -1 \). The membrane splits the cavity in two sub-cavities of lengths \(L_1\) and \(L_2\), with \(L=L_1+L_2\) the total cavity length. The membrane is initially at mean position $x=0$, and is modelled as a thin dielectric slab of thickness \(d\) and refractive index \(n\), with amplitude reflection and transmission coefficients \(r_m\) and \(t_m\) given by \cite{Thompson2008Nature, jayich_dispersive_2008}:
