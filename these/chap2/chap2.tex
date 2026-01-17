@@ -912,7 +912,7 @@ Now consider that the input fluctuations are above those of vacuum i.e. the inpu
 
 
 \subsubsection{Example II: Detuned single-port cavity - Filter Cavity}
-As seen in Eq.\eqref{eq:ideal_FC}, a detuned single-port cavity can be expressed as a rotation matrix in the two-photon formalism. This is the principle behind \textit{filter cavities}, which are used to rotate the squeezing angle of a squeezed field in a frequency-dependent way. We will now consider the table-top case of a high-finesse cavity such that $\kappa \ll |\Delta|$, and where we focus on sideband frequencies $\Omega \sim \Delta$. In this case, the $\partial_\Omega \phi_+$ term is negligible, and we write
+As seen in Eq.\eqref{eq:ideal_FC}, a detuned single-port cavity can be expressed as a rotation matrix in the two-photon formalism. This is the principle behind \textit{filter cavities}, which are used to rotate the squeezing angle of a squeezed field in a frequency-dependent way. We will now consider the tabletop case of a high-finesse cavity such that $\kappa \ll |\Delta|$, and where we focus on sideband frequencies $\Omega \sim \Delta$. In this case, the $\partial_\Omega \phi_+$ term is negligible, and we write
 \begin{equation}
   \dfrac{\partial \bar \phi}{\partial \Omega} \approx  \dfrac{1}{2} \, \dfrac{\partial \phi_-}{\partial \Omega} = - \dfrac{2\kappa}{\kappa^2 + 4(\Delta - \Omega)^2}.
 \end{equation}
@@ -1279,9 +1279,11 @@ such that we can readily express the intracavity quadratures in matrix form as
 \sqrt{\kappa_2} \delta\mathbf{\hat{\mathbf u}} _{\mathrm{vac}}[\Omega] \bigg)  \, .
 \end{equation}
 with
-\begin{equation*}
+\begin{equation}
   \mathcal{K}[\Omega] = \frac{ \mathcal{C}^2[\Omega]}{2}  \,\hbar  \chi[\Omega]= \Bigl(\dfrac{\kappa_{\mathrm{1}}}{\kappa}\Bigr)^2 \dfrac{128 \hbar \mathcal{F}^2 \bar I_{\rm in}}{\lambda^2(1 - i2\Omega/\kappa)^2}  \,  \chi[\Omega]
-\end{equation*}
+\label{eq:K}
+\end{equation}
+
 We then obtain the reflected and transmitted quadrature fluctuations 
 \begin{equation}
 \begin{split}
