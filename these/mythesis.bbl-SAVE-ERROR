@@ -525,6 +525,83 @@
       \verb 10.1038/nature08171
       \endverb
     \endentry
+    \entry{Teufel2011}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=bace5ed02e1ef518b7b5803f51869df7}{%
+           family={Teufel},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0c7c57b0cccc66c6cfb254ddd4313e69}{%
+           family={Donner},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=51b725eb79361195f05c36974f1fb64e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Dale},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5f882d5c12e5f4418e248ac11f4fecb8}{%
+           family={Harlow},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c2b162d6d52021ed5159280a07941fd6}{%
+           family={Allman},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9e8b1af28ddae2ade894352e676c4d51}{%
+           family={Cicak},
+           familyi={C\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=60eee5e762b882688677ba9be2cececb}{%
+           family={Sirois},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1a65babf9cc187007e363a781885dcf2}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ab513a16b998e6975e7db9f425fc194c}{%
+           family={Lehnert},
+           familyi={L\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=29147a1192697445e40837b66adc3180}{%
+           family={Simmonds},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{e40c0a19b116ced1749fd4e4fbb8e1ff}
+      \strng{fullhash}{52510e450238ad67a324be04fd35e7a1}
+      \strng{fullhashraw}{52510e450238ad67a324be04fd35e7a1}
+      \strng{bibnamehash}{e40c0a19b116ced1749fd4e4fbb8e1ff}
+      \strng{authorbibnamehash}{e40c0a19b116ced1749fd4e4fbb8e1ff}
+      \strng{authornamehash}{e40c0a19b116ced1749fd4e4fbb8e1ff}
+      \strng{authorfullhash}{52510e450238ad67a324be04fd35e7a1}
+      \strng{authorfullhashraw}{52510e450238ad67a324be04fd35e7a1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{7}
+      \field{number}{7356}
+      \field{title}{Sideband cooling of micromechanical motion to the quantum ground state}
+      \field{volume}{475}
+      \field{year}{2011}
+      \field{pages}{359\bibrangedash 363}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nature10261
+      \endverb
+    \endentry
     \entry{regal2013}{article}{}{}
       \name{author}{3}{}{%
         {{hash=b61edf6c5fb2e5eb56b711f71a0317fc}{%
@@ -551,8 +628,8 @@
       \strng{authornamehash}{84c0f0baf58a8c2facca08767333015a}
       \strng{authorfullhash}{84c0f0baf58a8c2facca08767333015a}
       \strng{authorfullhashraw}{84c0f0baf58a8c2facca08767333015a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -614,8 +691,8 @@
       \strng{authornamehash}{3dba26af5ed0cf6b8b0d41af2273d34e}
       \strng{authorfullhash}{5b9467e0534ed115c29100c29349060d}
       \strng{authorfullhashraw}{5b9467e0534ed115c29100c29349060d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{22}
@@ -4408,8 +4485,8 @@
       \strng{authornamehash}{300a313a8d76521f1ddcaa58df261c7a}
       \strng{authorfullhash}{0d5ed42b1d48fd9e0c2ecba02d4a0c7d}
       \strng{authorfullhashraw}{0d5ed42b1d48fd9e0c2ecba02d4a0c7d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce a passively-aligned, flexure-tuned cavity optomechanical system in which a membrane is positioned microns from one end mirror of a Fabry-Perot optical cavity. By displacing the membrane through gentle flexure of its silicon supporting frame (i.e., to \&\#x0223C;80 m radius of curvature (ROC)), we gain access to the full range of available optomechanical couplings, finding also that the optical spectrum exhibits none of the abrupt discontinuities normally found in \&\#x0201C;membrane-in-the-middle\&\#x0201D; (MIM) systems. More aggressive flexure (3 m ROC) enables \&\#x0003E;15 \&\#x003BC;m membrane travel, milliradian tilt tuning, and a wavelength-scale (1.64 \&\#x000B1; 0.78 \&\#x003BC;m) membrane-mirror separation. We also provide a complete set of analytical expressions for this system\&\#x02019;s leading-order dispersive and dissipative optomechanical couplings. Notably, this system can potentially generate orders of magnitude larger linear dissipative or quadratic dispersive strong coupling parameters than is possible with a MIM system. Additionally, it can generate the same purely quadratic dispersive coupling as a MIM system, but with significantly suppressed linear dissipative back-action (and force noise).}
@@ -4922,8 +4999,8 @@
       \strng{authornamehash}{0838b4861df5ef970a586b94eabe6e2e}
       \strng{authorfullhash}{0838b4861df5ef970a586b94eabe6e2e}
       \strng{authorfullhashraw}{0838b4861df5ef970a586b94eabe6e2e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quantum noise limits the sensitivity of interferometric measurements. It is generally admitted that it leads to an ultimate sensitivity, the ``standard quantum limit''. Using a semi-classical analysis of quantum noise, we show that a judicious use of squeezed states allows one in principle to push the sensitivity beyond this limit. This general method could be applied to large-scale interferometers for gravitational wave detection.}
@@ -5401,8 +5478,8 @@
       \strng{authorfullhash}{045a3f5b20ae3a6917a692fc320c32de}
       \strng{authorfullhashraw}{045a3f5b20ae3a6917a692fc320c32de}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A major goal in optomechanics is to observe and control quantum behaviour in a system consisting of a mechanical resonator coupled to an optical cavity. Work towards this goal has focused on increasing the strength of the coupling between the mechanical and optical degrees of freedom. However, the form of this coupling is crucial in determining which phenomena can be observed in such a system. Here we demonstrate that avoided crossings in the spectrum of an optical cavity containing a flexible dielectric membrane enable us to realize several different forms of the optomechanical coupling. These include cavity detunings that are (to lowest order) linear, quadratic or quartic in the membrane’s displacement, and a cavity finesse that is linear in (or independent of) the membrane’s displacement. All these couplings are realized in a single device with extremely low optical loss and can be tuned over a wide range in situ. In particular, we find that the quadratic coupling can be increased three orders of magnitude beyond previous devices. As a result of these advances, the device presented here should be capable of demonstrating the quantization of the membrane’s mechanical energy.}
@@ -5866,8 +5943,8 @@
       \strng{authornamehash}{393ce9fd0c0cd420b218f93f9607580b}
       \strng{authorfullhash}{393ce9fd0c0cd420b218f93f9607580b}
       \strng{authorfullhashraw}{393ce9fd0c0cd420b218f93f9607580b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -6514,8 +6591,8 @@
       \strng{authornamehash}{8eb78314df53116c5b8460894cfaca6c}
       \strng{authorfullhash}{8eb78314df53116c5b8460894cfaca6c}
       \strng{authorfullhashraw}{8eb78314df53116c5b8460894cfaca6c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{6}
@@ -6974,8 +7051,8 @@
       \strng{authornamehash}{c34736a912c5efa85dbb917cb4ee02ba}
       \strng{authorfullhash}{c34736a912c5efa85dbb917cb4ee02ba}
       \strng{authorfullhashraw}{c34736a912c5efa85dbb917cb4ee02ba}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.norcada.com/mems-products/high-q-silicon-nitride-membranes/}}
@@ -7432,8 +7509,8 @@
       \strng{authornamehash}{ddd075d4bf5d26bd796cdbb558e0461c}
       \strng{authorfullhash}{50684d40018879ba5346bdb8e338b6cb}
       \strng{authorfullhashraw}{50684d40018879ba5346bdb8e338b6cb}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{6}
