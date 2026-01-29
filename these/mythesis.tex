@@ -61,22 +61,34 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGES LIMINAIRES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
+\frontcover
 \input{thcoverdata.tex} % Ensure this file is correctly filled
-\frontcover\ % requires thcover.sty loaded and thcoverdata.tex filled
-% \include{./thanks.tex}\
+\pagenumbering{gobble} % no page numbers at all in front matter
+
+\input{thcoverdata.tex}
+\input{./thanks.tex}
+
 \begingroup
-% \setstretch{1.8} % or \singlespacing, \onehalfspacing, etc.
+% ... your toc formatting
 \tableofcontents
-\endgroup % \include{these/chap0.tex}
-\mainmatter\ 
-\include{./chap1/chap1.tex}
-\include{./chap2/chap2.tex}
-\include{./chap3/chap3.tex}
-\include{./chap4/chap4.tex}
-\include{./chap5/chap5.tex}
-\include{./chap6/chap6.tex}
-\include{./chap7/chap7.tex}
-\include{appA}
+\endgroup
+
+% -----------------------
+% Start numbering at Chap 1
+% -----------------------
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\mainmatter
+\input{./chap1/chap1.tex}
+\input{./chap2/chap2.tex}
+\input{./chap3/chap3.tex}
+\input{./chap4/chap4.tex}
+\input{./chap5/chap5.tex}
+\input{./chap6/chap6.tex}
+\input{./chap7/chap7.tex}
+\input{appA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter\ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

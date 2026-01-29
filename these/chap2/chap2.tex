@@ -1,7 +1,7 @@
 \newcommand{\adag}[1]{\hat{a}_{#1}^\dagger}
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
 \chapter{Theory: Background} \label{chap:theory}
-This chapter covers the elementary concepts required to describe a membrane-based optomechanical system in a quantum regime. We will first recall basics on optics and field quantization as well as describe the coherent and squeezed light fields, to then turn to the more specific frequency-dependent squeezed light fields. Secondly, we will cover the mathematical description of an optomechanical cavity interacting with a generic coherent optical field. Finally, we will describe optical detection schemes and what they measure in terms of field quadratures.  
+This chapter covers the elementary concepts required to describe a membrane-based optomechanical system in a quantum regime. We will first recall basics on optics and field quantization, as well as describe the coherent and squeezed light fields. Secondly, we will cover the mathematical description of various optical cavities interacting with a generic coherent optical field. Finally, we will describe optical detection schemes and what they measure in terms of field quadratures.  
 \minitoc
 \newpage
 \section{Optics}
@@ -547,7 +547,7 @@ We now have all the tools to graphically represent the quantum states of light i
 \label{fig:ballonstick}
 \end{figure}
 
-We start by describing a coherent state modulated at $\Omega_\mathbf{mod}$, as seen in Fig. \ref{fig:QSD_mod}(a)-(b). As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathbf{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathbf{mod}$ (Fig. \ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal. \\ 
+We start by describing a coherent state modulated at $\Omega_\mathrm{mod}$, as seen in Fig. \ref{fig:QSD_mod}(a)-(b). As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathrm{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathrm{mod}$ (Fig. \ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal. \\ 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/QSD_mod.pdf}
@@ -1007,8 +1007,8 @@ in which the amplification or deamplification processes are set by the phase of 
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/amp_deamp.pdf}
 \caption{Classical amplification-deamplification of an IR seed in an Optical Parametric Oscillator below threshold. 
-(a) Gain of the infrared seed as a function of the green pump phase. The color variations correspond to the pump phase. 
-(b) Amplification-Deamplification of a infrared seed as a function of the normalised pump paramter $x$ ($<1$). The colors correspond to the ones on figure (a) (its extremas). } 
+(a) Gain of the IR seed as a function of the green pump phase for a fixed normalised pump parameter $x=0.8$. The color variations correspond to the pump phase. 
+(b) Amplification-deamplification of an IR seed as a function of the squared pump parameter $x^2$. The square is equivalent to considering the pump power ratio $P/P_{\mathrm{thr}} = |B/B_{\mathrm{thr}}|^2$ rather than the amplitude ratio. The colors correspond to the ones on figure (a) (its extremas). The dashed grey line represents the unit gain i.e. without non-linear medium ($x=0$). } 
 \end{figure}
 
 \noindent \textbf{Fluctuations solution: } The general expression of the QLE in Fourier space is given by 
@@ -1107,7 +1107,7 @@ Later on, we will use this idealized expression to describe how squeezed light i
 \begin{equation}\mathbf{S}_{\rm det}[\Omega] = (1-\eta) \, \mathbf{S}^{\bar \varphi_b}_{\mathrm{OPO}}[\Omega] + \eta \, \mathbf{1}.
   \label{II.xx3}
 \end{equation}
-This expression is actually true for any Gaussian state suffering from losses. As seen in Fig. \ref{fig:OPO_noises}, losses have a dramatic effect on the squeezing level. Fig. \ref{fig:OPO_noises}(a) shows the frequency dependence of the squeezing and antisqueezing levels for various escape efficiencies, while Fig. \ref{fig:OPO_noises}(b) shows the squeezing and antisqueezing levels at frequencies inside the cavity bandwidth as a function of the escape efficiency, where we notice losses have a stronger effect on squeezing than antisqueezing. Finally, Fig. \ref{fig:OPO_noises}(c) shows how extrinsic losses degrade the output squeezing level as a function of the input squeezing level (right at the OPO output). For example, 1 \% losses will limit the maximum squeezing level to $\sim 20$ dB, while 50 \% losses will limit it to $\sim 3$ dB only. Ths squeezing-antisqueezing asymetry is then used to estimate the total losses. 
+This expression is actually true for any Gaussian state suffering from losses. As seen in Fig. \ref{fig:OPO_noises}, losses have a dramatic effect on the squeezing level. Fig. \ref{fig:OPO_noises}(a) shows the frequency dependence of the squeezing and antisqueezing levels for various escape efficiencies, while Fig. \ref{fig:OPO_noises}(b) shows the squeezing and antisqueezing levels at frequencies inside the cavity bandwidth as a function of the escape efficiency, where we notice losses have a stronger effect on squeezing than antisqueezing. Finally, Fig. \ref{fig:OPO_noises}(c) shows how extrinsic losses degrade the output squeezing level as a function of the input squeezing level (right at the OPO output). For example, 1 \% losses will limit the maximum squeezing level to $\sim 20$ dB, while 50 \% losses will limit it to $\sim 3$ dB only. Ths squeezing-antisqueezing asymetry is then used to estimate the total losses. \\ 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPONoises.pdf}

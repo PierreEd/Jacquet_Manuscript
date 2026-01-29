@@ -80,7 +80,7 @@ and we look at what noise dominates the displacement spectrum around the mechani
   \Omega^{\pm}_{\text{SQL}}  =\;\sqrt{\Omega_m^2-\dfrac{\Gamma_m^2}{2}
 \;\pm\;\dfrac{1}{2}\sqrt{\Gamma_m^4-4\Gamma_m^2\Omega_m^2+\left(\frac{\hbar \mathcal{C}^2}{m }\right)^2}}
 \end{equation}
-and consistent with the LIGO/Virgo notation \cite{kimble_conversion_2001, bch}. Over the frequency range of interest $\Omega \in [\Omega_m - \Omega_{\text{SQL}}, \Omega_m + \Omega_{\text{SQL}}]$, the displacement noise is dominated by radiation pressure noise, while outside this range, the noise is dominated by shot noise. However, for every sideband frequency, there exists an optimal input power $\bar{I}_\mathrm{in}^{\rm SQL}[\Omega]$ at which both contributions are equal, minimizing the total displacement noise. This limit is called the Standard Quantum Limit (SQL) and is a direct consequence of Heisenberg's inequality applied to continuous position measurements \cite{BraginskyKhalili1996_RMP_QND, clerk_introduction_2010}. This SQL intensity is given by
+and consistent with the LIGO/Virgo notation \cite{klmtv, bch}. Over the frequency range of interest $\Omega \in [\Omega_m - \Omega_{\text{SQL}}, \Omega_m + \Omega_{\text{SQL}}]$, the displacement noise is dominated by radiation pressure noise, while outside this range, the noise is dominated by shot noise. However, for every sideband frequency, there exists an optimal input power $\bar{I}_\mathrm{in}^{\rm SQL}[\Omega]$ at which both contributions are equal, minimizing the total displacement noise. This limit is called the Standard Quantum Limit (SQL) and is a direct consequence of Heisenberg's inequality applied to continuous position measurements \cite{BraginskyKhalili1996_RMP_QND, clerk_introduction_2010}. This SQL intensity is given by
 \begin{equation}
   S_{xx}^{\rm SN}[\Omega] = S_{xx}^{\rm RPN}[\Omega] \implies \bar{I}_\mathrm{in}^{\rm SQL}[\Omega] = \dfrac{\lambda^2}{128\mathcal{F}^2 \hbar |\chi[\Omega]|}
 \end{equation}
@@ -162,7 +162,7 @@ and we seek the frequency range where the displacement spectrum is below the SQL
 \end{equation}
 Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$: the larger the effect, the smaller the frequency band where it is effective. This is illustrated in figure \ref{fig:increasingR}. \\ 
 
-\begin{figure}[!htbp]
+\begin{figure}[t!]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/FDS_increasingR.pdf}
   \caption{Displacement spectrum for a tabletop optomechanical experiment and for a Virgo-LIGO type interferometer, with frequency-independent squeezing angle $\theta=\pi/4$. As the squeezing factor $r$ increases, the frequency range over which the displacement spectrum goes below the SQL (dashed line) decreases.} 
@@ -175,9 +175,9 @@ Additionally, and as seen in Fig. \ref{fig:FDS_angle}, the optimal angle to maxi
 This motivates the use of frequency-dependent squeezed states to reduce the displacement spectrum below the SQL over a broad frequency range, where every sideband frequency needs to be rotated by a different angle to minimize the displacement spectrum. More specifically, sideband noises contributing to both shot noise and radiation-pressure noise need to be correlated in a frequency-dependent manner to optimally lower the total displacement noise in the vicinity of the mechanical resonance. 
 
 
-\begin{figure}[!htbp]
+\begin{figure}[t!]
   \centering
-  \includegraphics[width=\textwidth]{./chap3/fig/FDSLKB_Angles.pdf}
+  \includegraphics[width=\textwidth]{./chap3/fig/FDS_angle.pdf}
   \caption{Justification of the use of frequency-dependent squeezing to beat the SQL, shown both for a tabletop optomechanical experiment (a) and a Virgo-LIGO type interferometer (b). At each frequency, a different angle is required to minimize the displacement spectrum. The optimal angle varies from 0 far from the mechanical resonance to $\pi/2$ at resonance, passing through $\pm \pi/4$ at the SQL frequencies $\Omega_m \pm \Omega_{\rm SQL}$.}
   \label{fig:FDS_angle}
 \end{figure}
