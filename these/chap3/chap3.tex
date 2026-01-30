@@ -1,5 +1,5 @@
 \chapter{Theory: Squeezed Light \& Optomechanics}
-This chapter will cover the elementary concepts required to describe a membrane-based optomechanical system interacting with quantum light. We will first recall basics on optical field quantization as well describing coherent and squeezed light field, to then turn to the more specific frequency-dependent squeezed light field. Secondly, we will cover the mathematical description of a mechanical resonator interacting with a generic coherent optical field, highlighting the differences with the generic optomechanical system of a mirror on a spring. 
+This chapter will covers the theoretical aspects of squeezed light and its application to membrane optomechanics. We will first review the SQL concept in optomechanical measurements, and show how frequency-dependent squeezed light can be used to go beyond this limit. We will then present the theory of membrane based systems. 
 \minitoc
 \newpage
 
@@ -129,7 +129,7 @@ while for an amplitude-squeezed field, the displacement spectrum reads
 \begin{equation}
   S_{xx}^{\pi}[\Omega] =  \mathcal{C}^{-2}  e^{+2r} + \bigg(\dfrac{\mathcal{C} }{2} \hbar |\chi[\Omega]| \bigg)^2 e^{-2r}.
 \end{equation}
-We then see that phase squeezing reduces the shot-noise contribution but increases the radiation-pressure noise contribution, while amplitude squeezing reduces the radiation-pressure noise contribution but increases the shot-noise contribution. The input cross-correlations being zero, this is completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively, as seen in Fig. \ref{fig:SQLVirgo}.(a) and Fig. \ref{fig:SQL_LKB}.(a). However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit as illustrated in figure \ref{fig:SQLVirgo}(b) and \ref{fig:SQL_LKB}(b) where only the displacement spectrum at $\theta=\pi/4$ goes below the SQL around the mechanical resonance frequency. \\ 
+We then see that phase squeezing reduces the shot-noise contribution but increases the radiation-pressure noise contribution, while amplitude squeezing reduces the radiation-pressure noise contribution but increases the shot-noise contribution. The input cross-correlations being zero, this is completely equivalent to the coherent state with a rescaled input intensity $e^{\pm 2r} \bar{I}_\mathrm{in} $ (hidden in $\mathcal{C}$) for phase/amplitude squeezing respectively, as seen in Fig. \ref{fig:SQLVirgo}.(a) and Fig. \ref{fig:SQL_LKB}.(a). However, neither of these two configurations can reduce both contributions simultaneously, and therefore cannot improve the SQL limit as illustrated in Fig. \ref{fig:SQLVirgo}(b) and \ref{fig:SQL_LKB}(b) where only the displacement spectrum at $\theta=\pi/4$ goes below the SQL around the mechanical resonance frequency. \\ 
 
 \begin{figure}[!htbp]
   \centering
@@ -160,7 +160,7 @@ and we seek the frequency range where the displacement spectrum is below the SQL
 \begin{equation}
   \tanh r < \cos \phi_m[\Omega] < 1
 \end{equation}
-Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$: the larger the effect, the smaller the frequency band where it is effective. This is illustrated in figure \ref{fig:increasingR}. \\ 
+Because $\tanh r$ tends to 1 as $r$ increases, the frequency range where the displacement spectrum is below the SQL decreases with increasing squeezing factor $r$: the larger the effect, the smaller the frequency band where it is effective. This is illustrated in Fig. \ref{fig:increasingR}. \\ 
 
 \begin{figure}[t!]
   \centering
@@ -362,7 +362,7 @@ Although we don't exploit the $G^{(2)}$ coupling in this work, it adds a plethor
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/modelsMATE.pdf}
-  \caption{Resonance frequencies as a function of membrane position for various membrane reflectivities in the MATE configuration for a realistic system ($r_m = 0.7$, $L=30$mm). (a) Schematic of the MATE system. (b) Schematic of the two approaches used to derive the resonance frequencies: field nodes weakly modulated by a dielectric layer (top) and two coupled sub-cavities (bottom). (c) Resonance frequencies as a function of membrane position for various membrane reflectivities. The green and yellow lines correspond to the two eigenmodes of the uncoupled sub-cavities. (d) Absolute values of the linear and quadratic optomechanical couplings as a function of membrane position, displaying regions where the quadratic coupling dominates.}
+  \caption{Resonance frequencies as a function of membrane position for various membrane reflectivities in the MATE configuration for a realistic system ($r_m = 0.7$, $L=25$mm). (a) Schematic of the MATE system. (b) Schematic of the two approaches used to derive the resonance frequencies: field nodes weakly modulated by a dielectric layer (top) and two coupled sub-cavities (bottom). (c) Resonance frequencies as a function of membrane position for various membrane reflectivities. The green and yellow lines correspond to the two eigenmodes of the uncoupled sub-cavities. (d) Absolute values of the linear and quadratic optomechanical couplings as a function of membrane position, displaying regions where the quadratic coupling dominates.}
     \label{fig:models_MATE} 
 \end{figure}
 
@@ -371,7 +371,7 @@ Although we don't exploit the $G^{(2)}$ coupling in this work, it adds a plethor
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{./chap3/fig/MATEresTot.pdf}
-  \caption{Behaviour of the MATE resonance frequencies as a function of membrane reflectivity for a realistic system ($L=30$ mm, $T_1=100$ ppm, $T_2=20$ ppm) with different membrane reflectivities. (a) Resonance frequencies as a function of membrane position. (b) Linear optomechanical coupling as a function of membrane position. (c) Outcoupling efficiency as a function of membrane position. (d) Cavity finesse as a function of membrane position.}
+  \caption{Behaviour of the MATE resonance frequencies as a function of membrane reflectivity for a realistic system ($L=25$ mm, $T_1=100$ ppm, $T_2=20$ ppm) with different membrane reflectivities, ranging from 0.01 in red to 0.99 in blue. (a) Resonance frequencies as a function of membrane position. (b) Linear optomechanical coupling as a function of membrane position. The yellow and green dashed lines correspond to the two subcavities linear dispersive couplings (position independent). (c) Resonant outcoupling efficiencies as a function of membrane position. (d) Cavity finesse as a function of membrane position.}
   \label{fig:mate_res}
 \end{figure}
 
@@ -512,8 +512,8 @@ One could then diagonalize this \(3 \times 3\) matrix to get the new eigenmodes 
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{./chap3/fig/models.pdf}
-  \caption{Comparison of (a) the resonance frequencies and (b) the linear optomechanical coupling derived from the two-cavity model and the single-cavity model, in the MATE configuration for membrane reflectivities of 0.01 and 0.99 ($L=30$mm). The solid lines correspond to the two-cavity model, while the dashed lines correspond to the single-cavity model.}
+  \includegraphics[width=\textwidth]{./chap3/fig/modelsCav.pdf}
+  \caption{Comparison of (a) the resonance frequencies and (b) the linear optomechanical coupling derived from the two-cavity model and the single-cavity model, in the MATE configuration for membrane reflectivities of 0.01 and 0.99 ($L=25$mm). The solid lines correspond to the two-cavity model, while the dashed lines correspond to the single-cavity model.}
   \label{fig:mate_modes}
 \end{figure}
 
