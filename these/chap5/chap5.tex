@@ -13,7 +13,7 @@ Over the past two decades, optomechanical systems have greatly benefited from ad
 
 Previous optomechanics experiments at LKB have primarily used Fabry--Perot cavities with two mirrors, where the end mirror of the cavity was typically a HR mirror deposited on top of a mechanical structure featuring a mechanical mode of interest. \\
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/resonatorsLKB.pdf}
     \caption{Mechanical resonators developed at LKB over the years for optomechanics experiments. (a) Quartz micropillar resonator studied over A. Kuhn L. Neuhaus PhD work. (b) Suspended silicon disk resonator studied over R. Metzdorff and M. Croquette PhD works. (c) Silicon Nitride membrane resonator developed in-house and used in this work. The insets show a typical fundamental mode shape of each resonator.}
@@ -148,7 +148,7 @@ A smart workaround was introduced by Jack Sankey and its group who introduced a 
 This approach preserves the cavity alignment for gentle flexures, while enabling continuous and wide-range tuning of both the membrane displacement and tilt. 
 
 
-\begin{figure}[H]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/flexure tune.pdf}
     \caption{Cavity design and assembly. (a) In this configuration (no voltage applied to the piezos), the screws are used to align the membrane plane with respect to the back mirror plane, ensuring a good parallelism between both planes. (b) Flexure tuning of the membrane position. When a voltage is applied to the piezos, they push on the back of the assembly, forcing the silicon frame to bend, thus displacing the membrane with respect to the back mirror. The two dashed lines show the initial positions of the back mirror and the membrane. This push shortens the overall cavity length (i.e. increasing the overall system's frequency), as well as the relative distance between the mirror and the membrane (i.e. changing the optomechanical coupling). }
@@ -201,7 +201,7 @@ The optical setup now has to be aligned in order to ensure a good mode matching 
   \item \textbf{Step 4} (Fig.~\ref{fig:tilt}(d))\textbf{:} We scan the cavity length using the piezo actuator mounted on the input mirror, and monitor the cavity resonances using both the reflected and transmitted photodiodes. We finally fine tune the mode matching by \textit{beam-walking} the two injection mirrors. We can also play with the collimating lens at the fiber coupler (not shown on the diagram) to fine tune the longitudinal mode matching. The cavity is now aligned and ready for operation.
   \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/tilt_alignementB.pdf}
     \caption{Setup alignment procedure. (a) to (d) show the steps to align the cavity with respect to the optical path (detailed in the main text). The (a.i) to (a.iv) show what is seen on the camera for four different tilt positions while (a.iv) displays a 'good' tilt alignement: no visible fringes except for the dim fringes of the camera setup. These dim fringes are present when the beam is at normal incidence with the back mirror (use of the iris) and are believed to be intereferences arising from reflections inside the camera objective as they are seen whatever the plane of focus is. }
@@ -245,7 +245,7 @@ We first scan the input mirror piezo with a linear ramp $V_{\rm SW}$ ranging fro
 \end{equation} 
 where we introduced the coefficients $a_i$ and $b_i$ to be fitted, as well as a cross-coupling term $\alpha V_{DC}$ to take into account the fact that the back piezo actuators do change the front cavity length since the piezo pushing the back cavity assembly bends the silicon frame. \\
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/scansTot.pdf}
     \caption{Scans of cavity I over a few FSRs. (a) Raw scan of the cavity transmission as a function of the applied voltage $V_{\rm SW}$ on the front piezo and $V_{\rm DC}$ on the back piezo. The dashed line displays the theoretical model using the fitted membrane reflectivity $|r_m|$. (b) Rescaled scan where the fitted polynomials are used to convert the sweep voltage into effective cavity detuning in FSR units, and the DC voltage into effective membrane displacement in microns. }
@@ -258,7 +258,7 @@ Using Eq. \eqref{eq:membrane_rt} we can then estimate the membrane thickness to 
 
 From the fitted polynomials, we then extract the transfer functions of both piezo actuators, such that each measured observable can be mapped to an effective membrane displacement $x$ rather than the applied voltages $V_{\rm SW}$ and $V_{\rm DC}$. This gives us a displacement map shown in Fig.~\ref{fig:map_displacements}, where we can extract the cavity length variations $\Delta L = \Delta L_1(V_{\rm SW}, V_{\rm DC}) + \Delta L_2(V_{\rm DC}) $. \\ 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/map_displacements.pdf}
     \caption{Displacement map of cavity I. Using the fitted polynomials, we can convert the applied voltages $V_{\rm SW}$ and $V_{\rm DC}$ into effective displacements of the membrane with respect to the back mirror. The colormap shows the total cavity length variations $\Delta L = \Delta L_1 + \Delta L_2$ as a function of both piezo voltages.}
@@ -298,15 +298,15 @@ We then evaluate the finesse of the empty cavity as well as the cavity with the 
 
 The second method to estimate the cavity finesse turned out to be slightly disappointing, as it didn't yield consistent and reproducible results. Furthermore, numerical integration to fit the measured data produces divergences (due to a low number of data points), which in turn forbids a proper estimation of the finesse. The reliable method was therefore taken to be the sideband method. A typical linear regression is still shown as an example in Fig.~\ref{fig:Ffromring}, but the results shown in Fig.~\ref{fig:finesse_cav_exp} are only extracted from the sideband method. \\ 
 
-\begin{figure}[h!]
+\begin{figure}[b!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/Ffromringdowns.pdf}
-    \caption{Finesse measurement of cavity II using the ringdwon method. The data points show a typical linear regression used to extract the cavity finesse from the peaks temporal spacing against the peakss height ratio. }
+    \caption{Finesse measurement of cavity II using the ringdown method. The data points show a typical linear regression used to extract the cavity finesse from the peaks temporal spacing against the peakss height ratio. }
     \label{fig:Ffromring}
 \end{figure}
 
 The results from the first method are shown in Fig.~\ref{fig:finesse_cav_exp}, where we can see a good qualitative agreement with the theoretical model developped in Chap. III. While cavity I featured an empty cavity finesse of 14 000, the insertion of the membrane reduced it to values ranging from 6 000 to 10 000 depending on the membrane position. Cavity II featured a lower empty cavity finesse of 12 780, which was further reduced to values ranging from 3 000 to 5 000 with the membrane inserted. These values are in line with other MIM/MATE systems reported in the literature \cite{Sankey2010, Thompson2008, Wilson2015}, and could be improved by better membrane alignment (tilt and transverse position). 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/FinesseCavExp.pdf}
     \caption{Finesse measurement of the two cavities using the sideband method (a) and the associated linewidths (b). The effective reflectivity finesse model in Eq. \eqref{eq:effectiveF} has been changed to account for the linear shifts undergone by all resonances as a consequence of the cavity shortening.}
@@ -390,7 +390,7 @@ To extract the intrinsic mechanical quality factor, we then proceeded to do mech
 
 The probable cause for this low mechanical quality factor is the stress applied to the membrane by the flexure mechanism. While this stress is necessary to tune the membrane position, it does reduce the mechanical quality factor by introducing additional loss channels such as clamping losses and internal friction due to bending of the membrane. This $Q$ degradation was reported in MIM systems by Cindy Regal and coworkers, where they observed a drop from $10^6$ down to $10^4$ when the membrane frame was glued, adding stress to the membrane \cite{Regal2008}. Therefore, while the flexure mechanism is necessary to tune the membrane position, it does degrade significantly the mechanical quality factor, which could be an issue for experiments requiring high $Q$ such as ground state cooling or quantum limited measurements. 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/mech_ringdown.pdf}
     \caption{Ringdown sequence of the fundamental mechanical mode of cavity II. (a) 2D colormap showing the mechanical ringdown as a function of time and acquisition number. Each column corresponds to a single oscilloscope acquisition triggered on the piezo drive stopping at time 0s. The red area before time zero shows the ringup phase where the piezo drives the membrane at resonance, while after time zero the mechanical motion decays exponentially. (b) Fit of the mechanical ringdown decay used to extract the intrinsic mechanical quality factor $Q_m$. From this fit, we found $Q_m = 12 000$ for cavity II. }
@@ -446,7 +446,7 @@ Two natural avenues for improvement arise from this comparison. First, reducing 
 
 The mechanical resonator can then be improved by changing the simple SiN membrane for a PnC membrane, which would enhance the mechanical quality factor by suppressing clamping losses through a phononic bandgap \cite{Tsaturyan2017}. These membranes can reach mechanical quality factors up to $10^8$ at cryogenic temperatures, which would make them ideal candidates for quantum optomechanics experiments. Studied at length during E. Ivanov and H. Patange PhDs \cite{ivanov,patange}, the recipe to fabricate these membranes is now well established. We tried to mount a PnC membrane in the MATE cavity, but unfortunately it broke while in vacuum. The picture in Fig. \ref{fig:PnC}(a) shows such a PnC membrane mounted in the MATE cavity, as well as its simulated fundamental mode shape. The ringdown measurement shown in Fig.~\ref{fig:PnC}(b) shows a mechanical quality factor of $Q_m = 5 \times 10^5$ at room temperature, which is already a significant improvement over the standard membranes used in this work. \\
 
-\begin{figure}[H]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/PnC.pdf}
     \caption{Phononic crystal patterned SiN membranes (Lotus design). (a) View of the PnC in transmission of the MATE cavity with the laser beam spot centered on its central defect. The inset shows the simulated fundamental mode shape. (b) Ringdown measurement of the fundamental mechanical mode, showing a mechanical quality factor of $Q =  5 \times 10^5$ at room temperature. The ringdown data were taken in a simple Michelson interferometer by H. Patange and K. Gerashchenko during their PhD theses \cite{patange,gerashchenko}. }
@@ -486,7 +486,7 @@ where $z_0$ and $z_0^f$ are the positions of the cavity waist and fiber waist re
 
 We then have two configurations to consider, as shown in Fig.~\ref{fig:cavityOMFFP} i.e. injecting the light from the flat fiber mirror or from the curved fiber mirror. To realize the MATE system, the resonator needs to be positionned near the flat fiber interface. As seen in the coupling efficiency expression, setting $z_0 = z_0^f$ requires the cavity waist to be located at the flat mirror, which is naturally achieved in configuration A. 
 
-\begin{figure}[H]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/cavOMFFP.pdf}
     \caption{Two possible configurations for a fibered MATE cavity. (a) Configuration where the membrane is mounted on the input fiber mirror. (b) Configuration where the membrane is mounted on the back mirror. The overlap between the cavity mode and the input fiber mode needs to be maximized in order to ensure optimal mode matching to the cavity mode. The components are not to scale. }
@@ -552,7 +552,7 @@ Over my PhD I only got to fabricate and characterize the fiber profiles, while t
 The setup used to shape the fiber tips using the CO$_2$ laser is shown in Fig.~\ref{fig:CO2setup}. The system combines external pulse generation and focusing optics with a high-precision three-axis translation platform for reproducible positioning i.e. \textit{shooting path}, complemented by an optical profilometer for surface metrology i.e. \textit{imaging path}. The entire setup is housed in a temperature-stabilized enclosure, and includes a motorized tip/tilt stage to align the fiber facet perpendicular to the CO$_2$ beam prior to machining. The machining and profilometry beam paths are kept separate, allowing reliable shuttling between processing and measurement locations. The profilometry stage provides sub-micron lateral resolution and, through averaging, can reach sub-nanometer height sensitivity, enabling automated centering and alignment of fiber cores before fabrication. \\ 
 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/CO2setup.pdf}
     \caption{ CO$_2$ laser machining setup for fiber mirror fabrication. (a) Picture of the setup, where we can see the CO$_2$ laser path, the imaging path, and the fiber mounted on a 3-axis translation stage. (b) Schematic of the setup, showing the CO$_2$ laser beam focused onto the cleaved fiber tip using a lens. The fiber is mounted on a 3-axis translation stage to allow precise positioning and focusing of the laser beam. The precision translation stages allow to move the fiber in and out of the laser focus as needed, implement multiple laser shoot routines, and go back and forth between imaging and machining. The imaging part uses a 515 nm LED source along with a Mirau objective to reconstruct the fiber profile interferometrically. }
@@ -561,7 +561,7 @@ The setup used to shape the fiber tips using the CO$_2$ laser is shown in Fig.~\
 
 Using this setup under supervision of P. Mahiou, I helped fabricating and characterizing various fiber profiles, some of which are shown in Fig.~\ref{fig:profilefibers}. We can see a flat fiber profile obtained after cleaving and \textit{cleaning} the fiber tip using a defocused CO$_2$ laser shot to remove surface roughness (a). We also see two concave profiles obtained using single (b) and multiple (c) CO$_2$ laser shots, yielding parabolic profiles over the fiber core with radii of curvatures ranging from tens to hundreds of microns. \\ 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/profilefibers.pdf}
     \caption{Interferometric readout of the fiber profiles using a LED at 515 nm. Superposing the light field reflected of the fiber surface with a plane phase reference allows to reconstruct the fiber profile with nanometric accuracy. (a) Profile of a flat fiber, that could be used as a plane mirror. The fiber is cleaved and then \textit{cleaned} using a CO$_2$ laser to remove surface roughness. (b) Profile of a concave fiber mirror machined using a single shot of the CO$_2$ laser. The profile yields a gaussian shape. (c) Profile of a concave fiber mirror machined using multiple shots of the CO$_2$ laser, yielding a parabolic shape. }
