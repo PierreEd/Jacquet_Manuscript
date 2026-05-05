@@ -1,7 +1,7 @@
 \newcommand{\adag}[1]{\hat{a}_{#1}^\dagger}
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
 \chapter{Theory: Background} \label{chap:theory}
-This chapter covers the elementary concepts required to describe a membrane-based optomechanical system in a quantum regime. We will first recall basics on optics and field quantization, as well as describe the coherent and squeezed light fields. Secondly, we will cover the mathematical description of various optical cavities interacting with a generic coherent optical field. Finally, we will describe optical detection schemes and what they measure in terms of field quadratures.  
+This chapter establishes the theoretical framework for describing coherent and squeezed optical fields, their interaction with optical cavities, and the measurement of their quantum properties. It begins with a review of optics and field quantization, followed by the introduction of quantum states of light, the treatment of cavity interactions, and the description of detection schemes in terms of field quadratures. 
 \minitoc
 \newpage
 \section{Optics}
@@ -37,7 +37,7 @@ H_n\!\left(\frac{\sqrt{2}y}{w(z)}\right)
 \exp\!\left(-\frac{x^2+y^2}{w^2(z)}\right) \\
 \times \exp\!\left[i\!\left(kz + \frac{k(x^2+y^2)}{2R(z)} - (m+n+1)\psi(z)\right)\right],
 \end{multline}
-where $H_m, H_n$ are Hermite polynomials. 
+where ($H_m, H_n$) are Hermite polynomials. 
 
 \begin{figure}
 \centering
@@ -48,7 +48,7 @@ where $H_m, H_n$ are Hermite polynomials.
 \subsection{Quantum Description}
 \subsubsection{Quantised Electromagnetic Field }
 % \the\textwidth
-We will consider both cases of a finite quantization volume $V$ and an infinite volume: when dealing with cavity modes, we will use the finite volume description, while for propagating modes carrying sideband correlations we will use the infinite volume description, under the two-photon formalism description. Both description are linked through the input-output formalism introduced later on. \\
+We will consider both cases of a finite quantization volume $V$ and an infinite volume: when dealing with cavity modes, we will use the finite volume description, while for propagating modes carrying sideband correlations we will use the infinite volume description, under the two-photon formalism prescription. Both descriptions are linked through the input-output theory introduced later on. \\
 
 We first consider the quantized electromagnetic field in a volume $V$. The electric field operator can be written as \cite{knightoptics}
 \begin{equation}
@@ -57,7 +57,7 @@ We first consider the quantized electromagnetic field in a volume $V$. The elect
 \left[ \hat{a}^{\vphantom{\dagger}}_{\ell}\,\mathbf{f}_{\ell}(\mathbf{r})\,e^{-i\omega_{\ell} t} 
 - \hat{a}_{\ell}^\dagger\,\mathbf{f}_{\ell}^*(\mathbf{r})\,e^{+i\omega_{\ell} t} \right],
 \end{equation}
-where   $\mathcal{E}_\ell = \sqrt{\hbar \omega_\ell / 2 \varepsilon_0 V}$ is the field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
+where   $\mathcal{E}_\ell = \sqrt{\hbar \omega_\ell / 2 \varepsilon_0 V}$ is the \textit{discrete} field amplitude per photon in mode $\ell$, $\hbar$ is the reduced Planck constant, $\omega_\ell$ is the angular frequency of mode $\ell$, and $\varepsilon_0$ is the vacuum permittivity. The spatial mode functions $\mathbf{f}_{\ell}(\mathbf{r})$ form an orthonormal basis in $V$ according to  
 \begin{equation*}
 \int_V d^3r\; \mathbf{f}_{\ell}^*(\mathbf{r}) \cdot \mathbf{f}_{\ell'}(\mathbf{r}) 
 = \delta_{\ell \ell'} , \quad \mathbf{f}_{\ell}(\mathbf{r}) \propto E_{mn}(\mathbf{r}) \, \boldsymbol{\epsilon}_x
@@ -66,19 +66,19 @@ where we assumed a linearly-polarized field along the $x$-axis, with $\boldsymbo
 
 In the limit of an infinite quantization volume $V \to \infty$, the discrete mode index $\ell$ becomes a continuous variable i.e. the mode spacing becomes infinitesimal. As detailed in Appendix A, we now need to consider a continuum of modes with annihilation operators $\hat a[\omega]$ labeled by their angular frequency $\omega$. To come down to the two-photon formalism, we make the following assumptions:
 \begin{itemize}
-    \item we consider frequencies $\omega = \omega_0 \pm \Omega$ centered around a carrier frequency $\omega_0$, with $\Omega  \in [-2 \pi B,+2 \pi B] \ll \omega_0$ where $B$ is the bandwidth. This is valid since the bandwidth $B$, generally up to tens of GHz, is small compared to $\omega_0/2\pi$ wich is hundreds of THz for optical frequencies. 
-    \item we consider a single spatial mode, i.e. we drop the spatial dependence of the field and consider only one transverse mode function $\mathbf{f}(\mathbf{r})$, the fundamental Gaussian mode imposed by the laser source and/or spatial filtering elements. This is valid since the spatial envelope of the beam does not vary significantly over the considered bandwidth. The spatial mode function is then factored out of the integrals over frequency.
-    \item we consider the electric field operator to only be dependent on time $t$, having projected the field onto the transverse mode function and integrated over the transverse plane, as well as setting the propagation coordinate $z=0$ for simplicity.
+    \item We consider frequencies $\omega = \omega_0 \pm \Omega$ centered around a carrier frequency $\omega_0$, with $\Omega  \in [-2 \pi B,+2 \pi B]$ and $ |\Omega| \ll \omega_0$, where $B$ is the bandwidth. This is valid since the bandwidth $B$, generally up to tens of GHz, is small compared to $\omega_0/2\pi$ which is hundreds of THz for optical frequencies. 
+    \item We consider a single spatial mode, i.e. we drop the spatial dependence of the field and consider only one transverse mode function $\mathbf{f}(\mathbf{r})$, the fundamental Gaussian mode imposed by the laser source and/or spatial filtering elements. This is valid since the spatial envelope of the beam does not vary significantly over the considered bandwidth. The spatial mode function is then factored out of the integrals over frequency.
+    \item We consider the electric field operator to only be dependent on time $t$, having projected the field onto the transverse mode function and integrated over the transverse plane, as well as setting the propagation coordinate $z=0$ for simplicity.
 \end{itemize}
 
 Upon these assumptions, the electric field operator reduces to a time-dependent operator (Heisenberg picture) expressed as \cite{Oelker2016PhD,Whittle2023PhD} 
 \begin{equation}
   \begin{split}
-   \hat{E}(t) =  \mathcal{E}_0 \bigg[ \cos ( \omega_0 \, t - \frac{\pi}{2} )   \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, \ & (\hat{a}_+^{\vphantom{\dagger}} + \, \hat{a}_-^{\dagger})\,e^{-i\Omega t}   \\ 
+   \hat{E}(t) =  \tilde{\mathcal{E}}_0 \bigg[ \cos ( \omega_0 \, t - \frac{\pi}{2} )   \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, \ & (\hat{a}_+^{\vphantom{\dagger}} + \, \hat{a}_-^{\dagger})\,e^{-i\Omega t}   \\ 
     +  \sin ( \omega_0 \, t - \frac{\pi}{2} )   \int^{\infty}_{-\infty} \dfrac{d\Omega}{2\pi} \, & i(\hat{a}_-^{\dagger} - \hat{a}_+^{\vphantom{\dagger}}  \, )\,e^{-i\Omega t} \bigg] 
   \end{split}
 \end{equation}
-where we defined the sideband annihilation operators as $\hat{a}_+[\Omega] \equiv \hat{a}[\omega_0 + \Omega]$ and $\hat{a}_-[\Omega] \equiv \hat{a}[\omega_0 - \Omega]$. The field amplitude per photon at the carrier frequency is given by $\mathcal{E}_0 = \sqrt{\hbar \omega_0/2 \varepsilon_0 c A}$, where $A$ is the effective cross-sectional area of the beam and $c$ the speed of light in vacuum. The explicit relationship between the discrete mode operator $\hat a_\ell^{\vphantom{\dagger}}$ and the continuous mode operator $\hat a[\omega]$ (and thus their hermitian conjugate) is given in Appendix A. \\ 
+where we defined the sideband annihilation operators as $\hat{a}_+[\Omega] \equiv \hat{a}[\omega_0 + \Omega]$ and $\hat{a}_-[\Omega] \equiv \hat{a}[\omega_0 - \Omega]$. The \textit{continuous} field amplitude per photon at the carrier frequency is given by $\tilde{\mathcal{E}}_0 = \sqrt{\hbar \omega_0/2 \varepsilon_0 c A}$, where $A$ is the effective cross-sectional area of the beam and $c$ the speed of light in vacuum. The explicit relationship between the discrete mode operator $\hat a_\ell^{\vphantom{\dagger}}$ and the continuous mode operator $\hat a[\omega]$ (and thus their hermitian conjugate) is given in Appendix A. \\ 
 
 \noindent \textbf{Note:} Although the electric field operator is written in the Heisenberg picture, the annihilation and creation operators $\hat a[\omega]$ and $\hat a[\omega]^\dagger$ are Schrödinger-like operators, i.e. time-independent operators. This is because we already factored out the time dependence $e^{-i\omega t}$ associated to each frequency mode when writing our annihilation/creation operators. As seen later on, the time dependence of the field operator defined through the Fourier transform arises from the superposition of many frequency modes, leading to beating at frequency $\Omega$. This is the heart of the two-photon formalism, where a time-dependent field Heisenberg-like operator is built from the superposition of Schrödinger-like annihilation/creation operators at different frequencies. In the literature, the Schrödinger-like operators are sometimes written as $\hat a_\omega$ to draw a parallel between the discrete mode case $\hat a_\ell$, but we will stick  to the $\hat a[\omega]$ notation to avoid confusion with time-dependent operators. \\ 
 
@@ -114,9 +114,9 @@ The two most common quadratures are defined as follows:
 \mathbf{\hat{a}}\;\equiv\;
 \begin{pmatrix}\hat a_+\\ \hat a_-^\dagger\end{pmatrix}
 \end{equation}
-where we defined the field vector $\mathbf{\hat{a}}$ and the transfer matrix $\mathbf \Gamma$, later used to switch from \textit{one-photon} to \textit{two-photon} description of optical elements. Mathematically, the integral bounds are the detection bandwidth, but we can safely extend it to infinity. The electric field operator can then be recasted as 
+where we defined the field vector $\mathbf{\hat{a}}$ and the transfer matrix $\mathbf \Gamma$, later used to switch from \textit{one-photon} to \textit{two-photon} description of optical elements. Considering the electric field operator defined above, we can safely extend the integration limits to infinity, such that it can be recasted as 
 \begin{equation}
-\hat{E}(t) = \, \mathcal{E}_0 \,\left[ \cos ( \omega_0 \, t - \frac{\pi}{2} ) \int_  {-\infty}^{\infty} \dfrac{d\Omega}{2\pi}  \,\hat a_1[\Omega] \,e^{-i\Omega t} + \, \sin ( \omega_0 \, t - \frac{\pi}{2} )  \int_ {-\infty}^{\infty} \dfrac{d\Omega}{2\pi}  \,\hat a_2[\Omega] \,e^{-i\Omega t} \right].
+\hat{E}(t) = \, \tilde{\mathcal{E}}_0 \,\left[ \cos ( \omega_0 \, t - \frac{\pi}{2} ) \int_  {-\infty}^{\infty} \dfrac{d\Omega}{2\pi}  \,\hat a_1[\Omega] \,e^{-i\Omega t} + \, \sin ( \omega_0 \, t - \frac{\pi}{2} )  \int_ {-\infty}^{\infty} \dfrac{d\Omega}{2\pi}  \,\hat a_2[\Omega] \,e^{-i\Omega t} \right].
 \end{equation}
 where it is now explicit that the electric field features two orthogonal components oscillating at the carrier frequency $\omega_0$, with amplitudes given by the quadrature operators $\hat a_1$ and $\hat a_2$.\\
 
@@ -149,7 +149,7 @@ The matrix form commutator in both time and frequency space reads
 2\pi \delta (\Omega - \Omega') .
 \end{cases}
 \end{equation}
-with $\hat \sigma_z$ the Pauli Z matrix, and where it is implicit that we evaluate both at different frequencies or times respectively.  
+with $\mathbf{\hat \sigma_z}$ the Pauli Z matrix, and where it is implicit that we evaluate both at different frequencies and times respectively.  
 An arbitrary rotated quadrature pair is obtained by
 \begin{equation}
 \mathbf{\hat{u}_\phi}\;\equiv\; \mathbf R(\phi)\,\mathbf{\hat{u}}
@@ -212,7 +212,7 @@ Considering the mean field amplitude \(\bar{\alpha} = |\bar{\alpha}| e^{i\bar{\v
 
 
 \subsubsection{Noise Spectral Density Matrix}
-A central concept in this thesis is the two-sided Noise Spectral Density matrix of the quadrature fluctuations, which characterizes the second-order statistical properties of the quantum state in the frequency domain. Namely, it describes the spectral distribution of the variances and covariances of the quadrature fluctuations. For a given quadrature angle \(\phi\), it is defined as
+A central concept in this work is the \textit{two-sided} Noise Spectral Density matrix of the quadrature fluctuations, which characterizes the second-order statistical properties of the quantum state in the frequency domain. Namely, it describes the spectral distribution of the variances and covariances of the quadrature fluctuations. For a given quadrature angle \(\phi\), it is defined as
 \begin{equation}
 \begin{split}
   \mathbf{S}_{\phi} [\Omega]& =   \dfrac{1}{2} \int \dfrac{\delta \Omega^{'} }{2\pi} \langle \{\delta \mathbf{\hat{u}}_{\phi}\, , \delta \mathbf{\hat{u}}_{\phi}^{\dagger} \} \rangle \\
@@ -224,19 +224,19 @@ A central concept in this thesis is the two-sided Noise Spectral Density matrix 
 \end{split}
 \label{eq:Sa}
 \end{equation}
-where \(\{\hat{A},\hat{B}\} = \hat{A}\hat{B} + \hat{B}\hat{A}\) denotes the anticommutator, immplicitely evaluated at frequencies \(\Omega\) and \(\Omega^{'}\), and integrated over \(\Omega'\). The diagonal elements of the noise spectral density matrix correspond to the power spectral densities of the quadrature fluctuations, while the off-diagonal elements represent the cross-spectral densities between different quadratures. The noise spectral density matrix is a Hermitian matrix, reflecting the physical properties of the quantum state. We will particularly focus on the amplitude and phase quadrature noise spectral density matrix, obtained by setting \(\phi = 0\), and we will denote it as \(\mathbf{S}[\Omega]\equiv \mathbf{S}_{\phi=0}[\Omega]\). The subscripts will then denote whether we refer to the transmitted or reflected fields of an optical cavity, the output spectrum of a squeezer, etc. 
-For completeness we introduce the single-sided noise spectral density matrix, defined as
+where \(\{\hat{A},\hat{B}\} = \hat{A}\hat{B} + \hat{B}\hat{A}\) denotes the anticommutator, implicitely evaluated at frequencies \(\Omega\) and \(\Omega^{'}\), and integrated over \(\Omega'\). The diagonal elements of the Noise Spectral Density matrix correspond to the power spectral densities of the quadrature fluctuations, while the off-diagonal elements represent the cross-spectral densities between both quadratures. The Noise Spectral Density matrix is a Hermitian matrix, reflecting the physical properties of the quantum state. We will particularly focus on the amplitude and phase quadrature Noise Spectral Density matrix, obtained by setting \(\phi = 0\), and we will denote it as \(\mathbf{S}[\Omega]\equiv \mathbf{S}_{\phi=0}[\Omega]\). The subscripts will then denote whether we refer to the transmitted or reflected fields of an optical cavity, the output spectrum of a squeezer, etc. 
+For completeness we introduce the \textit{single-sided} Noise Spectral Density matrix, defined as
 \begin{equation}
-  \mathbf{\bar S}_{\phi}[\Omega]= \dfrac{1}{2} (\mathbf{S}_{\phi}[\Omega]+ \mathbf{S}_{\phi}[-\Omega])
+  \mathbf{\bar S}_{\phi}[\Omega]= \dfrac{1}{2} (\mathbf{S}_{\phi}[\Omega]+ \mathbf{S}_{\phi}[-\Omega]).
 \end{equation}
-such that the variance of a quadrature operator can be retrieved by integrating the single-sided noise spectral density over positive frequencies only (as one would with a real signal in a spectrum analyzer). 
-A generalized version of the Heisenberg uncertainty relation can be expressed in terms of the noise spectral density matrix as
+\noindent
+While $\mathbf{S}_{\phi} [\Omega]$ is the fundamental two-sided Noise Spectral Density defined from the symmetrized correlation functions, the one-sided spectrum $\mathbf{\bar S}_{\phi}[\Omega]$ is the quantity directly accessible in experiments and ensures a direct correspondence between spectral integration and the variance of the quadrature. A generalized version of the Heisenberg uncertainty relation can be expressed in terms of the Noise Spectral Density matrix as
 \begin{equation}
   \det \mathbf{S}_{\phi}[\Omega] \geq 1
 \end{equation}
 which sets a fundamental limit on the simultaneous knowledge of the quadrature fluctuations at a given frequency \(\Omega\). 
 \subsubsection{Vacuum state}
-For the vacuum state \(|0\rangle\), we derive the noise spectral density matrix using the commutation relations and the fact that \(\langle \delta \hat{a}  \rangle = 0\) (see Annex A). The calculation yields
+For the vacuum state \(|0\rangle\), we derive the Noise Spectral Density matrix using the commutation relations and the fact that \(\langle \delta \hat{a}  \rangle = 0\) (see Annex A). The calculation yields
 \begin{equation}
 \mathbf{S}_{\text{vac}}[\Omega] =
 \begin{pmatrix}
@@ -244,7 +244,7 @@ For the vacuum state \(|0\rangle\), we derive the noise spectral density matrix 
 0 & 1
 \end{pmatrix}
 \end{equation}
-for any angle \(\phi\) and frequency \(\Omega\). This result indicates that the vacuum state has equal fluctuations in both quadratures, with no correlations between them, as expected for a minimum uncertainty state. The noise spectral density matrix of the vacuum state serves as a reference point for comparing other quantum states, such as coherent and squeezed states, which may exhibit different fluctuation properties.
+for any angle \(\phi\) and frequency \(\Omega\). This result indicates that the vacuum state has equal fluctuations in both quadratures, with no correlations between them, as expected for a minimum uncertainty state. The Noise Spectral Density matrix of the vacuum state serves as a reference point for comparing other quantum states, such as coherent and squeezed states, which may exhibit different fluctuation properties.
 
 \subsubsection{Linear Optical Systems}
 As we will develop further in the next section, the output fields of various optical systems can be expressed in a general linear form as
@@ -278,7 +278,7 @@ such that
 
 
 \subsubsection{Graphical Representation of Gaussian States}
-Gaussian states can actually be pictured in a 2D space, where the two axes correspond to the two quadratures $\hat a_1$ and $\hat a_2$. In the case where the mean phase is zero, these quadratures correspond to the amplitude and phase quadratures $\hat p$ and $\hat q$. The quantum state can then be represented as a 2D Gaussian distribution centered around the mean values of the quadratures, with the shape and orientation of the distribution characterized by the off-diagonal elements of the noise spectral density matrix. The uncertainties in the quadratures are represented by the widths of the Gaussian distribution along each axis, while correlations between the quadratures are represented by the tilt of the distribution. This graphical representation provides an intuitive way to visualize and understand the properties of Gaussian quantum states, such as coherent and squeezed states, in terms of their quadrature fluctuations and correlations. Examples of such representations are shown in Fig. \ref{fig:quantum_states}. 
+Gaussian states can then be pictured in a 2D space, where the two axes correspond to the $\hat a_1$ and $\hat a_2$ quadratures. In the case where the mean phase is zero, these quadratures correspond to the amplitude and phase quadratures $\hat p$ and $\hat q$. The quantum state can then be represented as a 2D Gaussian distribution centered around the mean values of the quadratures, with the shape and orientation of the distribution set by the Noise Spectral Density matrix elements. The uncertainties in the quadratures - the diagonal elements - are represented by the widths of the Gaussian distribution along each axis, while correlations between the quadratures - the off-diagonal elements - are represented by the tilt of the distribution. This graphical representation provides an intuitive way to visualize and understand the properties of Gaussian quantum states, such as thermal, coherent and squeezed states, in terms of their quadrature fluctuations and correlations. Examples of such representations are shown in Fig. \ref{fig:quantum_states}. 
 
 \begin{figure}
 \centering
@@ -336,9 +336,9 @@ such that we can verify the eigenvalue equation (Eq. \ref{II.14}) straightforwar
 \mathrm{Im}\big(|\alpha| e^{i(\bar{\varphi}-\phi)}\big)
 \end{pmatrix}
 \end{equation}
-such that the components reduce to $2\mathrm{Re} (\alpha)$ and  $2\mathrm{Im} (\alpha)$ if $\phi=0$, and to $2|\alpha|$ and $0$ if $\phi = \bar{\varphi}$, or equivalently if we set $\bar{\varphi} = \phi  = 0$ as mentioned earlier (such that $\mathbf{\hat u}$ corresponds to the amplitude and phase quadratures). We also notice the delta function at $\Omega = 0$, indicating that the coherent state has a non-zero mean field only at the carrier frequency. \\
+such that the components reduce to $2\mathrm{Re} (\alpha)$ and  $2\mathrm{Im} (\alpha)$ if $\phi=0$, and to $2|\alpha|$ and $0$ if $\phi = \bar{\varphi}$, or equivalently if we set $\bar{\varphi} = \phi  = 0$ as mentioned earlier (such that $\mathbf{\hat u}$ corresponds to the amplitude and phase quadratures). We also notice the delta function at $\Omega = 0$, indicating that the coherent state has a non-zero mean field at the carrier frequency only. \\
 
-\noindent \textbf{Spectrum:} For a coherent state, the fluctuations are identical to that of the vacuum state, seen directly from Eq. \ref{II.18}. Since the fluctuation operators are unchanged by the displacement, the noise spectral density matrix remains that of the vacuum:
+\noindent \textbf{Spectrum:} For a coherent state, the fluctuations are identical to that of the vacuum state, seen directly from Eq. \ref{II.18}. Since the fluctuation operators are unchanged by the displacement, the Noise Spectral Density matrix remains that of the vacuum:
 \begin{equation}
 \mathbf{S}_{\text{coh}}[\Omega] = \mathbf{S}_{\text{vac}} = 
 \begin{pmatrix}
@@ -404,7 +404,7 @@ where we defined the transfer matrix
 & = \mathbf{R}(-\theta) e^{-r \sigma_z} \mathbf{R}(\theta)
 \end{split}
 \end{equation*}
-Using the linear optical system formalism introduced earlier, we identify the transfer matrices $\mathbf{T}$ and $\mathbf{L} = \mathbf{0}$ (no additional noise). The noise spectral density matrix of a bright squeezed state is then computed as
+Using the linear optical system formalism introduced earlier, we identify the transfer matrices $\mathbf{T}$ and $\mathbf{L} = \mathbf{0}$ (no additional noise). The Noise Spectral Density matrix of a bright squeezed state is then computed as
 \begin{equation}
   \mathbf S_{\text{sqz}}[\Omega] = \mathbf{T}\mathbf{S}_{\text{vac}} \mathbf{T}^{\dagger} = \mathbf{T}\mathbf{T}^{\dagger}.
 \end{equation}
@@ -419,7 +419,7 @@ Explicitly, this yields
 \label{II.xx4}
   \end{split}
 \end{equation}
-This result shows how the squeezing parameter \(r\) and squeezing angle \(\theta\) influence the quadrature fluctuations in the squeezed state. The diagonal elements of the noise spectral density matrix represent the variances of the quadrature fluctuations, while the off-diagonal elements represent the correlations between the quadratures. At an arbitrary measurement angle \(\phi\), the noise spectral density matrix is given by 
+This result shows how the squeezing parameter \(r\) and squeezing angle \(\theta\) influence the quadrature fluctuations in the squeezed state. The diagonal elements of the Noise Spectral Density matrix represent the variances of the quadrature fluctuations, while the off-diagonal elements represent the correlations between the quadratures. At an arbitrary measurement angle \(\phi\), the Noise Spectral Density matrix is given by 
 \begin{equation}
   \begin{split}
   \mathbf{S}_{\text{sqz},\phi}[\Omega] & = \mathbf{R}(\phi) \, \mathbf{S}_{\text{sqz}}[\Omega] \, \mathbf{R}(-\phi) \\
@@ -538,7 +538,7 @@ As seen in the above expression, the covariance matrix display a sum of Dirac fu
 
 We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\). Once in the frame rotating at \(\omega_0\), the carrier field is a DC term, while the sidebands at \(\pm \Omega\) rotate. Each sideband mode is then associated with a quantum state: it can, for instance, be in a given squeezed state or in a given coherent state. The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{ball-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig. \ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig. \ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.\\ 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/ballonstick.pdf}
 \caption{Ball-on-stick representation of quantum sidebands.
@@ -928,7 +928,7 @@ We now turn to the description of optical cavities with a $\chi^{(2)}$ medium em
   \hat H = \hbar \omega_p \hat{b}^{\dagger}\hat{b} + \hbar \omega_0 \hat{a}^\dagger \hat{a} + \frac{i\hbar\epsilon}{2}( \hat{b} \, \hat{a}^{\dagger2} - \hat{b}^\dagger \, \hat{a}^2).
 \end{equation}
 where $\hat{a}$ and $\hat{b}$ are the annihilation operators of the fundamental field at frequency $\omega_0$ and the pump field at frequency $\omega_p = 2\omega_0$ respectively, and $\epsilon$ is the non-linear coupling strength. We assume perfect phase matching for simplicity. The first non-linear term $\hat{b} \, \hat{a}^{\dagger2}$ corresponds to Parametric Down Conversion (PDC), while the second term $\hat{b}^\dagger \, \hat{a}^2$ corresponds to Second Harmonic Generation (SHG). Both processes are illustrated in Fig. \ref{fig:chi2_process}. In our experiment wih squeezed light, we use both processes to first generate a pump field using a SHG scheme, then use the generated field to \textit{pump} a degenerate Optical Parametric Oscillator (OPO). The equations of motion of both fields are very similar in their structure, yet different in their phenomenology. Here we outline the main results and predictions for both. 
-\begin{figure}
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/schema_SHG_OPO_2photons.pdf}
 \caption{Diagrams of $\chi^{(2)}$ non-linear processes. 
@@ -940,7 +940,7 @@ where $\hat{a}$ and $\hat{b}$ are the annihilation operators of the fundamental 
 \subsubsection{Second Harmonic Generation}
 
 The SHG scheme consists in shining a laser field at frequency $\omega_0$ onto the cavity, and the non-linear medium generates a field at frequency $\omega_p = 2\omega_0$, that is, two photons at $\omega_0$ described by operator $\hat{a}$, are converted into a single photon at $\omega_p$ described by operator $\hat{b}$. The input field is thus $\hat{a}_{\mathrm{in}}$ at $\omega_0$, while the input fields at $\omega_p$ are vacua $\hat{b}_{\mathrm{in}} = \delta {\hat b}_{\mathrm{l}}= \delta \hat{b}_{\mathrm{vac}}$. We restrain the theoretical description to our experiment, where the end mirror reflectivity is $\sim 1$ for our generated green beam, as seen in the figure below $\kappa_{2,b}=0$. We will not derive the noise spectra for this scheme as they are not of interest in this work. \\ 
-\begin{figure}[h]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/cavitySHG copy.pdf}
 \caption{ Cavity diagram for the Second Harmonic Generation. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations, similar as in Fig. I.4, now considering both the infrared pump, and the generated green beam. The difference in transverse size has been exagerated for clarity.  } 
@@ -974,7 +974,7 @@ consistent with \cite{Sorensen1998PhD,burks_thesis_2010}. This cumbersome expres
 
 \subsubsection{Optical Parametric Oscillation \& Amplification}
 For this scheme, we consider a pump field with frequency $\omega_p = 2\omega_0$. A first key difference from the SHG scheme can be highlighted by the fact that we are now pumping at $2\omega_0$, such that pairs of entangled photons are generated at $\omega_0 + \Omega$ and $\omega_0 - \Omega$, with $\Omega$ a sideband frequency allowed by the cavity bandwidth, hence conserving energy. 
-\begin{figure}[h]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/OPO2.pdf}
 \caption{Cavity diagram for the Optical Parametric Oscillator. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations, similar as in Fig. I.4, now considering both the green pump, and the generated infrared squeezed beam. The beams are shifted for illustrative purposes but actually share the same optical axis in the experiment. } 
@@ -1138,7 +1138,7 @@ The $\mathbf{S}[\Omega]$ noise matrix can either be the full cavity one, or the 
 \subsection{Optomechanical Cavities}
 We now turn to standard optomechanical cavities. As in the simple Fabry-Perot case, we consider a cavity mode, in which we now allow one of the coupler (traditionnaly the output coupler), to be itself a \textit{mechanical} harmonic oscillator with annihilation operator $\hat{c}$, effective mass $m$, angular resonance frequency $\Omega_m$ and damping rate $\Gamma_m$. In canonical optomechanical systems the mechanics operators are usually denoted as $\hat b$ but in our case it would be redundant with the operators describing the pump field in non-linear systems. The position can be expressed in terms of our bosonic operators as  $\hat{x}=x_0(\hat{c}+\hat{c}^{\dagger})$ with $x_0 = \sqrt{\hbar/(2m\Omega_m)}$ the resonator's zero-point fluctuations. 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[width=\textwidth]{./chap2/fig/CavityOM.pdf}
 \caption{Diagram generic optomechanical system. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations. $\hat x$ is the quantum position operator of the mechanical resonator which linearly shifts the cavity resonance frequency. } 

@@ -11,7 +11,7 @@ Over the past two decades, optomechanical systems have greatly benefited from ad
 
 \subsection{Previous LKB work and Motivation}
 
-Previous optomechanics experiments at LKB have primarily used Fabry--Perot cavities with two mirrors, where the end mirror of the cavity was typically a HR mirror deposited on top of a mechanical structure featuring a mechanical mode of interest. \\
+Previous optomechanics work at LKB has largely focused on Fabry–Pérot cavities with a moving-mirror design, where an HR mirror is fabricated directly on a mechanical element supporting the relevant mode. \\
 
 \begin{figure}[t!]
     \centering  
@@ -21,24 +21,24 @@ Previous optomechanics experiments at LKB have primarily used Fabry--Perot cavit
 \end{figure}
 
 
-Over A. Kuhn and L. Neuhaus PhD works \cite{kuhn,neuhaus}, the group, in collaboration with ONERA developed a platform based on a $1$-mm-thick quartz micropillar with an effective mass of $33~\mu$g. The structure supports a fundamental compression mode oscillating at $3.6$~MHz, with a mode shape shown in Fig.~\ref{fig:resonatorsLKB}.(a). Using a dry-film photoresist technique, a $10$ $\mu$m diameter high-reflectivity dielectric mirror was coated on one end of the pillar. Careful design of the suspension has yielded mechanical quality factors up to $3\times 10^{6}$ at room temperature and up to $7\times 10^{7}$ below 1~K. When integrated into a $50~\mu$m-long Fabry--Perot cavity with a custom-fabricated coupling mirror, finesses $\sim10^{5}$ were achieved. Importantly, this compact cavity remains robust against vibrations of the dilution refrigerator and maintains alignment during cooldown, thereby providing a stable platform to study optomechanical effects in the intermediate mass regime. \\
+Over A. Kuhn and L. Neuhaus PhD works \cite{kuhn,neuhaus}, the group, in collaboration with ONERA developed a platform based on a $1$-mm-thick quartz micropillar with an effective mass of $33~\mu$g. The structure features a fundamental compression mode at $3.6$~MHz, with a mode shape shown in Fig.~\ref{fig:resonatorsLKB}.(a). Using a dry-film photoresist technique, a $10$ $\mu$m diameter HR dielectric mirror was coated on one end of the pillar. Careful design of the suspension has yielded mechanical quality factors up to $3\times 10^{6}$ at room temperature and up to $7\times 10^{7}$ below 1~K. When integrated into a $50~\mu$m-long Fabry--Perot cavity with a custom-fabricated coupling mirror, finesses of $\sim10^{5}$ were achieved. Importantly, this compact cavity remains robust against vibrations of the dilution refrigerator and maintains alignment during cooldown, thereby providing a stable platform to study optomechanical effects in the intermediate mass regime. \\
 
 Then over R. Metzdorff and M. Croquette PhDs \cite{metzdorff,croquette}, another resonator was developed in collaboration with Francesco Marin’s team, based on a suspended silicon disk shown in Fig.~\ref{fig:resonatorsLKB}.(b). The device operates in a balanced mode, where the central disk vibrates in opposition to four surrounding counterweights. By adjusting the geometry, the resonance frequency was increased to $280$~kHz, corresponding to an effective mass of about $110~\mu$g, bringing the system closer to the micropillar parameters. A HR mirror was then coated on top using the same technique as for the micropillar. Finesse of about $\sim 50 000$ were then reached. At cryogenic temperature, optimized designs reached mechanical quality factors on the order of $1.2 \times 10^{6}$. \\
 
-Both systems look promising when you focus on the sheer values of the parameters of their fundamental high-$Q$ vibration mode, and quantum radiation-pressure definitely seem at hand with a laser power $\simeq$ 100 $\mu$W. As promising as they are, the high-$Q$ resonators used at LKB had a number of drawbacks. \\
+Both systems looked promising when focusing on the sheer parameter values of their fundamental high-$Q$ vibration mode, and quantum radiation-pressure definitely seemed at hand with a laser power $\simeq$ 100 $\mu$W. As promising as they looked, these two high-$Q$ resonators had a number of drawbacks. \\
 
-The micropilar, for instance, is a very nice concept: using longitudinal comprssion waves allows to clamp the resonator at a node location and obtain very high $Q$ resonances without relying to phononic crystals. Unfortunately, this comes with a huge caveat: minimizing the thickness of the central clamping membrane required a very incremental fabrication process, with a number of short etching steps combined with frequent measurements of the achieved mechanical $Q$, to reach a value $\simeq 10^7$ or higher (corresponding to a membrane thickness below 5 $\mu$m) before membrane breakage. This proved quite demanding, and the combination of this process with many additional stages of resonator fabrication, a complicated thin-film protection step and optical coating performed in a far away lab (in Villeurbanne) eventually yielded a very small number (of the order of unity) of available very high-$Q$ resonators, despite tremendous fabrication efforts. Furthermore, the pillar resonators displayed a number of low-frequency ($\simeq$ 10 kHz) vibration modes that could easily be parametrically excited (just by laser frequency fluctuations around the lock at resonance with the cavity) as soon as the optical power reached a few tens of $\mu$W \cite{neuhaus}. Active damping of these modes with a feedback loop actually was a major motivation for the development of the PyRPL toolbox. \\ 
+The micropilar, for instance, is a very nice concept: using longitudinal comprssion waves allows to clamp the resonator at a node location and obtain very high $Q$ resonances without relying on phononic crystals. Unfortunately, this comes with a huge caveat: minimizing the thickness of the central clamping membrane required a very incremental fabrication process, with a number of short etching steps combined with frequent measurements of the achieved mechanical $Q$, to reach a value of $\simeq 10^7$ or higher (corresponding to a membrane thickness below 5 $\mu$m) before membrane breakage. This proved quite demanding, and the combination of this process with many additional stages of resonator fabrication i.e. a complicated thin-film protection step and optical coating performed in a lab far away (in Villeurbanne), eventually yielded a very small number (of the order of unity) of available very high-$Q$ resonators, despite tremendous fabrication efforts. Furthermore, the pillar resonators displayed a number of low-frequency ($\simeq$ 10 kHz) vibration modes that could easily be parametrically excited (just by laser frequency fluctuations around the lock at resonance with the cavity) as soon as the optical power reached a few tens of $\mu$W \cite{neuhaus}. Active damping of these modes with a feedback loop actually was a major motivation for the development of the PyRPL toolbox (and its IIR filters). \\ 
 
-The wheel resonator developed by F. Marin and his collaborators didn't suffer from the fabrication issues as it was processed with standard silicon etching techniques. The maximum $Q$-value reached ($\simeq 10^6$) certainly was typically one order of magnitude lower than what could reasonably be hoped for with the pillar strategy, but that appeared a reasonable price to pay for a much simpler and more reliable fabrication process. Unfortunately, these resonators also displayed low-frequency vibration modes (though a smaller number of them), that also made it difficult to envision operating optomechanical cavities in the radiation-pressure dominated regime \cite{metzdorff}. Shortly put, displaying QRPN in stable operation required a larger mass ratio between the \textit{science} mode and the low-frequency frame modes. \\ 
+The wheel resonator developed by F. Marin and his collaborators didn't suffer from the fabrication issues as it was processed with standard silicon etching techniques. The maximum $Q$-value reached ($\simeq 10^6$) was typically one order of magnitude lower than what could reasonably be hoped for with the pillar strategy, but that appeared a reasonable price to pay for a much simpler and more reliable fabrication process. Unfortunately, these resonators also displayed low-frequency vibration modes (though a smaller number of them), that also made it difficult to envision operating optomechanical cavities in the radiation-pressure dominated regime \cite{metzdorff}. Shortly put, displaying QRPN in stable operation required a larger mass ratio between the \textit{science} mode and the low-frequency frame modes. \\ 
 
 Although the systems ended up being limited by various factors mentioned above (optical, mechanical and thermal effects), the parts designed over the years did feature a high level of passive stability as well as good thermalization properties. We then decided to turn to the SiN membrane platform (Fig.~\ref{fig:resonatorsLKB}.(c)), that had been under study at LKB for a while, in the context of the resonant coupling of a mechanical (MHz) membrane to a (low-frequency) qubit \cite{gerashchenko2025probingquantummotionmacroscopic}. This offered the possibility to take advantage of local design and fabrication, at the expense of a more complicated geometry: the MIM/MATE cavity. \\ 
 
-At last, as the dilution fridge used for the experiments became increasingly impractical and costly to operate over the years, it was decided to take advantage of the available dry dilution fridge already used for the membrane/qubit experiments. This implied relying at some point to an optical fiber to deliver/extract the squeezed light from the optomechanical cavity. In order to limit optical losses, this eventually led to the choice of a fibered membrane-in-the-middle cavity, once again taking advantage of some expertise available at LKB, in that case in the {\it Atom Chips} group led by J. Reichel and R. Long. 
+At last, as the dilution fridge used for the experiments became increasingly impractical and costly to operate over the years, it was decided to take advantage of the available dry dilution fridge already used for the membrane/qubit experiments. This implied relying at some point on optical fibers to couple/extract the squeezed field from the optomechanical cavity. In order to limit optical losses, this eventually led to the choice of a fibered MIM/MATE cavity, once again taking advantage of some expertise available at LKB, in that case in the {\it Atom Chips} group led by J. Reichel and R. Long. 
 
 
 
 \subsection{Specifications and Design}
-It was then decided to build on these previous designs and adapt them to a three-mirror cavity in a MATE configuration to benefit from the large linear and tunable coupling range as detailed in the previous chapter. That is the work Michael and myself undertook during my M2 internship and the following years of my PhD.
+Building on these previous designs, we adapted the system to a three-mirror cavity in a MATE configuration, to benefit from the large linear and tunable coupling range, as detailed in Chap. II. That is the work Michael and myself undertook during my M2 internship and the following years of my PhD.
 This new three-mirror cavity then needed to fulfill various requirements detailed in what follows. 
 
 \subsubsection{High Finesse} 
@@ -46,9 +46,7 @@ This new three-mirror cavity then needed to fulfill various requirements detaile
 Low loss mirrors were produced at the \textit{Laboratoire des Matériaux Avancés} (LMA, Lyon) using ion-beam-sputtered (IBS) Bragg stacks made of $\mathrm{Ta_2O_5}$ and $\mathrm{SiO_2}$ \cite{amato,Amato_2018}. The coatings were deposited in the LMA's \textit{Veeco SPECTOR} chambers and subsequently annealed at 500°C for 10 hours to minimise both optical (absorption) and mechanical losses, following the recipe of Amato \textit{et~al.} \cite{amato}.\\ 
 
 
-We supplied the LMA with a batch of substrates with various radii of curvature to explore different cavity geometries. The requested specifications are summarized in the table below. The total round‐trip scatter and absorption losses are usually below $ 20\,$ppm, in agreement with the measurements reported (absoption $\sim$0.7 ppm, scattering $\sim$10 ppm).
-
-
+We supplied the LMA with a batch of substrates of various radii of curvature to explore different cavity geometries. The requested specifications are summarized in the table below. The total round‐trip scatter and absorption losses are usually below $ 20\,$ppm, in agreement with the measurements reported (absorption $\sim$0.7 ppm, scattering $\sim$10 ppm).
 \begin{table}[h!]
 \centering
 \begin{tabular}{lcccc}
@@ -67,46 +65,45 @@ The quarter‐wave design is centred at $\lambda = 1064$ nm for normal incidence
 
 \subsubsection{High mechanical $Q$ factor} 
 
-Two different square membranes were used in the MATE cavities, both made of high-stress silicon nitride (Si$_3$N$_4$), a material known for its excellent mechanical properties, including high tensile stress and low intrinsic mechanical loss, making it ideal for optomechanical applications\cite{regal,zwickl}, and of nominal side lengths $l_n \times l_m = 500\,\mu $m$\times500\,\mu$m. \\ 
+Two different square membranes were used in the MATE cavities, both made of high-stress silicon nitride (Si$_3$N$_4$), a material known for its excellent mechanical properties, including high tensile stress and low intrinsic mechanical loss, and of nominal side lengths $l_n \times l_m = 500\,\mu $m$\times500\,\mu$m, making it ideal for optomechanical applications \cite{regal,zwickl}.  \\ 
 
-The first membrane was made in-house at LKB by T. Jacqmin and H. Patange during Himanshu's PhD work. The silicon wafer was 350 $\mu$m thick, and the SiN layers thicknesses was nominally 100 nm. Starting with the silicon wafer/chip coated with SiN on both sides, a photoresist is patterned by lithography to define a square window. Reactive-ion etching (RIE) then opens a square window through the top SiN layer. The exposed silicon is then wet-etched in KOH from the opened side until the cavity breaks through, leaving a released, free-standing SiN membrane spanning the opening. The membrane is then cleaned using HF to remove any residuals from the fabrication process. This very process etches the SiN layer as well, resulting in a final membrane thickness of less than 100 nm. For detailed fabrication steps, refer to Himanshu's PhD thesis \cite{patange}. We nonetheless succintly display the fabrication steps in Fig \ref{fig:plain_sin_fab}. \\ 
+The first membrane was made in-house at LKB by T. Jacqmin and H. Patange during Himanshu's PhD work. The silicon wafer was 350 $\mu$m thick, and the SiN layers thicknesses was nominally 100 nm. Starting with the silicon wafer/chip coated with SiN on both sides, a photoresist is patterned by lithography to define a square window. Reactive-ion etching (RIE) then opens a square window through the top SiN layer. The exposed silicon is wet-etched in KOH from the opened side until all the silicon is etched through, leaving a released, free-standing SiN membrane spanning the opening. The membrane is then cleaned using HF to remove any residues/dirt from the fabrication process. This very process etches the SiN layer as well, resulting in a final membrane thickness of less than 100 nm. For detailed fabrication steps, refer to Himanshu's PhD thesis \cite{patange}. We nonetheless succintly display the fabrication steps in Fig \ref{fig:plain_sin_fab}. \\ 
 
 
-\begin{figure}
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/plain_sin_fab.pdf}
-    \caption{Fabrication steps of the SiN membrane resonator used in the MATE cavity. (a) Starting from a silicon wafer coated with SiN on both sides. (b) Lithography and RIE to open a square window in the top SiN layer. (c) KOH wet etching from the opened side until the cavity breaks through, leaving a free-standing SiN membrane. The membrane is then cleaned using HF to remove any residuals from the fabrication process.}
+    \caption{Fabrication steps of the SiN membrane resonator used in the MATE cavity. (a) Starting from a silicon wafer coated with SiN on both sides. (b) Lithography and RIE to open a square window in the top SiN layer. (c) KOH wet etching from the opened side until all the silicon is etched through, leaving a free-standing SiN membrane. The membrane is then cleaned using HF to remove any residues/dirt from the fabrication process.}
     \label{fig:plain_sin_fab}    
 \end{figure}
 
 
-The second membrane is a commercially Norcada (NX10050AS) \cite{norcada_sinmembrane} SiN square membrane, specifically marketed as a \textit{high-Q} standard membrane for optomechanics applications. It features a silicon frame of 200 $\mu$m thickness, and a SiN layer of nominal thickness 50 nm. Regarding the quality factor, literature reports:
+The second membrane is a commercial Norcada (NX10050AS) SiN square membrane  \cite{norcada_sinmembrane}, specifically marketed as a \textit{high-Q} standard membrane. It features a silicon frame of 200 $\mu$m thickness, and a SiN layer of nominal thickness 50 nm. Regarding the quality factor, literature reports:
 \begin{itemize}
-  \item \textbf{Room temperature.}  Measurements on similar Norcada membranes report quality factors
+  \item \textbf{Room temperature:} measurements on similar Norcada membranes report quality factors
         $Q \sim 5\times10^{6}$ at $\mathrm{MHz}$ in
         $<10^{-6}$ mbar vacuum \cite{Thompson2008Nature,norte_mechanical_2016}.
-  \item \textbf{Cryogenic operation.}  Cooling to $T \lesssim 300\,\mathrm{mK}$
+  \item \textbf{Cryogenic operation:}  cooling to $T \lesssim 300\,\mathrm{mK}$
         reduces internal friction by an order of magnitude, with
         $Q>10^{7}$ routinely observed \cite{regal,zwickl}.
 \end{itemize}
 
-The membrane’s high stress, thin-film nature and dielectric composition make
-it fully compatible with ultra-high-vacuum environments and repeated
-cryogenic cycling, while introducing (a priori) negligible optical loss in the cavity.
+The membrane’s high stress, thin-film nature and dielectric composition make it fully compatible with UHV environments and repeated cryogenic cycling, while introducing (a priori) negligible optical loss in the cavity.
 The expected mechanical mode resonance frequencies of a membrane under tensile stress $\sigma$ are given by:
 \begin{equation}
 f_{n,m}= \sqrt{\dfrac{\sigma}{4\rho}\left(\left(\dfrac{n}{l_n}\right)^2+\left(\dfrac{m}{l_m}\right)^2\right)}
 \end{equation}
 with $\rho \sim 3 \,\mathrm{g/cm^3}$ the film mass density, $\sigma \sim 1$ GPa, ($n,m$) the mode indices, and ($l_n,l_m$) the membrane side lengths. Considering a square membrane of identical side lengths of $500\,\mu$m yields a fundamental mode frequency at $f_{1,1} \sim 816$ kHz, with the two higher-order modes $(1,2)$ and $(2,1)$ degenerate at $f_{1,2}\sim f_{2,1} \sim 1.29$ MHz etc.. We display the first few mode shapes and expected frequencies in Fig.~\ref{fig:simumode}. 
- \begin{figure} 
+
+ \begin{figure}[h!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/simumode.pdf}
     \caption{Simulated mode shapes and frequencies of a square SiN membrane of side length $500\mu$m under high tensile stress ($\sigma \sim 1$ GPa).}
     \label{fig:simumode}
 \end{figure}
 
-\subsubsection{Optical alignement}
- The cavity is designed to be compatible with the Thorlabs cage system. The input mirror is mounted on a 3-axis cage mount, allowing for easy alignment of the input mirror with respect to the cavity optical axis. Both the resonator and the back mirror are embedded within a custom-made holder, which is itself integrated into the cage system. The relative tilt between the resonator and the back mirror is adjusted using a set of 3 screws with a very fine thread, allowing for a fine alignment of the parallelism of the back cavity. The alignment procedure is detailed in section~\ref{sec:alignment_procedure}.
+\subsubsection{Compactness \& Optical alignement}
+ The cavity is designed to be compatible with a Thorlabs cage system, allowing for a compact and stable assembly, as well as providing an easy access to the optics and piezos. The input mirror is mounted on a 3-axis cage mount, allowing for easy alignment of the input mirror with respect to the cavity optical axis. Both the resonator and the back mirror are embedded within a custom-made holder, which is itself integrated into the cage system. The relative tilt between the resonator and the back mirror is adjusted using a set of 3 screws with a very fine thread, allowing for a fine alignment of the parallelism of the back cavity. The alignment procedure is detailed in section~\ref{sec:alignment_procedure}.
 
 
 
@@ -116,18 +113,9 @@ with $\rho \sim 3 \,\mathrm{g/cm^3}$ the film mass density, $\sigma \sim 1$ GPa,
 
 The input mirror is glued to a PI Ceramic \texttt{P-016.00H} ring-stack piezoelectric actuator using vacuum epoxy (Torr Seal). Driven from 0 to $+1000\,\mathrm{V}$ it provides a longitudinal stroke of $5\,\mu\text{m}$, a blocking force of $2.9\,\mathrm{kN}$, as well as an unloaded resonance of 144 kHz, making it suitable for fast, low-noise cavity-length control. \\
 
-The end-mirror–membrane assembly is mounted on a custom holder actuated by three \texttt{PD080.31} piezo chips arranged mechanically in series. Each chip yields $2\,\mu\text{m}$ of travel over a drive range of $-20$ to $+100\,\mathrm{V}$; the triple stack therefore supplies roughly $6\,\mu\text{m}$ of coarse tuning while preserving high stiffness and sub-microsecond response. The effective range is lower than this, owing to the fact the piezo is constrained within the holder. Furthermore, one should not constrain the piezo too much to avoid damaging it: it happened that the assembly was too tightly screwed such that it ended up fracturing the piezo pushing against the back mirror holder. An easy workaround would be to add some elastic spacer between the piezo and the copper piece (like kapton tape for example). \\ 
+The end-mirror–membrane assembly is mounted on a custom holder actuated by three \texttt{PD080.31} piezo chips arranged mechanically in series. Each chip yields $2\,\mu\text{m}$ of travel over a drive range of $-20$ to $+100\,\mathrm{V}$; the triple stack therefore supplies roughly $6\,\mu\text{m}$ of coarse tuning while preserving high stiffness and sub-microsecond response. The effective range is lower than this, since the piezo is constrained within the holder. One should not constrain the piezo too much to avoid damaging it: it happened that the assembly was too tightly screwed such that it ended up fracturing the piezo pushing against the back mirror holder. An easy workaround would be to add some elastic spacer between the piezo and the copper piece (like kapton tape for example). \\ 
 
 Combining the $5\,\mu\text{m}$ stroke of the front \texttt{P-016.00H} with the $6\,\mu\text{m}$ range of the rear triple stack provides an overall cavity-length adjustment sufficient to scan a few FSRs, as well as to tune the membrane position over a full wavelength, thus allowing exploration of the three-mirror cavity physics.
-
-
-\subsubsection{Compactness \& Stability}
-The entire assembly is built as a cage system using standard Thorlabs cage parts, allowing for a compact and stable assembly. The cage system also allows for (relatively) easy alignment of the mirrors, as well as easy access to the piezo actuators.
-
-\subsubsection{Vacuum and Cryogenic compatibility}
-The back cavity composed of the back mirror and the middle mirror is embedded inside an Oxygen Free Copper (OFHC) assembly with a circular geometry, eventually mitigating for transverse misalignment issues when going to cryogenic temperatures, the constraints compensating themselves radially with respect to the symmetry axis of the cavity assembly. Furthermore, the screws used to hold the assembly together are made of brass with a thermal expansion coefficient lower than that of the OFC, tightening up the cavity when reaching cryogenic temperatures.
-Thorlabs cage parts are compatible with moderate vacuum operation down to $\sim 10^{-7}$ mbar if properly degreased and ultrasound cleant, but a custom cryocompatible system to hold the input mirror would be needed for operation at cryogenic temperatures. \\
-
 
 \begin{figure}
     \centering  
@@ -137,9 +125,22 @@ Thorlabs cage parts are compatible with moderate vacuum operation down to $\sim 
 \end{figure}
 
 
+\subsubsection{Vacuum and Cryogenic compatibility}
+The back cavity composed of the back mirror and the middle mirror is embedded inside an Oxygen Free Copper (OFHC) assembly with a circular geometry, eventually mitigating for transverse misalignment issues when going to cryogenic temperatures, the constraints compensating themselves radially with respect to the symmetry axis of the cavity assembly. Furthermore, the screws used to hold the assembly together are made of brass with a thermal expansion coefficient lower than that of the OFC, tightening up the cavity when reaching cryogenic temperatures.
+Thorlabs cage parts are compatible with moderate vacuum operation down to $\sim 10^{-7}$ mbar if properly degreased and ultrasound cleant, but a custom cryocompatible system to hold the input mirror would be needed for operation at cryogenic temperatures. \\
+
+
 The initial design of the cavity was made using Autodesk Fusion 360, allowing for a detailed 3D model of the entire assembly, including the piezo actuators, the mirrors and the cage system. The design was then exported to a STEP file format, which was used to manufacture the parts using a 3 axis CNC milling machine and a digital lathe. The pieces were machined by C. Doré and G. Coupin at the LKB mechanical workshop with a typical 100 $\mu$m tolerance. A detailed view of the cavity design and assembly is shown in Fig. \ref{fig:cad_cavity}.
 
 \subsection{Flexure Actuation}
+
+\begin{figure}[b!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/flexure tune.pdf}
+    \caption{Cavity design and assembly. (a) In this configuration (no voltage applied to the piezos), the screws are used to align the membrane plane with respect to the back mirror plane, ensuring a good parallelism between both planes. (b) Flexure tuning of the membrane position. When a voltage is applied to the piezos, they push on the back of the assembly, forcing the silicon frame to bend, thus displacing the membrane with respect to the back mirror. The two dashed lines show the initial positions of the back mirror and the membrane. This push shortens the overall cavity length (i.e. increasing the overall system's frequency), as well as the relative distance between the mirror and the membrane (i.e. changing the optomechanical coupling). }
+    \label{fig:flexure_tune}
+\end{figure}
+
 
 One specificity of the MATE system is that the back cavity is significantly shorter than the front cavity, which would require high precision in both the machining of the copper pieces and the positioning of the resonator. In our case, we aim at a centimetric cavity which would require to position the membrane at roughly hundreds of microns from the back mirror, and parallel to the back mirror. Moving the membrane independently from the back mirror while maintaining a controllable tilt between both planes is therefore challenging. \\
 
@@ -148,12 +149,6 @@ A smart workaround was introduced by Jack Sankey and its group who introduced a 
 This approach preserves the cavity alignment for gentle flexures, while enabling continuous and wide-range tuning of both the membrane displacement and tilt. 
 
 
-\begin{figure}[t!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/flexure tune.pdf}
-    \caption{Cavity design and assembly. (a) In this configuration (no voltage applied to the piezos), the screws are used to align the membrane plane with respect to the back mirror plane, ensuring a good parallelism between both planes. (b) Flexure tuning of the membrane position. When a voltage is applied to the piezos, they push on the back of the assembly, forcing the silicon frame to bend, thus displacing the membrane with respect to the back mirror. The two dashed lines show the initial positions of the back mirror and the membrane. This push shortens the overall cavity length (i.e. increasing the overall system's frequency), as well as the relative distance between the mirror and the membrane (i.e. changing the optomechanical coupling). }
-    \label{fig:flexure_tune}
-\end{figure}
 
 
 \color{black}
@@ -161,13 +156,21 @@ This approach preserves the cavity alignment for gentle flexures, while enabling
 \subsection{Experimental Setup}
 The assembly is now integrated into the optical setup shown in Fig.~\ref{fig:optical pics}, as well as schematically in Fig.~\ref{fig:optical layout}. The laser source is a 1064 nm Nd:YAG laser (Coherent Mephisto). We did not require the full optical power delivered by the laser, so a short optical path not detailed here splits the laser in 3 arms to eventually fiber couple some laser power and bring it to other experiments that may also need 1064 nm laser light. \newline
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/manips.pdf}
     \caption{Pictures of the optical setup used for the MATE cavity experiments. (a) Overall view of the optical table, with the laser source in the back, the optical path in the middle, and the vacuum tank on the left. (b) Top view of the MATE cavity mounted inside the vacuum tank, with AR coated windows to allow for optical access.}
     \label{fig:optical pics}
 \end{figure}
 
+
+\begin{figure}[t!]
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/fig_lock_MATE.pdf}
+    \caption{Schematic of the optical layout used for the MATE cavity experiments. The various optical components are detailed in the main text. The transparent lines show two additional optical paths that were not used during this thesis, one for a prospective LO, and another to deflect the reflected beam to a Homodyne Detection setup using a flip mirror.}
+    \label{fig:optical layout}
+\end{figure}
+ \newpage
 
 The optical path then consists of : 
 \begin{itemize}
@@ -182,12 +185,7 @@ The optical path then consists of :
 \end{itemize}
 
 
-\begin{figure}[h!]
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/fig_lock_MATE.pdf}
-    \caption{Schematic of the optical layout used for the MATE cavity experiments. The various optical components are detailed in the main text. The transparent lines show two additional optical paths that were not used during this thesis, one for a prospective LO, and another to deflect the reflected beam to a Homodyne Detection setup using a flip mirror.}
-    \label{fig:optical layout}
-\end{figure}
+
 
 
 The optical path was designed to be as modular as possible, allowing for easy replacement of the components if needed, as well as additions of optical elements. For this reason, it features two fainted additional optical paths as seen on Fig.~\ref{fig:optical layout}, one for a prospective LO, and another to deflect the reflected beam to a Homodyne Detection setup using a flip mirror. Polarization optics would need to be added on the Homodyne Detection path to mix the LO and the reflected beam, but this was not done during this thesis.
@@ -243,7 +241,7 @@ We first scan the input mirror piezo with a linear ramp $V_{\rm SW}$ ranging fro
     L_2 &= b_0 + b_1 V_{\mathrm{DC}} + b_2 V_{\mathrm{DC}}^2 + b_3 V_{\mathrm{DC}}^3
   \end{split}
 \end{equation} 
-where we introduced the coefficients $a_i$ and $b_i$ to be fitted, as well as a cross-coupling term $\alpha V_{DC}$ to take into account the fact that the back piezo actuators do change the front cavity length since the piezo pushing the back cavity assembly bends the silicon frame. \\
+where we introduced the coefficients $a_i$ and $b_i$ to be fitted, as well as a cross-coupling term $\alpha V_{\mathrm{DC}}$ to take into account the fact that the back piezo actuators do change the front cavity length since the piezo pushing the back cavity assembly bends the silicon frame. \\
 
 \begin{figure}[t!]
     \centering  
@@ -265,13 +263,13 @@ From the fitted polynomials, we then extract the transfer functions of both piez
     \label{fig:map_displacements}
 \end{figure}
  
-Importantly, we see that, contrary to the model developped earlier, the back piezo actuation does change the front cavity length, with a non zero coupling coefficient $\alpha$. This is expected from the flexure tuning mechanism, where pushing on the back of the assembly bends the silicon frame, thus shortening the overall cavity length. Knowing these $\Delta L$s variations, a natural next step would be to compensate the action of the back piezo on the long cavity length by adding a DC component to the front piezo voltage, such that the overall cavity length remains constant when tuning the membrane position. This would allow for a better decoupling of the membrane position and the cavity length, which would be useful for various experiments. 
+As seen in Fig.~\ref{fig:scantot}(b), and contrary to the model developped in section \ref{sec:MATE}, the back piezo actuation does change the front cavity length, with a non zero coupling coefficient $\alpha$. This is expected from the flexure tuning mechanism, where pushing on the back of the assembly bends the silicon frame, thus shortening the overall cavity length $L$: all resonances are shifted to higher frequencies as the back piezo voltage is increased. This front cavity length change can be numerically compensated, as seen in Fig.~\ref{fig:scantot}(c), where we show a rescaled scan, equivalent to displacing the cavity resonances back to their original positions by applying a DC voltage on the front piezo to compensate for the back piezo action, keeping the overall cavity length constant. Doing so, we recover the expected behaviour of the MATE system, where we identify the long cavity resonances as the decreasing branches of the avoided crossings (the membrane moves to the right, hence the cavity frequency decreases), and the short cavity resonances as the increasing branches of the avoided crossings (the back cavity frequency increases at a higher rate owing to its shorter length). 
 
 
 \subsubsection{Slow and Fast Scans}
 As developped in Chap. \ref{chap:theory}, scanning over a cavity resonance can be done in two different regimes, depending on the sweep rate of the cavity length with respect to the cavity linewidth. In the adiabatic limit where the sweep rate is much smaller than the cavity linewidth, the intracavity field adiabatically follows the input field, and the transmitted and reflected intensities follow Lorentzian lineshapes. In the opposite limit where the sweep rate is much larger than the cavity linewidth, dynamical effects such as cavity ringdowns appear: the intracavity field undergoes damped oscillations as the cavity length is swept over the resonance. This effect is visible both in transmission and reflection, as shown in Fig.~\ref{fig:scans_ringdown}. It can be used to extract the cavity linewidth/finesse by comparing the heights of the first two rebounds in transmission to their temporal spacings, as detailed in Chap. I. We will come back to this point later, particularly regarding the accuracy of the finesse estimation. \\ 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/scans_ringdown.pdf}
     \caption{Larges cavity scans of cavity II showing dynamical effects such as cavity ringdowns both in transmission and reflection. The sweep rate is much larger than the cavity linewidth, such that the intracavity field cannot adiabatically follow the input field. (a) Cavity transmission and reflection swept over a few FSRs. The blue curve (transmission) is eventually a single column of the 2D color plots showing the cavity scan in Fig.~\ref{fig:scantot}(a). One can then actuate the back piezo to scan the membrane position as to see the cavity resonances shift. (b) Zoom on a single resonance showing cavity ringdown effects, with the fits used to compute the cavity linewidth and finesse.}
@@ -280,7 +278,7 @@ As developped in Chap. \ref{chap:theory}, scanning over a cavity resonance can b
 
 To recover the Lorentzian lineshapes, we first proceeded to apply slower sweep rates at the mHz level. This made the cavity sensitive to acoustic noise from the environment (the turbo pump for example), which did not yield quality Lorentzian dips. We therefore kept the sweep rates at the 10-50 Hz level, but drastically reduced the sweep amplitude to scan over a single resonance only. The classical EOM phase modulation sidebands are then used as frequency references to extract the cavity linewidth, as shown in Fig.~\ref{fig:cavityresSB} with a modulation frequency of 10 MHz. Having access to both transmitted and reflected intensities, and calibrating properly the photodiode response, we then have access to the $\eta_T$ and $\eta_R$ outcoupling coefficients defined in Chap. 3. 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/cavityresSB.pdf}
     \caption{Small amplitude scan of cavity II over a single resonance (with membrane mounted), showing the transmitted and reflected intensities as well as the EOM sidebands used as a frequency reference to extract the cavity linewidth. The modulation frequency is set to 10 MHz. The fits (solid lines) are used to extract the cavity linewidth and finesse.}
@@ -298,7 +296,7 @@ We then evaluate the finesse of the empty cavity as well as the cavity with the 
 
 The second method to estimate the cavity finesse turned out to be slightly disappointing, as it didn't yield consistent and reproducible results. Furthermore, numerical integration to fit the measured data produces divergences (due to a low number of data points), which in turn forbids a proper estimation of the finesse. The reliable method was therefore taken to be the sideband method. A typical linear regression is still shown as an example in Fig.~\ref{fig:Ffromring}, but the results shown in Fig.~\ref{fig:finesse_cav_exp} are only extracted from the sideband method. \\ 
 
-\begin{figure}[b!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/Ffromringdowns.pdf}
     \caption{Finesse measurement of cavity II using the ringdown method. The data points show a typical linear regression used to extract the cavity finesse from the peaks temporal spacing against the peakss height ratio. }
@@ -318,20 +316,26 @@ Monitoring the cavity transmission while scanning over resonances with the input
 
 Interestingly, the second cavity displayed anomalous dips, seen as abrupt changes in the transmittivies. These have been reported years ago in J. Harris' lab \cite{Thompson2008, Jayich2008NJP}, and occur when two optical modes become degenerate at a given membrane position. This was verified experimentally, as the mode matching wasn't as good for the second cavity than as for the first one. 
 
-
-\begin{figure}[h!]
+\begin{figure}[h]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/etaTs.pdf}
+    \vspace{-1cm}
     \caption{Transmission outcoupling coefficients $\eta_T$ extracted from the fits of the cavity resonances for both cavities I and II as a function of the membrane position. }
     \label{fig:etaTs}
 \end{figure}
 
 \subsubsection{Dispersive couplings}
-The next essential parameters central to MATE systems are the linear and quadratic dispersive couplings, as developped in Chap. II. These are computed from the rescaled scans of the cavity resonances, giving access to the first and second derivative of the peak positions (once rescaled, expressed in FSR units) with respect to the membrane position. These are plotted in Fig \ref{fig:G1G2s}, and we see that, although the second cavity features a lower finesse, it does display a larger linear dispersive coupling, ranging from $\sim 20 $ to $90$ GHz/$\mu$m. These are observed to vary greatly from one cavity to another, independently of the cavity finesse. \\ 
+The next essential parameters central to MATE systems are the linear and quadratic dispersive couplings, as developped in Chap. II. These are computed from the rescaled scans of the cavity resonances, giving access to the first and second derivative of the peak positions (once rescaled, expressed in FSR units) with respect to the membrane position. These are plotted in Fig \ref{fig:G1G2s}, and we see that, although the second cavity features a lower finesse, it does display a larger linear dispersive coupling, ranging from $\sim 20 $ to $90$ GHz/$\mu$m. These are observed to vary greatly from one cavity to another, independently of the cavity finesse. From these various characterization sequences, we extract the key parameters of both cavities, summarized in Table~\ref{tab:measure_mate_parameters}. 
 
+\begin{figure}[t!] 
+    \centering  
+    \includegraphics[width=\textwidth]{./chap5/fig/G1G2s.pdf}
+    \vspace{-1cm}
+    \caption{Linear and quadratic dispersive couplings extracted from the rescaled scans of cavity I and II. Units are given in GHz/$\mu$m for $G_1$ and in GHz/$\mu$m$^2$ for $G_2$, as rescaling by the zero-point fluctuation in a cavity with a large number of photon obscures the true meaning of the vacuum optomechanical couplings.}
+    \label{fig:G1G2s}
+\end{figure}
 
-From these various characterization sequences, we extract the key parameters of both cavities, summarized in Table~\ref{tab:measure_mate_parameters}.
-\begin{table}[h!]
+\begin{table}[t!]
     \centering
     \captionsetup{width=0.55\linewidth}
     \begin{tabular}{lcc}
@@ -356,16 +360,7 @@ From these various characterization sequences, we extract the key parameters of 
     \end{tabular}
     \caption{Summary of the measured parameters for the two cavities used in this work.}
     \label{tab:measure_mate_parameters}
-\end{table}
-
-
-\begin{figure}
-    \centering  
-    \includegraphics[width=\textwidth]{./chap5/fig/G1G2s.pdf}
-    \caption{Linear and quadratic dispersive couplings extracted from the rescaled scans of cavity I and II. Units are given in GHz/$\mu$m for $G_1$ and in GHz/$\mu$m$^2$ for $G_2$, as rescaling by the zero-point fluctuation in a cavity with a large number of photon obscures the true meaning of the vacuum optomechanical couplings. It is nonetheless discussed in the main text.}
-    \label{fig:G1G2s}
-\end{figure}
-
+\end{table}    
 
 \subsection{Cavity Locking and Mechanical Characterization}
 One the cavity was characterized, we proceeded to lock it using the PDH technique detailed in Chap. III. The whole lock was done using PyRPL, as to showcase its versatility and ease of use. The analogic signal was manipulated with standard MiniCircuits RF components, in order to amplify/filter/mix the signals as needed. The overall locking sequence is shown in Fig.~\ref{fig:lock_sequence}, where we can see the various steps needed to lock the cavity. First, performing a fine scan over a cavity resonance to recover a Lorentzian lineshape. From this, we tune the error signal amplitude and demodulation phase in order to optimize the PDH error signal (Fig \ref{fig:lock_sequence}(b)). We then engage the lock by first locking on the side of the resonance dip. It was observed that at mW powers, locking on the blue side of the resonance was not feasible. This could be explained by optomechanical heating of the membrane, as changing the side of the lock to the red side made the lock stable. Finally, we engage the PDH lock onto the cavity resonance. The critical point in maintaining the lock was the input power i.e. the cavity circulating power. In terms of power range, locking at 1-50 $\mu$W held the lock, while ramping the input power to 1-50 mW greatly disturbed the optomechanical system such that it was not possible to keep the lock. We suspect that optomechanical heating, bistability and photothermal effects were playing a significant role in the lock stability. \\
@@ -373,6 +368,7 @@ One the cavity was characterized, we proceeded to lock it using the PDH techniqu
 \begin{figure}
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/lock_sequence.pdf}
+    \vspace{-1cm}
     \caption{Lock sequence of the MATE cavity using the PDH technique. (a) Steps of the lock sequence, where we launch the side-of-fringe lock at approcimately - 0.3 s. The Red Pitaya then sets its output voltage to 1 and starts PID control as to lock on the 0 of the error signal, which is achieved at time 0 s. Being locked at a one HWHM away from resonance, launching the PDH lock then brings the cavity to resonance at time $\sim$ 0.35 s. (b) Zoom on the error signal and reflected intensity during the lock sequence upon prior cavity scan. These traces are used to fine tune the error signal amplitude and demodulation phase in order to optimize the PDH error signal. }
     \label{fig:lock_sequence}
 \end{figure}
@@ -393,7 +389,8 @@ The probable cause for this low mechanical quality factor is the stress applied 
 \begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/mech_ringdown.pdf}
-    \caption{Ringdown sequence of the fundamental mechanical mode of cavity II. (a) 2D colormap showing the mechanical ringdown as a function of time and acquisition number. Each column corresponds to a single oscilloscope acquisition triggered on the piezo drive stopping at time 0s. The red area before time zero shows the ringup phase where the piezo drives the membrane at resonance, while after time zero the mechanical motion decays exponentially. (b) Fit of the mechanical ringdown decay used to extract the intrinsic mechanical quality factor $Q_m$. From this fit, we found $Q_m = 12 000$ for cavity II. }
+    \vspace{-1cm}
+    \caption{Ringdown sequence of the fundamental mechanical mode of cavity II. (a) 2D colormap showing the mechanical ringdown as a function of time and acquisition number. Each column corresponds to a single oscilloscope acquisition triggered on the piezo drive stopping at time 0s. The red area before time zero shows the ringup phase where the piezo drives the membrane at resonance, while after time zero the mechanical motion decays exponentially. (b) Fit of the mechanical ringdown decay used to extract the intrinsic mechanical quality factor $Q$. From this fit, we found $Q = 12 000$ for cavity II. }
     \label{fig:mech_ringdown}
 \end{figure}
 
@@ -401,19 +398,21 @@ The probable cause for this low mechanical quality factor is the stress applied 
 \subsection{Bistability}
 While characterizing the mechanical properties of cavity II, we observed an interesting bistability effect when driving the membrane at high optical powers (above 10 mW of input power). As shown in Fig.~\ref{fig:bistability}(a), when sweeping the resonance using the front piezo, we observed a hysteresis depending on the sweep direction. This effect is reminiscent of bistability, where photo-thermal effects or radiation-pressure effects induce a shift of the cavity resonance depending on the intracavity power. \\
 
-The hysteretic response observed at high input power is characteristic of an optical nonlinearity that shifts the cavity resonance proportionally to the intracavity field. In the usual optomechanical (radiation-pressure) bistability, the resonance shift is mediated by the instantaneous displacement induced by the optical force, so the nonlinearity is essentially set by the mechanical susceptibility and reacts on mechanical time scales. By contrast, photothermal bistability originates from residual absorption: intracavity power heats the membrane/coatings, leading to thermo-refractive and/or thermo-elastic changes that detune the cavity; because the temperature follows the absorbed power with a finite thermal relaxation time, the detuning acquires a delayed component, which naturally produces sweep-direction–dependent hysteresis and can also enable dynamical backaction via this phase lag (as emphasized in photothermally-induced transparency experiments). In our case, the appearance of the effect only above a clear power threshold, together with the strong hysteresis and the concomitant self-sustained oscillation consistent with a delayed force, points to a thermally-mediated mechanism: a fraction of the intracavity power is absorbed by the membrane, heating it and shifting its effective position/optical response, thereby shifting the cavity resonance. We therefore attribute the bistability primarily to photothermal effects rather than to pure radiation pressure. The oscillation then sits precisely at the fundamental mode frequency: a zoom can be seen in the inset of Fig.~\ref{fig:bistability}(a), and the associated FFT spectra are shown for both sweep directions in Fig.~\ref{fig:bistability}(b). \\ 
-
-Unfortunately, due to time constraints (and membrane breakage...), we could not further investigate this interesting phenomenon, which would require a more in-depth study of the photothermal properties of the membrane, as well as the dynamical backaction effects at play in this regime. This would be an interesting avenue for future research, as photothermal effects can be harnessed for various applications such as cooling or amplification of mechanical motion, as well as for studying nonlinear dynamics in optomechanical systems. 
-
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/bistability.pdf}
     \caption{Bistable behavior observed in cavity II at high input power (> 10 mW). (a) Cavity transmission as a function of the front piezo voltage, showing a hysteresis depending on the sweep direction (blue: increasing voltage, red: decreasing voltage). The inset shows a zoom on the oscillations observed at the mechanical resonance frequency. (b) FFT spectra of the transmitted intensity showing a peak at the fundamental mechanical resonance frequency and its harmonics, indicating self-sustained oscillations of the membrane motion. }
     \label{fig:bistability}
 \end{figure}
 
+
+The hysteretic response observed at high input power is characteristic of an optical nonlinearity that shifts the cavity resonance proportionally to the intracavity field. In the usual optomechanical (radiation-pressure) bistability, the resonance shift is mediated by the instantaneous displacement induced by the optical force, so the nonlinearity is essentially set by the mechanical susceptibility and reacts on mechanical time scales. By contrast, photothermal bistability originates from residual absorption: intracavity power heats the membrane/coatings, leading to thermo-refractive and/or thermo-elastic changes that detune the cavity; because the temperature follows the absorbed power with a finite thermal relaxation time, the detuning acquires a delayed component, which naturally produces sweep-direction–dependent hysteresis and can also enable dynamical backaction via this phase lag (as emphasized in photothermally-induced transparency experiments). In our case, the appearance of the effect only above a clear power threshold, together with the strong hysteresis and the concomitant self-sustained oscillation consistent with a delayed force, points to a thermally-mediated mechanism: a fraction of the intracavity power is absorbed by the membrane, heating it and shifting its effective position/optical response, thereby shifting the cavity resonance. We therefore attribute the bistability primarily to photothermal effects rather than to pure radiation pressure. The oscillation then sits precisely at the fundamental mode frequency: a zoom can be seen in the inset of Fig.~\ref{fig:bistability}(a), and the associated FFT spectra are shown for both sweep directions in Fig.~\ref{fig:bistability}(b). \\ 
+
+Unfortunately, due to time constraints (and membrane breakage...), we could not further investigate this interesting phenomenon, which would require a more in-depth study of the photothermal properties of the membrane, as well as the dynamical backaction effects at play in this regime. This would be an interesting avenue for future research, as photothermal effects can be harnessed for various applications such as cooling or amplification of mechanical motion, as well as for studying nonlinear dynamics in optomechanical systems. 
+
+
 \subsection{Discussion \& Perspectives}
-From these characterization sequences, we now compare the present system to previous systems used in the lab, as well as similar MIM/MATE systems reported in the literature to discuss its potential for future optomechanical experiments and motivate the next steps towards a fibered MATE cavity. Contrary to the systems historically studied in the group i.e. textbook FP cavities with a moving end mirror, the MATE system provides tunability of the optomechanical couplings, and benefits from splitting the high-Q mechanical resonator issue from the high-finesse cavity one. The mechanical resonator used here features exceptional mechanical properties, including its theoretical femtometer zero-point motion. To enhance radiation-pressure effects, we want to maximize the linear and quadratic dispersive couplings $G_1$ and $G_2$, as well as the $x_{\text{ZPF}}$, the vacuum optomechanical couplings being the product of both. The figures of merit for radiation-pressure effects are therefore the vacuum optomechanical coupling rates $g_0^{(1)} \propto G_1 x_{\text{ZPF}}$ and $g_0^{(2)} \propto G_2 x_{\text{ZPF}}^2$. These couplings are also proportional to the membrane reflectivity $|r_m|$ and to the displacement-optical overlap $\xi$ such that the effective vacuum couplings read $g_0^{(1)} \sim |r_m| \xi G_1 x_{\text{ZPF}}$ and $g_0^{(2)} \sim |r_m| \xi G_2 x_{\text{ZPF}}^2$ \cite{enzian_phononically_2023,Groblacher_2016}. In the following, we will assume perfect overlap $\xi = 1$ for simplicity, and we will use the 0.5 reflectivity membrane used in cavity I as a benchmark. We stress that a proper measurement of the vacuum optomechanical couplings would require a calibration of the membrane displacement spectrum, and a proper measurement/simulation of the mechanical mode effective mass, which was not performed in this work. Therefore, we will only discuss the anticipated vacuum optomechanical couplings based on the measured linear dispersive couplings and the nominal mechanical properties of the membrane (colored values in the table). We summarize the key parameters of various experiments in Table~\ref{tab:measure_mate_parameters}. \\ 
+From these characterization sequences, we now compare the present system to previous systems used in the lab, as well as similar MIM/MATE systems reported in the literature to discuss its potential for future optomechanical experiments and motivate the next steps towards a fibered MATE cavity. Contrary to the systems historically studied in the group i.e. textbook FP cavities with a moving end mirror, the MATE system provides tunability of the optomechanical couplings, and benefits from splitting the high-Q mechanical resonator issue from the high-finesse cavity one. The mechanical resonator used here features exceptional mechanical properties, including its theoretical femtometer zero-point motion. To enhance radiation-pressure effects, we want to maximize the linear and quadratic dispersive couplings $G_1$ and $G_2$, as well as the $x_{\text{ZPF}}$, the vacuum optomechanical couplings being the product of both. The figures of merit for radiation-pressure effects are therefore the vacuum optomechanical coupling rates $g_0^{(1)} \propto G_1 x_{\text{ZPF}}$ and $g_0^{(2)} \propto G_2 x_{\text{ZPF}}^2$. These couplings are also proportional to the membrane reflectivity $|r_m|$ and to the displacement-optical overlap $\xi$ such that the effective vacuum couplings read $g_0^{(1)} \sim |r_m| \xi G_1 x_{\text{ZPF}}$ and $g_0^{(2)} \sim |r_m| \xi G_2 x_{\text{ZPF}}^2$ \cite{enzian_phononically_2023,Groblacher_2016}. In the following, we will assume perfect overlap $\xi = 1$ for simplicity, and we will use the 0.5 reflectivity membrane used in cavity I as a benchmark. We stress that a proper measurement of the vacuum optomechanical couplings would require a calibration of the membrane displacement spectrum, and a proper measurement/simulation of the mechanical mode effective mass, which was not performed in this work. Therefore, we will only discuss the anticipated vacuum optomechanical couplings based on the measured linear dispersive couplings and the nominal mechanical properties of the membrane (colored values in the table). We summarize the key parameters of various experiments in Table~\ref{tab:mate_parameters_comparison}. \\ 
 
 
 \begin{table}[h!]
@@ -434,7 +433,7 @@ From these characterization sequences, we now compare the present system to prev
         % Gröblacher-Norte group 
     \end{tabular}
     \caption{Comparison of the key parameters used in this work to previous optomechanical systems studied in the group. Values in black are measured, while values in blue are computed under the assumption of perfect overlap $\xi = 1$. The \textit{effective} masses put in the table are taken from L. Neuhaus' and R. Metzdorff's PhD thesis, while the \textit{effective} mass of the membrane used here is taken from the literature for similar membranes.}
-    \label{tab:measure_mate_parameters}
+    \label{tab:mate_parameters_comparison}
 \end{table}
 
 
@@ -442,16 +441,19 @@ Overall, our system features a decent linear optomechanical coupling range of 0 
 
 To put this in perspective with the single-ended cavity, we consider the parameters necessary to reach similar estimated vacuum optomechanical couplings for our future work i.e. the kHz range, with realistic mechanical resonator/mirror i.e. $m \sim 10$ $\mu$g and $\Omega_m/2\pi = 1$ MHz, which gives $x_{\text{ZPF}} \sim 30$ am. We set the cavity linewidth to $\kappa/2\pi > 100$ MHz to sit in the unresolved sideband regime, and we want to reach $g_0^{(1)}/2\pi \sim 1$ kHz, which eventually dictates what the cavity length should be for a 1064 nm IR beam. This gives us a cavity length of $L \sim 8$ $\mu$m, which is extremely demanding. Regarding the finesse, the bounds set on the cavity linewidth then yields a maximum finesse of about $2\times 10^5$, which is also very challenging to make (but it is a highest bound so it is fine). A standard cavity of finesse 10 000 would perfectly fit the needs, the main challenge being the cavity length. This simple calculation showcases the great properties of highly-stressed SiN membranes, which allow to reach decent vacuum optomechanical couplings even in cm - scale cavities. Furthermore, the SiN being a very handy material to do lithography with, this also explains the recent interest in patterning these membranes with both a phononic crystal (to enhance the mechanical quality factor) and a photonic crystal in its center (to enhance the reflectivity, and therefore the optomechanical couplings) such that this 10 ng membrane genuinely behaves as a textbook optomechanical resonator \cite{Groblacher_2016, Saarinen:23}. \\
 
-Two natural avenues for improvement arise from this comparison. First, reducing the cavity length by two orders of magnitude would naturally enhance the dispersive couplings by the same amount, yielding anticipated vacuum optomechanical couplings in the kHz range. This would require moving to a fibered cavity architecture, which is the next step of this project (as detailed in the next section). Second, improving the mechanical quality factor by two orders of magnitude (up to $10^6$) would make this system competitive with state-of-the-art optomechanical systems used to demonstrate quantum ground state cooling and quantum-limited measurements. This could be achieved by using phononic crystal (PnC) patterned membranes, or by moving from the flexure-tuned design explored in this section. Finally, an easy way to get a two-fold increase of the vacuum optomechanical couplings would be to use a higher reflectivity membrane (for example a 0.9 reflectivity membrane would double the couplings). \\
-
-The mechanical resonator can then be improved by changing the simple SiN membrane for a PnC membrane, which would enhance the mechanical quality factor by suppressing clamping losses through a phononic bandgap \cite{Tsaturyan2017}. These membranes can reach mechanical quality factors up to $10^8$ at cryogenic temperatures, which would make them ideal candidates for quantum optomechanics experiments. Studied at length during E. Ivanov and H. Patange PhDs \cite{ivanov,patange}, the recipe to fabricate these membranes is now well established. We tried to mount a PnC membrane in the MATE cavity, but unfortunately it broke while in vacuum. The picture in Fig. \ref{fig:PnC}(a) shows such a PnC membrane mounted in the MATE cavity, as well as its simulated fundamental mode shape. The ringdown measurement shown in Fig.~\ref{fig:PnC}(b) shows a mechanical quality factor of $Q_m = 5 \times 10^5$ at room temperature, which is already a significant improvement over the standard membranes used in this work. \\
-
 \begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/PnC.pdf}
     \caption{Phononic crystal patterned SiN membranes (Lotus design). (a) View of the PnC in transmission of the MATE cavity with the laser beam spot centered on its central defect. The inset shows the simulated fundamental mode shape. (b) Ringdown measurement of the fundamental mechanical mode, showing a mechanical quality factor of $Q =  5 \times 10^5$ at room temperature. The ringdown data were taken in a simple Michelson interferometer by H. Patange and K. Gerashchenko during their PhD theses \cite{patange,gerashchenko}. }
     \label{fig:PnC}
 \end{figure}
+
+
+Two natural avenues for improvement arise from this comparison. First, reducing the cavity length by two orders of magnitude would naturally enhance the dispersive couplings by the same amount, yielding anticipated vacuum optomechanical couplings in the kHz range. This would require moving to a fibered cavity architecture, which is the next step of this project (as detailed in the next section). Second, improving the mechanical quality factor by two orders of magnitude (up to $10^6$) would make this system competitive with state-of-the-art optomechanical systems used to demonstrate quantum ground state cooling and quantum-limited measurements. This could be achieved by using phononic crystal (PnC) patterned membranes, or by moving from the flexure-tuned design explored in this section. Finally, an easy way to get a two-fold increase of the vacuum optomechanical couplings would be to use a higher reflectivity membrane (for example a 0.9 reflectivity membrane would double the couplings). \\
+
+The mechanical resonator can then be improved by changing the simple SiN membrane for a PnC membrane, which would enhance the mechanical quality factor by suppressing clamping losses through a phononic bandgap \cite{Tsaturyan2017}. These membranes can reach mechanical quality factors up to $10^8$ at cryogenic temperatures, which would make them ideal candidates for quantum optomechanics experiments. Studied at length during E. Ivanov and H. Patange PhDs \cite{ivanov,patange}, the recipe to fabricate these membranes is now well established. We tried to mount a PnC membrane in the MATE cavity, but unfortunately it broke while in vacuum. The picture in Fig. \ref{fig:PnC}(a) shows such a PnC membrane mounted in the MATE cavity, as well as its simulated fundamental mode shape. The ringdown measurement shown in Fig.~\ref{fig:PnC}(b) shows a mechanical quality factor of $Q = 5 \times 10^5$ at room temperature, which is already a significant improvement over the standard membranes used in this work. \\
+
+
 
 
 \section{Optomechanical Fibered Cavity}
@@ -582,7 +584,7 @@ The main challenge lies in inserting and aligning the membrane within the small 
 \noindent \textbf{V-groove design II} (c) aims at preserving a higher mechanical quality factor by avoiding constraining the membrane frame too much. In this design, the membrane is glued/held onto a separate piece, which is then inserted from the top and screwed onto the cavity base plate. This allows for a more flexible mounting of the membrane, potentially preserving its mechanical quality factor better than the other designs. The cavity alignment and fiber mounting is similar to design (b). \\ 
 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/OMFFPdesigns.pdf}
     \caption{Examples of three possible designs for the fibered MATE cavity. (a) Ferrule-based design, where the membrane is inserted from the top of the assembly, then held in place by two fine screws, and where the fibers are inserted inside ferrules. (b) V-groove-based design, where the fibers are held and glued in V-grooves positioned on the piezo actuators. Similarly as in (a), the membrane is inserted from the top and held in place by two fine screws. (c) V-groove based design where the membrane is glued on a separate piece, then inserted from the top and screwed to the cavity base plate. This design avoids constraining the membrane frame too much, hence preserving a higher mechanical quality factor in theory. }
@@ -591,7 +593,7 @@ The main challenge lies in inserting and aligning the membrane within the small 
 
 It was then decided to proceed with the V-groove design II (c), as it seemed to provide the best compromise between ease of assembly, cavity alignment, and mechanical quality factor preservation. The final design is shown in Fig.~\ref{fig:cavityFFP}, where we can see the various components of the cavity assembly. The membrane is glued/kapton taped to the membrane holder, which is then screwed to the cavity base plate. This should avoid adding stress to the membrane frame. Attention should be paid to thermally anchor the fibers properly to the copper base plate, as to ensure good thermalization of the cavity mirrors at low temperatures. \\ 
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/cavityFFP.pdf}
     \caption{CAD model of the fibered MATE cavity assembly. (left) The membrane is glued/kapton taped to the membrane holder, which is then inserted and screwed to the cavity base plate. The fibered cavity is mounted on two piezo actuators used to tune the cavity length and the membrane position. 
@@ -602,7 +604,7 @@ It was then decided to proceed with the V-groove design II (c), as it seemed to 
 
 Once the cavity aligned and the membrane inserted, both fibers are to be spliced \textit{in-situ} to fibers on the vacuum side of our custom KF40 SQS pigtailed feedthrough. The fibers on the atmosphere side are then coupled to the squeezed light source and HD setup, similar to the one detailed in the next chapter, with the addition of a fibered EOM for PDH locking (not shown on the figure), using the DC output of the HD for example. We show the optical layout of the experiment in Fig.~\ref{fig:optlayoutFFP}, where we can see the various components needed to generate, inject, lock and detect squeezed light from the fibered MATE cavity. Using non-PM fibers, care must be taken to properly control and optimize the polarization state injected into the cavity, in order to maximize the coupling to the fundamental cavity mode. This can be achieved using fiber polarization controllers. \\
 
-\begin{figure}[h!]
+\begin{figure}[t!]
     \centering  
     \includegraphics[width=\textwidth]{./chap5/fig/OMFFPlayout.pdf}
     \caption{Prospective optical layout for the fibered MATE cavity experiment. The squeezed light source is similar to the one detailed in the next chapter. The frequency dependent bright squeezed field is injected into the MATE cavity using an LMA fiber, while the transmitted light is collected using a MM fiber. Not displayed here is a fibered EOM used to generate the PDH sidebands for locking the cavity. The PDH error signal would be obtained by demodulating the DC output of the HD, while the AC output would be used to monitor the mechanical spectrum. }
