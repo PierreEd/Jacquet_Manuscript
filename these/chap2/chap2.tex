@@ -1,7 +1,7 @@
 \newcommand{\adag}[1]{\hat{a}_{#1}^\dagger}
 \newcommand{\aop}[1]{\hat{a}_{#1\vphantom{\dagger}}}
 \chapter{Theory: Background} \label{chap:theory}
-This chapter establishes the theoretical framework for describing coherent and squeezed optical fields, their interaction with optical cavities, and the measurement of their quantum properties. It begins with a review of optics and field quantization, followed by the introduction of quantum states of light, the treatment of cavity interactions, and the description of detection schemes in terms of field quadratures. 
+This chapter establishes the theoretical framework for describing coherent and squeezed optical fields, their interaction with various optical cavities, and the measurement of their quantum properties. It begins with a review of optics and field quantization, then describes CW coherent and squeezed states (gaussian), cavity interactions, and detection schemes used in the lab to characterize such optical states. 
 \minitoc
 \newpage
 \section{Optics}
@@ -509,6 +509,7 @@ And the quadrature operators of a modulated field can be expressed as
   \delta \hat{p}[\Omega] \\
   \delta \hat{q}[\Omega]
 \end{pmatrix}
+\label{eq:modulated_field}
 \end{equation}
 We illustrate this by computing the spectra of a coherent field modulated in amplitude. The amplitude-phase quadrature fluctuation part reads
 \begin{equation}
@@ -530,13 +531,45 @@ such that its covariance matrix reads
   0 & 0
      \end{pmatrix} + \mathbf{1}
 \end{equation}
-As seen in the above expression, the covariance matrix display a sum of Dirac functions corresponding to a classical amplitude modulation of the field, as well as a flat vacuum noise across all frequencies.
+As seen in the above expression, the covariance matrix display a sum of Dirac functions corresponding to a classical amplitude modulation of the field, as well as a flat vacuum noise across all frequencies. 
 
 
 
 \subsection{Quantum Sideband Diagram }
 
-We now have all the tools to graphically represent the quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize the quantum states of light, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\). Once in the frame rotating at \(\omega_0\), the carrier field is a DC term, while the sidebands at \(\pm \Omega\) rotate. Each sideband mode is then associated with a quantum state: it can, for instance, be in a given squeezed state or in a given coherent state. The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{ball-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig. \ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig. \ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.\\ 
+We now have all the tools to graphically represent continuous wave (CW) quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize optical quantum states, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. The central idea is that each sideband mode $\omega_0 + \Omega$ out of the frequency continuum can be treated as a quantum harmonic oscillator, featuring some level of correlation with its conjugate sideband mode at $\omega_0 - \Omega$. \\ 
+
+
+In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\), such that once in the frame rotating at \(\omega_0\), the carrier field is a DC term, while the conjugate sidebands at \(\pm \Omega\) rotate counter-clockwise and clockwise, respectively. Each sideband mode of this sideband continuum is then associated with a quantum state: a coherent state, a thermal state, etc. As seen in Eq. \ref{eq:modulated_field}, the field at a given sideband frequency $\Omega$ features both a classical amplitude contribution from the modulation, as well as quantum fluctuation part, such that the noise seen at a given frequency $\Omega$ when measuring the field with a photodetector is the result of the beating of these two conjugate sideband fields at $\pm \Omega$ with the carrier field, featuring both a classical component and a quantum one. In the time domain, this beating process can be split in two parts, the classical amplitudes of the sidebands which simply add up in phase space, and the quantum fluctuations of the sidebands which average out to a noise level that depends on the quantum state of the sidebands and correlation level.
+
+
+We will now cover two useful cases:
+\begin{itemize}
+  \item classicaly modulated coherent states, where the modulation is either in amplitude or in phase, and where the sideband modes at the modulation frequency are displaced in phase space with a specific phase relation to the carrier, while all the other sideband modes rest in the vacuum state. 
+  \item squeezed states, where the squeezing process creates pairs of photons in the sideband modes $\hat{a}_\pm$, each drawn from a thermal distribution larger than vacuum and centered around the origin (hence with no preferred phase), but with a specific correlation between the two sidebands that can be decomposed into a correlated displacement along the squeezing axis and an independent isotropic sub-vacuum fluctuation.
+\end{itemize} 
+An additional key concept is that of optical beating of the conjugate sideband. , as illustrated in Fig. \ref{fig:mod2}(b). This beating process is what allows to extract the power spectral density (PSD) of the signal at frequency $\Omega$ by averaging over time, for instance with a spectrum analyzer, where we illustrate this in Fig. \ref{fig:mod2}(c) and (d). This graphical tool then pictures the connection between double-sided spectra and single-sided spectra, as well as the connection between the quantum state of the sideband modes and the resulting noise at a given frequency. \\
+
+We start with the representation of a coherent state modulated at $\Omega_\mathrm{mod}$, as seen in Fig. \ref{fig:QSD_mod}(a)-(b). As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathrm{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathrm{mod}$ (Fig. \ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal.  We show both cases of amplitude and phase modulation in Fig. \ref{}
+
+
+The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{ball-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig. \ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig. \ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.\\ 
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/mod2.pdf}
+\caption{Quantum sideband diagram of a modulated coherent state.}
+\label{fig:QSD_mod_amp}
+\end{figure}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/mod1.pdf}
+\caption{Quantum sideband diagram of a modulated coherent state.}
+\label{fig:QSD_mod_phase}
+\end{figure}
+
+
 
 \begin{figure}[t!]
 \centering
@@ -556,20 +589,6 @@ We start by describing a coherent state modulated at $\Omega_\mathrm{mod}$, as s
 \label{fig:QSD_mod}
 \end{figure}
 
-
-\begin{figure}[t!]
-\centering
-\includegraphics[width=\textwidth]{./chap2/fig/mod2.pdf}
-\caption{Quantum sideband diagram of a modulated coherent state.}
-\label{fig:QSD_mod_amp}
-\end{figure}
-
-\begin{figure}[t!]
-\centering
-\includegraphics[width=\textwidth]{./chap2/fig/mod1.pdf}
-\caption{Quantum sideband diagram of a modulated coherent state.}
-\label{fig:QSD_mod_phase}
-\end{figure}
 
 
 
