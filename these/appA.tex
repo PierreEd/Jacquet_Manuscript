@@ -228,99 +228,21 @@ The covariance matrix for this squeezed coherent state then reads
   \end{pmatrix} \,.
 \end{align*}
 
-such that the expectation values are computed as
-\begin{align*}
-\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle & = \gamma \delta(\Omega) \\
-\langle \hat{a}^{\dagger}_{-} \rangle & = \gamma^* \delta(\Omega) \,\\ 
-\langle \hat{p} \rangle & = 2 \Re{\gamma}\delta(\Omega) \\
-\langle \hat{q} \rangle & = 2 \Im{\gamma} \delta(\Omega) \,.
-\end{align*}
-and we compute the expectation value of our two-photon annihilation operator as
-\[\langle \hat{a}^{\vphantom{\dagger}}_{+} \rangle = \alpha \delta(\Omega) \, \quad  \text{and} \quad   \langle \hat{a}^{\dagger}_{-} \rangle = \alpha^* \delta(\Omega) \]
-as well as their second momenta as 
-
-The electric field operator finally reads
-\begin{equation}
-  \begin{split}
-\hat{\mathbf{E}}(\mathbf{r}, t)
-= i \sqrt{\dfrac{\hbar \omega_0}{\varepsilon_0 \mathcal{A} c}} &  \Bigg[ \,\int_{-\infty}^{\infty} \dfrac{d\Omega}{2\pi} \,\left[ \hat{a}^{\vphantom{\dagger}}_{ \Omega}\,e^{-i(\omega_0 + \Omega) t}
-- \hat{a}^{\dagger}_{ \Omega}\,e^{+i(\omega_0 + \Omega) t} \right] \\ 
-& \Bigg]
-  \end{split}
-\end{equation}
-
-such that the classical part of the electric field reads
-
-
-We start from the standard single-mode field quantization in terms of annihilation and creation operators \(\hat a\) and \(\hat a^\dagger\):
-\[
-\hat E(t) = \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \left( \hat a e^{-i\omega_0 t} + \hat a^\dagger e^{i\omega_0 t} \right).
-\]  
-and we now make our bosonic operators time-dependent, \(\hat a \to \hat a(t)\), to account for sidebands around the carrier frequency \(\omega_0\). Using the Fourier transform convention
-\[
-\hat a(t) = \int_{-\infty}^{+\infty} \frac{d\Omega}{2\pi} \hat a[\Omega] e^{-i\Omega t},
-\]
-we rewrite the field operator as
-\[
-\hat E(t) = \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \int_{-\infty}^{+\infty} \frac{d\Omega}{2\pi} \left( \hat a[\Omega] e^{-i(\omega_0 + \Omega) t} + \hat a^\dagger[\Omega] e^{i(\omega_0 + \Omega) t} \right).
-\]  
-
-
-
-\begin{align}
-\hat p[\Omega]
-&= 2\,|\alpha| \Big( \delta[\Omega] + \Re\{\varepsilon[\Omega]\} \Big)
-  + \delta \hat p[\Omega] \,,
-\\[4pt]
-\hat p[\Omega]\;\hat p[\Omega']
-&= 4|\alpha|^{2}\Big(
-      \delta[\Omega]S[\Omega']
-    + \delta[\Omega]\Re\{\varepsilon[\Omega']\}
-    + \delta[\Omega']\Re\{\varepsilon[\Omega]\}
-    + \Re\{\varepsilon[\Omega]\}\Re\{\varepsilon[\Omega']\}
-  \Big)
-  + \delta \hat p[\Omega]\;\delta \hat p[\Omega'] \,,
-\\[6pt]
-\big\langle \cdots \big\rangle
-&= 4|\alpha|^{2}\Big(
-      \delta(\Omega)\,\delta(\Omega')
-    + \frac{\varepsilon}{2}\,\delta(\Omega)\,\delta(\Omega'-\Omega_m)
-    + \frac{\varepsilon}{2}\,\delta(\Omega)\,\delta(\Omega'+\Omega_m)
-\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(}
-    + \frac{\varepsilon}{2}\,\delta(\Omega')\,\delta(\Omega-\Omega_m)
-    + \frac{\varepsilon}{2}\,\delta(\Omega')\,\delta(\Omega+\Omega_m)
-\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(}
-    + \frac{\varepsilon^{2}}{4}\Big[
-          \delta(\Omega-\Omega_m)\,\delta(\Omega'+\Omega_m)
-        + \delta(\Omega-\Omega_m)\,\delta(\Omega'-\Omega_m)
-\\[-2pt]&\hphantom{= 4|\alpha|^{2}\Big(+ \frac{\varepsilon^{2}}{4}\Big[}
-        + \delta(\Omega+\Omega_m)\,\delta(\Omega'+\Omega_m)
-        + \delta(\Omega+\Omega_m)\,\delta(\Omega'-\Omega_m)
-      \Big]
-  \Big)
-  + \big\langle \delta p[\Omega]\;\delta p[\Omega'] \big\rangle \,.
-\end{align}
-
-
-
-
 
 \section*{Derivation of the optimal angle}
 \addcontentsline{toc}{section}{Derivation of the optimal angle}
-\subsection*{Optimal fixed homodyne angle with complex \texorpdfstring{$\mathcal{K}$}{K}}
 
 Assume the measured (reflected) quadrature is
 \[
 \delta q_r \;=\; \delta q_{\rm in} \;+\; \mathcal{K}\,\delta p_{\rm in},
 \]
-so that, for any input covariance matrix \(S^{\rm in}\),
+so that, for any input covariance matrix \(\mathbf{S}^{\rm in}\),
 \[
 S^{r}_{qq} \;=\; S^{\rm in}_{qq} + |\mathcal{K}|^{2}S^{\rm in}_{pp} + 2\,\mathrm{Re}\{\mathcal{K}\}\,S^{\rm in}_{pq}.
 \]
-
-For an input squeezed state of strength \(R\) and angle \(\theta\),
+For an input squeezed state of strength \(r\) and angle \(\theta\),
 \[
-S^{\rm in}(r,\theta)=
+\mathbf{S}^{\rm in}(r,\theta)=
 \begin{pmatrix}
 \cosh 2r + \sinh 2r \cos 2\theta & \,-\sinh 2r \sin 2\theta\\[2pt]
 \,-\sinh 2r \sin 2\theta & \cosh 2r - \sinh 2r \cos 2\theta
@@ -335,73 +257,68 @@ S^{r}_{qq}(\theta)
 &= (1+|\mathcal{K}|^{2})\cosh 2r
   - (1-|\mathcal{K}|^{2})\sinh 2r \cos 2\theta
   - 2\,\mathrm{Re}\{\mathcal{K}\}\,\sinh 2r \sin 2\theta .
-\label{eq:Sqq_linearform}
 \end{align}
 
-\paragraph{Optimal fixed angle.}
-Differentiate \eqref{eq:Sqq_linearform} w.r.t.~\(\theta\) and set to zero:
+\subsubsection*{Optimal angle}
+Differentiate the above expression w.r.t.~\(\theta\) and set to zero:
 \[
 \frac{\partial S^{r}_{qq}}{\partial \theta}
 = 2\sinh 2r\Big[(1-|\mathcal{K}|^{2})\sin 2\theta - 2\,\mathrm{Re}\{\mathcal{K}\}\cos 2\theta\Big]=0,
 \]
 which gives the optimal fixed readout angle
-\begin{equation}
+\[
 \tan(2\theta_{\rm opt})
 =  \frac{2\,\mathrm{Re}\{\mathcal{K}\}}{\,1-|\mathcal{K}|^{2}\,}
 \qquad
 \label{eq:theta_opt}
-\end{equation}
+\]
 Writing \(\mathcal{K}=|\mathcal{K}|e^{i\varphi_m}\) one may also use
 \[
 \tan(2\theta_{\rm opt})=\frac{2|\mathcal{K}|\cos\varphi_m}{\,1-|\mathcal{K}|^{2}\,}.
 \]
-
-\paragraph{Minimum attained value.}
-Plugging the optimal angle back into \eqref{eq:Sqq_linearform} then yields
-\begin{equation}
+Plugging the optimal angle back into $\mathbf{S}^{r}_{qq}$ then yields
+\[
 \quad
 S^{r}_{qq,\min}
 =(1+|\mathcal{K}|^{2})\cosh 2r - \sqrt{(1-|\mathcal{K}|^{2})^{2}+\big(2\,\mathrm{Re}\{\mathcal{K}\}\big)^{2}}\,\sinh 2r,
 \label{eq:Smin_general}
-\end{equation}
+\]
 
-\paragraph{Lower bound and the real-\(\mathcal{K}\) case.}
+\subsubsection*{Real-\(\mathcal{K}\) case}
 In the free mass limit, \(\mathcal{K}\) is purely real, so that \(\varphi_m=0\) and \(\mathrm{Re}\{\mathcal{K}\}=|\mathcal{K}|\). In this case, the minimum variance \eqref{eq:Smin_general} reduces to
 \[
 S^{r}_{qq,\min}=(1+|\mathcal{K}|^{2})e^{-2r} 
 \]
+which is the usual result in the GW community.
 
-
-\paragraph{Derivative of the optimal readout angle at \texorpdfstring{$\Omega=\Omega_m$}{Omega = Omega\_m}.}
+\subsubsection*{Complex-\(\mathcal{K}\) case}
 We start from the optimal readout angle condition
-\begin{equation}
+\[
 2\theta_{\rm opt}(\Omega)=
 \arctan\!\left(
 \frac{2\,|\mathcal K(\Omega)|\cos\varphi_m(\Omega)}{1-|\mathcal K(\Omega)|^2}
 \right),
-\end{equation}
+\]
 where \(\mathcal K(\Omega)=|\mathcal K(\Omega)|e^{i\varphi_m(\Omega)}\). Using
-\begin{equation}
+\[
 |\mathcal K(\Omega)|\cos\varphi_m(\Omega)=\Re\{\mathcal K(\Omega)\},
-\end{equation}
+\]
 this may be written equivalently as
-\begin{equation}
+\[
 2\theta_{\rm opt}(\Omega)=
 \arctan\!\left(
 \frac{2\,\Re\{\mathcal K(\Omega)\}}{1-|\mathcal K(\Omega)|^2}
 \right).
-\end{equation}
+\]
 Define
-\begin{equation}
+\[
 u(\Omega)\equiv \frac{2\,\Re\{\mathcal K(\Omega)\}}{1-|\mathcal K(\Omega)|^2},
-\end{equation}
+\]
 so that \(2\theta_{\rm opt}(\Omega)=\arctan u(\Omega)\). Differentiating yields
-\begin{equation}
+\[
 \frac{d\theta_{\rm opt}}{d\Omega}
 =\frac{1}{2}\,\frac{1}{1+u(\Omega)^2}\,\frac{du}{d\Omega}.
-\label{eq:dtheta_du}
-\end{equation}
-
+\]
 To compute \(du/d\Omega\), write \(u(\Omega)=N(\Omega)/D(\Omega)\) with
 \begin{equation}
 N(\Omega)=2\,\Re\{\mathcal K(\Omega)\},\qquad D(\Omega)=1-|\mathcal K(\Omega)|^2.
@@ -414,7 +331,7 @@ The quotient rule gives
 \end{equation}
 Using \(N'(\Omega)=2\,\dfrac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\) and
 \(D'(\Omega)=-\dfrac{d}{d\Omega}|\mathcal K(\Omega)|^2\), we obtain
-\begin{equation}
+\[
 \frac{du}{d\Omega}
 =
 \frac{
@@ -425,9 +342,9 @@ Using \(N'(\Omega)=2\,\dfrac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\) and
 \left(1-|\mathcal K|^2\right)^2
 }.
 \label{eq:du}
-\end{equation}
-Combining Eqs.~\eqref{eq:dtheta_du} and \eqref{eq:du} yields the general expression
-\begin{equation}
+\]
+Combining it all yields the general expression
+\[
 \frac{d\theta_{\rm opt}}{d\Omega}
 =
 \frac{
@@ -437,314 +354,121 @@ Combining Eqs.~\eqref{eq:dtheta_du} and \eqref{eq:du} yields the general express
 }{
 \left(1-|\mathcal K|^2\right)^2\left(1+u^2\right)
 }.
-\label{eq:dtheta_general}
-\end{equation}
-
+\]
 We now specialize to the case
-\begin{equation}
+\[
 \mathcal K(\Omega)=\frac{\mathcal C^2}{2}\hbar\,\chi(\Omega),
 \qquad
 \chi(\Omega)=\frac{1}{m\big(\Omega_m^2-\Omega^2-i\Gamma_m\Omega\big)}.
-\end{equation}
+\]
 At \(\Omega=\Omega_m\), the denominator reduces to \(-i\Gamma_m\Omega_m\), so
-\begin{equation}
+\[
 \chi(\Omega_m)=\frac{i}{m\Gamma_m\Omega_m},
 \qquad\Rightarrow\qquad
 \Re\{\mathcal K(\Omega_m)\}=0.
-\end{equation}
-Consequently \(u(\Omega_m)=0\), and Eq.~\eqref{eq:dtheta_general} simplifies to
-\begin{equation}
+\]
+Consequently \(u(\Omega_m)=0\), and optimal phase derivative simplifies to
+\[
 \left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
 =
 \frac{1}{1-|\mathcal K(\Omega_m)|^2}\;
 \left.\frac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\right|_{\Omega_m}.
-\label{eq:dtheta_res_simplified}
-\end{equation}
-
+\]
 To evaluate the remaining derivative, write the susceptibility denominator as
 \(a(\Omega)-ib(\Omega)\) with \(a(\Omega)=\Omega_m^2-\Omega^2\) and
 \(b(\Omega)=\Gamma_m\Omega\). One finds
-\begin{equation}
+\[
 \chi(\Omega)=\frac{a(\Omega)+ib(\Omega)}{m\big(a(\Omega)^2+b(\Omega)^2\big)},
 \qquad\Rightarrow\qquad
 \Re\{\chi(\Omega)\}=\frac{a(\Omega)}{m\big(a(\Omega)^2+b(\Omega)^2\big)}.
-\end{equation}
+\]
 Differentiating and evaluating at \(\Omega=\Omega_m\) (for which \(a(\Omega_m)=0\)) gives
-\begin{equation}
+\[
 \left.\frac{d}{d\Omega}\Re\{\chi(\Omega)\}\right|_{\Omega_m}
 =
 -\frac{2}{m\,\Gamma_m^2\,\Omega_m}.
-\end{equation}
+\]
 Using \(\Re\{\mathcal K\}=\dfrac{\mathcal C^2}{2}\hbar\,\Re\{\chi\}\), we obtain
-\begin{equation}
+\[
 \left.\frac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\right|_{\Omega_m}
 =
 -\frac{\mathcal C^2\hbar}{m\,\Gamma_m^2\,\Omega_m}.
-\label{eq:dReK_res}
-\end{equation}
-Inserting Eq.~\eqref{eq:dReK_res} into Eq.~\eqref{eq:dtheta_res_simplified} finally yields
-\begin{equation}
-\boxed{
-\left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
-=
--\frac{\mathcal C^2\hbar}{m\,\Gamma_m^2\,\Omega_m}\;
-\frac{1}{1-|\mathcal K(\Omega_m)|^2}
-}.
-\end{equation}
-
-Equivalently, since
-\begin{equation}
+\]
+At resonance, one also has
+\[
 |\mathcal K(\Omega_m)|
 =
-\left|\frac{\mathcal C^2}{2}\hbar\,\chi(\Omega_m)\right|
+\frac{\mathcal C^2\hbar}{2m\Gamma_m\Omega_m}.
+\]
+Therefore,
+\[
+\left.\frac{d}{d\Omega}\Re\{\mathcal K(\Omega)\}\right|_{\Omega_m}
 =
-\frac{\mathcal C^2\hbar}{2m\,\Gamma_m\,\Omega_m},
-\end{equation}
-one may rewrite the result as
-\begin{equation}
-\boxed{
+-\frac{2|\mathcal K(\Omega_m)|}{\Gamma_m}.
+\]
+Plugging it all, we finally get
+\[
 \left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_m}
 =
--\frac{2|\mathcal K(\Omega_m)|}{\Gamma_m\left(1-|\mathcal K(\Omega_m)|^2\right)}
-}.
-\end{equation}
-
-\paragraph{resultst to be used}
-
-\begin{equation}
-\frac{d\mathcal K}{d\Omega}(\Omega)
-=\frac{C^2}{2}\hbar\;
-\frac{2\Omega+i\gamma_m}{m\left(\Omega_m^2-\Omega^2-i\gamma_m\Omega\right)^2}.
-\end{equation}
-
-\begin{equation}
-\left.\frac{d\mathcal K}{d\Omega}\right|_{\Omega=\Omega_m}
-=
--\frac{C^2\hbar}{2m}\;
-\frac{2\Omega_m+i\gamma_m}{\gamma_m^2\Omega_m^2}
-=
--\frac{C^2\hbar}{2m}\left(\frac{2}{\gamma_m^2\Omega_m}
-+i\,\frac{1}{\gamma_m\Omega_m^2}\right).
-\end{equation}
-
-
-
-
-
-
-
-
-\chapter*{Appendix B: Error Signals}\label{app:AppB}
-\addcontentsline{toc}{chapter}{Appendix B: Error Signals} % ensures it appears in the main TOC
-
-In this appendix, we detail calculation details not mentionned in the main text regarding the detection of optical fields and error signals. 
-
-\section*{Direct detection error signals}
-\addcontentsline{toc}{section}{Direct detection error signals}
-
-We describe the completely generic photocurrent obtained from direct detection of two optical fields interfering on a photodetector. We consider two fields with field operators $\hat a$ and $\hat a'$, with classical amplitudes $|\bar{\alpha}|$ and $|\bar{\alpha}'| e^{-i(\Delta \omega t + \phi)}$ as well as fluctuations $\delta \hat a$ and $\delta \hat a' e^{-i(\Delta \omega t + \phi)}$ i.e. $\bar \alpha$ is real. The photocurrent operator is then given by
-\begin{equation*}
-\hat I = \left( |\bar{\alpha}| + \delta \hat a^\dagger + |\bar{\alpha}'| e^{i(\Delta \omega t + \phi)} + \delta \hat a'^\dagger e^{i(\Delta \omega t + \phi)} \right) \left( |\bar{\alpha}| + \delta \hat a + |\bar{\alpha}'| e^{-i(\Delta \omega t + \phi)} + \delta \hat a' e^{-i(\Delta \omega t + \phi)} \right)
-\end{equation*}
-We remind here the expression for the amplitude and phase quadratures for both fields
-\[
-\delta \hat p = \delta \hat a + \delta \hat a^\dagger \,, \quad \delta \hat q = -i \left( \delta \hat a - \delta \hat a^\dagger \right) \,,
+-\frac{2|\mathcal K(\Omega_m)|}
+{\Gamma_m\left(1-|\mathcal K(\Omega_m)|^2\right)}.
 \]
-and 
+\subsubsection{Narrow filter cavity case}
+In the case of a narrow filter cavity i.e. a detuned single port cavity seen in Eq.~\eqref{eq:derivative_FC}, the derivative of the optimal angle at the cavity resonance frequency \(\Omega_\mathrm{FC}\) reads
 \[
-\delta \hat p' = e^{-i(\Delta \omega t + \phi)} \delta \hat a' + e^{i(\Delta \omega t + \phi)} \delta \hat a'^\dagger \,, \quad \delta \hat q' = -i \left( e^{-i(\Delta \omega t + \phi)} \delta \hat a' - e^{i(\Delta \omega t + \phi)} \delta \hat a'^\dagger \right) \,.
-\]
-Expanding this expression and keeping only terms up to first order in the fluctuations, we find
-\begin{equation*}
-\begin{aligned}
-\hat I(t) \approx & |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\Delta \omega t + \phi) \\
-& + |\bar{\alpha}| \left( \delta \hat p + \delta \hat p'\right)  \\
-& + |\bar{\alpha}'| \cos (\Delta \omega t + \phi) \left( \delta \hat p + \delta \hat p'\right) \\  
-& + |\bar{\alpha}'|\sin (\Delta \omega t + \phi) \left( \delta \hat q - \delta \hat q'\right)\\
-\end{aligned}
-\end{equation*}
-The first line corresponds to the classical DC and beatnote terms, while the remaining lines correspond to the fluctuations. We will now explore the different detection regimes covered in the main text.
-
-\subsection*{Single field detection}
-Let's first consider the single field case where we get rid of all terms related to $\hat a'$. The photocurrent operator then reduces to
-\begin{equation*}
-\hat I   \approx |\bar{\alpha}|^2 + |\bar{\alpha}|\delta \hat p.
-\end{equation*}
-The photocurrent fluctuations are then directly proportional to the amplitude quadrature fluctuations of the input field, scaled by the classical amplitude.
-
-\subsection*{Two fields detection}
-Let's first consider two fields with the same frequency, i.e. $\Delta \omega = 0$. The photocurrent operator then reads
-\begin{equation*}
-\begin{aligned}
-\hat I   \approx & |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\phi) \\
-& + |\bar{\alpha}| \left( \delta \hat p + \delta \hat p'\right)  \\
-& + |\bar{\alpha}'| \cos (\phi) \left( \delta \hat p + \delta \hat p'\right) \\  
-& + |\bar{\alpha}'|\sin (\phi) \left( \delta \hat q - \delta \hat q'\right)\\
-\end{aligned}
-\end{equation*}
-where the mean field is a simple interference between the two fields, while the fluctuations depend on both amplitude and phase quadratures of the two fields. By adjusting the relative phase $\phi$, one can select which quadrature is measured. For example, setting $\phi = 0$ selects the amplitude quadratures, while setting $\phi = \pi/2$ selects the phase quadratures. The issue is that in this case, both fields contribute to the measured quadrature fluctuations, which is not desired when probing sub shotnoise fluctuations of a signal (the LO will add its own fluctuations).
-
-\subsection*{Two fields detection with frequency offset}
-Now, we consider the case where the two fields have a frequency offset $\Delta \omega \neq 0$. The mean photocurrent then contains a beatnote at frequency $\Delta \omega$ and reads 
-\begin{equation*}
-\bar I= |\bar{\alpha}|^2 + |\bar{\alpha}'|^2 + 2 |\bar{\alpha}| |\bar{\alpha}'| \cos (\Delta \omega t + \phi).
-\end{equation*}
-such that demodulating the photocurrent at frequency $\Delta \omega' \sim \Delta \tilde \omega$ with phase $\tilde \phi$ and low-pass filtering yields
-\begin{equation*}
-\bar I_{\rm demod} \approx |\bar{\alpha}| |\bar{\alpha}'| \cos ((\Delta \omega - \Delta \tilde \omega)t + \phi - \tilde \phi).
-\end{equation*}
-This very signal can then be used to lock the frequency of an auxiliary laser to the desired frequency offset $\Delta \tilde \omega$ from the main laser. However, this signal featuring many zero crossings, one needs to tune the auxiliary laser frequency close enough to the desired offset so that it ensures the feedback loop locks to the correct zero crossing. This is generally done manually by scanning the auxiliary laser frequency until the right zero crossing is found, confirmed by monitoring the beatnote on a spectrum analyzer.
-
-
-\section*{PDH error signal}
-\addcontentsline{toc}{section}{PDH error signal} 
-
-the Pound-Drever-Hall (PDH) error signal starting from the real, quantum-normalized phase-modulated electric field expression. We aim to show how the demodulated signal is a linear combination of the real and imaginary parts of the cavity reflection coefficient, with the demodulation phase selecting the appropriate quadrature for locking.
-
-
-\subsection*{Input Phase-Modulated Field}
-
-The electric field at the input of the cavity is assumed to be a coherent state that has been phase-modulated at frequency \( \Omega \), such that the classical (real) electric field takes the form:
-\begin{equation}
-    E_{\text{cl}}^{(\text{PM})}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \left[
-        e^{-i\omega_0 t} - e^{i\omega_0 t}
-        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 - \Omega)t} + e^{i(\omega_0 - \Omega)t} \right)
-        + \frac{i \epsilon_\phi}{2} \left( e^{-i(\omega_0 + \Omega)t} + e^{i(\omega_0 + \Omega)t} \right)
-    \right]
-    \label{eq:pm_field}
-\end{equation}
-where \( \alpha_0 \) is the coherent amplitude of the carrier, \( \epsilon_\phi \ll 1 \) is a small modulation index (related to the phase modulation depth), and \( \omega_0 \) is the optical carrier frequency. This field includes both the positive and negative frequency components, as expected for a physical (Hermitian) electric field operator.
-
-\subsection*{Reflection from the Cavity}
-
-Each frequency component of the field is reflected with a complex frequency-dependent amplitude reflection coefficient \( r(\omega) \), such that the reflected field is:
-\begin{equation}
-\begin{aligned}
-    E_{\text{refl}}(t) = i \sqrt{\frac{\hbar \omega_0}{2 \varepsilon_0}} \, \alpha_0 \Big[
-    & r(\omega_0) e^{-i\omega_0 t} - r^*(\omega_0) e^{i\omega_0 t} \\
-    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 - \Omega) e^{-i(\omega_0 - \Omega)t} + r^*(\omega_0 - \Omega) e^{i(\omega_0 - \Omega)t} \right) \\
-    & + \frac{i \epsilon_\phi}{2} \left( r(\omega_0 + \Omega) e^{-i(\omega_0 + \Omega)t} + r^*(\omega_0 + \Omega) e^{i(\omega_0 + \Omega)t} \right)
-    \Big]
-\end{aligned}
-\label{eq:refl_field}
-\end{equation}
-
-\subsection*{Photodetected Intensity}
-
-The photodetector measures the intensity:
+ \left.\frac{d\theta_{\rm opt}}{d\Omega}\right|_{\Omega_\mathrm{FC}} = - \dfrac{2}{\kappa_{\rm FC}}. 
+ \]
+and we can match it to optimally rotate the squeezing angle by setting as in Eq.~\eqref{eq:derivative_FC2}
 \[
-I(t) \propto |E_{\text{refl}}(t)|^2
-\]
-We isolate the terms oscillating at \( \Omega \), which arise from the interference between the carrier and sideband components. Keeping only the beat terms between the carrier and sidebands, we find:
-\begin{equation}
-I(t) \supset \epsilon_\phi \cdot \Re\left[ A_+ - A_- \right] \cos(\Omega t)
-+ \epsilon_\phi \cdot \Im\left[ A_+ - A_- \right] \sin(\Omega t)
-\label{eq:intensity_beats}
-\end{equation}
-where we define:
-\[
-A_\pm = r(\omega_0) r^*(\omega_0 \pm \Omega)
-\]
-
-\subsection*{Demodulation with Arbitrary Phase}
-
-The signal is demodulated using a local oscillator \( \cos(\Omega t + \phi) \), where \( \phi \) is the demodulation phase. Using trigonometric identities:
-\[
-\cos(\Omega t + \phi) = \cos(\Omega t)\cos\phi - \sin(\Omega t)\sin\phi
-\]
-we multiply Equation~\eqref{eq:intensity_beats} and low-pass filter to obtain:
-\begin{equation}
-\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
-\Re[A_+ - A_-] \cos\phi + \Im[A_+ - A_-] \sin\phi
-\right\}
-\label{eq:error_signal_general}
-\end{equation}
-
-\subsection*{Sidebands Far Off-Resonance Approximation}
-
-In the standard PDH regime, the modulation frequency is much greater than the cavity linewidth:
-\[
-\Omega \gg \kappa
-\]
-so the sidebands are far off-resonance. This means:
-\[
-r(\omega_0 \pm \Omega) \approx 1 \quad \Rightarrow \quad A_\pm \approx r(\omega_0)
-\]
-and therefore:
-\[
-A_+ - A_- \approx 0
-\]
-However, if we retain the asymmetry between the sidebands (e.g., due to dispersion), or keep the finite detuning contribution, we approximate:
-\[
-A_+ - A_- \approx r(\omega_0) \left[ r^*(\omega_0 + \Omega) - r^*(\omega_0 - \Omega) \right] = r(\omega_0) \Delta r^*
-\]
-
-\subsection*{Final Result}
-
-Substituting into Equation~\eqref{eq:error_signal_general}, we obtain:
-\begin{equation}
-\epsilon_{\text{PDH}}(\phi) \propto \epsilon_\phi \left\{
-\Re[r(\omega_0) \Delta r^*] \cos\phi + \Im[r(\omega_0) \Delta r^*] \sin\phi
-\right\}
-\label{eq:error_signal_deltar}
-\end{equation}
-
-In the limit where \( \Delta r^* \rightarrow 1 \) (normalized, symmetric sidebands), this simplifies to:
-\begin{equation}
-\boxed{
-\epsilon_{\text{PDH}}(\omega_0, \phi) \propto \cos\phi \cdot \Re[r(\omega_0)] + \sin\phi \cdot \Im[r(\omega_0)]
-}
-\label{eq:pdh_final}
-\end{equation}
-
-\subsection*{7. Interpretation}
-
-Equation~\eqref{eq:pdh_final} shows that the demodulated error signal is a linear superposition of the real and imaginary parts of the complex reflection coefficient. The demodulation phase \( \phi \) selects the detected quadrature:
-\begin{itemize}
-    \item \( \phi = 0 \): error signal is proportional to \( \Re[r] \) — symmetric around resonance, not suitable for locking.
-    \item \( \phi = \pi/2 \): error signal is proportional to \( \Im[r] \) — antisymmetric, ideal dispersive error signal.
-    \item \( \phi \ne 0, \pi/2 \): mixes quadratures, possibly introducing offset or distortion.
-\end{itemize}
-
-\bigskip
-
-This derivation makes explicit how the PDH method uses phase-sensitive detection to extract the component of the reflection coefficient that varies linearly with detuning, enabling precise feedback locking of the laser to the cavity resonance.
-  
+  \kappa_{\rm FC} = \Gamma_m   \dfrac{1 - |\mathcal K(\Omega_m)|^2}{|\mathcal K(\Omega_m)|}. 
+\] 
 
 
 
-\chapter*{Appendix C: Three Mirror cavities}\label{app:AppC}
-\addcontentsline{toc}{chapter}{Appendix C: Three Mirror cavities} % ensures it appears in the main TOC
-
-In this appendix, we detail calculation details not mentionned in the main text regarding three-mirror cavities.
-
-\section*{Three-mirror cavity fields}
-
-We consider an input coupler mirror with amplitude reflectivity and transmissivity $r_1$ and $t_1$, a second mirror with $r_m$ and $t_m$ (to be consistent with the main text) and a third mirror with $r_2$ and $t_2$. We will consider the input and output mirrors to be HR mirrors i.e. $R_i = |r_i|^2 \sim 1$ and $T_i = |t_i|^2 \ll 1$ for $i=1,2$. This will allow us to neglect terms in $t_1^2$ and $t_2^2$ in the following calculations. The input-output relation at various coupler interfaces read
-\begin{align*}
-\hat a_R &= t_m \hat a_L + r_m \hat a'_R \, \\
-\hat a'_L &= t_m \hat a'_R + r_m \hat a_L \, \\
-\end{align*}
-as well as the reflections on the input and output couplers
-\begin{align*}
-\hat a_L &= - r_1 \hat a_R e^{i \phi_L} + t_1 \hat a_{\rm in} \sim - \hat a_R e^{i \phi_L} + t_1 \hat a_{\rm in} \\
-\hat a'_{R} &= - r_2 \hat a_{R} e^{i \phi_R} \sim \hat a_R e^{i \phi_R} \, \\
-\end{align*}
-where $\phi_L = 2 k L_1$ and $\phi_R = 2 k L_2$ are the lengths of the two sub-cavities. Here we will consider the reflection coefficient of the input/output couplers to be $r_{i} \sim -1$ for $i=1,2$, and $r_m = |r_m|$ and $t_m = i|t_m|$ for the middle mirror / membrane. Injecting the second system in the first one yields
-\begin{align*}
-  (1-r_m e^{i \phi_R}) \hat a_R & = t_m e^{i \phi_L} \hat a'_L + t_m t_1 \hat a_{\rm in} \, \\
-  (1 - r_m e^{i \phi_L}) \hat a'_L & = t_m e^{i \phi_R} \hat a_R + r_m t_1 \hat a_{\rm in} \, \\
-\end{align*}
-such that isolating the $\hat a_{\rm in}$ and considering the mean fields yileds 
-\begin{align*}
-  \dfrac{\alpha_R}{\alpha'_L} = \dfrac{|t_m|(2|r_m|\sin \phi_L + i )}{|r_m|^2 - e^{i\phi_R}}
-\end{align*}
-and the power ration for a driven cavity yields 
-\begin{align*}
-  \dfrac{P_R}{P'_L} = \dfrac{|t_m|^2(4|r_m|^2 \sin^2 \phi_L +1)}{|r_m|^4 - 2 |r_m|^2 \cos \phi_R +1 } \,
-\end{align*}
 
 
 
-\chapter*{Appendix D: Cavity alignements}\label{app:AppD}
-\addcontentsline{toc}{chapter}{Appendix D: Cavity alignments} % ensures it appears in the main TOC
+\chapter*{Appendix B: Cavity alignements}\label{app:AppB}
+\addcontentsline{toc}{chapter}{Appendix B: Cavity alignments} % ensures it appears in the main TOC
+
+\section*{Standing-wave cavities}
+
+\section*{Travelling-wave cavities}
+ \subsubsection*{Triangular cavity}
+ \subsubsection*{Bow-tie cavity}
+ 
+\section{Standing-wave cavities}
+
+The alignment of a standing-wave cavity is most conveniently done by treating the cavity axis as a geometrical reference defined by the input beam and a set of irises (one is enough in general, for the first step). The first step is therefore not to place all mirrors at once, but to define a clean and reproducible input axis. Two irises are placed before the cavity, separated by as large a distance as practical, and the incident beam is adjusted so that it passes through both apertures without clipping. These irises are then left fixed and serve as the reference axis throughout the alignment.
+
+For a two-mirror linear cavity, the back mirror is placed first, while the input coupler is temporarily removed. The incident beam is sent directly onto the back mirror, and the mirror is adjusted such that the reflected beam retraces the input path and passes back through the two irises. At this stage, the back mirror alone defines the end point of the cavity axis. This procedure ensures that the back mirror is normal to the incident beam, and that its reflected beam is collinear with the chosen input axis. It is important to perform this step carefully, because any angular error on the back mirror will later appear as a systematic offset of the full cavity mode.
+
+Once the back mirror reflection is correctly aligned, the input coupler is inserted at the desired position. The input coupler is first aligned independently of the back mirror by observing its prompt reflection. The input coupler angle is adjusted so that this prompt reflection also retraces the input path and passes back through the two irises. In this configuration, both the input coupler and the back mirror are individually aligned normal to the same input axis. The cavity is then close to alignment, although the exact eigenmode is not generally reached yet.
+
+The next step is to search for transmission resonances while scanning the cavity length, typically by applying a slow voltage ramp to a piezoelectric actuator mounted on one of the mirrors. At first, the transmitted signal may be weak or absent because the two mirror curvatures and positions define an eigenmode which is not exactly matched by the incident beam. A camera, photodiode, or screen placed after the back mirror is useful to monitor the transmitted spatial mode. The goal is to obtain a stable TEM$_{00}$ resonance with maximum transmission and minimum higher-order-mode content.
+
+Fine alignment is then performed using beam walking. One alternates small adjustments of the input coupler and the back mirror. A useful rule is that the input coupler mostly changes the position at which the beam enters the cavity, while the back mirror mostly changes the return direction and the overlap with the cavity eigenmode. In practice, one slightly moves the input coupler angle to improve the transmitted signal, then compensates with the back mirror to recover a clean round-trip overlap. This procedure is repeated iteratively while monitoring the height of the fundamental resonance and the suppression of higher-order modes.
+
+The alignment is considered satisfactory when the cavity scan shows a dominant TEM$_{00}$ resonance, with higher-order transverse modes strongly reduced, and when the transmitted beam remains spatially stable during the scan. At this point the cavity axis is no longer simply the geometrical input axis defined by the irises, but the true optical eigenaxis of the resonator. The irises remain useful as a reference, but the final optimization is always performed by maximizing the resonant coupling into the fundamental cavity mode.
+
+\section{Travelling-wave cavities}
+
+Travelling-wave cavities require a slightly different strategy because the beam does not retrace itself after one reflection. Instead, the alignment consists in closing a geometrical loop and then matching the injected beam to the travelling-wave eigenmode. The first step is again to define an input axis using two irises before the cavity. This axis fixes the position and direction of the incident beam before it enters the resonator. The mirrors are then inserted one by one, and each free-space segment of the cavity is aligned sequentially.
+
+\subsection{Triangular cavity}
+
+For a triangular cavity, one starts by placing the first two mirrors so that the beam follows the desired triangular path. A screen or iris can be placed at the expected position of the third mirror to check that the beam propagates along the correct segment. The third mirror is then inserted and adjusted so that the beam is reflected back toward the first mirror, thereby closing the triangular loop. At this stage, the aim is only geometrical: the beam should make one round trip and return close to the input coupler.
+
+The prompt reflection from the input coupler is used to keep the injected beam aligned with the input reference axis. The circulating beam after one round trip is then observed near the input coupler. The angles of the folding mirrors are adjusted so that the round-trip beam overlaps spatially with the incoming beam at the input coupler. This is the travelling-wave equivalent of making the reflected beam retrace itself in a linear cavity. The difference is that the overlap is obtained only after one complete round trip, not after a direct reflection from a single end mirror.
+
+Once the loop is approximately closed, the cavity length is scanned. The transmitted or reflected signal is monitored while the mirror angles are adjusted to maximize the resonance peaks. As for the linear cavity, the fundamental mode is optimized by iterative beam walking. One mirror is used to correct the beam position on a given cavity segment, while another is used to correct the angle. This is repeated until the round-trip beam overlaps with itself and the resonance is dominated by the TEM$_{00}$ mode.
+
+\subsection{Bow-tie cavity}
+
+The bow-tie cavity is aligned in the same spirit, but with four mirrors and therefore more geometrical constraints. The two curved mirrors usually define the tight waist region, for instance inside a nonlinear crystal, while the two remaining mirrors define the longer free-space arms and provide input/output coupling. A practical procedure is to first align the input beam through two irises, then insert the first steering or input mirror and set the first cavity segment. The second mirror is then placed so that the beam reaches the waist region at the correct height and position.
+
+The two curved mirrors are then aligned carefully, because they define the cavity waist and strongly affect the spatial eigenmode. The beam should hit the curved mirrors close to their intended centers and with the designed incidence angles. The final mirror is inserted last to close the bow-tie loop. The beam after one round trip is brought back onto the input coupler and overlapped with the incoming beam. This overlap is the key alignment condition before any fine optimization is attempted.
+
+After the geometrical loop is closed, the cavity length is scanned and the resonance peaks are observed. Fine alignment is performed by small, iterative adjustments of the four mirrors. The first pair of mirrors is typically used to control the position and angle of the beam in the waist region, while the other pair is used to close the loop and optimize the overlap at the input coupler. In a nonlinear bow-tie cavity, one must also ensure that the beam remains well centered in the nonlinear crystal and does not clip on the crystal aperture or mounts.
+
+A good bow-tie alignment is obtained when the cavity scan shows a strong fundamental resonance, weak higher-order modes, and a stable transmitted or reflected spatial profile. Because the cavity is travelling-wave, counter-propagating modes may also exist if light is injected from the opposite direction or if parasitic reflections seed the reverse path. For this reason, back-reflections from optical elements, crystal surfaces, and imperfect coatings should be minimized. The final alignment should therefore optimize not only the resonance height, but also the spatial cleanliness of the circulating mode and the absence of unwanted parasitic beams.

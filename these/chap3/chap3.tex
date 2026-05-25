@@ -219,7 +219,7 @@ This broadband reduction of the displacement spectrum below the SQL is illustrat
 \begin{equation}
   2 \theta[\Omega] = \arctan \Big[\dfrac{2\mathcal{K}[\Omega]}{1 - \mathcal{K}^2[\Omega]}\Big] = 2 \arctan \mathcal{K}[\Omega]
 \end{equation}
-where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{kimble_conversion_2001}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the SQL frequency to the well-known expression
+where we used the identity $\arctan 2x/(1-x^2) = 2\arctan x \, \, (\text{mod}\, \pi)$, such that this comes down to the expression used in the context of gravitational wave detectors \cite{klmtv}. Furthermore, the mechanical frequency and damping rate will be significantly smaller than the $\hbar \mathcal{C}^2/m$ term such that using the free-mass succeptibility $\chi[\Omega] = -1/m \Omega^2$ boils down the SQL frequency to the well-known expression
 \begin{equation}
   \Omega_{\text{SQL}} = \sqrt{\dfrac{\hbar \mathcal{C}^2}{2 m }} \implies \mathcal{K}[\Omega] = \left( \dfrac{\Omega_{\text{SQL}}}{\Omega}\right)^2
 \end{equation}
@@ -251,13 +251,14 @@ and we give the derivative at the mechanical resonance frequency $\Omega = \Omeg
 =
 -\frac{2|\mathcal K(\Omega_m)|}{\Gamma_m\left(1-|\mathcal K(\Omega_m)|^2\right)}
 \end{equation}
-As seen in Eq. \ref{sec:simple_cavities}, the derivative of the phase-shift picked up by the two-photon quadratures in a high-finesse cavity is given by 
+As seen in Eq. \ref{eq:derivative_FC} for the detuned single-port cavity case, the derivative of the phase-shift picked up by the two-photon quadratures is given by 
 \begin{equation*}
   \left.\dfrac{\partial \bar \phi}{\partial \Omega}\right|_{\Omega = -\Delta} = -\dfrac{2}{\kappa}
 \end{equation*}
 and simply equating both derivatives leads to the filter cavity bandwidth required to match the optimal squeezing angle rotation:
 \begin{equation}
   \kappa_{\rm FC} = \Gamma_m   \dfrac{1 - |\mathcal K(\Omega_m)|^2}{|\mathcal K(\Omega_m)|}. 
+  \label{eq:derivative_FC2}
 \end{equation}
 Upon the single-port cavity assumption, this expression can be used to compute the required input mirror transmittivity of the filter cavity to achieve the desired bandwidth $\kappa_{\rm FC}$:
 \begin{equation}

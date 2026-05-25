@@ -335,6 +335,7 @@ such that we can verify the eigenvalue equation (Eq. \ref{II.14}) straightforwar
 \mathrm{Re}\big( |\alpha| e^{i(\bar{\varphi}-\phi)}\big) \\[2pt]
 \mathrm{Im}\big(|\alpha| e^{i(\bar{\varphi}-\phi)}\big)
 \end{pmatrix}
+\label{eq:I.quad_unmod}
 \end{equation}
 such that the components reduce to $2\mathrm{Re} (\alpha)$ and  $2\mathrm{Im} (\alpha)$ if $\phi=0$, and to $2|\alpha|$ and $0$ if $\phi = \bar{\varphi}$, or equivalently if we set $\bar{\varphi} = \phi  = 0$ as mentioned earlier (such that $\mathbf{\hat u}$ corresponds to the amplitude and phase quadratures). We also notice the delta function at $\Omega = 0$, indicating that the coherent state has a non-zero mean field at the carrier frequency only. \\
 
@@ -439,6 +440,7 @@ such that measuring along the squeezing angle \(\phi = \theta(\Omega)\) yields t
 (b) projection of the quantum noise on the standard quadratures  ($a_1,a_2$). 
 (c) projection of the quantum noise on the ellipse major axes quadratures ($a_\theta,a_{\theta + \pi/2}$), with $\theta$ the ellipse angle with respect to the standard quadratures. 
 (d) projection of the quantum noise on the amplitude and phase quadratures ($p,q$). } 
+\label{fig:quantum_quadratures}
 \end{figure} 
 
 \noindent \textbf{Amplitude and Phase squeezed states: }
@@ -511,14 +513,15 @@ It then follows that the linearized amplitude-phase quadrature operators can be 
 \end{pmatrix}
 }_{\text{quantum fluctuations}}.
 \end{equation}
-where we identify a carrier term, a deterministic coherent displacement associated with classical modulations, and an operator fluctuation contribution. Assuming vanishing mean operator fluctuations,
+where we identify a carrier term, a time-dependent  yet deterministic coherent displacement associated with classical modulations, and an operator fluctuation contribution. Assuming vanishing mean operator fluctuations,
 $\langle \delta \hat p\rangle=\langle \delta \hat q\rangle=0$, the covariance matrix can then be split into a coherent modulation contribution and an operator fluctuation contribution, as the DC term does not contribute to the fluctuations:
 \begin{equation}
     \mathbf S_{\bar{\varphi}}[\Omega]
     =
     \mathbf S_{\mathrm{cl}}[\Omega]
     +
-    \mathbf S_{\mathrm{op}}[\Omega].
+    \mathbf S_{\mathrm{qu}}[\Omega].
+\label{eq:modulated_field_fluctuationn}
 \end{equation}
 The coherent contribution reads
 \begin{equation}
@@ -537,121 +540,49 @@ The coherent contribution reads
         \left|\mathrm{Im}\!\left(\varepsilon[\Omega]\right)\right|^2
     \end{pmatrix},
 \end{equation}
-while the operator contribution $\mathbf S_{\mathrm{op}}[\Omega]$ is defined as in Eq. \ref{eq:Sa}. 
+while the operator contribution $\mathbf S_{\mathrm{qu}}[\Omega]$ is defined as in Eq. \ref{eq:Sa}. 
 
-\subsubsection{Example: Coherent state modulated in amplitude}
-
-For a coherent state, the operator contribution is simply the vacuum noise,
-\begin{equation}
-    \mathbf S_{\mathrm{op}}[\Omega]=\mathbf 1,
-\end{equation}
-and therefore
-\begin{equation}
-    \mathbf S_{\bar{\varphi}}[\Omega]
-    =
-    \mathbf S_{\mathrm{cl}}[\Omega]
-    +
-    \mathbf 1.
-\end{equation}
-If modulated in amplitude, the quadrature fluctuation vector reads
-\begin{equation}
-    \delta\mathbf{\hat u}_{\bar{\varphi}}[\Omega]
-    =
-    |\bar{\alpha}|\epsilon_a
-    \left(
-        \delta(\Omega-\Omega_{\mathrm{mod}})
-        +
-        \delta(\Omega+\Omega_{\mathrm{mod}})
-    \right)
-    \begin{pmatrix}
-        1\\
-        0
-    \end{pmatrix}
-    +
-    \begin{pmatrix}
-        \delta \hat p[\Omega]\\
-        \delta \hat q[\Omega]
-    \end{pmatrix},
-\end{equation}
-such that its spectral covariance matrix reads
-\begin{equation}
-    \mathbf S_{\bar{\varphi}}[\Omega]
-    =
-    2|\bar{\alpha}|^2\epsilon_a^2
-    \left(
-        \delta(\Omega-\Omega_{\mathrm{mod}})
-        +
-        \delta(\Omega+\Omega_{\mathrm{mod}})
-    \right)
-    \begin{pmatrix}
-        1 & 0\\
-        0 & 0
-    \end{pmatrix}
-    +
-    \mathbf 1.
-\end{equation}
-The covariance matrix therefore consists of coherent spectral lines associated with the deterministic modulation, together with a flat vacuum noise background. Importantly, the coherent modulation contribution is positive semidefinite and can only add spectral power. Sub-shot-noise behavior can only arise from the operator covariance matrix $\mathbf S_{\mathrm{op}}[\Omega]$, which encodes quantum correlations between the sidebands.
-
+\newpage
 \subsection{Quantum Sideband Diagram }
 
-We now have all the tools to graphically represent continuous wave (CW) quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize optical quantum states, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. The central idea is that each sideband mode $\omega_0 + \Omega$ out of the frequency continuum can be treated as a quantum harmonic oscillator, featuring some level of correlation with its conjugate sideband mode at $\omega_0 - \Omega$, and represented in its own phase space (different from the two-photon quadratures defined above). \\  
+We now have all the tools to graphically represent continuous wave (CW) quantum states of light in the frequency domain. The so-called \emph{quantum sideband diagram} is a useful representation to visualize optical quantum states time evolution, interferences and quantum noises, especially when dealing with modulated fields or squeezed fields \cite{chelkowski2007,chua2013}. The central idea is that each sideband mode $\omega_0 + \Omega$ out of the frequency continuum can be treated as a quantum harmonic oscillator, featuring some level of correlation with its conjugate sideband mode at $\omega_0 - \Omega$, and represented in its own phase space with quadratures defined as $\hat{p}' = \hat{a}_+ + \hat{a}^\dagger_+$ and $ \hat{q}' = i(\hat{a}^\dagger_+ - \hat{a}_+)$, different from the two-photon quadratures defined in Eq. \ref{II.1}, i.e. $(\hat{p}', \hat{q}') \neq (\hat{p}, \hat{q})$. While the first pair corresponds to tracing out a quantum state in a given sideband mode, and looking at the (hardly physical) reduced state in phase space, the two-photon quadratures capture the fluctuation correlations between the two sidebands, and are the relevant quadratures when measuring the field with a photodetector \cite{caves_new_1985,schumaker_new_1985}. In what follows, we will, however, label the axes with $(\hat{p}, \hat{q})$ in all quantum sideband diagrams for simplicity.\\  
 
 
-In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\), such that once in the frame rotating at \(\omega_0\), the carrier field is a DC term with an arbitrary phase, while the conjugate sidebands at \(\pm \Omega\) rotate counter-clockwise and clockwise, respectively. Each sideband mode of this sideband continuum is then associated with a quantum state: a coherent state, a thermal state, etc. As seen in Eq. \ref{eq:modulated_field}, the quadrature fluctuations of the field is given by
-\begin{equation*}
-\delta \mathbf{\hat{\mathbf u}} _{\bar{\varphi}} [\Omega] = 2|\bar{\alpha}|\begin{pmatrix}
-  \mathrm{Re}\big(\varepsilon[\Omega] \big) \\
-  \mathrm{Im}\big(\varepsilon[\Omega] \big)
-\end{pmatrix}
-+ \begin{pmatrix}
-  \delta \hat{p}[\Omega] \\
-  \delta \hat{q}[\Omega]
-\end{pmatrix}
-\end{equation*}
-where we identified both a classical amplitude contribution from the modulation, as well as quantum fluctuation part, such that the noise seen at a given frequency $\Omega$ when measuring the field with a photodetector is the sum of these. In the time domain, this beating process can be split in two parts, the classical amplitudes of the sidebands which simply add up in phase space, and the quantum fluctuations of the sidebands which average out to a noise level that depends on the quantum state of the sidebands and correlation level. \\ 
+In this representation, we plot the carrier frequency \(\omega_0\) at the center, and the sidebands at frequencies \(\omega_0 \pm \Omega\), such that once in the frame rotating at \(\omega_0\), the carrier field is a DC term with an fixed amplitude and phase, while the conjugate sidebands at \(\pm \Omega\) rotate counter-clockwise and clockwise, respectively. Each sideband mode is in a quantum state: the vacuum state, a coherent state, a thermal state, etc. As seen in Eq. \ref{eq:modulated_field_fluctuationn}, the covariance matrix reads $ \mathbf S_{\bar{\varphi}}[\Omega]=    \mathbf S_{\mathrm{cl}}[\Omega]    +    \mathbf S_{\mathrm{qu}}[\Omega]$, where we identify both a deterministic contribution from classical modulations, as well as quantum contribution, such that the noise seen at a given frequency $\Omega$ is the sum of these two. Importantly, correlations between conjugate sideband modes can then originate from classical modulation processes described by $\mathbf S_{\mathrm{cl}}[\Omega]$, or from a quantum process such as squeezing described by $\mathbf S_{\mathrm{qu}}[\Omega]$. The first term describes correlations of the coherent amplitudes, while the second term describes fluctuation correlations. We will graphically represent the correlated contributions as arrows, and the uncorrelated contributions as isotropic Gaussian distributions regardless of the correlation type, as to graphically explain the origin of the elliptical shapes in phase space. \\  
 
-
-We will now cover two useful cases:
+We will now discuss two instructive cases of quantum states of light and their representations:
 \begin{itemize}
-  \item classicaly modulated coherent states, where the modulation is either in amplitude or in phase, and where the sideband modes at the modulation frequency are displaced in phase space with a specific phase relation to the carrier, while all the other sideband modes rest in the vacuum state. 
-  \item squeezed states, where the squeezing process creates pairs of photons in the sideband modes $\hat{a}_\pm$, each drawn from a thermal distribution larger than vacuum and centered around the origin (hence with no preferred phase), but with a specific correlation between the two sidebands that can be decomposed into a correlated displacement along the squeezing axis and an independent isotropic sub-vacuum fluctuation.
-\end{itemize} 
-An additional key concept is that of optical beating of the conjugate sideband. , as illustrated in Fig. \ref{fig:mod2}(b). This beating process is what allows to extract the power spectral density (PSD) of the signal at frequency $\Omega$ by averaging over time, for instance with a spectrum analyzer, where we illustrate this in Fig. \ref{fig:mod2}(c) and (d). This graphical tool then pictures the connection between double-sided spectra and single-sided spectra, as well as the connection between the quantum state of the sideband modes and the resulting noise at a given frequency. \\
-
-We start with the representation of a coherent state modulated at $\Omega_\mathrm{mod}$, as seen in Fig. \ref{fig:QSD_mod}(a)-(b). As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathrm{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathrm{mod}$ (Fig. \ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal.  We show both cases of amplitude and phase modulation in Fig. \ref{}
+  \item A phase-modulated coherent state: the correlation between the two sidebands is classical.
+  \item A type I squeezed state: the correlation between the two sidebands is quantum. 
+\end{itemize}
 
 
-The \emph{noise properties} of the state are conveniently represented in phase space, and accessed experimentally with a (typically) well-matched homodyne detection scheme, measuring the field quadratures. In practice, experiments probe these noise properties through repeated measurements and averaging. This experimental access to the statistical properties of the quantum state defines the so-called \emph{ball-on-stick} picture of quantum sidebands. The mean value of the field distribution can be zero or non-zero, while its variance is always non-zero. Looking only at the fluctuations part, we can represent the quantum state of light at a given sideband frequency \(\Omega\), as shown in Fig. \ref{fig:ballonstick}(a--c). In the case of a coherent state (Fig. \ref{fig:ballonstick}(a)-b), the distribution is circular and centered at the origin, indicating equal vacuum fluctuations in both quadratures.\\ 
+\noindent \textbf{Note:} In the time domain, the beating of two conjugate sidebands at $\pm \Omega$ with the carrier field results in a signal oscillating at frequency $\Omega$, which can be averaged over time to extract the power spectral density (PSD) of the signal at frequency $\Omega$. In the quantum sideband diagram, this beating process can be represented by the vector sum of the correlated contributions, while the quantum noise represented at the tip of the vector sum is to be computed explicitely.
 
-\begin{figure}[t!]
-\centering
-\includegraphics[width=\textwidth]{./chap2/fig/mod2.pdf}
-\caption{Quantum sideband diagram of a modulated coherent state.}
-\label{fig:QSD_mod_amp}
-\end{figure}
+\subsubsection{Example I: Phase-modulated coherent state}
+
+For a coherent state, the quantum fluctuation contribution is the vacuum noise i.e. $\mathbf S_{\mathrm{qu}}[\Omega] = \mathbf{1}$, across all frequencies, that we represent by a isotropic Gaussian distribution. We show the quantum sideband diagram of a phase-modulated coherent state in Fig. \ref{fig:QSD_mod_phase}.(a), where the two sidebands at $\pm \Omega_{\mathrm{mod}}$ are created with a $\pi/2$ phase shift relative to the carrier field (Eq. \ref{eq:PM_expand}). A classical (noiseless) phase modulation process therefore displaces the vacuum state at $\pm \Omega_{\mathrm{mod}}$ in the $q$ quadrature, while the other sideband modes remain in the vacuum state. Upon time evolution, the states at $\pm \Omega_{\mathrm{mod}}$ rotate in opposite directions, and their vector sum yields a signal oscillating at frequency $\Omega_{\mathrm{mod}}$ in the $(q,\Omega)$ plane, as seen in Fig. \ref{fig:QSD_mod_phase}(b). Averaging this signal over time (Fig. \ref{fig:QSD_mod_phase}(c)), one can then measure the signal PSD (Fig. \ref{fig:QSD_mod_phase}(d)), which consists of a coherent spectral line at $\Omega_{\mathrm{mod}}$ on top of a flat vacuum noise background. \\ 
+
+In this example, the correlation between the two sidebands is purely classical: the two sidebands are displaced in phase space with a known phase relation, such that their time evolution is deterministic. The fluctuations of two conjugate sidebands however, remain totally uncorrelated. A classically modulated coherent state can therefore never exhibit noise below vacuum level. 
+
 
 \begin{figure}[t!]
 \centering
+\vspace{0.5cm}
 \includegraphics[width=\textwidth]{./chap2/fig/mod1.pdf}
-\caption{Quantum sideband diagram of a modulated coherent state.}
+\caption{Quantum sideband diagram of a phase-modulated coherent state. (a) The two sidebands at $\pm \Omega_{\mathrm{mod}}$ are displaced in the $q$ quadrature with a $\pi/2$ phase shift relative to the carrier field, while the other sideband modes remain in the vacuum state. (b) Upon time evolution, the states at $\pm \Omega_{\mathrm{mod}}$ rotate in opposite directions, and their vectorial sum yields a signal oscillating at frequency $\Omega_{\mathrm{mod}}$ in the $(q,\Omega)$ plane. (c) Averaging this signal over time, one can then measure the signal PSD (d), which consists of a coherent spectral line at $\Omega_{\mathrm{mod}}$ on top of a flat vacuum noise background. A similar representation can be drawn for an amplitude-modulated coherent state, where the two sidebands are displaced in the $p$ quadrature instead of the $q$ quadrature.}
 \label{fig:QSD_mod_phase}
 \end{figure}
 
+\subsubsection*{Example II: Type I Squeezed state}
+We now consider a type I squeezed state, where the two sidebands at $\pm \Omega$ are correlated by a $\chi^{(2)}$ nonlinear process. The classical contribution to the covariance matrix is zero, $\mathbf S_{\mathrm{cl}}[\Omega] = \mathbf{0}$, while the quantum contribution $\mathbf S_{\mathrm{qu}}[\Omega]$ is given by Eq. \eqref{II.xx4}.  \\ 
 
 
-\begin{figure}[t!]
-\centering
-\includegraphics[width=\textwidth]{./chap2/fig/ballonstick.pdf}
-\caption{Ball-on-stick representation of quantum sidebands.
-(a) Coherent state sideband photons at some frequency $\pm \Omega_1$, represented as circular Gaussian distributions centered at the origin (b). The photons share no correlations between quadratures, resulting in equal vacuum fluctuations.
-(c) Squeezed state sideband photons at some frequency $\pm \Omega_1$, drawn from a thermal distribution larger than vacuum. (d) The photons are decomposed into a correlated displacement along the squeezing axis (arrow) and an independent isotropic sub-vacuum fluctuation (circle) seen in (e). (f) The resulting distribution is an ellipse oriented along the squeezing axis, with reduced variance in one quadrature and increased variance in the orthogonal quadrature.}
-\label{fig:ballonstick}
-\end{figure}
-
-We start by describing a coherent state modulated at $\Omega_\mathrm{mod}$, as seen in Fig. \ref{fig:QSD_mod}(a)-(b). As detailed in the previous section, the modulation sidebands are created with a specific phase relation to the carrier depending on the nature of the modulation (amplitude or phase), while all the other sideband modes rest in the vacuum state (as seen at frequencies $\Omega_1$ and $\Omega_2$). Upon time evolution, the signal at the modulation frequency $\Omega_\mathrm{mod}$ can be seen as the vectorial sum of the two sidebands rotating in opposite directions at $\pm \Omega_\mathrm{mod}$ (Fig. \ref{fig:QSD_mod}). When averaging these signals, with a spectrum analyzer for instance, we extract the PSD of the resulting averaged signal. \\ 
-
-
-We now focus on the representation of squeezed states. We reproduce the quadrature statistics of squeezed states fluctuations using an equivalent \textit{sum of random variables} picture. Let $\mathbf u=(-\sin\theta,\cos\theta)^T$ be the unit vector defining the (rotated) quadrature direction (note the convention $\theta\to\theta+ \pi/2$), and draw a \textit{correlated} displacement constrained to that direction,
+We focus on the graphical representation of such states. We reproduce the quadrature statistics of squeezed-state fluctuations using an
+equivalent \textit{vector-sum of correlated random variables} picture, mimicking the interference of the two symmetric sidebands entering the quadrature observables. Let $\mathbf v=(\cos\theta,\sin\theta)^T$ be the squeezed quadrature direction,
+and $\mathbf u=(-\sin\theta,\cos\theta)^T$ the associated anti-squeezed direction.
+We draw a pair of correlated random sideband contributions whose vector sum is
+constrained along $\mathbf u$,
 $X_{\rm a}=Z\mathbf u$ with $Z\sim\mathcal N(0,\,2\sinh 2r)$, together with an independent isotropic fluctuation
 $X_{\rm b}\sim\mathcal N(0,\,e^{-2r}\mathbf{1})$ (vacuum-normalized). The detected point is $X=X_{\rm a}+X_{\rm b}$, hence $\langle X\rangle=0$ and the covariance is the sum
 $\Sigma=\langle XX^{ T}\rangle=e^{-2r}\mathbf 1+2\sinh 2r\,\mathbf u\mathbf u^{ T}$, i.e.
@@ -668,19 +599,45 @@ e^{-2r}+2\sinh 2r\,\sin^2\theta & -\,\sinh 2r\,\sin 2\theta\\
 -\,\sinh 2r\,\sin 2\theta & \cosh 2r+\sinh 2r\,\cos 2\theta
 \end{pmatrix}.
 \end{split}
+\label{eq:covariance_squeezed_state}
 \end{equation}
-This is strictly the same noise matrix obtained in the two-photon formalism, where the diagonal terms give the variances and the off-diagonal terms encode the correlations/anticorrelations between quadratures; the eigen-axes of $\Sigma$ have variances $e^{\mp 2r}$, as expected for a squeezed state. Additionally if $r=0$, the correlated displacement vanishes and we recover the vacuum noise $\Sigma=\mathbf 1$. Graphically, it corresponds to photons \textit{clicking} in the upper and lower sidebands and drawn from a thermal distribution (larger than vacuum), as seen in Fig. \ref{fig:ballonstick}(c). These clicks are then decomposed in a correlated part/arrow of variance $2\sinh 2r$ along the squeezing axis, and a random isotropic and sub-vacuum fluctuation of variance $e^{-2r}$ (Fig. \ref{fig:ballonstick}(d)-(e)). The arrows are correlated such that they always mirror each other with respect to the correlation axis set by the phase of the pump (Fig. \ref{fig:ballonstick}(d)). The resulting signal at $\Omega_1$ can then be seen as the sum of these two contributions. The resulting distribution, as seen in the single-sided spectrum is then an ellipse oriented along the correlation axis, with a reduced variance in one quadrature and an increased variance in the orthogonal quadrature. This picture is very useful to intuitively understand how squeezed states behave when going through various optical systems, and particularly for frequency-dependent squeezing, as we will see in Chapter II. \\
+This is strictly the same noise matrix obtained in the two-photon formalism, where the diagonal terms give the variances and the off-diagonal terms encode the correlations/anticorrelations between quadratures; the eigen-axes of $\Sigma$ have variances $e^{-2r}$ along $\mathbf v$
+and $e^{+2r}$ along $\mathbf u$, as expected for a squeezed state. Additionally, if $r=0$, the correlated sideband contribution vanishes and only
+the isotropic vacuum fluctuation remains, yielding $\Sigma=\mathbf 1$: the vacuum state.\\
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{./chap2/fig/QSD_sqz3.pdf}
-\caption{Quantum sideband diagram of a squeezed state. Contrary to a modulated field, the sideband photons are drawn from a thermal distribution i.e. they \textit{click} at random quadrature angles. However, as seen in Fig. \ref{fig:ballonstick}, these photons are correlated such that their sum results in a squeezed state with reduced fluctuations in one quadrature and increased fluctuations in the orthogonal quadrature. This happens at all sideband frequencies $\Omega_1$ and $\Omega_2$ within a frequency band determined by the squeezing source, with a frequency-independent angle provided by the pump phase. The three plots correspond to phase squeezing (a), arbitrary angle squeezing (b), and amplitude squeezing (c).} 
-\label{fig:QSD_sqz}
-\end{figure}
+We picture both the $r=0$ case and the $r>0$ case in Fig. \ref{fig:clicks}. In the vacuum case, the sideband contributions are uncorrelated (no arrows), and the fluctuations are isotropic and of variance 1, yielding a circular distribution in phase space (Fig. \ref{fig:clicks}(a.i)). Individual measurements of the quadrature vector $\mathbf{u}$ yield different outcomes (Fig. \ref{fig:clicks}(a.ii)), such we recover the usual coherent state representation as seen in Fig. \ref{fig:clicks}(b.i)-(b.iii) (and similarly to the unmodulated sideband modes in Fig. \ref{fig:QSD_mod_phase}). For squeezed states, we follow the \textit{vector-sum of correlated random variables} prescription above, and decompose the conjugate sideband interference into a correlated $2\sinh 2r$ part (arrows) and an isotropic sub-Gaussian $e^{-2r}$ fluctuation part (Fig. \ref{fig:clicks}(c.i) and (c.ii)). Repeated measurements of the quadrature vector $\mathbf{u}$ then yield a elliptical distribution in phase space (Fig. \ref{fig:clicks}(c.iii)), with a reduced variance along the squeezed quadrature $\mathbf v$ and an increased variance along the anti-squeezed quadrature $\mathbf u$. The arrows are correlated such that they always mirror each other with respect to a correlation axis set by the phase of the pump, seen as a green line in Fig. \ref{fig:clicks}(c)-(d). \\ 
 
 
 
 Interestingly, the thermal distribution from which the sideband photons are drawn can be given a physical meaning. First, the \textit{non-zero} number of photons in the quantum state can be interpreted as the energy pumped into the system to generate the squeezed state, for instance by a pump field in a parametric down-conversion process. Second, if we imagined measuring the sidebands individually rather than jointly as in a homodyne detection (where they \textit{beat} together), we would find that each sideband is in a thermal state, highlighting that entanglement is lost when tracing the quantum state on a single sideband space. 
+
+
+
+
+
+
+
+
+\newpage 
+
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/clickss.pdf}
+\caption[Graphical representation of the quadrature statistics of a squeezed state using the vector-sum picture.]{
+(a) Vacuum state: the sidebands are uncorrelated (no arrows), and the field exhibits isotropic vacuum fluctuations with variance $1$. Repeated measurements at frequency $\Omega_{\mathrm{mod}}$ yield different quadrature outcomes (a.ii). (b) Coherent state: the fluctuation part of each sideband remains in the vacuum state, recovering the usual representation of an unmodulated coherent state. (c.i) Squeezed state: the sideband interference decomposes into a correlated contributionn (arrow) and an orthogonal isotropic vacuum contribution. The resulting interference exhibits anti-squeezed fluctuations along the correlated axis and squeezed fluctuations in the orthogonal quadrature (c.ii--c.iii). (d) Quantum sideband picture of a squeezed state, where individual sideband photons are drawn from thermal distributions. Their interference produces correlated quadrature fluctuations, yielding squeezing along one quadrature and anti-squeezing along the orthogonal one.. }
+\label{fig:clicks}
+\end{figure}
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{./chap2/fig/QSD_sqz3.pdf}
+\caption{Quantum sideband diagram of a squeezed state. Contrary to a modulated field, the sideband photons are drawn from a thermal distribution i.e. they \textit{click} at random quadrature angles. However, as seen in Fig. \ref{fig:clicks}, these photons are correlated such that their sum results in a squeezed state with reduced fluctuations in one quadrature and increased fluctuations in the orthogonal quadrature. This happens at all sideband frequencies within a frequency band determined by the squeezing source, with a frequency-independent angle provided by the pump phase. The three columns correspond to phase squeezing (a), arbitrary angle squeezing (b), and amplitude squeezing (c).} 
+\label{fig:QSD_sqz}
+\end{figure}
+
+\clearpage
 
 \section{Optical Cavities}
 Optical cavities are at the heart of this work, as they are used to coherently enhance the light-matter interaction in various systems, and also to filter and manipulate quantum states of light. In this section, we review the basic properties of optical cavities, their resonance conditions, and we derive the covariance matrices of their output fields. 
@@ -1013,6 +970,7 @@ As seen in Eq. \eqref{eq:ideal_FC}, a detuned single-port cavity can be describe
 The derivative at $\Omega = \Delta$ then reads 
 \begin{equation}
   \left.\dfrac{\partial \bar \phi}{\partial \Omega}\right|_{\Omega = \Delta} = - \dfrac{2}{\kappa}
+  \label{eq:derivative_FC}
 \end{equation}
 which shows that the slope of the rotation angle at the detuning frequency is inversely proportional to the cavity bandwidth. A narrower cavity leads to a steeper rotation angle variation with frequency, which is desirable to \textit{phase-match} the filter cavity to the optomechanical cavity, as will be seen in Chap. II. 
 
@@ -1068,6 +1026,7 @@ consistent with \cite{Sorensen1998PhD,burks_thesis_2010}. This cumbersome expres
 \includegraphics[width=\textwidth]{./chap2/fig/cavitySHG copy.pdf}
 \caption{ Cavity diagram for the Second Harmonic Generation. $\hat a$'s are the various fields at play, $\kappa$'s are the various couplings involved, with $\delta \hat a$'s the associated fluctuations, similar as in Fig. I.4, now considering both the infrared pump, and the generated green beam. The difference in transverse size has been exagerated for clarity.  } 
 \end{figure}
+
 \noindent \textbf{Pseudo linear behaviour:} For intermediate powers, the output power scales almost linearly with the input power, which is precisely the regime in which we will operate. The crossover between these regimes is set by the non-linear gain $\epsilon$ and the cavity decay rates $\kappa_{a,b}$. \\ 
 
 \subsubsection{Optical Parametric Oscillation \& Amplification}
@@ -1222,7 +1181,6 @@ This expression is actually true for any Gaussian state suffering from losses. A
 \mathbf{S}^{\theta}_{\rm OPO}[\Omega] = \mathbf R(\theta[\Omega])
 \mathbf{S}^0_{\rm OPO}[\Omega] 
 \mathbf R^{\dagger}(\theta[\Omega]).
-\label{II.xx4}
 \end{equation}
 The $\mathbf{S}[\Omega]$ noise matrix can either be the full cavity one, or the idealized one. As already mentionned, the mechanical frequencies of interest will be deep in the OPO bandwidth such that we will use the ideal squeezer expression \eqref{eq:perfect_squeezer} in addition with extrinsic losses \eqref{II.xx3}. The explicit expression of the covariance matrix at a frequency-dependent angle is then
 \begin{equation}
@@ -1482,7 +1440,7 @@ where $S_{pp}[\Omega]$ is the amplitude quadrature noise spectrum of the inciden
     \bar I &= e \, \bigg(|\bar \alpha|^2 + |\bar \alpha_{\mathrm{LO}}|^2 + 2 |\bar \alpha| |\bar \alpha_{\mathrm{LO}}| \cos \phi_{\mathrm{LO}} \bigg)
   \end{split}
 \end{equation}
-where we see the interference term between the signal and the LO: scanning the LO phase $\phi_{\mathrm{LO}}$ (with a piezoelectric actuator) will lead to interference fringes on the mean photocurrent, which can be used to lock the LO phase. We won't developp the full expression of the photocurrent fluctuation spectrum here (see Annex B), as they feature a cumbersome linear combination of the amplitude and phase quadrature noise spectra of both the signal and the LO fields, as well as cross-correlation terms between the two fields (if any), which is not very interesting experimentally. However, we can already sense that adding a LO field allows to access phase quadrature fluctuations of the signal field, which is not possible with direct detection alone. \\
+where we see the interference term between the signal and the LO: scanning the LO phase $\phi_{\mathrm{LO}}$ (with a piezoelectric actuator) will lead to interference fringes on the mean photocurrent, which can be used to lock the LO phase. We won't developp the full expression of the photocurrent fluctuation spectrum here, as they feature a cumbersome linear combination of the amplitude and phase quadrature noise spectra of both the signal and the LO fields, as well as cross-correlation terms between the two fields (if any), which is not very interesting experimentally. However, we can already sense that adding a LO field allows to access phase quadrature fluctuations of the signal field, which is not possible with direct detection alone. \\
 
 Let's consider 'slow' (i.e. low-frequency) classical fluctuations of the LO phase $\delta \phi_{\mathrm{LO}}(t)$ around a mean value $\bar \phi_{\mathrm{LO}}$, such that $\phi_{\mathrm{LO}}(t) = \bar \phi_{\mathrm{LO}} + \delta \phi_{\mathrm{LO}}(t)$ with $\delta \phi_{\mathrm{LO}}(t) \ll 1$. Developing the photocurrent to first order in these classical fluctuations, the mean photocurrent fluctuations then reads 
 \begin{equation}
