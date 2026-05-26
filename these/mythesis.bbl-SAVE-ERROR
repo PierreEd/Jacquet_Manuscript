@@ -652,6 +652,234 @@
       \verb https://www.science.org/doi/abs/10.1126/science.1231282
       \endverb
     \endentry
+    \entry{Lee2015}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=98056d9ddecda0076a31a183e3e69326}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f3ebe3040c5e0c29424e901a08345acd}{%
+           family={Underwood},
+           familyi={U\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ddd8f6843cce6082484cfde9cf3df7d5}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bc314b0fde106a5a23750e4ab0c0fb99}{%
+           family={Shkarin},
+           familyi={S\bibinitperiod},
+           given={A\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=fcc2e86db2d2508b0f70609a0388194d}{%
+           family={Hoch},
+           familyi={H\bibinitperiod},
+           given={S\bibnamedelima W},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c82c1f7b45e5b5cd368003dabed37321}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={J\bibnamedelima G\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{fullhash}{a8ebf2d4265145445dc783c425a143e3}
+      \strng{fullhashraw}{a8ebf2d4265145445dc783c425a143e3}
+      \strng{bibnamehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{authorbibnamehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{authornamehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{authorfullhash}{a8ebf2d4265145445dc783c425a143e3}
+      \strng{authorfullhashraw}{a8ebf2d4265145445dc783c425a143e3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cavity optomechanics offers powerful methods for controlling optical fields and mechanical motion. A number of proposals have predicted that this control can be extended considerably in devices where multiple cavity modes couple to each other via the motion of a single mechanical oscillator. Here we study the dynamic properties of such a multimode optomechanical device, in which the coupling between cavity modes results from mechanically induced avoided crossings in the cavity's spectrum. Near the avoided crossings we find that the optical spring shows distinct features that arise from the interaction between cavity modes. Precisely at an avoided crossing, we show that the particular form of the optical spring provides a classical analogue of a quantum non-demolition measurement of the intracavity photon number. The mechanical oscillator's Brownian motion, an important source of noise in these measurements, is minimized by operating the device at cryogenic temperature (500 mK).}
+      \field{journaltitle}{Nat. Commun.}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Multimode optomechanical dynamics in a cavity with avoided crossings}
+      \field{volume}{6}
+      \field{year}{2015}
+      \field{pages}{6232}
+      \range{pages}{1}
+    \endentry
+    \entry{Halg2021}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=854e585ab5b57c83944402bcf22ac796}{%
+           family={Hälg},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a51a6b1d3a1aa8fd55dc82c4966db220}{%
+           family={Gisler},
+           familyi={G\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0f17e05615b4ebf73051e0498c25a2c6}{%
+           family={Tsaturyan},
+           familyi={T\bibinitperiod},
+           given={Yeghishe},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45e134dd3e5c43d60c37426f5e1c6f2f}{%
+           family={Catalini},
+           familyi={C\bibinitperiod},
+           given={Letizia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ff9308d323059254e4361635fd1cc33e}{%
+           family={Grob},
+           familyi={G\bibinitperiod},
+           given={Urs},
+           giveni={U\bibinitperiod}}}%
+        {{hash=572ce1dc2b49e22077184957c9ebb73e}{%
+           family={Krass},
+           familyi={K\bibinitperiod},
+           given={Marc-Dominik},
+           giveni={M\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=28a965cfbdcb217ea3fd5dd454008466}{%
+           family={Héritier},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7a88aa00777b201603e3c008221437bd}{%
+           family={Mattiat},
+           familyi={M\bibinitperiod},
+           given={Hinrich},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0f5254e8eb78270e2be466411b3970c9}{%
+           family={Thamm},
+           familyi={T\bibinitperiod},
+           given={Ann-Katrin},
+           giveni={A\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=93453e7f2406f0f0428db7285e2a1d16}{%
+           family={Schirhagl},
+           familyi={S\bibinitperiod},
+           given={Romana},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5dbb4f403947d4d2f1041ac46f65b702}{%
+           family={Langman},
+           familyi={L\bibinitperiod},
+           given={Eric\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=2c4bbb878e4422db7f301c9d9068885c}{%
+           family={Schliesser},
+           familyi={S\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f465da262b4e31d8cd8d06a539f58cd}{%
+           family={Degen},
+           familyi={D\bibinitperiod},
+           given={Christian\bibnamedelima L},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2bc3ba7de45dddd5bd13bb7dae5d25c2}{%
+           family={Eichler},
+           familyi={E\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{275503ba270f58e92b479fef4b657240}
+      \strng{fullhash}{ef82be6e56deabc7e6460ca2dd7da5e8}
+      \strng{fullhashraw}{ef82be6e56deabc7e6460ca2dd7da5e8}
+      \strng{bibnamehash}{275503ba270f58e92b479fef4b657240}
+      \strng{authorbibnamehash}{275503ba270f58e92b479fef4b657240}
+      \strng{authornamehash}{275503ba270f58e92b479fef4b657240}
+      \strng{authorfullhash}{ef82be6e56deabc7e6460ca2dd7da5e8}
+      \strng{authorfullhashraw}{ef82be6e56deabc7e6460ca2dd7da5e8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Mechanical resonators based on silicon nitride membranes offer very high quality factors and outstanding force sensitivity. However, applying such devices as practical sensors has long been impeded by their seemingly incompatible clamping geometry. Using an unconventional setup, the authors realize a membrane-based scanning force microscope and demonstrate nanometer-scale topographic imaging. This instrument is a promising candidate for quantum-limited force detection, and for nuclear spin imaging.}
+      \field{journaltitle}{Phys. Rev. Appl.}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Membrane-based scanning force microscopy}
+      \field{volume}{15}
+      \field{year}{2021}
+    \endentry
+    \entry{Andrews2014}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=80c19c637b00e9a50efe2ff7eb720729}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={R\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bf7d6a6682d4f2530a40b7cbd321ceec}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={R\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b61edf6c5fb2e5eb56b711f71a0317fc}{%
+           family={Purdy},
+           familyi={P\bibinitperiod},
+           given={T\bibnamedelima P},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=9e8b1af28ddae2ade894352e676c4d51}{%
+           family={Cicak},
+           familyi={C\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=29147a1192697445e40837b66adc3180}{%
+           family={Simmonds},
+           familyi={S\bibinitperiod},
+           given={R\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d1f45cd382775faf93c643b9594e0907}{%
+           family={Regal},
+           familyi={R\bibinitperiod},
+           given={C\bibnamedelima A},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ab513a16b998e6975e7db9f425fc194c}{%
+           family={Lehnert},
+           familyi={L\bibinitperiod},
+           given={K\bibnamedelima W},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{404b15f72322445b1a46e169dc7d5242}
+      \strng{fullhash}{e75f3d41ce540ced49f6b0036470fc98}
+      \strng{fullhashraw}{e75f3d41ce540ced49f6b0036470fc98}
+      \strng{bibnamehash}{404b15f72322445b1a46e169dc7d5242}
+      \strng{authorbibnamehash}{404b15f72322445b1a46e169dc7d5242}
+      \strng{authornamehash}{404b15f72322445b1a46e169dc7d5242}
+      \strng{authorfullhash}{e75f3d41ce540ced49f6b0036470fc98}
+      \strng{authorfullhashraw}{e75f3d41ce540ced49f6b0036470fc98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An optomechanical system that converts microwaves to optical frequency light and vice versa is demonstrated. The technique achieves a conversion efficiency of approximately 10\%. The results indicate that the device could work at the quantum level, up- and down-converting individual photons, if it were cooled to millikelvin temperatures. It could, therefore, form an integral part of quantum-processor networks.}
+      \field{journaltitle}{Nat. Phys.}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Bidirectional and efficient conversion between microwave and optical light}
+      \field{volume}{10}
+      \field{year}{2014}
+      \field{pages}{321\bibrangedash 326}
+      \range{pages}{6}
+    \endentry
     \entry{Delic2020}{article}{}{}
       \name{author}{7}{}{%
         {{hash=8e138536697604d116146a15a832cd14}{%
@@ -819,8 +1047,8 @@
       \strng{authorfullhash}{c34736a912c5efa85dbb917cb4ee02ba}
       \strng{authorfullhashraw}{c34736a912c5efa85dbb917cb4ee02ba}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-01-29}
@@ -873,8 +1101,8 @@
       \strng{authornamehash}{05790334ea804afb840b113af368045c}
       \strng{authorfullhash}{a738d93369fff3c6e293914860d9583d}
       \strng{authorfullhashraw}{a738d93369fff3c6e293914860d9583d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Material absorption is a key limitation in nanophotonic systems; however, its characterization is often obscured by scattering and diffraction. Here we show that nanomechanical frequency spectroscopy can be used to characterize material absorption at the parts per million level and use it to characterize the extinction coefficient $\kappa$ of stoichiometric silicon nitride (Si3N4). Specifically, we track the frequency shift of a high-Q Si3N4 trampoline in response to laser photothermal heating and infer $\kappa$ from a model including stress relaxation and both conductive and radiative heat transfer. A key insight is the presence of two thermalization time scales: rapid radiative cooling of the Si3N4 film and slow parasitic heating of the Si chip. We infer $\kappa$ ∼ 0.1-1 ppm for Si3N4 in the 532-1550 nm wavelength range, matching bounds set by waveguide resonators. Our approach is applicable to diverse photonic materials and may offer new insights into their potential.}
@@ -924,8 +1152,8 @@
       \strng{authornamehash}{070a403b16913d1b8065073408791081}
       \strng{authorfullhash}{676fba9846a5a970a78083b08bbfc05f}
       \strng{authorfullhashraw}{676fba9846a5a970a78083b08bbfc05f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Visualized Experiments}
@@ -976,8 +1204,8 @@
       \strng{authornamehash}{4900534b2b523ad42e1301143f478644}
       \strng{authorfullhash}{0308362e86a64eb2e6c354567116f419}
       \strng{authorfullhashraw}{0308362e86a64eb2e6c354567116f419}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Nanotechnology}
@@ -1054,8 +1282,8 @@
       \strng{authornamehash}{6963c17e941a32539fb70d27dc692f77}
       \strng{authorfullhash}{c81b65ca3906af2e836c2d2138efbf99}
       \strng{authorfullhashraw}{c81b65ca3906af2e836c2d2138efbf99}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{5}
@@ -1092,8 +1320,8 @@
       \strng{authornamehash}{eec65addf8e5af02552f507e8eb60f17}
       \strng{authorfullhash}{eec65addf8e5af02552f507e8eb60f17}
       \strng{authorfullhashraw}{eec65addf8e5af02552f507e8eb60f17}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{9}
@@ -1344,8 +1572,8 @@
       \strng{authornamehash}{9a865c4c43c92752be47e7e19316e98c}
       \strng{authorfullhash}{5576fca9bbf6ed08977e42ea18772d57}
       \strng{authorfullhashraw}{5576fca9bbf6ed08977e42ea18772d57}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The development of hybrid quantum systems provides a flexibility that allows for various components to be coupled together, thereby expanding the opportunity to build quantum sensors and devices that can be designed for specific purposes. Key to doing so is being able to strongly couple the different components. Most developments to date have relied on the components being in close proximity, which can hamper design flexibility. Karg et al. used a laser to induce strong coupling between a cloud of atoms and an optomechanical membrane. With the components separated by 1 meter, this approach demonstrates a methodology of coupling quantum systems and easing up restrictions on spatial proximity. Science, this issue p. 174 Laser light is used to strongly couple different quantum systems that are more than 1 meter apart. Engineering strong interactions between quantum systems is essential for many phenomena of quantum physics and technology. Typically, strong coupling relies on short-range forces or on placing the systems in high-quality electromagnetic resonators, which restricts the range of the coupling to small distances. We used a free-space laser beam to strongly couple a collective atomic spin and a micromechanical membrane over a distance of 1 meter in a room-temperature environment. The coupling is highly tunable and allows the observation of normal-mode splitting, coherent energy exchange oscillations, two-mode thermal noise squeezing, and dissipative coupling. Our approach to engineering coherent long-distance interactions with light makes it possible to couple very different systems in a modular way, opening up a range of opportunities for quantum control and coherent feedback networks.}
@@ -1403,8 +1631,8 @@
       \strng{authornamehash}{ee9bdc600dbf17b177b8c4410bc01f15}
       \strng{authorfullhash}{fea5badc57d1b139feea453625bc6269}
       \strng{authorfullhashraw}{fea5badc57d1b139feea453625bc6269}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{10}
@@ -1465,8 +1693,8 @@
       \strng{authorfullhash}{1b228195d4ea260059e2633d69b23c28}
       \strng{authorfullhashraw}{1b228195d4ea260059e2633d69b23c28}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -1525,8 +1753,8 @@
       \strng{authornamehash}{7fbc25ece43ccb7ebe359d39c1d20c35}
       \strng{authorfullhash}{bf9d18825a1d1b6132fd223b0a41a6f9}
       \strng{authorfullhashraw}{bf9d18825a1d1b6132fd223b0a41a6f9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{At room temperature, mechanical motion driven by the quantum backaction of light has been observed only in pioneering experiments in which an optical restoring force controls the oscillator stiffness1,2. For solid-state mechanical resonators in which oscillations are controlled by the material rigidity, the observation of these effects has been hindered by low mechanical quality factors, optical cavity frequency fluctuations3, thermal intermodulation noise4,5 and photothermal instabilities. Here we overcome these challenges with a phononic-engineered membrane-in-the-middle system. By using phononic-crystal-patterned cavity mirrors, we reduce the cavity frequency noise by more than 700-fold. In this ultralow noise cavity, we insert a membrane resonator with high thermal conductance and a quality factor (Q) of 180 million, engineered using recently developed soft-clamping techniques6,7. These advances enable the operation of the system within a factor of 2.5 of the Heisenberg limit for displacement sensing8, leading to the squeezing of the probe laser by 1.09(1) dB below the vacuum fluctuations. Moreover, the long thermal decoherence time of the membrane oscillator (30 vibrational periods) enables us to prepare conditional displaced thermal states of motion with an occupation of 0.97(2) phonons using a multimode Kalman filter. Our work extends the quantum control of solid-state macroscopic oscillators to room temperature.}
@@ -1583,8 +1811,8 @@
       \strng{authornamehash}{300a313a8d76521f1ddcaa58df261c7a}
       \strng{authorfullhash}{0d5ed42b1d48fd9e0c2ecba02d4a0c7d}
       \strng{authorfullhashraw}{0d5ed42b1d48fd9e0c2ecba02d4a0c7d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce a passively-aligned, flexure-tuned cavity optomechanical system in which a membrane is positioned microns from one end mirror of a Fabry-Perot optical cavity. By displacing the membrane through gentle flexure of its silicon supporting frame (i.e., to \&\#x0223C;80 m radius of curvature (ROC)), we gain access to the full range of available optomechanical couplings, finding also that the optical spectrum exhibits none of the abrupt discontinuities normally found in \&\#x0201C;membrane-in-the-middle\&\#x0201D; (MIM) systems. More aggressive flexure (3 m ROC) enables \&\#x0003E;15 \&\#x003BC;m membrane travel, milliradian tilt tuning, and a wavelength-scale (1.64 \&\#x000B1; 0.78 \&\#x003BC;m) membrane-mirror separation. We also provide a complete set of analytical expressions for this system\&\#x02019;s leading-order dispersive and dissipative optomechanical couplings. Notably, this system can potentially generate orders of magnitude larger linear dissipative or quadratic dispersive strong coupling parameters than is possible with a MIM system. Additionally, it can generate the same purely quadratic dispersive coupling as a MIM system, but with significantly suppressed linear dissipative back-action (and force noise).}
@@ -1646,8 +1874,8 @@
       \strng{authornamehash}{3dba26af5ed0cf6b8b0d41af2273d34e}
       \strng{authorfullhash}{5b9467e0534ed115c29100c29349060d}
       \strng{authorfullhashraw}{5b9467e0534ed115c29100c29349060d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{22}
@@ -1704,8 +1932,8 @@
       \strng{authornamehash}{f2ca855a4e9cd7629b289280e093e982}
       \strng{authorfullhash}{5edd995e63f3dc6cac5730764ccd7556}
       \strng{authorfullhashraw}{5edd995e63f3dc6cac5730764ccd7556}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{26}
@@ -4512,8 +4740,8 @@
       \strng{authorfullhash}{5b2aa1f0882e997ffe8e9eea55bc6403}
       \strng{authorfullhashraw}{5b2aa1f0882e997ffe8e9eea55bc6403}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{4}
@@ -4628,8 +4856,8 @@
       \strng{authornamehash}{800650029885449dd2f15d2acdb8e16f}
       \strng{authorfullhash}{c09c05fc9c10410da81d8b3d789ab57e}
       \strng{authorfullhashraw}{c09c05fc9c10410da81d8b3d789ab57e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{17}
@@ -5169,8 +5397,8 @@
       \strng{authornamehash}{fca0777964cda9b106d97c2bd48d190a}
       \strng{authorfullhash}{fca0777964cda9b106d97c2bd48d190a}
       \strng{authorfullhashraw}{fca0777964cda9b106d97c2bd48d190a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780521527354}
@@ -5199,8 +5427,8 @@
       \strng{authornamehash}{97940827651c750c3efa1302b7d6f349}
       \strng{authorfullhash}{97940827651c750c3efa1302b7d6f349}
       \strng{authorfullhashraw}{97940827651c750c3efa1302b7d6f349}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{9}
@@ -5227,8 +5455,8 @@
       \strng{authornamehash}{1af0b778254db40af14c47c00377d594}
       \strng{authorfullhash}{1af0b778254db40af14c47c00377d594}
       \strng{authorfullhashraw}{1af0b778254db40af14c47c00377d594}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{6}
@@ -5258,8 +5486,8 @@
       \strng{authornamehash}{6ca88cb474f532564f7b137eaded14dd}
       \strng{authorfullhash}{6ca88cb474f532564f7b137eaded14dd}
       \strng{authorfullhashraw}{6ca88cb474f532564f7b137eaded14dd}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Squeezed Light and Laser Interferometric Gravitational Wave Detectors}
@@ -5288,14 +5516,124 @@
       \strng{authornamehash}{5aad3149f99926c1c940a15553f6abc8}
       \strng{authorfullhash}{5aad3149f99926c1c940a15553f6abc8}
       \strng{authorfullhashraw}{5aad3149f99926c1c940a15553f6abc8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
       \field{title}{Quantum Enhancement of a 4km Laser Interferometer Gravitational-Wave Detector}
       \field{type}{PhD thesis}
       \field{year}{2013}
+    \endentry
+    \entry{caves_new_1985}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0b6ecaa5ef5b6b5c7a86670582f15682}{%
+           family={Caves},
+           familyi={C\bibinitperiod},
+           given={Carlton\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0539d9b430d02a140b5e2c7b41c0989b}{%
+           family={Schumaker},
+           familyi={S\bibinitperiod},
+           given={Bonny\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{600a5200805630fec427325e78027d6a}
+      \strng{fullhash}{600a5200805630fec427325e78027d6a}
+      \strng{fullhashraw}{600a5200805630fec427325e78027d6a}
+      \strng{bibnamehash}{600a5200805630fec427325e78027d6a}
+      \strng{authorbibnamehash}{600a5200805630fec427325e78027d6a}
+      \strng{authornamehash}{600a5200805630fec427325e78027d6a}
+      \strng{authorfullhash}{600a5200805630fec427325e78027d6a}
+      \strng{authorfullhashraw}{600a5200805630fec427325e78027d6a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a new formalism for analyzing two-photon devices (e.g., parametric amplifiers and phase-conjugate mirrors), in which photons in the output modes are created or destroyed two at a time. The key property of a two-photon device is that it excites pairs of output modes independently. Thus our new formalism deals with two modes at a time; a continuum multimode description can be built by integrating over independently excited pairs of modes. For a pair of modes at frequencies Ω±ε, we define (i) quadrature-phase amplitudes, which are complex-amplitude operators for modulation at frequency ε of waves ‘‘cos[Ω(t-x/c)]’’ and ‘‘sin[Ω(t-x/c)]’’ and (ii) two-mode squeezed states, which are the output states of an ideal two-photon device. The quadrature-phase amplitudes and the two-mode squeezed states serve as the building blocks for our formalism; their properties and their physical interpretation are extensively investigated.}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{5}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{New formalism for two-photon quantum optics. I. Quadrature phases and squeezed states}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{volume}{31}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3068\bibrangedash 3092}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.31.3068
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:C\:\\Users\\jacqu\\Zotero\\storage\\CUNQE74A\\PhysRevA.31.html:text/html;Full Text PDF:C\:\\Users\\jacqu\\Zotero\\storage\\LFEUNRPA\\Caves et Schumaker - 1985 - New formalism for two-photon quantum optics. I. Qu.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3068
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3068
+      \endverb
+    \endentry
+    \entry{schumaker_new_1985}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0539d9b430d02a140b5e2c7b41c0989b}{%
+           family={Schumaker},
+           familyi={S\bibinitperiod},
+           given={Bonny\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0b6ecaa5ef5b6b5c7a86670582f15682}{%
+           family={Caves},
+           familyi={C\bibinitperiod},
+           given={Carlton\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{fullhash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{fullhashraw}{bea3a38e104698fe6300056c2b71102f}
+      \strng{bibnamehash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{authorbibnamehash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{authornamehash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{authorfullhash}{bea3a38e104698fe6300056c2b71102f}
+      \strng{authorfullhashraw}{bea3a38e104698fe6300056c2b71102f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides the mathematical foundation for the two-mode formalism introduced in the preceding paper. A vector notation is introduced; it allows two-mode properties to be written as compactly as the comparable properties for a single mode. The fundamental unitary operators of the formalism are described and their properties are examined; particular attention is paid to the two-mode squeeze operator. Special quantum states associated with the formalism are considered, with emphasis on the two-mode squeezed states.}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{5}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{New formalism for two-photon quantum optics. {II}. Mathematical foundation and compact notation}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{volume}{31}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3093\bibrangedash 3111}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.31.3093
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:C\:\\Users\\jacqu\\Zotero\\storage\\JIYSLXTG\\PhysRevA.31.html:text/html;Full Text PDF:C\:\\Users\\jacqu\\Zotero\\storage\\FBY8UL5J\\Schumaker et Caves - 1985 - New formalism for two-photon quantum optics. II. M.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3093
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3093
+      \endverb
     \endentry
     \entry{Kogelnik66}{article}{}{}
       \name{author}{2}{}{%
@@ -5321,8 +5659,8 @@
       \strng{authornamehash}{e2553abada897e626b29c1bcf188dd02}
       \strng{authorfullhash}{e2553abada897e626b29c1bcf188dd02}
       \strng{authorfullhashraw}{e2553abada897e626b29c1bcf188dd02}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper is a review of the theory-of laser beams and resonators. It is meant to be tutorial in nature and useful in scope. No attempt is made to be exhaustive in the treatment. Rather, emphasis is placed on formulations and derivations which lead to basic understanding and on results which bear practical significance.}
@@ -5369,8 +5707,8 @@
       \strng{authornamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
       \strng{authorfullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
       \strng{authorfullhashraw}{b4ae8a90d59cde0073f8b603aa67e6d9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{6}
@@ -5425,8 +5763,8 @@
       \strng{authornamehash}{d001f6bae19a9e4d9b130f6c495aa783}
       \strng{authorfullhash}{c74f16e69519d817547c3ac4485a33fc}
       \strng{authorfullhashraw}{c74f16e69519d817547c3ac4485a33fc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phenomenon of ringing in swept Fabry--Perot cavities, which leads to discrepancies with respect to usual Airy peaks, exhibits three different regimes, depending on the values of the finesse, the sweep frequency, and the free spectral range of the cavity. In particular, the intermediate case in which the Fabry--Perot cavity transmission essentially oscillates is shown theoretically and experimentally to provide a new simple method to measure the finesse of the cavity. For cavities with intermediate finesses (F$\approx$10 000) this method is experimentally shown to have a precision of the order of 1\%.}
@@ -5472,8 +5810,8 @@
       \strng{authornamehash}{8c43f4e6ccec504a59207c3f9a8b5527}
       \strng{authorfullhash}{8c43f4e6ccec504a59207c3f9a8b5527}
       \strng{authorfullhashraw}{8c43f4e6ccec504a59207c3f9a8b5527}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{9}
@@ -5501,8 +5839,8 @@
       \strng{authornamehash}{395618318c1839adee4539236dd23f7a}
       \strng{authorfullhash}{395618318c1839adee4539236dd23f7a}
       \strng{authorfullhashraw}{395618318c1839adee4539236dd23f7a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{10}
@@ -5559,8 +5897,8 @@
       \strng{authornamehash}{517f8027f7f7013366fdf211e55703d5}
       \strng{authorfullhash}{73b5d17dc9b8b4632a00ff2521fc2bdc}
       \strng{authorfullhashraw}{73b5d17dc9b8b4632a00ff2521fc2bdc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -5686,8 +6024,8 @@
       \strng{authornamehash}{0838b4861df5ef970a586b94eabe6e2e}
       \strng{authorfullhash}{0838b4861df5ef970a586b94eabe6e2e}
       \strng{authorfullhashraw}{0838b4861df5ef970a586b94eabe6e2e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quantum noise limits the sensitivity of interferometric measurements. It is generally admitted that it leads to an ultimate sensitivity, the ``standard quantum limit''. Using a semi-classical analysis of quantum noise, we show that a judicious use of squeezed states allows one in principle to push the sensitivity beyond this limit. This general method could be applied to large-scale interferometers for gravitational wave detection.}
@@ -5721,8 +6059,8 @@
       \strng{authornamehash}{06a3c5a0216ef4e5218c3628c9d5f7dc}
       \strng{authorfullhash}{06a3c5a0216ef4e5218c3628c9d5f7dc}
       \strng{authorfullhashraw}{06a3c5a0216ef4e5218c3628c9d5f7dc}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{gr-qc}
@@ -5763,8 +6101,8 @@
       \strng{authorfullhash}{2da09e36df6e3ad9622720e0cfa06ce1}
       \strng{authorfullhashraw}{2da09e36df6e3ad9622720e0cfa06ce1}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews of Modern Physics}
@@ -5824,8 +6162,8 @@
       \strng{authornamehash}{376e908b8692528c928271972a082602}
       \strng{authorfullhash}{2d8f8c3fdc84cda3ac8d0d353a6e27f3}
       \strng{authorfullhashraw}{2d8f8c3fdc84cda3ac8d0d353a6e27f3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Vacuum quantum fluctuations impose a fundamental limit on the sensitivity of gravitational-wave interferometers, which rank among the most sensitive precision measurement devices ever built. The injection of conventional squeezed vacuum reduces quantum noise in one quadrature at the expense of increasing noise in the other. While this approach improved the sensitivity of the Advanced {LIGO} and Advanced Virgo interferometers during their third observing run (O3), future improvements in arm power and squeezing levels will bring radiation pressure noise to the forefront. Installation of a filter cavity for frequency-dependent squeezing provides broadband reduction of quantum noise through the mitigation of this radiation pressure noise, and it is the baseline approach planned for all of the future gravitational-wave detectors currently conceived. The design and operation of a filter cavity requires careful consideration of interferometer optomechanics as well as squeezing degradation processes. In this paper, we perform an in-depth analysis to determine the optimal operating point of a filter cavity. We use our model alongside numerical tools to study the implications for filter cavities to be installed in the upcoming “A+” upgrade of the Advanced {LIGO} detectors.}
@@ -5894,8 +6232,8 @@
       \strng{authornamehash}{f0af6a8b93b5587d89a2a5d8dc81ef46}
       \strng{authorfullhash}{a57261aa1e340fa4d6dfe9a31bc94072}
       \strng{authorfullhashraw}{a57261aa1e340fa4d6dfe9a31bc94072}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The ongoing global effort to detect gravitational waves continues to push the limits of precision measurement while aiming to provide a new tool for understanding both astrophysics and fundamental physics. Squeezed states of light offer a proven means of increasing the sensitivity of gravitational wave detectors, potentially increasing the rate at which astrophysical sources are detected by more than an order of magnitude. Since radiation pressure noise plays an important role in advanced detectors, frequency dependent squeezing will be required. In this paper we propose a practical approach to producing frequency dependent squeezing for Advanced {LIGO} and similar interferometric gravitational wave detectors.}
@@ -5969,8 +6307,8 @@
       \strng{authornamehash}{fa46d04c548cc1e802c7b15ea4b6d3fc}
       \strng{authorfullhash}{782e4b5e36fe68b1eda02de6719fb03d}
       \strng{authorfullhashraw}{782e4b5e36fe68b1eda02de6719fb03d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Squeezed states of light have been successfully employed in interferometric gravitational-wave detectors to reduce quantum noise, thus becoming one of the most promising options for extending the astrophysical reach of the generation of detectors currently under construction worldwide. In these advanced instruments, quantum noise will limit sensitivity over the entire detection band. Therefore, to obtain the greatest benefit from squeezing, the injected squeezed state must be filtered using a long-storage-time optical resonator, or "filter cavity", so as to realise a frequency dependent rotation of the squeezed quadrature. Whilst the ultimate performance of a filter cavity is determined by its storage time, several practical decoherence and degradation mechanisms limit the experimentally achievable quantum noise reduction. In this paper we develop an analytical model to explore these mechanisms in detail. As an example, we apply our results to the 16 m filter cavity design currently under consideration for the Advanced {LIGO} interferometers.}
@@ -6027,8 +6365,8 @@
       \strng{authornamehash}{8e6489fcac8313078762743e95c2a1d6}
       \strng{authorfullhash}{8e6489fcac8313078762743e95c2a1d6}
       \strng{authorfullhashraw}{8e6489fcac8313078762743e95c2a1d6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{2}
@@ -6093,8 +6431,8 @@
       \strng{authorfullhash}{6ffb59a358fb052f5aa81c306faea3c4}
       \strng{authorfullhashraw}{6ffb59a358fb052f5aa81c306faea3c4}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We present the results of theoretical and experimental studies of dispersively coupled (or ‘membrane in the middle’) optomechanical systems. We calculate the linear optical properties of a high finesse cavity containing a thin dielectric membrane. We focus on the cavity's transmission, reflection and finesse as a function of the membrane's position along the cavity axis and as a function of its optical loss. We compare these calculations with measurements and find excellent agreement in cavities with empty-cavity finesses in the range 104–105. The imaginary part of the membrane's index of refraction is found to be ∼10−4. We calculate the laser cooling performance of this system, with a particular focus on the less-intuitive regime in which photons ‘tunnel’ through the membrane on a timescale comparable to the membrane's period of oscillation. Lastly, we present calculations of quantum non-demolition measurements of the membrane's phonon number in the low signal-to-noise regime where the phonon lifetime is comparable to the {QND} readout time.}
@@ -6165,8 +6503,8 @@
       \strng{authorfullhash}{045a3f5b20ae3a6917a692fc320c32de}
       \strng{authorfullhashraw}{045a3f5b20ae3a6917a692fc320c32de}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A major goal in optomechanics is to observe and control quantum behaviour in a system consisting of a mechanical resonator coupled to an optical cavity. Work towards this goal has focused on increasing the strength of the coupling between the mechanical and optical degrees of freedom. However, the form of this coupling is crucial in determining which phenomena can be observed in such a system. Here we demonstrate that avoided crossings in the spectrum of an optical cavity containing a flexible dielectric membrane enable us to realize several different forms of the optomechanical coupling. These include cavity detunings that are (to lowest order) linear, quadratic or quartic in the membrane’s displacement, and a cavity finesse that is linear in (or independent of) the membrane’s displacement. All these couplings are realized in a single device with extremely low optical loss and can be tuned over a wide range in situ. In particular, we find that the quadratic coupling can be increased three orders of magnitude beyond previous devices. As a result of these advances, the device presented here should be capable of demonstrating the quantization of the membrane’s mechanical energy.}
@@ -6227,8 +6565,8 @@
       \strng{authornamehash}{f22658ed43b9daa7edb852b03653935e}
       \strng{authorfullhash}{f22658ed43b9daa7edb852b03653935e}
       \strng{authorfullhashraw}{f22658ed43b9daa7edb852b03653935e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -6272,8 +6610,8 @@
       \strng{authornamehash}{1802e698264be09b9a056f81cea4d406}
       \strng{authorfullhash}{e0fa18e601a3c8c670525ec0c53a0c38}
       \strng{authorfullhashraw}{e0fa18e601a3c8c670525ec0c53a0c38}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
@@ -6302,8 +6640,8 @@
       \strng{authornamehash}{63101ac2aa581eec9d4cc8572c886a84}
       \strng{authorfullhash}{63101ac2aa581eec9d4cc8572c886a84}
       \strng{authorfullhashraw}{63101ac2aa581eec9d4cc8572c886a84}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review X}
@@ -6392,8 +6730,8 @@
       \strng{authornamehash}{1027c71e78e9749b9cb5cf8e54d7517d}
       \strng{authorfullhash}{bd009aa3707419cf27251ff763815922}
       \strng{authorfullhashraw}{bd009aa3707419cf27251ff763815922}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature}
@@ -6437,8 +6775,8 @@
       \strng{authornamehash}{e7dee0348d78dba8f56676ff74eac002}
       \strng{authorfullhash}{d886e2542d16956ec49c8ddabc1564a3}
       \strng{authorfullhashraw}{d886e2542d16956ec49c8ddabc1564a3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -6468,8 +6806,8 @@
       \strng{authornamehash}{e28e5045e1aec04632e576b576c780c7}
       \strng{authorfullhash}{e28e5045e1aec04632e576b576c780c7}
       \strng{authorfullhashraw}{e28e5045e1aec04632e576b576c780c7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum noise and mechanical membranes in microcavities}
@@ -6497,8 +6835,8 @@
       \strng{authorfullhash}{9c6ae6c177f89473350abbc6f36bb3a0}
       \strng{authorfullhashraw}{9c6ae6c177f89473350abbc6f36bb3a0}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -6518,8 +6856,8 @@
       \keyw{Optomachanics ; MEMS ; Quantum ground state ; Cryogénie ; Asservissements ; Fpga ; Refroidissement laser ; Action en retour quantique ; Optomécanique}
     \endentry
     \entry{PyRPLDocs}{misc}{}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://pyrpl.readthedocs.io/en/latest/}
       \field{note}{Version 0.9.4.0}
@@ -6630,8 +6968,8 @@
       \strng{authornamehash}{393ce9fd0c0cd420b218f93f9607580b}
       \strng{authorfullhash}{393ce9fd0c0cd420b218f93f9607580b}
       \strng{authorfullhashraw}{393ce9fd0c0cd420b218f93f9607580b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -6760,8 +7098,8 @@
       \strng{authornamehash}{09da78d32eadfbf09e8ccb9423077467}
       \strng{authorfullhash}{d6f3de848918b6783c328e5d914e9778}
       \strng{authorfullhashraw}{d6f3de848918b6783c328e5d914e9778}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Neutral atoms are a promising platform for quantum science, enabling advances in areas ranging from quantum simulations1-3 and computation4-10 to metrology, atomic clocks11-13 and quantum networking14-16. Although atom losses typically limit these systems to a pulsed mode, continuous operation17-22 could substantially enhance cycle rates, remove bottlenecks in metrology23 and enable deep-circuit quantum evolution through quantum error correction24,25. Here we demonstrate an experimental architecture for high-rate reloading and continuous operation of a large-scale atom-array system while realizing coherent storage and manipulation of quantum information. Our approach utilizes a series of two optical lattice conveyor belts to transport atom reservoirs into the science region, where atoms are repeatedly extracted into optical tweezers without affecting the coherence of qubits stored nearby. Using a reloading rate of 300,000 atoms in tweezers per second, we create over 30,000 initialized qubits per second, which we leverage to assemble and maintain an array of over 3,000 atoms for more than 2 hours. Furthermore, we demonstrate persistent refilling of the array with atomic qubits in either a spin-polarized or a coherent superposition state while preserving the quantum state of stored qubits. Our results pave the way for the realization of large-scale continuously operated atomic clocks, sensors and fault-tolerant quantum computers.}
@@ -6823,8 +7161,8 @@
       \strng{authornamehash}{3b1ec048db99572d0cbb07a12f0d544c}
       \strng{authorfullhash}{e82ae3a52afa9b2d7bca43846419cbf3}
       \strng{authorfullhashraw}{e82ae3a52afa9b2d7bca43846419cbf3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present, to the best of our knowledge, the first demonstration of an optical spring in a signal-recycled Michelson interferometer without arm cavities. The setup utilizes multiple laser fields to achieve stable and precisely controllable detuning and incorporates a compliant suspension system comprising two double-spiral springs. These results support optical spring-enhanced interferometers with intracavity amplification, offering a promising avenue for improving high-frequency sensitivity in future gravitational-wave detectors.}
@@ -6864,8 +7202,8 @@
       \strng{authorfullhash}{9c6ae6c177f89473350abbc6f36bb3a0}
       \strng{authorfullhashraw}{9c6ae6c177f89473350abbc6f36bb3a0}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{7}
@@ -6904,8 +7242,8 @@
       \strng{authornamehash}{817f51fefe5f8a35f58a0a6a4522b6d3}
       \strng{authorfullhash}{817f51fefe5f8a35f58a0a6a4522b6d3}
       \strng{authorfullhashraw}{817f51fefe5f8a35f58a0a6a4522b6d3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -6970,8 +7308,8 @@
       \strng{authornamehash}{37bba41abb064462170a8cc100a820fb}
       \strng{authorfullhash}{ed19e87612a6caea9edd37f6fd519b19}
       \strng{authorfullhashraw}{ed19e87612a6caea9edd37f6fd519b19}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Physics B}
@@ -7019,8 +7357,8 @@
       \strng{authornamehash}{bc72c6e76de00616da005822a293e0dc}
       \strng{authorfullhash}{7f02927f1ad046dbaca9171775719bf4}
       \strng{authorfullhashraw}{7f02927f1ad046dbaca9171775719bf4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Ultralow-loss concave micromirrors with radius of curvature below 60\&\#x3BC;m were fabricated by laser ablation and reflective coatings. A 10-\&\#x3BC;m-long microcavity with a mode volume of 40\&\#x3BC;m3 was set up with two such mirrors, and the cavity linewidth was measured both spectrally and temporally. The smallest linewidth obtained was 96MHz, corresponding to a quality factor of 3.3\&\#xD7;106 and a finesse in excess of 1.5\&\#xD7;105. With these parameters, we estimate that a variety of solid-state quantum emitters coupled to the cavity may enter the strong coupling regime.}
@@ -7087,8 +7425,8 @@
       \strng{authornamehash}{93af0de076ea5d3c31a980718cf80725}
       \strng{authorfullhash}{aaabb3382324a77f82840a09761fe810}
       \strng{authorfullhashraw}{aaabb3382324a77f82840a09761fe810}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We have realized a fiber-based Fabry?Perot cavity with CO2 laser-machined mirrors. It combines very small size, high finesse , small waist and mode volume, and good mode matching between the fiber and cavity modes. This combination of features is a major advance for cavity quantum electrodynamics (CQED), as shown in recent CQED experiments with Bose?Einstein condensates enabled by this cavity (Colombe Y et al 2007 Nature 450 272). It will also be suitable for a wide range of other applications, including coupling to solid-state emitters, gas detection at the single-particle level, fiber-coupled single-photon sources and high-resolution optical filters with large stopband.}
@@ -7157,8 +7495,8 @@
       \strng{authornamehash}{a5ad6f664a1cbf30fb1a30ed047908c2}
       \strng{authorfullhash}{a1b53867aa3154ac1d787a45f6880aaf}
       \strng{authorfullhashraw}{a1b53867aa3154ac1d787a45f6880aaf}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a highly reflective, sub-wavelength-thick membrane resonator featuring high mechanical quality factor and discuss its applicability for cavity optomechanics. The 88.5 nm thin stoichiometric silicon-nitride membrane, designed and fabricated to combine 2D-photonic and phononic crystal patterns, reaches reflectivities up to 99.89 \% and a mechanical quality factor of 2.9 × 107 at room temperature. We construct a Fabry-Perot-type optical cavity, with the membrane forming one terminating mirror. The optical beam shape in cavity transmission shows a stark deviation from a simple Gaussian mode-shape, consistent with theoretical predictions. We demonstrate optomechanical sideband cooling to {mK}-mode temperatures, starting from room temperature. At higher intracavity powers we observe an optomechanically induced optical bistability. The demonstrated device has potential to reach high cooperativities at low light levels desirable, for example, for optomechanical sensing and squeezing applications or fundamental studies in cavity quantum optomechanics; and meets the requirements for cooling to the quantum ground state of mechanical motion from room temperature.}
@@ -7245,8 +7583,8 @@
       \strng{authornamehash}{6d782018c58cd547a5ab88d704cb44de}
       \strng{authorfullhash}{ecf8e664ef7c11194af6bb54f2a5b49c}
       \strng{authorfullhashraw}{ecf8e664ef7c11194af6bb54f2a5b49c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Better performance under stress Engineering stress or strain into materials can improve their performance. Adding mechanical stress to silicon chips, for instance, produces transistors with enhanced electron mobility. Ghadimi et al. explore the possibility of enhancing the vibrational properties of a micromechanical oscillator by engineering stress within the structure (see the Perspective by Eichler). By careful design of the micromechanical oscillator, and by building in associated stresses, exceptional vibrational properties can be produced. Such enhanced oscillators could be used as exquisite force sensors. Science , this issue p. 764 ; see also p. 706}
@@ -7322,8 +7660,8 @@
       \strng{authornamehash}{f70f68463a601392786ca1638e96eeba}
       \strng{authorfullhash}{f70f68463a601392786ca1638e96eeba}
       \strng{authorfullhashraw}{f70f68463a601392786ca1638e96eeba}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{7}
@@ -7403,8 +7741,8 @@
       \strng{authornamehash}{109712a2b449eaf4b3a475d11e231cf3}
       \strng{authorfullhash}{b866a2d96a0e76c2554ac8b728de6211}
       \strng{authorfullhashraw}{b866a2d96a0e76c2554ac8b728de6211}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{quant-ph}
@@ -7440,8 +7778,8 @@
       \strng{authornamehash}{7caa5017a431848f37cfbda31aba3a68}
       \strng{authorfullhash}{7caa5017a431848f37cfbda31aba3a68}
       \strng{authorfullhashraw}{7caa5017a431848f37cfbda31aba3a68}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
@@ -7539,8 +7877,8 @@
       \strng{authornamehash}{03b076b63436ab5edda3c6ff41378fbe}
       \strng{authorfullhash}{0031fa61061d4c3b612d1f073c609485}
       \strng{authorfullhashraw}{0031fa61061d4c3b612d1f073c609485}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We report on the optical, mechanical and structural characterization of the sputtered coating materials of Advanced LIGO, Advanced Virgo and KAGRA gravitational- waves detectors. We present the latest results of our research program aiming at decreasing coating thermal noise through doping, optimization of deposition parameters and post- deposition annealing. Finally, we propose sputtered Si3N4 as a candidate material for the mirrors of future detectors.}
@@ -7594,8 +7932,8 @@
       \strng{authorfullhash}{e888182eb038b8c94834542827a87cfa}
       \strng{authorfullhashraw}{e888182eb038b8c94834542827a87cfa}
       \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{New Journal of Physics}
@@ -7670,8 +8008,8 @@
       \strng{authornamehash}{a6784db1aa1c2ed0c12d0916acb180db}
       \strng{authorfullhash}{1b5cf9000720964001db7e48be8760dd}
       \strng{authorfullhashraw}{1b5cf9000720964001db7e48be8760dd}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Physics Letters}
@@ -7704,8 +8042,8 @@
       \strng{authornamehash}{ab7afc8ed87140093326d1aa0ed3a8e2}
       \strng{authorfullhash}{ab7afc8ed87140093326d1aa0ed3a8e2}
       \strng{authorfullhashraw}{ab7afc8ed87140093326d1aa0ed3a8e2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
@@ -7777,8 +8115,8 @@
       \strng{authornamehash}{6c10ae5f7a28cda8c6283e7393f42f86}
       \strng{authorfullhash}{6c10ae5f7a28cda8c6283e7393f42f86}
       \strng{authorfullhashraw}{6c10ae5f7a28cda8c6283e7393f42f86}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -7832,8 +8170,8 @@
       \strng{authorfullhash}{1e7a073c6ce31445f4ff0f0dc5138abd}
       \strng{authorfullhashraw}{1e7a073c6ce31445f4ff0f0dc5138abd}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-2473}
@@ -7897,8 +8235,8 @@
       \strng{authorfullhash}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
       \strng{authorfullhashraw}{3e8af22cd8faaf521b7cfb4b23b3ce1d}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -7961,8 +8299,8 @@
       \strng{authornamehash}{c3dc58b0cf4d19829f3f4290ad4a20d1}
       \strng{authorfullhash}{1e2fe143e4a69fcc0e003b18436317ce}
       \strng{authorfullhashraw}{1e2fe143e4a69fcc0e003b18436317ce}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0028-0836}
@@ -8007,8 +8345,8 @@
       \strng{authornamehash}{fcc211a5468fd6850c4a9cfac89d1e00}
       \strng{authorfullhash}{fcc211a5468fd6850c4a9cfac89d1e00}
       \strng{authorfullhashraw}{fcc211a5468fd6850c4a9cfac89d1e00}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-2473}
@@ -8059,8 +8397,8 @@
       \strng{authornamehash}{3fd23d406523cdbcfdffcc10042759bb}
       \strng{authorfullhash}{3fd23d406523cdbcfdffcc10042759bb}
       \strng{authorfullhashraw}{3fd23d406523cdbcfdffcc10042759bb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{14}
@@ -8124,8 +8462,8 @@
       \strng{authornamehash}{431dc4e1a6a83c1feaa9fe8e739a7d51}
       \strng{authorfullhash}{ba2f075bafa7d5b192f01906c02b2c1e}
       \strng{authorfullhashraw}{ba2f075bafa7d5b192f01906c02b2c1e}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quantum mechanics dictates that the precision of physical measurements must always comply with certain noise constraints. In the case of interferometric displacement measurements, these restrictions impose a standard quantum limit (SQL), which optimally balances the precision of a measurement with its unwanted backaction1. To go beyond this limit, one must devise more sophisticated measurement techniques, which either `evade' the backaction of the measurement2 or achieve clever cancellation of the unwanted noise at the detector3,4. In the half-century since the SQL was established, systems ranging from LIGO5 to ultracold atoms6 and nanomechanical devices7,8 have pushed displacement measurements towards this limit, and a variety of sub-SQL techniques have been tested in proof-of-principle experiments9--13. However, so far, no experimental system has successfully demonstrated an interferometric displacement measurement with sensitivity (including all relevant noise sources---thermal, backaction and imprecision) below the SQL. Here, we exploit strong quantum correlations in an ultracoherent optomechanical system to demonstrate off-resonant force and displacement sensitivity reaching 1.5 dB below the SQL. This achieves an outstanding goal in mechanical quantum sensing and further enhances the prospects of using such devices for state-of-the-art force sensing applications.Strong quantum correlations in an ultracoherent optomechanical system are used to demonstrate a displacement sensitivity that is below the standard quantum limit.}
@@ -8256,8 +8594,8 @@
       \strng{authorfullhash}{68781415e56fbe4697c7d79e87969a6a}
       \strng{authorfullhashraw}{68781415e56fbe4697c7d79e87969a6a}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{quant-ph}
@@ -8275,45 +8613,6 @@
       \verb{eprint}
       \verb 2206.11169
       \endverb
-    \endentry
-    \entry{ivanov}{thesis}{}{}
-      \name{author}{1}{}{%
-        {{hash=eaa0765a17c07321f2ac118ddf894d34}{%
-           family={Ivanov},
-           familyi={I\bibinitperiod},
-           given={Edouard},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {LKB}%
-      }
-      \strng{namehash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{fullhash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{fullhashraw}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{bibnamehash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{authorbibnamehash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{authornamehash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{authorfullhash}{eaa0765a17c07321f2ac118ddf894d34}
-      \strng{authorfullhashraw}{eaa0765a17c07321f2ac118ddf894d34}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{number}{2021SORUS546}
-      \field{title}{{Optimization of silicon nitride membranes for hybrid superconducting-mechanical circuits}}
-      \field{type}{PhD thesis}
-      \field{year}{2021}
-      \verb{file}
-      \verb https://hal.science/tel-03190442v2/file/IVANOV_Edouard_these_2021.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://hal.science/tel-03190442
-      \endverb
-      \verb{url}
-      \verb https://hal.science/tel-03190442
-      \endverb
-      \keyw{Electromechanics ; Interferometry ; Decoherence ; Phononic crystal ; Spectral engineering ; Mechanics ; Non-Gaussian state ; Non-Classical state ; Ground state ; Electromechanical cooling ; Mems ; Silicon nitride ; Cryogenics ; Electromécanique ; Nitrure de silicium ; Mems ; Cryogénie ; Refroidissement électromécanique ; Etat fondamental ; Etat non-Classique ; Etat non-Gaussien ; Mécanique ; Optimisation spectrale ; Crystal phononique ; Décohérence ; Interférométrie}
     \endentry
     \entry{gerashchenko}{thesis}{}{}
       \name{author}{1}{}{%
@@ -8334,8 +8633,8 @@
       \strng{authornamehash}{10f0c287707cc07c382dfcf60a6835b0}
       \strng{authorfullhash}{10f0c287707cc07c382dfcf60a6835b0}
       \strng{authorfullhashraw}{10f0c287707cc07c382dfcf60a6835b0}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{9}
@@ -8353,6 +8652,45 @@
       \verb https://theses.hal.science/tel-05461699
       \endverb
       \keyw{Fluxonium ; Mechanical resonator ; Qubit ; Fluxonium ; Résonateur mécanique ; Qubit}
+    \endentry
+    \entry{ivanov}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=eaa0765a17c07321f2ac118ddf894d34}{%
+           family={Ivanov},
+           familyi={I\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {LKB}%
+      }
+      \strng{namehash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{fullhash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{fullhashraw}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{bibnamehash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{authorbibnamehash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{authornamehash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{authorfullhash}{eaa0765a17c07321f2ac118ddf894d34}
+      \strng{authorfullhashraw}{eaa0765a17c07321f2ac118ddf894d34}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2021SORUS546}
+      \field{title}{{Optimization of silicon nitride membranes for hybrid superconducting-mechanical circuits}}
+      \field{type}{PhD thesis}
+      \field{year}{2021}
+      \verb{file}
+      \verb https://hal.science/tel-03190442v2/file/IVANOV_Edouard_these_2021.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/tel-03190442
+      \endverb
+      \verb{url}
+      \verb https://hal.science/tel-03190442
+      \endverb
+      \keyw{Electromechanics ; Interferometry ; Decoherence ; Phononic crystal ; Spectral engineering ; Mechanics ; Non-Gaussian state ; Non-Classical state ; Ground state ; Electromechanical cooling ; Mems ; Silicon nitride ; Cryogenics ; Electromécanique ; Nitrure de silicium ; Mems ; Cryogénie ; Refroidissement électromécanique ; Etat fondamental ; Etat non-Classique ; Etat non-Gaussien ; Mécanique ; Optimisation spectrale ; Crystal phononique ; Décohérence ; Interférométrie}
     \endentry
     \entry{Joyce84}{article}{}{}
       \name{author}{2}{}{%
@@ -8375,8 +8713,8 @@
       \strng{authornamehash}{c0c27e57895bbcb061c8b08001752fa1}
       \strng{authorfullhash}{c0c27e57895bbcb061c8b08001752fa1}
       \strng{authorfullhashraw}{c0c27e57895bbcb061c8b08001752fa1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Optics}
@@ -8891,7 +9229,6 @@
       \range{pages}{1}
     \endentry
   \enddatalist
-  \missing{kimble_conversion_2001}
 \endrefsection
 \endinput
 
