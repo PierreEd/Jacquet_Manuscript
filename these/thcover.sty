@@ -175,54 +175,137 @@
 
 \newlength{\th@bskip}
 
+% \long\def\backcover{%
+% 	\StrLen{\@resume}[\resumelen]
+% 	\StrLen{\@abstract}[\abstractlen]
+%     \ifnum\abstractlen>\absmaxlength \toggletrue{abstolong}\else\togglefalse{abstolong}\fi
+%     \ifnum\resumelen>\absmaxlength \toggletrue{restolong}\else\togglefalse{restolong}\fi
+%     \iftoggle{restolong}{\PackageWarningNoLine{thcover}{%
+%     R'esum'e in thcoverdata.tex is \resumelen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces}}{\relax}
+%     \iftoggle{abstolong}{\PackageWarningNoLine{thcover}{%
+%     Abstract in thcoverdata.tex is \abstractlen\space  chars long, \MessageBreak but the max is \absmaxlength, including spaces.}}{\relax}
+%     \clearpage
+%     \begingroup
+%     \pagestyle{empty}%
+%     \thispagestyle{empty}
+%     \setlength{\th@bskip}{8mm plus 5mm minus 5mm}%
+%     \newgeometry{left=20mm,right=20mm,bottom=10mm,top=10mm}
+%     % \vspace*{\fill}
+% \begin{minipage}{\textwidth}
+%     \centering
+%     \vspace*{-6mm}
+%     %\vskip \th@bskip%
+%     \begin{center}\Large\bfseries
+%     \framebox[\linewidth][c]{\rule[-0.5ex]{0pt}{3ex}\@author\hfil\hfil\@date}\\[\th@bskip]
+% 	  \hrulefill\\[1ex]
+%    	{\Large\bfseries Optomécanique avec de la lumière comprimée: \\ \Large\bfseries Théorie et Expériences\par}
+%    	\hrulefill
+%    	\end{center}
+%    	\adjustbox{max width=\textwidth,max height=0.40\textheight,center}{
+% 	\parbox{0.95\linewidth}{
+%    	\noindent\textbf{Résumé}~:~\normalfont\normalsize%
+%    	\@resume\par
+%    	\medskip
+%    	\noindent\textbf{Mots clés}~:~\normalfont\normalsize%
+%    	\@motscles}
+%    	}
+%    	\vskip \th@bskip%
+%    	\begin{center}
+%    	\hrulefill\\[1ex]
+%    	{\Large\bfseries \@titleen\par}
+%    	\hrulefill
+%    	\end{center}
+%    	\adjustbox{max width=\textwidth,max height=0.36\textheight,center}{
+% 	\parbox{0.95\linewidth}{
+%    	\noindent\textbf{Abstract}:~\normalfont\normalsize%
+%    	\@abstract\par
+%    	\medskip
+%    	\noindent\textbf{Keywords}~:~\normalfont\normalsize%
+%    	\@keywords}
+%    	}
+%     \end{minipage}
+% \vspace*{\fill}
+% \endgroup
+% }
+
+
 \long\def\backcover{%
-	\StrLen{\@resume}[\resumelen]
-	\StrLen{\@abstract}[\abstractlen]
-    \ifnum\abstractlen>\absmaxlength \toggletrue{abstolong}\else\togglefalse{abstolong}\fi
-    \ifnum\resumelen>\absmaxlength \toggletrue{restolong}\else\togglefalse{restolong}\fi
-    \iftoggle{restolong}{\PackageWarningNoLine{thcover}{%
-    R'esum'e in thcoverdata.tex is \resumelen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces}}{\relax}
-    \iftoggle{abstolong}{\PackageWarningNoLine{thcover}{%
-    Abstract in thcoverdata.tex is \abstractlen\space  chars long, \MessageBreak but the max is \absmaxlength, including spaces.}}{\relax}
-    \begingroup
-    \pagestyle{empty}%
-    \setlength{\th@bskip}{8mm plus 5mm minus 5mm}%
-    \newgeometry{left=20mm,right=20mm,bottom=20mm,top=20mm}
-	  \clearevenpage
-	  \flushbottom
-    %\vskip \th@skip%
-    \begin{center}\Large\bfseries
-    \framebox[\linewidth][c]{\rule[-0.5ex]{0pt}{3ex}\@author\hfil\hfil\@date}\\[\th@bskip]
-	  \hrulefill\\[1ex]
-   	{\Large\bfseries Optomécanique avec de la lumière comprimée: \\ \Large\bfseries Théorie et Expériences\par}
-   	\hrulefill
-   	\end{center}
-   	\adjustbox{max width=\textwidth,max height=0.40\textheight,center}{
-	\parbox{0.95\linewidth}{
-   	\noindent\textbf{Résumé}~:~\normalfont\normalsize%
-   	\@resume\par
-   	\medskip
-   	\noindent\textbf{Mots clés}~:~\normalfont\normalsize%
-   	\@motscles}
-   	}
-   	\vskip \th@bskip%
-   	\begin{center}
-   	\hrulefill\\[1ex]
-   	{\Large\bfseries \@titleen\par}
-   	\hrulefill
-   	\end{center}
-   	\adjustbox{max width=\textwidth,max height=0.36\textheight,center}{
-	\parbox{0.95\linewidth}{
-   	\noindent\textbf{Abstract}:~\normalfont\normalsize%
-   	\@abstract\par
-   	\medskip
-   	\noindent\textbf{Keywords}~:~\normalfont\normalsize%
-   	\@keywords}
-   	}
-%   	\hrulefill
-   	\restoregeometry
-   	\endgroup
+  \StrLen{\@resume}[\resumelen]
+  \StrLen{\@abstract}[\abstractlen]
+  \ifnum\abstractlen>\absmaxlength \toggletrue{abstolong}\else\togglefalse{abstolong}\fi
+  \ifnum\resumelen>\absmaxlength \toggletrue{restolong}\else\togglefalse{restolong}\fi
+  \iftoggle{restolong}{\PackageWarningNoLine{thcover}{%
+  R'esum'e in thcoverdata.tex is \resumelen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces.}}{\relax}
+  \iftoggle{abstolong}{\PackageWarningNoLine{thcover}{%
+  Abstract in thcoverdata.tex is \abstractlen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces.}}{\relax}
+
+  \clearpage
+  \begingroup
+  \pagestyle{empty}%
+  \thispagestyle{empty}%
+\newgeometry{left=10mm,right=10mm,top=3mm,bottom=8mm}%
+  \noindent
+
+\hspace*{-8mm}%
+\begin{minipage}[t][0.98\textheight][t]{0.8\textwidth}
+  \vspace*{-20mm}  
+  \centering
+  \small
+
+  \framebox[\linewidth][c]{%
+    \rule[-0.25ex]{0pt}{2.2ex}%
+    \@author\hfill\@date%
+  }
+
+  \vspace{3mm}
+  \hrule
+  \vspace{3mm}
+
+  {\large\bfseries
+  Optomécanique avec de la lumière comprimée:\\[-0.2ex]
+  Théorie et Expériences\par}
+
+  \vspace{2.5mm}
+  \hrule
+  \vspace{2.5mm}
+
+  \begin{adjustbox}{max width=\textwidth,max height=0.40\textheight,center}
+  \begin{minipage}{0.96\linewidth}
+  \noindent\textbf{Résumé} :~\normalfont\normalsize
+  \@resume\par
+  \medskip
+
+  \noindent\textbf{Mots clés} :~\normalfont\normalsize
+  \@motscles
+  \end{minipage}
+  \end{adjustbox}
+
+  \vspace{3mm}
+  \hrule
+  \vspace{2mm}
+
+  {\large\bfseries \@titleen\par}
+
+  \vspace{2mm}
+  \hrule
+  \vspace{2.5mm}
+
+  \begin{adjustbox}{max width=\textwidth,max height=0.38\textheight,center}
+  \begin{minipage}{0.96\linewidth}
+  \noindent\textbf{Abstract} :~\normalfont\normalsize
+  \@abstract\par
+  \medskip
+
+  \noindent\textbf{Keywords} :~\normalfont\normalsize
+  \@keywords
+  \end{minipage}
+  \end{adjustbox}
+
+  \end{minipage}
+
+  \endgroup
 }
+
 
 \def\coverd@tafile{}
 

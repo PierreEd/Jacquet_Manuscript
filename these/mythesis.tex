@@ -86,9 +86,7 @@
 
 \mainmatter
 \input{./chap1/chap1.tex}
-\newpage
 \input{./chap2/chap2.tex}
-\newpage
 
 \input{./chap3/chap3.tex}
 \input{./chap4/chap4.tex}
@@ -96,15 +94,17 @@
 \input{./chap6/chap6.tex}
 \input{./chap7/chap7.tex}
 \input{appA}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\backmatter\ 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cleardoublepage\ 
-\phantomsection\ 
+\backmatter
+\let\cleardoublepage\clearpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%  BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \cleardoublepage\ 
+% \phantomsection\ 
+\markboth{}{}
+
 % \addcontentsline{toc}{chapter}{Bibliography}
 %%%%% use of BiBTeX:
 \printbibliography[heading=bibintoc]
 %%%%% to be replaced by,  for final version:
 %\intput{mythesis.bbl}
 %%%%%%%%%%%%%%%%%%%%%%%%%  4th COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\backcover \end{document}
+\backcover 
+\end{document}
