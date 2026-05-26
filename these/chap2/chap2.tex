@@ -553,7 +553,7 @@ In this representation, we plot the carrier frequency \(\omega_0\) at the center
 We will now discuss two instructive cases of quantum states of light and their representations:
 \begin{itemize}
   \item A phase-modulated coherent state: the correlation between the two sidebands is classical.
-  \item A type I squeezed state: the correlation between the two sidebands is quantum. 
+  \item A squeezed state: the correlation between the two sidebands is quantum. 
 \end{itemize}
 
 
@@ -574,8 +574,8 @@ In this example, the correlation between the two sidebands is purely classical: 
 \label{fig:QSD_mod_phase}
 \end{figure}
 
-\subsubsection*{Example II: Type I Squeezed state}
-We now consider a type I squeezed state, where the two sidebands at $\pm \Omega$ are correlated by a $\chi^{(2)}$ nonlinear process. The classical contribution to the covariance matrix is zero, $\mathbf S_{\mathrm{cl}}[\Omega] = \mathbf{0}$, while the quantum contribution $\mathbf S_{\mathrm{qu}}[\Omega]$ is given by Eq. \eqref{II.xx4}.  \\ 
+\subsubsection*{Example II: Squeezed state}
+We now consider a (type I) squeezed state, where the two sidebands at $\pm \Omega$ are correlated by a $\chi^{(2)}$ nonlinear process. The classical contribution to the covariance matrix is zero, $\mathbf S_{\mathrm{cl}}[\Omega] = \mathbf{0}$, while the quantum contribution $\mathbf S_{\mathrm{qu}}[\Omega]$ is given by Eq. \eqref{II.xx4}.  \\ 
 
 
 We focus on the graphical representation of such states. We reproduce the quadrature statistics of squeezed-state fluctuations using an
@@ -703,7 +703,7 @@ where the coefficients $c_{m}$ quantify the projection of the incident field ont
 \begin{equation}
     \eta = \left| \int d^{3}\mathbf{r}\, f_{0}^{*}(\mathbf{r})\, f_{0}'(\mathbf{r}) \right|^{2},
 \end{equation}
-which ensures that essentially all the incoming photons populate the desired cavity mode, while suppressing excitation of spurious modes. \\
+which ensures that essentially all the incoming photons populate the desired cavity mode, while suppressing excitation of spurious modes.
 
 \subsection{\textrm{Simple} Cavities} \label{sec:simple_cavities}
 
@@ -892,6 +892,7 @@ and their noise spectra are
 \end{equation}
 where the vacuum and loss covariance matrices are equal to \textbf{1}. As these two vacua sum up linearly, it is equivalent to consider a single vacuum with an effective decay rate $\kappa_2 + \kappa_0 \rightarrow \kappa_2$ to lighten the notation. We then absorb intrinsic losses into the output coupler, and consider only two ports: the input coupler with decay rate $\kappa_1$ and the output coupler with decay rate $\kappa_2$. We stress that this substitution is only valid when considering the \textbf{reflected} quadratures. When focusing on the transmitted quadratures, one can perform a similar redefinition with $\kappa_1$ i.e. $\kappa_1 + \kappa_0 \rightarrow \kappa_1$. \\ 
 
+\newpage 
 \noindent \textbf{Transfer matrices and Spectra:} Expressing the reflected and transmitted quadratures of Eq. \eqref{eq:cavity_quad} in a compact form yields
 \begin{equation}
   \begin{split}
@@ -959,7 +960,7 @@ Let us consider a configuration such that $\kappa_1 = \kappa_2 \approx \kappa/2$
   \mathbf{S}_{\mathrm{trans}}[\Omega] =\frac{(\kappa/2)^2}{(\kappa/2)^2+\Omega^2} \, \mathbf{S}_{\mathrm{in}}+\frac{\Omega^2}{(\kappa/2)^2+\Omega^2}  \,  \mathbf{1}
   \label{eq:MCIR2}
 \end{equation}
-Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and/or $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is a Lorentzian function - a low-pass filter. Hence, the noises of the input fields are low-pass filtered by the cavity, while the vacuum fluctuations are high-pass filtered precisely above the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its classical fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high-finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleaned} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many sensitive experiments to provide a spectrally pure laser field, as well as a spatially-filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.\\
+Now consider that the input fluctuations are above those of vacuum i.e. the input field features classical noise. We would then have $S_{pp}^{\rm in}> S_{pp}^{\rm vac}=1$ and/or $S_{qq}^{\rm in}> S_{qq}^{\rm vac}=1$. One can notice that the prefactor to the input noises is a Lorentzian function - a low-pass filter. Hence, the noises of the input fields are low-pass filtered by the cavity, while the vacuum fluctuations are high-pass filtered precisely above the same cutoff $\kappa/2$. The mean field of the \textit{bright} coherent input is fully transmitted, but its classical fluctuations, potentially classically modulated, are filtered by the cavity. Taking a high-finesse cavity such that the cutoff frequency is low, the transmitted field now features vacuum sidebands: it has been \textit{cleaned} from classical noise. This is the principle of a \textit{mode cleaner} cavity, which is used in many sensitive experiments to provide a spectrally pure laser field, as well as a spatially-filtered beam such that the transmitted beam is a pure $\mathrm{TEM}_{00}$.
 
 
 \subsubsection{Example II: Detuned single-port cavity - Filter Cavity}
